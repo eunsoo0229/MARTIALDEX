@@ -1,0 +1,818 @@
+{
+  "id": "official__kickboxing",
+  "martialArt": "kickboxing",
+  "title": "킥복싱 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 개념과 규칙부터 스탠스, 펀치, 킥, 니·엘보, 클린치, 방어, 콤비네이션까지 이어지는 킥복싱 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 39,
+  "estimatedWeeks": 10,
+  "phases": [
+    {
+      "name": "기본 개념과 규칙",
+      "blurb": "킥복싱의 기본 개념과 대회별(K-1, Glory 등) 규칙 차이를 이해합니다.",
+      "startDay": 1,
+      "endDay": 4
+    },
+    {
+      "name": "스탠스와 풋워크",
+      "blurb": "기본 스탠스와 이동을 위한 풋워크를 배웁니다.",
+      "startDay": 5,
+      "endDay": 8
+    },
+    {
+      "name": "기본 펀치",
+      "blurb": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다.",
+      "startDay": 9,
+      "endDay": 12
+    },
+    {
+      "name": "기본 킥",
+      "blurb": "로우킥부터 하이킥까지 기본 킥 기술을 배웁니다.",
+      "startDay": 13,
+      "endDay": 16
+    },
+    {
+      "name": "니와 엘보",
+      "blurb": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다.",
+      "startDay": 17,
+      "endDay": 21
+    },
+    {
+      "name": "클린치와 근거리",
+      "blurb": "근거리에서 상대를 컨트롤하는 클린치를 배웁니다.",
+      "startDay": 22,
+      "endDay": 24
+    },
+    {
+      "name": "방어",
+      "blurb": "가드, 슬립, 체크 등 방어 기술을 배웁니다.",
+      "startDay": 25,
+      "endDay": 28
+    },
+    {
+      "name": "콤비네이션과 페인트",
+      "blurb": "펀치와 킥을 연결한 대표적인 콤비네이션과 페인트를 배웁니다.",
+      "startDay": 29,
+      "endDay": 32
+    },
+    {
+      "name": "카운터와 전술",
+      "blurb": "카운터 타이밍, 포인트 스파링 전술, 규정을 다룹니다.",
+      "startDay": 33,
+      "endDay": 36
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 개념과 규칙: 장거리 · 중거리 · 근거리",
+      "description": "킥복싱의 기본 개념과 대회별(K-1, Glory 등) 규칙 차이를 이해합니다. 오늘은 장거리 (Long/Kicking Range), 중거리 (Mid/Punching Range), 근거리 (Close Range / Clinch)을(를) 배웁니다.",
+      "learningGoals": [
+        "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다.",
+        "중거리의 기본 동작과 활용 상황을 이해한다.",
+        "근거리의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__장거리-long-kicking-range",
+        "kickboxing__중거리-mid-punching-range",
+        "kickboxing__근거리-close-range-clinch"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "리드(Lead) · 리어(Rear) · K-1 Rules",
+      "description": "킥복싱의 기본 개념과 대회별(K-1, Glory 등) 규칙 차이를 이해합니다. 오늘은 리드(Lead), 리어(Rear), K-1 Rules을(를) 배웁니다.",
+      "learningGoals": [
+        "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다.",
+        "리어(Rear)의 기본 동작과 활용 상황을 이해한다.",
+        "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다."
+      ],
+      "techniqueIds": [
+        "kickboxing__리드-lead",
+        "kickboxing__리어-rear",
+        "kickboxing__k-1-rules"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__근거리-close-range-clinch"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "Glory Rules · 풀컨택트 로우킥 룰 · 벨트라인 룰",
+      "description": "킥복싱의 기본 개념과 대회별(K-1, Glory 등) 규칙 차이를 이해합니다. 오늘은 Glory Rules, 풀컨택트 로우킥 룰, 아메리칸 킥복싱을(를) 배웁니다.",
+      "learningGoals": [
+        "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다.",
+        "풀컨택트 로우킥 룰의 기본 동작과 활용 상황을 이해한다.",
+        "벨트라인 룰의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__glory-rules",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__아메리칸-킥복싱"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__k-1-rules"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "세미/라이트 컨택트",
+      "description": "킥복싱의 기본 개념과 대회별(K-1, Glory 등) 규칙 차이를 이해합니다. 오늘은 포인트 스파링을(를) 배웁니다.",
+      "learningGoals": [
+        "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다."
+      ],
+      "techniqueIds": [
+        "kickboxing__포인트-스파링"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__아메리칸-킥복싱"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 5,
+      "title": "스탠스와 풋워크: Orthodox · High Guard · Southpaw",
+      "description": "기본 스탠스와 이동을 위한 풋워크를 배웁니다. 오늘은 Orthodox, High Guard, Southpaw을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리…",
+        "High Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Southpaw의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__orthodox",
+        "kickboxing__high-guard",
+        "kickboxing__southpaw"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "Long Guard · Dutch Guard · Bladed Stance",
+      "description": "기본 스탠스와 이동을 위한 풋워크를 배웁니다. 오늘은 Long Guard, Dutch Guard, Bladed Stance을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리…",
+        "Dutch Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Bladed Stance의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__long-guard",
+        "kickboxing__dutch-guard",
+        "kickboxing__bladed-stance"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__southpaw"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "Square Stance · Switch Stance · Step Forward",
+      "description": "기본 스탠스와 이동을 위한 풋워크를 배웁니다. 오늘은 Square Stance, Switch Stance, Step Forward을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리…",
+        "Switch Stance의 기본 동작과 활용 상황을 이해한다.",
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다."
+      ],
+      "techniqueIds": [
+        "kickboxing__square-stance",
+        "kickboxing__switch-stance",
+        "kickboxing__step-forward"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__bladed-stance"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "Step Back · Pivot",
+      "description": "기본 스탠스와 이동을 위한 풋워크를 배웁니다. 오늘은 Step Back, Pivot을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다.",
+        "Pivot의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__step-back",
+        "kickboxing__pivot"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__switch-stance",
+        "kickboxing__step-forward"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 9,
+      "title": "기본 펀치: Jab · Cross · Lead Hook",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Jab, Cross, Lead Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에…",
+        "Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Lead Hook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__lead-hook"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "Rear Hook · Lead Uppercut · Rear Uppercut",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Rear Hook, Lead Uppercut, Rear Uppercut을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에…",
+        "Lead Uppercut의 기본 동작과 활용 상황을 이해한다.",
+        "Rear Uppercut의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__rear-hook",
+        "kickboxing__lead-uppercut",
+        "kickboxing__rear-uppercut"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__lead-hook"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "Overhand · Spinning Backfist · Superman Punch",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Overhand, Spinning Backfist, Superman Punch을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에…",
+        "Spinning Backfist의 기본 동작과 활용 상황을 이해한다.",
+        "Superman Punch의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__overhand",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__rear-uppercut"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 12,
+      "title": "Backfist",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Backfist을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에…"
+      ],
+      "techniqueIds": [
+        "kickboxing__backfist"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 13,
+      "title": "기본 킥: Front Kick · Round Kick · Low Kick",
+      "description": "로우킥부터 하이킥까지 기본 킥 기술을 배웁니다. 오늘은 Front Kick, Round Kick, Low Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적…",
+        "Round Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Low Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__front-kick",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 14,
+      "title": "Body Kick · Teep · High Kick",
+      "description": "로우킥부터 하이킥까지 기본 킥 기술을 배웁니다. 오늘은 Body Kick, Teep, High Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적…",
+        "Teep의 기본 동작과 활용 상황을 이해한다.",
+        "High Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__body-kick",
+        "kickboxing__teep",
+        "kickboxing__high-kick"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__low-kick"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "Crescent Kick · Spinning Back Kick · Jumping Kick",
+      "description": "로우킥부터 하이킥까지 기본 킥 기술을 배웁니다. 오늘은 Crescent Kick, Spinning Back Kick, Jumping Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적…",
+        "Spinning Back Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Jumping Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__crescent-kick",
+        "kickboxing__spinning-back-kick",
+        "kickboxing__jumping-kick"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__high-kick"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 16,
+      "title": "Step-Up Kick · Side Kick",
+      "description": "로우킥부터 하이킥까지 기본 킥 기술을 배웁니다. 오늘은 Step-Up Kick, Side Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적…",
+        "Side Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__step-up-kick",
+        "kickboxing__side-kick"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__spinning-back-kick",
+        "kickboxing__jumping-kick"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "니와 엘보: Straight Knee · Lead Knee",
+      "description": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다. 오늘은 Straight Knee, Lead Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경기에서:",
+        "Lead Knee의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__straight-knee",
+        "kickboxing__lead-knee"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 18,
+      "title": "Rear Knee · Jumping Knee",
+      "description": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다. 오늘은 Rear Knee, Jumping Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경기에서:",
+        "Jumping Knee의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__rear-knee",
+        "kickboxing__jumping-knee"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__straight-knee",
+        "kickboxing__lead-knee"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 19,
+      "title": "Flying Knee · Horizontal Elbow",
+      "description": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다. 오늘은 Flying Knee, Horizontal Elbow을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경기에서:",
+        "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전…"
+      ],
+      "techniqueIds": [
+        "kickboxing__flying-knee",
+        "kickboxing__horizontal-elbow"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__rear-knee",
+        "kickboxing__jumping-knee"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 20,
+      "title": "Diagonal Elbow · Upward Elbow",
+      "description": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다. 오늘은 Diagonal Elbow, Upward Elbow을(를) 배웁니다.",
+      "learningGoals": [
+        "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전…",
+        "Upward Elbow의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__diagonal-elbow",
+        "kickboxing__upward-elbow"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__flying-knee",
+        "kickboxing__horizontal-elbow"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 21,
+      "title": "Downward Elbow",
+      "description": "무릎과 팔꿈치 타격을 배웁니다. 엘보는 부상 위험이 커 스파링 시 보호장비와 지도자 감독이 필요합니다. 오늘은 Downward Elbow을(를) 배웁니다.",
+      "learningGoals": [
+        "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전…"
+      ],
+      "techniqueIds": [
+        "kickboxing__downward-elbow"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__diagonal-elbow",
+        "kickboxing__upward-elbow"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 22,
+      "title": "클린치와 근거리: Double Collar Tie · Inside Control · Overhook",
+      "description": "근거리에서 상대를 컨트롤하는 클린치를 배웁니다. 오늘은 Double Collar Tie, Inside Control, Overhook을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경우:",
+        "Inside Control의 기본 동작과 활용 상황을 이해한다.",
+        "Overhook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__double-collar-tie",
+        "kickboxing__inside-control",
+        "kickboxing__overhook"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 23,
+      "title": "Underhook · Body Lock · Off-Balance",
+      "description": "근거리에서 상대를 컨트롤하는 클린치를 배웁니다. 오늘은 Underhook, Body Lock, Off-Balance을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경우:",
+        "Body Lock의 기본 동작과 활용 상황을 이해한다.",
+        "Off-Balance의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__underhook",
+        "kickboxing__body-lock",
+        "kickboxing__off-balance"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__overhook"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 24,
+      "title": "Break and Strike · Collar Tie · Short Knee",
+      "description": "근거리에서 상대를 컨트롤하는 클린치를 배웁니다. 오늘은 Break and Strike, Collar Tie, Short Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경우:",
+        "Collar Tie의 기본 동작과 활용 상황을 이해한다.",
+        "Short Knee의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__break-and-strike",
+        "kickboxing__collar-tie",
+        "kickboxing__short-knee"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__off-balance"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 25,
+      "title": "방어: Parry · Slip · Check",
+      "description": "가드, 슬립, 체크 등 방어 기술을 배웁니다. 오늘은 Parry, Slip, Check을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적…",
+        "Slip의 기본 동작과 활용 상황을 이해한다.",
+        "Check의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__parry",
+        "kickboxing__slip",
+        "kickboxing__check"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 26,
+      "title": "Roll · Pull · Cover",
+      "description": "가드, 슬립, 체크 등 방어 기술을 배웁니다. 오늘은 Roll, Pull, Cover을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적…",
+        "Pull의 기본 동작과 활용 상황을 이해한다.",
+        "Cover의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__roll",
+        "kickboxing__pull",
+        "kickboxing__cover"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__check"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 27,
+      "title": "Shoulder Roll · Lean Back · Angle Out",
+      "description": "가드, 슬립, 체크 등 방어 기술을 배웁니다. 오늘은 Shoulder Roll, Lean Back, Angle Out을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적…",
+        "Lean Back의 기본 동작과 활용 상황을 이해한다.",
+        "Angle Out의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__shoulder-roll",
+        "kickboxing__lean-back",
+        "kickboxing__angle-out"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__cover"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 28,
+      "title": "Shin Block · Catch",
+      "description": "가드, 슬립, 체크 등 방어 기술을 배웁니다. 오늘은 Shin Block, Catch을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적…",
+        "Catch의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__shin-block",
+        "kickboxing__catch"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__lean-back",
+        "kickboxing__angle-out"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "콤비네이션과 페인트: Jab → Cross → Low Kick · Jab → Hook → Low Kick · Cross → Hook → High Kick",
+      "description": "펀치와 킥을 연결한 대표적인 콤비네이션과 페인트를 배웁니다. 오늘은 Jab → Cross → Low Kick, Jab → Hook → Low Kick, Cross → Hook → High Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "Jab → Cross → Low Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Jab → Hook → Low Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Cross → Hook → High Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__jab-cross-low-kick",
+        "kickboxing__jab-hook-low-kick",
+        "kickboxing__cross-hook-high-kick"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 30,
+      "title": "Jab → Body Kick · Low Kick → Cross · Teep → Jab",
+      "description": "펀치와 킥을 연결한 대표적인 콤비네이션과 페인트를 배웁니다. 오늘은 Jab → Body Kick, Low Kick → Cross, Teep → Jab을(를) 배웁니다.",
+      "learningGoals": [
+        "Jab → Body Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Low Kick → Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Teep → Jab의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__jab-body-kick",
+        "kickboxing__low-kick-cross",
+        "kickboxing__teep-jab"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__cross-hook-high-kick"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 31,
+      "title": "Check → Return Kick · Slip → Cross · Parry → Jab",
+      "description": "펀치와 킥을 연결한 대표적인 콤비네이션과 페인트를 배웁니다. 오늘은 Check → Return Kick, Slip → Cross, Parry → Jab / Cross을(를) 배웁니다.",
+      "learningGoals": [
+        "Check → Return Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Slip → Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Parry → Jab의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__check-return-kick",
+        "kickboxing__slip-cross",
+        "kickboxing__parry-jab-cross"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__teep-jab"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 32,
+      "title": "Hand Feint → Body Kick · Level Change Feint → High…",
+      "description": "펀치와 킥을 연결한 대표적인 콤비네이션과 페인트를 배웁니다. 오늘은 Hand Feint → Body Kick, Level Change Feint → High Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "Hand Feint → Body Kick의 기본 동작과 활용 상황을 이해한다.",
+        "Level Change Feint → High…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__hand-feint-body-kick",
+        "kickboxing__level-change-feint-high-kick"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__slip-cross",
+        "kickboxing__parry-jab-cross"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 33,
+      "title": "카운터와 전술: Jab Counter · Cross Counter · Hook Counter",
+      "description": "카운터 타이밍, 포인트 스파링 전술, 규정을 다룹니다. 오늘은 Jab Counter, Cross Counter, Hook Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch…",
+        "Cross Counter의 기본 동작과 활용 상황을 이해한다.",
+        "Hook Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__jab-counter",
+        "kickboxing__cross-counter",
+        "kickboxing__hook-counter"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 34,
+      "title": "Slip Counter · Parry Counter · Check and Return",
+      "description": "카운터 타이밍, 포인트 스파링 전술, 규정을 다룹니다. 오늘은 Slip Counter, Parry Counter, Check and Return을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch…",
+        "Parry Counter의 기본 동작과 활용 상황을 이해한다.",
+        "Check and Return의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__slip-counter",
+        "kickboxing__parry-counter",
+        "kickboxing__check-and-return"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__hook-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 35,
+      "title": "Catch and Return · Kick After Punch · Punch After Kick",
+      "description": "카운터 타이밍, 포인트 스파링 전술, 규정을 다룹니다. 오늘은 Catch and Return, Kick After Punch, Punch After Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch…",
+        "Kick After Punch의 기본 동작과 활용 상황을 이해한다.",
+        "Punch After Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "kickboxing__catch-and-return",
+        "kickboxing__kick-after-punch",
+        "kickboxing__punch-after-kick"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__check-and-return"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 36,
+      "title": "Angle Counter",
+      "description": "카운터 타이밍, 포인트 스파링 전술, 규정을 다룹니다. 오늘은 Angle Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch…"
+      ],
+      "techniqueIds": [
+        "kickboxing__angle-counter"
+      ],
+      "reviewTechniqueIds": [
+        "kickboxing__kick-after-punch",
+        "kickboxing__punch-after-kick"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 37,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "kickboxing__장거리-long-kicking-range",
+        "kickboxing__orthodox",
+        "kickboxing__jab",
+        "kickboxing__front-kick",
+        "kickboxing__straight-knee",
+        "kickboxing__double-collar-tie",
+        "kickboxing__parry",
+        "kickboxing__jab-cross-low-kick",
+        "kickboxing__jab-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 38,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "kickboxing__리드-lead",
+        "kickboxing__long-guard",
+        "kickboxing__rear-hook",
+        "kickboxing__body-kick",
+        "kickboxing__jumping-knee",
+        "kickboxing__underhook",
+        "kickboxing__roll",
+        "kickboxing__jab-body-kick",
+        "kickboxing__slip-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 39,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "kickboxing__glory-rules",
+        "kickboxing__switch-stance",
+        "kickboxing__overhand",
+        "kickboxing__spinning-back-kick",
+        "kickboxing__diagonal-elbow",
+        "kickboxing__break-and-strike",
+        "kickboxing__lean-back",
+        "kickboxing__slip-cross",
+        "kickboxing__catch-and-return"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 92
+}

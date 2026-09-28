@@ -1,0 +1,722 @@
+{
+  "id": "official__muay-thai",
+  "martialArt": "muay-thai",
+  "title": "무에타이 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "거리와 자세 개념부터 중거리 펀치, 킥과 니·엘보, 클린치, 방어와 카운터까지 이어지는 무에타이 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 35,
+  "estimatedWeeks": 9,
+  "phases": [
+    {
+      "name": "기본 개념: 거리와 자세",
+      "blurb": "무에타이의 기본 자세와 4대 거리(장/중/근) 개념을 이해합니다.",
+      "startDay": 1,
+      "endDay": 3
+    },
+    {
+      "name": "중거리 펀치",
+      "blurb": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다.",
+      "startDay": 4,
+      "endDay": 8
+    },
+    {
+      "name": "장거리 티프와 킥",
+      "blurb": "거리를 만드는 티프(푸시킥)와 라운드킥·로우킥 계열을 배웁니다.",
+      "startDay": 9,
+      "endDay": 12
+    },
+    {
+      "name": "니와 엘보",
+      "blurb": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다.",
+      "startDay": 13,
+      "endDay": 18
+    },
+    {
+      "name": "클린치",
+      "blurb": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다.",
+      "startDay": 19,
+      "endDay": 23
+    },
+    {
+      "name": "방어와 캐치",
+      "blurb": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다.",
+      "startDay": 24,
+      "endDay": 28
+    },
+    {
+      "name": "카운터와 응용",
+      "blurb": "카운터 타이밍과 스피닝 기술 등 응용 기술을 다룹니다.",
+      "startDay": 29,
+      "endDay": 32
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 개념: 거리와 자세: Muay Thai Stance · Guard · Basic Footwork",
+      "description": "무에타이의 기본 자세와 4대 거리(장/중/근) 개념을 이해합니다. 오늘은 Muay Thai Stance, Guard / Long Guard / High Guard, Basic Footwork을(를) 배웁니다.",
+      "learningGoals": [
+        "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지…",
+        "Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Basic Footwork의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__muay-thai-stance",
+        "muay-thai__guard-long-guard-high-guard",
+        "muay-thai__basic-footwork"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "Orthodox · Shell · Dutch Guard",
+      "description": "무에타이의 기본 자세와 4대 거리(장/중/근) 개념을 이해합니다. 오늘은 Orthodox / Southpaw, Shell, Dutch Guard을(를) 배웁니다.",
+      "learningGoals": [
+        "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지…",
+        "Shell의 기본 동작과 활용 상황을 이해한다.",
+        "Dutch Guard의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__orthodox-southpaw",
+        "muay-thai__shell",
+        "muay-thai__dutch-guard"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__basic-footwork"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "Elbow Guard · Teep Guard",
+      "description": "무에타이의 기본 자세와 4대 거리(장/중/근) 개념을 이해합니다. 오늘은 Elbow Guard, Teep Guard을(를) 배웁니다.",
+      "learningGoals": [
+        "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지…",
+        "Teep Guard의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__elbow-guard",
+        "muay-thai__teep-guard"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__shell",
+        "muay-thai__dutch-guard"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 4,
+      "title": "중거리 펀치: Jab · Lead Hook · Lead Uppercut",
+      "description": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다. 오늘은 Jab / Cross, Lead Hook / Rear Hook, Lead Uppercut / Rear Uppercut을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다.",
+        "Lead Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Lead Uppercut의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__jab-cross",
+        "muay-thai__lead-hook-rear-hook",
+        "muay-thai__lead-uppercut-rear-uppercut"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 5,
+      "title": "Overhand · Superman Punch · 스피닝 기술",
+      "description": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다. 오늘은 Overhand, Superman Punch, Spinning Backfist을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다.",
+        "Superman Punch의 기본 동작과 활용 상황을 이해한다.",
+        "스피닝 기술의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__overhand",
+        "muay-thai__superman-punch",
+        "muay-thai__spinning-backfist"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__lead-uppercut-rear-uppercut"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "Backfist · Long Guard Punch · Jab--Cross",
+      "description": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다. 오늘은 Backfist, Long Guard Punch, Jab--Cross / Jab--Hook / Cross--Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다.",
+        "Long Guard Punch의 기본 동작과 활용 상황을 이해한다.",
+        "Jab--Cross의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__backfist",
+        "muay-thai__long-guard-punch",
+        "muay-thai__jab-cross-jab-hook-cross-hook"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__spinning-backfist"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "Jab--Low Kick · Jab--Cross--Hook · Jab--Cross--Body Kick",
+      "description": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다. 오늘은 Jab--Low Kick / Cross--Low Kick, Jab--Cross--Hook, Jab--Cross--Body Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다.",
+        "Jab--Cross--Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Jab--Cross--Body Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__jab-low-kick-cross-low-kick",
+        "muay-thai__jab-cross-hook",
+        "muay-thai__jab-cross-body-kick"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__jab-cross-jab-hook-cross-hook"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "Hook--Low Kick · Cross--Body Kick",
+      "description": "잽, 크로스 등 중거리에서의 기본 펀치를 배웁니다. 오늘은 Hook--Low Kick, Cross--Body Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다.",
+        "Cross--Body Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__hook-low-kick",
+        "muay-thai__cross-body-kick"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__jab-cross-hook",
+        "muay-thai__jab-cross-body-kick"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 9,
+      "title": "장거리 티프와 킥: 밀어내기 전용 · Lead Teep · Side Teep",
+      "description": "거리를 만드는 티프(푸시킥)와 라운드킥·로우킥 계열을 배웁니다. 오늘은 Push Teep, Lead Teep / Rear Teep, Side Teep을(를) 배웁니다.",
+      "learningGoals": [
+        "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다.",
+        "Lead Teep의 기본 동작과 활용 상황을 이해한다.",
+        "Side Teep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__push-teep",
+        "muay-thai__lead-teep-rear-teep",
+        "muay-thai__side-teep"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "Jumping Teep · Body Teep · Face-Level Teep",
+      "description": "거리를 만드는 티프(푸시킥)와 라운드킥·로우킥 계열을 배웁니다. 오늘은 Jumping Teep, Body Teep / Hip Teep, Face-Level Teep을(를) 배웁니다.",
+      "learningGoals": [
+        "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다.",
+        "Body Teep의 기본 동작과 활용 상황을 이해한다.",
+        "Face-Level Teep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__jumping-teep",
+        "muay-thai__body-teep-hip-teep",
+        "muay-thai__face-level-teep"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__side-teep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "앞다리를 노려 스텝을 방해 · Teep Counter · 잡힌 다리를 빠르게 접어 빼기",
+      "description": "거리를 만드는 티프(푸시킥)와 라운드킥·로우킥 계열을 배웁니다. 오늘은 Teep to Leg, Teep Counter, 잡힌 다리를 빠르게 접어 빼기을(를) 배웁니다.",
+      "learningGoals": [
+        "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다.",
+        "Teep Counter의 기본 동작과 활용 상황을 이해한다.",
+        "잡힌 다리를 빠르게 접어 빼기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__teep-to-leg",
+        "muay-thai__teep-counter",
+        "muay-thai__잡힌-다리를-빠르게-접어-빼기"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__face-level-teep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 12,
+      "title": "회수가 늦으면 **한 발로 뛰어 균형 유지 +… · Lead Round Kick · Low Kick",
+      "description": "거리를 만드는 티프(푸시킥)와 라운드킥·로우킥 계열을 배웁니다. 오늘은 회수가 늦으면 **한 발로 뛰어 균형 유지 + 반대손 가드**, Lead Round Kick / Rear Round Kick, Low Kick / Body Kick / High Kick을(를) 배웁니다.",
+      "learningGoals": [
+        "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다.",
+        "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다.",
+        "Low Kick의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__회수가-늦으면-한-발로-뛰어-균형-유지-반대손-가드",
+        "muay-thai__lead-round-kick-rear-round-kick",
+        "muay-thai__low-kick-body-kick-high-kick"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__잡힌-다리를-빠르게-접어-빼기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "니와 엘보: 스트레이트 니 · Clinch Knee",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Khao Trong, Clinch Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "니는 근거리와 클린치의 핵심 무기다.",
+        "Clinch Knee의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__khao-trong",
+        "muay-thai__clinch-knee"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 14,
+      "title": "다이애거널·커빙 니 · 점핑 니",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Khao Chiang / Khao Khong, Khao Kradod을(를) 배웁니다.",
+      "learningGoals": [
+        "니는 근거리와 클린치의 핵심 무기다.",
+        "점핑 니의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__khao-chiang-khao-khong",
+        "muay-thai__khao-kradod"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__khao-trong",
+        "muay-thai__clinch-knee"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 15,
+      "title": "Lead Knee · 한 걸음 다가서며 치는 니",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Lead Knee / Rear Knee / Side Knee, Step-Up Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "니는 근거리와 클린치의 핵심 무기다.",
+        "한 걸음 다가서며 치는 니의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__lead-knee-rear-knee-side-knee",
+        "muay-thai__step-up-knee"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__khao-chiang-khao-khong",
+        "muay-thai__khao-kradod"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 16,
+      "title": "플라잉 니 · 커팅 엘보",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Khao Loi, Sok Tad을(를) 배웁니다.",
+      "learningGoals": [
+        "니는 근거리와 클린치의 핵심 무기다.",
+        "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다."
+      ],
+      "techniqueIds": [
+        "muay-thai__khao-loi",
+        "muay-thai__sok-tad"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__lead-knee-rear-knee-side-knee",
+        "muay-thai__step-up-knee"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "업워드 엘보 · 스피닝/턴잉 엘보",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Sok Ngoei, Sok Klab을(를) 배웁니다.",
+      "learningGoals": [
+        "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다.",
+        "스피닝/턴잉 엘보의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__sok-ngoei",
+        "muay-thai__sok-klab"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__khao-loi",
+        "muay-thai__sok-tad"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 18,
+      "title": "스피어링/스트레이트 엘보",
+      "description": "무릎(니)과 팔꿈치(엘보) 타격을 배웁니다. 엘보는 부상 위험이 커 스파링에서는 반드시 보호장비와 지도자 감독이 필요합니다. 오늘은 Sok Phung을(를) 배웁니다.",
+      "learningGoals": [
+        "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다."
+      ],
+      "techniqueIds": [
+        "muay-thai__sok-phung"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__sok-ngoei",
+        "muay-thai__sok-klab"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 19,
+      "title": "클린치: 목 감싸기 · Inside Control",
+      "description": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다. 오늘은 Single Collar Tie / Double Collar Tie, Inside Control / Outside Control을(를) 배웁니다.",
+      "learningGoals": [
+        "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다.",
+        "Inside Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__single-collar-tie-double-collar-tie",
+        "muay-thai__inside-control-outside-control"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 20,
+      "title": "Overhook · Biceps Control",
+      "description": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다. 오늘은 Overhook / Underhook, Biceps Control / Wrist Control을(를) 배웁니다.",
+      "learningGoals": [
+        "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다.",
+        "Biceps Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__overhook-underhook",
+        "muay-thai__biceps-control-wrist-control"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__single-collar-tie-double-collar-tie",
+        "muay-thai__inside-control-outside-control"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 21,
+      "title": "Head-and-Arm Control · Straight Knee",
+      "description": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다. 오늘은 Head-and-Arm Control, Straight Knee (Khao Trong) / Curving Knee (Khao Chiang) / Diagonal Knee을(를) 배웁니다.",
+      "learningGoals": [
+        "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다.",
+        "Straight Knee의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__head-and-arm-control",
+        "muay-thai__straight-knee-khao-trong-curving-knee-khao-chiang-diagonal-knee"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__overhook-underhook",
+        "muay-thai__biceps-control-wrist-control"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 22,
+      "title": "Elbow Entry · Turn",
+      "description": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다. 오늘은 Elbow Entry, Turn / Off-Balance을(를) 배웁니다.",
+      "learningGoals": [
+        "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다.",
+        "Turn의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__elbow-entry",
+        "muay-thai__turn-off-balance"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__head-and-arm-control",
+        "muay-thai__straight-knee-khao-trong-curving-knee-khao-chiang-diagonal-knee"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 23,
+      "title": "Outside Trip · Body Lock",
+      "description": "근거리에서 상대를 컨트롤하며 니를 치는 클린치를 배웁니다. 클린치는 목·척추에 부담을 줄 수 있어 파트너와 강도를 합의하고 연습해야 합니다. 오늘은 Outside Trip / Inside Trip, Body Lock을(를) 배웁니다.",
+      "learningGoals": [
+        "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다.",
+        "Body Lock의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__outside-trip-inside-trip",
+        "muay-thai__body-lock"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__elbow-entry",
+        "muay-thai__turn-off-balance"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 24,
+      "title": "방어와 캐치: Check · Shin Block · Kick Catch",
+      "description": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다. 오늘은 Check / Low Kick Check / Body Kick Check, Shin Block / Long Guard / Parry / Elbow Shield, Kick Catch / Teep Catch을(를) 배웁니다.",
+      "learningGoals": [
+        "킥 캐치는 단순 방어가 아니라 **역전의 기회**다.",
+        "Shin Block의 기본 동작과 활용 상황을 이해한다.",
+        "Kick Catch의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__check-low-kick-check-body-kick-check",
+        "muay-thai__shin-block-long-guard-parry-elbow-shield",
+        "muay-thai__kick-catch-teep-catch"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 25,
+      "title": "Catch and Return · Catch and Dump · Catch and Sweep",
+      "description": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다. 오늘은 Catch and Return, Catch and Dump, Catch and Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "킥 캐치는 단순 방어가 아니라 **역전의 기회**다.",
+        "Catch and Dump의 기본 동작과 활용 상황을 이해한다.",
+        "Catch and Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__catch-and-return",
+        "muay-thai__catch-and-dump",
+        "muay-thai__catch-and-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__kick-catch-teep-catch"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 26,
+      "title": "High Guard · 1.2절 참고 · Parry",
+      "description": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다. 오늘은 High Guard / Long Guard, Cross-Arm Guard, Parry / Catch / Slip / Pull Back / Step Back / Roll / Cover을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다.",
+        "1.2절 참고의 기본 동작과 활용 상황을 이해한다.",
+        "Parry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__high-guard-long-guard",
+        "muay-thai__cross-arm-guard",
+        "muay-thai__parry-catch-slip-pull-back-step-back-roll-cover"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__catch-and-sweep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 27,
+      "title": "Shoulder Block · Check · Step Back",
+      "description": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다. 오늘은 Shoulder Block, Check / Shin Block, Step Back / Angle Out을(를) 배웁니다.",
+      "learningGoals": [
+        "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다.",
+        "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+        "Step Back의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__shoulder-block",
+        "muay-thai__check-shin-block",
+        "muay-thai__step-back-angle-out"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__parry-catch-slip-pull-back-step-back-roll-cover"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 28,
+      "title": "Catch · Evade",
+      "description": "킥 캐치, 펀치 방어, 킥 방어 등 상대의 공격에 대응하는 방법을 배웁니다. 오늘은 Catch / Teep Stop, Evade / Lean Back을(를) 배웁니다.",
+      "learningGoals": [
+        "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+        "Evade의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__catch-teep-stop",
+        "muay-thai__evade-lean-back"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__check-shin-block",
+        "muay-thai__step-back-angle-out"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "카운터와 응용: Jab Counter · Low Kick Counter",
+      "description": "카운터 타이밍과 스피닝 기술 등 응용 기술을 다룹니다. 오늘은 Jab Counter / Cross Counter / Hook Counter, Low Kick Counter / Teep Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 무에타이 득점의 핵심이다.",
+        "Low Kick Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__jab-counter-cross-counter-hook-counter",
+        "muay-thai__low-kick-counter-teep-counter"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 30,
+      "title": "Check and Return · Kick Catch to Sweep",
+      "description": "카운터 타이밍과 스피닝 기술 등 응용 기술을 다룹니다. 오늘은 Check and Return / Catch and Return, Kick Catch to Sweep / Kick Catch to Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 무에타이 득점의 핵심이다.",
+        "Kick Catch to Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__check-and-return-catch-and-return",
+        "muay-thai__kick-catch-to-sweep-kick-catch-to-counter"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__jab-counter-cross-counter-hook-counter",
+        "muay-thai__low-kick-counter-teep-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 31,
+      "title": "Counter Elbow · Spinning Elbow",
+      "description": "카운터 타이밍과 스피닝 기술 등 응용 기술을 다룹니다. 오늘은 Counter Elbow / Counter Knee, Spinning Elbow을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 무에타이 득점의 핵심이다.",
+        "스피닝 기술은 예측하기 어렵지만 회전 중 잠시 시야와 균형을 잃는 리스크가 있어, 상대의 리듬을 완전히 읽었을 때나 이미 각을 확보한 상황에서 쓰는 고위험/고보…"
+      ],
+      "techniqueIds": [
+        "muay-thai__counter-elbow-counter-knee",
+        "muay-thai__spinning-elbow"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__check-and-return-catch-and-return",
+        "muay-thai__kick-catch-to-sweep-kick-catch-to-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 32,
+      "title": "Spinning Knee · 다이애거널 라운드킥",
+      "description": "카운터 타이밍과 스피닝 기술 등 응용 기술을 다룹니다. 오늘은 Spinning Knee, Tae Chiang을(를) 배웁니다.",
+      "learningGoals": [
+        "스피닝 기술은 예측하기 어렵지만 회전 중 잠시 시야와 균형을 잃는 리스크가 있어, 상대의 리듬을 완전히 읽었을 때나 이미 각을 확보한 상황에서 쓰는 고위험/고보…",
+        "다이애거널 라운드킥의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "muay-thai__spinning-knee",
+        "muay-thai__tae-chiang"
+      ],
+      "reviewTechniqueIds": [
+        "muay-thai__counter-elbow-counter-knee",
+        "muay-thai__spinning-elbow"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 33,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "muay-thai__muay-thai-stance",
+        "muay-thai__jab-cross",
+        "muay-thai__push-teep",
+        "muay-thai__khao-trong",
+        "muay-thai__single-collar-tie-double-collar-tie",
+        "muay-thai__check-low-kick-check-body-kick-check",
+        "muay-thai__jab-counter-cross-counter-hook-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 34,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "muay-thai__basic-footwork",
+        "muay-thai__superman-punch",
+        "muay-thai__body-teep-hip-teep",
+        "muay-thai__khao-kradod",
+        "muay-thai__biceps-control-wrist-control",
+        "muay-thai__catch-and-dump",
+        "muay-thai__check-and-return-catch-and-return"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 35,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "muay-thai__dutch-guard",
+        "muay-thai__jab-low-kick-cross-low-kick",
+        "muay-thai__잡힌-다리를-빠르게-접어-빼기",
+        "muay-thai__sok-tad",
+        "muay-thai__elbow-entry",
+        "muay-thai__shoulder-block",
+        "muay-thai__spinning-elbow"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 77
+}

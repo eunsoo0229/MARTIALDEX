@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>MARTIALDEX 개발 보고서 — 카메라 기반 AI 자세 분석</title>
+<style>
+  @page { margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    color: #1c1b19; line-height: 1.7; font-size: 13.5px;
+    max-width: 780px; margin: 0 auto; padding: 0;
+  }
+  .doc-header { border-bottom: 3px solid #9c2b2b; padding-bottom: 16px; margin-bottom: 28px; }
+  .doc-header .stage-label {
+    display: inline-block; background: #9c2b2b; color: #fff; font-size: 11.5px; font-weight: 700;
+    padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; letter-spacing: 0.03em;
+  }
+  .doc-header h1 { font-size: 25px; margin: 0 0 6px; font-family: Georgia, 'Iowan Old Style', serif; }
+  .doc-header .meta { color: #6b6459; font-size: 12px; }
+  h2 { font-size: 16.5px; margin-top: 30px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ddd6ca; color: #7c2020; }
+  h3 { font-size: 14px; margin-top: 18px; margin-bottom: 6px; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12px; }
+  th, td { border: 1px solid #ddd6ca; padding: 5px 9px; text-align: left; vertical-align: top; }
+  th { background: #f6f4f0; font-weight: 700; }
+  code { background: #edeae4; padding: 1px 6px; border-radius: 4px; font-size: 12px; font-family: 'SF Mono', Menlo, monospace; }
+  .callout { background: #fbf3e6; border-left: 4px solid #a3792f; padding: 10px 14px; margin: 14px 0; font-size: 12.5px; border-radius: 0 6px 6px 0; }
+  .callout.warn { background: #fdeceb; border-left-color: #9c2b2b; }
+  .stat-grid { display: flex; gap: 14px; margin: 14px 0; flex-wrap: wrap; }
+  .stat-box { flex: 1; min-width: 100px; border: 1px solid #ddd6ca; border-radius: 8px; padding: 10px 12px; text-align: center; }
+  .stat-box .num { font-size: 20px; font-weight: 800; color: #9c2b2b; font-family: Georgia, serif; }
+  .stat-box .label { font-size: 10.5px; color: #6b6459; margin-top: 2px; }
+  .file-list { font-size: 12px; }
+  .bug { background: #fdeceb; border-left: 4px solid #9c2b2b; padding: 8px 12px; margin: 8px 0; font-size: 12px; border-radius: 0 6px 6px 0; }
+  .doc-footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #ddd6ca; color: #93897a; font-size: 11px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="stage-label">개발 단계 보고서 · 10단계</span>
+  <h1>MARTIALDEX — 카메라 기반 AI 자세 분석 시스템</h1>
+  <div class="meta">작업 일자: 2026-08-14 · 작성: Claude (개발 어시스턴트)</div>
+</div>
+
+<h2>1. 핵심 원칙</h2>
+<div class="callout warn">
+  이 기능은 사용자의 실제 무술 실력을 완벽하게 판정하는 시스템이 아니다. 카메라에서 추출한 신체
+  관절 위치·움직임을 기반으로 "자세 기준 적합도"를 분석하는 참고용 시스템이며, 실제 훈련에서는
+  전문 지도자의 피드백이 필요하다는 안내를 UI 곳곳에 표시한다.
+</div>
+
+<h2>2. 사용한 무료 Pose 라이브러리</h2>
+<p>
+  <strong>MediaPipe Tasks Vision</strong>(<code>@mediapipe/tasks-vision</code>, Google 무료
+  오픈소스) + <code>pose_landmarker_lite</code> 모델. nose·양쪽 shoulder·elbow·wrist·hip·knee·
+  ankle 랜드마크를 사용한다. WASM 런타임과 모델 파일을 <code>public/mediapipe/</code>에 직접
+  번들링해 <strong>완전 로컬 처리</strong>(외부 서버 요청 0건, CSP <code>connect-src 'self'</code>
+  유지) — 유료 API 없음, 카메라 영상은 저장하지 않는다.
+</p>
+
+<h2>3. 지원 기술 목록 (16개)</h2>
+<table>
+  <tr><th>무술</th><th>기술</th></tr>
+  <tr><td>복싱</td><td>Jab, Cross, Hook, Uppercut, High Guard</td></tr>
+  <tr><td>킥복싱</td><td>Jab, Cross, Round Kick, Front Kick</td></tr>
+  <tr><td>무에타이</td><td>Teep to Leg, Lead Round Kick / Rear Round Kick</td></tr>
+  <tr><td>태권도</td><td>앞차기, 돌려차기</td></tr>
+  <tr><td>레슬링</td><td>Wrestling Stance, Level Change, Penetration Step</td></tr>
+</table>
+<p>실제 <code>data/processed/*.json</code>의 기술 ID만 참조했고(<code>scripts/validate-pose-config.mjs</code>로
+검증), 나머지 1,237개 기술은 "카메라 자세 분석을 지원하지 않습니다"로 표시된다.</p>
+
+<h2>4. 분석 지표 (기술마다 다름, 순수 기하 계산)</h2>
+<p>
+  <code>basicStance</code>(무릎 굽힘 각도) · <code>armPosition</code>(팔꿈치 각도/가드 손 위치) ·
+  <code>rotation</code> / <code>hipRotation</code>(어깨·골반 회전량) · <code>balance</code>(골반
+  중심 흔들림) · <code>headPosition</code>(머리 정렬) · <code>supportLegStability</code>(지지
+  발목 흔들림) · <code>kneePosition</code>(무릎 상승량) · <code>legMovement</code>(발 이동 거리) ·
+  <code>levelChange</code>(골반 하강량). 랜덤 점수는 전혀 없으며, 전부 캡처된 프레임의 실제 좌표에서
+  계산한다.
+</p>
+
+<h2>5. 점수 계산 방식</h2>
+<ul>
+  <li>측정값과 기준값의 편차를 0~100으로 환산(<code>scoreFromDeviation</code>), 기준값/허용오차는
+    기술마다 <code>data/curated/poseAnalysis.json</code>의 <code>params</code>로 다르게 설정.</li>
+  <li>동작 구간(시작 → 동작 → 최대 동작 → 복귀)을 "가장 많이 뻗은/올라간" 프레임을 자동 탐색해 비교.</li>
+  <li>잘함(80+) / 보통(60~79) / 개선 필요(0~59) 경계값은 <code>SCORE_THRESHOLDS</code> 상수 하나로 관리.</li>
+  <li>핵심 랜드마크가 충분히 잡히지 않으면 점수를 억지로 만들지 않고 "포즈를 인식하지 못했습니다"를 반환.</li>
+</ul>
+<p><strong>합성 좌표 테스트로 직접 검증</strong>: 동일 입력 → 동일 출력(결정론적), "좋은 자세(81점) &gt;
+나쁜 자세(55점)" 방향성 확인 — 무작위 생성이 아님을 확인했다.</p>
+
+<h2>6. Gemini AI 연동</h2>
+<p>점수 계산은 로컬 알고리즘이 수행하고, Gemini는 이미 계산된 결과를 이해하기 쉽게 설명하는 역할만
+한다. 시스템 프롬프트에 "이 점수는 코드가 계산했다, 너는 설명만 한다"와 "카메라로 확인 가능한 요소만
+근사 측정한 것"이라는 경계를 명시했다.</p>
+
+<h2>7. 저장 방식</h2>
+<p>
+  <code>martialdex:pose-records</code>(localStorage) — <code>{recordId, techniqueId, martialArtId,
+  score, status, metricScores, analyzedAt}</code>. 기존 커리큘럼 기능과 동일한
+  repository → service → hook 계층 구조를 재사용했다. 카메라 영상 프레임은 분석 직후 즉시 버려지고
+  디스크에 절대 쓰이지 않는다 — 저장되는 것은 점수/세부 지표/날짜뿐이다. "나의 기술" 페이지에서
+  기술별/전체 삭제, JSON 내보내기(영상 미포함)를 제공하며, 삭제 전 항상 확인 메시지를 표시한다.
+  커리큘럼의 "학습 완료"와 자세 분석 점수는 완전히 분리된 데이터로 관리된다.
+</p>
+
+<h2>8. 새로 만든 / 수정한 파일</h2>
+<p class="file-list">
+  <strong>신규:</strong> <code>src/lib/poseAnalysis/</code>{types, landmarks, geometry, metrics,
+  scoring, poseAnalysisConfig, analyzeTechnique, poseEstimator, recordsRepository, recordsService,
+  usePoseRecords}.ts · <code>src/components/</code>{PoseAnalysisModal, PoseHistoryModal,
+  ScoreHistoryChart}.tsx · <code>src/pages/MySkills.tsx</code> ·
+  <code>data/curated/poseAnalysis.json</code> + <code>POSE_ANALYSIS.md</code> ·
+  <code>scripts/validate-pose-config.mjs</code> · <code>public/mediapipe/</code>(WASM+모델) ·
+  <code>.devtools/qa-pose.mjs</code><br/>
+  <strong>수정:</strong> <code>electron/main.cjs</code>(카메라 권한), <code>index.html</code>(CSP),
+  <code>ai/context.ts</code> + <code>AiAskModal.tsx</code>, <code>TechniqueDetail.tsx</code>,
+  <code>CurriculumDayDetail.tsx</code>, <code>Header.tsx</code>/<code>App.tsx</code>, <code>global.css</code>,
+  <code>README.md</code>.
+</p>
+
+<h2>9. 테스트 결과</h2>
+<div class="stat-grid">
+  <div class="stat-box"><div class="num">17 / 17</div><div class="label">Playwright(fake camera) 통과</div></div>
+  <div class="stat-box"><div class="num">0</div><div class="label">콘솔 에러</div></div>
+</div>
+<p>Playwright + Electron에서 <code>--use-fake-device-for-media-stream</code>으로 <strong>실제
+MediaPipe 파이프라인을 종단간 검증</strong>: 권한 요청 → 카메라 스트림 → 실시간 포즈 오버레이 → 녹화
+→ 점수 산출 또는 "인식 실패" 안내까지 전부 확인. tsc/build 통과, 기존 AI(59/59)·커리큘럼(38/38)
+회귀 스위트도 재실행해 전부 통과.</p>
+
+<h3>테스트 중 발견하고 수정한 실제 버그 3건</h3>
+<div class="bug"><strong>①</strong> <code>session.defaultSession</code>을 <code>app.whenReady()</code>
+이전에 호출해 앱이 아예 실행되지 않던 문제 (모든 사용자에게 영향을 줬을 심각한 버그).</div>
+<div class="bug"><strong>②</strong> 포즈가 인식되지 않으면 녹화 종료 타이머 체크 자체가 실행되지
+않아 무한 대기 상태에 빠지는 문제 — 실사용에서 조명이 나쁘거나 사용자가 프레임 밖으로 나가면
+발생 가능했음.</div>
+<div class="bug"><strong>③</strong> 새로 추가된 버튼들로 인해 <code>.detail-actions</code>가
+모바일에서 가로 스크롤을 유발하던 CSS 회귀 (<code>flex-shrink:0</code>이 wrap을 무력화).</div>
+
+<h2>10. 현재 제한사항</h2>
+<ul>
+  <li>카메라 1대 기준 — 몸이 겹치거나 카메라를 등지는 기술(클린치, 백 컨트롤 등)은 다루지 않음.</li>
+  <li>좌/우를 자동으로 판별("더 많이 움직인 쪽")하므로 아주 미세한 동작은 반대쪽이 선택될 수 있음.</li>
+  <li>GPU 가속 기본값 — GPU가 없는 환경에서는 느려질 수 있음.</li>
+</ul>
+
+<h2>11. 1,253개 전체 기술로 확장하는 방법</h2>
+<ol>
+  <li>실제 기술 <code>id</code> 확인(새로 만들지 않음)</li>
+  <li>기존 계산기(<code>METRIC_CALCULATORS</code>)로 충분한지 확인, 부족하면 <code>metrics.ts</code>에 추가</li>
+  <li><code>data/curated/poseAnalysis.json</code>에 항목 추가</li>
+  <li><code>node scripts/validate-pose-config.mjs</code>로 검증</li>
+  <li>카메라 한 대로 분석하기 어려운 기술은 무리하게 추가하지 않는다</li>
+</ol>
+
+<div class="doc-footer">MARTIALDEX 개발 문서 · 자동 생성 보고서 (5 / 5)</div>
+</body>
+</html>

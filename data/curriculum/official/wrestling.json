@@ -1,0 +1,833 @@
+{
+  "id": "official__wrestling",
+  "martialArt": "wrestling",
+  "title": "레슬링 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 자세와 그립 싸움부터 싱글/더블 레그, 던지기, 탑 포지션 컨트롤, 탈출과 리버설까지 이어지는 레슬링 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 39,
+  "estimatedWeeks": 10,
+  "phases": [
+    {
+      "name": "기본 자세와 움직임",
+      "blurb": "레슬링의 기본 스탠스와 이동 방법을 익힙니다.",
+      "startDay": 1,
+      "endDay": 4
+    },
+    {
+      "name": "스탠딩 포지션과 그립",
+      "blurb": "서서 상대와 그립을 다투는 핸드파이팅과 스탠딩 포지션을 배웁니다.",
+      "startDay": 5,
+      "endDay": 8
+    },
+    {
+      "name": "공격 진입",
+      "blurb": "셋업, 페이크, 피더링 등 테이크다운을 시도하기 전의 진입 동작을 배웁니다.",
+      "startDay": 9,
+      "endDay": 11
+    },
+    {
+      "name": "싱글 레그",
+      "blurb": "한쪽 다리를 잡아 테이크다운하는 싱글 레그 계열을 배웁니다.",
+      "startDay": 12,
+      "endDay": 14
+    },
+    {
+      "name": "더블 레그",
+      "blurb": "양쪽 다리를 잡아 테이크다운하는 더블 레그 계열을 배웁니다.",
+      "startDay": 15,
+      "endDay": 17
+    },
+    {
+      "name": "바디락과 클린치",
+      "blurb": "상체를 감싸 컨트롤하는 바디락과 클린치 상황을 배웁니다.",
+      "startDay": 18,
+      "endDay": 20
+    },
+    {
+      "name": "던지기",
+      "blurb": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다.",
+      "startDay": 21,
+      "endDay": 25
+    },
+    {
+      "name": "탑 포지션 컨트롤",
+      "blurb": "테이크다운 이후 상대를 눌러 제압하는 탑 포지션 컨트롤을 배웁니다.",
+      "startDay": 26,
+      "endDay": 29
+    },
+    {
+      "name": "바텀 포지션과 탈출",
+      "blurb": "눌린 상태에서 벗어나는 탈출 동작을 배웁니다.",
+      "startDay": 30,
+      "endDay": 32
+    },
+    {
+      "name": "리버설과 카운터",
+      "blurb": "상대의 공격을 역이용해 포지션을 뒤집는 리버설과 카운터를 배웁니다.",
+      "startDay": 33,
+      "endDay": 36
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 자세와 움직임: Wrestling Stance · Level Change · Penetration Step",
+      "description": "레슬링의 기본 스탠스와 이동 방법을 익힙니다. 오늘은 Wrestling Stance, Level Change, Penetration Step을(를) 배웁니다.",
+      "learningGoals": [
+        "레슬링의 모든 기술은 낮은 무게중심과 즉각적인 방향 전환 능력에서 시작된다.",
+        "Level Change의 기본 동작과 활용 상황을 이해한다.",
+        "Penetration Step의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__wrestling-stance",
+        "wrestling__level-change",
+        "wrestling__penetration-step"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "Stand-Up · Sit-Out · Switch",
+      "description": "레슬링의 기본 스탠스와 이동 방법을 익힙니다. 오늘은 Stand-Up, Sit-Out, Switch을(를) 배웁니다.",
+      "learningGoals": [
+        "레슬링의 모든 기술은 낮은 무게중심과 즉각적인 방향 전환 능력에서 시작된다.",
+        "Sit-Out의 기본 동작과 활용 상황을 이해한다.",
+        "Switch의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__stand-up",
+        "wrestling__sit-out",
+        "wrestling__switch"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__penetration-step"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "Bridge · Hand Fighting · Sprawl",
+      "description": "레슬링의 기본 스탠스와 이동 방법을 익힙니다. 오늘은 Bridge, Hand Fighting, Sprawl을(를) 배웁니다.",
+      "learningGoals": [
+        "레슬링의 모든 기술은 낮은 무게중심과 즉각적인 방향 전환 능력에서 시작된다.",
+        "Hand Fighting의 기본 동작과 활용 상황을 이해한다.",
+        "Sprawl의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__bridge",
+        "wrestling__hand-fighting",
+        "wrestling__sprawl"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__switch"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "Motion",
+      "description": "레슬링의 기본 스탠스와 이동 방법을 익힙니다. 오늘은 Motion / Circle을(를) 배웁니다.",
+      "learningGoals": [
+        "레슬링의 모든 기술은 낮은 무게중심과 즉각적인 방향 전환 능력에서 시작된다."
+      ],
+      "techniqueIds": [
+        "wrestling__motion-circle"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__hand-fighting",
+        "wrestling__sprawl"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 5,
+      "title": "스탠딩 포지션과 그립: Overhook · Collar Tie · Inside Tie",
+      "description": "서서 상대와 그립을 다투는 핸드파이팅과 스탠딩 포지션을 배웁니다. 오늘은 Overhook / Whizzer, Collar Tie, Inside Tie을(를) 배웁니다.",
+      "learningGoals": [
+        "스탠딩에서 점수를 내는 모든 테이크다운은 그립 싸움에서 시작된다.",
+        "Collar Tie의 기본 동작과 활용 상황을 이해한다.",
+        "Inside Tie의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__overhook-whizzer",
+        "wrestling__collar-tie",
+        "wrestling__inside-tie"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "Wrist Control · Two-on-One · Russian Tie",
+      "description": "서서 상대와 그립을 다투는 핸드파이팅과 스탠딩 포지션을 배웁니다. 오늘은 Wrist Control, Two-on-One, Russian Tie을(를) 배웁니다.",
+      "learningGoals": [
+        "스탠딩에서 점수를 내는 모든 테이크다운은 그립 싸움에서 시작된다.",
+        "Two-on-One의 기본 동작과 활용 상황을 이해한다.",
+        "Russian Tie의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__wrist-control",
+        "wrestling__two-on-one",
+        "wrestling__russian-tie"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__inside-tie"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "Elbow Control · Biceps Control · Head-and-Arm Control",
+      "description": "서서 상대와 그립을 다투는 핸드파이팅과 스탠딩 포지션을 배웁니다. 오늘은 Elbow Control, Biceps Control, Head-and-Arm Control을(를) 배웁니다.",
+      "learningGoals": [
+        "스탠딩에서 점수를 내는 모든 테이크다운은 그립 싸움에서 시작된다.",
+        "Biceps Control의 기본 동작과 활용 상황을 이해한다.",
+        "Head-and-Arm Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__elbow-control",
+        "wrestling__biceps-control",
+        "wrestling__head-and-arm-control"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__russian-tie"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "Underhook",
+      "description": "서서 상대와 그립을 다투는 핸드파이팅과 스탠딩 포지션을 배웁니다. 오늘은 Underhook을(를) 배웁니다.",
+      "learningGoals": [
+        "스탠딩에서 점수를 내는 모든 테이크다운은 그립 싸움에서 시작된다."
+      ],
+      "techniqueIds": [
+        "wrestling__underhook"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__biceps-control",
+        "wrestling__head-and-arm-control"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 9,
+      "title": "공격 진입: Snap Down · Drop Step · Arm Drag",
+      "description": "셋업, 페이크, 피더링 등 테이크다운을 시도하기 전의 진입 동작을 배웁니다. 오늘은 Snap Down, Drop Step, Arm Drag을(를) 배웁니다.",
+      "learningGoals": [
+        "진입 기술은 상대의 반응을 유도하거나 거리를 좁혀 실제 테이크다운 시도(싱글, 더블, 바디락)로 넘어가기 위한 다리·상체 움직임이다.",
+        "Drop Step의 기본 동작과 활용 상황을 이해한다.",
+        "Arm Drag의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__snap-down",
+        "wrestling__drop-step",
+        "wrestling__arm-drag"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "Duck Under · Slide By · Shuck By",
+      "description": "셋업, 페이크, 피더링 등 테이크다운을 시도하기 전의 진입 동작을 배웁니다. 오늘은 Duck Under, Slide By, Shuck By을(를) 배웁니다.",
+      "learningGoals": [
+        "진입 기술은 상대의 반응을 유도하거나 거리를 좁혀 실제 테이크다운 시도(싱글, 더블, 바디락)로 넘어가기 위한 다리·상체 움직임이다.",
+        "Slide By의 기본 동작과 활용 상황을 이해한다.",
+        "Shuck By의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__duck-under",
+        "wrestling__slide-by",
+        "wrestling__shuck-by"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__arm-drag"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "Go-Behind · Throw-By · Russian Tie Entry",
+      "description": "셋업, 페이크, 피더링 등 테이크다운을 시도하기 전의 진입 동작을 배웁니다. 오늘은 Go-Behind, Throw-By, Russian Tie Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "진입 기술은 상대의 반응을 유도하거나 거리를 좁혀 실제 테이크다운 시도(싱글, 더블, 바디락)로 넘어가기 위한 다리·상체 움직임이다.",
+        "Throw-By의 기본 동작과 활용 상황을 이해한다.",
+        "Russian Tie Entry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__go-behind",
+        "wrestling__throw-by",
+        "wrestling__russian-tie-entry"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__shuck-by"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 12,
+      "title": "싱글 레그: High Single · Low Single · Outside Single",
+      "description": "한쪽 다리를 잡아 테이크다운하는 싱글 레그 계열을 배웁니다. 오늘은 High Single, Low Single, Outside Single을(를) 배웁니다.",
+      "learningGoals": [
+        "싱글 레그는 상대의 한쪽 다리만 통제해 균형을 무너뜨리는 테이크다운으로, 상대가 스탠스를 넓게 벌리거나 한쪽 다리에 체중을 오래 싣고 있을 때, 또는 손싸움에서…",
+        "Low Single의 기본 동작과 활용 상황을 이해한다.",
+        "Outside Single의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__high-single",
+        "wrestling__low-single",
+        "wrestling__outside-single"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "Inside Single · Sweep Single · Snatch Single",
+      "description": "한쪽 다리를 잡아 테이크다운하는 싱글 레그 계열을 배웁니다. 오늘은 Inside Single, Sweep Single, Snatch Single을(를) 배웁니다.",
+      "learningGoals": [
+        "싱글 레그는 상대의 한쪽 다리만 통제해 균형을 무너뜨리는 테이크다운으로, 상대가 스탠스를 넓게 벌리거나 한쪽 다리에 체중을 오래 싣고 있을 때, 또는 손싸움에서…",
+        "Sweep Single의 기본 동작과 활용 상황을 이해한다.",
+        "Snatch Single의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__inside-single",
+        "wrestling__sweep-single",
+        "wrestling__snatch-single"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__outside-single"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 14,
+      "title": "Near Ankle · Far Ankle · Running the Pipe",
+      "description": "한쪽 다리를 잡아 테이크다운하는 싱글 레그 계열을 배웁니다. 오늘은 Near Ankle, Far Ankle, Running the Pipe을(를) 배웁니다.",
+      "learningGoals": [
+        "싱글 레그는 상대의 한쪽 다리만 통제해 균형을 무너뜨리는 테이크다운으로, 상대가 스탠스를 넓게 벌리거나 한쪽 다리에 체중을 오래 싣고 있을 때, 또는 손싸움에서…",
+        "Far Ankle의 기본 동작과 활용 상황을 이해한다.",
+        "Running the Pipe의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__near-ankle",
+        "wrestling__far-ankle",
+        "wrestling__running-the-pipe"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__snatch-single"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "더블 레그: Basic Double Leg · Blast Double · Snatch Double",
+      "description": "양쪽 다리를 잡아 테이크다운하는 더블 레그 계열을 배웁니다. 오늘은 Basic Double Leg, Blast Double, Snatch Double을(를) 배웁니다.",
+      "learningGoals": [
+        "더블 레그는 양쪽 다리를 동시에 통제해 상대를 정면으로 눕히는 가장 기본적인 테이크다운으로, 상대가 상체를 세우고 있거나 손싸움에서 밀려 레벨 체인지를 허용했을…",
+        "Blast Double의 기본 동작과 활용 상황을 이해한다.",
+        "Snatch Double의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__basic-double-leg",
+        "wrestling__blast-double",
+        "wrestling__snatch-double"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 16,
+      "title": "High Double · Low Double",
+      "description": "양쪽 다리를 잡아 테이크다운하는 더블 레그 계열을 배웁니다. 오늘은 High Double, Low Double을(를) 배웁니다.",
+      "learningGoals": [
+        "더블 레그는 양쪽 다리를 동시에 통제해 상대를 정면으로 눕히는 가장 기본적인 테이크다운으로, 상대가 상체를 세우고 있거나 손싸움에서 밀려 레벨 체인지를 허용했을…",
+        "Low Double의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__high-double",
+        "wrestling__low-double"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__blast-double",
+        "wrestling__snatch-double"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "Double Leg from Tie · Double Leg from Underhook · Double Leg Finish",
+      "description": "양쪽 다리를 잡아 테이크다운하는 더블 레그 계열을 배웁니다. 오늘은 Double Leg from Tie, Double Leg from Underhook, Double Leg Finish을(를) 배웁니다.",
+      "learningGoals": [
+        "더블 레그는 양쪽 다리를 동시에 통제해 상대를 정면으로 눕히는 가장 기본적인 테이크다운으로, 상대가 상체를 세우고 있거나 손싸움에서 밀려 레벨 체인지를 허용했을…",
+        "Double Leg from Underhook의 기본 동작과 활용 상황을 이해한다.",
+        "Double Leg Finish의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__double-leg-from-tie",
+        "wrestling__double-leg-from-underhook",
+        "wrestling__double-leg-finish"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__low-double"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 18,
+      "title": "바디락과 클린치: Locking Hands Position · Rear Body Lock · Front Body Lock",
+      "description": "상체를 감싸 컨트롤하는 바디락과 클린치 상황을 배웁니다. 오늘은 Locking Hands Position, Rear Body Lock, Front Body Lock을(를) 배웁니다.",
+      "learningGoals": [
+        "바디락은 손이 아닌 몸통(허리) 전체를 감싸 상대의 다리 공격 방어를 무력화하는 클린치 기술로, 상대가 손싸움에서 다리 공격을 강하게 방어하거나 그레코로만형처럼…",
+        "Rear Body Lock의 기본 동작과 활용 상황을 이해한다.",
+        "Front Body Lock의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__locking-hands-position",
+        "wrestling__rear-body-lock",
+        "wrestling__front-body-lock"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 19,
+      "title": "Double Underhooks · Over-Under · Bear-Hug Style Control",
+      "description": "상체를 감싸 컨트롤하는 바디락과 클린치 상황을 배웁니다. 오늘은 Double Underhooks, Over-Under, Bear-Hug Style Control을(를) 배웁니다.",
+      "learningGoals": [
+        "바디락은 손이 아닌 몸통(허리) 전체를 감싸 상대의 다리 공격 방어를 무력화하는 클린치 기술로, 상대가 손싸움에서 다리 공격을 강하게 방어하거나 그레코로만형처럼…",
+        "Over-Under의 기본 동작과 활용 상황을 이해한다.",
+        "Bear-Hug Style Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__double-underhooks",
+        "wrestling__over-under",
+        "wrestling__bear-hug-style-control"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__front-body-lock"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 20,
+      "title": "Body Lock Takedown · Outside Trip · Inside Trip",
+      "description": "상체를 감싸 컨트롤하는 바디락과 클린치 상황을 배웁니다. 오늘은 Body Lock Takedown, Outside Trip, Inside Trip을(를) 배웁니다.",
+      "learningGoals": [
+        "바디락은 손이 아닌 몸통(허리) 전체를 감싸 상대의 다리 공격 방어를 무력화하는 클린치 기술로, 상대가 손싸움에서 다리 공격을 강하게 방어하거나 그레코로만형처럼…",
+        "Outside Trip의 기본 동작과 활용 상황을 이해한다.",
+        "Inside Trip의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__body-lock-takedown",
+        "wrestling__outside-trip",
+        "wrestling__inside-trip"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__bear-hug-style-control"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 21,
+      "title": "던지기: High-Crotch Lift · High-Crotch Dump",
+      "description": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다. 오늘은 High-Crotch Lift, High-Crotch Dump을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기 계열은 다리 공격 없이 상체 컨트롤(언더훅, 헤드락, 바디락)만으로 상대를 공중에 띄워 넘기는 기술로, 클린치가 밀착된 상황이나 상대가 다리 공격을 완전…",
+        "High-Crotch Dump의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__high-crotch-lift",
+        "wrestling__high-crotch-dump"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 22,
+      "title": "Head-and-Arm Throw · Headlock Throw",
+      "description": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다. 오늘은 Head-and-Arm Throw, Headlock Throw을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기 계열은 다리 공격 없이 상체 컨트롤(언더훅, 헤드락, 바디락)만으로 상대를 공중에 띄워 넘기는 기술로, 클린치가 밀착된 상황이나 상대가 다리 공격을 완전…",
+        "Headlock Throw의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__head-and-arm-throw",
+        "wrestling__headlock-throw"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__high-crotch-lift",
+        "wrestling__high-crotch-dump"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 23,
+      "title": "Arm Spin · Arm Throw",
+      "description": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다. 오늘은 Arm Spin, Arm Throw을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기 계열은 다리 공격 없이 상체 컨트롤(언더훅, 헤드락, 바디락)만으로 상대를 공중에 띄워 넘기는 기술로, 클린치가 밀착된 상황이나 상대가 다리 공격을 완전…",
+        "Arm Throw의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__arm-spin",
+        "wrestling__arm-throw"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__head-and-arm-throw",
+        "wrestling__headlock-throw"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 24,
+      "title": "Hip Toss · Lateral Drop",
+      "description": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다. 오늘은 Hip Toss, Lateral Drop을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기 계열은 다리 공격 없이 상체 컨트롤(언더훅, 헤드락, 바디락)만으로 상대를 공중에 띄워 넘기는 기술로, 클린치가 밀착된 상황이나 상대가 다리 공격을 완전…",
+        "Lateral Drop의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__hip-toss",
+        "wrestling__lateral-drop"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__arm-spin",
+        "wrestling__arm-throw"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 25,
+      "title": "Head-and-Arm Spin · Duckunder to Throw",
+      "description": "상대를 들어 던지는 던지기 기술을 배웁니다. 낙법 없이 연습하면 부상 위험이 매우 크므로 반드시 매트와 지도자 감독하에 연습해야 합니다. 오늘은 Head-and-Arm Spin, Duckunder to Throw을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기 계열은 다리 공격 없이 상체 컨트롤(언더훅, 헤드락, 바디락)만으로 상대를 공중에 띄워 넘기는 기술로, 클린치가 밀착된 상황이나 상대가 다리 공격을 완전…",
+        "Duckunder to Throw의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__head-and-arm-spin",
+        "wrestling__duckunder-to-throw"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__hip-toss",
+        "wrestling__lateral-drop"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 26,
+      "title": "탑 포지션 컨트롤: Spiral Ride · Half Nelson · Cross-Face Cradle · Wrist Ride",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 탑 포지션 컨트롤을 배웁니다. 오늘은 Spiral Ride, Half Nelson, Cross-Face Cradle, Wrist Ride을(를) 배웁니다.",
+      "learningGoals": [
+        "탑 포지션은 테이크다운 이후 또는 파테르(Par Terre) 상황에서 상대를 바닥에 두고 컨트롤을 유지하는 모든 상태를 말한다.",
+        "Half Nelson의 기본 동작과 활용 상황을 이해한다.",
+        "Cross-Face Cradle의 기본 동작과 활용 상황을 이해한다.",
+        "Wrist Ride의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__spiral-ride",
+        "wrestling__half-nelson",
+        "wrestling__cross-face-cradle",
+        "wrestling__wrist-ride"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 27,
+      "title": "Claw Ride · Chop · Ankle Ride",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 탑 포지션 컨트롤을 배웁니다. 오늘은 Claw Ride, Chop, Ankle Ride을(를) 배웁니다.",
+      "learningGoals": [
+        "탑 포지션은 테이크다운 이후 또는 파테르(Par Terre) 상황에서 상대를 바닥에 두고 컨트롤을 유지하는 모든 상태를 말한다.",
+        "Chop의 기본 동작과 활용 상황을 이해한다.",
+        "Ankle Ride의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__claw-ride",
+        "wrestling__chop",
+        "wrestling__ankle-ride"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__wrist-ride"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 28,
+      "title": "Leg Ride · Power Half Nelson · Bar Arm · Cross Wrist",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 탑 포지션 컨트롤을 배웁니다. 오늘은 Leg Ride, Power Half Nelson, Bar Arm, Cross Wrist을(를) 배웁니다.",
+      "learningGoals": [
+        "탑 포지션은 테이크다운 이후 또는 파테르(Par Terre) 상황에서 상대를 바닥에 두고 컨트롤을 유지하는 모든 상태를 말한다.",
+        "Power Half Nelson의 기본 동작과 활용 상황을 이해한다.",
+        "Bar Arm의 기본 동작과 활용 상황을 이해한다.",
+        "Cross Wrist의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__leg-ride",
+        "wrestling__power-half-nelson",
+        "wrestling__bar-arm",
+        "wrestling__cross-wrist"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__ankle-ride"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 29,
+      "title": "Wrist Tilt · Two-on-One Tilt · Near Wrist Tilt",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 탑 포지션 컨트롤을 배웁니다. 오늘은 Wrist Tilt, Two-on-One Tilt, Near Wrist Tilt을(를) 배웁니다.",
+      "learningGoals": [
+        "탑 포지션은 테이크다운 이후 또는 파테르(Par Terre) 상황에서 상대를 바닥에 두고 컨트롤을 유지하는 모든 상태를 말한다.",
+        "Two-on-One Tilt의 기본 동작과 활용 상황을 이해한다.",
+        "Near Wrist Tilt의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__wrist-tilt",
+        "wrestling__two-on-one-tilt",
+        "wrestling__near-wrist-tilt"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__cross-wrist"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 30,
+      "title": "바텀 포지션과 탈출: Base · Granby · Peterson Roll",
+      "description": "눌린 상태에서 벗어나는 탈출 동작을 배웁니다. 오늘은 Base, Granby, Peterson Roll을(를) 배웁니다.",
+      "learningGoals": [
+        "바텀 포지션은 파테르 상황이나 테이크다운을 당한 뒤 상대의 컨트롤 아래에 놓인 상태다.",
+        "Granby의 기본 동작과 활용 상황을 이해한다.",
+        "Peterson Roll의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__base",
+        "wrestling__granby",
+        "wrestling__peterson-roll"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 31,
+      "title": "Quadpod · Tripod",
+      "description": "눌린 상태에서 벗어나는 탈출 동작을 배웁니다. 오늘은 Quadpod, Tripod을(를) 배웁니다.",
+      "learningGoals": [
+        "바텀 포지션은 파테르 상황이나 테이크다운을 당한 뒤 상대의 컨트롤 아래에 놓인 상태다.",
+        "Tripod의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__quadpod",
+        "wrestling__tripod"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__granby",
+        "wrestling__peterson-roll"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 32,
+      "title": "Peek-Out · Switch to Attack · Knee Slide",
+      "description": "눌린 상태에서 벗어나는 탈출 동작을 배웁니다. 오늘은 Peek-Out, Switch to Attack, Knee Slide을(를) 배웁니다.",
+      "learningGoals": [
+        "바텀 포지션은 파테르 상황이나 테이크다운을 당한 뒤 상대의 컨트롤 아래에 놓인 상태다.",
+        "Switch to Attack의 기본 동작과 활용 상황을 이해한다.",
+        "Knee Slide의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__peek-out",
+        "wrestling__switch-to-attack",
+        "wrestling__knee-slide"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__tripod"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 33,
+      "title": "리버설과 카운터: Sit-Out to Reversal · Granby Roll to Reversal · Peterson Roll to Reversal",
+      "description": "상대의 공격을 역이용해 포지션을 뒤집는 리버설과 카운터를 배웁니다. 오늘은 Sit-Out to Reversal, Granby Roll to Reversal, Peterson Roll to Reversal을(를) 배웁니다.",
+      "learningGoals": [
+        "리버설은 탈출과 동일한 바텀 움직임(스위치, 시트아웃, 그랜비, 피터슨 등)에서 출발하지만, 단순히 분리되는 데서 멈추지 않고 그 동작을 끝까지 이어가 상대의 …",
+        "Granby Roll to Reversal의 기본 동작과 활용 상황을 이해한다.",
+        "Peterson Roll to Reversal의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__sit-out-to-reversal",
+        "wrestling__granby-roll-to-reversal",
+        "wrestling__peterson-roll-to-reversal"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 34,
+      "title": "Waist Lock Reversal · Duck-Under Reversal · Roll-Through",
+      "description": "상대의 공격을 역이용해 포지션을 뒤집는 리버설과 카운터를 배웁니다. 오늘은 Waist Lock Reversal, Duck-Under Reversal, Roll-Through을(를) 배웁니다.",
+      "learningGoals": [
+        "리버설은 탈출과 동일한 바텀 움직임(스위치, 시트아웃, 그랜비, 피터슨 등)에서 출발하지만, 단순히 분리되는 데서 멈추지 않고 그 동작을 끝까지 이어가 상대의 …",
+        "Duck-Under Reversal의 기본 동작과 활용 상황을 이해한다.",
+        "Roll-Through의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__waist-lock-reversal",
+        "wrestling__duck-under-reversal",
+        "wrestling__roll-through"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__peterson-roll-to-reversal"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 35,
+      "title": "Near Wrist Roll · Down Block · Crossface",
+      "description": "상대의 공격을 역이용해 포지션을 뒤집는 리버설과 카운터를 배웁니다. 오늘은 Near Wrist Roll, Down Block, Crossface을(를) 배웁니다.",
+      "learningGoals": [
+        "리버설은 탈출과 동일한 바텀 움직임(스위치, 시트아웃, 그랜비, 피터슨 등)에서 출발하지만, 단순히 분리되는 데서 멈추지 않고 그 동작을 끝까지 이어가 상대의 …",
+        "리샷과 카운터는 상대의 테이크다운 시도를 무력화한 뒤, 그 자세 그대로 방어에서 끝내지 않고 즉시 자신의 공격으로 되돌리는 기술이다.",
+        "Crossface의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "wrestling__near-wrist-roll",
+        "wrestling__down-block",
+        "wrestling__crossface"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__roll-through"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 36,
+      "title": "Whizzer",
+      "description": "상대의 공격을 역이용해 포지션을 뒤집는 리버설과 카운터를 배웁니다. 오늘은 Whizzer을(를) 배웁니다.",
+      "learningGoals": [
+        "리샷과 카운터는 상대의 테이크다운 시도를 무력화한 뒤, 그 자세 그대로 방어에서 끝내지 않고 즉시 자신의 공격으로 되돌리는 기술이다."
+      ],
+      "techniqueIds": [
+        "wrestling__whizzer"
+      ],
+      "reviewTechniqueIds": [
+        "wrestling__down-block",
+        "wrestling__crossface"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 37,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "wrestling__wrestling-stance",
+        "wrestling__overhook-whizzer",
+        "wrestling__snap-down",
+        "wrestling__high-single",
+        "wrestling__basic-double-leg",
+        "wrestling__locking-hands-position",
+        "wrestling__high-crotch-lift",
+        "wrestling__spiral-ride",
+        "wrestling__base",
+        "wrestling__sit-out-to-reversal"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 38,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "wrestling__stand-up",
+        "wrestling__wrist-control",
+        "wrestling__duck-under",
+        "wrestling__inside-single",
+        "wrestling__snatch-double",
+        "wrestling__double-underhooks",
+        "wrestling__headlock-throw",
+        "wrestling__claw-ride",
+        "wrestling__peterson-roll",
+        "wrestling__waist-lock-reversal"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 39,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "wrestling__bridge",
+        "wrestling__elbow-control",
+        "wrestling__go-behind",
+        "wrestling__near-ankle",
+        "wrestling__double-leg-from-tie",
+        "wrestling__body-lock-takedown",
+        "wrestling__hip-toss",
+        "wrestling__bar-arm",
+        "wrestling__peek-out",
+        "wrestling__near-wrist-roll"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 97
+}

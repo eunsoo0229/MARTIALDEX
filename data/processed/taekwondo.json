@@ -1,0 +1,2269 @@
+{
+  "martialArt": {
+    "id": "taekwondo",
+    "nameEn": "Taekwondo",
+    "nameKo": "태권도"
+  },
+  "count": 83,
+  "techniques": [
+    {
+      "id": "taekwondo__나란히서기",
+      "martialArt": "taekwondo",
+      "name": "나란히서기",
+      "koreanName": "나란히서기",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "준비·인사·대기 자세. 몸의 중심을 잡는 기초.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 나란히서기 technique"
+    },
+    {
+      "id": "taekwondo__준비서기-준비자세",
+      "martialArt": "taekwondo",
+      "name": "준비서기 / 준비자세",
+      "koreanName": "준비서기 / 준비자세",
+      "aliases": [
+        "준비서기",
+        "준비자세"
+      ],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "동작 시작 전 기본 대기 자세.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 준비서기 / 준비자세 technique"
+    },
+    {
+      "id": "taekwondo__주춤서기",
+      "martialArt": "taekwondo",
+      "name": "주춤서기",
+      "koreanName": "주춤서기",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "하체를 낮춰 좌우 균형과 힘을 기르는 자세. 옆지르기, 몸통 단련 동작에 사용.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 주춤서기 technique"
+    },
+    {
+      "id": "taekwondo__앞서기",
+      "martialArt": "taekwondo",
+      "name": "앞서기",
+      "koreanName": "앞서기",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "짧은 전후 폭의 걸음 자세. 빠른 방향 전환 동작 연결용.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞서기 technique"
+    },
+    {
+      "id": "taekwondo__앞굽이",
+      "martialArt": "taekwondo",
+      "name": "앞굽이",
+      "koreanName": "앞굽이",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "앞다리를 굽히고 폭을 넓게 잡아 전진하는 힘과 안정성을 주는 자세. 지르기·막기 동작의 기본 축.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞굽이 technique"
+    },
+    {
+      "id": "taekwondo__뒷굽이",
+      "martialArt": "taekwondo",
+      "name": "뒷굽이",
+      "koreanName": "뒷굽이",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "무게중심을 뒷다리에 두어 앞다리로 막거나 찌르기 전 방어적 응용이 가능한 자세. 손날막기와 자주 결합.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒷굽이 technique"
+    },
+    {
+      "id": "taekwondo__범서기",
+      "martialArt": "taekwondo",
+      "name": "범서기",
+      "koreanName": "범서기",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "앞다리에 무게를 살짝 얹고 뒷다리로 중심을 잡아 빠르게 앞차기·앞발 기술로 전환하기 좋은 자세.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 범서기 technique"
+    },
+    {
+      "id": "taekwondo__학다리서기",
+      "martialArt": "taekwondo",
+      "name": "학다리서기",
+      "koreanName": "학다리서기",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "한 다리로 중심을 잡는 자세. 균형 훈련과 다음 발차기(특히 옆차기·돌려차기) 준비 동작으로 사용.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 학다리서기 technique"
+    },
+    {
+      "id": "taekwondo__겨루기준비자세",
+      "martialArt": "taekwondo",
+      "name": "겨루기준비자세",
+      "koreanName": "겨루기준비자세",
+      "aliases": [],
+      "category": "기본 서기 / 자세",
+      "positions": [
+        "기본 서기 / 자세"
+      ],
+      "description": "몸을 45도 정도 비껴 세우고 앞다리는 가볍게, 뒷다리는 힘을 실어 언제든 발차기를 낼 수 있게 준비하는 자세. WT 겨루기에서는 이 자세에서 나오는 **앞발 기술의 빈도**가 전체 공격 시도의 절반 이상을 차지할 정도로 핵심적이다.",
+      "purpose": "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다. 두 가지를 구분해서 이해해야 한다.\n\n자세를 낮추면 안정성·방어력이 높아지지만 발차기 속도가 느려지고, 자세를 높이면 발차기가 빠르지만 균형이 무너지기 쉽다 --- 상대와의 거리·전술에 따라 높이를 조절하는 것이 실전 감각이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-서기-자세"
+      ],
+      "youtubeSearchQuery": "taekwondo 겨루기준비자세 technique"
+    },
+    {
+      "id": "taekwondo__전진-후진",
+      "martialArt": "taekwondo",
+      "name": "전진 / 후진",
+      "koreanName": "전진 / 후진",
+      "aliases": [
+        "전진",
+        "후진"
+      ],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "거리 조절의 기본. 전진은 압박·선제공격, 후진은 상대의 공격을 무효화하고 카운터 거리를 만든다.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 전진 / 후진 technique"
+    },
+    {
+      "id": "taekwondo__사이드-스텝",
+      "martialArt": "taekwondo",
+      "name": "사이드 스텝",
+      "koreanName": "사이드 스텝",
+      "aliases": [],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "정면 승부를 피하고 각을 만들어 회전 발차기 (돌려차기, 뒤후려차기)의 진입 각도를 확보한다.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 사이드 스텝 technique"
+    },
+    {
+      "id": "taekwondo__피벗",
+      "martialArt": "taekwondo",
+      "name": "피벗",
+      "koreanName": "피벗",
+      "aliases": [],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "앞다리를 축으로 몸통을 돌려 옆차기·돌려차기·뒤후려차기의 회전력을 만드는 필수 동작.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 피벗 technique"
+    },
+    {
+      "id": "taekwondo__스텝-인-스텝-아웃",
+      "martialArt": "taekwondo",
+      "name": "스텝 인 / 스텝 아웃",
+      "koreanName": "스텝 인 / 스텝 아웃",
+      "aliases": [
+        "스텝 인",
+        "스텝 아웃"
+      ],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "짧게 파고들었다가 바로 빠지는 동작으로, 유효 판정을 받을 만큼만 접촉하고 반격 거리에서 이탈한다.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 스텝 인 / 스텝 아웃 technique"
+    },
+    {
+      "id": "taekwondo__점프-스텝",
+      "martialArt": "taekwondo",
+      "name": "점프 스텝",
+      "koreanName": "점프 스텝",
+      "aliases": [],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "제자리에서 가볍게 뛰며 앞/뒤 다리를 바꾸거나 (스위치) 다음 기술을 숨기는 예비 동작(페인트)으로 사용.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 점프 스텝 technique"
+    },
+    {
+      "id": "taekwondo__스위치-스텝",
+      "martialArt": "taekwondo",
+      "name": "스위치 스텝",
+      "koreanName": "스위치 스텝",
+      "aliases": [],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "앞발과 뒷발을 바꿔 상대가 읽고 있던 리듬을 깨고, 주력 다리를 앞으로 보내 회전 발차기 위력을 높인다.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "돌려차기"
+      ],
+      "relatedTechniques": [
+        "taekwondo__돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 스위치 스텝 technique"
+    },
+    {
+      "id": "taekwondo__끌기-드래그-스텝-밀기",
+      "martialArt": "taekwondo",
+      "name": "끌기(드래그 스텝) / 밀기",
+      "koreanName": "끌기(드래그 스텝) / 밀기",
+      "aliases": [
+        "끌기(드래그 스텝)",
+        "밀기"
+      ],
+      "category": "이동 / 풋워크",
+      "positions": [
+        "이동 / 풋워크"
+      ],
+      "description": "짧게 미끄러지듯 이동해 거리를 들키지 않고 좁히거나 벌리는 정밀 이동.",
+      "purpose": "이동은 거리와 타이밍을 만드는 기술이다. 발차기 자체보다 **어떻게 그 발차기가 나올 거리를 만드는가**가 겨루기 승패를 가른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:이동-풋워크"
+      ],
+      "youtubeSearchQuery": "taekwondo 끌기(드래그 스텝) / 밀기 technique"
+    },
+    {
+      "id": "taekwondo__바로지르기-반대지르기",
+      "martialArt": "taekwondo",
+      "name": "바로지르기 / 반대지르기",
+      "koreanName": "바로지르기 / 반대지르기",
+      "aliases": [
+        "바로지르기",
+        "반대지르기"
+      ],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "전진하며 짧게 찔러 몸통 1점을 시도하거나, 발차기 이후 마무리 동작으로 사용.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 바로지르기 / 반대지르기 technique"
+    },
+    {
+      "id": "taekwondo__지르기-바로지르기-반대지르기-돌려지르기-옆지르기-내려지르기",
+      "martialArt": "taekwondo",
+      "name": "지르기 / 바로지르기 / 반대지르기 / 돌려지르기 / 옆지르기 / 내려지르기",
+      "koreanName": "지르기 / 바로지르기 / 반대지르기 / 돌려지르기 / 옆지르기 / 내려지르기",
+      "aliases": [
+        "지르기",
+        "바로지르기",
+        "반대지르기",
+        "돌려지르기",
+        "옆지르기",
+        "내려지르기"
+      ],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "표적(몸통·얼굴)과 반동(반대편 다리·팔)에 따라 구분. 반대지르기는 회전력을 더해 위력을 높이는 스타링 핵심 기술.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 지르기 / 바로지르기 / 반대지르기 / 돌려지르기 / 옆지르기 / 내려지르기 technique"
+    },
+    {
+      "id": "taekwondo__등주먹",
+      "martialArt": "taekwondo",
+      "name": "등주먹",
+      "koreanName": "등주먹치기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "등주먹치기; 짧은 거리에서 얼굴·관자놀이 측면을 타격. 접근전에서 유효.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 등주먹 technique"
+    },
+    {
+      "id": "taekwondo__망치주먹",
+      "martialArt": "taekwondo",
+      "name": "망치주먹",
+      "koreanName": "메주먹",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "메주먹; 위에서 내려찍듯 타격. 방어 후 반격에 사용.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 망치주먹 technique"
+    },
+    {
+      "id": "taekwondo__손날치기",
+      "martialArt": "taekwondo",
+      "name": "손날치기",
+      "koreanName": "손날치기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "손날바깥치기 / 손날안치기 / 손날목치기; 목, 관자놀이 등 급소를 노리는 ITF·호신술 핵심 기술.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 손날치기 technique"
+    },
+    {
+      "id": "taekwondo__손날등치기",
+      "martialArt": "taekwondo",
+      "name": "손날등치기",
+      "koreanName": "손날등치기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "손날치기의 반대 방향 응용, 근접 반격용.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 손날등치기 technique"
+    },
+    {
+      "id": "taekwondo__바탕손",
+      "martialArt": "taekwondo",
+      "name": "바탕손",
+      "koreanName": "바탕손밀기 / 바탕손누르기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "바탕손밀기 / 바탕손누르기; 강하게 밀거나 눌러 균형을 무너뜨리는 용도. 호신술에서 상대를 밀어내며 거리를 만들 때 사용.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 바탕손 technique"
+    },
+    {
+      "id": "taekwondo__팔굽치기",
+      "martialArt": "taekwondo",
+      "name": "팔굽치기",
+      "koreanName": "팔굽치기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "앞팔굽치기 / 옆팔굽치기 / 위팔굽치기 / 내려팔굽치기; 초근접 거리에서 지르기보다 강한 파괴력을 내는 기술. 클린치· 호신술 상황의 핵심.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 팔굽치기 technique"
+    },
+    {
+      "id": "taekwondo__편손끝",
+      "martialArt": "taekwondo",
+      "name": "편손끝",
+      "koreanName": "편손끝치기",
+      "aliases": [],
+      "category": "손기술",
+      "positions": [
+        "손기술"
+      ],
+      "description": "편손끝치기; 급소를 정확히 노리는 정밀 타격. 호신술· 시범에서 사용.",
+      "purpose": "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다. 따라서 WT에서는 손기술이 득점 수단보다는 **거리 확인·페인트·마무리 동작**으로 쓰이는 경우가 많다.\n\nITF 및 품새 기본기에서는 손기술의 종류와 활용이 훨씬 다양하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:손기술"
+      ],
+      "youtubeSearchQuery": "taekwondo 편손끝 technique"
+    },
+    {
+      "id": "taekwondo__아래막기",
+      "martialArt": "taekwondo",
+      "name": "아래막기",
+      "koreanName": "아래막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "하단(낭심·복부) 공격 방어. 막은 뒤 반격을 위한 자세 전환에 사용.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 아래막기 technique"
+    },
+    {
+      "id": "taekwondo__몸통막기",
+      "martialArt": "taekwondo",
+      "name": "몸통막기",
+      "koreanName": "바깥막기 / 안막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "바깥막기 / 안막기; 몸통 지르기·발차기를 옆으로 흘려 중심선을 비우지 않고 반격 각을 만든다.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 몸통막기 technique"
+    },
+    {
+      "id": "taekwondo__얼굴막기",
+      "martialArt": "taekwondo",
+      "name": "얼굴막기",
+      "koreanName": "올려막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "올려막기; 상단 공격 방어. 얼굴 공격이 허용되는 ITF 스타링·호신술에서 특히 중요.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 얼굴막기 technique"
+    },
+    {
+      "id": "taekwondo__손날막기-한손날막기",
+      "martialArt": "taekwondo",
+      "name": "손날막기 / 한손날막기",
+      "koreanName": "손날막기 / 한손날막기",
+      "aliases": [
+        "손날막기",
+        "한손날막기"
+      ],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "강한 타격을 막아내며 동시에 다음 손날치기·반격으로 연결하기 쉬운 막기.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 손날막기 / 한손날막기 technique"
+    },
+    {
+      "id": "taekwondo__거들어막기",
+      "martialArt": "taekwondo",
+      "name": "거들어막기",
+      "koreanName": "거들어막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "한 손이 다른 손을 보조해 강한 공격을 이중으로 방어. 강한 공격이 예상될 때 사용.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 거들어막기 technique"
+    },
+    {
+      "id": "taekwondo__헤쳐막기",
+      "martialArt": "taekwondo",
+      "name": "헤쳐막기",
+      "koreanName": "헤쳐막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "양손으로 좌우를 넓게 걷어내는 막기. 잡히거나 양손 공격을 받을 때 대응.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 헤쳐막기 technique"
+    },
+    {
+      "id": "taekwondo__금강막기",
+      "martialArt": "taekwondo",
+      "name": "금강막기",
+      "koreanName": "금강막기",
+      "aliases": [],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "상단과 하단을 동시에 방어하는 복합 막기. 여러 방향에서 공격이 동시에 올 때 사용.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 금강막기 technique"
+    },
+    {
+      "id": "taekwondo__두손목막기-엇걸어막기-가위막기-산틀막기",
+      "martialArt": "taekwondo",
+      "name": "두손목막기 / 엇걸어막기 / 가위막기 / 산틀막기",
+      "koreanName": "두손목막기 / 엇걸어막기 / 가위막기 / 산틀막기",
+      "aliases": [
+        "두손목막기",
+        "엇걸어막기",
+        "가위막기",
+        "산틀막기"
+      ],
+      "category": "막기",
+      "positions": [
+        "막기"
+      ],
+      "description": "품새에 등장하는 복합·교차 막기로, 다중 공격 방어 또는 특정 품새의 상징적 동작.",
+      "purpose": "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다. 특히 ITF 기본기·품새에서는 막기 자체가 공격 전환의 시작점이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:막기"
+      ],
+      "youtubeSearchQuery": "taekwondo 두손목막기 / 엇걸어막기 / 가위막기 / 산틀막기 technique"
+    },
+    {
+      "id": "taekwondo__앞차기",
+      "martialArt": "taekwondo",
+      "name": "앞차기",
+      "koreanName": "앞차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "정면의 몸통·얼굴을 직선으로 타격. 거리 확인·저지 (스토핑)용으로도 사용해 상대의 전진을 끊는다.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞차기 technique"
+    },
+    {
+      "id": "taekwondo__돌려차기",
+      "martialArt": "taekwondo",
+      "name": "돌려차기",
+      "koreanName": "돌려차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "몸을 회전시켜 옆에서 몸통·얼굴로 감아 차는 가장 빈도 높은 발차기. WT에서는 앞발/뒷발 돌려차기가 득점의 주력.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "뒤후려차기",
+        "뒤차기"
+      ],
+      "relatedTechniques": [
+        "taekwondo__뒤후려차기",
+        "taekwondo__뒤차기",
+        "taekwondo__스위치-스텝",
+        "taekwondo__후려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__옆차기",
+      "martialArt": "taekwondo",
+      "name": "옆차기",
+      "koreanName": "옆차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "발바닥으로 직선으로 밀어 차는 강한 발차기. 거리 유지, 카운터, 몸통 강타에 사용.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 옆차기 technique"
+    },
+    {
+      "id": "taekwondo__뒤차기",
+      "martialArt": "taekwondo",
+      "name": "뒤차기",
+      "koreanName": "뒤차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)",
+        "겨루기 발차기 [WT 중심]"
+      ],
+      "description": "등을 돌린 상태에서 뒤로 강하게 뻗어 차는 고위력 발차기. 카운터·마무리 기술로 활용.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "taekwondo__돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒤차기 technique"
+    },
+    {
+      "id": "taekwondo__내려차기",
+      "martialArt": "taekwondo",
+      "name": "내려차기",
+      "koreanName": "내려차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "위에서 아래로 찍듯 차는 발차기. 상대의 막기·자세를 무너뜨리거나 얼굴을 노리는 기습 기술.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "taekwondo__앞발-돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 내려차기 technique"
+    },
+    {
+      "id": "taekwondo__반달차기",
+      "martialArt": "taekwondo",
+      "name": "반달차기",
+      "koreanName": "안반달차기 / 밖반달차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "안반달차기 / 밖반달차기; 곡선 궤도로 옆에서 얼굴· 팔을 걷어차는 기술. 막기를 걷어내며 얼굴을 노릴 때 사용.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 반달차기 technique"
+    },
+    {
+      "id": "taekwondo__밀어차기",
+      "martialArt": "taekwondo",
+      "name": "밀어차기",
+      "koreanName": "밀어차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "발바닥으로 강하게 밀어 상대를 밀쳐내며 거리를 회복하는 기술. 거리 유지와 카운터 유도의 핵심(8장 참조).",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 밀어차기 technique"
+    },
+    {
+      "id": "taekwondo__찍어차기",
+      "martialArt": "taekwondo",
+      "name": "찍어차기",
+      "koreanName": "찍어차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "발을 세워 위에서 아래로 강하게 내려찍는 기술. 근접 상황·잡힌 상황에서의 제압, 호신술에서도 사용.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 찍어차기 technique"
+    },
+    {
+      "id": "taekwondo__비틀어차기",
+      "martialArt": "taekwondo",
+      "name": "비틀어차기",
+      "koreanName": "비틀어차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "차는 순간 허리를 비틀어 회전력을 더하는 응용 기술로, 품새·시범에서 파괴력을 극대화할 때 사용.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 비틀어차기 technique"
+    },
+    {
+      "id": "taekwondo__표적차기",
+      "martialArt": "taekwondo",
+      "name": "표적차기",
+      "koreanName": "표적차기",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "정해진 표적(미트, 격파판)을 정확히 맞추는 훈련용 발차기로, 정확도·타이밍을 기르는 기본 훈련 방식이자 명칭.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 표적차기 technique"
+    },
+    {
+      "id": "taekwondo__후려차기",
+      "martialArt": "taekwondo",
+      "name": "후려차기",
+      "koreanName": "돌려후려차기 계열",
+      "aliases": [],
+      "category": "기본 발차기 (세부 명칭)",
+      "positions": [
+        "기본 발차기 (세부 명칭)"
+      ],
+      "description": "돌려후려차기 계열; 차는 발을 채찍처럼 휘둘러 안쪽/바깥쪽으로 감아 치는 기술. 회전 발차기(9장)의 기초.",
+      "purpose": "발차기는 태권도의 핵심 무기다. 아래는 기본 발차기의 세부 명칭과 \"어떤 상황에 쓰는가\"를 정리한 것이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:기본-발차기-세부-명칭"
+      ],
+      "youtubeSearchQuery": "taekwondo 후려차기 technique"
+    },
+    {
+      "id": "taekwondo__대표-기술",
+      "martialArt": "taekwondo",
+      "name": "대표 기술",
+      "koreanName": "대표 기술: 얼굴 돌려차기, 뒤후려차기, 내려차기, 반달차기.",
+      "aliases": [],
+      "category": "발차기 표적 부위 분류",
+      "positions": [
+        "발차기 표적 부위 분류"
+      ],
+      "description": "",
+      "purpose": "발차기는 표적 부위에 따라 전술적 가치와 규칙상 허용 여부가 다르다.\n\nWT 겨루기에서 머리 공격은 3점, 회전이 들어가면 5점(시즌별 세부 수치는 변경 가능)으로 **가장 높은 배점**을 받는다. 위험 부담이 크지만 경기를 뒤집는 결정적 수단이다.\n\nITF 스타링에서도 얼굴 공격이 허용되는 경우가 많아 손기술(등주먹, 손날치기)과 발차기를 함께 노린다.\n\n호구가 있는 부위로, 안정적으로 점수를 쌓는 기본 표적. WT에서 몸통 회전차기(4점)는 안정성과 고득점을 동시에 만족하는 핵심 전술.\n\nWT 올림픽 겨루기에서는 **벨트 아래 하단 공격은 유효 타격으로 인정되지 않으며 하단 공격 반칙으로 감점될 수 있다** --- 따라서 WT 선수는 의도적으로 하단을 노리지 않는다.\n\nITF·호신술 맥락에서는 무릎·정강이 등 하단이 실전 방어 기술 (찍어차기, 아래막기 연계 반격)의 대상이 될 수 있으나, 스포츠 스타링에서는 협회 규정에 따라 제한적으로만 인정된다.",
+      "principles": [],
+      "variations": [
+        "얼굴 돌려차기",
+        "뒤후려차기",
+        "내려차기",
+        "반달차기.",
+        "몸통 돌려차기",
+        "옆차기",
+        "뒤차기",
+        "밀어차기",
+        "몸통 지르기."
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "karate"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:발차기-표적-부위-분류"
+      ],
+      "youtubeSearchQuery": "taekwondo 대표 기술 technique"
+    },
+    {
+      "id": "taekwondo__앞발-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "앞발 돌려차기",
+      "koreanName": "앞발 돌려차기",
+      "aliases": [],
+      "category": "겨루기 발차기 [WT 중심]",
+      "positions": [
+        "겨루기 발차기 [WT 중심]"
+      ],
+      "description": "가장 빈도 높은 기술. 거리 재기, 견제, 실제 득점을 모두 겸한다. 빠르게 여러 번 내면서 상대의 리듬을 흔든다.",
+      "purpose": "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "뒷발 돌려차기",
+        "내려차기"
+      ],
+      "relatedTechniques": [
+        "taekwondo__뒷발-돌려차기",
+        "taekwondo__내려차기",
+        "taekwondo__돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:겨루기-발차기-wt-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞발 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__뒷발-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "뒷발 돌려차기",
+      "koreanName": "뒷발 돌려차기",
+      "aliases": [],
+      "category": "겨루기 발차기 [WT 중심]",
+      "positions": [
+        "겨루기 발차기 [WT 중심]"
+      ],
+      "description": "회전력과 체중이 실려 위력이 크다. 앞발 기술로 거리를 좁힌 뒤 마무리 득점 기술로 사용.",
+      "purpose": "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "taekwondo__앞발-돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:겨루기-발차기-wt-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒷발 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__앞발-밀어차기-뒷발-밀어차기",
+      "martialArt": "taekwondo",
+      "name": "앞발 밀어차기 / 뒷발 밀어차기",
+      "koreanName": "앞발 밀어차기 / 뒷발 밀어차기",
+      "aliases": [
+        "앞발 밀어차기",
+        "뒷발 밀어차기"
+      ],
+      "category": "겨루기 발차기 [WT 중심]",
+      "positions": [
+        "겨루기 발차기 [WT 중심]"
+      ],
+      "description": "직접 득점보다 **거리 유지와 카운터 유도**가 주목적. 상대의 전진을 밀어내 무너뜨리고, 상대가 균형을 잃는 순간 반대발 공격(돌려차기 등)으로 연결한다.",
+      "purpose": "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:겨루기-발차기-wt-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞발 밀어차기 / 뒷발 밀어차기 technique"
+    },
+    {
+      "id": "taekwondo__나래차기",
+      "martialArt": "taekwondo",
+      "name": "나래차기",
+      "koreanName": "나래차기",
+      "aliases": [],
+      "category": "겨루기 발차기 [WT 중심]",
+      "positions": [
+        "겨루기 발차기 [WT 중심]",
+        "점프 / 공중 발차기"
+      ],
+      "description": "앞발로 견제(체크·밀어차기 유사 동작)한 뒤 곧바로 같은 방향으로 뒷발 돌려차기를 잇는 2단 콤비네이션. WT에서 매우 빈번한 득점 패턴.",
+      "purpose": "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:겨루기-발차기-wt-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 나래차기 technique"
+    },
+    {
+      "id": "taekwondo__뒤후려차기",
+      "martialArt": "taekwondo",
+      "name": "뒤후려차기",
+      "koreanName": "뒤후려차기",
+      "aliases": [],
+      "category": "겨루기 발차기 [WT 중심]",
+      "positions": [
+        "겨루기 발차기 [WT 중심]",
+        "회전 발차기"
+      ],
+      "description": "회전이 커서 고득점(특히 얼굴)을 노리는 대표적인 **카운터/역습 기술**. 상대가 앞발 기술을 반복할 때 타이밍을 뺏어 사용하는 경우가 많다.",
+      "purpose": "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "taekwondo__돌려차기"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:겨루기-발차기-wt-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒤후려차기 technique"
+    },
+    {
+      "id": "taekwondo__뒷발-돌려차기의-완전-회전형",
+      "martialArt": "taekwondo",
+      "name": "뒷발 돌려차기의 완전 회전형",
+      "koreanName": "뒷발 돌려차기의 완전 회전형",
+      "aliases": [],
+      "category": "회전 발차기",
+      "positions": [
+        "회전 발차기"
+      ],
+      "description": "몸을 크게 돌려 반대쪽에서 감아 찬다. 상대의 예상 타이밍을 완전히 벗어나기 위해 사용.",
+      "purpose": "몸을 완전히 돌려서 차는 발차기군으로, WT에서는 고배점, ITF·시범에서는 파괴력·화려함 때문에 중요하게 다뤄진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:회전-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒷발 돌려차기의 완전 회전형 technique"
+    },
+    {
+      "id": "taekwondo__회전-내려차기-회전-옆차기",
+      "martialArt": "taekwondo",
+      "name": "회전 내려차기 / 회전 옆차기",
+      "koreanName": "회전 내려차기 / 회전 옆차기",
+      "aliases": [
+        "회전 내려차기",
+        "회전 옆차기"
+      ],
+      "category": "회전 발차기",
+      "positions": [
+        "회전 발차기"
+      ],
+      "description": "회전력으로 위력을 더한 응용 발차기. 격파·시범에서 자주 활용.",
+      "purpose": "몸을 완전히 돌려서 차는 발차기군으로, WT에서는 고배점, ITF·시범에서는 파괴력·화려함 때문에 중요하게 다뤄진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:회전-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 회전 내려차기 / 회전 옆차기 technique"
+    },
+    {
+      "id": "taekwondo__뒤돌아차기-계열",
+      "martialArt": "taekwondo",
+      "name": "뒤돌아차기 계열",
+      "koreanName": "뒤돌아차기 계열",
+      "aliases": [],
+      "category": "회전 발차기",
+      "positions": [
+        "회전 발차기"
+      ],
+      "description": "등을 돌리는 동작 자체를 페인트로 쓰고 실제로는 다른 발차기(뒤차기·뒤후려차기)로 전환하는 심화 응용.",
+      "purpose": "몸을 완전히 돌려서 차는 발차기군으로, WT에서는 고배점, ITF·시범에서는 파괴력·화려함 때문에 중요하게 다뤄진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:회전-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒤돌아차기 계열 technique"
+    },
+    {
+      "id": "taekwondo__뛰어앞차기-뛰어돌려차기-뛰어옆차기-뛰어뒤차기-뛰어내려차기",
+      "martialArt": "taekwondo",
+      "name": "뛰어앞차기 / 뛰어돌려차기 / 뛰어옆차기 / 뛰어뒤차기 / 뛰어내려차기",
+      "koreanName": "뛰어앞차기 / 뛰어돌려차기 / 뛰어옆차기 / 뛰어뒤차기 / 뛰어내려차기",
+      "aliases": [
+        "뛰어앞차기",
+        "뛰어돌려차기",
+        "뛰어옆차기",
+        "뛰어뒤차기",
+        "뛰어내려차기"
+      ],
+      "category": "점프 / 공중 발차기",
+      "positions": [
+        "점프 / 공중 발차기"
+      ],
+      "description": "각 기본 발차기의 점프 버전으로, 도약을 이용해 사거리를 늘리거나 높은 표적(얼굴)에 닿기 위해 사용.",
+      "purpose": "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술. 격파·시범에서 특히 비중이 크다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:점프-공중-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 뛰어앞차기 / 뛰어돌려차기 / 뛰어옆차기 / 뛰어뒤차기 / 뛰어내려차기 technique"
+    },
+    {
+      "id": "taekwondo__이단옆차기",
+      "martialArt": "taekwondo",
+      "name": "이단옆차기",
+      "koreanName": "이단옆차기",
+      "aliases": [],
+      "category": "점프 / 공중 발차기",
+      "positions": [
+        "점프 / 공중 발차기"
+      ],
+      "description": "같은 다리로 옆차기를 두 번 연속 내는 기술. 한 번은 견제, 한 번은 실제 타격으로 상대의 반응을 속인다.",
+      "purpose": "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술. 격파·시범에서 특히 비중이 크다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:점프-공중-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 이단옆차기 technique"
+    },
+    {
+      "id": "taekwondo__뛰어이단옆차기",
+      "martialArt": "taekwondo",
+      "name": "뛰어이단옆차기",
+      "koreanName": "뛰어이단옆차기",
+      "aliases": [],
+      "category": "점프 / 공중 발차기",
+      "positions": [
+        "점프 / 공중 발차기"
+      ],
+      "description": "이단옆차기의 점프 버전으로, 격파·시범에서 위력과 사거리를 동시에 극대화하기 위해 사용.",
+      "purpose": "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술. 격파·시범에서 특히 비중이 크다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:점프-공중-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 뛰어이단옆차기 technique"
+    },
+    {
+      "id": "taekwondo__공중회전-발차기-다단-멀티-점프-발차기",
+      "martialArt": "taekwondo",
+      "name": "공중회전 발차기 / 다단(멀티) 점프 발차기",
+      "koreanName": "공중회전 발차기 / 다단(멀티) 점프 발차기",
+      "aliases": [
+        "공중회전 발차기",
+        "다단(멀티) 점프 발차기"
+      ],
+      "category": "점프 / 공중 발차기",
+      "positions": [
+        "점프 / 공중 발차기"
+      ],
+      "description": "시범단·격파 시범에서 사용하는 고난도 기술로, 실제 스포츠 겨루기보다는 격파· 퍼포먼스 목적이 크다.",
+      "purpose": "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술. 격파·시범에서 특히 비중이 크다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:점프-공중-발차기"
+      ],
+      "youtubeSearchQuery": "taekwondo 공중회전 발차기 / 다단(멀티) 점프 발차기 technique"
+    },
+    {
+      "id": "taekwondo__앞발-돌려차기-뒷발-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "앞발 돌려차기 → 뒷발 돌려차기",
+      "koreanName": "앞발 돌려차기 → 뒷발 돌려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "앞발로 리듬을 만들고 강한 뒷발로 마무리.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞발 돌려차기 → 뒷발 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__앞발-돌려차기-내려차기",
+      "martialArt": "taekwondo",
+      "name": "앞발 돌려차기 → 내려차기",
+      "koreanName": "앞발 돌려차기 → 내려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "상대가 몸통 막기에 익숙해졌을 때 상단으로 전환.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞발 돌려차기 → 내려차기 technique"
+    },
+    {
+      "id": "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "앞발 밀어차기 → 반대발(뒷발) 돌려차기",
+      "koreanName": "앞발 밀어차기 → 반대발(뒷발) 돌려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "밀어차기로 상대의 자세를 무너뜨린 뒤, 회복하기 전에 반대쪽 다리로 회전 발차기를 꽂는 대표적인 카운터 타이밍 패턴.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞발 밀어차기 → 반대발(뒷발) 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__돌려차기-뒤후려차기",
+      "martialArt": "taekwondo",
+      "name": "돌려차기 → 뒤후려차기",
+      "koreanName": "돌려차기 → 뒤후려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "정면 회전 발차기 이후 상대가 대응하는 순간 반대 회전으로 재차 공격.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 돌려차기 → 뒤후려차기 technique"
+    },
+    {
+      "id": "taekwondo__돌려차기-뒤차기",
+      "martialArt": "taekwondo",
+      "name": "돌려차기 → 뒤차기",
+      "koreanName": "돌려차기 → 뒤차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "회전 방향을 반대로 이어 상대의 카운터 타점을 피한다.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 돌려차기 → 뒤차기 technique"
+    },
+    {
+      "id": "taekwondo__돌려차기-주먹-반대지르기",
+      "martialArt": "taekwondo",
+      "name": "돌려차기 → 주먹(반대지르기)",
+      "koreanName": "돌려차기 → 주먹(반대지르기)",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "발차기 이후 짧은 손기술로 마무리.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 돌려차기 → 주먹(반대지르기) technique"
+    },
+    {
+      "id": "taekwondo__페인트-스텝-몸통-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "페인트 스텝 → 몸통 돌려차기",
+      "koreanName": "페인트 스텝 → 몸통 돌려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "스텝으로 공격을 흉내 내 상대가 방어 자세를 취하거나 뒤로 빠지게 한 뒤, 실제 공격을 다른 타이밍에 꽂는 기본 페인트 전술.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 페인트 스텝 → 몸통 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__스위치-스텝-돌려차기",
+      "martialArt": "taekwondo",
+      "name": "스위치 스텝 → 돌려차기",
+      "koreanName": "스위치 스텝 → 돌려차기",
+      "aliases": [],
+      "category": "연결 기술 (콤비네이션)",
+      "positions": [
+        "연결 기술 (콤비네이션)"
+      ],
+      "description": "주력 다리를 앞으로 바꿔 위력을 극대화한 회전 발차기 연결.",
+      "purpose": "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:연결-기술-콤비네이션"
+      ],
+      "youtubeSearchQuery": "taekwondo 스위치 스텝 → 돌려차기 technique"
+    },
+    {
+      "id": "taekwondo__밀어차기-앞발-돌려차기-앞차기-옆차기",
+      "martialArt": "taekwondo",
+      "name": "밀어차기, 앞발 돌려차기, 앞차기, 옆차기",
+      "koreanName": "밀어차기, 앞발 돌려차기, 앞차기, 옆차기",
+      "aliases": [
+        "밀어차기",
+        "앞발 돌려차기",
+        "앞차기",
+        "옆차기"
+      ],
+      "category": "거리별 전술",
+      "positions": [
+        "거리별 전술"
+      ],
+      "description": "거리 재기, 상대 반응 유도, 진입 차단.",
+      "purpose": "상대와 발이 닿지 않는 거리. 목적은 **정보 수집과 선제 견제**.\n\n발차기 사거리 안. **주력 득점 구간**.\n\n몸이 거의 붙는 거리. **발차기 위력이 떨어지고 클린치·손기술·규칙상 제재 위험이 커지는 구간**.\n\n짧은 발차기(무릎 높이 내려차기 등), 팔굽치기·손기술(ITF/호신술 맥락), 몸통 밀어내기, 클린치 상황 대응(심판 개입 전 거리 확보).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:거리별-전술"
+      ],
+      "youtubeSearchQuery": "taekwondo 밀어차기, 앞발 돌려차기, 앞차기, 옆차기 technique"
+    },
+    {
+      "id": "taekwondo__돌려차기-내려차기-나래차기-반대지르기",
+      "martialArt": "taekwondo",
+      "name": "돌려차기, 내려차기, 나래차기, 반대지르기",
+      "koreanName": "돌려차기, 내려차기, 나래차기, 반대지르기",
+      "aliases": [
+        "돌려차기",
+        "내려차기",
+        "나래차기",
+        "반대지르기"
+      ],
+      "category": "거리별 전술",
+      "positions": [
+        "거리별 전술"
+      ],
+      "description": "실제 득점 시도가 가장 많이 발생하는 거리.",
+      "purpose": "상대와 발이 닿지 않는 거리. 목적은 **정보 수집과 선제 견제**.\n\n발차기 사거리 안. **주력 득점 구간**.\n\n몸이 거의 붙는 거리. **발차기 위력이 떨어지고 클린치·손기술·규칙상 제재 위험이 커지는 구간**.\n\n짧은 발차기(무릎 높이 내려차기 등), 팔굽치기·손기술(ITF/호신술 맥락), 몸통 밀어내기, 클린치 상황 대응(심판 개입 전 거리 확보).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:거리별-전술"
+      ],
+      "youtubeSearchQuery": "taekwondo 돌려차기, 내려차기, 나래차기, 반대지르기 technique"
+    },
+    {
+      "id": "taekwondo__태극-1장",
+      "martialArt": "taekwondo",
+      "name": "태극 1장",
+      "koreanName": "건",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "건 --- 하늘; 가장 기초적인 서기·지르기·앞차기.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 1장 technique"
+    },
+    {
+      "id": "taekwondo__태극-2장",
+      "martialArt": "taekwondo",
+      "name": "태극 2장",
+      "koreanName": "태",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "태 --- 못/기쁨; 몸통막기·앞차기 응용.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 2장 technique"
+    },
+    {
+      "id": "taekwondo__태극-3장",
+      "martialArt": "taekwondo",
+      "name": "태극 3장",
+      "koreanName": "리",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "리 --- 불; 손기술(등주먹, 몸통지르기) 비중 증가.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 3장 technique"
+    },
+    {
+      "id": "taekwondo__태극-4장",
+      "martialArt": "taekwondo",
+      "name": "태극 4장",
+      "koreanName": "진",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "진 --- 우레; 처음으로 학다리서기·옆차기 등장.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 4장 technique"
+    },
+    {
+      "id": "taekwondo__태극-5장",
+      "martialArt": "taekwondo",
+      "name": "태극 5장",
+      "koreanName": "손",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "손 --- 바람; 내려차기·눌러막기 등 응용 막기 등장.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 5장 technique"
+    },
+    {
+      "id": "taekwondo__태극-6장",
+      "martialArt": "taekwondo",
+      "name": "태극 6장",
+      "koreanName": "감",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "감 --- 물; 반달차기·돌려차기 응용 확대.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 6장 technique"
+    },
+    {
+      "id": "taekwondo__태극-7장",
+      "martialArt": "taekwondo",
+      "name": "태극 7장",
+      "koreanName": "간",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "간 --- 산; 범서기 계열과 복합 막기(금강막기 등) 등장.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 7장 technique"
+    },
+    {
+      "id": "taekwondo__태극-8장",
+      "martialArt": "taekwondo",
+      "name": "태극 8장",
+      "koreanName": "곤",
+      "aliases": [],
+      "category": "품새 (Poomsae / Tul)",
+      "positions": [
+        "품새 (Poomsae / Tul)"
+      ],
+      "description": "곤 --- 땅; 유급자 마지막 품새로 그동안의 기술을 종합.",
+      "purpose": "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가 늘어난다.\n\n1단부터 순서대로 **고려 → 금강 → 태백 → 평원 → 십진 → 지태 → 천권 → 한수 → 일여**로 이어진다. 단이 올라갈수록 낮은 자세, 정지 동작, 호흡, 회전 발차기의 정교함이 강조된다.\n\nITF는 창헌류(Chang Hon) 틀 체계를 사용하며 색띠~단 순서로 **천지 → 단군 → 도산 → 원효 → 율곡 → 중근 → 퇴계 → 화랑 → 충무**(1단까지)로 이어지고, 이후 단이 올라가며 **광개 → 포은 → 계백 → 의암 → 충장 → 주체 → 삼일 → 유신 → 최영 → 연개 → 을지 → 문무 → 서산 → 세종 → 통일** 등으로 확장된다. 각 틀의 동작 수와 이름은 독립운동가·역사적 인물·개념에서 유래한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:품새-poomsae-tul"
+      ],
+      "youtubeSearchQuery": "taekwondo 태극 8장 technique"
+    },
+    {
+      "id": "taekwondo__위력격파",
+      "martialArt": "taekwondo",
+      "name": "위력격파",
+      "koreanName": "위력격파",
+      "aliases": [],
+      "category": "격파 (Kyokpa)",
+      "positions": [
+        "격파 (Kyokpa)"
+      ],
+      "description": "정해진 격파판/기와를 힘으로 격파. 대표 기술: 주먹격파, 손날격파, 팔굽격파, 발차기격파(돌려차기, 옆차기, 내려차기).",
+      "purpose": "격파는 정확한 타점·힘의 집중을 검증하는 수련이며 아래처럼 분류한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:격파-kyokpa"
+      ],
+      "youtubeSearchQuery": "taekwondo 위력격파 technique"
+    },
+    {
+      "id": "taekwondo__정확격파",
+      "martialArt": "taekwondo",
+      "name": "정확격파",
+      "koreanName": "정확격파",
+      "aliases": [],
+      "category": "격파 (Kyokpa)",
+      "positions": [
+        "격파 (Kyokpa)"
+      ],
+      "description": "여러 표적 중 지정된 하나만 정확히 격파. 타점 정밀도 훈련에 사용.",
+      "purpose": "격파는 정확한 타점·힘의 집중을 검증하는 수련이며 아래처럼 분류한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:taekwondo",
+        "category:격파-kyokpa"
+      ],
+      "youtubeSearchQuery": "taekwondo 정확격파 technique"
+    },
+    {
+      "id": "taekwondo__시범격파",
+      "martialArt": "taekwondo",
+      "name": "시범격파",
+      "koreanName": "시범격파",
+      "aliases": [],
+      "category": "격파 (Kyokpa)",
+      "positions": [
+        "격파 (Kyokpa)"
+      ],
+      "description": "회전·점프 발차기를 결합한 고난도 격파(뛰어이단옆차기 격파, 회전내려차기 격파 등). 시범단·심사에서 활용.",
+      "purpose": "격파는 정확한 타점·힘의 집중을 검증하는 수련이며 아래처럼 분류한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:격파-kyokpa"
+      ],
+      "youtubeSearchQuery": "taekwondo 시범격파 technique"
+    },
+    {
+      "id": "taekwondo__앞낙법-뒤낙법-옆낙법",
+      "martialArt": "taekwondo",
+      "name": "앞낙법 / 뒤낙법 / 옆낙법",
+      "koreanName": "앞낙법 / 뒤낙법 / 옆낙법",
+      "aliases": [
+        "앞낙법",
+        "뒤낙법",
+        "옆낙법"
+      ],
+      "category": "낙법과 호신술 [ITF 중심]",
+      "positions": [
+        "낙법과 호신술 [ITF 중심]"
+      ],
+      "description": "방향별 낙법. 호신술·격파 시범 중 균형을 잃었을 때의 안전한 낙법으로도 사용.",
+      "purpose": "넘어지거나 던져질 때 부상을 방지하는 기초 기술.\n\n잡히거나 붙잡힌 근접 상황에서의 대응 기술로, ITF 및 전통 도장 교육 과정에서 특히 강조된다.\n\n위 상황 모두 **낙법 → 거리 확보 → 손기술/팔굽치기 → 발차기 마무리**의 공통 흐름을 따른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:낙법과-호신술-itf-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 앞낙법 / 뒤낙법 / 옆낙법 technique"
+    },
+    {
+      "id": "taekwondo__굴러-낙법",
+      "martialArt": "taekwondo",
+      "name": "굴러 낙법",
+      "koreanName": "구르기",
+      "aliases": [],
+      "category": "낙법과 호신술 [ITF 중심]",
+      "positions": [
+        "낙법과 호신술 [ITF 중심]"
+      ],
+      "description": "구르기; 충격을 분산시키며 즉시 다음 동작(일어서기, 반격)으로 이어지는 낙법.",
+      "purpose": "넘어지거나 던져질 때 부상을 방지하는 기초 기술.\n\n잡히거나 붙잡힌 근접 상황에서의 대응 기술로, ITF 및 전통 도장 교육 과정에서 특히 강조된다.\n\n위 상황 모두 **낙법 → 거리 확보 → 손기술/팔굽치기 → 발차기 마무리**의 공통 흐름을 따른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:낙법과-호신술-itf-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 굴러 낙법 technique"
+    },
+    {
+      "id": "taekwondo__손목-잡힘-대응",
+      "martialArt": "taekwondo",
+      "name": "손목 잡힘 대응",
+      "koreanName": "손목 잡힘 대응",
+      "aliases": [],
+      "category": "낙법과 호신술 [ITF 중심]",
+      "positions": [
+        "낙법과 호신술 [ITF 중심]"
+      ],
+      "description": "손목을 비틀거나 각도를 바꿔 빠져나온 뒤 손날치기·팔굽치기로 반격.",
+      "purpose": "넘어지거나 던져질 때 부상을 방지하는 기초 기술.\n\n잡히거나 붙잡힌 근접 상황에서의 대응 기술로, ITF 및 전통 도장 교육 과정에서 특히 강조된다.\n\n위 상황 모두 **낙법 → 거리 확보 → 손기술/팔굽치기 → 발차기 마무리**의 공통 흐름을 따른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:낙법과-호신술-itf-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 손목 잡힘 대응 technique"
+    },
+    {
+      "id": "taekwondo__옷깃-어깨-잡힘-대응",
+      "martialArt": "taekwondo",
+      "name": "옷깃/어깨 잡힘 대응",
+      "koreanName": "옷깃/어깨 잡힘 대응",
+      "aliases": [],
+      "category": "낙법과 호신술 [ITF 중심]",
+      "positions": [
+        "낙법과 호신술 [ITF 중심]"
+      ],
+      "description": "바탕손 밀기·손날치기로 거리를 만든 뒤 찍어차기·무릎 반격.",
+      "purpose": "넘어지거나 던져질 때 부상을 방지하는 기초 기술.\n\n잡히거나 붙잡힌 근접 상황에서의 대응 기술로, ITF 및 전통 도장 교육 과정에서 특히 강조된다.\n\n위 상황 모두 **낙법 → 거리 확보 → 손기술/팔굽치기 → 발차기 마무리**의 공통 흐름을 따른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:낙법과-호신술-itf-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 옷깃/어깨 잡힘 대응 technique"
+    },
+    {
+      "id": "taekwondo__뒤에서-안겼을-때-대응",
+      "martialArt": "taekwondo",
+      "name": "뒤에서 안겼을 때 대응",
+      "koreanName": "뒤에서 안겼을 때 대응",
+      "aliases": [],
+      "category": "낙법과 호신술 [ITF 중심]",
+      "positions": [
+        "낙법과 호신술 [ITF 중심]"
+      ],
+      "description": "몸의 중심을 낮추고 팔굽치기·발등치기 (뒤꿈치로 정강이 가격)로 벗어난 뒤 반격.",
+      "purpose": "넘어지거나 던져질 때 부상을 방지하는 기초 기술.\n\n잡히거나 붙잡힌 근접 상황에서의 대응 기술로, ITF 및 전통 도장 교육 과정에서 특히 강조된다.\n\n위 상황 모두 **낙법 → 거리 확보 → 손기술/팔굽치기 → 발차기 마무리**의 공통 흐름을 따른다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:taekwondo",
+        "category:낙법과-호신술-itf-중심"
+      ],
+      "youtubeSearchQuery": "taekwondo 뒤에서 안겼을 때 대응 technique"
+    }
+  ]
+}

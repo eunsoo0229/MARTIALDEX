@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>MARTIALDEX 개발 보고서 — 학습 커리큘럼 시스템</title>
+<style>
+  @page { margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    color: #1c1b19; line-height: 1.7; font-size: 13.5px;
+    max-width: 780px; margin: 0 auto; padding: 0;
+  }
+  .doc-header { border-bottom: 3px solid #9c2b2b; padding-bottom: 16px; margin-bottom: 28px; }
+  .doc-header .stage-label {
+    display: inline-block; background: #9c2b2b; color: #fff; font-size: 11.5px; font-weight: 700;
+    padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; letter-spacing: 0.03em;
+  }
+  .doc-header h1 { font-size: 25px; margin: 0 0 6px; font-family: Georgia, 'Iowan Old Style', serif; }
+  .doc-header .meta { color: #6b6459; font-size: 12px; }
+  h2 { font-size: 16.5px; margin-top: 30px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ddd6ca; color: #7c2020; }
+  h3 { font-size: 14px; margin-top: 18px; margin-bottom: 6px; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12px; }
+  th, td { border: 1px solid #ddd6ca; padding: 5px 9px; text-align: left; vertical-align: top; }
+  th { background: #f6f4f0; font-weight: 700; }
+  code { background: #edeae4; padding: 1px 6px; border-radius: 4px; font-size: 12px; font-family: 'SF Mono', Menlo, monospace; }
+  pre { background: #f6f4f0; border: 1px solid #ddd6ca; border-radius: 6px; padding: 10px 12px; font-size: 11.5px; overflow-x: auto; font-family: 'SF Mono', Menlo, monospace; }
+  .callout { background: #fbf3e6; border-left: 4px solid #a3792f; padding: 10px 14px; margin: 14px 0; font-size: 12.5px; border-radius: 0 6px 6px 0; }
+  .stat-grid { display: flex; gap: 14px; margin: 14px 0; flex-wrap: wrap; }
+  .stat-box { flex: 1; min-width: 100px; border: 1px solid #ddd6ca; border-radius: 8px; padding: 10px 12px; text-align: center; }
+  .stat-box .num { font-size: 20px; font-weight: 800; color: #9c2b2b; font-family: Georgia, serif; }
+  .stat-box .label { font-size: 10.5px; color: #6b6459; margin-top: 2px; }
+  .doc-footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #ddd6ca; color: #93897a; font-size: 11px; text-align: center; }
+  .file-list { font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="stage-label">개발 단계 보고서 · 학습 커리큘럼 시스템</span>
+  <h1>MARTIALDEX — 학습 커리큘럼 시스템 구현</h1>
+  <div class="meta">작업 일자: 2026-08-14 · 작성: Claude (개발 어시스턴트)</div>
+</div>
+
+<h2>1. 개요</h2>
+<p>기존 백과사전·검색·필터·YouTube·AI 기능을 훼손하지 않는 선에서, (1) Martialdex가 설계한 무술별
+추천 커리큘럼, (2) 사용자가 직접 만드는 개인 커리큘럼, (3) 커리큘럼을 다른 사람과 공유하는 기능,
+세 축을 구현했다.</p>
+
+<h2>2. 9개 무술별 추천 커리큘럼 Day 수</h2>
+<table>
+  <tr><th>무술</th><th>Day 수</th><th>사용 기술 수</th><th>단계 수</th></tr>
+  <tr><td>주짓수 (bjj)</td><td>53</td><td>129 / 319</td><td>10</td></tr>
+  <tr><td>가라테</td><td>35</td><td>88 / 88</td><td>8</td></tr>
+  <tr><td>레슬링</td><td>39</td><td>97 / 189</td><td>10</td></tr>
+  <tr><td>무에타이</td><td>35</td><td>77 / 94</td><td>7</td></tr>
+  <tr><td>복싱</td><td>34</td><td>83 / 135</td><td>7</td></tr>
+  <tr><td>삼보</td><td>50</td><td>86 / 91</td><td>8</td></tr>
+  <tr><td>유도</td><td>45</td><td>103 / 133</td><td>11</td></tr>
+  <tr><td>킥복싱</td><td>39</td><td>92 / 121</td><td>9</td></tr>
+  <tr><td>태권도</td><td>44</td><td>80 / 83</td><td>8</td></tr>
+</table>
+<p>모두 30~60일 범위 안에서, 무술마다 실제 기술 데이터(category/difficulty/원문 순서)를 기반으로
+서로 다른 단계 구조를 설계했다 — 균일 분할이 아니다.</p>
+
+<h3>학습 구조 예시</h3>
+<p><strong>주짓수</strong>: 기본 움직임 → 스탠딩/테이크다운 → 기본 포지션 → 가드 기초 → 가드 응용 →
+이스케이프 → 가드 패스 → 기본 서브미션 → 레그락/백 서브미션 → 포지션 전환.</p>
+<p><strong>복싱</strong>: 기본 자세/풋워크 → 기본 펀치 → 기본 방어 → 거리 조절 → 콤비네이션 →
+방어-공격 연결 → 상황별 응용.</p>
+<p>관절기·던지기·조르기 구간은 하루 기술 수를 줄이고 안전 안내를 강화했다.</p>
+
+<h2>3. 새로 만든 파일</h2>
+<p class="file-list">
+  <code>scripts/generate-curriculum.mjs</code>(생성기, 실제 기술 ID만 참조·검증) ·
+  <code>data/curriculum/official/*.json</code>(9개 + 요약) ·
+  <code>src/lib/curriculum/</code>{types, officialData, repository, curriculumService, shareCode, useCurriculum}.ts ·
+  <code>src/pages/</code>{LearningHub, CurriculumList, CurriculumDayList, CurriculumDayDetail, CurriculumEditor, Community}.tsx ·
+  <code>.devtools/qa-curriculum.mjs</code>
+</p>
+
+<h2>4. 수정한 파일</h2>
+<p class="file-list">
+  <code>App.tsx</code>(라우팅) · <code>Header.tsx</code>(학습/커뮤니티 메뉴) ·
+  <code>AiAskModal.tsx</code> + <code>ai/context.ts</code>(Day 컨텍스트 추가) ·
+  <code>Home.tsx</code>(모바일 진입 버튼) · <code>global.css</code> · <code>README.md</code>.
+  기존 파일 삭제나 기존 데이터 재생성은 없었다.
+</p>
+
+<h2>5. 사용자 커스텀 커리큘럼</h2>
+<p>이름/설명/대표무술/공개여부/커버아이콘 설정, Day 추가·삭제·순서변경(▲▼), 기술 검색-추가/제거
+(모든 무술 대상, 실제 백과사전 기술만 선택 가능 — 가짜 기술 생성 불가), 학습목표/예상시간 편집을
+모두 구현하고 테스트했다.</p>
+
+<h2>6. 공유 기능 범위</h2>
+<p>
+  백엔드·사용자 계정이 없어 실제 서버 커뮤니티는 만들지 않았다. 대신 <strong>공유 코드</strong>
+  (<code>MDCUR1.</code> + base64 JSON)로 실제 작동하는 로컬-우선 공유를 구현했다: 복사 → 전달 →
+  가져오기 시 미리보기 → "내 커리큘럼에 추가"(원본 훼손 없이 새 복사본 생성, 존재하지 않는 기술 ID는
+  자동 제외).
+</p>
+<pre>UI
+  ↓
+Curriculum Service
+  ↓
+CurriculumRepository (interface)
+  ↓
+LocalCurriculumRepository (지금 유일한 구현체)
+  → 향후 Firebase/Supabase 등 원격 Repository로 교체 가능 (UI/서비스 변경 없음)</pre>
+<p>좋아요/사용횟수는 현재 로컬 전용이라는 점을 UI에 명시했다.</p>
+
+<h2>7. 테스트 결과</h2>
+<div class="stat-grid">
+  <div class="stat-box"><div class="num">38 / 38</div><div class="label">Playwright 통과</div></div>
+  <div class="stat-box"><div class="num">0</div><div class="label">콘솔 에러</div></div>
+</div>
+<p>9개 무술 커리큘럼, Day 목록/상세, 기술 연결, 진행률, 완료 상태 저장 + <strong>앱 재시작 후 진행률
+유지 확인</strong>, 오늘 학습하기, 복습, 커스텀 생성/Day·기술 추가삭제/순서변경/공개설정, 커뮤니티
+탐색/필터, 공유 코드 생성 → 가져오기 → 원본 미훼손 복사 확인, 기존 백과사전/검색/필터/YouTube/
+Gemini AI 회귀 — 모두 정상. 발견해 수정한 버그: 편집기 textarea 흰 배경 CSS 누락, 모바일 진입로
+부재(Home 버튼 추가).</p>
+
+<h2>8. 남은 작업</h2>
+<ul>
+  <li>Day/기술 순서 변경은 ▲▼ 버튼(드래그 앤 드롭 아님, 기능은 동일)</li>
+  <li>커뮤니티 "인기순"은 실제 다중 사용자 데이터 없이는 항상 0에 가까움</li>
+  <li>커리큘럼 편집기에 실시간 미리보기 없음(저장 후 확인)</li>
+</ul>
+
+<div class="doc-footer">MARTIALDEX 개발 문서 · 자동 생성 보고서 (4 / 5)</div>
+</body>
+</html>

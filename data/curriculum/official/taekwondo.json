@@ -1,0 +1,888 @@
+{
+  "id": "official__taekwondo",
+  "martialArt": "taekwondo",
+  "title": "태권도 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 서기와 이동부터 막기, 손기술, 발차기, 연결 기술, 품새, 호신술까지 이어지는 태권도 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 44,
+  "estimatedWeeks": 11,
+  "phases": [
+    {
+      "name": "기본 서기와 자세",
+      "blurb": "태권도의 기본 서기 자세를 익힙니다.",
+      "startDay": 1,
+      "endDay": 4
+    },
+    {
+      "name": "기본 이동",
+      "blurb": "자세를 유지하며 이동하는 풋워크를 배웁니다.",
+      "startDay": 5,
+      "endDay": 7
+    },
+    {
+      "name": "기본 막기와 손기술",
+      "blurb": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다.",
+      "startDay": 8,
+      "endDay": 14
+    },
+    {
+      "name": "기본 발차기",
+      "blurb": "태권도의 핵심인 기본 발차기를 배웁니다.",
+      "startDay": 15,
+      "endDay": 21
+    },
+    {
+      "name": "연결 기술",
+      "blurb": "발차기와 손기술을 연결한 콤비네이션을 배웁니다.",
+      "startDay": 22,
+      "endDay": 25
+    },
+    {
+      "name": "응용 발차기",
+      "blurb": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다.",
+      "startDay": 26,
+      "endDay": 33
+    },
+    {
+      "name": "품새",
+      "blurb": "정해진 동작 순서를 통해 기본기를 종합적으로 다지는 품새를 배웁니다.",
+      "startDay": 34,
+      "endDay": 37
+    },
+    {
+      "name": "호신술과 격파",
+      "blurb": "낙법을 포함한 호신술과 격파(격파술)를 배웁니다. 격파는 반드시 지도자의 지도와 알맞은 격파용 도구로만 연습해야 합니다.",
+      "startDay": 38,
+      "endDay": 41
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 서기와 자세: 나란히서기 · 겨루기준비자세 · 준비서기",
+      "description": "태권도의 기본 서기 자세를 익힙니다. 오늘은 나란히서기, 겨루기준비자세, 준비서기 / 준비자세을(를) 배웁니다.",
+      "learningGoals": [
+        "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다.",
+        "겨루기준비자세의 기본 동작과 활용 상황을 이해한다.",
+        "준비서기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__나란히서기",
+        "taekwondo__겨루기준비자세",
+        "taekwondo__준비서기-준비자세"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "주춤서기 · 앞서기",
+      "description": "태권도의 기본 서기 자세를 익힙니다. 오늘은 주춤서기, 앞서기을(를) 배웁니다.",
+      "learningGoals": [
+        "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다.",
+        "앞서기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__주춤서기",
+        "taekwondo__앞서기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__겨루기준비자세",
+        "taekwondo__준비서기-준비자세"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 3,
+      "title": "앞굽이 · 뒷굽이 · 범서기",
+      "description": "태권도의 기본 서기 자세를 익힙니다. 오늘은 앞굽이, 뒷굽이, 범서기을(를) 배웁니다.",
+      "learningGoals": [
+        "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다.",
+        "뒷굽이의 기본 동작과 활용 상황을 이해한다.",
+        "범서기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__앞굽이",
+        "taekwondo__뒷굽이",
+        "taekwondo__범서기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__앞서기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "학다리서기",
+      "description": "태권도의 기본 서기 자세를 익힙니다. 오늘은 학다리서기을(를) 배웁니다.",
+      "learningGoals": [
+        "기본 서기는 품새와 기본 동작에서 사용하는 정형화된 자세이며, 실제 겨루기에서는 이를 변형한 **겨루기 자세**를 사용한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__학다리서기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__뒷굽이",
+        "taekwondo__범서기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 5,
+      "title": "기본 이동: 전진 · 사이드 스텝 · 피벗",
+      "description": "자세를 유지하며 이동하는 풋워크를 배웁니다. 오늘은 전진 / 후진, 사이드 스텝, 피벗을(를) 배웁니다.",
+      "learningGoals": [
+        "이동은 거리와 타이밍을 만드는 기술이다.",
+        "사이드 스텝의 기본 동작과 활용 상황을 이해한다.",
+        "피벗의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__전진-후진",
+        "taekwondo__사이드-스텝",
+        "taekwondo__피벗"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "스텝 인 · 점프 스텝",
+      "description": "자세를 유지하며 이동하는 풋워크를 배웁니다. 오늘은 스텝 인 / 스텝 아웃, 점프 스텝을(를) 배웁니다.",
+      "learningGoals": [
+        "이동은 거리와 타이밍을 만드는 기술이다.",
+        "점프 스텝의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__스텝-인-스텝-아웃",
+        "taekwondo__점프-스텝"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__사이드-스텝",
+        "taekwondo__피벗"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 7,
+      "title": "스위치 스텝 · 끌기(드래그 스텝)",
+      "description": "자세를 유지하며 이동하는 풋워크를 배웁니다. 오늘은 스위치 스텝, 끌기(드래그 스텝) / 밀기을(를) 배웁니다.",
+      "learningGoals": [
+        "이동은 거리와 타이밍을 만드는 기술이다.",
+        "끌기(드래그 스텝)의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__스위치-스텝",
+        "taekwondo__끌기-드래그-스텝-밀기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__스텝-인-스텝-아웃",
+        "taekwondo__점프-스텝"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 8,
+      "title": "기본 막기와 손기술: 아래막기 · 바깥막기 · 올려막기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 아래막기, 몸통막기, 얼굴막기을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다.",
+        "바깥막기의 기본 동작과 활용 상황을 이해한다.",
+        "올려막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__아래막기",
+        "taekwondo__몸통막기",
+        "taekwondo__얼굴막기"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 9,
+      "title": "손날막기 · 거들어막기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 손날막기 / 한손날막기, 거들어막기을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다.",
+        "거들어막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__손날막기-한손날막기",
+        "taekwondo__거들어막기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__몸통막기",
+        "taekwondo__얼굴막기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 10,
+      "title": "헤쳐막기 · 금강막기 · 두손목막기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 헤쳐막기, 금강막기, 두손목막기 / 엇걸어막기 / 가위막기 / 산틀막기을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 맞지 않기 위한 기술이 아니라 **다음 반격을 위한 위치 선점 기술**로 이해해야 한다.",
+        "금강막기의 기본 동작과 활용 상황을 이해한다.",
+        "두손목막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__헤쳐막기",
+        "taekwondo__금강막기",
+        "taekwondo__두손목막기-엇걸어막기-가위막기-산틀막기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__거들어막기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "바로지르기 · 지르기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 바로지르기 / 반대지르기, 지르기 / 바로지르기 / 반대지르기 / 돌려지르기 / 옆지르기 / 내려지르기을(를) 배웁니다.",
+      "learningGoals": [
+        "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다.",
+        "지르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__바로지르기-반대지르기",
+        "taekwondo__지르기-바로지르기-반대지르기-돌려지르기-옆지르기-내려지르기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__금강막기",
+        "taekwondo__두손목막기-엇걸어막기-가위막기-산틀막기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 12,
+      "title": "메주먹 · 손날치기 · 손날등치기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 망치주먹, 손날치기, 손날등치기을(를) 배웁니다.",
+      "learningGoals": [
+        "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다.",
+        "손날치기의 기본 동작과 활용 상황을 이해한다.",
+        "손날등치기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__망치주먹",
+        "taekwondo__손날치기",
+        "taekwondo__손날등치기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__지르기-바로지르기-반대지르기-돌려지르기-옆지르기-내려지르기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "기본 막기와 손기술 복습",
+      "description": "지금까지 배운 '기본 막기와 손기술' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "기본 막기와 손기술 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__두손목막기-엇걸어막기-가위막기-산틀막기",
+        "taekwondo__바로지르기-반대지르기",
+        "taekwondo__지르기-바로지르기-반대지르기-돌려지르기-옆지르기-내려지르기",
+        "taekwondo__망치주먹",
+        "taekwondo__손날치기",
+        "taekwondo__손날등치기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 14,
+      "title": "바탕손밀기",
+      "description": "상대의 공격을 막는 막기와 손을 이용한 타격 기술을 배웁니다. 오늘은 바탕손을(를) 배웁니다.",
+      "learningGoals": [
+        "WT 규칙상 얼굴 공격은 금지되고 몸통 지르기만 1점으로 인정되며, 전자 호구가 감지할 만큼의 힘이 필요해 실제 경기에서 손기술 득점은 드물다."
+      ],
+      "techniqueIds": [
+        "taekwondo__바탕손"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__손날치기",
+        "taekwondo__손날등치기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 15,
+      "title": "기본 발차기: 앞차기 · 내려차기",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 앞차기, 내려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "내려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__앞차기",
+        "taekwondo__내려차기"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 16,
+      "title": "안반달차기 · 밀어차기",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 반달차기, 밀어차기을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "밀어차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__반달차기",
+        "taekwondo__밀어차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__앞차기",
+        "taekwondo__내려차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "찍어차기 · 비틀어차기",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 찍어차기, 비틀어차기을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "비틀어차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__찍어차기",
+        "taekwondo__비틀어차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__반달차기",
+        "taekwondo__밀어차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 18,
+      "title": "표적차기 · 돌려후려차기 계열",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 표적차기, 후려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "돌려후려차기 계열의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__표적차기",
+        "taekwondo__후려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__찍어차기",
+        "taekwondo__비틀어차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 19,
+      "title": "돌려차기 · 옆차기",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 돌려차기, 옆차기을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "옆차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__돌려차기",
+        "taekwondo__옆차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__표적차기",
+        "taekwondo__후려차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 20,
+      "title": "기본 발차기 복습",
+      "description": "지금까지 배운 '기본 발차기' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "기본 발차기 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__찍어차기",
+        "taekwondo__비틀어차기",
+        "taekwondo__표적차기",
+        "taekwondo__후려차기",
+        "taekwondo__돌려차기",
+        "taekwondo__옆차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 21,
+      "title": "뒤차기 · 대표 기술",
+      "description": "태권도의 핵심인 기본 발차기를 배웁니다. 오늘은 뒤차기, 대표 기술을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 태권도의 핵심 무기다.",
+        "발차기는 표적 부위에 따라 전술적 가치와 규칙상 허용 여부가 다르다."
+      ],
+      "techniqueIds": [
+        "taekwondo__뒤차기",
+        "taekwondo__대표-기술"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__돌려차기",
+        "taekwondo__옆차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 22,
+      "title": "연결 기술: 앞발 돌려차기 → 뒷발 돌려차기 · 앞발 돌려차기 → 내려차기",
+      "description": "발차기와 손기술을 연결한 콤비네이션을 배웁니다. 오늘은 앞발 돌려차기 → 뒷발 돌려차기, 앞발 돌려차기 → 내려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+        "앞발 돌려차기 → 내려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__앞발-돌려차기-뒷발-돌려차기",
+        "taekwondo__앞발-돌려차기-내려차기"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 23,
+      "title": "앞발 밀어차기 → 반대발(뒷발) 돌려차기 · 돌려차기 → 뒤후려차기",
+      "description": "발차기와 손기술을 연결한 콤비네이션을 배웁니다. 오늘은 앞발 밀어차기 → 반대발(뒷발) 돌려차기, 돌려차기 → 뒤후려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+        "돌려차기 → 뒤후려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기",
+        "taekwondo__돌려차기-뒤후려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__앞발-돌려차기-뒷발-돌려차기",
+        "taekwondo__앞발-돌려차기-내려차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 24,
+      "title": "돌려차기 → 뒤차기 · 돌려차기 → 주먹(반대지르기)",
+      "description": "발차기와 손기술을 연결한 콤비네이션을 배웁니다. 오늘은 돌려차기 → 뒤차기, 돌려차기 → 주먹(반대지르기)을(를) 배웁니다.",
+      "learningGoals": [
+        "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+        "돌려차기 → 주먹(반대지르기)의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__돌려차기-뒤차기",
+        "taekwondo__돌려차기-주먹-반대지르기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기",
+        "taekwondo__돌려차기-뒤후려차기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 25,
+      "title": "페인트 스텝 → 몸통 돌려차기 · 스위치 스텝 → 돌려차기",
+      "description": "발차기와 손기술을 연결한 콤비네이션을 배웁니다. 오늘은 페인트 스텝 → 몸통 돌려차기, 스위치 스텝 → 돌려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "단일 기술보다 **기술 → 상대 반응 → 다음 기술**의 연결이 실제 득점을 만든다.",
+        "스위치 스텝 → 돌려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__페인트-스텝-몸통-돌려차기",
+        "taekwondo__스위치-스텝-돌려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__돌려차기-뒤차기",
+        "taekwondo__돌려차기-주먹-반대지르기"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 26,
+      "title": "응용 발차기: 뒷발 돌려차기의 완전 회전형 · 회전 내려차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 뒷발 돌려차기의 완전 회전형, 회전 내려차기 / 회전 옆차기을(를) 배웁니다.",
+      "learningGoals": [
+        "몸을 완전히 돌려서 차는 발차기군으로, WT에서는 고배점, ITF·시범에서는 파괴력·화려함 때문에 중요하게 다뤄진다.",
+        "회전 내려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__뒷발-돌려차기의-완전-회전형",
+        "taekwondo__회전-내려차기-회전-옆차기"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 27,
+      "title": "뒤돌아차기 계열 · 뛰어앞차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 뒤돌아차기 계열, 뛰어앞차기 / 뛰어돌려차기 / 뛰어옆차기 / 뛰어뒤차기 / 뛰어내려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "몸을 완전히 돌려서 차는 발차기군으로, WT에서는 고배점, ITF·시범에서는 파괴력·화려함 때문에 중요하게 다뤄진다.",
+        "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술."
+      ],
+      "techniqueIds": [
+        "taekwondo__뒤돌아차기-계열",
+        "taekwondo__뛰어앞차기-뛰어돌려차기-뛰어옆차기-뛰어뒤차기-뛰어내려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__뒷발-돌려차기의-완전-회전형",
+        "taekwondo__회전-내려차기-회전-옆차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 28,
+      "title": "이단옆차기 · 뛰어이단옆차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 이단옆차기, 뛰어이단옆차기을(를) 배웁니다.",
+      "learningGoals": [
+        "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술.",
+        "뛰어이단옆차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__이단옆차기",
+        "taekwondo__뛰어이단옆차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__뒤돌아차기-계열",
+        "taekwondo__뛰어앞차기-뛰어돌려차기-뛰어옆차기-뛰어뒤차기-뛰어내려차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "공중회전 발차기 · 앞발 돌려차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 공중회전 발차기 / 다단(멀티) 점프 발차기, 앞발 돌려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "체공 시간을 이용해 거리·표적을 바꾸거나 위력을 극대화하는 기술.",
+        "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다."
+      ],
+      "techniqueIds": [
+        "taekwondo__공중회전-발차기-다단-멀티-점프-발차기",
+        "taekwondo__앞발-돌려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__이단옆차기",
+        "taekwondo__뛰어이단옆차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 30,
+      "title": "뒷발 돌려차기 · 앞발 밀어차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 뒷발 돌려차기, 앞발 밀어차기 / 뒷발 밀어차기을(를) 배웁니다.",
+      "learningGoals": [
+        "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+        "앞발 밀어차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__뒷발-돌려차기",
+        "taekwondo__앞발-밀어차기-뒷발-밀어차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__공중회전-발차기-다단-멀티-점프-발차기",
+        "taekwondo__앞발-돌려차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 31,
+      "title": "응용 발차기 복습",
+      "description": "지금까지 배운 '응용 발차기' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "응용 발차기 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__이단옆차기",
+        "taekwondo__뛰어이단옆차기",
+        "taekwondo__공중회전-발차기-다단-멀티-점프-발차기",
+        "taekwondo__앞발-돌려차기",
+        "taekwondo__뒷발-돌려차기",
+        "taekwondo__앞발-밀어차기-뒷발-밀어차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 32,
+      "title": "나래차기 · 뒤후려차기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 나래차기, 뒤후려차기을(를) 배웁니다.",
+      "learningGoals": [
+        "WT 겨루기는 전자호구 채점 구조상 **회전이 들어간 발차기와 앞발 기술의 반복 사용**이 전술의 핵심이다.",
+        "뒤후려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__나래차기",
+        "taekwondo__뒤후려차기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__뒷발-돌려차기",
+        "taekwondo__앞발-밀어차기-뒷발-밀어차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 33,
+      "title": "밀어차기, 앞발 돌려차기, 앞차기, 옆차기 · 돌려차기, 내려차기, 나래차기, 반대지르기",
+      "description": "회전 발차기, 점프·공중 발차기, 겨루기용 발차기 등 응용 기술을 배웁니다. 오늘은 밀어차기, 앞발 돌려차기, 앞차기, 옆차기, 돌려차기, 내려차기, 나래차기, 반대지르기을(를) 배웁니다.",
+      "learningGoals": [
+        "상대와 발이 닿지 않는 거리.",
+        "돌려차기, 내려차기, 나래차기, 반대지르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__밀어차기-앞발-돌려차기-앞차기-옆차기",
+        "taekwondo__돌려차기-내려차기-나래차기-반대지르기"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__나래차기",
+        "taekwondo__뒤후려차기"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 34,
+      "title": "품새: 건 · 태",
+      "description": "정해진 동작 순서를 통해 기본기를 종합적으로 다지는 품새를 배웁니다. 오늘은 태극 1장, 태극 2장을(를) 배웁니다.",
+      "learningGoals": [
+        "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가…",
+        "태의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__태극-1장",
+        "taekwondo__태극-2장"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 35,
+      "title": "리 · 진",
+      "description": "정해진 동작 순서를 통해 기본기를 종합적으로 다지는 품새를 배웁니다. 오늘은 태극 3장, 태극 4장을(를) 배웁니다.",
+      "learningGoals": [
+        "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가…",
+        "진의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__태극-3장",
+        "taekwondo__태극-4장"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__태극-1장",
+        "taekwondo__태극-2장"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 36,
+      "title": "감 · 간",
+      "description": "정해진 동작 순서를 통해 기본기를 종합적으로 다지는 품새를 배웁니다. 오늘은 태극 6장, 태극 7장을(를) 배웁니다.",
+      "learningGoals": [
+        "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가…",
+        "간의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__태극-6장",
+        "taekwondo__태극-7장"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__태극-3장",
+        "taekwondo__태극-4장"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 37,
+      "title": "곤 · 손",
+      "description": "정해진 동작 순서를 통해 기본기를 종합적으로 다지는 품새를 배웁니다. 오늘은 태극 8장, 태극 5장을(를) 배웁니다.",
+      "learningGoals": [
+        "각 태극 품새는 팔괘(八卦)의 의미를 담고 있으며, 낮은 단계일수록 기본 서기·지르기·막기·기본 발차기 중심, 높은 단계로 갈수록 회전·연속 동작·응용 발차기가…",
+        "손의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__태극-8장",
+        "taekwondo__태극-5장"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__태극-6장",
+        "taekwondo__태극-7장"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 38,
+      "title": "호신술과 격파: 앞낙법 · 구르기",
+      "description": "낙법을 포함한 호신술과 격파(격파술)를 배웁니다. 격파는 반드시 지도자의 지도와 알맞은 격파용 도구로만 연습해야 합니다. 오늘은 앞낙법 / 뒤낙법 / 옆낙법, 굴러 낙법을(를) 배웁니다.",
+      "learningGoals": [
+        "넘어지거나 던져질 때 부상을 방지하는 기초 기술.",
+        "구르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__앞낙법-뒤낙법-옆낙법",
+        "taekwondo__굴러-낙법"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 39,
+      "title": "손목 잡힘 대응 · 옷깃/어깨 잡힘 대응",
+      "description": "낙법을 포함한 호신술과 격파(격파술)를 배웁니다. 격파는 반드시 지도자의 지도와 알맞은 격파용 도구로만 연습해야 합니다. 오늘은 손목 잡힘 대응, 옷깃/어깨 잡힘 대응을(를) 배웁니다.",
+      "learningGoals": [
+        "넘어지거나 던져질 때 부상을 방지하는 기초 기술.",
+        "옷깃/어깨 잡힘 대응의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__손목-잡힘-대응",
+        "taekwondo__옷깃-어깨-잡힘-대응"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__앞낙법-뒤낙법-옆낙법",
+        "taekwondo__굴러-낙법"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 40,
+      "title": "뒤에서 안겼을 때 대응 · 위력격파",
+      "description": "낙법을 포함한 호신술과 격파(격파술)를 배웁니다. 격파는 반드시 지도자의 지도와 알맞은 격파용 도구로만 연습해야 합니다. 오늘은 뒤에서 안겼을 때 대응, 위력격파을(를) 배웁니다.",
+      "learningGoals": [
+        "넘어지거나 던져질 때 부상을 방지하는 기초 기술.",
+        "격파는 정확한 타점·힘의 집중을 검증하는 수련이며 아래처럼 분류한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__뒤에서-안겼을-때-대응",
+        "taekwondo__위력격파"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__손목-잡힘-대응",
+        "taekwondo__옷깃-어깨-잡힘-대응"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 41,
+      "title": "시범격파 · 정확격파",
+      "description": "낙법을 포함한 호신술과 격파(격파술)를 배웁니다. 격파는 반드시 지도자의 지도와 알맞은 격파용 도구로만 연습해야 합니다. 오늘은 시범격파, 정확격파을(를) 배웁니다.",
+      "learningGoals": [
+        "격파는 정확한 타점·힘의 집중을 검증하는 수련이며 아래처럼 분류한다.",
+        "정확격파의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "taekwondo__시범격파",
+        "taekwondo__정확격파"
+      ],
+      "reviewTechniqueIds": [
+        "taekwondo__뒤에서-안겼을-때-대응",
+        "taekwondo__위력격파"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 42,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__나란히서기",
+        "taekwondo__전진-후진",
+        "taekwondo__아래막기",
+        "taekwondo__앞차기",
+        "taekwondo__앞발-돌려차기-뒷발-돌려차기",
+        "taekwondo__뒷발-돌려차기의-완전-회전형",
+        "taekwondo__태극-1장",
+        "taekwondo__앞낙법-뒤낙법-옆낙법"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 43,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__주춤서기",
+        "taekwondo__피벗",
+        "taekwondo__거들어막기",
+        "taekwondo__찍어차기",
+        "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기",
+        "taekwondo__이단옆차기",
+        "taekwondo__태극-3장",
+        "taekwondo__손목-잡힘-대응"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 44,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "taekwondo__뒷굽이",
+        "taekwondo__점프-스텝",
+        "taekwondo__지르기-바로지르기-반대지르기-돌려지르기-옆지르기-내려지르기",
+        "taekwondo__돌려차기",
+        "taekwondo__돌려차기-주먹-반대지르기",
+        "taekwondo__앞발-밀어차기-뒷발-밀어차기",
+        "taekwondo__태극-7장",
+        "taekwondo__위력격파"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 80
+}

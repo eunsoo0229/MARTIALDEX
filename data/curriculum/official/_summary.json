@@ -1,0 +1,56 @@
+[
+  {
+    "martialArt": "bjj",
+    "totalDays": 53,
+    "techniqueCount": 129,
+    "phases": 10
+  },
+  {
+    "martialArt": "karate",
+    "totalDays": 35,
+    "techniqueCount": 88,
+    "phases": 8
+  },
+  {
+    "martialArt": "wrestling",
+    "totalDays": 39,
+    "techniqueCount": 97,
+    "phases": 10
+  },
+  {
+    "martialArt": "muay-thai",
+    "totalDays": 35,
+    "techniqueCount": 77,
+    "phases": 7
+  },
+  {
+    "martialArt": "boxing",
+    "totalDays": 34,
+    "techniqueCount": 83,
+    "phases": 7
+  },
+  {
+    "martialArt": "sambo",
+    "totalDays": 50,
+    "techniqueCount": 86,
+    "phases": 8
+  },
+  {
+    "martialArt": "judo",
+    "totalDays": 45,
+    "techniqueCount": 103,
+    "phases": 11
+  },
+  {
+    "martialArt": "kickboxing",
+    "totalDays": 39,
+    "techniqueCount": 92,
+    "phases": 9
+  },
+  {
+    "martialArt": "taekwondo",
+    "totalDays": 44,
+    "techniqueCount": 80,
+    "phases": 8
+  }
+]

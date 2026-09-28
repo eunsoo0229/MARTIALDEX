@@ -1,0 +1,3947 @@
+{
+  "martialArt": {
+    "id": "kickboxing",
+    "nameEn": "Kickboxing",
+    "nameKo": "킥복싱"
+  },
+  "count": 121,
+  "techniques": [
+    {
+      "id": "kickboxing__장거리-long-kicking-range",
+      "martialArt": "kickboxing",
+      "name": "장거리 (Long/Kicking Range)",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념",
+      "positions": [
+        "기본 개념"
+      ],
+      "description": "킥과 잽만 닿는 거리",
+      "purpose": "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다. 어떤 기술을 쓸지는 거의 전부 \"지금 이 거리에서 무엇이 닿을 수 있는가\"로 결정된다.\n\n주요 거리:\n\n오소독스(Orthodox)는 왼발이 리드, 사우스포(Southpaw)는 오른발이 리드다. 같은 스탠스(오소독스 vs 오소독스)인지 반대 스탠스(오소독스 vs 사우스포)인지에 따라 리드 사이드끼리 부딪히는 각도가 달라지고, 이는 로우킥·잽·크로스의 유효성에 직접 영향을 준다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:기본-개념",
+        "#Range"
+      ],
+      "youtubeSearchQuery": "kickboxing 장거리 (Long/Kicking Range) technique"
+    },
+    {
+      "id": "kickboxing__중거리-mid-punching-range",
+      "martialArt": "kickboxing",
+      "name": "중거리 (Mid/Punching Range)",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념",
+      "positions": [
+        "기본 개념"
+      ],
+      "description": "손 콤비네이션과 니가 섞이는 거리",
+      "purpose": "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다. 어떤 기술을 쓸지는 거의 전부 \"지금 이 거리에서 무엇이 닿을 수 있는가\"로 결정된다.\n\n주요 거리:\n\n오소독스(Orthodox)는 왼발이 리드, 사우스포(Southpaw)는 오른발이 리드다. 같은 스탠스(오소독스 vs 오소독스)인지 반대 스탠스(오소독스 vs 사우스포)인지에 따라 리드 사이드끼리 부딪히는 각도가 달라지고, 이는 로우킥·잽·크로스의 유효성에 직접 영향을 준다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:기본-개념",
+        "#Range"
+      ],
+      "youtubeSearchQuery": "kickboxing 중거리 (Mid/Punching Range) technique"
+    },
+    {
+      "id": "kickboxing__근거리-close-range-clinch",
+      "martialArt": "kickboxing",
+      "name": "근거리 (Close Range / Clinch)",
+      "koreanName": null,
+      "aliases": [
+        "근거리 (Close Range",
+        "Clinch)"
+      ],
+      "category": "기본 개념",
+      "positions": [
+        "기본 개념"
+      ],
+      "description": "클린치, 숏 스트레이트, 니가 중심이 되는 거리",
+      "purpose": "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다. 어떤 기술을 쓸지는 거의 전부 \"지금 이 거리에서 무엇이 닿을 수 있는가\"로 결정된다.\n\n주요 거리:\n\n오소독스(Orthodox)는 왼발이 리드, 사우스포(Southpaw)는 오른발이 리드다. 같은 스탠스(오소독스 vs 오소독스)인지 반대 스탠스(오소독스 vs 사우스포)인지에 따라 리드 사이드끼리 부딪히는 각도가 달라지고, 이는 로우킥·잽·크로스의 유효성에 직접 영향을 준다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:기본-개념",
+        "#Range",
+        "#CloseRange",
+        "#Clinch"
+      ],
+      "youtubeSearchQuery": "kickboxing 근거리 (Close Range / Clinch) technique"
+    },
+    {
+      "id": "kickboxing__리드-lead",
+      "martialArt": "kickboxing",
+      "name": "리드(Lead)",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념",
+      "positions": [
+        "기본 개념"
+      ],
+      "description": "스탠스 앞쪽에 있는 손/발. 거리 측정, 잽, 체크, 페인트에 주로 사용.",
+      "purpose": "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다. 어떤 기술을 쓸지는 거의 전부 \"지금 이 거리에서 무엇이 닿을 수 있는가\"로 결정된다.\n\n주요 거리:\n\n오소독스(Orthodox)는 왼발이 리드, 사우스포(Southpaw)는 오른발이 리드다. 같은 스탠스(오소독스 vs 오소독스)인지 반대 스탠스(오소독스 vs 사우스포)인지에 따라 리드 사이드끼리 부딪히는 각도가 달라지고, 이는 로우킥·잽·크로스의 유효성에 직접 영향을 준다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:기본-개념"
+      ],
+      "youtubeSearchQuery": "kickboxing 리드(Lead) technique"
+    },
+    {
+      "id": "kickboxing__리어-rear",
+      "martialArt": "kickboxing",
+      "name": "리어(Rear)",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념",
+      "positions": [
+        "기본 개념"
+      ],
+      "description": "스탠스 뒤쪽에 있는 손/발. 파워 공격(크로스, 로우킥, 라운드킥)에 주로 사용.",
+      "purpose": "킥복싱에서 포지션은 BJJ처럼 신체 접촉 형태가 아니라 **거리와 몸의 방향(앵글)이 만드는 상태**로 정의된다. 어떤 기술을 쓸지는 거의 전부 \"지금 이 거리에서 무엇이 닿을 수 있는가\"로 결정된다.\n\n주요 거리:\n\n오소독스(Orthodox)는 왼발이 리드, 사우스포(Southpaw)는 오른발이 리드다. 같은 스탠스(오소독스 vs 오소독스)인지 반대 스탠스(오소독스 vs 사우스포)인지에 따라 리드 사이드끼리 부딪히는 각도가 달라지고, 이는 로우킥·잽·크로스의 유효성에 직접 영향을 준다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:기본-개념"
+      ],
+      "youtubeSearchQuery": "kickboxing 리어(Rear) technique"
+    },
+    {
+      "id": "kickboxing__k-1-rules",
+      "martialArt": "kickboxing",
+      "name": "K-1 Rules",
+      "koreanName": null,
+      "aliases": [],
+      "category": "규칙 체계 (가장 먼저 알아야 할 것)",
+      "positions": [
+        "규칙 체계 (가장 먼저 알아야 할 것)"
+      ],
+      "description": "펀치·킥·니(무릎) 허용, 엘보 금지, 클린치는 짧게만 허용되고 심판이 곧 \"브레이크\"를 선언한다. 스탠딩 타격만 존재하며 테이크다운/스윕은 반칙.",
+      "purpose": "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다. 같은 이름의 기술도 어떤 룰에서는 핵심 무기이고 어떤 룰에서는 반칙이다.\n\n| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |",
+      "principles": [
+        "| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__glory-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__포인트-스파링"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:규칙-체계-가장-먼저-알아야-할-것",
+        "#K1Rules"
+      ],
+      "youtubeSearchQuery": "kickboxing K-1 Rules technique"
+    },
+    {
+      "id": "kickboxing__glory-rules",
+      "martialArt": "kickboxing",
+      "name": "Glory Rules",
+      "koreanName": null,
+      "aliases": [],
+      "category": "규칙 체계 (가장 먼저 알아야 할 것)",
+      "positions": [
+        "규칙 체계 (가장 먼저 알아야 할 것)"
+      ],
+      "description": "K-1과 유사하게 무에타이 영향을 받아 니(클린치 니, 플라잉 니 포함)를 적극적으로 허용한다. 엘보는 금지. 클린치 유지 시간에 대한 규정이 있어 심판이 빠르게 개입해 떼어놓는다.",
+      "purpose": "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다. 같은 이름의 기술도 어떤 룰에서는 핵심 무기이고 어떤 룰에서는 반칙이다.\n\n| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |",
+      "principles": [
+        "| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__포인트-스파링"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:규칙-체계-가장-먼저-알아야-할-것",
+        "#GloryRules"
+      ],
+      "youtubeSearchQuery": "kickboxing Glory Rules technique"
+    },
+    {
+      "id": "kickboxing__아메리칸-킥복싱",
+      "martialArt": "kickboxing",
+      "name": "아메리칸 킥복싱",
+      "koreanName": "벨트라인 룰",
+      "aliases": [],
+      "category": "규칙 체계 (가장 먼저 알아야 할 것)",
+      "positions": [
+        "규칙 체계 (가장 먼저 알아야 할 것)"
+      ],
+      "description": "American Kickboxing, 벨트라인 룰; 1970년대 풀컨택트 가라테에서 발전한 룰로, **벨트라인 아래 공격(로우킥)이 금지**된다. 그 결과 하이킥과 미들(바디)킥이 주공격이 되고, 로우킥 중심 전술이 통째로 사라진다. 니·엘보·클린치 타격은 대부분 금지. 일부 단체는 라운드당 최소 킥 횟수 규정을 두어 킥을 안 쓰면 감점한다.",
+      "purpose": "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다. 같은 이름의 기술도 어떤 룰에서는 핵심 무기이고 어떤 룰에서는 반칙이다.\n\n| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |",
+      "principles": [
+        "| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__glory-rules",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__포인트-스파링"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:규칙-체계-가장-먼저-알아야-할-것"
+      ],
+      "youtubeSearchQuery": "kickboxing 아메리칸 킥복싱 technique"
+    },
+    {
+      "id": "kickboxing__풀컨택트-로우킥-룰",
+      "martialArt": "kickboxing",
+      "name": "풀컨택트 로우킥 룰",
+      "koreanName": "풀컨택트 로우킥 룰",
+      "aliases": [],
+      "category": "규칙 체계 (가장 먼저 알아야 할 것)",
+      "positions": [
+        "규칙 체계 (가장 먼저 알아야 할 것)"
+      ],
+      "description": "예: WAKO Low-Kick, ISKA Full Contact 계열; 로우킥과 하이킥 모두 허용하지만 니와 엘보는 금지 또는 매우 제한적. 클린치도 짧게만 허용.",
+      "purpose": "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다. 같은 이름의 기술도 어떤 룰에서는 핵심 무기이고 어떤 룰에서는 반칙이다.\n\n| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |",
+      "principles": [
+        "| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__glory-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__포인트-스파링"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:규칙-체계-가장-먼저-알아야-할-것"
+      ],
+      "youtubeSearchQuery": "kickboxing 풀컨택트 로우킥 룰 technique"
+    },
+    {
+      "id": "kickboxing__포인트-스파링",
+      "martialArt": "kickboxing",
+      "name": "포인트 스파링",
+      "koreanName": "세미/라이트 컨택트",
+      "aliases": [],
+      "category": "규칙 체계 (가장 먼저 알아야 할 것)",
+      "positions": [
+        "규칙 체계 (가장 먼저 알아야 할 것)"
+      ],
+      "description": "세미/라이트 컨택트, 예: WAKO Point Fighting류; 타격이 유효하게 닿으면 심판이 콜하고 액션을 정지시켜 포인트를 준다. 완전한 파워보다 정확한 터치·컨트롤이 중요하며, 니·엘보·클린치는 대부분 금지된다.",
+      "purpose": "킥복싱은 \"하나의 스포츠\"가 아니라 **여러 룰셋의 집합**이다. 같은 이름의 기술도 어떤 룰에서는 핵심 무기이고 어떤 룰에서는 반칙이다.\n\n| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |",
+      "principles": [
+        "| 규칙 체계 | 로우킥 | 미들/하이킥 | 니(스탠딩) | 니(클린치) | 엘보 | 클린치 유지 | 테이크다운/스윕 | 컨택트 | |---|---|---|---|---|---|---|---|---| | K-1 Rules | 허용 | 허용 | 허용 | 허용(제한적 브레이크) | 금지 | 짧게 제한, 심판 브레이크 | 금지 | 풀컨택트 | | Glory Rules | 허용 | 허용 | 허용 | 허용(브레이크 규정 있음) | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 아메리칸 킥복싱(벨트라인 룰) | **금지** | 허용(주공격) | 대부분 금지 | 금지 | 금지 | 최소화, 즉시 브레이크 | 금지 | 풀컨택트(타격만) | | 풀컨택트 로우킥 룰 | 허용 | 허용 | 금지/매우 제한 | 금지 | 금지 | 짧게 제한 | 금지 | 풀컨택트 | | 포인트 스파링(세미/라이트) | 규칙별 상이 | 허용(경량 컨택트) | 대부분 금지 | 금지 | 금지 | 즉시 정지/브레이크 | 금지 | 세미/라이트 컨택트 |"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__glory-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:규칙-체계-가장-먼저-알아야-할-것"
+      ],
+      "youtubeSearchQuery": "kickboxing 포인트 스파링 technique"
+    },
+    {
+      "id": "kickboxing__orthodox",
+      "martialArt": "kickboxing",
+      "name": "Orthodox",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스",
+        "#Orthodox"
+      ],
+      "youtubeSearchQuery": "kickboxing Orthodox technique"
+    },
+    {
+      "id": "kickboxing__southpaw",
+      "martialArt": "kickboxing",
+      "name": "Southpaw",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스",
+        "#Southpaw"
+      ],
+      "youtubeSearchQuery": "kickboxing Southpaw technique"
+    },
+    {
+      "id": "kickboxing__high-guard",
+      "martialArt": "kickboxing",
+      "name": "High Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스",
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__long-guard",
+        "kickboxing__dutch-guard",
+        "kickboxing__bladed-stance",
+        "kickboxing__square-stance"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스"
+      ],
+      "youtubeSearchQuery": "kickboxing High Guard technique"
+    },
+    {
+      "id": "kickboxing__long-guard",
+      "martialArt": "kickboxing",
+      "name": "Long Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스",
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__high-guard",
+        "kickboxing__dutch-guard",
+        "kickboxing__bladed-stance",
+        "kickboxing__square-stance"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스"
+      ],
+      "youtubeSearchQuery": "kickboxing Long Guard technique"
+    },
+    {
+      "id": "kickboxing__dutch-guard",
+      "martialArt": "kickboxing",
+      "name": "Dutch Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__high-guard",
+        "kickboxing__long-guard",
+        "kickboxing__bladed-stance",
+        "kickboxing__square-stance"
+      ],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스"
+      ],
+      "youtubeSearchQuery": "kickboxing Dutch Guard technique"
+    },
+    {
+      "id": "kickboxing__bladed-stance",
+      "martialArt": "kickboxing",
+      "name": "Bladed Stance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__high-guard",
+        "kickboxing__long-guard",
+        "kickboxing__dutch-guard",
+        "kickboxing__square-stance"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스",
+        "#Stance"
+      ],
+      "youtubeSearchQuery": "kickboxing Bladed Stance technique"
+    },
+    {
+      "id": "kickboxing__square-stance",
+      "martialArt": "kickboxing",
+      "name": "Square Stance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [
+        "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__high-guard",
+        "kickboxing__long-guard",
+        "kickboxing__dutch-guard",
+        "kickboxing__bladed-stance"
+      ],
+      "relatedMartialArts": [
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스",
+        "#Stance"
+      ],
+      "youtubeSearchQuery": "kickboxing Square Stance technique"
+    },
+    {
+      "id": "kickboxing__switch-stance",
+      "martialArt": "kickboxing",
+      "name": "Switch Stance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스탠스",
+      "positions": [
+        "스탠스",
+        "스위치 스탠스 활용 전술"
+      ],
+      "description": "",
+      "purpose": "**상황과 선택 기준.** High Guard는 상대의 손 공격을 우선 막아야 하는 근~중거리 교환 상황에 적합하고, Long Guard는 리드 손을 뻗어 거리를 재면서 상대의 진입을 늦추는 장거리 상황에 적합하다. Dutch Guard(양손을 낮게, 어깨와 팔로 바디를 막는 형태)는 바디킥·바디펀치 교환이 잦은 로우킥 룰에서 유리하다. Bladed Stance는 로우킥 노출을 줄이지만 리어 핸드 파워가 커지는 대신 백사이드 로우킥에 취약해질 수 있고, Square Stance는 양쪽 킥을 동시에 준비할 수 있지만 크로스 카운터에 노출되기 쉽다. 스탠스는 고정된 선택이 아니라 상대의 주공격(펀치 위주 vs 킥 위주)에 맞춰 라운드 중에도 바꿔야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:스탠스",
+        "#Stance",
+        "#SwitchStance"
+      ],
+      "youtubeSearchQuery": "kickboxing Switch Stance technique"
+    },
+    {
+      "id": "kickboxing__step-forward",
+      "martialArt": "kickboxing",
+      "name": "Step Forward",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Step Forward technique"
+    },
+    {
+      "id": "kickboxing__step-back",
+      "martialArt": "kickboxing",
+      "name": "Step Back",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__pivot",
+        "kickboxing__l-step",
+        "kickboxing__switch-step",
+        "kickboxing__angle-step",
+        "kickboxing__cut-off",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Step Back technique"
+    },
+    {
+      "id": "kickboxing__lateral-step",
+      "martialArt": "kickboxing",
+      "name": "Lateral Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Lateral Step technique"
+    },
+    {
+      "id": "kickboxing__pivot",
+      "martialArt": "kickboxing",
+      "name": "Pivot",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.",
+        "**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__l-step",
+        "kickboxing__switch-step",
+        "kickboxing__angle-step",
+        "kickboxing__cut-off",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "wrestling",
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Pivot technique"
+    },
+    {
+      "id": "kickboxing__l-step",
+      "martialArt": "kickboxing",
+      "name": "L-Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__pivot",
+        "kickboxing__switch-step",
+        "kickboxing__angle-step",
+        "kickboxing__cut-off",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing L-Step technique"
+    },
+    {
+      "id": "kickboxing__switch-step",
+      "martialArt": "kickboxing",
+      "name": "Switch Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "스위치 스탠스 활용 전술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__pivot",
+        "kickboxing__l-step",
+        "kickboxing__angle-step",
+        "kickboxing__cut-off",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Switch Step technique"
+    },
+    {
+      "id": "kickboxing__shuffle",
+      "martialArt": "kickboxing",
+      "name": "Shuffle",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Shuffle technique"
+    },
+    {
+      "id": "kickboxing__step-and-slide",
+      "martialArt": "kickboxing",
+      "name": "Step-and-Slide",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Step-and-Slide technique"
+    },
+    {
+      "id": "kickboxing__angle-step",
+      "martialArt": "kickboxing",
+      "name": "Angle Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__pivot",
+        "kickboxing__l-step",
+        "kickboxing__switch-step",
+        "kickboxing__cut-off",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Angle Step technique"
+    },
+    {
+      "id": "kickboxing__cut-off",
+      "martialArt": "kickboxing",
+      "name": "Cut-Off",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.",
+        "**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__pivot",
+        "kickboxing__l-step",
+        "kickboxing__switch-step",
+        "kickboxing__angle-step",
+        "kickboxing__circle-out"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Cut-Off technique"
+    },
+    {
+      "id": "kickboxing__circle-out",
+      "martialArt": "kickboxing",
+      "name": "Circle Out",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.\n\n**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 풋워크는 거리 자체를 만들거나 없애는 도구다. Step Back과 Circle Out은 상대가 강하게 압박하며 전진할 때 데미지 없이 거리를 회복하는 용도이고, Cut-Off는 상대가 원을 그리며 빠져나가려 할 때(특히 링 코너로 몰아붙일 때) 각을 미리 막아서 도망갈 공간을 없애는 용도다. Pivot과 Angle Step은 상대의 파워 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다. Switch Step은 스탠스를 바꾸며 리드 사이드를 순간적으로 교체해 상대의 체크·가드 타이밍을 흐트러뜨린다.",
+        "**상대 반응에 따른 연결.** 상대가 직선으로 따라오면 Circle Out → Pivot으로 각을 만들고 카운터 크로스/로우킥으로 연결한다. 상대가 로프/코너로 밀리며 옆으로 도망가려 하면 Cut-Off로 선점한 뒤 콤비네이션으로 마무리한다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__step-back",
+        "kickboxing__pivot",
+        "kickboxing__l-step",
+        "kickboxing__switch-step",
+        "kickboxing__angle-step",
+        "kickboxing__cut-off"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "kickboxing Circle Out technique"
+    },
+    {
+      "id": "kickboxing__jab",
+      "martialArt": "kickboxing",
+      "name": "Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross",
+        "Body Kick"
+      ],
+      "relatedTechniques": [
+        "kickboxing__cross",
+        "kickboxing__body-kick",
+        "kickboxing__teep",
+        "kickboxing__rear-hook",
+        "kickboxing__overhand",
+        "kickboxing__backfist",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Jab"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab technique"
+    },
+    {
+      "id": "kickboxing__cross",
+      "martialArt": "kickboxing",
+      "name": "Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Low Kick"
+      ],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__low-kick",
+        "kickboxing__slip",
+        "kickboxing__switch-kick",
+        "kickboxing__rear-hook",
+        "kickboxing__overhand",
+        "kickboxing__backfist",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "kickboxing Cross technique"
+    },
+    {
+      "id": "kickboxing__lead-hook",
+      "martialArt": "kickboxing",
+      "name": "Lead Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "kickboxing Lead Hook technique"
+    },
+    {
+      "id": "kickboxing__rear-hook",
+      "martialArt": "kickboxing",
+      "name": "Rear Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__overhand",
+        "kickboxing__backfist",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "kickboxing Rear Hook technique"
+    },
+    {
+      "id": "kickboxing__lead-uppercut",
+      "martialArt": "kickboxing",
+      "name": "Lead Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "kickboxing Lead Uppercut technique"
+    },
+    {
+      "id": "kickboxing__rear-uppercut",
+      "martialArt": "kickboxing",
+      "name": "Rear Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "kickboxing Rear Uppercut technique"
+    },
+    {
+      "id": "kickboxing__overhand",
+      "martialArt": "kickboxing",
+      "name": "Overhand",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__rear-hook",
+        "kickboxing__backfist",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "muay-thai",
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Overhand"
+      ],
+      "youtubeSearchQuery": "kickboxing Overhand technique"
+    },
+    {
+      "id": "kickboxing__backfist",
+      "martialArt": "kickboxing",
+      "name": "Backfist",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__rear-hook",
+        "kickboxing__overhand",
+        "kickboxing__spinning-backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "muay-thai",
+        "boxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Backfist",
+        "#SpinningBackfist"
+      ],
+      "youtubeSearchQuery": "kickboxing Backfist technique"
+    },
+    {
+      "id": "kickboxing__spinning-backfist",
+      "martialArt": "kickboxing",
+      "name": "Spinning Backfist",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__rear-hook",
+        "kickboxing__overhand",
+        "kickboxing__backfist",
+        "kickboxing__superman-punch"
+      ],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치",
+        "#Backfist",
+        "#SpinningBackfist"
+      ],
+      "youtubeSearchQuery": "kickboxing Spinning Backfist technique"
+    },
+    {
+      "id": "kickboxing__superman-punch",
+      "martialArt": "kickboxing",
+      "name": "Superman Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치",
+      "positions": [
+        "펀치"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다.\n\n**상대 반응에 따른 연결.** 잽에 상대가 패리(Parry)로 반응하면 다음 잽은 페인트로 던지고 훅으로 우회한다. 크로스에 상대가 슬립으로 안쪽으로 들어오면 어퍼컷이나 니로 이어간다. 훅에 상대가 커버(Cover)만 하고 전진하면 바디킥/로우킥으로 하체를 무너뜨린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Jab은 거리를 재고 상대의 리듬을 끊거나 후속 공격의 셋업으로 쓰는 가장 기본적인 도구로, 장거리에서 진입 여부를 결정하기 전에 던진다. Cross는 잽으로 상대의 가드가 열리거나 시선이 쏠린 직후, 또는 상대가 정지해 있을 때 직선으로 꽂는 메인 파워 공격이다. Lead/Rear Hook은 상대가 직선 공격(잽, 크로스)에 대해 백스텝으로만 반응하고 사이드 이동이 적을 때 각을 우회해 맞히기 좋다. Uppercut은 상대가 하이가드로 정면을 좁게 막고 있거나 클린치 직전 거리에서 몸을 숙일 때 그 틈을 파고든다. Overhand는 상대가 크로스를 던지고 리커버리가 늦을 때, 또는 헤드무브가 큰 상대를 위에서 넘어가듯 맞히는 카운터로 쓰인다. Backfist/Spinning Backfist, Superman Punch는 대부분 예측을 깨는 서프라이즈 각 공격으로, 상대가 뻔한 잽-크로스 리듬에 익숙해진 후 리듬을 깨기 위해 섞는다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__cross",
+        "kickboxing__rear-hook",
+        "kickboxing__overhand",
+        "kickboxing__backfist",
+        "kickboxing__spinning-backfist"
+      ],
+      "relatedMartialArts": [
+        "muay-thai",
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:펀치"
+      ],
+      "youtubeSearchQuery": "kickboxing Superman Punch technique"
+    },
+    {
+      "id": "kickboxing__front-kick",
+      "martialArt": "kickboxing",
+      "name": "Front Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#FrontKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Front Kick technique"
+    },
+    {
+      "id": "kickboxing__teep",
+      "martialArt": "kickboxing",
+      "name": "Teep",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Jab"
+      ],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "kickboxing Teep technique"
+    },
+    {
+      "id": "kickboxing__round-kick",
+      "martialArt": "kickboxing",
+      "name": "Round Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#RoundKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Round Kick technique"
+    },
+    {
+      "id": "kickboxing__low-kick",
+      "martialArt": "kickboxing",
+      "name": "Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "kickboxing__cross",
+        "kickboxing__kick-feint",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#LowKick",
+        "#LowKickRules"
+      ],
+      "youtubeSearchQuery": "kickboxing Low Kick technique"
+    },
+    {
+      "id": "kickboxing__body-kick",
+      "martialArt": "kickboxing",
+      "name": "Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__jab",
+        "kickboxing__hand-feint",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#BodyKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Body Kick technique"
+    },
+    {
+      "id": "kickboxing__high-kick",
+      "martialArt": "kickboxing",
+      "name": "High Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__level-change-feint",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__side-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#HighKick"
+      ],
+      "youtubeSearchQuery": "kickboxing High Kick technique"
+    },
+    {
+      "id": "kickboxing__side-kick",
+      "martialArt": "kickboxing",
+      "name": "Side Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__back-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#SideKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Side Kick technique"
+    },
+    {
+      "id": "kickboxing__back-kick",
+      "martialArt": "kickboxing",
+      "name": "Back Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__풀컨택트-로우킥-룰",
+        "kickboxing__front-kick",
+        "kickboxing__teep",
+        "kickboxing__round-kick",
+        "kickboxing__low-kick",
+        "kickboxing__body-kick",
+        "kickboxing__high-kick",
+        "kickboxing__side-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#BackKick",
+        "#SpinningBackKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Back Kick technique"
+    },
+    {
+      "id": "kickboxing__switch-kick",
+      "martialArt": "kickboxing",
+      "name": "Switch Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥",
+        "스위치 스탠스 활용 전술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "kickboxing__cross",
+        "kickboxing__question-mark-kick",
+        "kickboxing__axe-kick",
+        "kickboxing__crescent-kick",
+        "kickboxing__wheel-kick"
+      ],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#SwitchKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Switch Kick technique"
+    },
+    {
+      "id": "kickboxing__question-mark-kick",
+      "martialArt": "kickboxing",
+      "name": "Question Mark Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__switch-kick",
+        "kickboxing__axe-kick",
+        "kickboxing__crescent-kick",
+        "kickboxing__wheel-kick"
+      ],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#QuestionMarkKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Question Mark Kick technique"
+    },
+    {
+      "id": "kickboxing__axe-kick",
+      "martialArt": "kickboxing",
+      "name": "Axe Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__switch-kick",
+        "kickboxing__question-mark-kick",
+        "kickboxing__crescent-kick",
+        "kickboxing__wheel-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥"
+      ],
+      "youtubeSearchQuery": "kickboxing Axe Kick technique"
+    },
+    {
+      "id": "kickboxing__crescent-kick",
+      "martialArt": "kickboxing",
+      "name": "Crescent Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__switch-kick",
+        "kickboxing__question-mark-kick",
+        "kickboxing__axe-kick",
+        "kickboxing__wheel-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥"
+      ],
+      "youtubeSearchQuery": "kickboxing Crescent Kick technique"
+    },
+    {
+      "id": "kickboxing__wheel-kick",
+      "martialArt": "kickboxing",
+      "name": "Wheel Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [
+        "**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__switch-kick",
+        "kickboxing__question-mark-kick",
+        "kickboxing__axe-kick",
+        "kickboxing__crescent-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#WheelKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Wheel Kick technique"
+    },
+    {
+      "id": "kickboxing__spinning-back-kick",
+      "martialArt": "kickboxing",
+      "name": "Spinning Back Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥",
+        "#BackKick",
+        "#SpinningBackKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Spinning Back Kick technique"
+    },
+    {
+      "id": "kickboxing__jumping-kick",
+      "martialArt": "kickboxing",
+      "name": "Jumping Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥"
+      ],
+      "youtubeSearchQuery": "kickboxing Jumping Kick technique"
+    },
+    {
+      "id": "kickboxing__step-up-kick",
+      "martialArt": "kickboxing",
+      "name": "Step-Up Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "킥",
+      "positions": [
+        "킥"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Teep/Front Kick은 상대의 전진을 끊거나 거리를 강제로 벌리는 용도로, 상대가 압박해 들어올 때 가장 먼저 쓰는 방어적 공격이다. Round Kick과 Low Kick은 로우킥이 허용되는 룰(K-1, Glory, 풀컨택트 로우킥 룰)에서 라운드 내내 상대의 다리 힘과 전진력을 갈아내는 핵심 무기이며, 몇 차례 누적되면 스탠스 자체를 무너뜨릴 수 있다. Body Kick과 High Kick은 로우킥이 금지된 **아메리칸 킥복싱(벨트라인 룰)에서 사실상 유일한 킥 공격 옵션**이 되므로, 이 룰에서는 잽-크로스 다음에 미들/하이킥을 붙이는 콤비네이션 비중이 훨씬 커진다. Side Kick은 거리를 끊거나 전진하는 상대를 정면에서 찔러 막는 저지용으로 좋고, Back Kick은 상대가 등 뒤쪽 사각으로 붙거나 클린치 직전 거리에서 강하게 밀고 들어올 때 카운터로 쓴다.\n\n**변형 킥의 용도.** Switch Kick은 스탠스를 바꾸며 원래 리어 다리를 새 리드킥으로 던져 체크 타이밍을 속이는 데 쓴다. Question Mark Kick은 라운드킥처럼 보이게 시작해 궤적을 꺾어 하이킥으로 떨어뜨리는 킥으로, 상대가 로우킥 체크에 익숙해져 다리를 들 준비를 하고 있을 때 그 체크를 무력화하고 머리를 노린다. Wheel Kick(스피닝 훅킥 계열)과 Crescent Kick은 정면 가드를 우회해 측면/후방 각에서 헤드를 노리는 용도로, 상대가 정면 공격에만 익숙할 때 효과가 크다. Axe Kick은 클린치 직전 근거리에서 위에서 아래로 찍어 상대의 자세를 무너뜨리는 용도로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:킥"
+      ],
+      "youtubeSearchQuery": "kickboxing Step-Up Kick technique"
+    },
+    {
+      "id": "kickboxing__straight-knee",
+      "martialArt": "kickboxing",
+      "name": "Straight Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "니 (무릎)",
+      "positions": [
+        "니 (무릎)"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경기에서:\n\n**규칙별 차이가 가장 큰 기술군.** K-1 Rules와 Glory Rules에서는 클린치 상태에서의 니(클린치 니)가 핵심 근거리 무기이지만, **아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 니 자체가 대부분 금지**된다. 따라서 같은 \"킥복싱\"이라도 룰을 모르고 니를 훈련한 그대로 시합에 나가면 곧바로 반칙이 될 수 있다.\n\n**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__rear-knee",
+        "kickboxing__jumping-knee",
+        "kickboxing__flying-knee"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:니-무릎",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "kickboxing Straight Knee technique"
+    },
+    {
+      "id": "kickboxing__lead-knee",
+      "martialArt": "kickboxing",
+      "name": "Lead Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "니 (무릎)",
+      "positions": [
+        "니 (무릎)"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경기에서:\n\n**규칙별 차이가 가장 큰 기술군.** K-1 Rules와 Glory Rules에서는 클린치 상태에서의 니(클린치 니)가 핵심 근거리 무기이지만, **아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 니 자체가 대부분 금지**된다. 따라서 같은 \"킥복싱\"이라도 룰을 모르고 니를 훈련한 그대로 시합에 나가면 곧바로 반칙이 될 수 있다.\n\n**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:니-무릎",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "kickboxing Lead Knee technique"
+    },
+    {
+      "id": "kickboxing__rear-knee",
+      "martialArt": "kickboxing",
+      "name": "Rear Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "니 (무릎)",
+      "positions": [
+        "니 (무릎)"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경기에서:\n\n**규칙별 차이가 가장 큰 기술군.** K-1 Rules와 Glory Rules에서는 클린치 상태에서의 니(클린치 니)가 핵심 근거리 무기이지만, **아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 니 자체가 대부분 금지**된다. 따라서 같은 \"킥복싱\"이라도 룰을 모르고 니를 훈련한 그대로 시합에 나가면 곧바로 반칙이 될 수 있다.\n\n**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__straight-knee",
+        "kickboxing__jumping-knee",
+        "kickboxing__flying-knee"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:니-무릎",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "kickboxing Rear Knee technique"
+    },
+    {
+      "id": "kickboxing__jumping-knee",
+      "martialArt": "kickboxing",
+      "name": "Jumping Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "니 (무릎)",
+      "positions": [
+        "니 (무릎)"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경기에서:\n\n**규칙별 차이가 가장 큰 기술군.** K-1 Rules와 Glory Rules에서는 클린치 상태에서의 니(클린치 니)가 핵심 근거리 무기이지만, **아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 니 자체가 대부분 금지**된다. 따라서 같은 \"킥복싱\"이라도 룰을 모르고 니를 훈련한 그대로 시합에 나가면 곧바로 반칙이 될 수 있다.\n\n**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__straight-knee",
+        "kickboxing__rear-knee",
+        "kickboxing__flying-knee"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:니-무릎",
+        "#Knee",
+        "#JumpingKnee"
+      ],
+      "youtubeSearchQuery": "kickboxing Jumping Knee technique"
+    },
+    {
+      "id": "kickboxing__flying-knee",
+      "martialArt": "kickboxing",
+      "name": "Flying Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "니 (무릎)",
+      "positions": [
+        "니 (무릎)"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경기에서:\n\n**규칙별 차이가 가장 큰 기술군.** K-1 Rules와 Glory Rules에서는 클린치 상태에서의 니(클린치 니)가 핵심 근거리 무기이지만, **아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 니 자체가 대부분 금지**된다. 따라서 같은 \"킥복싱\"이라도 룰을 모르고 니를 훈련한 그대로 시합에 나가면 곧바로 반칙이 될 수 있다.\n\n**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가(니가 허용되는 룰 기준).** Straight Knee는 클린치가 아닌 근거리에서 상대가 앞으로 붙어올 때 거리를 끊으며 카운터로 던진다. Lead/Rear Knee는 클린치를 잡은 뒤 상대의 자세를 무너뜨리는 연속 타격으로 쓰인다. Jumping Knee와 Flying Knee는 상대가 백스텝으로 물러나며 거리를 벌릴 때, 또는 상대가 압박에 지쳐 가드를 낮출 때 거리를 뛰어 넘어가며 마무리 공격으로 쓴다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__straight-knee",
+        "kickboxing__rear-knee",
+        "kickboxing__jumping-knee"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:니-무릎",
+        "#Knee",
+        "#FlyingKnee"
+      ],
+      "youtubeSearchQuery": "kickboxing Flying Knee technique"
+    },
+    {
+      "id": "kickboxing__horizontal-elbow",
+      "martialArt": "kickboxing",
+      "name": "Horizontal Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보"
+      ],
+      "description": "",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Horizontal Elbow technique"
+    },
+    {
+      "id": "kickboxing__diagonal-elbow",
+      "martialArt": "kickboxing",
+      "name": "Diagonal Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보"
+      ],
+      "description": "",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [
+        "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__glory-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__포인트-스파링",
+        "kickboxing__upward-elbow"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Diagonal Elbow technique"
+    },
+    {
+      "id": "kickboxing__upward-elbow",
+      "martialArt": "kickboxing",
+      "name": "Upward Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보"
+      ],
+      "description": "",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [
+        "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__k-1-rules",
+        "kickboxing__glory-rules",
+        "kickboxing__아메리칸-킥복싱",
+        "kickboxing__포인트-스파링",
+        "kickboxing__diagonal-elbow"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Upward Elbow technique"
+    },
+    {
+      "id": "kickboxing__downward-elbow",
+      "martialArt": "kickboxing",
+      "name": "Downward Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보"
+      ],
+      "description": "",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Downward Elbow technique"
+    },
+    {
+      "id": "kickboxing__spinning-elbow",
+      "martialArt": "kickboxing",
+      "name": "Spinning Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보",
+        "백킥과 스피닝 기술"
+      ],
+      "description": "규칙상 허용되는 경우",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Spinning Elbow technique"
+    },
+    {
+      "id": "kickboxing__back-elbow",
+      "martialArt": "kickboxing",
+      "name": "Back Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보",
+      "positions": [
+        "엘보"
+      ],
+      "description": "",
+      "purpose": "**규칙 확인이 필수.** K-1 Rules, Glory Rules, 아메리칸 킥복싱, 포인트 스파링 등 현재 널리 쓰이는 킥복싱 룰의 대부분에서 엘보는 **전면 금지**다. 엘보가 허용되는 것은 무에타이 룰이며, 킥복싱 체육관에서 엘보를 훈련하더라도 시합 전 반드시 해당 룰북에서 엘보 허용 여부를 확인해야 한다. 허용되는 룰(무에타이 등)에서는 클린치 직전~클린치 근거리에서 Horizontal/Diagonal Elbow가 컷을 유발하는 마무리 타격으로, Upward Elbow는 클린치 이탈 순간의 카운터로 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:엘보",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "kickboxing Back Elbow technique"
+    },
+    {
+      "id": "kickboxing__hand-feint",
+      "martialArt": "kickboxing",
+      "name": "Hand Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "Jab Feint",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Body Kick"
+      ],
+      "relatedTechniques": [
+        "kickboxing__body-kick",
+        "kickboxing__포인트-스파링",
+        "kickboxing__level-change-feint",
+        "kickboxing__kick-feint",
+        "kickboxing__shoulder-feint",
+        "kickboxing__feint-chain"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Hand Feint technique"
+    },
+    {
+      "id": "kickboxing__foot-feint",
+      "martialArt": "kickboxing",
+      "name": "Foot Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "Step Feint",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Foot Feint technique"
+    },
+    {
+      "id": "kickboxing__level-change-feint",
+      "martialArt": "kickboxing",
+      "name": "Level Change Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "High Kick"
+      ],
+      "relatedTechniques": [
+        "kickboxing__high-kick",
+        "kickboxing__포인트-스파링",
+        "kickboxing__hand-feint",
+        "kickboxing__kick-feint",
+        "kickboxing__shoulder-feint",
+        "kickboxing__feint-chain"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Level Change Feint technique"
+    },
+    {
+      "id": "kickboxing__kick-feint",
+      "martialArt": "kickboxing",
+      "name": "Kick Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Low Kick"
+      ],
+      "relatedTechniques": [
+        "kickboxing__low-kick",
+        "kickboxing__포인트-스파링",
+        "kickboxing__hand-feint",
+        "kickboxing__level-change-feint",
+        "kickboxing__shoulder-feint",
+        "kickboxing__feint-chain"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Kick Feint technique"
+    },
+    {
+      "id": "kickboxing__shoulder-feint",
+      "martialArt": "kickboxing",
+      "name": "Shoulder Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__포인트-스파링",
+        "kickboxing__hand-feint",
+        "kickboxing__level-change-feint",
+        "kickboxing__kick-feint",
+        "kickboxing__feint-chain"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Shoulder Feint technique"
+    },
+    {
+      "id": "kickboxing__feint-chain",
+      "martialArt": "kickboxing",
+      "name": "Feint Chain",
+      "koreanName": "복합 페인트",
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "복합 페인트",
+      "purpose": "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다.\n\n**상대 반응에 따른 연결.** 페인트에 상대가 전혀 반응하지 않으면 그 페인트가 진짜 공격으로 바뀔 수 있다는 것을 계속 각인시켜야 하고, 과민 반응(가드를 확 올리거나 체크를 너무 빨리)하는 상대에게는 페인트 자체를 반복해 헛스윙을 유도한 뒤 카운터를 노린다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 페인트는 실제 타격 없이 상대의 방어 반응만 끌어내 진짜 공격이 지나갈 길을 여는 데 쓴다. Hand Feint(잽을 던지는 동작만 하고 멈춤)는 상대가 잽에 반응해 가드를 올리거나 패리 동작을 하게 만든 뒤, 그 순간 로우킥이나 바디킥으로 하체를 노린다. Level Change Feint(상체를 살짝 낮추는 동작)는 상대가 로우킥/바디를 막으려 체크 자세를 취하게 만든 뒤 하이킥이나 오버핸드로 머리를 노린다. Kick Feint(다리를 드는 동작만 하고 내려놓음)는 상대가 체크를 준비하며 무게 중심을 흐트러뜨린 순간 실제 로우킥이나 진입을 시도한다. Shoulder Feint는 크로스가 나올 것처럼 어깨만 움직여 상대의 반응 속도를 소모시키는 데 쓴다. Feint Chain은 페인트 여러 개를 연속으로 붙여 상대가 어느 것이 진짜인지 판단하지 못하게 만드는 상급 전술로, 특히 포인트 스파링처럼 정확한 한 번의 타격이 승부를 가르는 룰에서 효과가 크다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__포인트-스파링",
+        "kickboxing__hand-feint",
+        "kickboxing__level-change-feint",
+        "kickboxing__kick-feint",
+        "kickboxing__shoulder-feint"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:페인트-feint",
+        "#Feint",
+        "#FeintChain"
+      ],
+      "youtubeSearchQuery": "kickboxing Feint Chain technique"
+    },
+    {
+      "id": "kickboxing__collar-tie",
+      "martialArt": "kickboxing",
+      "name": "Collar Tie",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__double-collar-tie",
+        "kickboxing__short-knee",
+        "kickboxing__off-balance",
+        "kickboxing__break-and-strike"
+      ],
+      "relatedMartialArts": [
+        "wrestling",
+        "boxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Collar Tie technique"
+    },
+    {
+      "id": "kickboxing__double-collar-tie",
+      "martialArt": "kickboxing",
+      "name": "Double Collar Tie",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__collar-tie",
+        "kickboxing__short-knee",
+        "kickboxing__off-balance",
+        "kickboxing__break-and-strike"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Double Collar Tie technique"
+    },
+    {
+      "id": "kickboxing__inside-control",
+      "martialArt": "kickboxing",
+      "name": "Inside Control",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling",
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Inside Control technique"
+    },
+    {
+      "id": "kickboxing__overhook",
+      "martialArt": "kickboxing",
+      "name": "Overhook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "kickboxing Overhook technique"
+    },
+    {
+      "id": "kickboxing__underhook",
+      "martialArt": "kickboxing",
+      "name": "Underhook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj",
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "kickboxing Underhook technique"
+    },
+    {
+      "id": "kickboxing__body-lock",
+      "martialArt": "kickboxing",
+      "name": "Body Lock",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj",
+        "wrestling",
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Body Lock technique"
+    },
+    {
+      "id": "kickboxing__short-knee",
+      "martialArt": "kickboxing",
+      "name": "Short Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__collar-tie",
+        "kickboxing__double-collar-tie",
+        "kickboxing__off-balance",
+        "kickboxing__break-and-strike"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "kickboxing Short Knee technique"
+    },
+    {
+      "id": "kickboxing__off-balance",
+      "martialArt": "kickboxing",
+      "name": "Off-Balance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__collar-tie",
+        "kickboxing__double-collar-tie",
+        "kickboxing__short-knee",
+        "kickboxing__break-and-strike"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Off-Balance technique"
+    },
+    {
+      "id": "kickboxing__break-and-strike",
+      "martialArt": "kickboxing",
+      "name": "Break and Strike",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 / 근거리 제어",
+      "positions": [
+        "클린치 / 근거리 제어"
+      ],
+      "description": "",
+      "purpose": "규칙상 허용되는 경우:\n\n**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다.\n\n**규칙에 따른 차이.** 아메리칸 킥복싱, 풀컨택트 로우킥 룰, 포인트 스파링에서는 클린치를 오래 유지하는 것 자체가 반칙(홀딩)으로 간주되어 심판이 즉시 브레이크를 부른다. 따라서 이 룰들에서는 클린치를 공격 수단이 아니라 \"순간적으로 숨을 돌리고 바로 떨어지는\" 용도로만 써야 한다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** 클린치는 상대의 콤비네이션에 압도당하고 있을 때 잠깐 숨을 돌리거나, 니가 허용되는 룰에서 근거리 타격을 위해 붙잡는 용도로 쓰인다. Collar Tie/Double Collar Tie로 머리를 눌러 상대의 자세를 무너뜨린 뒤 Short Knee로 연결하는 것이 K-1·Glory 룰에서의 표준 패턴이다. Off-Balance(상대를 밀거나 당겨 무게중심을 흔드는 동작)는 클린치에서 심판이 브레이크를 선언하기 직전, 마지막 한 타를 만들어내는 데 쓴다. Break and Strike는 클린치가 강제로 풀리는 순간 상대가 무방비 상태가 되는 틈을 타 짧은 스트레이트나 훅을 꽂는 기술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__collar-tie",
+        "kickboxing__double-collar-tie",
+        "kickboxing__short-knee",
+        "kickboxing__off-balance"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:클린치-근거리-제어"
+      ],
+      "youtubeSearchQuery": "kickboxing Break and Strike technique"
+    },
+    {
+      "id": "kickboxing__킥-캐치",
+      "martialArt": "kickboxing",
+      "name": "킥 캐치",
+      "koreanName": "킥 캐치",
+      "aliases": [],
+      "category": "테이크다운 방지 및 그래플링 브레이크 규정",
+      "positions": [
+        "테이크다운 방지 및 그래플링 브레이크 규정"
+      ],
+      "description": "Catch; 이후의 처리도 룰마다 다르다. 상대의 로우킥이나 라운드킥을 팔로 잡아 캐치하는 것 자체는 다수의 룰에서 허용되지만, 캐치한 다리를 잡고 밀어 넘어뜨리는 행위(테이크다운)는 대부분 금지된다. 캐치 직후 반격이 어디까지 허용되는지(니 1회 허용 여부 등)는 대회 룰북을 반드시 확인해야 한다.",
+      "purpose": "킥복싱의 거의 모든 룰은 **그라운드 게임과 테이크다운을 금지**한다. 이는 BJJ의 스윕/패스와 근본적으로 다른 지점이다.\n\n대부분의 룰에서 상대를 다리로 걸어 넘기는 행위(스윕성 동작), 바디락 후 던지는 행위(테이크다운), 상대를 눌러 바닥에 고정하는 행위는 반칙(경고 또는 감점)이다.\n\n클린치 유지 시간에는 규정된 제한이 있으며, 심판의 \"브레이크\" 신호가 나오면 즉시 떨어져야 한다. 위반이 반복되면 경고 → 포인트 감점 → 실격으로 이어질 수 있다.\n\n다리를 캐치당한 쪽은 스탠스를 낮추고 지지하는 다리의 무릎을 살짝 굽혀 균형을 유지하거나, 즉시 상체를 회전시켜 다리를 빼내는 방식으로 대응한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:테이크다운-방지-및-그래플링-브레이크-규정"
+      ],
+      "youtubeSearchQuery": "kickboxing 킥 캐치 technique"
+    },
+    {
+      "id": "kickboxing__parry",
+      "martialArt": "kickboxing",
+      "name": "Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Parry technique"
+    },
+    {
+      "id": "kickboxing__slip",
+      "martialArt": "kickboxing",
+      "name": "Slip",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "kickboxing__cross",
+        "kickboxing__question-mark-kick",
+        "kickboxing__level-change-feint",
+        "kickboxing__roll",
+        "kickboxing__shoulder-roll",
+        "kickboxing__check",
+        "kickboxing__catch"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Slip technique"
+    },
+    {
+      "id": "kickboxing__roll",
+      "martialArt": "kickboxing",
+      "name": "Roll",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__question-mark-kick",
+        "kickboxing__level-change-feint",
+        "kickboxing__slip",
+        "kickboxing__shoulder-roll",
+        "kickboxing__check",
+        "kickboxing__catch"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Roll technique"
+    },
+    {
+      "id": "kickboxing__pull",
+      "martialArt": "kickboxing",
+      "name": "Pull",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Pull technique"
+    },
+    {
+      "id": "kickboxing__cover",
+      "martialArt": "kickboxing",
+      "name": "Cover",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Cover technique"
+    },
+    {
+      "id": "kickboxing__shoulder-roll",
+      "martialArt": "kickboxing",
+      "name": "Shoulder Roll",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__question-mark-kick",
+        "kickboxing__level-change-feint",
+        "kickboxing__slip",
+        "kickboxing__roll",
+        "kickboxing__check",
+        "kickboxing__catch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Shoulder Roll technique"
+    },
+    {
+      "id": "kickboxing__check",
+      "martialArt": "kickboxing",
+      "name": "Check",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__question-mark-kick",
+        "kickboxing__level-change-feint",
+        "kickboxing__slip",
+        "kickboxing__roll",
+        "kickboxing__shoulder-roll",
+        "kickboxing__catch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "kickboxing Check technique"
+    },
+    {
+      "id": "kickboxing__catch",
+      "martialArt": "kickboxing",
+      "name": "Catch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "규칙상 허용되는 경우",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__question-mark-kick",
+        "kickboxing__level-change-feint",
+        "kickboxing__slip",
+        "kickboxing__roll",
+        "kickboxing__shoulder-roll",
+        "kickboxing__check"
+      ],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어",
+        "#Catch"
+      ],
+      "youtubeSearchQuery": "kickboxing Catch technique"
+    },
+    {
+      "id": "kickboxing__lean-back",
+      "martialArt": "kickboxing",
+      "name": "Lean Back",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Lean Back technique"
+    },
+    {
+      "id": "kickboxing__angle-out",
+      "martialArt": "kickboxing",
+      "name": "Angle Out",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Angle Out technique"
+    },
+    {
+      "id": "kickboxing__shin-block",
+      "martialArt": "kickboxing",
+      "name": "Shin Block",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check(정강이를 들어 로우킥을 막는 방어)는 로우킥이 허용되는 룰에서 필수 방어이며, 반응이 늦으면 다리 데미지가 급격히 누적된다. 다만 앞서 설명한 Question Mark Kick이나 Level Change Feint처럼 Check 반응을 역이용하는 공격이 있으므로, Check는 습관적으로 던지지 말고 상대의 리듬을 읽고 타이밍을 맞춰야 한다. Catch는 로우킥/미들킥을 팔로 감아 잡는 방어로, 이후 반격이 허용되는지는 룰에 따라 다르므로 11장의 그래플링 브레이크 규정을 참고한다. Slip과 Roll은 직선 펀치(잽, 크로스)에 대해 몸을 최소한으로 움직여 카운터 거리를 유지하는 데 쓰고, Shoulder Roll은 리어 크로스를 어깨로 흘리며 동시에 카운터 크로스를 준비하는 상급 방어다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "kickboxing Shin Block technique"
+    },
+    {
+      "id": "kickboxing__jab-counter",
+      "martialArt": "kickboxing",
+      "name": "Jab Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Jab",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab Counter technique"
+    },
+    {
+      "id": "kickboxing__cross-counter",
+      "martialArt": "kickboxing",
+      "name": "Cross Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Cross",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Cross Counter technique"
+    },
+    {
+      "id": "kickboxing__hook-counter",
+      "martialArt": "kickboxing",
+      "name": "Hook Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Hook",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Hook Counter technique"
+    },
+    {
+      "id": "kickboxing__slip-counter",
+      "martialArt": "kickboxing",
+      "name": "Slip Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Slip Counter technique"
+    },
+    {
+      "id": "kickboxing__parry-counter",
+      "martialArt": "kickboxing",
+      "name": "Parry Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Parry Counter technique"
+    },
+    {
+      "id": "kickboxing__check-and-return",
+      "martialArt": "kickboxing",
+      "name": "Check and Return",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__check",
+        "kickboxing__catch",
+        "kickboxing__catch-and-return",
+        "kickboxing__kick-after-punch",
+        "kickboxing__punch-after-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "kickboxing Check and Return technique"
+    },
+    {
+      "id": "kickboxing__catch-and-return",
+      "martialArt": "kickboxing",
+      "name": "Catch and Return",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__check",
+        "kickboxing__catch",
+        "kickboxing__check-and-return",
+        "kickboxing__kick-after-punch",
+        "kickboxing__punch-after-kick"
+      ],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Catch"
+      ],
+      "youtubeSearchQuery": "kickboxing Catch and Return technique"
+    },
+    {
+      "id": "kickboxing__kick-after-punch",
+      "martialArt": "kickboxing",
+      "name": "Kick After Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__check",
+        "kickboxing__catch",
+        "kickboxing__check-and-return",
+        "kickboxing__catch-and-return",
+        "kickboxing__punch-after-kick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터"
+      ],
+      "youtubeSearchQuery": "kickboxing Kick After Punch technique"
+    },
+    {
+      "id": "kickboxing__punch-after-kick",
+      "martialArt": "kickboxing",
+      "name": "Punch After Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [
+        "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다."
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "kickboxing__check",
+        "kickboxing__catch",
+        "kickboxing__check-and-return",
+        "kickboxing__catch-and-return",
+        "kickboxing__kick-after-punch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터"
+      ],
+      "youtubeSearchQuery": "kickboxing Punch After Kick technique"
+    },
+    {
+      "id": "kickboxing__angle-counter",
+      "martialArt": "kickboxing",
+      "name": "Angle Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": "**어떤 상황에서 쓰는가.** Check and Return은 로우킥을 정강이로 막은 직후 그 다리로 바로 로우킥이나 라운드킥을 되돌려주는 패턴이며, Catch and Return은 캐치 직후 균형이 흔들린 상대에게 곧바로 펀치/니(허용되는 룰)를 꽂는 패턴이다. Kick After Punch와 Punch After Kick은 상대가 한 종류의 공격(손 또는 발)에만 반응하도록 길들여진 뒤, 다른 종류의 공격으로 전환해 방어 습관의 사각을 노리는 전형적인 믹스 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:kickboxing",
+        "category:카운터",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "kickboxing Angle Counter technique"
+    },
+    {
+      "id": "kickboxing__tag-and-back-off",
+      "martialArt": "kickboxing",
+      "name": "Tag and Back Off",
+      "koreanName": null,
+      "aliases": [],
+      "category": "포인트 스파링 특유 전술",
+      "positions": [
+        "포인트 스파링 특유 전술"
+      ],
+      "description": "유효 타격을 성공시킨 즉시 거리를 회복하며 물러난다. 득점 뒤에도 계속 붙어 있으면 반칙성 과다 접촉이나 역카운터를 당할 위험이 있으므로, \"때리고 바로 빠진다\"가 기본 원칙이다.",
+      "purpose": "세미/라이트 컨택트 포인트 스파링은 풀컨택트 킥복싱과 승부 구조가 근본적으로 다르다. 강한 데미지 축적이 아니라 **정확하고 통제된 한 타격**이 즉시 포인트로 이어지고, 심판이 콜과 동시에 액션을 정지시킨다.\n\n니·엘보·클린치가 대부분 금지되므로 근거리 제어 기술 대신 각도 이동과 페인트의 비중이 훨씬 커진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:포인트-스파링-특유-전술",
+        "#TagAndBackOff"
+      ],
+      "youtubeSearchQuery": "kickboxing Tag and Back Off technique"
+    },
+    {
+      "id": "kickboxing__블리츠",
+      "martialArt": "kickboxing",
+      "name": "블리츠",
+      "koreanName": "블리츠",
+      "aliases": [],
+      "category": "포인트 스파링 특유 전술",
+      "positions": [
+        "포인트 스파링 특유 전술"
+      ],
+      "description": "Blitz; 짧고 빠른 전진 콤비네이션으로 거리를 급격히 좁혀 상대가 반응하기 전에 점수를 낸다.",
+      "purpose": "세미/라이트 컨택트 포인트 스파링은 풀컨택트 킥복싱과 승부 구조가 근본적으로 다르다. 강한 데미지 축적이 아니라 **정확하고 통제된 한 타격**이 즉시 포인트로 이어지고, 심판이 콜과 동시에 액션을 정지시킨다.\n\n니·엘보·클린치가 대부분 금지되므로 근거리 제어 기술 대신 각도 이동과 페인트의 비중이 훨씬 커진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:포인트-스파링-특유-전술"
+      ],
+      "youtubeSearchQuery": "kickboxing 블리츠 technique"
+    },
+    {
+      "id": "kickboxing__리버스-카운터",
+      "martialArt": "kickboxing",
+      "name": "리버스 카운터",
+      "koreanName": "리버스 카운터",
+      "aliases": [],
+      "category": "포인트 스파링 특유 전술",
+      "positions": [
+        "포인트 스파링 특유 전술"
+      ],
+      "description": "상대의 블리츠를 뒤로 빠지며 흘린 뒤, 상대의 공격이 끝나는 타이밍에 맞춰 리어 사이드 기술로 되받아친다.",
+      "purpose": "세미/라이트 컨택트 포인트 스파링은 풀컨택트 킥복싱과 승부 구조가 근본적으로 다르다. 강한 데미지 축적이 아니라 **정확하고 통제된 한 타격**이 즉시 포인트로 이어지고, 심판이 콜과 동시에 액션을 정지시킨다.\n\n니·엘보·클린치가 대부분 금지되므로 근거리 제어 기술 대신 각도 이동과 페인트의 비중이 훨씬 커진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:포인트-스파링-특유-전술"
+      ],
+      "youtubeSearchQuery": "kickboxing 리버스 카운터 technique"
+    },
+    {
+      "id": "kickboxing__jab-cross-low-kick",
+      "martialArt": "kickboxing",
+      "name": "Jab → Cross → Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#Cross",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab → Cross → Low Kick technique"
+    },
+    {
+      "id": "kickboxing__jab-hook-low-kick",
+      "martialArt": "kickboxing",
+      "name": "Jab → Hook → Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#Hook",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab → Hook → Low Kick technique"
+    },
+    {
+      "id": "kickboxing__cross-hook-high-kick",
+      "martialArt": "kickboxing",
+      "name": "Cross → Hook → High Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Cross",
+        "#Hook",
+        "#HighKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Cross → Hook → High Kick technique"
+    },
+    {
+      "id": "kickboxing__jab-body-kick",
+      "martialArt": "kickboxing",
+      "name": "Jab → Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#BodyKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab → Body Kick technique"
+    },
+    {
+      "id": "kickboxing__low-kick-cross",
+      "martialArt": "kickboxing",
+      "name": "Low Kick → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Cross",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Low Kick → Cross technique"
+    },
+    {
+      "id": "kickboxing__teep-jab",
+      "martialArt": "kickboxing",
+      "name": "Teep → Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "kickboxing Teep → Jab technique"
+    },
+    {
+      "id": "kickboxing__check-return-kick",
+      "martialArt": "kickboxing",
+      "name": "Check → Return Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "kickboxing Check → Return Kick technique"
+    },
+    {
+      "id": "kickboxing__slip-cross",
+      "martialArt": "kickboxing",
+      "name": "Slip → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "kickboxing Slip → Cross technique"
+    },
+    {
+      "id": "kickboxing__parry-jab-cross",
+      "martialArt": "kickboxing",
+      "name": "Parry → Jab / Cross",
+      "koreanName": null,
+      "aliases": [
+        "Parry → Jab",
+        "Cross"
+      ],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "kickboxing Parry → Jab / Cross technique"
+    },
+    {
+      "id": "kickboxing__hand-feint-body-kick",
+      "martialArt": "kickboxing",
+      "name": "Hand Feint → Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#BodyKick",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Hand Feint → Body Kick technique"
+    },
+    {
+      "id": "kickboxing__level-change-feint-high-kick",
+      "martialArt": "kickboxing",
+      "name": "Level Change Feint → High Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#HighKick",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Level Change Feint → High Kick technique"
+    },
+    {
+      "id": "kickboxing__kick-feint-low-kick",
+      "martialArt": "kickboxing",
+      "name": "Kick Feint → Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#LowKick",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "kickboxing Kick Feint → Low Kick technique"
+    },
+    {
+      "id": "kickboxing__switch-kick-cross",
+      "martialArt": "kickboxing",
+      "name": "Switch Kick → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Cross",
+        "#SwitchKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Switch Kick → Cross technique"
+    },
+    {
+      "id": "kickboxing__jab-cross-body-kick",
+      "martialArt": "kickboxing",
+      "name": "Jab → Cross → Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "아메리칸 킥복싱형: 로우킥 대신 바디킥",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Jab",
+        "#Cross",
+        "#BodyKick"
+      ],
+      "youtubeSearchQuery": "kickboxing Jab → Cross → Body Kick technique"
+    },
+    {
+      "id": "kickboxing__collar-tie-short-knee",
+      "martialArt": "kickboxing",
+      "name": "Collar Tie → Short Knee",
+      "koreanName": "니 허용 룰",
+      "aliases": [],
+      "category": "대표적인 콤비네이션 (연결)",
+      "positions": [
+        "대표적인 콤비네이션 (연결)"
+      ],
+      "description": "니 허용 룰",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:kickboxing",
+        "category:대표적인-콤비네이션-연결",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "kickboxing Collar Tie → Short Knee technique"
+    }
+  ]
+}

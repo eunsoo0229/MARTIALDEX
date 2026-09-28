@@ -1,0 +1,3116 @@
+{
+  "martialArt": {
+    "id": "muay-thai",
+    "nameEn": "Muay Thai",
+    "nameKo": "무에타이"
+  },
+  "count": 94,
+  "techniques": [
+    {
+      "id": "muay-thai__muay-thai-stance",
+      "martialArt": "muay-thai",
+      "name": "Muay Thai Stance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세",
+        "#Stance"
+      ],
+      "youtubeSearchQuery": "muay-thai Muay Thai Stance technique"
+    },
+    {
+      "id": "muay-thai__orthodox-southpaw",
+      "martialArt": "muay-thai",
+      "name": "Orthodox / Southpaw",
+      "koreanName": null,
+      "aliases": [
+        "Orthodox",
+        "Southpaw"
+      ],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세",
+        "#Orthodox",
+        "#Southpaw"
+      ],
+      "youtubeSearchQuery": "muay-thai Orthodox / Southpaw technique"
+    },
+    {
+      "id": "muay-thai__guard-long-guard-high-guard",
+      "martialArt": "muay-thai",
+      "name": "Guard / Long Guard / High Guard",
+      "koreanName": null,
+      "aliases": [
+        "Guard",
+        "Long Guard",
+        "High Guard"
+      ],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세"
+      ],
+      "youtubeSearchQuery": "muay-thai Guard / Long Guard / High Guard technique"
+    },
+    {
+      "id": "muay-thai__shell",
+      "martialArt": "muay-thai",
+      "name": "Shell",
+      "koreanName": "양팔로 몸통과 턱을 감싸는 방어 자세",
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "양팔로 몸통과 턱을 감싸는 방어 자세",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세"
+      ],
+      "youtubeSearchQuery": "muay-thai Shell technique"
+    },
+    {
+      "id": "muay-thai__dutch-guard",
+      "martialArt": "muay-thai",
+      "name": "Dutch Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "손을 낮게 두고 펀치 스피드/콤보 위주로 운영하는 자세",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세"
+      ],
+      "youtubeSearchQuery": "muay-thai Dutch Guard technique"
+    },
+    {
+      "id": "muay-thai__elbow-guard",
+      "martialArt": "muay-thai",
+      "name": "Elbow Guard",
+      "koreanName": "팔꿈치를 세워 로우킥/훅을 막는 자세",
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "팔꿈치를 세워 로우킥/훅을 막는 자세",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Elbow Guard technique"
+    },
+    {
+      "id": "muay-thai__teep-guard",
+      "martialArt": "muay-thai",
+      "name": "Teep Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Teep Guard technique"
+    },
+    {
+      "id": "muay-thai__basic-footwork",
+      "martialArt": "muay-thai",
+      "name": "Basic Footwork",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 개념 --- 거리(Range)와 자세",
+      "positions": [
+        "기본 개념 --- 거리(Range)와 자세"
+      ],
+      "description": "",
+      "purpose": "무에타이에서 \"포지션\"은 주짓수처럼 몸을 얽는 자세가 아니라, **거리(Range)와 클린치 여부에 따라 어떤 무기(펀치/킥/니/엘보)를 쓸 수 있는지가 달라지는 구조**를 의미한다. 즉 거리 = 무에타이의 포지션이다.\n\n거리 선택 자체가 전략이다. 리치가 짧은 선수는 클린치로 파고들고 (Muay Khao 스타일), 리치가 길거나 카운터가 강한 선수는 장거리를 유지하며 티프로 거리를 관리한다(Muay Femur 스타일). 아래 3장부터는 이 4개 거리를 기준으로 기술을 정리한다.\n\n**장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다.\n\n**중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리.\n\n**근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리.\n\n**클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리.\n\nCross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에 커버하지만 팔 사이 중앙 라인이 비어 스트레이트 펀치에 노출되기 쉽다.)",
+      "principles": [],
+      "variations": [
+        "Step Forward",
+        "Step Back",
+        "Lateral Step",
+        "Pivot",
+        "Switch Step",
+        "Skip Step"
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:기본-개념-거리-range-와-자세",
+        "#Footwork"
+      ],
+      "youtubeSearchQuery": "muay-thai Basic Footwork technique"
+    },
+    {
+      "id": "muay-thai__lead-teep-rear-teep",
+      "martialArt": "muay-thai",
+      "name": "Lead Teep / Rear Teep",
+      "koreanName": null,
+      "aliases": [
+        "Lead Teep",
+        "Rear Teep"
+      ],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Teep / Rear Teep technique"
+    },
+    {
+      "id": "muay-thai__side-teep",
+      "martialArt": "muay-thai",
+      "name": "Side Teep",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "몸을 옆으로 틀어 차는 티프, 상대의 각도를 무너뜨림",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Side Teep technique"
+    },
+    {
+      "id": "muay-thai__jumping-teep",
+      "martialArt": "muay-thai",
+      "name": "Jumping Teep",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Jumping Teep technique"
+    },
+    {
+      "id": "muay-thai__push-teep",
+      "martialArt": "muay-thai",
+      "name": "Push Teep",
+      "koreanName": "밀어내기 전용",
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "밀어내기 전용, 데미지보다 거리/균형 파괴 목적",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Push Teep technique"
+    },
+    {
+      "id": "muay-thai__body-teep-hip-teep",
+      "martialArt": "muay-thai",
+      "name": "Body Teep / Hip Teep",
+      "koreanName": null,
+      "aliases": [
+        "Body Teep",
+        "Hip Teep"
+      ],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Body Teep / Hip Teep technique"
+    },
+    {
+      "id": "muay-thai__face-level-teep",
+      "martialArt": "muay-thai",
+      "name": "Face-Level Teep",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Face-Level Teep technique"
+    },
+    {
+      "id": "muay-thai__teep-to-leg",
+      "martialArt": "muay-thai",
+      "name": "Teep to Leg",
+      "koreanName": "앞다리를 노려 스텝을 방해",
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "앞다리를 노려 스텝을 방해",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Teep to Leg technique"
+    },
+    {
+      "id": "muay-thai__teep-counter",
+      "martialArt": "muay-thai",
+      "name": "Teep Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "상대가 전진할 때 타이밍을 맞춰 차는 카운터 티프",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ",
+        "#Teep",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "muay-thai Teep Counter technique"
+    },
+    {
+      "id": "muay-thai__잡힌-다리를-빠르게-접어-빼기",
+      "martialArt": "muay-thai",
+      "name": "잡힌 다리를 빠르게 접어 빼기",
+      "koreanName": "잡힌 다리를 빠르게 접어 빼기",
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "(Hop out / 다리 회수)",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ"
+      ],
+      "youtubeSearchQuery": "muay-thai 잡힌 다리를 빠르게 접어 빼기 technique"
+    },
+    {
+      "id": "muay-thai__회수가-늦으면-한-발로-뛰어-균형-유지-반대손-가드",
+      "martialArt": "muay-thai",
+      "name": "회수가 늦으면 **한 발로 뛰어 균형 유지 + 반대손 가드**",
+      "koreanName": "회수가 늦으면 **한 발로 뛰어 균형 유지 + 반대손 가드**",
+      "aliases": [],
+      "category": "장거리 --- 티프 (Teep, ถีบ)",
+      "positions": [
+        "장거리 --- 티프 (Teep, ถีบ)"
+      ],
+      "description": "",
+      "purpose": "티프는 무에타이에서 **거리 조절과 전진 차단**의 핵심 도구다. 주먹이나 니처럼 데미지를 노리기보다 \"상대가 들어오지 못하게 밀어내는 것\"이 1차 목적이다.\n\n내가 티프를 던졌는데 **상대에게 다리를 잡히면(Caught)** 무에타이에서는 이를 위험한 상황으로 본다. 이때 표준 대응:\n\n반대로 **내가 상대의 티프/킥을 캐치했을 때**는 이어서:",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 뒤로 물러난다 → 거리 재확보, 잽으로 재압박 또는 로우킥 준비.",
+        "상대가 티프를 **캐치(Catch)**한다 → 아래 \"티프 캐치 이후\" 참고 (스윕/니로 역전 가능).",
+        "상대가 그냥 맞고 전진을 포기한다 → 콤보(Teep → Cross, Teep → Low Kick)로 이어간다."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-티프-teep-ถ-บ"
+      ],
+      "youtubeSearchQuery": "muay-thai 회수가 늦으면 **한 발로 뛰어 균형 유지 + 반대손 가드** technique"
+    },
+    {
+      "id": "muay-thai__lead-round-kick-rear-round-kick",
+      "martialArt": "muay-thai",
+      "name": "Lead Round Kick / Rear Round Kick",
+      "koreanName": null,
+      "aliases": [
+        "Lead Round Kick",
+        "Rear Round Kick"
+      ],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)"
+      ],
+      "description": "",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열",
+        "#RoundKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Round Kick / Rear Round Kick technique"
+    },
+    {
+      "id": "muay-thai__low-kick-body-kick-high-kick",
+      "martialArt": "muay-thai",
+      "name": "Low Kick / Body Kick / High Kick",
+      "koreanName": null,
+      "aliases": [
+        "Low Kick",
+        "Body Kick",
+        "High Kick"
+      ],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)"
+      ],
+      "description": "",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열",
+        "#LowKick",
+        "#BodyKick",
+        "#HighKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Low Kick / Body Kick / High Kick technique"
+    },
+    {
+      "id": "muay-thai__switch-kick",
+      "martialArt": "muay-thai",
+      "name": "Switch Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)",
+        "스피닝 기술 모음"
+      ],
+      "description": "전방 스텝으로 스탠스를 바꿔 반대쪽 킥을 던짐",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열",
+        "#SwitchKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Switch Kick technique"
+    },
+    {
+      "id": "muay-thai__step-up-kick",
+      "martialArt": "muay-thai",
+      "name": "Step-Up Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)"
+      ],
+      "description": "앞으로 한 발 밟고 차는 킥, 거리를 좁히며 타이밍 은폐",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열"
+      ],
+      "youtubeSearchQuery": "muay-thai Step-Up Kick technique"
+    },
+    {
+      "id": "muay-thai__question-mark-kick",
+      "martialArt": "muay-thai",
+      "name": "Question Mark Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)",
+        "스피닝 기술 모음"
+      ],
+      "description": "하이킥처럼 궤적을 그리다 얼굴 옆으로 꺾어 들어가는 변형 킥",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열",
+        "#QuestionMarkKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Question Mark Kick technique"
+    },
+    {
+      "id": "muay-thai__axe-kick-side-kick",
+      "martialArt": "muay-thai",
+      "name": "Axe Kick / Side Kick",
+      "koreanName": null,
+      "aliases": [
+        "Axe Kick",
+        "Side Kick"
+      ],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)"
+      ],
+      "description": "",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열"
+      ],
+      "youtubeSearchQuery": "muay-thai Axe Kick / Side Kick technique"
+    },
+    {
+      "id": "muay-thai__spinning-back-kick",
+      "martialArt": "muay-thai",
+      "name": "Spinning Back Kick",
+      "koreanName": "스피닝 기술",
+      "aliases": [],
+      "category": "장거리 킥 (Round Kick / Low Kick 계열)",
+      "positions": [
+        "장거리 킥 (Round Kick / Low Kick 계열)",
+        "스피닝 기술 모음"
+      ],
+      "description": "스피닝 기술, 8장 참고",
+      "purpose": "장거리 킥(Round Kick, เตะ)은 **가장 강한 한 방 데미지**를 노리는 무기다. 티프로 거리를 재는 동안, 상대가 정지해 있거나 가드가 낮을 때 바디킥/하이킥으로 마무리성 타격을 노린다. 스위치킥은 스탠스를 숨기며 타이밍을 속이는 용도다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "**체크(Check)당함** → 로우킥으로 전환하거나 펀치로 각도를 바꿔 재시도.",
+        "**캐치당함** → 3.4의 캐치 대응과 동일.",
+        "**맞고 물러남** → 같은 킥 반복 또는 펀치-킥 콤보로 마무리."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:장거리-킥-round-kick-low-kick-계열",
+        "#Spinning",
+        "#SpinningBackKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Spinning Back Kick technique"
+    },
+    {
+      "id": "muay-thai__jab-cross",
+      "martialArt": "muay-thai",
+      "name": "Jab / Cross",
+      "koreanName": null,
+      "aliases": [
+        "Jab",
+        "Cross"
+      ],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Jab",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab / Cross technique"
+    },
+    {
+      "id": "muay-thai__lead-hook-rear-hook",
+      "martialArt": "muay-thai",
+      "name": "Lead Hook / Rear Hook",
+      "koreanName": null,
+      "aliases": [
+        "Lead Hook",
+        "Rear Hook"
+      ],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Hook / Rear Hook technique"
+    },
+    {
+      "id": "muay-thai__lead-uppercut-rear-uppercut",
+      "martialArt": "muay-thai",
+      "name": "Lead Uppercut / Rear Uppercut",
+      "koreanName": null,
+      "aliases": [
+        "Lead Uppercut",
+        "Rear Uppercut"
+      ],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Uppercut / Rear Uppercut technique"
+    },
+    {
+      "id": "muay-thai__overhand",
+      "martialArt": "muay-thai",
+      "name": "Overhand",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Overhand"
+      ],
+      "youtubeSearchQuery": "muay-thai Overhand technique"
+    },
+    {
+      "id": "muay-thai__superman-punch",
+      "martialArt": "muay-thai",
+      "name": "Superman Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치"
+      ],
+      "youtubeSearchQuery": "muay-thai Superman Punch technique"
+    },
+    {
+      "id": "muay-thai__spinning-backfist",
+      "martialArt": "muay-thai",
+      "name": "Spinning Backfist",
+      "koreanName": "스피닝 기술",
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치",
+        "스피닝 기술 모음"
+      ],
+      "description": "스피닝 기술, 8장 참고",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Spinning"
+      ],
+      "youtubeSearchQuery": "muay-thai Spinning Backfist technique"
+    },
+    {
+      "id": "muay-thai__backfist",
+      "martialArt": "muay-thai",
+      "name": "Backfist",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "boxing",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치"
+      ],
+      "youtubeSearchQuery": "muay-thai Backfist technique"
+    },
+    {
+      "id": "muay-thai__long-guard-punch",
+      "martialArt": "muay-thai",
+      "name": "Long Guard Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "롱가드 자세에서 뻗어 나오는 잽/크로스",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치"
+      ],
+      "youtubeSearchQuery": "muay-thai Long Guard Punch technique"
+    },
+    {
+      "id": "muay-thai__jab-cross-jab-hook-cross-hook",
+      "martialArt": "muay-thai",
+      "name": "Jab--Cross / Jab--Hook / Cross--Hook",
+      "koreanName": null,
+      "aliases": [
+        "Jab--Cross",
+        "Jab--Hook",
+        "Cross--Hook"
+      ],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Jab",
+        "#Cross",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab--Cross / Jab--Hook / Cross--Hook technique"
+    },
+    {
+      "id": "muay-thai__jab-low-kick-cross-low-kick",
+      "martialArt": "muay-thai",
+      "name": "Jab--Low Kick / Cross--Low Kick",
+      "koreanName": null,
+      "aliases": [
+        "Jab--Low Kick",
+        "Cross--Low Kick"
+      ],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#LowKick",
+        "#Jab",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab--Low Kick / Cross--Low Kick technique"
+    },
+    {
+      "id": "muay-thai__jab-cross-hook",
+      "martialArt": "muay-thai",
+      "name": "Jab--Cross--Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#Jab",
+        "#Cross",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab--Cross--Hook technique"
+    },
+    {
+      "id": "muay-thai__jab-cross-body-kick",
+      "martialArt": "muay-thai",
+      "name": "Jab--Cross--Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#BodyKick",
+        "#Jab",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab--Cross--Body Kick technique"
+    },
+    {
+      "id": "muay-thai__hook-low-kick",
+      "martialArt": "muay-thai",
+      "name": "Hook--Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#LowKick",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "muay-thai Hook--Low Kick technique"
+    },
+    {
+      "id": "muay-thai__cross-body-kick",
+      "martialArt": "muay-thai",
+      "name": "Cross--Body Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 펀치",
+      "positions": [
+        "중거리 펀치"
+      ],
+      "description": "",
+      "purpose": "펀치는 무에타이에서 킥/니/엘보로 가는 **다리를 놓는 역할**을 한다. 잽으로 거리를 재고 리듬을 깨서 크로스-훅-킥 등 강한 무기를 열어준다. Muay Mat 스타일 선수는 펀치 자체를 메인 웨폰으로 쓰지만, 전통적으로는 펀치가 킥/니/엘보를 위한 셋업으로 많이 쓰인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "가드를 올려 막음 → 로우킥/바디킥으로 하단 전환.",
+        "백스텝으로 후퇴 → 전진 압박 후 니/클린치 진입 타이밍.",
+        "맞카운터 시도 → 슬립/패리 후 즉시 카운터 훅."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:중거리-펀치",
+        "#BodyKick",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "muay-thai Cross--Body Kick technique"
+    },
+    {
+      "id": "muay-thai__sok-tad",
+      "martialArt": "muay-thai",
+      "name": "Sok Tad",
+      "koreanName": "커팅 엘보",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "ศอกตัด, 커팅 엘보; 수평으로 베듯이 휘두르는 가장 기본적인 엘보. Lead/Rear Horizontal Elbow와 동일 계열.",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#SokTad"
+      ],
+      "youtubeSearchQuery": "muay-thai Sok Tad technique"
+    },
+    {
+      "id": "muay-thai__sok-sap",
+      "martialArt": "muay-thai",
+      "name": "Sok Sap",
+      "koreanName": "다운워드 엘보",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "ศอกสับ, 다운워드 엘보; 위에서 아래로 내리찍는 엘보. 클린치나 상대가 숙일 때 정수리/미간을 노림.",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#SokSap"
+      ],
+      "youtubeSearchQuery": "muay-thai Sok Sap technique"
+    },
+    {
+      "id": "muay-thai__sok-ngoei",
+      "martialArt": "muay-thai",
+      "name": "Sok Ngoei",
+      "koreanName": "업워드 엘보",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "ศอกเงย, 업워드 엘보; 아래에서 위로 턱을 걷어 올리는 엘보. 근접 클린치 상황에서 특히 유효.",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#SokNgoei"
+      ],
+      "youtubeSearchQuery": "muay-thai Sok Ngoei technique"
+    },
+    {
+      "id": "muay-thai__sok-klab",
+      "martialArt": "muay-thai",
+      "name": "Sok Klab",
+      "koreanName": "스피닝/턴잉 엘보",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "ศอกกลับ, 스피닝/턴잉 엘보; 몸을 돌리며 반대쪽 팔꿈치로 치는 엘보. 상대가 등 뒤/사각으로 빠질 때 사용.",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#SokKlab"
+      ],
+      "youtubeSearchQuery": "muay-thai Sok Klab technique"
+    },
+    {
+      "id": "muay-thai__sok-phung",
+      "martialArt": "muay-thai",
+      "name": "Sok Phung",
+      "koreanName": "스피어링/스트레이트 엘보",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "ศอกพุ่ง, 스피어링/스트레이트 엘보; 찌르듯 직선으로 뻗는 엘보. 잽처럼 빠르게 거리를 좁히며 던짐.",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#SokPhung"
+      ],
+      "youtubeSearchQuery": "muay-thai Sok Phung technique"
+    },
+    {
+      "id": "muay-thai__diagonal-elbow-downward-elbow-upward-elbow-spinning-elbow",
+      "martialArt": "muay-thai",
+      "name": "Diagonal Elbow / Downward Elbow / Upward Elbow / Spinning Elbow",
+      "koreanName": "위 태국어 세부 기술의 영문 통칭",
+      "aliases": [
+        "Diagonal Elbow",
+        "Downward Elbow",
+        "Upward Elbow",
+        "Spinning Elbow"
+      ],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "위 태국어 세부 기술의 영문 통칭",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#Elbow",
+        "#Spinning",
+        "#SpinningElbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Diagonal Elbow / Downward Elbow / Upward Elbow / Spinning Elbow technique"
+    },
+    {
+      "id": "muay-thai__back-elbow",
+      "martialArt": "muay-thai",
+      "name": "Back Elbow",
+      "koreanName": "등 뒤로 팔꿈치를 찍는 변형",
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "등 뒤로 팔꿈치를 찍는 변형",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Back Elbow technique"
+    },
+    {
+      "id": "muay-thai__long-elbow-short-elbow",
+      "martialArt": "muay-thai",
+      "name": "Long Elbow / Short Elbow",
+      "koreanName": null,
+      "aliases": [
+        "Long Elbow",
+        "Short Elbow"
+      ],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "거리에 따른 궤적 차이",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Long Elbow / Short Elbow technique"
+    },
+    {
+      "id": "muay-thai__elbow-from-clinch",
+      "martialArt": "muay-thai",
+      "name": "Elbow from Clinch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "엘보 (Sok, ศอก)",
+      "positions": [
+        "엘보 (Sok, ศอก)"
+      ],
+      "description": "클린치 컨트롤 중 상대 머리를 당겨 내리며 치는 엘보",
+      "purpose": "엘보는 근거리에서 가장 데미지가 크고 컷(자상)을 유발하기 쉬운 무기다. 클린치가 풀리는 순간, 펀치 교환 중 거리가 좁혀졌을 때, 또는 클린치 안에서 니 공방 사이의 빈틈에 주로 나온다. 심사 규정상 엘보는 임팩트가 큰 기술로 높게 평가되는 경향이 있다(16장 참고).",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "상대가 물러나며 거리 재확보 → 펀치/니로 재진입.",
+        "상대가 클린치로 붙잡음 → 클린치 컨트롤(7장)로 전환.",
+        "상대가 커버(팔로 막음) → Sok Klab(스피닝 엘보)으로 각도 전환."
+      ],
+      "relatedTechniques": [
+        "muay-thai__sok-klab"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:엘보-sok-ศอก",
+        "#Clinch",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Elbow from Clinch technique"
+    },
+    {
+      "id": "muay-thai__khao-trong",
+      "martialArt": "muay-thai",
+      "name": "Khao Trong",
+      "koreanName": "스트레이트 니",
+      "aliases": [],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "เข่าตรง, 스트레이트 니; 정면으로 곧게 찌르는 니. 상대의 전진을 맞카운터하기 좋음.",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#KhaoTrong"
+      ],
+      "youtubeSearchQuery": "muay-thai Khao Trong technique"
+    },
+    {
+      "id": "muay-thai__khao-chiang-khao-khong",
+      "martialArt": "muay-thai",
+      "name": "Khao Chiang / Khao Khong",
+      "koreanName": "다이애거널·커빙 니",
+      "aliases": [
+        "Khao Chiang",
+        "Khao Khong"
+      ],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "เข่าเฉียง/เข่าโค้ง, 다이애거널·커빙 니; 옆구리를 곡선으로 감아 치는 니. 클린치에서 갈비뼈/팔을 타격.",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#KhaoChiang"
+      ],
+      "youtubeSearchQuery": "muay-thai Khao Chiang / Khao Khong technique"
+    },
+    {
+      "id": "muay-thai__khao-loi",
+      "martialArt": "muay-thai",
+      "name": "Khao Loi",
+      "koreanName": "플라잉 니",
+      "aliases": [],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "เข่าลอย, 플라잉 니; 몸을 띄워 뛰어드는 니.",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#KhaoLoi"
+      ],
+      "youtubeSearchQuery": "muay-thai Khao Loi technique"
+    },
+    {
+      "id": "muay-thai__khao-kradod",
+      "martialArt": "muay-thai",
+      "name": "Khao Kradod",
+      "koreanName": "점핑 니",
+      "aliases": [],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "เข่ากระโดด, 점핑 니; 제자리에서 점프하며 올려치는 니.",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#KhaoKradod"
+      ],
+      "youtubeSearchQuery": "muay-thai Khao Kradod technique"
+    },
+    {
+      "id": "muay-thai__lead-knee-rear-knee-side-knee",
+      "martialArt": "muay-thai",
+      "name": "Lead Knee / Rear Knee / Side Knee",
+      "koreanName": null,
+      "aliases": [
+        "Lead Knee",
+        "Rear Knee",
+        "Side Knee"
+      ],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Knee / Rear Knee / Side Knee technique"
+    },
+    {
+      "id": "muay-thai__step-up-knee",
+      "martialArt": "muay-thai",
+      "name": "Step-Up Knee",
+      "koreanName": "한 걸음 다가서며 치는 니",
+      "aliases": [],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "한 걸음 다가서며 치는 니, 거리 좁히기용",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#Knee"
+      ],
+      "youtubeSearchQuery": "muay-thai Step-Up Knee technique"
+    },
+    {
+      "id": "muay-thai__clinch-knee",
+      "martialArt": "muay-thai",
+      "name": "Clinch Knee",
+      "koreanName": "클린치 컨트롤 중 반복적으로 치는 니",
+      "aliases": [],
+      "category": "니 (Khao, เข่า)",
+      "positions": [
+        "니 (Khao, เข่า)"
+      ],
+      "description": "클린치 컨트롤 중 반복적으로 치는 니",
+      "purpose": "니는 근거리와 클린치의 핵심 무기다. 상대가 전진 압박할 때 몸통 정면이 비므로 스트레이트 니로 카운터하기 좋고, 클린치에서는 상대의 자세가 무너진 순간(고개가 숙여지거나 목이 당겨졌을 때) 커빙 니/다이애거널 니로 마무리를 노린다. Muay Khao 스타일은 경기 내내 클린치를 만들어 니 싸움으로 끌고 가는 전략을 쓴다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "**니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다.",
+        "**프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다.",
+        "**힙 회전 (Turning the Hips)** --- 골반을 틀어 니가 정면 대신 옆구리를 스치듯 지나가게 한다.",
+        "**헤드 포지션 낮추기 방지** --- 목이 당겨져 고개가 숙여지면 니를 그대로 맞기 쉬우므로, 목 컨트롤을 뺏기지 않는 것이 니 방어의 전제 조건이다.",
+        "클린치 상황에서 니를 맞기 전에 막는 것도 핵심 기술이다."
+      ],
+      "transitions": [
+        "상대가 프레임/블록으로 니를 막음 → 아래 7.4의 니 방어를 상대가 쓰는 상황이므로, 반대 다리 니 또는 엘보로 전환.",
+        "상대가 니를 맞고 몸이 접힘 → 헤드컨트롤 유지 후 연속 니 또는 스윕으로 마무리.",
+        "상대가 클린치를 풀고 후퇴 → 장거리 재정비, 로우킥/티프로 추격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:니-khao-เข-า",
+        "#Clinch",
+        "#Knee",
+        "#ClinchKnee"
+      ],
+      "youtubeSearchQuery": "muay-thai Clinch Knee technique"
+    },
+    {
+      "id": "muay-thai__inside-low-kick-outside-low-kick",
+      "martialArt": "muay-thai",
+      "name": "Inside Low Kick / Outside Low Kick",
+      "koreanName": null,
+      "aliases": [
+        "Inside Low Kick",
+        "Outside Low Kick"
+      ],
+      "category": "로우킥 (Low Kick)",
+      "positions": [
+        "로우킥 (Low Kick)"
+      ],
+      "description": "",
+      "purpose": "로우킥은 한 방에 끝내는 무기가 아니라 **누적 데미지로 상대의 체중 이동과 스탠스를 무너뜨리는** 용도다. 라운드가 진행될수록 상대의 다리가 무거워지고 전진/후퇴가 느려지며, 결국 후반 라운드의 다른 공격(펀치, 니, 하이킥)이 더 잘 통하게 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "**Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다.",
+        "**Check → Cross** --- 체크로 상체 무게중심이 살짝 흔들리는 틈에 직선 펀치로 카운터.",
+        "**체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐.",
+        "상대가 로우킥을 **체크(다리를 들어 정강이로 막음)**했을 때, 다리를 차인 쪽이 오히려 짧은 순간 균형을 잃거나 다음 동작이 늦어질 수 있다. 이 틈을 노리는 것이 체크 카운터다."
+      ],
+      "defenses": [],
+      "transitions": [
+        "맞고 체중이 흔들림 → 같은 로우킥 반복(누적 데미지) 또는 크로스로 마무리.",
+        "체크당함 → 8.3 체크 카운터, 또는 로우킥 대신 미들/하이킥으로 각도 전환.",
+        "캐치당함 → 3.4 캐치 대응과 동일."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:로우킥-low-kick",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Inside Low Kick / Outside Low Kick technique"
+    },
+    {
+      "id": "muay-thai__calf-kick-thigh-kick",
+      "martialArt": "muay-thai",
+      "name": "Calf Kick / Thigh Kick",
+      "koreanName": null,
+      "aliases": [
+        "Calf Kick",
+        "Thigh Kick"
+      ],
+      "category": "로우킥 (Low Kick)",
+      "positions": [
+        "로우킥 (Low Kick)"
+      ],
+      "description": "",
+      "purpose": "로우킥은 한 방에 끝내는 무기가 아니라 **누적 데미지로 상대의 체중 이동과 스탠스를 무너뜨리는** 용도다. 라운드가 진행될수록 상대의 다리가 무거워지고 전진/후퇴가 느려지며, 결국 후반 라운드의 다른 공격(펀치, 니, 하이킥)이 더 잘 통하게 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "**Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다.",
+        "**Check → Cross** --- 체크로 상체 무게중심이 살짝 흔들리는 틈에 직선 펀치로 카운터.",
+        "**체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐.",
+        "상대가 로우킥을 **체크(다리를 들어 정강이로 막음)**했을 때, 다리를 차인 쪽이 오히려 짧은 순간 균형을 잃거나 다음 동작이 늦어질 수 있다. 이 틈을 노리는 것이 체크 카운터다."
+      ],
+      "defenses": [],
+      "transitions": [
+        "맞고 체중이 흔들림 → 같은 로우킥 반복(누적 데미지) 또는 크로스로 마무리.",
+        "체크당함 → 8.3 체크 카운터, 또는 로우킥 대신 미들/하이킥으로 각도 전환.",
+        "캐치당함 → 3.4 캐치 대응과 동일."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:로우킥-low-kick",
+        "#HighKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Calf Kick / Thigh Kick technique"
+    },
+    {
+      "id": "muay-thai__lead-low-kick-rear-low-kick",
+      "martialArt": "muay-thai",
+      "name": "Lead Low Kick / Rear Low Kick",
+      "koreanName": null,
+      "aliases": [
+        "Lead Low Kick",
+        "Rear Low Kick"
+      ],
+      "category": "로우킥 (Low Kick)",
+      "positions": [
+        "로우킥 (Low Kick)"
+      ],
+      "description": "",
+      "purpose": "로우킥은 한 방에 끝내는 무기가 아니라 **누적 데미지로 상대의 체중 이동과 스탠스를 무너뜨리는** 용도다. 라운드가 진행될수록 상대의 다리가 무거워지고 전진/후퇴가 느려지며, 결국 후반 라운드의 다른 공격(펀치, 니, 하이킥)이 더 잘 통하게 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "**Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다.",
+        "**Check → Cross** --- 체크로 상체 무게중심이 살짝 흔들리는 틈에 직선 펀치로 카운터.",
+        "**체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐.",
+        "상대가 로우킥을 **체크(다리를 들어 정강이로 막음)**했을 때, 다리를 차인 쪽이 오히려 짧은 순간 균형을 잃거나 다음 동작이 늦어질 수 있다. 이 틈을 노리는 것이 체크 카운터다."
+      ],
+      "defenses": [],
+      "transitions": [
+        "맞고 체중이 흔들림 → 같은 로우킥 반복(누적 데미지) 또는 크로스로 마무리.",
+        "체크당함 → 8.3 체크 카운터, 또는 로우킥 대신 미들/하이킥으로 각도 전환.",
+        "캐치당함 → 3.4 캐치 대응과 동일."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:로우킥-low-kick",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Lead Low Kick / Rear Low Kick technique"
+    },
+    {
+      "id": "muay-thai__switch-low-kick",
+      "martialArt": "muay-thai",
+      "name": "Switch Low Kick",
+      "koreanName": null,
+      "aliases": [],
+      "category": "로우킥 (Low Kick)",
+      "positions": [
+        "로우킥 (Low Kick)"
+      ],
+      "description": "",
+      "purpose": "로우킥은 한 방에 끝내는 무기가 아니라 **누적 데미지로 상대의 체중 이동과 스탠스를 무너뜨리는** 용도다. 라운드가 진행될수록 상대의 다리가 무거워지고 전진/후퇴가 느려지며, 결국 후반 라운드의 다른 공격(펀치, 니, 하이킥)이 더 잘 통하게 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "**Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다.",
+        "**Check → Cross** --- 체크로 상체 무게중심이 살짝 흔들리는 틈에 직선 펀치로 카운터.",
+        "**체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐.",
+        "상대가 로우킥을 **체크(다리를 들어 정강이로 막음)**했을 때, 다리를 차인 쪽이 오히려 짧은 순간 균형을 잃거나 다음 동작이 늦어질 수 있다. 이 틈을 노리는 것이 체크 카운터다."
+      ],
+      "defenses": [],
+      "transitions": [
+        "맞고 체중이 흔들림 → 같은 로우킥 반복(누적 데미지) 또는 크로스로 마무리.",
+        "체크당함 → 8.3 체크 카운터, 또는 로우킥 대신 미들/하이킥으로 각도 전환.",
+        "캐치당함 → 3.4 캐치 대응과 동일."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:로우킥-low-kick",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Switch Low Kick technique"
+    },
+    {
+      "id": "muay-thai__low-kick-after-punch-low-kick-after-teep",
+      "martialArt": "muay-thai",
+      "name": "Low Kick after Punch / Low Kick after Teep",
+      "koreanName": null,
+      "aliases": [
+        "Low Kick after Punch",
+        "Low Kick after Teep"
+      ],
+      "category": "로우킥 (Low Kick)",
+      "positions": [
+        "로우킥 (Low Kick)"
+      ],
+      "description": "",
+      "purpose": "로우킥은 한 방에 끝내는 무기가 아니라 **누적 데미지로 상대의 체중 이동과 스탠스를 무너뜨리는** 용도다. 라운드가 진행될수록 상대의 다리가 무거워지고 전진/후퇴가 느려지며, 결국 후반 라운드의 다른 공격(펀치, 니, 하이킥)이 더 잘 통하게 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "**Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다.",
+        "**Check → Cross** --- 체크로 상체 무게중심이 살짝 흔들리는 틈에 직선 펀치로 카운터.",
+        "**체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐.",
+        "상대가 로우킥을 **체크(다리를 들어 정강이로 막음)**했을 때, 다리를 차인 쪽이 오히려 짧은 순간 균형을 잃거나 다음 동작이 늦어질 수 있다. 이 틈을 노리는 것이 체크 카운터다."
+      ],
+      "defenses": [],
+      "transitions": [
+        "맞고 체중이 흔들림 → 같은 로우킥 반복(누적 데미지) 또는 크로스로 마무리.",
+        "체크당함 → 8.3 체크 카운터, 또는 로우킥 대신 미들/하이킥으로 각도 전환.",
+        "캐치당함 → 3.4 캐치 대응과 동일."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:로우킥-low-kick",
+        "#Teep",
+        "#LowKick"
+      ],
+      "youtubeSearchQuery": "muay-thai Low Kick after Punch / Low Kick after Teep technique"
+    },
+    {
+      "id": "muay-thai__single-collar-tie-double-collar-tie",
+      "martialArt": "muay-thai",
+      "name": "Single Collar Tie / Double Collar Tie",
+      "koreanName": "목 감싸기",
+      "aliases": [
+        "Single Collar Tie",
+        "Double Collar Tie"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "Chap Kho, จับคอ --- 목 감싸기",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Single Collar Tie / Double Collar Tie technique"
+    },
+    {
+      "id": "muay-thai__inside-control-outside-control",
+      "martialArt": "muay-thai",
+      "name": "Inside Control / Outside Control",
+      "koreanName": null,
+      "aliases": [
+        "Inside Control",
+        "Outside Control"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Inside Control / Outside Control technique"
+    },
+    {
+      "id": "muay-thai__overhook-underhook",
+      "martialArt": "muay-thai",
+      "name": "Overhook / Underhook",
+      "koreanName": null,
+      "aliases": [
+        "Overhook",
+        "Underhook"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "judo"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "muay-thai Overhook / Underhook technique"
+    },
+    {
+      "id": "muay-thai__biceps-control-wrist-control",
+      "martialArt": "muay-thai",
+      "name": "Biceps Control / Wrist Control",
+      "koreanName": null,
+      "aliases": [
+        "Biceps Control",
+        "Wrist Control"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Biceps Control / Wrist Control technique"
+    },
+    {
+      "id": "muay-thai__body-lock",
+      "martialArt": "muay-thai",
+      "name": "Body Lock",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj",
+        "wrestling",
+        "kickboxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Body Lock technique"
+    },
+    {
+      "id": "muay-thai__head-and-arm-control",
+      "martialArt": "muay-thai",
+      "name": "Head-and-Arm Control",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Head-and-Arm Control technique"
+    },
+    {
+      "id": "muay-thai__straight-knee-khao-trong-curving-knee-khao-chiang-diagonal-knee",
+      "martialArt": "muay-thai",
+      "name": "Straight Knee (Khao Trong) / Curving Knee (Khao Chiang) / Diagonal Knee",
+      "koreanName": null,
+      "aliases": [
+        "Straight Knee (Khao Trong)",
+        "Curving Knee (Khao Chiang)",
+        "Diagonal Knee"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#Knee",
+        "#KhaoTrong",
+        "#KhaoChiang"
+      ],
+      "youtubeSearchQuery": "muay-thai Straight Knee (Khao Trong) / Curving Knee (Khao Chiang) / Diagonal Knee technique"
+    },
+    {
+      "id": "muay-thai__elbow-entry",
+      "martialArt": "muay-thai",
+      "name": "Elbow Entry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "클린치 컨트롤 중 짧게 치고 빠지는 엘보",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Elbow Entry technique"
+    },
+    {
+      "id": "muay-thai__turn-off-balance",
+      "martialArt": "muay-thai",
+      "name": "Turn / Off-Balance",
+      "koreanName": null,
+      "aliases": [
+        "Turn",
+        "Off-Balance"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "Muay/Wing; 목이나 팔 컨트롤을 이용해 상대의 몸통을 회전시켜 정면을 빼앗고 니를 열어준다.",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#OffBalance"
+      ],
+      "youtubeSearchQuery": "muay-thai Turn / Off-Balance technique"
+    },
+    {
+      "id": "muay-thai__tud",
+      "martialArt": "muay-thai",
+      "name": "Tud",
+      "koreanName": "던지기/뎀프",
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "ทุ่ม, 던지기/뎀프; 컨트롤한 상체를 이용해 상대를 아래로 눌러 넘어뜨리는 클린치 던지기 계열.",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch"
+      ],
+      "youtubeSearchQuery": "muay-thai Tud technique"
+    },
+    {
+      "id": "muay-thai__sweep-foot-sweep",
+      "martialArt": "muay-thai",
+      "name": "Sweep / Foot Sweep",
+      "koreanName": null,
+      "aliases": [
+        "Sweep",
+        "Foot Sweep"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "상대의 지지하는 발을 발로 걸어 무너뜨림.",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#Sweep",
+        "#FootSweep"
+      ],
+      "youtubeSearchQuery": "muay-thai Sweep / Foot Sweep technique"
+    },
+    {
+      "id": "muay-thai__outside-trip-inside-trip",
+      "martialArt": "muay-thai",
+      "name": "Outside Trip / Inside Trip",
+      "koreanName": null,
+      "aliases": [
+        "Outside Trip",
+        "Inside Trip"
+      ],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "다리를 안/밖에서 걸어 상대의 지지축을 없애는 기술.",
+      "purpose": "클린치는 상대가 **전진 압박하거나, 펀치/니 교환 중 거리가 완전히 좁혀졌을 때** 자연스럽게 발생한다. 클린치의 목적은 크게 세 가지다.\n\n1. 상대의 자세를 무너뜨려 니/엘보를 안전하게 넣는다. 2. 상대의 리듬(콤보)을 끊고 경기를 재정비한다. 3. 오프밸런스/스윕/덤프로 상대를 넘겨 데미지 없이 점수를 얻는다.\n\nMuay Khao(니 파이터) 스타일은 적극적으로 클린치를 만들어 니 싸움으로 끌고 가고, Muay Femur(테크니션) 스타일은 클린치를 짧게 끊고 다시 장거리로 빠지는 것을 선호한다.\n\n무에타이 클린치 고유의 넘기기 기술군. 데미지보다 **상대를 지면에 닿게 하거나 균형을 완전히 무너뜨려 점수를 얻는 것**이 목적이며, 심사 규정상 클린치 지배력을 보여주는 중요한 요소다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:클린치-clinch",
+        "#Trip"
+      ],
+      "youtubeSearchQuery": "muay-thai Outside Trip / Inside Trip technique"
+    },
+    {
+      "id": "muay-thai__kick-catch-teep-catch",
+      "martialArt": "muay-thai",
+      "name": "Kick Catch / Teep Catch",
+      "koreanName": null,
+      "aliases": [
+        "Kick Catch",
+        "Teep Catch"
+      ],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-sweep",
+        "muay-thai__catch-and-dump"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어",
+        "#Teep",
+        "#KickCatch"
+      ],
+      "youtubeSearchQuery": "muay-thai Kick Catch / Teep Catch technique"
+    },
+    {
+      "id": "muay-thai__catch-and-return",
+      "martialArt": "muay-thai",
+      "name": "Catch and Return",
+      "koreanName": "잡은 채로 반대쪽 킥/펀치 되받아치기",
+      "aliases": [],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "잡은 채로 반대쪽 킥/펀치 되받아치기",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-sweep",
+        "muay-thai__catch-and-dump"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai Catch and Return technique"
+    },
+    {
+      "id": "muay-thai__catch-and-sweep",
+      "martialArt": "muay-thai",
+      "name": "Catch and Sweep",
+      "koreanName": "잡은 다리의 지지축을 걸어 넘어뜨리기",
+      "aliases": [],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "잡은 다리의 지지축을 걸어 넘어뜨리기",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-dump"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어",
+        "#Sweep"
+      ],
+      "youtubeSearchQuery": "muay-thai Catch and Sweep technique"
+    },
+    {
+      "id": "muay-thai__catch-and-dump",
+      "martialArt": "muay-thai",
+      "name": "Catch and Dump",
+      "koreanName": "잡은 다리를 밀어 넘어뜨리기",
+      "aliases": [],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "잡은 다리를 밀어 넘어뜨리기",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-sweep"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어",
+        "#Dump"
+      ],
+      "youtubeSearchQuery": "muay-thai Catch and Dump technique"
+    },
+    {
+      "id": "muay-thai__check-low-kick-check-body-kick-check",
+      "martialArt": "muay-thai",
+      "name": "Check / Low Kick Check / Body Kick Check",
+      "koreanName": null,
+      "aliases": [
+        "Check",
+        "Low Kick Check",
+        "Body Kick Check"
+      ],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-sweep",
+        "muay-thai__catch-and-dump"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어",
+        "#LowKick",
+        "#BodyKick",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "muay-thai Check / Low Kick Check / Body Kick Check technique"
+    },
+    {
+      "id": "muay-thai__shin-block-long-guard-parry-elbow-shield",
+      "martialArt": "muay-thai",
+      "name": "Shin Block / Long Guard / Parry / Elbow Shield",
+      "koreanName": null,
+      "aliases": [
+        "Shin Block",
+        "Long Guard",
+        "Parry",
+        "Elbow Shield"
+      ],
+      "category": "킥 캐치 / 방어",
+      "positions": [
+        "킥 캐치 / 방어"
+      ],
+      "description": "",
+      "purpose": "킥 캐치는 단순 방어가 아니라 **역전의 기회**다. 상대의 킥/티프를 잡으면 상대는 한 발로 서 있는 불균형 상태가 되므로, 곧바로 스윕이나 카운터로 이어갈 수 있다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "캐치에 저항하며 버팀 → Catch and Dump로 강제로 무너뜨림.",
+        "캐치당한 상대가 회전하며 빠지려 함 → 빠지는 방향을 따라가며 Catch and Sweep.",
+        "캐치 후 상대가 완전히 무너짐 → Counter Knee/Punch로 마무리."
+      ],
+      "relatedTechniques": [
+        "muay-thai__catch-and-sweep",
+        "muay-thai__catch-and-dump"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-캐치-방어",
+        "#Elbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Shin Block / Long Guard / Parry / Elbow Shield technique"
+    },
+    {
+      "id": "muay-thai__high-guard-long-guard",
+      "martialArt": "muay-thai",
+      "name": "High Guard / Long Guard",
+      "koreanName": null,
+      "aliases": [
+        "High Guard",
+        "Long Guard"
+      ],
+      "category": "펀치 방어",
+      "positions": [
+        "펀치 방어"
+      ],
+      "description": "",
+      "purpose": "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다. 단순히 막기만 하면 계속 압박당하므로, 슬립/패리 이후 항상 카운터를 붙이는 습관이 중요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "패리 성공 → 상대의 팔이 빗나간 방향으로 즉시 카운터 크로스/훅.",
+        "슬립 성공 → 상대가 헛치며 중심이 앞으로 쏠린 틈에 니 또는 언더훅으로 클린치 진입."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:펀치-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai High Guard / Long Guard technique"
+    },
+    {
+      "id": "muay-thai__cross-arm-guard",
+      "martialArt": "muay-thai",
+      "name": "Cross-Arm Guard",
+      "koreanName": "1.2절 참고",
+      "aliases": [],
+      "category": "펀치 방어",
+      "positions": [
+        "펀치 방어"
+      ],
+      "description": "1.2절 참고 --- 훅/로우킥 동시 방어, 중앙 라인 노출 주의",
+      "purpose": "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다. 단순히 막기만 하면 계속 압박당하므로, 슬립/패리 이후 항상 카운터를 붙이는 습관이 중요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "패리 성공 → 상대의 팔이 빗나간 방향으로 즉시 카운터 크로스/훅.",
+        "슬립 성공 → 상대가 헛치며 중심이 앞으로 쏠린 틈에 니 또는 언더훅으로 클린치 진입."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:펀치-방어",
+        "#Cross",
+        "#CrossArmGuard"
+      ],
+      "youtubeSearchQuery": "muay-thai Cross-Arm Guard technique"
+    },
+    {
+      "id": "muay-thai__parry-catch-slip-pull-back-step-back-roll-cover",
+      "martialArt": "muay-thai",
+      "name": "Parry / Catch / Slip / Pull Back / Step Back / Roll / Cover",
+      "koreanName": null,
+      "aliases": [
+        "Parry",
+        "Catch",
+        "Slip",
+        "Pull Back",
+        "Step Back",
+        "Roll",
+        "Cover"
+      ],
+      "category": "펀치 방어",
+      "positions": [
+        "펀치 방어"
+      ],
+      "description": "",
+      "purpose": "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다. 단순히 막기만 하면 계속 압박당하므로, 슬립/패리 이후 항상 카운터를 붙이는 습관이 중요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "패리 성공 → 상대의 팔이 빗나간 방향으로 즉시 카운터 크로스/훅.",
+        "슬립 성공 → 상대가 헛치며 중심이 앞으로 쏠린 틈에 니 또는 언더훅으로 클린치 진입."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:펀치-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai Parry / Catch / Slip / Pull Back / Step Back / Roll / Cover technique"
+    },
+    {
+      "id": "muay-thai__shoulder-block",
+      "martialArt": "muay-thai",
+      "name": "Shoulder Block",
+      "koreanName": null,
+      "aliases": [],
+      "category": "펀치 방어",
+      "positions": [
+        "펀치 방어"
+      ],
+      "description": "",
+      "purpose": "펀치 방어는 데미지를 피하는 동시에 **카운터 타이밍을 만드는 것**이 목적이다. 단순히 막기만 하면 계속 압박당하므로, 슬립/패리 이후 항상 카운터를 붙이는 습관이 중요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "패리 성공 → 상대의 팔이 빗나간 방향으로 즉시 카운터 크로스/훅.",
+        "슬립 성공 → 상대가 헛치며 중심이 앞으로 쏠린 틈에 니 또는 언더훅으로 클린치 진입."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:펀치-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai Shoulder Block technique"
+    },
+    {
+      "id": "muay-thai__check-shin-block",
+      "martialArt": "muay-thai",
+      "name": "Check / Shin Block",
+      "koreanName": null,
+      "aliases": [
+        "Check",
+        "Shin Block"
+      ],
+      "category": "킥 방어",
+      "positions": [
+        "킥 방어"
+      ],
+      "description": "",
+      "purpose": "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "체크 성공 → 8.3 로우킥 체크 카운터로 연결.",
+        "앵글아웃 성공 → 상대의 사각으로 이동했으므로 로우킥/훅으로 반격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-방어",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "muay-thai Check / Shin Block technique"
+    },
+    {
+      "id": "muay-thai__step-back-angle-out",
+      "martialArt": "muay-thai",
+      "name": "Step Back / Angle Out",
+      "koreanName": null,
+      "aliases": [
+        "Step Back",
+        "Angle Out"
+      ],
+      "category": "킥 방어",
+      "positions": [
+        "킥 방어"
+      ],
+      "description": "",
+      "purpose": "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "체크 성공 → 8.3 로우킥 체크 카운터로 연결.",
+        "앵글아웃 성공 → 상대의 사각으로 이동했으므로 로우킥/훅으로 반격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai Step Back / Angle Out technique"
+    },
+    {
+      "id": "muay-thai__catch-teep-stop",
+      "martialArt": "muay-thai",
+      "name": "Catch / Teep Stop",
+      "koreanName": null,
+      "aliases": [
+        "Catch",
+        "Teep Stop"
+      ],
+      "category": "킥 방어",
+      "positions": [
+        "킥 방어"
+      ],
+      "description": "",
+      "purpose": "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "체크 성공 → 8.3 로우킥 체크 카운터로 연결.",
+        "앵글아웃 성공 → 상대의 사각으로 이동했으므로 로우킥/훅으로 반격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-방어",
+        "#Teep"
+      ],
+      "youtubeSearchQuery": "muay-thai Catch / Teep Stop technique"
+    },
+    {
+      "id": "muay-thai__evade-lean-back",
+      "martialArt": "muay-thai",
+      "name": "Evade / Lean Back",
+      "koreanName": null,
+      "aliases": [
+        "Evade",
+        "Lean Back"
+      ],
+      "category": "킥 방어",
+      "positions": [
+        "킥 방어"
+      ],
+      "description": "",
+      "purpose": "킥 방어는 체크(정강이 블록)를 기본으로 하되, 체력 소모가 크므로 상황에 따라 회피(Angle Out)나 캐치로 다변화한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "체크 성공 → 8.3 로우킥 체크 카운터로 연결.",
+        "앵글아웃 성공 → 상대의 사각으로 이동했으므로 로우킥/훅으로 반격."
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:킥-방어"
+      ],
+      "youtubeSearchQuery": "muay-thai Evade / Lean Back technique"
+    },
+    {
+      "id": "muay-thai__jab-counter-cross-counter-hook-counter",
+      "martialArt": "muay-thai",
+      "name": "Jab Counter / Cross Counter / Hook Counter",
+      "koreanName": null,
+      "aliases": [
+        "Jab Counter",
+        "Cross Counter",
+        "Hook Counter"
+      ],
+      "category": "카운터 종합",
+      "positions": [
+        "카운터 종합"
+      ],
+      "description": "",
+      "purpose": "카운터는 무에타이 득점의 핵심이다. 대부분의 상급 기술은 \"먼저 맞아주는 것\"이 아니라 \"상대의 공격 타이밍을 정확히 읽고 그 순간에 겹쳐 치는 것\" 이다.\n\n**카운터 타이밍의 공통 원리**: 상대가 (1) 체중을 한쪽으로 옮기는 순간, (2) 팔/다리를 뻗어 회수하기 전인 순간, (3) 콤보 마지막 동작으로 자세가 무너진 순간에 카운터가 가장 잘 들어간다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:카운터-종합",
+        "#Jab",
+        "#Cross",
+        "#Hook",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "muay-thai Jab Counter / Cross Counter / Hook Counter technique"
+    },
+    {
+      "id": "muay-thai__low-kick-counter-teep-counter",
+      "martialArt": "muay-thai",
+      "name": "Low Kick Counter / Teep Counter",
+      "koreanName": null,
+      "aliases": [
+        "Low Kick Counter",
+        "Teep Counter"
+      ],
+      "category": "카운터 종합",
+      "positions": [
+        "카운터 종합"
+      ],
+      "description": "",
+      "purpose": "카운터는 무에타이 득점의 핵심이다. 대부분의 상급 기술은 \"먼저 맞아주는 것\"이 아니라 \"상대의 공격 타이밍을 정확히 읽고 그 순간에 겹쳐 치는 것\" 이다.\n\n**카운터 타이밍의 공통 원리**: 상대가 (1) 체중을 한쪽으로 옮기는 순간, (2) 팔/다리를 뻗어 회수하기 전인 순간, (3) 콤보 마지막 동작으로 자세가 무너진 순간에 카운터가 가장 잘 들어간다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:카운터-종합",
+        "#Teep",
+        "#LowKick",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "muay-thai Low Kick Counter / Teep Counter technique"
+    },
+    {
+      "id": "muay-thai__check-and-return-catch-and-return",
+      "martialArt": "muay-thai",
+      "name": "Check and Return / Catch and Return",
+      "koreanName": null,
+      "aliases": [
+        "Check and Return",
+        "Catch and Return"
+      ],
+      "category": "카운터 종합",
+      "positions": [
+        "카운터 종합"
+      ],
+      "description": "",
+      "purpose": "카운터는 무에타이 득점의 핵심이다. 대부분의 상급 기술은 \"먼저 맞아주는 것\"이 아니라 \"상대의 공격 타이밍을 정확히 읽고 그 순간에 겹쳐 치는 것\" 이다.\n\n**카운터 타이밍의 공통 원리**: 상대가 (1) 체중을 한쪽으로 옮기는 순간, (2) 팔/다리를 뻗어 회수하기 전인 순간, (3) 콤보 마지막 동작으로 자세가 무너진 순간에 카운터가 가장 잘 들어간다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:카운터-종합",
+        "#Check"
+      ],
+      "youtubeSearchQuery": "muay-thai Check and Return / Catch and Return technique"
+    },
+    {
+      "id": "muay-thai__kick-catch-to-sweep-kick-catch-to-counter",
+      "martialArt": "muay-thai",
+      "name": "Kick Catch to Sweep / Kick Catch to Counter",
+      "koreanName": null,
+      "aliases": [
+        "Kick Catch to Sweep",
+        "Kick Catch to Counter"
+      ],
+      "category": "카운터 종합",
+      "positions": [
+        "카운터 종합"
+      ],
+      "description": "",
+      "purpose": "카운터는 무에타이 득점의 핵심이다. 대부분의 상급 기술은 \"먼저 맞아주는 것\"이 아니라 \"상대의 공격 타이밍을 정확히 읽고 그 순간에 겹쳐 치는 것\" 이다.\n\n**카운터 타이밍의 공통 원리**: 상대가 (1) 체중을 한쪽으로 옮기는 순간, (2) 팔/다리를 뻗어 회수하기 전인 순간, (3) 콤보 마지막 동작으로 자세가 무너진 순간에 카운터가 가장 잘 들어간다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:카운터-종합",
+        "#Sweep",
+        "#KickCatch",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "muay-thai Kick Catch to Sweep / Kick Catch to Counter technique"
+    },
+    {
+      "id": "muay-thai__counter-elbow-counter-knee",
+      "martialArt": "muay-thai",
+      "name": "Counter Elbow / Counter Knee",
+      "koreanName": null,
+      "aliases": [
+        "Counter Elbow",
+        "Counter Knee"
+      ],
+      "category": "카운터 종합",
+      "positions": [
+        "카운터 종합"
+      ],
+      "description": "",
+      "purpose": "카운터는 무에타이 득점의 핵심이다. 대부분의 상급 기술은 \"먼저 맞아주는 것\"이 아니라 \"상대의 공격 타이밍을 정확히 읽고 그 순간에 겹쳐 치는 것\" 이다.\n\n**카운터 타이밍의 공통 원리**: 상대가 (1) 체중을 한쪽으로 옮기는 순간, (2) 팔/다리를 뻗어 회수하기 전인 순간, (3) 콤보 마지막 동작으로 자세가 무너진 순간에 카운터가 가장 잘 들어간다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:카운터-종합",
+        "#Elbow",
+        "#Knee",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "muay-thai Counter Elbow / Counter Knee technique"
+    },
+    {
+      "id": "muay-thai__spinning-elbow",
+      "martialArt": "muay-thai",
+      "name": "Spinning Elbow",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스피닝 기술 모음",
+      "positions": [
+        "스피닝 기술 모음"
+      ],
+      "description": "Sok Klab; 몸을 돌리며 반대쪽 팔꿈치로 치는 엘보. 클린치가 풀리는 순간이나 근거리 교환에서 사용.",
+      "purpose": "스피닝 기술은 예측하기 어렵지만 회전 중 잠시 시야와 균형을 잃는 리스크가 있어, 상대의 리듬을 완전히 읽었을 때나 이미 각을 확보한 상황에서 쓰는 고위험/고보상 기술이다.\n\n무에타이의 기본 킥은 다리를 휘둘러 정강이/발등으로 치는 **턴잉 킥 (회전형 킥)**이 기본형이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:스피닝-기술-모음",
+        "#Elbow",
+        "#Spinning",
+        "#SpinningElbow"
+      ],
+      "youtubeSearchQuery": "muay-thai Spinning Elbow technique"
+    },
+    {
+      "id": "muay-thai__spinning-knee",
+      "martialArt": "muay-thai",
+      "name": "Spinning Knee",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스피닝 기술 모음",
+      "positions": [
+        "스피닝 기술 모음"
+      ],
+      "description": "몸을 돌리며 니를 박아 넣는 기술. 클린치 진입 직전, 상대가 각을 잡으려 움직일 때 타이밍을 맞춰 사용.",
+      "purpose": "스피닝 기술은 예측하기 어렵지만 회전 중 잠시 시야와 균형을 잃는 리스크가 있어, 상대의 리듬을 완전히 읽었을 때나 이미 각을 확보한 상황에서 쓰는 고위험/고보상 기술이다.\n\n무에타이의 기본 킥은 다리를 휘둘러 정강이/발등으로 치는 **턴잉 킥 (회전형 킥)**이 기본형이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:스피닝-기술-모음",
+        "#Knee",
+        "#Spinning",
+        "#SpinningKnee"
+      ],
+      "youtubeSearchQuery": "muay-thai Spinning Knee technique"
+    },
+    {
+      "id": "muay-thai__tae-chiang",
+      "martialArt": "muay-thai",
+      "name": "Tae Chiang",
+      "koreanName": "다이애거널 라운드킥",
+      "aliases": [],
+      "category": "스피닝 기술 모음",
+      "positions": [
+        "스피닝 기술 모음"
+      ],
+      "description": "เตะเฉียง, 다이애거널 라운드킥; 일반적으로 부르는 \"로우킥/미들킥/하이킥\"의 기본 궤적.",
+      "purpose": "스피닝 기술은 예측하기 어렵지만 회전 중 잠시 시야와 균형을 잃는 리스크가 있어, 상대의 리듬을 완전히 읽었을 때나 이미 각을 확보한 상황에서 쓰는 고위험/고보상 기술이다.\n\n무에타이의 기본 킥은 다리를 휘둘러 정강이/발등으로 치는 **턴잉 킥 (회전형 킥)**이 기본형이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:muay-thai",
+        "category:스피닝-기술-모음"
+      ],
+      "youtubeSearchQuery": "muay-thai Tae Chiang technique"
+    }
+  ]
+}

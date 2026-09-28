@@ -1,0 +1,3875 @@
+{
+  "martialArt": {
+    "id": "boxing",
+    "nameEn": "Boxing",
+    "nameKo": "복싱"
+  },
+  "count": 135,
+  "techniques": [
+    {
+      "id": "boxing__orthodox",
+      "martialArt": "boxing",
+      "name": "Orthodox",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#Orthodox"
+      ],
+      "youtubeSearchQuery": "boxing Orthodox technique"
+    },
+    {
+      "id": "boxing__southpaw",
+      "martialArt": "boxing",
+      "name": "Southpaw",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#Southpaw"
+      ],
+      "youtubeSearchQuery": "boxing Southpaw technique"
+    },
+    {
+      "id": "boxing__high-guard",
+      "martialArt": "boxing",
+      "name": "High Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세",
+        "방어",
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세"
+      ],
+      "youtubeSearchQuery": "boxing High Guard technique"
+    },
+    {
+      "id": "boxing__long-guard",
+      "martialArt": "boxing",
+      "name": "Long Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세",
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#LongGuard"
+      ],
+      "youtubeSearchQuery": "boxing Long Guard technique"
+    },
+    {
+      "id": "boxing__peek-a-boo",
+      "martialArt": "boxing",
+      "name": "Peek-a-Boo",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#PeekABoo"
+      ],
+      "youtubeSearchQuery": "boxing Peek-a-Boo technique"
+    },
+    {
+      "id": "boxing__philly-shell",
+      "martialArt": "boxing",
+      "name": "Philly Shell",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#PhillyShell"
+      ],
+      "youtubeSearchQuery": "boxing Philly Shell technique"
+    },
+    {
+      "id": "boxing__cross-guard",
+      "martialArt": "boxing",
+      "name": "Cross Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#Cross",
+        "#CrossGuard"
+      ],
+      "youtubeSearchQuery": "boxing Cross Guard technique"
+    },
+    {
+      "id": "boxing__shoulder-roll-stance",
+      "martialArt": "boxing",
+      "name": "Shoulder Roll Stance",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 자세",
+      "positions": [
+        "기본 자세"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-자세",
+        "#Stance",
+        "#Roll",
+        "#ShoulderRoll"
+      ],
+      "youtubeSearchQuery": "boxing Shoulder Roll Stance technique"
+    },
+    {
+      "id": "boxing__step-forward",
+      "martialArt": "boxing",
+      "name": "Step Forward",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Step Forward technique"
+    },
+    {
+      "id": "boxing__step-back",
+      "martialArt": "boxing",
+      "name": "Step Back",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "거리별 포지션",
+        "방어",
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "boxing__cross"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Step Back technique"
+    },
+    {
+      "id": "boxing__lateral-step",
+      "martialArt": "boxing",
+      "name": "Lateral Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Lateral Step technique"
+    },
+    {
+      "id": "boxing__pivot",
+      "martialArt": "boxing",
+      "name": "Pivot",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Hook"
+      ],
+      "relatedTechniques": [
+        "boxing__hook"
+      ],
+      "relatedMartialArts": [
+        "wrestling",
+        "kickboxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크",
+        "#Pivot"
+      ],
+      "youtubeSearchQuery": "boxing Pivot technique"
+    },
+    {
+      "id": "boxing__l-step",
+      "martialArt": "boxing",
+      "name": "L-Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing L-Step technique"
+    },
+    {
+      "id": "boxing__shuffle",
+      "martialArt": "boxing",
+      "name": "Shuffle",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Shuffle technique"
+    },
+    {
+      "id": "boxing__switch-step",
+      "martialArt": "boxing",
+      "name": "Switch Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Switch Step technique"
+    },
+    {
+      "id": "boxing__drop-step",
+      "martialArt": "boxing",
+      "name": "Drop Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Drop Step technique"
+    },
+    {
+      "id": "boxing__angle-step",
+      "martialArt": "boxing",
+      "name": "Angle Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크",
+        "#AngleStep"
+      ],
+      "youtubeSearchQuery": "boxing Angle Step technique"
+    },
+    {
+      "id": "boxing__circle-out",
+      "martialArt": "boxing",
+      "name": "Circle Out",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Circle Out technique"
+    },
+    {
+      "id": "boxing__cut-off",
+      "martialArt": "boxing",
+      "name": "Cut Off",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크",
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Cut Off technique"
+    },
+    {
+      "id": "boxing__step-around",
+      "martialArt": "boxing",
+      "name": "Step Around",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing Step Around technique"
+    },
+    {
+      "id": "boxing__in-and-out",
+      "martialArt": "boxing",
+      "name": "In-and-Out",
+      "koreanName": null,
+      "aliases": [],
+      "category": "풋워크",
+      "positions": [
+        "풋워크"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:풋워크"
+      ],
+      "youtubeSearchQuery": "boxing In-and-Out technique"
+    },
+    {
+      "id": "boxing__jab",
+      "martialArt": "boxing",
+      "name": "Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션",
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__parry"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Jab",
+        "#DoubleJab",
+        "#TripleJab"
+      ],
+      "youtubeSearchQuery": "boxing Jab technique"
+    },
+    {
+      "id": "boxing__feint",
+      "martialArt": "boxing",
+      "name": "Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Feint",
+        "#PumpFeint",
+        "#ShoulderFeint"
+      ],
+      "youtubeSearchQuery": "boxing Feint technique"
+    },
+    {
+      "id": "boxing__cross",
+      "martialArt": "boxing",
+      "name": "Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__jab-feint",
+        "boxing__slip",
+        "boxing__parry",
+        "boxing__pull",
+        "boxing__step-back"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Cross",
+        "#CrossGuard",
+        "#CrossStep"
+      ],
+      "youtubeSearchQuery": "boxing Cross technique"
+    },
+    {
+      "id": "boxing__hook",
+      "martialArt": "boxing",
+      "name": "Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__slip",
+        "boxing__roll",
+        "boxing__pivot"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Hook",
+        "#CheckHook"
+      ],
+      "youtubeSearchQuery": "boxing Hook technique"
+    },
+    {
+      "id": "boxing__uppercut",
+      "martialArt": "boxing",
+      "name": "Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__roll"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "boxing Uppercut technique"
+    },
+    {
+      "id": "boxing__combination",
+      "martialArt": "boxing",
+      "name": "Combination",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Combination"
+      ],
+      "youtubeSearchQuery": "boxing Combination technique"
+    },
+    {
+      "id": "boxing__short-hook",
+      "martialArt": "boxing",
+      "name": "Short Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션",
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Short Hook technique"
+    },
+    {
+      "id": "boxing__short-uppercut",
+      "martialArt": "boxing",
+      "name": "Short Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션",
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "boxing Short Uppercut technique"
+    },
+    {
+      "id": "boxing__body-hook",
+      "martialArt": "boxing",
+      "name": "Body Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션",
+        "기본 펀치",
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Body Hook technique"
+    },
+    {
+      "id": "boxing__infighting",
+      "martialArt": "boxing",
+      "name": "Infighting",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Infighting"
+      ],
+      "youtubeSearchQuery": "boxing Infighting technique"
+    },
+    {
+      "id": "boxing__clinch",
+      "martialArt": "boxing",
+      "name": "Clinch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "거리별 포지션",
+      "positions": [
+        "거리별 포지션",
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:거리별-포지션",
+        "#Clinch"
+      ],
+      "youtubeSearchQuery": "boxing Clinch technique"
+    },
+    {
+      "id": "boxing__cross-straight-right",
+      "martialArt": "boxing",
+      "name": "Cross / Straight Right",
+      "koreanName": null,
+      "aliases": [
+        "Cross",
+        "Straight Right"
+      ],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "boxing Cross / Straight Right technique"
+    },
+    {
+      "id": "boxing__lead-hook",
+      "martialArt": "boxing",
+      "name": "Lead Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Lead Hook technique"
+    },
+    {
+      "id": "boxing__rear-hook",
+      "martialArt": "boxing",
+      "name": "Rear Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Rear Hook technique"
+    },
+    {
+      "id": "boxing__lead-uppercut",
+      "martialArt": "boxing",
+      "name": "Lead Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "boxing Lead Uppercut technique"
+    },
+    {
+      "id": "boxing__rear-uppercut",
+      "martialArt": "boxing",
+      "name": "Rear Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "boxing Rear Uppercut technique"
+    },
+    {
+      "id": "boxing__overhand",
+      "martialArt": "boxing",
+      "name": "Overhand",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Overhand"
+      ],
+      "youtubeSearchQuery": "boxing Overhand technique"
+    },
+    {
+      "id": "boxing__body-jab",
+      "martialArt": "boxing",
+      "name": "Body Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Jab"
+      ],
+      "youtubeSearchQuery": "boxing Body Jab technique"
+    },
+    {
+      "id": "boxing__body-cross",
+      "martialArt": "boxing",
+      "name": "Body Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "boxing Body Cross technique"
+    },
+    {
+      "id": "boxing__body-uppercut",
+      "martialArt": "boxing",
+      "name": "Body Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Uppercut"
+      ],
+      "youtubeSearchQuery": "boxing Body Uppercut technique"
+    },
+    {
+      "id": "boxing__shovel-hook",
+      "martialArt": "boxing",
+      "name": "Shovel Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치",
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Shovel Hook technique"
+    },
+    {
+      "id": "boxing__check-hook",
+      "martialArt": "boxing",
+      "name": "Check Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치",
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Hook",
+        "#CheckHook"
+      ],
+      "youtubeSearchQuery": "boxing Check Hook technique"
+    },
+    {
+      "id": "boxing__lead-overhand",
+      "martialArt": "boxing",
+      "name": "Lead Overhand",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Overhand"
+      ],
+      "youtubeSearchQuery": "boxing Lead Overhand technique"
+    },
+    {
+      "id": "boxing__rear-overhand",
+      "martialArt": "boxing",
+      "name": "Rear Overhand",
+      "koreanName": null,
+      "aliases": [],
+      "category": "기본 펀치",
+      "positions": [
+        "기본 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:기본-펀치",
+        "#Overhand"
+      ],
+      "youtubeSearchQuery": "boxing Rear Overhand technique"
+    },
+    {
+      "id": "boxing__gazelle-punch",
+      "martialArt": "boxing",
+      "name": "Gazelle Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "특수 펀치",
+      "positions": [
+        "특수 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:특수-펀치"
+      ],
+      "youtubeSearchQuery": "boxing Gazelle Punch technique"
+    },
+    {
+      "id": "boxing__superman-punch",
+      "martialArt": "boxing",
+      "name": "Superman Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "특수 펀치",
+      "positions": [
+        "특수 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:특수-펀치"
+      ],
+      "youtubeSearchQuery": "boxing Superman Punch technique"
+    },
+    {
+      "id": "boxing__bolo-punch",
+      "martialArt": "boxing",
+      "name": "Bolo Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "특수 펀치",
+      "positions": [
+        "특수 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:특수-펀치"
+      ],
+      "youtubeSearchQuery": "boxing Bolo Punch technique"
+    },
+    {
+      "id": "boxing__backfist",
+      "martialArt": "boxing",
+      "name": "Backfist",
+      "koreanName": null,
+      "aliases": [],
+      "category": "특수 펀치",
+      "positions": [
+        "특수 펀치"
+      ],
+      "description": "복싱 규칙에서는 일반 경기 기술로 사용하지 않음",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:특수-펀치"
+      ],
+      "youtubeSearchQuery": "boxing Backfist technique"
+    },
+    {
+      "id": "boxing__corkscrew-punch",
+      "martialArt": "boxing",
+      "name": "Corkscrew Punch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "특수 펀치",
+      "positions": [
+        "특수 펀치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:특수-펀치"
+      ],
+      "youtubeSearchQuery": "boxing Corkscrew Punch technique"
+    },
+    {
+      "id": "boxing__pump-feint",
+      "martialArt": "boxing",
+      "name": "Pump Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:페인트-feint",
+        "#Feint",
+        "#PumpFeint"
+      ],
+      "youtubeSearchQuery": "boxing Pump Feint technique"
+    },
+    {
+      "id": "boxing__shoulder-feint",
+      "martialArt": "boxing",
+      "name": "Shoulder Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:페인트-feint",
+        "#Feint",
+        "#ShoulderFeint"
+      ],
+      "youtubeSearchQuery": "boxing Shoulder Feint technique"
+    },
+    {
+      "id": "boxing__jab-feint",
+      "martialArt": "boxing",
+      "name": "Jab Feint",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "boxing__cross"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:페인트-feint",
+        "#Jab",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "boxing Jab Feint technique"
+    },
+    {
+      "id": "boxing__feint-double",
+      "martialArt": "boxing",
+      "name": "Feint → Double",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "boxing Feint → Double technique"
+    },
+    {
+      "id": "boxing__feint-entry",
+      "martialArt": "boxing",
+      "name": "Feint → Entry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "페인트 (Feint)",
+      "positions": [
+        "페인트 (Feint)"
+      ],
+      "description": "거리 좁히기",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:페인트-feint",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "boxing Feint → Entry technique"
+    },
+    {
+      "id": "boxing__1-2",
+      "martialArt": "boxing",
+      "name": "1--2",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--2 technique"
+    },
+    {
+      "id": "boxing__1-1-2",
+      "martialArt": "boxing",
+      "name": "1--1--2",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--1--2 technique"
+    },
+    {
+      "id": "boxing__1-1-1",
+      "martialArt": "boxing",
+      "name": "1--1--1",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "Triple Jab",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--1--1 technique"
+    },
+    {
+      "id": "boxing__1-2-3",
+      "martialArt": "boxing",
+      "name": "1--2--3",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--2--3 technique"
+    },
+    {
+      "id": "boxing__1-2-3-2",
+      "martialArt": "boxing",
+      "name": "1--2--3--2",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--2--3--2 technique"
+    },
+    {
+      "id": "boxing__1-1-2-3",
+      "martialArt": "boxing",
+      "name": "1--1--2--3",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--1--2--3 technique"
+    },
+    {
+      "id": "boxing__2-3-2",
+      "martialArt": "boxing",
+      "name": "2--3--2",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 2--3--2 technique"
+    },
+    {
+      "id": "boxing__1-2-5",
+      "martialArt": "boxing",
+      "name": "1--2--5",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--2--5 technique"
+    },
+    {
+      "id": "boxing__1-2-3-6",
+      "martialArt": "boxing",
+      "name": "1--2--3--6",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합"
+      ],
+      "youtubeSearchQuery": "boxing 1--2--3--6 technique"
+    },
+    {
+      "id": "boxing__body-head-combination",
+      "martialArt": "boxing",
+      "name": "Body--Head Combination",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합",
+        "#Combination"
+      ],
+      "youtubeSearchQuery": "boxing Body--Head Combination technique"
+    },
+    {
+      "id": "boxing__head-body-combination",
+      "martialArt": "boxing",
+      "name": "Head--Body Combination",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합",
+        "#Combination"
+      ],
+      "youtubeSearchQuery": "boxing Head--Body Combination technique"
+    },
+    {
+      "id": "boxing__double-jab-entry",
+      "martialArt": "boxing",
+      "name": "Double Jab Entry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합",
+        "#Jab",
+        "#DoubleJab"
+      ],
+      "youtubeSearchQuery": "boxing Double Jab Entry technique"
+    },
+    {
+      "id": "boxing__jab-feint-cross",
+      "martialArt": "boxing",
+      "name": "Jab Feint → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합",
+        "#Jab",
+        "#Cross",
+        "#Feint"
+      ],
+      "youtubeSearchQuery": "boxing Jab Feint → Cross technique"
+    },
+    {
+      "id": "boxing__feint-double-jab",
+      "martialArt": "boxing",
+      "name": "Feint → Double Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합",
+      "positions": [
+        "조합"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:조합",
+        "#Jab",
+        "#Feint",
+        "#DoubleJab"
+      ],
+      "youtubeSearchQuery": "boxing Feint → Double Jab technique"
+    },
+    {
+      "id": "boxing__double-forearm-guard",
+      "martialArt": "boxing",
+      "name": "Double Forearm Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Double Forearm Guard technique"
+    },
+    {
+      "id": "boxing__shell",
+      "martialArt": "boxing",
+      "name": "Shell",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#PhillyShell"
+      ],
+      "youtubeSearchQuery": "boxing Shell technique"
+    },
+    {
+      "id": "boxing__elbow-block",
+      "martialArt": "boxing",
+      "name": "Elbow Block",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어",
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Elbow Block technique"
+    },
+    {
+      "id": "boxing__body-cover",
+      "martialArt": "boxing",
+      "name": "Body Cover",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Body Cover technique"
+    },
+    {
+      "id": "boxing__slip",
+      "martialArt": "boxing",
+      "name": "Slip",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어",
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross",
+        "Hook"
+      ],
+      "relatedTechniques": [
+        "boxing__cross",
+        "boxing__hook"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Slip technique"
+    },
+    {
+      "id": "boxing__double-slip",
+      "martialArt": "boxing",
+      "name": "Double Slip",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Double Slip technique"
+    },
+    {
+      "id": "boxing__pull-back",
+      "martialArt": "boxing",
+      "name": "Pull Back",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어",
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Pull Back technique"
+    },
+    {
+      "id": "boxing__lean-back",
+      "martialArt": "boxing",
+      "name": "Lean Back",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Lean Back technique"
+    },
+    {
+      "id": "boxing__roll-bob-and-weave",
+      "martialArt": "boxing",
+      "name": "Roll / Bob and Weave",
+      "koreanName": null,
+      "aliases": [
+        "Roll",
+        "Bob and Weave"
+      ],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Roll"
+      ],
+      "youtubeSearchQuery": "boxing Roll / Bob and Weave technique"
+    },
+    {
+      "id": "boxing__duck",
+      "martialArt": "boxing",
+      "name": "Duck",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Duck technique"
+    },
+    {
+      "id": "boxing__side-step",
+      "martialArt": "boxing",
+      "name": "Side Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Side Step technique"
+    },
+    {
+      "id": "boxing__lead-hand-parry",
+      "martialArt": "boxing",
+      "name": "Lead Hand Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Lead Hand Parry technique"
+    },
+    {
+      "id": "boxing__rear-hand-parry",
+      "martialArt": "boxing",
+      "name": "Rear Hand Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Rear Hand Parry technique"
+    },
+    {
+      "id": "boxing__double-parry",
+      "martialArt": "boxing",
+      "name": "Double Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Double Parry technique"
+    },
+    {
+      "id": "boxing__downward-parry",
+      "martialArt": "boxing",
+      "name": "Downward Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Downward Parry technique"
+    },
+    {
+      "id": "boxing__catch",
+      "martialArt": "boxing",
+      "name": "Catch",
+      "koreanName": null,
+      "aliases": [],
+      "category": "방어",
+      "positions": [
+        "방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:방어"
+      ],
+      "youtubeSearchQuery": "boxing Catch technique"
+    },
+    {
+      "id": "boxing__parry",
+      "martialArt": "boxing",
+      "name": "Parry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Jab",
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "boxing__jab",
+        "boxing__cross"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Parry technique"
+    },
+    {
+      "id": "boxing__slip-outside",
+      "martialArt": "boxing",
+      "name": "Slip Outside",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Slip Outside technique"
+    },
+    {
+      "id": "boxing__slip-inside",
+      "martialArt": "boxing",
+      "name": "Slip Inside",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Slip Inside technique"
+    },
+    {
+      "id": "boxing__pull",
+      "martialArt": "boxing",
+      "name": "Pull",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Cross"
+      ],
+      "relatedTechniques": [
+        "boxing__cross"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Pull technique"
+    },
+    {
+      "id": "boxing__jab-counter",
+      "martialArt": "boxing",
+      "name": "Jab Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어",
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어",
+        "#Jab",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "boxing Jab Counter technique"
+    },
+    {
+      "id": "boxing__block",
+      "martialArt": "boxing",
+      "name": "Block",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Block technique"
+    },
+    {
+      "id": "boxing__roll",
+      "martialArt": "boxing",
+      "name": "Roll",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Hook",
+        "Uppercut"
+      ],
+      "relatedTechniques": [
+        "boxing__hook",
+        "boxing__uppercut"
+      ],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어",
+        "#Roll",
+        "#ShoulderRoll"
+      ],
+      "youtubeSearchQuery": "boxing Roll technique"
+    },
+    {
+      "id": "boxing__step-out",
+      "martialArt": "boxing",
+      "name": "Step Out",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Step Out technique"
+    },
+    {
+      "id": "boxing__step-away",
+      "martialArt": "boxing",
+      "name": "Step Away",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Step Away technique"
+    },
+    {
+      "id": "boxing__elbow-guard",
+      "martialArt": "boxing",
+      "name": "Elbow Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "muay-thai"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Elbow Guard technique"
+    },
+    {
+      "id": "boxing__frame-guard",
+      "martialArt": "boxing",
+      "name": "Frame/Guard",
+      "koreanName": null,
+      "aliases": [],
+      "category": "상대 펀치별 방어",
+      "positions": [
+        "상대 펀치별 방어"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:상대-펀치별-방어"
+      ],
+      "youtubeSearchQuery": "boxing Frame/Guard technique"
+    },
+    {
+      "id": "boxing__cross-counter",
+      "martialArt": "boxing",
+      "name": "Cross Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Cross",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "boxing Cross Counter technique"
+    },
+    {
+      "id": "boxing__slip-cross",
+      "martialArt": "boxing",
+      "name": "Slip → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Cross",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Slip → Cross technique"
+    },
+    {
+      "id": "boxing__slip-hook",
+      "martialArt": "boxing",
+      "name": "Slip → Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Hook",
+        "#Slip"
+      ],
+      "youtubeSearchQuery": "boxing Slip → Hook technique"
+    },
+    {
+      "id": "boxing__parry-jab",
+      "martialArt": "boxing",
+      "name": "Parry → Jab",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Jab",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Parry → Jab technique"
+    },
+    {
+      "id": "boxing__parry-cross",
+      "martialArt": "boxing",
+      "name": "Parry → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Cross",
+        "#Parry"
+      ],
+      "youtubeSearchQuery": "boxing Parry → Cross technique"
+    },
+    {
+      "id": "boxing__pull-cross",
+      "martialArt": "boxing",
+      "name": "Pull → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "boxing Pull → Cross technique"
+    },
+    {
+      "id": "boxing__roll-hook",
+      "martialArt": "boxing",
+      "name": "Roll → Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Hook",
+        "#Roll"
+      ],
+      "youtubeSearchQuery": "boxing Roll → Hook technique"
+    },
+    {
+      "id": "boxing__roll-uppercut",
+      "martialArt": "boxing",
+      "name": "Roll → Uppercut",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Uppercut",
+        "#Roll"
+      ],
+      "youtubeSearchQuery": "boxing Roll → Uppercut technique"
+    },
+    {
+      "id": "boxing__block-counter",
+      "martialArt": "boxing",
+      "name": "Block → Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "boxing Block → Counter technique"
+    },
+    {
+      "id": "boxing__step-back-cross",
+      "martialArt": "boxing",
+      "name": "Step Back → Cross",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Cross"
+      ],
+      "youtubeSearchQuery": "boxing Step Back → Cross technique"
+    },
+    {
+      "id": "boxing__pivot-hook",
+      "martialArt": "boxing",
+      "name": "Pivot → Hook",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터",
+      "positions": [
+        "카운터"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:카운터",
+        "#Hook",
+        "#Pivot"
+      ],
+      "youtubeSearchQuery": "boxing Pivot → Hook technique"
+    },
+    {
+      "id": "boxing__shoulder-bump",
+      "martialArt": "boxing",
+      "name": "Shoulder Bump",
+      "koreanName": null,
+      "aliases": [],
+      "category": "근거리 / 인파이팅",
+      "positions": [
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:근거리-인파이팅"
+      ],
+      "youtubeSearchQuery": "boxing Shoulder Bump technique"
+    },
+    {
+      "id": "boxing__frame",
+      "martialArt": "boxing",
+      "name": "Frame",
+      "koreanName": null,
+      "aliases": [],
+      "category": "근거리 / 인파이팅",
+      "positions": [
+        "근거리 / 인파이팅",
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "judo"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:근거리-인파이팅"
+      ],
+      "youtubeSearchQuery": "boxing Frame technique"
+    },
+    {
+      "id": "boxing__inside-position",
+      "martialArt": "boxing",
+      "name": "Inside Position",
+      "koreanName": null,
+      "aliases": [],
+      "category": "근거리 / 인파이팅",
+      "positions": [
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:근거리-인파이팅"
+      ],
+      "youtubeSearchQuery": "boxing Inside Position technique"
+    },
+    {
+      "id": "boxing__hand-fighting",
+      "martialArt": "boxing",
+      "name": "Hand Fighting",
+      "koreanName": null,
+      "aliases": [],
+      "category": "근거리 / 인파이팅",
+      "positions": [
+        "근거리 / 인파이팅"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj",
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:근거리-인파이팅"
+      ],
+      "youtubeSearchQuery": "boxing Hand Fighting technique"
+    },
+    {
+      "id": "boxing__collar-tie",
+      "martialArt": "boxing",
+      "name": "Collar Tie",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Collar Tie technique"
+    },
+    {
+      "id": "boxing__double-collar-tie",
+      "martialArt": "boxing",
+      "name": "Double Collar Tie",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Double Collar Tie technique"
+    },
+    {
+      "id": "boxing__inside-control",
+      "martialArt": "boxing",
+      "name": "Inside Control",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "wrestling",
+        "kickboxing"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Inside Control technique"
+    },
+    {
+      "id": "boxing__wrist-control",
+      "martialArt": "boxing",
+      "name": "Wrist Control",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "bjj",
+        "wrestling"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Wrist Control technique"
+    },
+    {
+      "id": "boxing__shoulder-control",
+      "martialArt": "boxing",
+      "name": "Shoulder Control",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Shoulder Control technique"
+    },
+    {
+      "id": "boxing__break-and-reset",
+      "martialArt": "boxing",
+      "name": "Break and Reset",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치"
+      ],
+      "youtubeSearchQuery": "boxing Break and Reset technique"
+    },
+    {
+      "id": "boxing__clinch-escape",
+      "martialArt": "boxing",
+      "name": "Clinch Escape",
+      "koreanName": null,
+      "aliases": [],
+      "category": "클린치",
+      "positions": [
+        "클린치"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:클린치",
+        "#Clinch"
+      ],
+      "youtubeSearchQuery": "boxing Clinch Escape technique"
+    },
+    {
+      "id": "boxing__body-attack",
+      "martialArt": "boxing",
+      "name": "Body Attack",
+      "koreanName": null,
+      "aliases": [],
+      "category": "코너 / 로프 포지션",
+      "positions": [
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "Rope-a-Dope",
+        "High Guard",
+        "Pivot Out",
+        "Side Exit",
+        "Clinch",
+        "Angle Escape"
+      ],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__high-guard",
+        "boxing__pivot",
+        "boxing__clinch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:코너-로프-포지션"
+      ],
+      "youtubeSearchQuery": "boxing Body Attack technique"
+    },
+    {
+      "id": "boxing__jab-to-body",
+      "martialArt": "boxing",
+      "name": "Jab to Body",
+      "koreanName": null,
+      "aliases": [],
+      "category": "코너 / 로프 포지션",
+      "positions": [
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "Rope-a-Dope",
+        "High Guard",
+        "Pivot Out",
+        "Side Exit",
+        "Clinch",
+        "Angle Escape"
+      ],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__high-guard",
+        "boxing__pivot",
+        "boxing__clinch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:코너-로프-포지션",
+        "#Jab"
+      ],
+      "youtubeSearchQuery": "boxing Jab to Body technique"
+    },
+    {
+      "id": "boxing__hook-to-body",
+      "martialArt": "boxing",
+      "name": "Hook to Body",
+      "koreanName": null,
+      "aliases": [],
+      "category": "코너 / 로프 포지션",
+      "positions": [
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "Rope-a-Dope",
+        "High Guard",
+        "Pivot Out",
+        "Side Exit",
+        "Clinch",
+        "Angle Escape"
+      ],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__high-guard",
+        "boxing__pivot",
+        "boxing__clinch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:코너-로프-포지션",
+        "#Hook"
+      ],
+      "youtubeSearchQuery": "boxing Hook to Body technique"
+    },
+    {
+      "id": "boxing__straight-punches",
+      "martialArt": "boxing",
+      "name": "Straight Punches",
+      "koreanName": null,
+      "aliases": [],
+      "category": "코너 / 로프 포지션",
+      "positions": [
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "Rope-a-Dope",
+        "High Guard",
+        "Pivot Out",
+        "Side Exit",
+        "Clinch",
+        "Angle Escape"
+      ],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__high-guard",
+        "boxing__pivot",
+        "boxing__clinch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:코너-로프-포지션"
+      ],
+      "youtubeSearchQuery": "boxing Straight Punches technique"
+    },
+    {
+      "id": "boxing__combination-pressure",
+      "martialArt": "boxing",
+      "name": "Combination Pressure",
+      "koreanName": null,
+      "aliases": [],
+      "category": "코너 / 로프 포지션",
+      "positions": [
+        "코너 / 로프 포지션"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [
+        "Rope-a-Dope",
+        "High Guard",
+        "Pivot Out",
+        "Side Exit",
+        "Clinch",
+        "Angle Escape"
+      ],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__high-guard",
+        "boxing__pivot",
+        "boxing__clinch"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:코너-로프-포지션",
+        "#Combination"
+      ],
+      "youtubeSearchQuery": "boxing Combination Pressure technique"
+    },
+    {
+      "id": "boxing__전형적-자세-풋워크",
+      "martialArt": "boxing",
+      "name": "전형적 자세/풋워크",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스타일별 분류와 전형적 기술 조합",
+      "positions": [
+        "스타일별 분류와 전형적 기술 조합"
+      ],
+      "description": "",
+      "purpose": "복싱 선수의 전술은 대체로 아래 스타일 중 하나(또는 혼합형)로 설명되며, 스타일에 따라 자세·풋워크·펀치 선택의 우선순위가 크게 달라진다.\n\n리치와 스피드로 거리를 지배하며 정면 교환을 피한다.\n\n전형적 조합:\n\n파워와 압박 위주로, 정확도보다 화력으로 승부한다.\n\n근거리로 파고들어 리치 불리를 상쇄하고 물량으로 압박한다.\n\n오소독스↔사우스포 스탠스를 전환하며 상대의 적응을 방해한다.",
+      "principles": [],
+      "variations": [
+        "Long Guard",
+        "Lateral Step",
+        "Circle Out",
+        "In-and-Out",
+        "High Guard",
+        "Step Forward",
+        "Cut Off",
+        "Peek-a-Boo",
+        "Drop Step",
+        "Bob and Weave"
+      ],
+      "counters": [
+        "전형적 자세/풋워크: Philly Shell / Shoulder Roll, Angle Step",
+        "전형적 조합:",
+        "먼저 나서지 않고 상대의 공격을 유도해 되받아친다."
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__philly-shell",
+        "boxing__angle-step",
+        "boxing__shell",
+        "boxing__roll"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:스타일별-분류와-전형적-기술-조합"
+      ],
+      "youtubeSearchQuery": "boxing 전형적 자세/풋워크 technique"
+    },
+    {
+      "id": "boxing__전형적-자세-풋워크-switch-step",
+      "martialArt": "boxing",
+      "name": "전형적 자세/풋워크: Switch Step",
+      "koreanName": null,
+      "aliases": [],
+      "category": "스타일별 분류와 전형적 기술 조합",
+      "positions": [
+        "스타일별 분류와 전형적 기술 조합"
+      ],
+      "description": "",
+      "purpose": "복싱 선수의 전술은 대체로 아래 스타일 중 하나(또는 혼합형)로 설명되며, 스타일에 따라 자세·풋워크·펀치 선택의 우선순위가 크게 달라진다.\n\n리치와 스피드로 거리를 지배하며 정면 교환을 피한다.\n\n전형적 조합:\n\n파워와 압박 위주로, 정확도보다 화력으로 승부한다.\n\n근거리로 파고들어 리치 불리를 상쇄하고 물량으로 압박한다.\n\n오소독스↔사우스포 스탠스를 전환하며 상대의 적응을 방해한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "전형적 자세/풋워크: Philly Shell / Shoulder Roll, Angle Step",
+        "전형적 조합:",
+        "먼저 나서지 않고 상대의 공격을 유도해 되받아친다."
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "boxing__philly-shell",
+        "boxing__angle-step",
+        "boxing__shell",
+        "boxing__roll",
+        "boxing__전형적-자세-풋워크"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:스타일별-분류와-전형적-기술-조합"
+      ],
+      "youtubeSearchQuery": "boxing 전형적 자세/풋워크: Switch Step technique"
+    },
+    {
+      "id": "boxing__거리-관리",
+      "martialArt": "boxing",
+      "name": "거리 관리",
+      "koreanName": "거리 관리",
+      "aliases": [],
+      "category": "링 제너럴십 (Ring Generalship)",
+      "positions": [
+        "링 제너럴십 (Ring Generalship)"
+      ],
+      "description": "Distance Management; 자신에게 유리한 거리(아웃복서는 장거리, 인파이터는 근거리)를 계속 유지하려는 풋워크·페인트의 총합.",
+      "purpose": "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:링-제너럴십-ring-generalship"
+      ],
+      "youtubeSearchQuery": "boxing 거리 관리 technique"
+    },
+    {
+      "id": "boxing__앵글-관리",
+      "martialArt": "boxing",
+      "name": "앵글 관리",
+      "koreanName": "앵글 관리",
+      "aliases": [],
+      "category": "링 제너럴십 (Ring Generalship)",
+      "positions": [
+        "링 제너럴십 (Ring Generalship)"
+      ],
+      "description": "Angle Management; Lateral Step, Pivot, Angle Step을 조합해 상대가 정면으로 서지 못하게 계속 각도를 어긋나게 만드는 것. 정면으로 마주 선 상태는 상대의 파워를 그대로 받아주는 상태이므로 지속적인 앵글 관리가 데미지를 줄인다.",
+      "purpose": "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:boxing",
+        "category:링-제너럴십-ring-generalship"
+      ],
+      "youtubeSearchQuery": "boxing 앵글 관리 technique"
+    },
+    {
+      "id": "boxing__커팅-오프-더-링",
+      "martialArt": "boxing",
+      "name": "커팅 오프 더 링",
+      "koreanName": "커팅 오프 더 링",
+      "aliases": [],
+      "category": "링 제너럴십 (Ring Generalship)",
+      "positions": [
+        "링 제너럴십 (Ring Generalship)"
+      ],
+      "description": "Cutting Off the Ring; 상대가 Circle Out으로 도망가는 경로를 예측해 직선이 아닌 대각선으로 미리 진입해 링을 좁히는 기술로, 압박형 스타일이 아웃복서의 도주 경로를 차단하는 핵심 기술이다. 단순히 따라가는(chasing) 것과 다르며, 상대보다 적은 걸음으로 거리를 좁히는 것이 목적이다.",
+      "purpose": "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:링-제너럴십-ring-generalship"
+      ],
+      "youtubeSearchQuery": "boxing 커팅 오프 더 링 technique"
+    },
+    {
+      "id": "boxing__센터-링-컨트롤",
+      "martialArt": "boxing",
+      "name": "센터 링 컨트롤",
+      "koreanName": "센터 링 컨트롤",
+      "aliases": [],
+      "category": "링 제너럴십 (Ring Generalship)",
+      "positions": [
+        "링 제너럴십 (Ring Generalship)"
+      ],
+      "description": "링 중앙을 차지한 쪽이 각도 선택권을 가지므로, 로프에 등을 붙이지 않으려는 지속적인 위치 선정도 링 제너럴십의 일부다.",
+      "purpose": "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:링-제너럴십-ring-generalship"
+      ],
+      "youtubeSearchQuery": "boxing 센터 링 컨트롤 technique"
+    },
+    {
+      "id": "boxing__리드-핸드-컨트롤",
+      "martialArt": "boxing",
+      "name": "리드 핸드 컨트롤",
+      "koreanName": "리드 핸드 컨트롤",
+      "aliases": [],
+      "category": "사우스포 vs 오소독스 매치업 전술",
+      "positions": [
+        "사우스포 vs 오소독스 매치업 전술"
+      ],
+      "description": "Lead Hand Control; 서로의 리드 손(잽 손)이 부딫히는 자리를 누가 선점하느냐가 매치업의 핵심이다. 상대의 리드 손을 눌러두거나 바깥으로 걷어내면(패링/핸드 파이팅) 자신의 리어 스트레이트가 열린 센터라인을 그대로 타고 들어갈 수 있다.",
+      "purpose": "리드 손·발이 반대인 두 선수가 만나면 센터라인 구조 자체가 달라져 동형(오소독스 vs 오소독스) 매치업과는 다른 전술이 필요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:사우스포-vs-오소독스-매치업-전술"
+      ],
+      "youtubeSearchQuery": "boxing 리드 핸드 컨트롤 technique"
+    },
+    {
+      "id": "boxing__크로스-스텝",
+      "martialArt": "boxing",
+      "name": "크로스 스텝",
+      "koreanName": "크로스 스텝",
+      "aliases": [],
+      "category": "사우스포 vs 오소독스 매치업 전술",
+      "positions": [
+        "사우스포 vs 오소독스 매치업 전술"
+      ],
+      "description": "Cross Step / Outside Step; 상대의 리드 발 바깥쪽으로 자신의 리드 발을 옮겨 스텝하는 기술로, 오소독스가 사우스포를 상대할 때(또는 반대로) 자신의 파워 사이드(리어 손) 앞에 상대의 몸이 그대로 노출되는 유리한 각도를 만든다. 이 각도를 잡지 못하면 서로 리어 스트레이트를 주고받는 힘겨루기만 반복된다.",
+      "purpose": "리드 손·발이 반대인 두 선수가 만나면 센터라인 구조 자체가 달라져 동형(오소독스 vs 오소독스) 매치업과는 다른 전술이 필요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:사우스포-vs-오소독스-매치업-전술"
+      ],
+      "youtubeSearchQuery": "boxing 크로스 스텝 technique"
+    },
+    {
+      "id": "boxing__센터라인-리스크",
+      "martialArt": "boxing",
+      "name": "센터라인 리스크",
+      "koreanName": "센터라인 리스크",
+      "aliases": [],
+      "category": "사우스포 vs 오소독스 매치업 전술",
+      "positions": [
+        "사우스포 vs 오소독스 매치업 전술"
+      ],
+      "description": "사우스포의 스트레이트 레프트와 오소독스의 스트레이트 라이트가 서로의 가드 바깥쪽 열린 라인을 그대로 타고 들어가기 쉬워, 동형 매치업보다 카운터 크로스가 자주 터진다. 따라서 리드 핸드 컨트롤과 크로스 스텝으로 이 라인을 먼저 장악하는 쪽이 매치업에서 우위를 가진다.",
+      "purpose": "리드 손·발이 반대인 두 선수가 만나면 센터라인 구조 자체가 달라져 동형(오소독스 vs 오소독스) 매치업과는 다른 전술이 필요하다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:사우스포-vs-오소독스-매치업-전술"
+      ],
+      "youtubeSearchQuery": "boxing 센터라인 리스크 technique"
+    },
+    {
+      "id": "boxing__아마추어",
+      "martialArt": "boxing",
+      "name": "아마추어",
+      "koreanName": "올림픽 스타일",
+      "aliases": [],
+      "category": "아마추어(포인트) vs 프로 스코어링과 전술",
+      "positions": [
+        "아마추어(포인트) vs 프로 스코어링과 전술"
+      ],
+      "description": "올림픽 스타일; 헤드기어 착용, 라운드 수가 적고 (예: 3분 3라운드), 대체로 깨끗하게 명중한 유효타의 수와 우세함을 기준으로 채점된다. 이 때문에 단발 파워 펀치보다 **잽 위주의 높은 펀치 출력, 콤비네이션 물량, 정확한 명중**이 점수에 직접 반영되는 전술(아웃복싱, 빠른 잽 교환)이 상대적으로 더 유리하게 작용하는 경향이 있다.",
+      "purpose": "경기 규칙과 채점 방식이 다르면 같은 기술도 우선순위가 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:아마추어-포인트-vs-프로-스코어링과-전술"
+      ],
+      "youtubeSearchQuery": "boxing 아마추어 technique"
+    },
+    {
+      "id": "boxing__프로",
+      "martialArt": "boxing",
+      "name": "프로",
+      "koreanName": "프로",
+      "aliases": [],
+      "category": "아마추어(포인트) vs 프로 스코어링과 전술",
+      "positions": [
+        "아마추어(포인트) vs 프로 스코어링과 전술"
+      ],
+      "description": "라운드 수가 더 많고(대개 최대 12라운드), 판정 기준에 파워 펀치의 클린 타격 외에도 **이펙티브 어그레션(효율적인 전진·공격), 링 제너럴십, 디펜스**가 함께 반영된다. 그 결과 바디 공격으로 후반 라운드를 노리는 장기 전략, 클린치를 이용한 페이스 조절, 로프어도프 같은 체력 안배형 전술이 실제로 유효한 선택지가 된다.",
+      "purpose": "경기 규칙과 채점 방식이 다르면 같은 기술도 우선순위가 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:아마추어-포인트-vs-프로-스코어링과-전술"
+      ],
+      "youtubeSearchQuery": "boxing 프로 technique"
+    },
+    {
+      "id": "boxing__실전-함의",
+      "martialArt": "boxing",
+      "name": "실전 함의",
+      "koreanName": "실전 함의",
+      "aliases": [],
+      "category": "아마추어(포인트) vs 프로 스코어링과 전술",
+      "positions": [
+        "아마추어(포인트) vs 프로 스코어링과 전술"
+      ],
+      "description": "아마추어 선수는 출력(펀치 수)과 잽 싸움에 더 비중을 두는 습관을 들이는 것이 유리하고, 프로 전향/장기전을 준비하는 선수는 바디 공격, 클린치를 통한 페이스 조절, 라운드 단위의 페이스 배분(링 제너럴십)을 별도로 훈련해야 한다.",
+      "purpose": "경기 규칙과 채점 방식이 다르면 같은 기술도 우선순위가 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:boxing",
+        "category:아마추어-포인트-vs-프로-스코어링과-전술"
+      ],
+      "youtubeSearchQuery": "boxing 실전 함의 technique"
+    }
+  ]
+}

@@ -1,0 +1,741 @@
+{
+  "id": "official__karate",
+  "martialArt": "karate",
+  "title": "가라테 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 자세와 이동부터 막기, 손기술, 발차기, 조합, 쿠미테 응용까지 이어지는 가라테 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 35,
+  "estimatedWeeks": 9,
+  "phases": [
+    {
+      "name": "기본 자세와 호흡",
+      "blurb": "가라테의 기본 서기 자세와 호흡법을 익힙니다.",
+      "startDay": 1,
+      "endDay": 4
+    },
+    {
+      "name": "이동과 회피",
+      "blurb": "자세를 유지하며 이동하는 방법과 상대의 공격을 피하는 타이사바키를 배웁니다.",
+      "startDay": 5,
+      "endDay": 7
+    },
+    {
+      "name": "기본 막기",
+      "blurb": "상대의 공격을 막아내는 기본 막기 기술을 배웁니다.",
+      "startDay": 8,
+      "endDay": 11
+    },
+    {
+      "name": "기본 손기술",
+      "blurb": "주먹과 손을 이용한 기본 타격 기술을 배웁니다.",
+      "startDay": 12,
+      "endDay": 16
+    },
+    {
+      "name": "기본 발차기",
+      "blurb": "가라테의 기본 발차기 기술을 배웁니다.",
+      "startDay": 17,
+      "endDay": 19
+    },
+    {
+      "name": "거리 개념",
+      "blurb": "근거리·중거리·장거리에서 각각 어떤 기술이 유효한지 이해합니다.",
+      "startDay": 20,
+      "endDay": 22
+    },
+    {
+      "name": "조합과 카운터",
+      "blurb": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다.",
+      "startDay": 23,
+      "endDay": 27
+    },
+    {
+      "name": "쿠미테와 응용",
+      "blurb": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다.",
+      "startDay": 28,
+      "endDay": 32
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 자세와 호흡: 전굴립 · Musubi-dachi · 후굴립",
+      "description": "가라테의 기본 서기 자세와 호흡법을 익힙니다. 오늘은 Zenkutsu-dachi, Musubi-dachi / Heiko-dachi, Kokutsu-dachi을(를) 배웁니다.",
+      "learningGoals": [
+        "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다.",
+        "Musubi-dachi의 기본 동작과 활용 상황을 이해한다.",
+        "후굴립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__zenkutsu-dachi",
+        "karate__musubi-dachi-heiko-dachi",
+        "karate__kokutsu-dachi"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "기마립 · 묘족립 · 사고립",
+      "description": "가라테의 기본 서기 자세와 호흡법을 익힙니다. 오늘은 Kiba-dachi, Neko-ashi-dachi, Shiko-dachi을(를) 배웁니다.",
+      "learningGoals": [
+        "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다.",
+        "묘족립의 기본 동작과 활용 상황을 이해한다.",
+        "사고립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__kiba-dachi",
+        "karate__neko-ashi-dachi",
+        "karate__shiko-dachi"
+      ],
+      "reviewTechniqueIds": [
+        "karate__kokutsu-dachi"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "Fudo-dachi · 삼전립 · Ibuki",
+      "description": "가라테의 기본 서기 자세와 호흡법을 익힙니다. 오늘은 Fudo-dachi (부동립) / Kumite 자유 자세, Sanchin-dachi, Ibuki을(를) 배웁니다.",
+      "learningGoals": [
+        "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다.",
+        "삼전립의 기본 동작과 활용 상황을 이해한다.",
+        "가라테, 특히 Naha-te 계열(Goju-Ryu)에서는 호흡을 단순한 산소 공급이 아니라 **타격을 견디고 힘을 응축하는 훈련**으로 다룬다."
+      ],
+      "techniqueIds": [
+        "karate__fudo-dachi-부동립-kumite-자유-자세",
+        "karate__sanchin-dachi",
+        "karate__ibuki"
+      ],
+      "reviewTechniqueIds": [
+        "karate__shiko-dachi"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "Nogare",
+      "description": "가라테의 기본 서기 자세와 호흡법을 익힙니다. 오늘은 Nogare을(를) 배웁니다.",
+      "learningGoals": [
+        "가라테, 특히 Naha-te 계열(Goju-Ryu)에서는 호흡을 단순한 산소 공급이 아니라 **타격을 견디고 힘을 응축하는 훈련**으로 다룬다."
+      ],
+      "techniqueIds": [
+        "karate__nogare"
+      ],
+      "reviewTechniqueIds": [
+        "karate__sanchin-dachi",
+        "karate__ibuki"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 5,
+      "title": "이동과 회피: Ayumi-ashi · 쓰기아시 · Yori-ashi",
+      "description": "자세를 유지하며 이동하는 방법과 상대의 공격을 피하는 타이사바키를 배웁니다. 오늘은 Ayumi-ashi, Tsugi-ashi, Yori-ashi을(를) 배웁니다.",
+      "learningGoals": [
+        "이동은 **거리(Maai)를 관리하는 도구**다.",
+        "쓰기아시의 기본 동작과 활용 상황을 이해한다.",
+        "Yori-ashi의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__ayumi-ashi",
+        "karate__tsugi-ashi",
+        "karate__yori-ashi"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "Tai Sabaki · Step In · 오쿠리아시",
+      "description": "자세를 유지하며 이동하는 방법과 상대의 공격을 피하는 타이사바키를 배웁니다. 오늘은 Tai Sabaki / Tenkan / Pivot, Step In / Step Out / Side Step / Retreat / Forward Step, Okuri-ashi을(를) 배웁니다.",
+      "learningGoals": [
+        "이동은 **거리(Maai)를 관리하는 도구**다.",
+        "Step In의 기본 동작과 활용 상황을 이해한다.",
+        "오쿠리아시의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__tai-sabaki-tenkan-pivot",
+        "karate__step-in-step-out-side-step-retreat-forward-step",
+        "karate__okuri-ashi"
+      ],
+      "reviewTechniqueIds": [
+        "karate__yori-ashi"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "Irimi · Nagashi · Step Back",
+      "description": "자세를 유지하며 이동하는 방법과 상대의 공격을 피하는 타이사바키를 배웁니다. 오늘은 Irimi, Nagashi, Step Back / Side Step / Angle Exit / Body Shift을(를) 배웁니다.",
+      "learningGoals": [
+        "회피의 목적은 \"도망\"이 아니라 **각도를 만들어 안전하게 반격 위치를 차지하는 것**이다.",
+        "Nagashi의 기본 동작과 활용 상황을 이해한다.",
+        "Step Back의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__irimi",
+        "karate__nagashi",
+        "karate__step-back-side-step-angle-exit-body-shift"
+      ],
+      "reviewTechniqueIds": [
+        "karate__okuri-ashi"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "기본 막기: 하단막기 · 상단막기 · 바깥막기/안막기",
+      "description": "상대의 공격을 막아내는 기본 막기 기술을 배웁니다. 오늘은 Gedan Barai, Age Uke, Soto Uke / Uchi Uke을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+        "상단막기의 기본 동작과 활용 상황을 이해한다.",
+        "바깥막기/안막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__gedan-barai",
+        "karate__age-uke",
+        "karate__soto-uke-uchi-uke"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 9,
+      "title": "손날막기 · 양손막기 · 십자막기",
+      "description": "상대의 공격을 막아내는 기본 막기 기술을 배웁니다. 오늘은 Shuto Uke, Morote Uke, Juji Uke을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+        "양손막기의 기본 동작과 활용 상황을 이해한다.",
+        "십자막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__shuto-uke",
+        "karate__morote-uke",
+        "karate__juji-uke"
+      ],
+      "reviewTechniqueIds": [
+        "karate__soto-uke-uchi-uke"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "걸어막기 · 누르는막기 · 퍼올리는막기",
+      "description": "상대의 공격을 막아내는 기본 막기 기술을 배웁니다. 오늘은 Kake Uke, Osae Uke, Sukui Uke을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+        "누르는막기의 기본 동작과 활용 상황을 이해한다.",
+        "퍼올리는막기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__kake-uke",
+        "karate__osae-uke",
+        "karate__sukui-uke"
+      ],
+      "reviewTechniqueIds": [
+        "karate__juji-uke"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "흘려막기",
+      "description": "상대의 공격을 막아내는 기본 막기 기술을 배웁니다. 오늘은 Nagashi Uke을(를) 배웁니다.",
+      "learningGoals": [
+        "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다."
+      ],
+      "techniqueIds": [
+        "karate__nagashi-uke"
+      ],
+      "reviewTechniqueIds": [
+        "karate__osae-uke",
+        "karate__sukui-uke"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 12,
+      "title": "기본 손기술: Choku-zuki · 역찌르기 · 전진 찌르기",
+      "description": "주먹과 손을 이용한 기본 타격 기술을 배웁니다. 오늘은 Choku-zuki, Gyaku-zuki, Oi-zuki을(를) 배웁니다.",
+      "learningGoals": [
+        "제자리에서 뻗는 기본 찌르기.",
+        "역찌르기; 뒷손으로 몸통 회전을 이용해 찌르는 가장 강력하고 자주 쓰이는 득점/파워 기술.",
+        "전진 찌르기; 앞발과 같은 쪽 손으로 전진하며 찌르는 큰 동작."
+      ],
+      "techniqueIds": [
+        "karate__choku-zuki",
+        "karate__gyaku-zuki",
+        "karate__oi-zuki"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "잽 · 훅 찌르기 · Tate-zuki",
+      "description": "주먹과 손을 이용한 기본 타격 기술을 배웁니다. 오늘은 Kizami-zuki, Kagi-zuki, Tate-zuki / Age-zuki을(를) 배웁니다.",
+      "learningGoals": [
+        "잽; 앞손으로 짧고 빠르게 찌르는 견제·거리 측정용 기술.",
+        "훅 찌르기; 근거리에서 팔을 굽혀 옆에서 들어가는 타격.",
+        "세로 주먹·올려 찌르기."
+      ],
+      "techniqueIds": [
+        "karate__kizami-zuki",
+        "karate__kagi-zuki",
+        "karate__tate-zuki-age-zuki"
+      ],
+      "reviewTechniqueIds": [
+        "karate__oi-zuki"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 14,
+      "title": "백핏 · 망치주먹 · Mawashi-zuki",
+      "description": "주먹과 손을 이용한 기본 타격 기술을 배웁니다. 오늘은 Uraken-uchi, Tettsui-uchi, Mawashi-zuki을(를) 배웁니다.",
+      "learningGoals": [
+        "백핏; 팔을 짧게 튕겨 치는 타격.",
+        "망치주먹; 아래·옆으로 내리치는 타격.",
+        "곡선으로 감아 치는 주먹."
+      ],
+      "techniqueIds": [
+        "karate__uraken-uchi",
+        "karate__tettsui-uchi",
+        "karate__mawashi-zuki"
+      ],
+      "reviewTechniqueIds": [
+        "karate__tate-zuki-age-zuki"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "손날치기 · 반대손날 · Nukite",
+      "description": "주먹과 손을 이용한 기본 타격 기술을 배웁니다. 오늘은 Shuto-uchi, Haito-uchi, Nukite / Ippon-ken / Nihon-nukite을(를) 배웁니다.",
+      "learningGoals": [
+        "손날치기; 목·측두부를 노리는 가타/본카이 기술.",
+        "반대손날; 손날의 반대면으로 치는 기술.",
+        "손끝을 세워 찌르는 기술."
+      ],
+      "techniqueIds": [
+        "karate__shuto-uchi",
+        "karate__haito-uchi",
+        "karate__nukite-ippon-ken-nihon-nukite"
+      ],
+      "reviewTechniqueIds": [
+        "karate__mawashi-zuki"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 16,
+      "title": "손바닥 밑동 · Empi/Hiji, Yoko Empi, Age…",
+      "description": "주먹과 손을 이용한 기본 타격 기술을 배웁니다. 오늘은 Teisho, Empi/Hiji, Yoko Empi, Age Empi, Ushiro Empi, Mawashi Empi, Otoshi Empi을(를) 배웁니다.",
+      "learningGoals": [
+        "손바닥 밑동; 턱·가슴을 미는 형태로 치는 기술.",
+        "팔꿈치는 매우 근거리에서만 유효한 파괴적인 무기다."
+      ],
+      "techniqueIds": [
+        "karate__teisho",
+        "karate__empi-hiji-yoko-empi-age-empi-ushiro-empi-mawashi-empi-otoshi-empi"
+      ],
+      "reviewTechniqueIds": [
+        "karate__haito-uchi",
+        "karate__nukite-ippon-ken-nihon-nukite"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "기본 발차기: 앞차기 · 옆차기 · 돌려차기",
+      "description": "가라테의 기본 발차기 기술을 배웁니다. 오늘은 Mae Geri, Yoko Geri, Mawashi Geri을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다.",
+        "옆차기의 기본 동작과 활용 상황을 이해한다.",
+        "돌려차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__mae-geri",
+        "karate__yoko-geri",
+        "karate__mawashi-geri"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 18,
+      "title": "뒤차기 · 뒤돌려차기 · 밟아차기",
+      "description": "가라테의 기본 발차기 기술을 배웁니다. 오늘은 Ushiro Geri, Ushiro Mawashi Geri / Ura Mawashi Geri, Fumikomi Geri을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다.",
+        "뒤돌려차기의 기본 동작과 활용 상황을 이해한다.",
+        "밟아차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__ushiro-geri",
+        "karate__ushiro-mawashi-geri-ura-mawashi-geri",
+        "karate__fumikomi-geri"
+      ],
+      "reviewTechniqueIds": [
+        "karate__mawashi-geri"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 19,
+      "title": "반달차기 · 뒤꿈치차기/도끼차기 · 이단차기/뛰어차기",
+      "description": "가라테의 기본 발차기 기술을 배웁니다. 오늘은 Mikazuki Geri, Kakato Geri, Nidan Geri / Tobi Geri을(를) 배웁니다.",
+      "learningGoals": [
+        "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다.",
+        "뒤꿈치차기/도끼차기의 기본 동작과 활용 상황을 이해한다.",
+        "이단차기/뛰어차기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__mikazuki-geri",
+        "karate__kakato-geri",
+        "karate__nidan-geri-tobi-geri"
+      ],
+      "reviewTechniqueIds": [
+        "karate__fumikomi-geri"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 20,
+      "title": "거리 개념: Short Punch, Kagi-zuki, U… · Knee(규칙 허용 시), Clinch/근접 … · Kizami-zuki, Gyaku-zuki, …",
+      "description": "근거리·중거리·장거리에서 각각 어떤 기술이 유효한지 이해합니다. 오늘은 Short Punch, Kagi-zuki, Uraken, Empi(규칙 허용 시), Teisho, Knee(규칙 허용 시), Clinch/근접 컨트롤(규칙 허용 시), Kizami-zuki, Gyaku-zuki, Oi-zuki을(를) 배웁니다.",
+      "learningGoals": [
+        "몸이 거의 맞붙는 거리.",
+        "Knee(규칙 허용 시), Clinch/근접 …의 기본 동작과 활용 상황을 이해한다.",
+        "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**."
+      ],
+      "techniqueIds": [
+        "karate__short-punch-kagi-zuki-uraken-empi-규칙-허용-시-teisho",
+        "karate__knee-규칙-허용-시-clinch-근접-컨트롤-규칙-허용-시",
+        "karate__kizami-zuki-gyaku-zuki-oi-zuki"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 21,
+      "title": "Mawashi Geri, Mae Geri, Y… · Counter Punch · Combination Entry",
+      "description": "근거리·중거리·장거리에서 각각 어떤 기술이 유효한지 이해합니다. 오늘은 Mawashi Geri, Mae Geri, Yoko Geri, Counter Punch / Counter Kick, Combination Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**.",
+        "Counter Punch의 기본 동작과 활용 상황을 이해한다.",
+        "Combination Entry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__mawashi-geri-mae-geri-yoko-geri",
+        "karate__counter-punch-counter-kick",
+        "karate__combination-entry"
+      ],
+      "reviewTechniqueIds": [
+        "karate__kizami-zuki-gyaku-zuki-oi-zuki"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 22,
+      "title": "Mae Geri, Yoko Geri, Ushi… · Feint(페인트), Angle Step · Long Guard",
+      "description": "근거리·중거리·장거리에서 각각 어떤 기술이 유효한지 이해합니다. 오늘은 Mae Geri, Yoko Geri, Ushiro Geri, Mawashi Geri, Feint(페인트), Angle Step, Long Guard / Distance Control을(를) 배웁니다.",
+      "learningGoals": [
+        "서로의 기술이 닿지 않는 안전거리.",
+        "Feint(페인트), Angle Step의 기본 동작과 활용 상황을 이해한다.",
+        "Long Guard의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__mae-geri-yoko-geri-ushiro-geri-mawashi-geri",
+        "karate__feint-페인트-angle-step",
+        "karate__long-guard-distance-control"
+      ],
+      "reviewTechniqueIds": [
+        "karate__combination-entry"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 23,
+      "title": "조합과 카운터: Kizami-zuki → Gyaku-zuki · Oi-zuki → Gyaku-zuki · Gyaku-zuki → Mawashi Geri",
+      "description": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다. 오늘은 Kizami-zuki → Gyaku-zuki, Oi-zuki → Gyaku-zuki, Gyaku-zuki → Mawashi Geri을(를) 배웁니다.",
+      "learningGoals": [
+        "Kizami-zuki → Gyaku-zuki의 기본 동작과 활용 상황을 이해한다.",
+        "Oi-zuki → Gyaku-zuki의 기본 동작과 활용 상황을 이해한다.",
+        "Gyaku-zuki → Mawashi Geri의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__kizami-zuki-gyaku-zuki",
+        "karate__oi-zuki-gyaku-zuki",
+        "karate__gyaku-zuki-mawashi-geri"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 24,
+      "title": "Kizami-zuki → Mawashi Geri · Mae Geri → Gyaku-zuki · Mawashi Geri → Gyaku-zuki",
+      "description": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다. 오늘은 Kizami-zuki → Mawashi Geri, Mae Geri → Gyaku-zuki, Mawashi Geri → Gyaku-zuki을(를) 배웁니다.",
+      "learningGoals": [
+        "Kizami-zuki → Mawashi Geri의 기본 동작과 활용 상황을 이해한다.",
+        "Mae Geri → Gyaku-zuki의 기본 동작과 활용 상황을 이해한다.",
+        "Mawashi Geri → Gyaku-zuki의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__kizami-zuki-mawashi-geri",
+        "karate__mae-geri-gyaku-zuki",
+        "karate__mawashi-geri-gyaku-zuki"
+      ],
+      "reviewTechniqueIds": [
+        "karate__gyaku-zuki-mawashi-geri"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 25,
+      "title": "Feint → Gyaku-zuki · Step → Kizami-zuki · Kizami-zuki Counter, Gyak…",
+      "description": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다. 오늘은 Feint → Gyaku-zuki, Step → Kizami-zuki, Kizami-zuki Counter, Gyaku-zuki Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "Feint → Gyaku-zuki의 기본 동작과 활용 상황을 이해한다.",
+        "Step → Kizami-zuki의 기본 동작과 활용 상황을 이해한다.",
+        "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다."
+      ],
+      "techniqueIds": [
+        "karate__feint-gyaku-zuki",
+        "karate__step-kizami-zuki",
+        "karate__kizami-zuki-counter-gyaku-zuki-counter"
+      ],
+      "reviewTechniqueIds": [
+        "karate__mawashi-geri-gyaku-zuki"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 26,
+      "title": "Mae Geri Counter, Mawashi… · Uchi Uke → Gyaku-zuki, So… · Age Uke → Counter",
+      "description": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다. 오늘은 Mae Geri Counter, Mawashi Geri Counter, Uchi Uke → Gyaku-zuki, Soto Uke → Gyaku-zuki, Age Uke → Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+        "Uchi Uke → Gyaku-zuki, So…의 기본 동작과 활용 상황을 이해한다.",
+        "Age Uke → Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__mae-geri-counter-mawashi-geri-counter",
+        "karate__uchi-uke-gyaku-zuki-soto-uke-gyaku-zuki",
+        "karate__age-uke-counter"
+      ],
+      "reviewTechniqueIds": [
+        "karate__kizami-zuki-counter-gyaku-zuki-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 27,
+      "title": "Tai Sabaki → Counter",
+      "description": "개별 기술을 연결한 조합과, 상대의 공격 이후 반격하는 카운터를 배웁니다. 오늘은 Tai Sabaki → Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다."
+      ],
+      "techniqueIds": [
+        "karate__tai-sabaki-counter"
+      ],
+      "reviewTechniqueIds": [
+        "karate__uchi-uke-gyaku-zuki-soto-uke-gyaku-zuki",
+        "karate__age-uke-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 28,
+      "title": "쿠미테와 응용: Tai no Sen · Go no Sen · Deai",
+      "description": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다. 오늘은 Tai no Sen, Go no Sen, Deai을(를) 배웁니다.",
+      "learningGoals": [
+        "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.",
+        "Go no Sen의 기본 동작과 활용 상황을 이해한다.",
+        "Deai의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__tai-no-sen",
+        "karate__go-no-sen",
+        "karate__deai"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 29,
+      "title": "뛰어들기 · Maai 유지 전술 · 선/Sen no Sen",
+      "description": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다. 오늘은 Tobi-komi, Maai 유지 전술, Sen을(를) 배웁니다.",
+      "learningGoals": [
+        "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.",
+        "Maai 유지 전술의 기본 동작과 활용 상황을 이해한다.",
+        "선/Sen no Sen의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__tobi-komi",
+        "karate__maai-유지-전술",
+        "karate__sen"
+      ],
+      "reviewTechniqueIds": [
+        "karate__deai"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 30,
+      "title": "Bunkai · Kote Gaeshi · 다리 걸어 넘기기",
+      "description": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다. 오늘은 Bunkai (분석/해석), Kuzushi (무너뜨림), Hiki-te (당기는 손), Tai Sabaki, Osae, Kote Gaeshi, Ashi-barai을(를) 배웁니다.",
+      "learningGoals": [
+        "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(…",
+        "Kote Gaeshi의 기본 동작과 활용 상황을 이해한다.",
+        "다리 걸어 넘기기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__bunkai-분석-해석-kuzushi-무너뜨림-hiki-te-당기는-손-tai-sabaki-osae",
+        "karate__kote-gaeshi",
+        "karate__ashi-barai"
+      ],
+      "reviewTechniqueIds": [
+        "karate__sen"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 31,
+      "title": "O Soto Gari, De Ashi Bara… · Kansetsu Geri · 특징",
+      "description": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다. 오늘은 O Soto Gari, De Ashi Barai 등, Kansetsu Geri, 특징을(를) 배웁니다.",
+      "learningGoals": [
+        "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(…",
+        "Kansetsu Geri의 기본 동작과 활용 상황을 이해한다.",
+        "특징의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__o-soto-gari-de-ashi-barai-등",
+        "karate__kansetsu-geri",
+        "karate__특징"
+      ],
+      "reviewTechniqueIds": [
+        "karate__ashi-barai"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 32,
+      "title": "대표 기술 · 대표 가타",
+      "description": "쿠미테(대인 대련)의 판정 규칙과, 실전 자기방어에 응용하는 부니카이, 유파별 대표 기술을 다룹니다. 실제 대련은 반드시 지도자의 지도 아래 안전 장비를 갖추고 진행해야 합니다. 오늘은 대표 기술, 대표 가타을(를) 배웁니다.",
+      "learningGoals": [
+        "대표 기술의 기본 동작과 활용 상황을 이해한다.",
+        "대표 가타의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "karate__대표-기술",
+        "karate__대표-가타"
+      ],
+      "reviewTechniqueIds": [
+        "karate__kansetsu-geri",
+        "karate__특징"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 33,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "karate__zenkutsu-dachi",
+        "karate__ayumi-ashi",
+        "karate__gedan-barai",
+        "karate__choku-zuki",
+        "karate__mae-geri",
+        "karate__short-punch-kagi-zuki-uraken-empi-규칙-허용-시-teisho",
+        "karate__kizami-zuki-gyaku-zuki",
+        "karate__tai-no-sen"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 34,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "karate__kiba-dachi",
+        "karate__tai-sabaki-tenkan-pivot",
+        "karate__shuto-uke",
+        "karate__kagi-zuki",
+        "karate__ushiro-geri",
+        "karate__mawashi-geri-mae-geri-yoko-geri",
+        "karate__mae-geri-gyaku-zuki",
+        "karate__maai-유지-전술"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 35,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "karate__fudo-dachi-부동립-kumite-자유-자세",
+        "karate__irimi",
+        "karate__kake-uke",
+        "karate__shuto-uchi",
+        "karate__mikazuki-geri",
+        "karate__mae-geri-yoko-geri-ushiro-geri-mawashi-geri",
+        "karate__kizami-zuki-counter-gyaku-zuki-counter",
+        "karate__o-soto-gari-de-ashi-barai-등"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 88
+}

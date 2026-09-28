@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode|navigation|density"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBarLaunch"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 게시물 링크를 별도 브라우저 앱 없이 여는 화면 (InAppBrowserPlugin) —
+             android.webkit.WebView만 쓰므로 Chrome 등 브라우저 앱이 없는
+             기기에서도 동일하게 동작한다. -->
+        <activity
+            android:name=".InAppBrowserActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 스파링 촬영이 화면 꺼짐/백그라운드 전환 후에도 계속되도록 하는 진짜
+             원인 해결책 — WebView의 getUserMedia()는 앱이 백그라운드로 가면 OS가
+             강제로 중단시키므로(자바스크립트 코드로 우회 불가능한 OS 정책), 이
+             foreground service가 CameraX로 직접 카메라 하드웨어를 잡고 녹화한다.
+             Android 14+(API 34)부터 카메라를 쓰는 foreground service는
+             foregroundServiceType="camera"를 반드시 명시해야 한다. -->
+        <service
+            android:name=".BackgroundRecordingService"
+            android:exported="false"
+            android:foregroundServiceType="camera|microphone" />
+    </application>
+
+    <!-- Permissions -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Pose analysis / sparring analysis feature uses getUserMedia() in the
+         WebView (src/components/PoseAnalysisModal.tsx); Capacitor's
+         BridgeActivity auto-handles the WebView permission prompt once this
+         manifest permission exists. android:required="false" so the app
+         still installs on camera-less devices (e.g. some emulators/tablets) —
+         the pose-analysis feature just won't be usable there. -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <!-- Background sparring recording (BackgroundRecordingService/SparringCameraPlugin) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <!-- Android 13+ requires runtime consent to show the persistent recording
+         notification a camera-type foreground service is required to display
+         — requested explicitly before starting the service, see
+         SparringCameraPlugin.java. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- "갤러리로 복사" (SparringCameraPlugin.saveToGallery) on API 29+ (scoped
+         storage) needs NO permission at all — MediaStore.insert() into the
+         app's own Movies collection is allowed by default. Only pre-Q
+         devices (API 24-28, this app's minSdk) need this, to write directly
+         into the public Movies directory; capped with maxSdkVersion so it's
+         simply absent/inert on every modern device. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+</manifest>

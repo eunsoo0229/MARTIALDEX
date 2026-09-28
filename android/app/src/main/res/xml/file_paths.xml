@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="my_images" path="." />
+    <cache-path name="my_cache_images" path="." />
+    <!-- Sparring video recordings — both the CameraX foreground-service path
+         (BackgroundRecordingService.java, files written to getFilesDir()/
+         sparring-videos/*.mp4) and the older Capacitor Filesystem path
+         (Directory.Data = getFilesDir(), sparringVideo/storage.ts's
+         "sparring-videos/{id}.webm") land in this SAME internal directory —
+         one entry covers both. Needed so "갤러리에서 보기"/"파일로 이동하기"
+         (SparringCameraPlugin.java's openInGallery/openFileLocation) can grant
+         a content:// URI to another app without exposing the whole internal
+         files dir or moving/copying the video anywhere. -->
+    <files-path name="sparring_videos" path="sparring-videos/" />
+</paths>

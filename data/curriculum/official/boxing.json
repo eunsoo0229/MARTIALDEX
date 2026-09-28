@@ -1,0 +1,712 @@
+{
+  "id": "official__boxing",
+  "martialArt": "boxing",
+  "title": "복싱 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 자세와 풋워크부터 기본 펀치, 방어, 거리 조절, 콤비네이션, 방어-공격 연결까지 이어지는 복싱 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 34,
+  "estimatedWeeks": 9,
+  "phases": [
+    {
+      "name": "기본 자세와 풋워크",
+      "blurb": "복싱의 기본 스탠스와 풋워크를 익힙니다.",
+      "startDay": 1,
+      "endDay": 4
+    },
+    {
+      "name": "기본 펀치 개념",
+      "blurb": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다.",
+      "startDay": 5,
+      "endDay": 8
+    },
+    {
+      "name": "기본 방어",
+      "blurb": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다.",
+      "startDay": 9,
+      "endDay": 13
+    },
+    {
+      "name": "거리 조절",
+      "blurb": "거리별 포지션과 코너·로프 상황에서의 움직임을 배웁니다.",
+      "startDay": 14,
+      "endDay": 17
+    },
+    {
+      "name": "콤비네이션",
+      "blurb": "개별 펀치를 연결한 콤비네이션과 페인트를 배웁니다.",
+      "startDay": 18,
+      "endDay": 21
+    },
+    {
+      "name": "방어에서 공격으로 연결",
+      "blurb": "카운터, 인파이팅, 클린치 등 방어 이후 곧바로 공격으로 전환하는 방법을 배웁니다.",
+      "startDay": 22,
+      "endDay": 25
+    },
+    {
+      "name": "상황별 응용",
+      "blurb": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다.",
+      "startDay": 26,
+      "endDay": 31
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 자세와 풋워크: Orthodox · Southpaw · High Guard",
+      "description": "복싱의 기본 스탠스와 풋워크를 익힙니다. 오늘은 Orthodox, Southpaw, High Guard을(를) 배웁니다.",
+      "learningGoals": [
+        "Orthodox의 기본 동작과 활용 상황을 이해한다.",
+        "Southpaw의 기본 동작과 활용 상황을 이해한다.",
+        "High Guard의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__orthodox",
+        "boxing__southpaw",
+        "boxing__high-guard"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "Long Guard · Philly Shell · Cross Guard",
+      "description": "복싱의 기본 스탠스와 풋워크를 익힙니다. 오늘은 Long Guard, Philly Shell, Cross Guard을(를) 배웁니다.",
+      "learningGoals": [
+        "Long Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Philly Shell의 기본 동작과 활용 상황을 이해한다.",
+        "Cross Guard의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__long-guard",
+        "boxing__philly-shell",
+        "boxing__cross-guard"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__high-guard"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "Shoulder Roll Stance · Peek-a-Boo · Step Forward",
+      "description": "복싱의 기본 스탠스와 풋워크를 익힙니다. 오늘은 Shoulder Roll Stance, Peek-a-Boo, Step Forward을(를) 배웁니다.",
+      "learningGoals": [
+        "Shoulder Roll Stance의 기본 동작과 활용 상황을 이해한다.",
+        "Peek-a-Boo의 기본 동작과 활용 상황을 이해한다.",
+        "Step Forward의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__shoulder-roll-stance",
+        "boxing__peek-a-boo",
+        "boxing__step-forward"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__cross-guard"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "Step Back · Lateral Step · L-Step",
+      "description": "복싱의 기본 스탠스와 풋워크를 익힙니다. 오늘은 Step Back, Lateral Step, L-Step을(를) 배웁니다.",
+      "learningGoals": [
+        "Step Back의 기본 동작과 활용 상황을 이해한다.",
+        "Lateral Step의 기본 동작과 활용 상황을 이해한다.",
+        "L-Step의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__step-back",
+        "boxing__lateral-step",
+        "boxing__l-step"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__step-forward"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 5,
+      "title": "기본 펀치 개념: Cross · Lead Hook · Rear Hook",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Cross / Straight Right, Lead Hook, Rear Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Lead Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Rear Hook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__cross-straight-right",
+        "boxing__lead-hook",
+        "boxing__rear-hook"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "Lead Uppercut · Rear Uppercut · Overhand",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Lead Uppercut, Rear Uppercut, Overhand을(를) 배웁니다.",
+      "learningGoals": [
+        "Lead Uppercut의 기본 동작과 활용 상황을 이해한다.",
+        "Rear Uppercut의 기본 동작과 활용 상황을 이해한다.",
+        "Overhand의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__lead-uppercut",
+        "boxing__rear-uppercut",
+        "boxing__overhand"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__rear-hook"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "Body Jab · Body Cross · Body Uppercut",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Body Jab, Body Cross, Body Uppercut을(를) 배웁니다.",
+      "learningGoals": [
+        "Body Jab의 기본 동작과 활용 상황을 이해한다.",
+        "Body Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Body Uppercut의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__body-jab",
+        "boxing__body-cross",
+        "boxing__body-uppercut"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__overhand"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "Shovel Hook · Check Hook · Lead Overhand",
+      "description": "잽, 크로스, 훅, 어퍼컷 등 기본 펀치를 배웁니다. 오늘은 Shovel Hook, Check Hook, Lead Overhand을(를) 배웁니다.",
+      "learningGoals": [
+        "Shovel Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Check Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Lead Overhand의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__shovel-hook",
+        "boxing__check-hook",
+        "boxing__lead-overhand"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__body-uppercut"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 9,
+      "title": "기본 방어: Slip · Double Forearm Guard · Shell",
+      "description": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다. 오늘은 Slip, Double Forearm Guard, Shell을(를) 배웁니다.",
+      "learningGoals": [
+        "Slip의 기본 동작과 활용 상황을 이해한다.",
+        "Double Forearm Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Shell의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__slip",
+        "boxing__double-forearm-guard",
+        "boxing__shell"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "Elbow Block · Body Cover · Double Slip",
+      "description": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다. 오늘은 Elbow Block, Body Cover, Double Slip을(를) 배웁니다.",
+      "learningGoals": [
+        "Elbow Block의 기본 동작과 활용 상황을 이해한다.",
+        "Body Cover의 기본 동작과 활용 상황을 이해한다.",
+        "Double Slip의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__elbow-block",
+        "boxing__body-cover",
+        "boxing__double-slip"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__shell"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "Pull Back · Lean Back · Roll",
+      "description": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다. 오늘은 Pull Back, Lean Back, Roll / Bob and Weave을(를) 배웁니다.",
+      "learningGoals": [
+        "Pull Back의 기본 동작과 활용 상황을 이해한다.",
+        "Lean Back의 기본 동작과 활용 상황을 이해한다.",
+        "Roll의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__pull-back",
+        "boxing__lean-back",
+        "boxing__roll-bob-and-weave"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__double-slip"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 12,
+      "title": "Duck · Side Step · Lead Hand Parry",
+      "description": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다. 오늘은 Duck, Side Step, Lead Hand Parry을(를) 배웁니다.",
+      "learningGoals": [
+        "Duck의 기본 동작과 활용 상황을 이해한다.",
+        "Side Step의 기본 동작과 활용 상황을 이해한다.",
+        "Lead Hand Parry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__duck",
+        "boxing__side-step",
+        "boxing__lead-hand-parry"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__roll-bob-and-weave"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "Rear Hand Parry",
+      "description": "가드, 슬립, 롤 등 기본 방어 기술과 상대 펀치별 대응을 배웁니다. 오늘은 Rear Hand Parry을(를) 배웁니다.",
+      "learningGoals": [
+        "Rear Hand Parry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__rear-hand-parry"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__side-step",
+        "boxing__lead-hand-parry"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 14,
+      "title": "거리 조절: Jab · Clinch · Hook",
+      "description": "거리별 포지션과 코너·로프 상황에서의 움직임을 배웁니다. 오늘은 Jab, Clinch, Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "Jab의 기본 동작과 활용 상황을 이해한다.",
+        "Clinch의 기본 동작과 활용 상황을 이해한다.",
+        "Hook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__jab",
+        "boxing__clinch",
+        "boxing__hook"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "Uppercut · Short Hook · Short Uppercut",
+      "description": "거리별 포지션과 코너·로프 상황에서의 움직임을 배웁니다. 오늘은 Uppercut, Short Hook, Short Uppercut을(를) 배웁니다.",
+      "learningGoals": [
+        "Uppercut의 기본 동작과 활용 상황을 이해한다.",
+        "Short Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Short Uppercut의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__uppercut",
+        "boxing__short-hook",
+        "boxing__short-uppercut"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__hook"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 16,
+      "title": "Body Hook · Infighting · Feint",
+      "description": "거리별 포지션과 코너·로프 상황에서의 움직임을 배웁니다. 오늘은 Body Hook, Infighting, Feint을(를) 배웁니다.",
+      "learningGoals": [
+        "Body Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Infighting의 기본 동작과 활용 상황을 이해한다.",
+        "Feint의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__body-hook",
+        "boxing__infighting",
+        "boxing__feint"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__short-uppercut"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 17,
+      "title": "Cross",
+      "description": "거리별 포지션과 코너·로프 상황에서의 움직임을 배웁니다. 오늘은 Cross을(를) 배웁니다.",
+      "learningGoals": [
+        "Cross의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__cross"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__infighting",
+        "boxing__feint"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 18,
+      "title": "콤비네이션: 1--2 · 1--1--2 · 1--1--1",
+      "description": "개별 펀치를 연결한 콤비네이션과 페인트를 배웁니다. 오늘은 1--2, 1--1--2, 1--1--1을(를) 배웁니다.",
+      "learningGoals": [
+        "1--2의 기본 동작과 활용 상황을 이해한다.",
+        "1--1--2의 기본 동작과 활용 상황을 이해한다.",
+        "Triple Jab"
+      ],
+      "techniqueIds": [
+        "boxing__1-2",
+        "boxing__1-1-2",
+        "boxing__1-1-1"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 19,
+      "title": "1--2--3 · 1--2--3--2 · 1--1--2--3",
+      "description": "개별 펀치를 연결한 콤비네이션과 페인트를 배웁니다. 오늘은 1--2--3, 1--2--3--2, 1--1--2--3을(를) 배웁니다.",
+      "learningGoals": [
+        "1--2--3의 기본 동작과 활용 상황을 이해한다.",
+        "1--2--3--2의 기본 동작과 활용 상황을 이해한다.",
+        "1--1--2--3의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__1-2-3",
+        "boxing__1-2-3-2",
+        "boxing__1-1-2-3"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__1-1-1"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 20,
+      "title": "2--3--2 · 1--2--5 · 1--2--3--6",
+      "description": "개별 펀치를 연결한 콤비네이션과 페인트를 배웁니다. 오늘은 2--3--2, 1--2--5, 1--2--3--6을(를) 배웁니다.",
+      "learningGoals": [
+        "2--3--2의 기본 동작과 활용 상황을 이해한다.",
+        "1--2--5의 기본 동작과 활용 상황을 이해한다.",
+        "1--2--3--6의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__2-3-2",
+        "boxing__1-2-5",
+        "boxing__1-2-3-6"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__1-1-2-3"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 21,
+      "title": "Body--Head Combination · Head--Body Combination · Double Jab Entry",
+      "description": "개별 펀치를 연결한 콤비네이션과 페인트를 배웁니다. 오늘은 Body--Head Combination, Head--Body Combination, Double Jab Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "Body--Head Combination의 기본 동작과 활용 상황을 이해한다.",
+        "Head--Body Combination의 기본 동작과 활용 상황을 이해한다.",
+        "Double Jab Entry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__body-head-combination",
+        "boxing__head-body-combination",
+        "boxing__double-jab-entry"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__1-2-3-6"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 22,
+      "title": "방어에서 공격으로 연결: Cross Counter · Slip → Cross · Slip → Hook",
+      "description": "카운터, 인파이팅, 클린치 등 방어 이후 곧바로 공격으로 전환하는 방법을 배웁니다. 오늘은 Cross Counter, Slip → Cross, Slip → Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "Cross Counter의 기본 동작과 활용 상황을 이해한다.",
+        "Slip → Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Slip → Hook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__cross-counter",
+        "boxing__slip-cross",
+        "boxing__slip-hook"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 23,
+      "title": "Parry → Jab · Parry → Cross · Pull → Cross",
+      "description": "카운터, 인파이팅, 클린치 등 방어 이후 곧바로 공격으로 전환하는 방법을 배웁니다. 오늘은 Parry → Jab, Parry → Cross, Pull → Cross을(를) 배웁니다.",
+      "learningGoals": [
+        "Parry → Jab의 기본 동작과 활용 상황을 이해한다.",
+        "Parry → Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Pull → Cross의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__parry-jab",
+        "boxing__parry-cross",
+        "boxing__pull-cross"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__slip-hook"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 24,
+      "title": "Roll → Hook · Roll → Uppercut · Block → Counter",
+      "description": "카운터, 인파이팅, 클린치 등 방어 이후 곧바로 공격으로 전환하는 방법을 배웁니다. 오늘은 Roll → Hook, Roll → Uppercut, Block → Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "Roll → Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Roll → Uppercut의 기본 동작과 활용 상황을 이해한다.",
+        "Block → Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__roll-hook",
+        "boxing__roll-uppercut",
+        "boxing__block-counter"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__pull-cross"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 25,
+      "title": "Step Back → Cross · Pivot → Hook · Shoulder Bump",
+      "description": "카운터, 인파이팅, 클린치 등 방어 이후 곧바로 공격으로 전환하는 방법을 배웁니다. 오늘은 Step Back → Cross, Pivot → Hook, Shoulder Bump을(를) 배웁니다.",
+      "learningGoals": [
+        "Step Back → Cross의 기본 동작과 활용 상황을 이해한다.",
+        "Pivot → Hook의 기본 동작과 활용 상황을 이해한다.",
+        "Shoulder Bump의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__step-back-cross",
+        "boxing__pivot-hook",
+        "boxing__shoulder-bump"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__block-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 26,
+      "title": "상황별 응용: 거리 관리 · 커팅 오프 더 링",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 거리 관리, 커팅 오프 더 링을(를) 배웁니다.",
+      "learningGoals": [
+        "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+        "커팅 오프 더 링의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__거리-관리",
+        "boxing__커팅-오프-더-링"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 27,
+      "title": "센터 링 컨트롤 · 앵글 관리",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 센터 링 컨트롤, 앵글 관리을(를) 배웁니다.",
+      "learningGoals": [
+        "경기 전체를 놓고 거리·각도·링 공간을 관리하는 상위 개념의 전술이다.",
+        "앵글 관리의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__센터-링-컨트롤",
+        "boxing__앵글-관리"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__거리-관리",
+        "boxing__커팅-오프-더-링"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 28,
+      "title": "리드 핸드 컨트롤 · 크로스 스텝",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 리드 핸드 컨트롤, 크로스 스텝을(를) 배웁니다.",
+      "learningGoals": [
+        "리드 손·발이 반대인 두 선수가 만나면 센터라인 구조 자체가 달라져 동형(오소독스 vs 오소독스) 매치업과는 다른 전술이 필요하다.",
+        "크로스 스텝의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__리드-핸드-컨트롤",
+        "boxing__크로스-스텝"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__센터-링-컨트롤",
+        "boxing__앵글-관리"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "센터라인 리스크 · 올림픽 스타일",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 센터라인 리스크, 아마추어을(를) 배웁니다.",
+      "learningGoals": [
+        "리드 손·발이 반대인 두 선수가 만나면 센터라인 구조 자체가 달라져 동형(오소독스 vs 오소독스) 매치업과는 다른 전술이 필요하다.",
+        "경기 규칙과 채점 방식이 다르면 같은 기술도 우선순위가 달라진다."
+      ],
+      "techniqueIds": [
+        "boxing__센터라인-리스크",
+        "boxing__아마추어"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__리드-핸드-컨트롤",
+        "boxing__크로스-스텝"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 30,
+      "title": "프로 · 실전 함의",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 프로, 실전 함의을(를) 배웁니다.",
+      "learningGoals": [
+        "경기 규칙과 채점 방식이 다르면 같은 기술도 우선순위가 달라진다.",
+        "실전 함의의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__프로",
+        "boxing__실전-함의"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__센터라인-리스크",
+        "boxing__아마추어"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 31,
+      "title": "전형적 자세/풋워크 · 전형적 자세/풋워크: Switch Step",
+      "description": "링 제너럴십, 사우스포 상대 전술, 아마추어/프로 스코어링 차이 등 실전 응용을 다룹니다. 오늘은 전형적 자세/풋워크, 전형적 자세/풋워크: Switch Step을(를) 배웁니다.",
+      "learningGoals": [
+        "복싱 선수의 전술은 대체로 아래 스타일 중 하나(또는 혼합형)로 설명되며, 스타일에 따라 자세·풋워크·펀치 선택의 우선순위가 크게 달라진다.",
+        "전형적 자세/풋워크: Switch Step의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "boxing__전형적-자세-풋워크",
+        "boxing__전형적-자세-풋워크-switch-step"
+      ],
+      "reviewTechniqueIds": [
+        "boxing__프로",
+        "boxing__실전-함의"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 32,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "boxing__orthodox",
+        "boxing__cross-straight-right",
+        "boxing__slip",
+        "boxing__jab",
+        "boxing__1-2",
+        "boxing__cross-counter",
+        "boxing__거리-관리"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 33,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "boxing__philly-shell",
+        "boxing__rear-uppercut",
+        "boxing__body-cover",
+        "boxing__uppercut",
+        "boxing__1-2-3-2",
+        "boxing__parry-cross",
+        "boxing__리드-핸드-컨트롤"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 34,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "boxing__step-forward",
+        "boxing__body-uppercut",
+        "boxing__roll-bob-and-weave",
+        "boxing__body-hook",
+        "boxing__1-2-3-6",
+        "boxing__block-counter",
+        "boxing__프로"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 83
+}

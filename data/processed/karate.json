@@ -1,0 +1,2612 @@
+{
+  "martialArt": {
+    "id": "karate",
+    "nameEn": "Karate",
+    "nameKo": "가라테"
+  },
+  "count": 88,
+  "techniques": [
+    {
+      "id": "karate__musubi-dachi-heiko-dachi",
+      "martialArt": "karate",
+      "name": "Musubi-dachi / Heiko-dachi",
+      "koreanName": null,
+      "aliases": [
+        "Musubi-dachi",
+        "Heiko-dachi"
+      ],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "인사, 정지, 가타 시작·종료 지점에서 쓰는 중립 자세. 전투 자세가 아니라 준비/정렬 상태.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi"
+      ],
+      "youtubeSearchQuery": "karate Musubi-dachi / Heiko-dachi technique"
+    },
+    {
+      "id": "karate__zenkutsu-dachi",
+      "martialArt": "karate",
+      "name": "Zenkutsu-dachi",
+      "koreanName": "전굴립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "전굴립; 앞으로 무게를 실어 전진하는 힘을 낼 때. Oi-zuki, Mae Geri 등 전진형 기술의 기본 플랫폼. 가타·기본 훈련(Kihon)에서 가장 많이 등장.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi",
+        "#ZenkutsuDachi"
+      ],
+      "youtubeSearchQuery": "karate Zenkutsu-dachi technique"
+    },
+    {
+      "id": "karate__kokutsu-dachi",
+      "martialArt": "karate",
+      "name": "Kokutsu-dachi",
+      "koreanName": "후굴립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "후굴립; 뒤로 무게를 두고 물러나며 막을 때. Shuto Uke와 함께 자주 쓰여, 막으면서 바로 반격 준비를 하는 자세.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi",
+        "#KokutsuDachi"
+      ],
+      "youtubeSearchQuery": "karate Kokutsu-dachi technique"
+    },
+    {
+      "id": "karate__kiba-dachi",
+      "martialArt": "karate",
+      "name": "Kiba-dachi",
+      "koreanName": "기마립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "기마립; 좌우 이동 없이 옆으로 강하게 타격할 때. Tekki 계열 가타의 핵심 자세이며, 근거리에서 좌우 손기술을 교환할 때 안정성을 준다.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi",
+        "#KibaDachi"
+      ],
+      "youtubeSearchQuery": "karate Kiba-dachi technique"
+    },
+    {
+      "id": "karate__neko-ashi-dachi",
+      "martialArt": "karate",
+      "name": "Neko-ashi-dachi",
+      "koreanName": "묘족립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "묘족립; 체중을 뒤에 두고 앞발을 가볍게 띄워 언제든 발차기·회피가 가능한 상태. Naha-te 계열, 근~중거리에서 빠른 반응이 필요할 때.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi"
+      ],
+      "youtubeSearchQuery": "karate Neko-ashi-dachi technique"
+    },
+    {
+      "id": "karate__sanchin-dachi",
+      "martialArt": "karate",
+      "name": "Sanchin-dachi",
+      "koreanName": "삼전립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "삼전립; Goju-Ryu의 근거리 구조 자세. 몸통을 조이고 하체를 고정해 타격을 흡수하면서 근접전을 유지할 때 쓴다.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi",
+        "#SanchinDachi"
+      ],
+      "youtubeSearchQuery": "karate Sanchin-dachi technique"
+    },
+    {
+      "id": "karate__shiko-dachi",
+      "martialArt": "karate",
+      "name": "Shiko-dachi",
+      "koreanName": "사고립",
+      "aliases": [],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "사고립; 낮고 넓은 자세로 하체 힘을 이용한 타격(특히 Kyokushin의 로우킥 대응 자세)이나 던지기 방어에 유리.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi"
+      ],
+      "youtubeSearchQuery": "karate Shiko-dachi technique"
+    },
+    {
+      "id": "karate__fudo-dachi-부동립-kumite-자유-자세",
+      "martialArt": "karate",
+      "name": "Fudo-dachi (부동립) / Kumite 자유 자세",
+      "koreanName": null,
+      "aliases": [
+        "Fudo-dachi (부동립)",
+        "Kumite 자유 자세"
+      ],
+      "category": "기본 자세 (Kihon Dachi)",
+      "positions": [
+        "기본 자세 (Kihon Dachi)"
+      ],
+      "description": "실전 쿠미테에서 가장 실용적인 절충형 자세. 전진·후퇴·회전이 모두 자유로워 자유 대련의 기본 자세로 쓰인다.",
+      "purpose": "자세는 그 자체로 기술이 아니라 **다음 동작을 위한 준비 상태**다. 어떤 자세를 쓰는지는 \"지금 내가 무엇을 하려는가\"에 따라 달라진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:기본-자세-kihon-dachi",
+        "#Kumite",
+        "#FudoDachi"
+      ],
+      "youtubeSearchQuery": "karate Fudo-dachi (부동립) / Kumite 자유 자세 technique"
+    },
+    {
+      "id": "karate__ayumi-ashi",
+      "martialArt": "karate",
+      "name": "Ayumi-ashi",
+      "koreanName": null,
+      "aliases": [],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)"
+      ],
+      "description": "일반적인 걷는 걸음. 가타의 기본 전진 이동.",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "judo"
+      ],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크"
+      ],
+      "youtubeSearchQuery": "karate Ayumi-ashi technique"
+    },
+    {
+      "id": "karate__tsugi-ashi",
+      "martialArt": "karate",
+      "name": "Tsugi-ashi",
+      "koreanName": "쓰기아시",
+      "aliases": [],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)"
+      ],
+      "description": "쓰기아시, 딸림 걸음; 앞발이 먼저 나가고 뒷발이 따라붙는 이동. 자세를 유지하면서 거리를 좁힐 때, 특히 Oi-zuki나 진입 기술의 준비 단계에서 사용.",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "judo"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크",
+        "#TsugiAshi"
+      ],
+      "youtubeSearchQuery": "karate Tsugi-ashi technique"
+    },
+    {
+      "id": "karate__yori-ashi",
+      "martialArt": "karate",
+      "name": "Yori-ashi",
+      "koreanName": null,
+      "aliases": [],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)"
+      ],
+      "description": "발이 서로 교차하지 않고 미끄러지듯 옆으로 이동. 각도를 바꾸면서도 자세를 무너뜨리지 않을 때 쓴다.",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크"
+      ],
+      "youtubeSearchQuery": "karate Yori-ashi technique"
+    },
+    {
+      "id": "karate__okuri-ashi",
+      "martialArt": "karate",
+      "name": "Okuri-ashi",
+      "koreanName": "오쿠리아시",
+      "aliases": [],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)",
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "오쿠리아시, 밀어보내는 걸음; 같은 발 순서를 유지한 채 미세하게 거리를 조절하는 슬라이딩 스텝. 자세를 바꾸지 않아 상대에게 진입 타이밍을 읽히지 않는 장점이 있어, WKF 쿠미테에서 Maai를 미세 조정할 때 자주 쓰인다.",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크",
+        "#OkuriAshi"
+      ],
+      "youtubeSearchQuery": "karate Okuri-ashi technique"
+    },
+    {
+      "id": "karate__tai-sabaki-tenkan-pivot",
+      "martialArt": "karate",
+      "name": "Tai Sabaki / Tenkan / Pivot",
+      "koreanName": null,
+      "aliases": [
+        "Tai Sabaki",
+        "Tenkan",
+        "Pivot"
+      ],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)",
+        "타이사바키 / 회피 (Tai Sabaki)"
+      ],
+      "description": "몸의 방향을 바꾸는 회전 이동. 정면 승부를 피하고 각도를 만들 때(자세한 내용은 10장).",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크",
+        "#TaiSabaki",
+        "#Tenkan"
+      ],
+      "youtubeSearchQuery": "karate Tai Sabaki / Tenkan / Pivot technique"
+    },
+    {
+      "id": "karate__step-in-step-out-side-step-retreat-forward-step",
+      "martialArt": "karate",
+      "name": "Step In / Step Out / Side Step / Retreat / Forward Step",
+      "koreanName": null,
+      "aliases": [
+        "Step In",
+        "Step Out",
+        "Side Step",
+        "Retreat",
+        "Forward Step"
+      ],
+      "category": "이동 (Shintai / 풋워크)",
+      "positions": [
+        "이동 (Shintai / 풋워크)"
+      ],
+      "description": "거리와 각도를 조절하는 기본 단위 이동. WKF에서는 일직선 후퇴만 반복하면 \"Jogai(장외)\"나 소극적 태도로 감점될 수 있어, 후퇴 대신 옆으로 빠지는 Side Step·Tai Sabaki가 선호된다.",
+      "purpose": "이동은 **거리(Maai)를 관리하는 도구**다. 가타에서 배우는 정형화된 이동과, 자유 쿠미테에서 쓰는 실전 이동은 목적이 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:이동-shintai-풋워크"
+      ],
+      "youtubeSearchQuery": "karate Step In / Step Out / Side Step / Retreat / Forward Step technique"
+    },
+    {
+      "id": "karate__choku-zuki",
+      "martialArt": "karate",
+      "name": "Choku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "제자리에서 뻗는 기본 찌르기. 폼(기본기) 학습용.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Choku-zuki technique"
+    },
+    {
+      "id": "karate__oi-zuki",
+      "martialArt": "karate",
+      "name": "Oi-zuki",
+      "koreanName": "전진 찌르기",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "전진 찌르기; 앞발과 같은 쪽 손으로 전진하며 찌르는 큰 동작. 파워는 크지만 동작이 커서 예고되기 쉬워, 자유 쿠미테보다 기본기·가타·초심자 거리 감각 훈련에서 중요.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Gyaku-zuki"
+      ],
+      "relatedTechniques": [
+        "karate__gyaku-zuki"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#OiZuki"
+      ],
+      "youtubeSearchQuery": "karate Oi-zuki technique"
+    },
+    {
+      "id": "karate__gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Gyaku-zuki",
+      "koreanName": "역찌르기",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "역찌르기; 뒷손으로 몸통 회전을 이용해 찌르는 가장 강력하고 자주 쓰이는 득점/파워 기술. WKF에서 Chudan Gyaku-zuki는 대표적인 Yuko(1점) 기술이며, Kyokushin에서도 근~중거리 핵심 타격.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Mawashi Geri"
+      ],
+      "relatedTechniques": [
+        "karate__kizami-zuki",
+        "karate__oi-zuki",
+        "karate__mawashi-geri",
+        "karate__mae-geri"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#GyakuZuki"
+      ],
+      "youtubeSearchQuery": "karate Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__kizami-zuki",
+      "martialArt": "karate",
+      "name": "Kizami-zuki",
+      "koreanName": "잽",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "잽; 앞손으로 짧고 빠르게 찌르는 견제·거리 측정용 기술. 장거리에서 상대 반응을 끌어내거나(Sen), 후속 기술의 미끄럼틀 역할.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Gyaku-zuki",
+        "Mawashi Geri"
+      ],
+      "relatedTechniques": [
+        "karate__gyaku-zuki",
+        "karate__mawashi-geri",
+        "karate__gyaku-zuki-mawashi-geri"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#KizamiZuki"
+      ],
+      "youtubeSearchQuery": "karate Kizami-zuki technique"
+    },
+    {
+      "id": "karate__kagi-zuki",
+      "martialArt": "karate",
+      "name": "Kagi-zuki",
+      "koreanName": "훅 찌르기",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "훅 찌르기; 근거리에서 팔을 굽혀 옆에서 들어가는 타격. 근접전, Kyokushin의 연속 타격에서 유용.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#KagiZuki"
+      ],
+      "youtubeSearchQuery": "karate Kagi-zuki technique"
+    },
+    {
+      "id": "karate__tate-zuki-age-zuki",
+      "martialArt": "karate",
+      "name": "Tate-zuki / Age-zuki",
+      "koreanName": null,
+      "aliases": [
+        "Tate-zuki",
+        "Age-zuki"
+      ],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "세로 주먹·올려 찌르기. 근거리에서 상대 몸이 밀착했을 때 사용.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Tate-zuki / Age-zuki technique"
+    },
+    {
+      "id": "karate__uraken-uchi",
+      "martialArt": "karate",
+      "name": "Uraken-uchi",
+      "koreanName": "백핏",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "백핏; 팔을 짧게 튕겨 치는 타격. 근~중거리에서 빠른 카운터나 얼굴 쪽 견제로 유용, WKF에서도 Jodan 견제 기술로 자주 등장.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#Uraken"
+      ],
+      "youtubeSearchQuery": "karate Uraken-uchi technique"
+    },
+    {
+      "id": "karate__tettsui-uchi",
+      "martialArt": "karate",
+      "name": "Tettsui-uchi",
+      "koreanName": "망치주먹",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "망치주먹; 아래·옆으로 내리치는 타격. 가타 및 호신술 맥락에서 주로 등장.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Tettsui-uchi technique"
+    },
+    {
+      "id": "karate__mawashi-zuki",
+      "martialArt": "karate",
+      "name": "Mawashi-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "곡선으로 감아 치는 주먹. 근거리 변형 타격.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#Ma"
+      ],
+      "youtubeSearchQuery": "karate Mawashi-zuki technique"
+    },
+    {
+      "id": "karate__shuto-uchi",
+      "martialArt": "karate",
+      "name": "Shuto-uchi",
+      "koreanName": "손날치기",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "손날치기; 목·측두부를 노리는 가타/본카이 기술. WKF·Kyokushin 경기에서는 목 타격이 금지 부위라 실전 경기에서는 거의 쓰이지 않고, 전통 가타와 호신술에서 의미가 크다.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Shuto-uchi technique"
+    },
+    {
+      "id": "karate__haito-uchi",
+      "martialArt": "karate",
+      "name": "Haito-uchi",
+      "koreanName": "반대손날",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "반대손날; 손날의 반대면으로 치는 기술. 근거리 가타 동작에 등장.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Haito-uchi technique"
+    },
+    {
+      "id": "karate__nukite-ippon-ken-nihon-nukite",
+      "martialArt": "karate",
+      "name": "Nukite / Ippon-ken / Nihon-nukite",
+      "koreanName": null,
+      "aliases": [
+        "Nukite",
+        "Ippon-ken",
+        "Nihon-nukite"
+      ],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "손끝을 세워 찌르는 기술. 눈·목젖 등 경기에서 금지된 부위를 노리므로 스포츠 쿠미테 금지, 전통 가타·호신술 전용.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza",
+        "#Ippon"
+      ],
+      "youtubeSearchQuery": "karate Nukite / Ippon-ken / Nihon-nukite technique"
+    },
+    {
+      "id": "karate__teisho",
+      "martialArt": "karate",
+      "name": "Teisho",
+      "koreanName": "손바닥 밑동",
+      "aliases": [],
+      "category": "손기술 (Te-waza)",
+      "positions": [
+        "손기술 (Te-waza)"
+      ],
+      "description": "손바닥 밑동; 턱·가슴을 미는 형태로 치는 기술. 안전하게 강한 타격을 줄 수 있어 호신술과 일부 근거리 응용에 쓰인다.",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:손기술-te-waza"
+      ],
+      "youtubeSearchQuery": "karate Teisho technique"
+    },
+    {
+      "id": "karate__empi-hiji-yoko-empi-age-empi-ushiro-empi-mawashi-empi-otoshi-empi",
+      "martialArt": "karate",
+      "name": "Empi/Hiji, Yoko Empi, Age Empi, Ushiro Empi, Mawashi Empi, Otoshi Empi",
+      "koreanName": null,
+      "aliases": [
+        "Empi/Hiji",
+        "Yoko Empi",
+        "Age Empi",
+        "Ushiro Empi",
+        "Mawashi Empi",
+        "Otoshi Empi"
+      ],
+      "category": "팔꿈치 (Empi / Hiji)",
+      "positions": [
+        "팔꿈치 (Empi / Hiji)"
+      ],
+      "description": "",
+      "purpose": "팔꿈치는 매우 근거리에서만 유효한 파괴적인 무기다. WKF와 Kyokushin 모두 안전상의 이유로 **팔꿈치 타격을 경기에서 금지**하고 있어, 실제 사용처는 가타 동작 해석(Bunkai)과 호신술 훈련으로 한정된다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:팔꿈치-empi-hiji",
+        "#Ma"
+      ],
+      "youtubeSearchQuery": "karate Empi/Hiji, Yoko Empi, Age Empi, Ushiro Empi, Mawashi Empi, Otoshi Empi technique"
+    },
+    {
+      "id": "karate__mae-geri",
+      "martialArt": "karate",
+      "name": "Mae Geri",
+      "koreanName": "앞차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "앞차기; 직선으로 찌르듯 차는 가장 기본적인 발차기. 상대의 전진을 끊거나 거리를 벌릴 때 유용. 근거리에서는 Kansetsu Geri(14장)처럼 무릎을 노리는 짧은 변형으로도 쓰인다.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Gyaku-zuki"
+      ],
+      "relatedTechniques": [
+        "karate__gyaku-zuki"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri",
+        "#Ma",
+        "#MaeGeri"
+      ],
+      "youtubeSearchQuery": "karate Mae Geri technique"
+    },
+    {
+      "id": "karate__yoko-geri",
+      "martialArt": "karate",
+      "name": "Yoko Geri",
+      "koreanName": "옆차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "옆차기, Keage/Kekomi; 측면으로 뻗어 차는 기술. 돌진해오는 상대를 막아 세우거나, 각도를 튼 상태에서 찌르듯 타격.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri",
+        "#YokoGeri"
+      ],
+      "youtubeSearchQuery": "karate Yoko Geri technique"
+    },
+    {
+      "id": "karate__mawashi-geri",
+      "martialArt": "karate",
+      "name": "Mawashi Geri",
+      "koreanName": "돌려차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "돌려차기; 회전력으로 감아 치는 발차기. WKF에서는 Jodan(얼굴) Mawashi Geri가 Ippon(고득점) 기술이며, Kyokushin에서는 Chudan(몸통) Mawashi Geri와 다리를 노리는 **로우킥(Gedan Mawashi Geri)**이 경기의 중심 기술이다. WKF는 다리 로우킥을 채점 대상으로 인정하지 않는 반면, Kyokushin 낫다운 룰에서는 다리 로우킥으로 상대를 실제로 다운시킬 수 있어 비중이 매우 크다.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "Gyaku-zuki"
+      ],
+      "relatedTechniques": [
+        "karate__gyaku-zuki",
+        "karate__kizami-zuki"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri",
+        "#Ma",
+        "#MawashiGeri",
+        "#UraMawashiGeri"
+      ],
+      "youtubeSearchQuery": "karate Mawashi Geri technique"
+    },
+    {
+      "id": "karate__ushiro-geri",
+      "martialArt": "karate",
+      "name": "Ushiro Geri",
+      "koreanName": "뒤차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "뒤차기; 등을 돌린 상태나 회전 중 후방을 찌르는 강력한 직선 발차기. 상대가 등 뒤로 접근하거나 회전 타이밍을 만들 때.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri",
+        "#UshiroGeri"
+      ],
+      "youtubeSearchQuery": "karate Ushiro Geri technique"
+    },
+    {
+      "id": "karate__ushiro-mawashi-geri-ura-mawashi-geri",
+      "martialArt": "karate",
+      "name": "Ushiro Mawashi Geri / Ura Mawashi Geri",
+      "koreanName": "뒤돌려차기",
+      "aliases": [
+        "Ushiro Mawashi Geri",
+        "Ura Mawashi Geri"
+      ],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "뒤돌려차기, 훅킥; 회전을 이용해 예측하기 어려운 각도로 들어가는 발차기. WKF 쿠미테에서 고득점(Ippon) 노림수로 자주 등장.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri",
+        "#Ma",
+        "#MawashiGeri",
+        "#UraMawashiGeri"
+      ],
+      "youtubeSearchQuery": "karate Ushiro Mawashi Geri / Ura Mawashi Geri technique"
+    },
+    {
+      "id": "karate__fumikomi-geri",
+      "martialArt": "karate",
+      "name": "Fumikomi Geri",
+      "koreanName": "밟아차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "밟아차기; 짧게 내려 밟듯 차는 근거리 기술. 무릎·정강이 등 관절부를 노리는 실전/호신 응용에서 등장.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri"
+      ],
+      "youtubeSearchQuery": "karate Fumikomi Geri technique"
+    },
+    {
+      "id": "karate__mikazuki-geri",
+      "martialArt": "karate",
+      "name": "Mikazuki Geri",
+      "koreanName": "반달차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "반달차기; 곡선으로 휘두르는 차기. 상대의 막기·팔을 걷어내며 다음 기술을 연결할 때.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri"
+      ],
+      "youtubeSearchQuery": "karate Mikazuki Geri technique"
+    },
+    {
+      "id": "karate__kakato-geri",
+      "martialArt": "karate",
+      "name": "Kakato Geri",
+      "koreanName": "뒤꿈치차기/도끼차기",
+      "aliases": [],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "뒤꿈치차기/도끼차기; 위에서 아래로 내려찍는 차기. 가타·호신술에서 등장, 경기에서는 부상 위험으로 제한적.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri"
+      ],
+      "youtubeSearchQuery": "karate Kakato Geri technique"
+    },
+    {
+      "id": "karate__nidan-geri-tobi-geri",
+      "martialArt": "karate",
+      "name": "Nidan Geri / Tobi Geri",
+      "koreanName": "이단차기/뛰어차기",
+      "aliases": [
+        "Nidan Geri",
+        "Tobi Geri"
+      ],
+      "category": "발차기 (Geri)",
+      "positions": [
+        "발차기 (Geri)"
+      ],
+      "description": "이단차기/뛰어차기; 점프를 이용한 발차기. 실용성보다 가타·시범 성격이 강하다.",
+      "purpose": "발차기는 사거리가 길어 **장거리에서 먼저 던지는 기술**이자, 회전력을 이용해 큰 파괴력을 내는 기술이다. 룰셋에 따라 선호되는 발차기가 크게 다르다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:발차기-geri"
+      ],
+      "youtubeSearchQuery": "karate Nidan Geri / Tobi Geri technique"
+    },
+    {
+      "id": "karate__gedan-barai",
+      "martialArt": "karate",
+      "name": "Gedan Barai",
+      "koreanName": "하단막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "하단막기; 아래쪽 공격(로우킥, 복부 찌르기)을 쓸어내리는 기본 막기.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#GedanBarai"
+      ],
+      "youtubeSearchQuery": "karate Gedan Barai technique"
+    },
+    {
+      "id": "karate__age-uke",
+      "martialArt": "karate",
+      "name": "Age Uke",
+      "koreanName": "상단막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "상단막기; 위에서 오는 주먹 공격을 올려서 막는 기술.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke",
+        "#AgeUke"
+      ],
+      "youtubeSearchQuery": "karate Age Uke technique"
+    },
+    {
+      "id": "karate__soto-uke-uchi-uke",
+      "martialArt": "karate",
+      "name": "Soto Uke / Uchi Uke",
+      "koreanName": "바깥막기/안막기",
+      "aliases": [
+        "Soto Uke",
+        "Uchi Uke"
+      ],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "바깥막기/안막기; 중단 공격을 바깥→ 안쪽, 안→바깥쪽으로 흘려내는 기본 막기. 막은 뒤 그대로 Gyaku-zuki로 연결하는 것이 대표적 Go no Sen 패턴(11장).",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke",
+        "#SotoUke"
+      ],
+      "youtubeSearchQuery": "karate Soto Uke / Uchi Uke technique"
+    },
+    {
+      "id": "karate__shuto-uke",
+      "martialArt": "karate",
+      "name": "Shuto Uke",
+      "koreanName": "손날막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "손날막기; Kokutsu-dachi와 짝을 이루는 막기로, 막으면서 동시에 상대의 팔을 흘려 반격 각도를 만든다.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke",
+        "#ShutoUke"
+      ],
+      "youtubeSearchQuery": "karate Shuto Uke technique"
+    },
+    {
+      "id": "karate__morote-uke",
+      "martialArt": "karate",
+      "name": "Morote Uke",
+      "koreanName": "양손막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "양손막기; 강한 직선 공격을 두 손으로 보강해 막는 기술.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke"
+      ],
+      "youtubeSearchQuery": "karate Morote Uke technique"
+    },
+    {
+      "id": "karate__juji-uke",
+      "martialArt": "karate",
+      "name": "Juji Uke",
+      "koreanName": "십자막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "십자막기; 강한 단일 타격이나 무기 공격을 X자로 막는 기술. 호신술 성격이 강하다.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke"
+      ],
+      "youtubeSearchQuery": "karate Juji Uke technique"
+    },
+    {
+      "id": "karate__kake-uke",
+      "martialArt": "karate",
+      "name": "Kake Uke",
+      "koreanName": "걸어막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "걸어막기; 상대 팔을 걸어 당기며 막는 기술. 막기 후 그대로 관절기·던지기로 연결하는 전통 응용(14장)의 출발점이 된다.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke"
+      ],
+      "youtubeSearchQuery": "karate Kake Uke technique"
+    },
+    {
+      "id": "karate__nagashi-uke",
+      "martialArt": "karate",
+      "name": "Nagashi Uke",
+      "koreanName": "흘려막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "흘려막기; 정면으로 받지 않고 흘려보내는 부드러운 막기. Tai Sabaki와 결합해 상대의 힘을 완전히 무력화.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke",
+        "#NagashiUke"
+      ],
+      "youtubeSearchQuery": "karate Nagashi Uke technique"
+    },
+    {
+      "id": "karate__osae-uke",
+      "martialArt": "karate",
+      "name": "Osae Uke",
+      "koreanName": "누르는막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "누르는막기; 상대의 팔/다리를 눌러 고정하는 막기. 관절기 진입의 준비 동작.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke",
+        "#Osae"
+      ],
+      "youtubeSearchQuery": "karate Osae Uke technique"
+    },
+    {
+      "id": "karate__sukui-uke",
+      "martialArt": "karate",
+      "name": "Sukui Uke",
+      "koreanName": "퍼올리는막기",
+      "aliases": [],
+      "category": "막기 (Uke)",
+      "positions": [
+        "막기 (Uke)"
+      ],
+      "description": "퍼올리는막기; 로우킥이나 잡기를 아래에서 받아 올리는 막기.",
+      "purpose": "막기는 단순 방어가 아니라 **다음 반격(카운터)으로 이어지는 다리**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:막기-uke",
+        "#Uke"
+      ],
+      "youtubeSearchQuery": "karate Sukui Uke technique"
+    },
+    {
+      "id": "karate__mae-geri-yoko-geri-ushiro-geri-mawashi-geri",
+      "martialArt": "karate",
+      "name": "Mae Geri, Yoko Geri, Ushiro Geri, Mawashi Geri",
+      "koreanName": null,
+      "aliases": [
+        "Mae Geri",
+        "Yoko Geri",
+        "Ushiro Geri",
+        "Mawashi Geri"
+      ],
+      "category": "장거리 (To-ma)",
+      "positions": [
+        "장거리 (To-ma)"
+      ],
+      "description": "사거리가 긴 발차기로 먼저 견제.",
+      "purpose": "서로의 기술이 닿지 않는 안전거리. 이 거리의 목적은 **정보 수집과 진입 준비**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:장거리-to-ma",
+        "#Ma",
+        "#MaeGeri",
+        "#MawashiGeri",
+        "#YokoGeri",
+        "#UshiroGeri"
+      ],
+      "youtubeSearchQuery": "karate Mae Geri, Yoko Geri, Ushiro Geri, Mawashi Geri technique"
+    },
+    {
+      "id": "karate__feint-페인트-angle-step",
+      "martialArt": "karate",
+      "name": "Feint(페인트), Angle Step",
+      "koreanName": null,
+      "aliases": [
+        "Feint(페인트)",
+        "Angle Step"
+      ],
+      "category": "장거리 (To-ma)",
+      "positions": [
+        "장거리 (To-ma)"
+      ],
+      "description": "상대의 반응(Sen인지 Go no Sen을 노리는지)을 확인.",
+      "purpose": "서로의 기술이 닿지 않는 안전거리. 이 거리의 목적은 **정보 수집과 진입 준비**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:장거리-to-ma"
+      ],
+      "youtubeSearchQuery": "karate Feint(페인트), Angle Step technique"
+    },
+    {
+      "id": "karate__long-guard-distance-control",
+      "martialArt": "karate",
+      "name": "Long Guard / Distance Control",
+      "koreanName": null,
+      "aliases": [
+        "Long Guard",
+        "Distance Control"
+      ],
+      "category": "장거리 (To-ma)",
+      "positions": [
+        "장거리 (To-ma)"
+      ],
+      "description": "상대가 To-ma를 깨고 들어오려는 순간을 포착해 Deai(마주치는 타이밍, 13장)로 카운터할 준비.",
+      "purpose": "서로의 기술이 닿지 않는 안전거리. 이 거리의 목적은 **정보 수집과 진입 준비**다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:장거리-to-ma",
+        "#Stance"
+      ],
+      "youtubeSearchQuery": "karate Long Guard / Distance Control technique"
+    },
+    {
+      "id": "karate__kizami-zuki-gyaku-zuki-oi-zuki",
+      "martialArt": "karate",
+      "name": "Kizami-zuki, Gyaku-zuki, Oi-zuki",
+      "koreanName": null,
+      "aliases": [
+        "Kizami-zuki",
+        "Gyaku-zuki",
+        "Oi-zuki"
+      ],
+      "category": "중거리 (Ma)",
+      "positions": [
+        "중거리 (Ma)"
+      ],
+      "description": "손기술 교환.",
+      "purpose": "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:중거리-ma",
+        "#GyakuZuki",
+        "#OiZuki",
+        "#KizamiZuki"
+      ],
+      "youtubeSearchQuery": "karate Kizami-zuki, Gyaku-zuki, Oi-zuki technique"
+    },
+    {
+      "id": "karate__mawashi-geri-mae-geri-yoko-geri",
+      "martialArt": "karate",
+      "name": "Mawashi Geri, Mae Geri, Yoko Geri",
+      "koreanName": null,
+      "aliases": [
+        "Mawashi Geri",
+        "Mae Geri",
+        "Yoko Geri"
+      ],
+      "category": "중거리 (Ma)",
+      "positions": [
+        "중거리 (Ma)"
+      ],
+      "description": "발차기 교환.",
+      "purpose": "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:중거리-ma",
+        "#Ma",
+        "#MaeGeri",
+        "#MawashiGeri",
+        "#YokoGeri"
+      ],
+      "youtubeSearchQuery": "karate Mawashi Geri, Mae Geri, Yoko Geri technique"
+    },
+    {
+      "id": "karate__counter-punch-counter-kick",
+      "martialArt": "karate",
+      "name": "Counter Punch / Counter Kick",
+      "koreanName": null,
+      "aliases": [
+        "Counter Punch",
+        "Counter Kick"
+      ],
+      "category": "중거리 (Ma)",
+      "positions": [
+        "중거리 (Ma)"
+      ],
+      "description": "Sen과 Go no Sen이 실제로 맞붙는 거리.",
+      "purpose": "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:중거리-ma",
+        "#Punch",
+        "#Kick",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "karate Counter Punch / Counter Kick technique"
+    },
+    {
+      "id": "karate__combination-entry",
+      "martialArt": "karate",
+      "name": "Combination Entry",
+      "koreanName": null,
+      "aliases": [],
+      "category": "중거리 (Ma)",
+      "positions": [
+        "중거리 (Ma)"
+      ],
+      "description": "조합 기술(12장)의 시작 지점.",
+      "purpose": "손기술과 대부분의 발차기가 닿는 실질적인 **주 전투 거리**.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:중거리-ma",
+        "#Combination"
+      ],
+      "youtubeSearchQuery": "karate Combination Entry technique"
+    },
+    {
+      "id": "karate__short-punch-kagi-zuki-uraken-empi-규칙-허용-시-teisho",
+      "martialArt": "karate",
+      "name": "Short Punch, Kagi-zuki, Uraken, Empi(규칙 허용 시), Teisho",
+      "koreanName": null,
+      "aliases": [
+        "Short Punch",
+        "Kagi-zuki",
+        "Uraken",
+        "Empi(규칙 허용 시)",
+        "Teisho"
+      ],
+      "category": "근거리 (Chika-ma)",
+      "positions": [
+        "근거리 (Chika-ma)"
+      ],
+      "description": "짧고 강한 근접 타격.",
+      "purpose": "몸이 거의 맞붙는 거리. 큰 동작보다 **짧고 빠른 기술, 그리고 규칙에 따른 제약**이 중요해진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:근거리-chika-ma",
+        "#Punch",
+        "#KagiZuki",
+        "#Uraken"
+      ],
+      "youtubeSearchQuery": "karate Short Punch, Kagi-zuki, Uraken, Empi(규칙 허용 시), Teisho technique"
+    },
+    {
+      "id": "karate__knee-규칙-허용-시-clinch-근접-컨트롤-규칙-허용-시",
+      "martialArt": "karate",
+      "name": "Knee(규칙 허용 시), Clinch/근접 컨트롤(규칙 허용 시)",
+      "koreanName": null,
+      "aliases": [
+        "Knee(규칙 허용 시)",
+        "Clinch/근접 컨트롤(규칙 허용 시)"
+      ],
+      "category": "근거리 (Chika-ma)",
+      "positions": [
+        "근거리 (Chika-ma)"
+      ],
+      "description": "접촉이 허용되는 룰(예: Kyokushin의 니킥, 일부 실전 룰)에서만 사용.",
+      "purpose": "몸이 거의 맞붙는 거리. 큰 동작보다 **짧고 빠른 기술, 그리고 규칙에 따른 제약**이 중요해진다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:근거리-chika-ma"
+      ],
+      "youtubeSearchQuery": "karate Knee(규칙 허용 시), Clinch/근접 컨트롤(규칙 허용 시) technique"
+    },
+    {
+      "id": "karate__irimi",
+      "martialArt": "karate",
+      "name": "Irimi",
+      "koreanName": null,
+      "aliases": [],
+      "category": "타이사바키 / 회피 (Tai Sabaki)",
+      "positions": [
+        "타이사바키 / 회피 (Tai Sabaki)"
+      ],
+      "description": "오히려 상대의 공격선 안으로 들어가며 각도를 바꾸는 진입형 회피. Deai 타이밍(13장)과 밀접.",
+      "purpose": "회피의 목적은 \"도망\"이 아니라 **각도를 만들어 안전하게 반격 위치를 차지하는 것**이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:타이사바키-회피-tai-sabaki"
+      ],
+      "youtubeSearchQuery": "karate Irimi technique"
+    },
+    {
+      "id": "karate__nagashi",
+      "martialArt": "karate",
+      "name": "Nagashi",
+      "koreanName": null,
+      "aliases": [],
+      "category": "타이사바키 / 회피 (Tai Sabaki)",
+      "positions": [
+        "타이사바키 / 회피 (Tai Sabaki)"
+      ],
+      "description": "힘을 흘려보내는 몸놀림. 막기(Nagashi Uke)와 한 세트로 동작한다.",
+      "purpose": "회피의 목적은 \"도망\"이 아니라 **각도를 만들어 안전하게 반격 위치를 차지하는 것**이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:타이사바키-회피-tai-sabaki",
+        "#NagashiUke"
+      ],
+      "youtubeSearchQuery": "karate Nagashi technique"
+    },
+    {
+      "id": "karate__step-back-side-step-angle-exit-body-shift",
+      "martialArt": "karate",
+      "name": "Step Back / Side Step / Angle Exit / Body Shift",
+      "koreanName": null,
+      "aliases": [
+        "Step Back",
+        "Side Step",
+        "Angle Exit",
+        "Body Shift"
+      ],
+      "category": "타이사바키 / 회피 (Tai Sabaki)",
+      "positions": [
+        "타이사바키 / 회피 (Tai Sabaki)"
+      ],
+      "description": "상황별 미세 회피.",
+      "purpose": "회피의 목적은 \"도망\"이 아니라 **각도를 만들어 안전하게 반격 위치를 차지하는 것**이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:타이사바키-회피-tai-sabaki"
+      ],
+      "youtubeSearchQuery": "karate Step Back / Side Step / Angle Exit / Body Shift technique"
+    },
+    {
+      "id": "karate__kizami-zuki-counter-gyaku-zuki-counter",
+      "martialArt": "karate",
+      "name": "Kizami-zuki Counter, Gyaku-zuki Counter",
+      "koreanName": null,
+      "aliases": [
+        "Kizami-zuki Counter",
+        "Gyaku-zuki Counter"
+      ],
+      "category": "카운터 (Go no Sen 응용)",
+      "positions": [
+        "카운터 (Go no Sen 응용)"
+      ],
+      "description": "상대 손기술에 대한 반격.",
+      "purpose": "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:카운터-go-no-sen-응용",
+        "#GyakuZuki",
+        "#KizamiZuki",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "karate Kizami-zuki Counter, Gyaku-zuki Counter technique"
+    },
+    {
+      "id": "karate__mae-geri-counter-mawashi-geri-counter",
+      "martialArt": "karate",
+      "name": "Mae Geri Counter, Mawashi Geri Counter",
+      "koreanName": null,
+      "aliases": [
+        "Mae Geri Counter",
+        "Mawashi Geri Counter"
+      ],
+      "category": "카운터 (Go no Sen 응용)",
+      "positions": [
+        "카운터 (Go no Sen 응용)"
+      ],
+      "description": "상대 발차기에 대한 반격, 주로 상대가 발을 뻗는 순간의 축다리를 노리거나 들어오는 다리를 짧게 끊는다.",
+      "purpose": "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:카운터-go-no-sen-응용",
+        "#Ma",
+        "#MaeGeri",
+        "#MawashiGeri",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "karate Mae Geri Counter, Mawashi Geri Counter technique"
+    },
+    {
+      "id": "karate__uchi-uke-gyaku-zuki-soto-uke-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Uchi Uke → Gyaku-zuki, Soto Uke → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [
+        "Uchi Uke → Gyaku-zuki",
+        "Soto Uke → Gyaku-zuki"
+      ],
+      "category": "카운터 (Go no Sen 응용)",
+      "positions": [
+        "카운터 (Go no Sen 응용)"
+      ],
+      "description": "가장 기본적인 \"막고 즉시 되찌르기\" 패턴. 기본기 훈련의 핵심.",
+      "purpose": "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:카운터-go-no-sen-응용",
+        "#GyakuZuki",
+        "#Uke",
+        "#SotoUke"
+      ],
+      "youtubeSearchQuery": "karate Uchi Uke → Gyaku-zuki, Soto Uke → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__age-uke-counter",
+      "martialArt": "karate",
+      "name": "Age Uke → Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터 (Go no Sen 응용)",
+      "positions": [
+        "카운터 (Go no Sen 응용)"
+      ],
+      "description": "상단 공격을 받아친 뒤 즉시 중단으로 반격.",
+      "purpose": "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:카운터-go-no-sen-응용",
+        "#Uke",
+        "#AgeUke",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "karate Age Uke → Counter technique"
+    },
+    {
+      "id": "karate__tai-sabaki-counter",
+      "martialArt": "karate",
+      "name": "Tai Sabaki → Counter",
+      "koreanName": null,
+      "aliases": [],
+      "category": "카운터 (Go no Sen 응용)",
+      "positions": [
+        "카운터 (Go no Sen 응용)"
+      ],
+      "description": "힘으로 받지 않고 각도를 바꾼 뒤 반격(Deai에 더 가까운 패턴).",
+      "purpose": "카운터는 상대의 공격을 막거나 흘린 뒤 반격하는 **Go no Sen**의 구체적인 실행 예시다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:카운터-go-no-sen-응용",
+        "#TaiSabaki",
+        "#Counter"
+      ],
+      "youtubeSearchQuery": "karate Tai Sabaki → Counter technique"
+    },
+    {
+      "id": "karate__kizami-zuki-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Kizami-zuki → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#GyakuZuki",
+        "#KizamiZuki"
+      ],
+      "youtubeSearchQuery": "karate Kizami-zuki → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__oi-zuki-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Oi-zuki → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#GyakuZuki",
+        "#OiZuki"
+      ],
+      "youtubeSearchQuery": "karate Oi-zuki → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__gyaku-zuki-mawashi-geri",
+      "martialArt": "karate",
+      "name": "Gyaku-zuki → Mawashi Geri",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#Ma",
+        "#GyakuZuki",
+        "#MawashiGeri"
+      ],
+      "youtubeSearchQuery": "karate Gyaku-zuki → Mawashi Geri technique"
+    },
+    {
+      "id": "karate__kizami-zuki-mawashi-geri",
+      "martialArt": "karate",
+      "name": "Kizami-zuki → Mawashi Geri",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#Ma",
+        "#KizamiZuki",
+        "#MawashiGeri"
+      ],
+      "youtubeSearchQuery": "karate Kizami-zuki → Mawashi Geri technique"
+    },
+    {
+      "id": "karate__mae-geri-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Mae Geri → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#Ma",
+        "#GyakuZuki",
+        "#MaeGeri"
+      ],
+      "youtubeSearchQuery": "karate Mae Geri → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__mawashi-geri-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Mawashi Geri → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#Ma",
+        "#GyakuZuki",
+        "#MawashiGeri"
+      ],
+      "youtubeSearchQuery": "karate Mawashi Geri → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__feint-gyaku-zuki",
+      "martialArt": "karate",
+      "name": "Feint → Gyaku-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#GyakuZuki"
+      ],
+      "youtubeSearchQuery": "karate Feint → Gyaku-zuki technique"
+    },
+    {
+      "id": "karate__step-kizami-zuki",
+      "martialArt": "karate",
+      "name": "Step → Kizami-zuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "조합 (Renzoku-waza)",
+      "positions": [
+        "조합 (Renzoku-waza)"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:조합-renzoku-waza",
+        "#KizamiZuki"
+      ],
+      "youtubeSearchQuery": "karate Step → Kizami-zuki technique"
+    },
+    {
+      "id": "karate__sen",
+      "martialArt": "karate",
+      "name": "Sen",
+      "koreanName": "선/Sen no Sen",
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "先, 선/Sen no Sen; 상대가 공격을 완성하기 전에 선제적으로 먼저 치는 타이밍. 장거리에서 Kizami-zuki로 선제 견제하거나 Tobi-komi로 먼저 뛰어드는 경우가 대표적.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#Sen",
+        "#SenNoSen",
+        "#TaiNoSen",
+        "#GoNoSen"
+      ],
+      "youtubeSearchQuery": "karate Sen technique"
+    },
+    {
+      "id": "karate__tai-no-sen",
+      "martialArt": "karate",
+      "name": "Tai no Sen",
+      "koreanName": null,
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "対の先; 상대의 공격과 동시에 맞부딪히는 타이밍. 서로의 기술이 같은 순간에 나가는 상황.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#Sen",
+        "#TaiNoSen"
+      ],
+      "youtubeSearchQuery": "karate Tai no Sen technique"
+    },
+    {
+      "id": "karate__go-no-sen",
+      "martialArt": "karate",
+      "name": "Go no Sen",
+      "koreanName": null,
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "後の先; 상대의 공격을 받아낸(막은) 뒤에 반격하는 타이밍. 11장의 \"막기 → 반격\" 패턴이 전형적인 예.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#Sen",
+        "#GoNoSen"
+      ],
+      "youtubeSearchQuery": "karate Go no Sen technique"
+    },
+    {
+      "id": "karate__deai",
+      "martialArt": "karate",
+      "name": "Deai",
+      "koreanName": null,
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "出会い; 상대가 움직이기 시작하는 그 순간을 붙잡아 들어가는 마주침의 타이밍. Tai no Sen과 개념적으로 가깝지만, 특히 \"상대가 진입을 준비하는 미세한 움직임\"을 읽고 앞서 들어가는 감각적 타이밍을 가리킨다.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#Deai"
+      ],
+      "youtubeSearchQuery": "karate Deai technique"
+    },
+    {
+      "id": "karate__tobi-komi",
+      "martialArt": "karate",
+      "name": "Tobi-komi",
+      "koreanName": "뛰어들기",
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "飛び込み, 뛰어들기; 뒷발을 강하게 밀어 순간적으로 거리를 좁히며 공격하는 진입 기술(예: Tobikomi Gyaku-zuki). To-ma에서 Ma로 예고 없이 진입해 Sen을 잡는 대표적인 WKF 전술.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#TobiKomi"
+      ],
+      "youtubeSearchQuery": "karate Tobi-komi technique"
+    },
+    {
+      "id": "karate__maai-유지-전술",
+      "martialArt": "karate",
+      "name": "Maai 유지 전술",
+      "koreanName": null,
+      "aliases": [],
+      "category": "쿠미테 --- 판정 규칙과 타이밍",
+      "positions": [
+        "쿠미테 --- 판정 규칙과 타이밍"
+      ],
+      "description": "자신에게 유리한 거리(보통 상대의 사거리 밖, 자신의 사거리 안)를 지키며 상대가 어쩔 수 없이 To-ma를 깨고 들어오게 유도한 뒤 Deai로 받아친다. 페인트(Feint)와 Angle Step을 반복해 상대의 거리 감각을 교란하는 것이 핵심이다.",
+      "purpose": "쿠미테를 이해하려면 \"무엇이 점수/승패로 인정되는가\"와 \"언제 공격하는가(타이밍 이론)\"를 함께 알아야 한다.\n\nWKF(세계가라테연맹) 규칙은 **정확한 단발 기술과 통제된 컨택**을 중심으로 한다.\n\n기술의 정확도·부위·거리(Zanshin 포함)에 따라 점수가 매겨지며, 일반적으로 얼굴을 노린 발차기나 상대를 넘어뜨린 뒤의 유효 기술처럼 고난도 상황일수록 더 높은 점수(흔히 Ippon/Waza-ari로 구분)가 주어진다.\n\n한 기술이 유효하다고 판정되면 심판이 경기를 멈추고 점수를 선언한다 --- 즉 **한 번의 정확한 기술 → 즉시 거리 이탈(Exit) → 재정비**가 기본 리듬이다. 계속 몰아붙이며 접촉을 이어가는 것은 오히려 과잉 접촉으로 감점될 위험이 있다.\n\n다리 로우킥은 채점 대상이 아니어서 실전 사용 빈도가 낮고, 직선 후퇴(Jogai 포함) 같은 소극적 움직임도 감점 대상이 될 수 있다.\n\nKyokushin(및 유사 낫다운 룰)은 **얼굴 주먹 타격 금지, 몸통/다리 전력 타격 허용**을 기본으로 하며, 판정보다 **낫다운(다운)**을 우선 목표로 한다.\n\n주먹은 얼굴 타격이 금지되므로 얼굴 공격은 발차기로만 가능하고, 대신 몸통 주먹, 로우킥·바디킥, 니킥(규칙 허용 시)의 비중이 매우 크다.\n\n경기가 한 기술로 멈추지 않고 **연속 타격**으로 이어지므로, 조합(12장)과 근거리(9장) 운용, 그리고 데미지를 견디기 위한 호흡법(Ibuki, 15장)과 강한 기본 자세(1장)가 WKF보다 훨씬 중요하다.\n\n승패는 다운/기권/판정단의 총점 판단으로 결정되며, 단발 정확도보다 **누적 데미지와 압박**이 핵심 전략이다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:쿠미테-판정-규칙과-타이밍",
+        "#Maai",
+        "#Ma"
+      ],
+      "youtubeSearchQuery": "karate Maai 유지 전술 technique"
+    },
+    {
+      "id": "karate__bunkai-분석-해석-kuzushi-무너뜨림-hiki-te-당기는-손-tai-sabaki-osae",
+      "martialArt": "karate",
+      "name": "Bunkai (분석/해석), Kuzushi (무너뜨림), Hiki-te (당기는 손), Tai Sabaki, Osae",
+      "koreanName": null,
+      "aliases": [
+        "Bunkai (분석/해석)",
+        "Kuzushi (무너뜨림)",
+        "Hiki-te (당기는 손)",
+        "Tai Sabaki",
+        "Osae"
+      ],
+      "category": "전통 가라테의 응용 (자기방어 / Bunkai)",
+      "positions": [
+        "전통 가라테의 응용 (자기방어 / Bunkai)"
+      ],
+      "description": "",
+      "purpose": "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(Bunkai)을 담고 있다는 해석이 널리 통용된다. 이 영역은 유파· 도장마다 해석이 크게 다르므로, 아래 예시는 **비교적 널리 알려진 개념**만 정리한다.\n\n그 외 팔꿈치·어깨를 제압하는 관절기는 도장에 따라 유도/유술 용어(예: Ude Hishigi 계열)를 그대로 빌려 설명하는 경우가 많다 --- 가라테 고유의 표준화된 명칭이 따로 없는 경우가 흔하기 때문이다.\n\n가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된 고유 명칭이 많지 않아 **본카이 교육에서 유도(Judo) 용어를 빌려 설명하는 경우가 흔하다.**\n\n위험도가 높거나 명칭이 불확실한 던지기(예: 다리를 감아 꺾는 형태의 일부 변형)는 부상 위험 및 유파별 논쟁이 있어 이 문서에서 다루지 않는다. 반드시 지도자의 감독 하에서만 배운다.\n\nOsae(누르기)는 던지기·관절기 이후 상대를 바닥에서 제압하는 개념으로, 가라테 자체보다는 유술/유도의 영역과 겹치는 부분이다. 전통 가라테 도장의 호신술 커리큘럼에서 \"던지고 → 제압하고 → 마무리\"의 마지막 단계로 짧게 다루는 경우가 많다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:전통-가라테의-응용-자기방어-bunkai",
+        "#Bunkai",
+        "#TaiSabaki",
+        "#Osae",
+        "#Kuzushi",
+        "#HikiTe"
+      ],
+      "youtubeSearchQuery": "karate Bunkai (분석/해석), Kuzushi (무너뜨림), Hiki-te (당기는 손), Tai Sabaki, Osae technique"
+    },
+    {
+      "id": "karate__kansetsu-geri",
+      "martialArt": "karate",
+      "name": "Kansetsu Geri",
+      "koreanName": null,
+      "aliases": [],
+      "category": "전통 가라테의 응용 (자기방어 / Bunkai)",
+      "positions": [
+        "전통 가라테의 응용 (자기방어 / Bunkai)"
+      ],
+      "description": "무릎 관절 측면을 노리는 발차기. 자기방어 맥락에서 상대의 전진을 무력화할 때 사용되는 대표적인 관절 공격 기술.",
+      "purpose": "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(Bunkai)을 담고 있다는 해석이 널리 통용된다. 이 영역은 유파· 도장마다 해석이 크게 다르므로, 아래 예시는 **비교적 널리 알려진 개념**만 정리한다.\n\n그 외 팔꿈치·어깨를 제압하는 관절기는 도장에 따라 유도/유술 용어(예: Ude Hishigi 계열)를 그대로 빌려 설명하는 경우가 많다 --- 가라테 고유의 표준화된 명칭이 따로 없는 경우가 흔하기 때문이다.\n\n가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된 고유 명칭이 많지 않아 **본카이 교육에서 유도(Judo) 용어를 빌려 설명하는 경우가 흔하다.**\n\n위험도가 높거나 명칭이 불확실한 던지기(예: 다리를 감아 꺾는 형태의 일부 변형)는 부상 위험 및 유파별 논쟁이 있어 이 문서에서 다루지 않는다. 반드시 지도자의 감독 하에서만 배운다.\n\nOsae(누르기)는 던지기·관절기 이후 상대를 바닥에서 제압하는 개념으로, 가라테 자체보다는 유술/유도의 영역과 겹치는 부분이다. 전통 가라테 도장의 호신술 커리큘럼에서 \"던지고 → 제압하고 → 마무리\"의 마지막 단계로 짧게 다루는 경우가 많다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:karate",
+        "category:전통-가라테의-응용-자기방어-bunkai"
+      ],
+      "youtubeSearchQuery": "karate Kansetsu Geri technique"
+    },
+    {
+      "id": "karate__kote-gaeshi",
+      "martialArt": "karate",
+      "name": "Kote Gaeshi",
+      "koreanName": null,
+      "aliases": [],
+      "category": "전통 가라테의 응용 (자기방어 / Bunkai)",
+      "positions": [
+        "전통 가라테의 응용 (자기방어 / Bunkai)"
+      ],
+      "description": "손목을 꺾어 제압/투척하는 기술. Wado-Ryu는 창시자 Otsuka Hironori가 Shindo Yoshin-ryu 유술을 수련한 배경이 있어, Idori(앉아서 하는 호신 가타)·Tanto-dori(단도 방어) 계열에 이런 관절기·유술 요소가 비교적 뚜렷하게 남아 있다.",
+      "purpose": "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(Bunkai)을 담고 있다는 해석이 널리 통용된다. 이 영역은 유파· 도장마다 해석이 크게 다르므로, 아래 예시는 **비교적 널리 알려진 개념**만 정리한다.\n\n그 외 팔꿈치·어깨를 제압하는 관절기는 도장에 따라 유도/유술 용어(예: Ude Hishigi 계열)를 그대로 빌려 설명하는 경우가 많다 --- 가라테 고유의 표준화된 명칭이 따로 없는 경우가 흔하기 때문이다.\n\n가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된 고유 명칭이 많지 않아 **본카이 교육에서 유도(Judo) 용어를 빌려 설명하는 경우가 흔하다.**\n\n위험도가 높거나 명칭이 불확실한 던지기(예: 다리를 감아 꺾는 형태의 일부 변형)는 부상 위험 및 유파별 논쟁이 있어 이 문서에서 다루지 않는다. 반드시 지도자의 감독 하에서만 배운다.\n\nOsae(누르기)는 던지기·관절기 이후 상대를 바닥에서 제압하는 개념으로, 가라테 자체보다는 유술/유도의 영역과 겹치는 부분이다. 전통 가라테 도장의 호신술 커리큘럼에서 \"던지고 → 제압하고 → 마무리\"의 마지막 단계로 짧게 다루는 경우가 많다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:전통-가라테의-응용-자기방어-bunkai",
+        "#KoteGaeshi"
+      ],
+      "youtubeSearchQuery": "karate Kote Gaeshi technique"
+    },
+    {
+      "id": "karate__ashi-barai",
+      "martialArt": "karate",
+      "name": "Ashi-barai",
+      "koreanName": "다리 걸어 넘기기",
+      "aliases": [],
+      "category": "전통 가라테의 응용 (자기방어 / Bunkai)",
+      "positions": [
+        "전통 가라테의 응용 (자기방어 / Bunkai)"
+      ],
+      "description": "다리 걸어 넘기기; 상대의 축다리를 걸어 무너뜨리는 가장 흔한 형태. 여러 가타의 막기 동작 뒤에 이어지는 해석으로 자주 등장.",
+      "purpose": "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(Bunkai)을 담고 있다는 해석이 널리 통용된다. 이 영역은 유파· 도장마다 해석이 크게 다르므로, 아래 예시는 **비교적 널리 알려진 개념**만 정리한다.\n\n그 외 팔꿈치·어깨를 제압하는 관절기는 도장에 따라 유도/유술 용어(예: Ude Hishigi 계열)를 그대로 빌려 설명하는 경우가 많다 --- 가라테 고유의 표준화된 명칭이 따로 없는 경우가 흔하기 때문이다.\n\n가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된 고유 명칭이 많지 않아 **본카이 교육에서 유도(Judo) 용어를 빌려 설명하는 경우가 흔하다.**\n\n위험도가 높거나 명칭이 불확실한 던지기(예: 다리를 감아 꺾는 형태의 일부 변형)는 부상 위험 및 유파별 논쟁이 있어 이 문서에서 다루지 않는다. 반드시 지도자의 감독 하에서만 배운다.\n\nOsae(누르기)는 던지기·관절기 이후 상대를 바닥에서 제압하는 개념으로, 가라테 자체보다는 유술/유도의 영역과 겹치는 부분이다. 전통 가라테 도장의 호신술 커리큘럼에서 \"던지고 → 제압하고 → 마무리\"의 마지막 단계로 짧게 다루는 경우가 많다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:전통-가라테의-응용-자기방어-bunkai",
+        "#AshiBarai"
+      ],
+      "youtubeSearchQuery": "karate Ashi-barai technique"
+    },
+    {
+      "id": "karate__o-soto-gari-de-ashi-barai-등",
+      "martialArt": "karate",
+      "name": "O Soto Gari, De Ashi Barai 등",
+      "koreanName": null,
+      "aliases": [
+        "O Soto Gari",
+        "De Ashi Barai 등"
+      ],
+      "category": "전통 가라테의 응용 (자기방어 / Bunkai)",
+      "positions": [
+        "전통 가라테의 응용 (자기방어 / Bunkai)"
+      ],
+      "description": "일부 도장(특히 Wado-Ryu, JKA 계열 호신술)에서 본카이·호신술 교육 시 유도 용어를 그대로 사용해 설명한다. 이는 \"가라테만의 고유 기술명\"이 아니라 **타 무술과 공유하는 응용 개념**으로 이해하는 것이 정확하다.",
+      "purpose": "가타의 동작은 단순 타격의 반복이 아니라, **막기 → 당기기(Hiki-te) → 무너뜨리기(Kuzushi) → 관절기/던지기/제압**으로 이어지는 실전 응용(Bunkai)을 담고 있다는 해석이 널리 통용된다. 이 영역은 유파· 도장마다 해석이 크게 다르므로, 아래 예시는 **비교적 널리 알려진 개념**만 정리한다.\n\n그 외 팔꿈치·어깨를 제압하는 관절기는 도장에 따라 유도/유술 용어(예: Ude Hishigi 계열)를 그대로 빌려 설명하는 경우가 많다 --- 가라테 고유의 표준화된 명칭이 따로 없는 경우가 흔하기 때문이다.\n\n가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된 고유 명칭이 많지 않아 **본카이 교육에서 유도(Judo) 용어를 빌려 설명하는 경우가 흔하다.**\n\n위험도가 높거나 명칭이 불확실한 던지기(예: 다리를 감아 꺾는 형태의 일부 변형)는 부상 위험 및 유파별 논쟁이 있어 이 문서에서 다루지 않는다. 반드시 지도자의 감독 하에서만 배운다.\n\nOsae(누르기)는 던지기·관절기 이후 상대를 바닥에서 제압하는 개념으로, 가라테 자체보다는 유술/유도의 영역과 겹치는 부분이다. 전통 가라테 도장의 호신술 커리큘럼에서 \"던지고 → 제압하고 → 마무리\"의 마지막 단계로 짧게 다루는 경우가 많다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:전통-가라테의-응용-자기방어-bunkai",
+        "#AshiBarai"
+      ],
+      "youtubeSearchQuery": "karate O Soto Gari, De Ashi Barai 등 technique"
+    },
+    {
+      "id": "karate__ibuki",
+      "martialArt": "karate",
+      "name": "Ibuki",
+      "koreanName": null,
+      "aliases": [],
+      "category": "호흡법 (Kokyu-ho): Ibuki와 Nogare",
+      "positions": [
+        "호흡법 (Kokyu-ho): Ibuki와 Nogare"
+      ],
+      "description": "息吹; 배와 몸통을 강하게 조이며 소리 나게 내뱉는 긴장성 호흡. Sanchin, Tensho 같은 가타에서 자세를 고정한 채 반복해 익히며, 타격을 받아도 무너지지 않는 몸의 구조(Kime)를 만드는 목적이 크다. Mas Oyama가 Goju-Ryu의 영향을 받아 창시한 Kyokushin에서도 Ibuki 훈련이 중요한 위치를 차지한다.",
+      "purpose": "가라테, 특히 Naha-te 계열(Goju-Ryu)에서는 호흡을 단순한 산소 공급이 아니라 **타격을 견디고 힘을 응축하는 훈련**으로 다룬다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:호흡법-kokyu-ho-ibuki와-nogare",
+        "#Ibuki"
+      ],
+      "youtubeSearchQuery": "karate Ibuki technique"
+    },
+    {
+      "id": "karate__nogare",
+      "martialArt": "karate",
+      "name": "Nogare",
+      "koreanName": null,
+      "aliases": [],
+      "category": "호흡법 (Kokyu-ho): Ibuki와 Nogare",
+      "positions": [
+        "호흡법 (Kokyu-ho): Ibuki와 Nogare"
+      ],
+      "description": "Ibuki와 대조되는, 힘을 빼고 부드럽게 흘리는 호흡/이완. 타격을 받아내기보다 흘려보내는 움직임(Nagashi Uke, Tai Sabaki)과 함께 쓰인다.",
+      "purpose": "가라테, 특히 Naha-te 계열(Goju-Ryu)에서는 호흡을 단순한 산소 공급이 아니라 **타격을 견디고 힘을 응축하는 훈련**으로 다룬다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:호흡법-kokyu-ho-ibuki와-nogare",
+        "#Nogare"
+      ],
+      "youtubeSearchQuery": "karate Nogare technique"
+    },
+    {
+      "id": "karate__특징",
+      "martialArt": "karate",
+      "name": "특징",
+      "koreanName": null,
+      "aliases": [],
+      "category": "유파별 대표 기술과 가타",
+      "positions": [
+        "유파별 대표 기술과 가타"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [
+        "긴 스탠스",
+        "직선적 이동",
+        "강한 기본기(Kihon) 중심.",
+        "근거리 손기술",
+        "원형(회전) 움직임",
+        "강한 호흡(Ibuki)과 신체 구조.",
+        "매우 많은 수의 가타(Shuri-te와 Naha-te 계열 모두 흡수)",
+        "빠른 전환",
+        "손기술·발기술의 폭넓은 조합.",
+        "Tai Sabaki 중심의 회피",
+        "각도 변화",
+        "창시자의 유술 (Shindo Yoshin-ryu) 배경에서 온 유술적 요소(Idori",
+        "Tanto-dori).",
+        "강한 로우킥·바디킥",
+        "근거리 압박",
+        "니킥(규칙 허용 시)",
+        "강한 기본 자세와 Ibuki 호흡. Mas Oyama가 Shotokan과 Goju-Ryu를 함께 수련한 배경이 낫다운 풀컨택트 스타일에 반영되어 있다."
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:유파별-대표-기술과-가타"
+      ],
+      "youtubeSearchQuery": "karate 특징 technique"
+    },
+    {
+      "id": "karate__대표-기술",
+      "martialArt": "karate",
+      "name": "대표 기술",
+      "koreanName": null,
+      "aliases": [],
+      "category": "유파별 대표 기술과 가타",
+      "positions": [
+        "유파별 대표 기술과 가타"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [
+        "Oi-zuki",
+        "Gyaku-zuki",
+        "Mae Geri",
+        "Mawashi Geri",
+        "Yoko Geri",
+        "Ushiro Geri.",
+        "Mawashi Uke 계열",
+        "근거리 접전 기술."
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [
+        "taekwondo"
+      ],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:유파별-대표-기술과-가타"
+      ],
+      "youtubeSearchQuery": "karate 대표 기술 technique"
+    },
+    {
+      "id": "karate__대표-가타",
+      "martialArt": "karate",
+      "name": "대표 가타",
+      "koreanName": null,
+      "aliases": [],
+      "category": "유파별 대표 기술과 가타",
+      "positions": [
+        "유파별 대표 기술과 가타"
+      ],
+      "description": "",
+      "purpose": null,
+      "principles": [],
+      "variations": [
+        "**Heian(平安) Shodan~Godan**(초급 기초)",
+        "**Tekki(鉄騎) Shodan~Sandan**(Kiba-dachi 근접 전투)",
+        "**Bassai Dai/Sho**(힘과 돌파)",
+        "Kanku Dai",
+        "Jion",
+        "Enpi",
+        "Hangetsu",
+        "Jitte",
+        "Gankaku 등.",
+        "**Sanchin(三戦)**(구조·호흡의 핵심 가타)",
+        "**Saifa(最破)**(근거리 타격)",
+        "Seiyunchin",
+        "Shisochin",
+        "Sanseiru",
+        "Seipai",
+        "Kururunfa",
+        "Suparinpei",
+        "Tensho.",
+        "Pinan 계열",
+        "Naifanchi",
+        "Bassai",
+        "Rohai",
+        "Matsumura Bassai 등 슈리테 계열과 Sanchin",
+        "Seipai 등 나하테 계열을 함께 보유.",
+        "Pinan 계열(Shotokan의 Heian과 뿌리가 같음)",
+        "Kushanku",
+        "Naihanchi",
+        "Seishan",
+        "Chinto.",
+        "Taikyoku 계열(초급)",
+        "자체 Pinan 계열",
+        "**Sanchin",
+        "Tensho**(Goju 계열 유입)",
+        "Yantsu",
+        "Tsuki no Kata",
+        "Saifa",
+        "Seienchin",
+        "Garyu",
+        "Seipai."
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": null,
+      "tags": [
+        "martialArt:karate",
+        "category:유파별-대표-기술과-가타"
+      ],
+      "youtubeSearchQuery": "karate 대표 가타 technique"
+    }
+  ]
+}

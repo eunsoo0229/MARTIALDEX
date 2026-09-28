@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>MARTIALDEX 개발 보고서 — AI 질문 기능 (Gemini)</title>
+<style>
+  @page { margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    color: #1c1b19; line-height: 1.7; font-size: 13.5px;
+    max-width: 780px; margin: 0 auto; padding: 0;
+  }
+  .doc-header { border-bottom: 3px solid #9c2b2b; padding-bottom: 16px; margin-bottom: 28px; }
+  .doc-header .stage-label {
+    display: inline-block; background: #9c2b2b; color: #fff; font-size: 11.5px; font-weight: 700;
+    padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; letter-spacing: 0.03em;
+  }
+  .doc-header h1 { font-size: 25px; margin: 0 0 6px; font-family: Georgia, 'Iowan Old Style', serif; }
+  .doc-header .meta { color: #6b6459; font-size: 12px; }
+  h2 { font-size: 16.5px; margin-top: 30px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ddd6ca; color: #7c2020; }
+  h3 { font-size: 14px; margin-top: 18px; margin-bottom: 6px; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12.5px; }
+  th, td { border: 1px solid #ddd6ca; padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f4f0; font-weight: 700; }
+  code { background: #edeae4; padding: 1px 6px; border-radius: 4px; font-size: 12px; font-family: 'SF Mono', Menlo, monospace; }
+  pre {
+    background: #f6f4f0; border: 1px solid #ddd6ca; border-radius: 6px; padding: 10px 12px;
+    font-size: 11.5px; overflow-x: auto; font-family: 'SF Mono', Menlo, monospace;
+  }
+  .callout {
+    background: #fbf3e6; border-left: 4px solid #a3792f; padding: 10px 14px; margin: 14px 0;
+    font-size: 12.5px; border-radius: 0 6px 6px 0;
+  }
+  .callout.fix { background: #fdeceb; border-left-color: #9c2b2b; }
+  .badge { display: inline-block; background: #2f7a4f; color: #fff; font-size: 10.5px; font-weight: 700;
+    padding: 2px 8px; border-radius: 999px; margin-left: 6px; }
+  .doc-footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #ddd6ca; color: #93897a; font-size: 11px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="stage-label">개발 단계 보고서 · 7단계</span>
+  <h1>MARTIALDEX — AI 질문 기능 (Google Gemini API) 구현</h1>
+  <div class="meta">작업 일자: 2026-08-14 · 작성: Claude (개발 어시스턴트)</div>
+</div>
+
+<h2>1. 목표 및 핵심 원칙</h2>
+<ul>
+  <li>Claude/OpenAI가 아닌 <strong>Google Gemini API</strong>를 사용, 무료 등급 모델 우선.</li>
+  <li>API Key는 프론트엔드 코드에 절대 작성하지 않고 환경변수(<code>.env</code>)로 관리.</li>
+  <li>Electron 구조상 API Key가 렌더러 번들에 노출되지 않도록 메인 프로세스/IPC로 격리.</li>
+  <li>기술 상세 페이지, 홈 화면 모두에서 AI 질문 가능. 현재 기술의 실제 데이터를 context로 전달하고,
+    데이터에 없는 내용을 공식 데이터인 것처럼 지어내지 않도록 지침을 건다.</li>
+  <li>위험한 기술(관절기·조르기·타격 등)은 전문 지도자 감독이 필요하다는 안내를 포함.</li>
+</ul>
+
+<h2>2. 아키텍처 — Provider / UI 분리</h2>
+<pre>UI (AiAskModal.tsx)
+   ↓
+useAiChat (대화 상태, 캐싱, 히스토리 관리)
+   ↓
+AiProvider 인터페이스 (provider.ts) — window.martialdex.askAi(...) 호출만 함
+   ↓  (IPC: ai:ask)
+electron/main.cjs → electron/gemini.cjs  ← API 키는 여기서만 존재
+   ↓
+Gemini REST API</pre>
+<p>
+  렌더러는 절대 Gemini API를 직접 호출하지 않는다. <code>electron/gemini.cjs</code>가 메인
+  프로세스에서 <code>process.env.GEMINI_API_KEY</code>를 읽어 REST 요청을 보내고, 결과 텍스트만
+  IPC로 렌더러에 돌려준다. 다른 AI 벤더로 교체할 때는 <code>provider.ts</code>와
+  <code>gemini.cjs</code>만 바꾸면 된다.
+</p>
+
+<h2>3. 새로 만든 / 수정한 파일</h2>
+<table>
+  <tr><th>파일</th><th>역할</th></tr>
+  <tr><td><code>electron/gemini.cjs</code></td><td>Gemini REST API 호출 (메인 프로세스 전용)</td></tr>
+  <tr><td><code>src/lib/ai/types.ts</code></td><td>provider 중립적 요청/응답 타입</td></tr>
+  <tr><td><code>src/lib/ai/context.ts</code></td><td>기술/홈 데이터를 실제 데이터 기반 컨텍스트 텍스트로 구성</td></tr>
+  <tr><td><code>src/lib/ai/systemInstruction.ts</code></td><td>AI 역할·답변 형식·안전 안내 지침</td></tr>
+  <tr><td><code>src/lib/ai/provider.ts</code></td><td>IPC 호출을 감싸는 AiProvider 인터페이스</td></tr>
+  <tr><td><code>src/lib/ai/chatStore.ts</code>, <code>useAiChat.ts</code></td><td>세션 중 대화 기록(메모리), 캐싱, 히스토리 길이 관리</td></tr>
+  <tr><td><code>src/components/AiAskModal.tsx</code></td><td>질문 입력/전송/로딩/오류/대화 UI</td></tr>
+  <tr><td><code>electron/main.cjs</code>, <code>preload.cjs</code></td><td>IPC 핸들러 등록, dotenv 로드, contextBridge 노출</td></tr>
+  <tr><td><code>.env.example</code></td><td>필요한 환경변수 템플릿</td></tr>
+</table>
+
+<h2>4. 사용한 Gemini 모델</h2>
+<p>
+  최초 구현 시에는 <code>gemini-2.5-flash</code>를 기본값으로 사용했으나, 실제 API 키로 테스트한 결과
+  해당 계정에서 2.5 세대 모델(<code>gemini-2.5-flash</code>, <code>gemini-2.5-flash-lite</code>)이
+  "신규 사용자에게 더 이상 제공되지 않음" 오류를 반환했다. Gemini API의 <code>models</code> 목록을 직접
+  조회해 최신 세대인 <strong><code>gemini-3.6-flash</code></strong>가 정상 동작함을 확인하고 기본값을
+  교체했다. <code>GEMINI_MODEL</code> 환경변수로 언제든 다른 모델로 교체 가능하다.
+</p>
+
+<h2>5. 구현한 AI 기능</h2>
+<ul>
+  <li>기술 상세 페이지: 무술/이름/한국어명/카테고리/포지션/설명/목적/원리/변형/방어/카운터/연결기술/
+    관련기술·무술/태그를 컨텍스트로 전달.</li>
+  <li>홈/헤더: 전체 무술 목록 기반 전역 컨텍스트.</li>
+  <li>질문 입력, 전송 버튼, 사용자/AI 메시지 말풍선, 로딩 도트, 오류 배너, 빈 입력 경고, 대화 지우기.</li>
+  <li>로딩 중 중복 요청 방지, 동일 질문 재전송 시 캐시된 답변 재사용(API 재호출 없음).</li>
+  <li>최근 6턴만 API로 재전송해 무료 등급 사용량 관리.</li>
+  <li>오류 코드별 안내: 키 없음 / 유효하지 않음 / rate limit(429) / 네트워크 / 타임아웃 / 서버 혼잡(503).</li>
+</ul>
+
+<h2>6. 테스트 중 발견하고 수정한 문제</h2>
+<div class="callout fix">
+  <strong>① API Key 배치 실수.</strong> 사용자가 <code>.env.example</code>(커밋되는 템플릿 파일)에
+  실제 키를 입력함 → <code>.env</code>(gitignore됨, 앱이 실제로 읽는 파일)로 옮기고
+  <code>.env.example</code>은 빈 템플릿으로 복원.
+</div>
+<div class="callout fix">
+  <strong>② 마크다운 노출.</strong> 실제 응답에서 <code>**굵게**</code> 문법이 그대로 텍스트로
+  노출됨 → system instruction에 "마크다운 금지, 일반 텍스트만" 규칙 추가.
+</div>
+<div class="callout fix">
+  <strong>③ 메타 발언 유출.</strong> 가끔 "지침을 지켰는가? 네" 같은 자기 점검 문장이 답변에 섞여
+  나옴 → "답변 본문만 출력, 메타 설명 금지" 규칙 추가 + <code>maxOutputTokens</code> 1024→2048.
+</div>
+<div class="callout fix">
+  <strong>④ 서버 과부하 오류 노출.</strong> 503 오류 시 영어 원문이 그대로 노출됨 → "Gemini 서버가
+  일시적으로 혼잡합니다"라는 한국어 안내로 매핑.
+</div>
+
+<h2>7. 테스트 결과</h2>
+<p>
+  <code>tsc --noEmit</code>, <code>npm run build</code> 통과. Playwright(Electron) 실기 테스트로
+  홈/기술 페이지 모달 오픈, 빈 질문 경고, 기술 컨텍스트 반영, 로딩 표시, 실제 Gemini 응답(3회 연속
+  안정적), 동일 질문 캐시 재사용(첫 요청 10.9초 vs 재요청 0.3초), 오류 후 재시도, 대화 지우기,
+  기존 기능(영상 임베드, 즐겨찾기, 검색) 회귀 확인 <span class="badge">모두 통과</span>. 빌드 산출물에
+  API 키/엔드포인트 문자열이 없음을 <code>grep</code>으로 재확인.
+</p>
+
+<h2>8. GEMINI_API_KEY 설정 방법</h2>
+<ol>
+  <li>https://aistudio.google.com/apikey 에서 무료 키 발급 (결제 등록 불필요)</li>
+  <li>프로젝트 루트에 <code>.env</code> 파일 생성 (<code>.env.example</code> 참고)</li>
+  <li><code>GEMINI_API_KEY=발급받은키</code> 입력 (필요 시 <code>GEMINI_MODEL=gemini-3.6-flash</code> 등으로 교체)</li>
+  <li><code>npm run dev</code> 또는 <code>npm run electron</code>으로 앱 재시작</li>
+</ol>
+
+<div class="doc-footer">MARTIALDEX 개발 문서 · 자동 생성 보고서 (2 / 5)</div>
+</body>
+</html>

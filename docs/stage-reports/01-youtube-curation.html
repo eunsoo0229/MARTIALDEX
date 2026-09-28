@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>MARTIALDEX 개발 보고서 — YouTube 영상 데이터 큐레이션</title>
+<style>
+  @page { margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    color: #1c1b19;
+    line-height: 1.7;
+    font-size: 13.5px;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .doc-header {
+    border-bottom: 3px solid #9c2b2b;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+  }
+  .doc-header .stage-label {
+    display: inline-block;
+    background: #9c2b2b;
+    color: #fff;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+  .doc-header h1 {
+    font-size: 25px;
+    margin: 0 0 6px;
+    font-family: Georgia, 'Iowan Old Style', serif;
+  }
+  .doc-header .meta {
+    color: #6b6459;
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 16.5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #ddd6ca;
+    color: #7c2020;
+  }
+  h3 { font-size: 14px; margin-top: 18px; margin-bottom: 6px; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12.5px; }
+  th, td { border: 1px solid #ddd6ca; padding: 6px 10px; text-align: left; }
+  th { background: #f6f4f0; font-weight: 700; }
+  code {
+    background: #edeae4;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: 'SF Mono', Menlo, monospace;
+  }
+  .callout {
+    background: #fbf3e6;
+    border-left: 4px solid #a3792f;
+    padding: 10px 14px;
+    margin: 14px 0;
+    font-size: 12.5px;
+    border-radius: 0 6px 6px 0;
+  }
+  .stat-grid {
+    display: flex;
+    gap: 14px;
+    margin: 14px 0;
+    flex-wrap: wrap;
+  }
+  .stat-box {
+    flex: 1;
+    min-width: 110px;
+    border: 1px solid #ddd6ca;
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: center;
+  }
+  .stat-box .num { font-size: 22px; font-weight: 800; color: #9c2b2b; font-family: Georgia, serif; }
+  .stat-box .label { font-size: 11px; color: #6b6459; margin-top: 2px; }
+  .doc-footer {
+    margin-top: 40px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd6ca;
+    color: #93897a;
+    font-size: 11px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="stage-label">개발 단계 보고서 · YouTube 영상 큐레이션</span>
+  <h1>MARTIALDEX — 기술별 YouTube 영상 데이터 큐레이션 작업</h1>
+  <div class="meta">작업 일자: 2026-08-14 · 작성: Claude (개발 어시스턴트)</div>
+</div>
+
+<h2>1. 작업 개요</h2>
+<p>
+  MARTIALDEX의 각 기술 상세 페이지에 표시되는 "관련 영상"은 YouTube Data API를 전혀 사용하지 않고,
+  사람이 직접 웹 검색으로 확인한 실존 영상만 <code>data/curated/videos.json</code>에 수동으로 등록하는
+  방식으로 운영된다. 이번 세션은 이전에 토큰 소진으로 중단되었던 이 큐레이션 작업을 이어서 진행한 것이다.
+</p>
+
+<h3>준수한 원칙</h3>
+<ul>
+  <li>YouTube Data API, API Key를 전혀 사용하지 않는다.</li>
+  <li>웹 검색으로 실제 존재하는 영상만 등록하고, 영상 제목/videoId/채널명을 정확히 기록한다.</li>
+  <li>기술당 최대 2개, 경기 하이라이트·쇼츠보다 기술 설명 튜토리얼을 우선한다.</li>
+  <li>이미 등록된 영상은 재검색하지 않고, 적절한 영상이 없으면 억지로 추가하지 않는다.</li>
+</ul>
+
+<h2>2. 작업 방식</h2>
+<p>
+  5개의 서브 에이전트를 병렬로 실행해 BJJ 기술 40개에 대해 WebSearch/WebFetch로 실제 튜토리얼 영상을
+  검색·검증하도록 지시했다. 이후 <strong>YouTube oEmbed API로 70개 videoId 전수를 직접 재검증</strong>하여
+  (1) 영상이 실제로 존재하는지, (2) 제목/채널명이 에이전트가 보고한 내용과 일치하는지 대조했다. 검증을
+  통과한 데이터만 <code>data/curated/videos.json</code>에 병합했다.
+</p>
+
+<h2>3. 결과 요약</h2>
+<div class="stat-grid">
+  <div class="stat-box"><div class="num">37</div><div class="label">이번에 새로 처리한 기술 수</div></div>
+  <div class="stat-box"><div class="num">70</div><div class="label">새로 추가한 영상 수</div></div>
+  <div class="stat-box"><div class="num">1,044</div><div class="label">아직 처리하지 않은 기술 수</div></div>
+  <div class="stat-box"><div class="num">16.7%</div><div class="label">전체 진행률 (209 / 1,253)</div></div>
+</div>
+
+<p>
+  40개 기술을 시도해 37개를 처리했고, <code>벨트-그립</code>, <code>팬츠-그립</code>, <code>어깨-프레임</code>
+  3개는 적절한 영상을 찾지 못해 억지로 추가하지 않고 건너뛰었다.
+</p>
+
+<h3>무술별 진행 현황 (처리 완료 / 전체)</h3>
+<table>
+  <tr><th>무술</th><th>진행 현황</th></tr>
+  <tr><td>BJJ (주짓수)</td><td>63 / 319</td></tr>
+  <tr><td>가라테</td><td>20 / 88</td></tr>
+  <tr><td>레슬링</td><td>24 / 189</td></tr>
+  <tr><td>무에타이</td><td>23 / 94</td></tr>
+  <tr><td>복싱</td><td>17 / 135</td></tr>
+  <tr><td>삼보</td><td>7 / 91</td></tr>
+  <tr><td>유도</td><td>20 / 133</td></tr>
+  <tr><td>킥복싱</td><td>16 / 121</td></tr>
+  <tr><td>태권도</td><td>19 / 83</td></tr>
+</table>
+
+<h2>4. 다음 이어서 작업할 범위</h2>
+<p>
+  BJJ 기술 나머지(256개) 중 <code>bjj__hip-control</code>부터 순서대로 계속 진행한다. 이번에 건너뛴
+  3개 기술은 이후 다른 검색어로 재시도할 수 있으며, 계속 찾지 못하면 계속 생략한다.
+</p>
+
+<div class="callout">
+  <strong>비고.</strong> 진행 상황은 <code>data/curated/videos.json</code>에 직접 저장되므로 파일에
+  영구 보존된다. 이후 세션에서 동일한 방식(웹 검색 → oEmbed 재검증 → 병합)으로 계속 이어갈 수 있다.
+</div>
+
+<div class="doc-footer">MARTIALDEX 개발 문서 · 자동 생성 보고서 (1 / 5)</div>
+</body>
+</html>

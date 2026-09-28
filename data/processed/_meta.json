@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-09-02T15:33:47.878Z",
+  "sourceFileCount": 9,
+  "totalTechniques": 1254,
+  "perFile": [
+    {
+      "file": "bjj_포지션별_기술_백과사전.md",
+      "martialArtId": "bjj",
+      "rawCandidates": 509,
+      "dedupedTechniques": 320,
+      "arrowChainsFound": 63,
+      "tagVocabularySize": 36,
+      "difficultyAssigned": 41,
+      "purposeAssigned": 269,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 67
+    },
+    {
+      "file": "가라테_포지션별_기술_백과사전.md",
+      "martialArtId": "karate",
+      "rawCandidates": 99,
+      "dedupedTechniques": 88,
+      "arrowChainsFound": 36,
+      "tagVocabularySize": 74,
+      "difficultyAssigned": 11,
+      "purposeAssigned": 64,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 5
+    },
+    {
+      "file": "레슬링_포지션별_기술_백과사전.md",
+      "martialArtId": "wrestling",
+      "rawCandidates": 222,
+      "dedupedTechniques": 189,
+      "arrowChainsFound": 18,
+      "tagVocabularySize": 40,
+      "difficultyAssigned": 26,
+      "purposeAssigned": 189,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 4
+    },
+    {
+      "file": "무에타이_포지션별_기술_백과사전.md",
+      "martialArtId": "muay-thai",
+      "rawCandidates": 98,
+      "dedupedTechniques": 94,
+      "arrowChainsFound": 51,
+      "tagVocabularySize": 53,
+      "difficultyAssigned": 21,
+      "purposeAssigned": 94,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 14
+    },
+    {
+      "file": "복싱_포지션별_기술_백과사전.md",
+      "martialArtId": "boxing",
+      "rawCandidates": 164,
+      "dedupedTechniques": 135,
+      "arrowChainsFound": 40,
+      "tagVocabularySize": 47,
+      "difficultyAssigned": 12,
+      "purposeAssigned": 12,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 18
+    },
+    {
+      "file": "삼보_포지션별_기술_백과사전.md",
+      "martialArtId": "sambo",
+      "rawCandidates": 91,
+      "dedupedTechniques": 91,
+      "arrowChainsFound": 23,
+      "tagVocabularySize": 39,
+      "difficultyAssigned": 9,
+      "purposeAssigned": 87,
+      "principlesAssigned": 2,
+      "relatedTechniquesAssigned": 1
+    },
+    {
+      "file": "유도_포지션별_기술_백과사전.md",
+      "martialArtId": "judo",
+      "rawCandidates": 141,
+      "dedupedTechniques": 133,
+      "arrowChainsFound": 20,
+      "tagVocabularySize": 40,
+      "difficultyAssigned": 15,
+      "purposeAssigned": 133,
+      "principlesAssigned": 72,
+      "relatedTechniquesAssigned": 81
+    },
+    {
+      "file": "킥복싱_포지션별_기술_백과사전.md",
+      "martialArtId": "kickboxing",
+      "rawCandidates": 133,
+      "dedupedTechniques": 121,
+      "arrowChainsFound": 45,
+      "tagVocabularySize": 52,
+      "difficultyAssigned": 37,
+      "purposeAssigned": 106,
+      "principlesAssigned": 62,
+      "relatedTechniquesAssigned": 62
+    },
+    {
+      "file": "태권도_포지션별_기술_백과사전.md",
+      "martialArtId": "taekwondo",
+      "rawCandidates": 87,
+      "dedupedTechniques": 83,
+      "arrowChainsFound": 58,
+      "tagVocabularySize": 76,
+      "difficultyAssigned": 13,
+      "purposeAssigned": 83,
+      "principlesAssigned": 0,
+      "relatedTechniquesAssigned": 7
+    }
+  ],
+  "warnings": [],
+  "validationErrorCount": 0,
+  "validationErrors": []
+}

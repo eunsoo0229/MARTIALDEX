@@ -1,0 +1,1105 @@
+{
+  "id": "official__bjj",
+  "martialArt": "bjj",
+  "title": "주짓수 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 움직임과 스탠딩부터 시작해 주요 포지션, 가드, 이스케이프, 가드 패스, 서브미션, 포지션 전환까지 단계적으로 익히는 주짓수 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 53,
+  "estimatedWeeks": 14,
+  "phases": [
+    {
+      "name": "기본 움직임과 개념",
+      "blurb": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다.",
+      "startDay": 1,
+      "endDay": 6
+    },
+    {
+      "name": "스탠딩과 테이크다운",
+      "blurb": "서 있는 상태에서의 그립, 자세, 기본 테이크다운을 배웁니다.",
+      "startDay": 7,
+      "endDay": 10
+    },
+    {
+      "name": "기본 포지션의 이해",
+      "blurb": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다.",
+      "startDay": 11,
+      "endDay": 16
+    },
+    {
+      "name": "가드의 기초",
+      "blurb": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다.",
+      "startDay": 17,
+      "endDay": 21
+    },
+    {
+      "name": "가드의 응용",
+      "blurb": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다.",
+      "startDay": 22,
+      "endDay": 26
+    },
+    {
+      "name": "이스케이프",
+      "blurb": "불리한 포지션에서 벗어나는 이스케이프 기술을 배웁니다.",
+      "startDay": 27,
+      "endDay": 30
+    },
+    {
+      "name": "가드 패스",
+      "blurb": "상대의 가드를 통과해 유리한 탑 포지션으로 전환하는 방법을 배웁니다.",
+      "startDay": 31,
+      "endDay": 34
+    },
+    {
+      "name": "기본 서브미션",
+      "blurb": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다.",
+      "startDay": 35,
+      "endDay": 40
+    },
+    {
+      "name": "레그락과 백 서브미션",
+      "blurb": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다.",
+      "startDay": 41,
+      "endDay": 45
+    },
+    {
+      "name": "포지션 전환과 연결",
+      "blurb": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다.",
+      "startDay": 46,
+      "endDay": 50
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 움직임과 개념: 마운트 탈출 · 상대의 중심 이동 · 스크램블 시작",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 마운트 탈출, 상대의 중심 이동, 스크램블 시작을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임.",
+        "상대의 중심 이동의 기본 동작과 활용 상황을 이해한다.",
+        "스크램블 시작의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__마운트-탈출",
+        "bjj__상대의-중심-이동",
+        "bjj__스크램블-시작"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "포지션 회복 · 사이드 컨트롤 탈출",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 포지션 회복, 사이드 컨트롤 탈출을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임.",
+        "사이드 컨트롤 탈출의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__포지션-회복",
+        "bjj__사이드-컨트롤-탈출"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__상대의-중심-이동",
+        "bjj__스크램블-시작"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 3,
+      "title": "하프 가드 회복 · 가드 회복 · 스탠딩 복귀",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 하프 가드 회복, 가드 회복, 스탠딩 복귀을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임.",
+        "가드 회복의 기본 동작과 활용 상황을 이해한다.",
+        "스탠딩 복귀의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__하프-가드-회복",
+        "bjj__가드-회복",
+        "bjj__스탠딩-복귀"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__사이드-컨트롤-탈출"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 4,
+      "title": "거리 확보 · MMA 상황에서의 일어나기",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 거리 확보, MMA 상황에서의 일어나기을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임.",
+        "MMA 상황에서의 일어나기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__거리-확보",
+        "bjj__mma-상황에서의-일어나기"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__가드-회복",
+        "bjj__스탠딩-복귀"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 5,
+      "title": "목 프레임 · 어깨 프레임 · 엉덩이 프레임",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 목 프레임, 어깨 프레임, 엉덩이 프레임을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임.",
+        "어깨 프레임의 기본 동작과 활용 상황을 이해한다.",
+        "엉덩이 프레임의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__목-프레임",
+        "bjj__어깨-프레임",
+        "bjj__엉덩이-프레임"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__mma-상황에서의-일어나기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 6,
+      "title": "무릎 프레임",
+      "description": "주짓수의 모든 동작이 시작되는 기본 움직임(브릿지, 힙 이스케이프, 프레임)을 익힙니다. 오늘은 무릎 프레임을(를) 배웁니다.",
+      "learningGoals": [
+        "등을 바닥에 둔 상태에서 엉덩이를 들어 상대의 균형을 무너뜨리는 기본 움직임."
+      ],
+      "techniqueIds": [
+        "bjj__무릎-프레임"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__어깨-프레임",
+        "bjj__엉덩이-프레임"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 7,
+      "title": "스탠딩과 테이크다운: 칼라 그립 · 슬리브 그립 · 손목 그립",
+      "description": "서 있는 상태에서의 그립, 자세, 기본 테이크다운을 배웁니다. 오늘은 칼라 그립, 슬리브 그립, 손목 그립을(를) 배웁니다.",
+      "learningGoals": [
+        "두 다리를 잡아 상대의 균형을 무너뜨리는 테이크다운.",
+        "슬리브 그립의 기본 동작과 활용 상황을 이해한다.",
+        "손목 그립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__칼라-그립",
+        "bjj__슬리브-그립",
+        "bjj__손목-그립"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "러시안 타이 · 2-on-1 · 언더훅",
+      "description": "서 있는 상태에서의 그립, 자세, 기본 테이크다운을 배웁니다. 오늘은 러시안 타이, 2-on-1, 언더훅을(를) 배웁니다.",
+      "learningGoals": [
+        "두 다리를 잡아 상대의 균형을 무너뜨리는 테이크다운.",
+        "2-on-1의 기본 동작과 활용 상황을 이해한다.",
+        "언더훅의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__러시안-타이",
+        "bjj__2-on-1",
+        "bjj__언더훅"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__손목-그립"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 9,
+      "title": "오버훅 · 벨트 그립 · 팬츠 그립",
+      "description": "서 있는 상태에서의 그립, 자세, 기본 테이크다운을 배웁니다. 오늘은 오버훅, 벨트 그립, 팬츠 그립을(를) 배웁니다.",
+      "learningGoals": [
+        "두 다리를 잡아 상대의 균형을 무너뜨리는 테이크다운.",
+        "벨트 그립의 기본 동작과 활용 상황을 이해한다.",
+        "팬츠 그립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__오버훅",
+        "bjj__벨트-그립",
+        "bjj__팬츠-그립"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__언더훅"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 10,
+      "title": "High Crotch",
+      "description": "서 있는 상태에서의 그립, 자세, 기본 테이크다운을 배웁니다. 오늘은 High Crotch을(를) 배웁니다.",
+      "learningGoals": [
+        "두 다리를 잡아 상대의 균형을 무너뜨리는 테이크다운."
+      ],
+      "techniqueIds": [
+        "bjj__high-crotch"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__벨트-그립",
+        "bjj__팬츠-그립"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 11,
+      "title": "기본 포지션의 이해: Bridge and Roll · Half Guard Recovery · Low Mount · High Mount",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Bridge and Roll / Umpa, Half Guard Recovery, Low Mount, High Mount을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 몸통 위에 올라가 상위권을 확보하는 핵심 포지션.",
+        "Half Guard Recovery의 기본 동작과 활용 상황을 이해한다.",
+        "Low Mount의 기본 동작과 활용 상황을 이해한다.",
+        "High Mount의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__bridge-and-roll-umpa",
+        "bjj__half-guard-recovery",
+        "bjj__low-mount",
+        "bjj__high-mount"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 12,
+      "title": "Technical Mount · S-Mount · Knee Mount",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Technical Mount, S-Mount, Knee Mount을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 몸통 위에 올라가 상위권을 확보하는 핵심 포지션.",
+        "S-Mount의 기본 동작과 활용 상황을 이해한다.",
+        "Knee Mount의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__technical-mount",
+        "bjj__s-mount",
+        "bjj__knee-mount"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__high-mount"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "Elbow-Knee Escape · Knee Elbow Escape · Gift Wrap · S-Mount Armbar",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Elbow-Knee Escape, Knee Elbow Escape, Gift Wrap, S-Mount Armbar을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 몸통 위에 올라가 상위권을 확보하는 핵심 포지션.",
+        "Knee Elbow Escape의 기본 동작과 활용 상황을 이해한다.",
+        "Gift Wrap의 기본 동작과 활용 상황을 이해한다.",
+        "S-Mount Armbar의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__elbow-knee-escape",
+        "bjj__knee-elbow-escape",
+        "bjj__gift-wrap",
+        "bjj__s-mount-armbar"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__knee-mount"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 14,
+      "title": "Mounted Triangle · Head-and-Arm Choke · Far-side Underhook",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Mounted Triangle, Head-and-Arm Choke, Far-side Underhook을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 몸통 위에 올라가 상위권을 확보하는 핵심 포지션.",
+        "Head-and-Arm Choke의 기본 동작과 활용 상황을 이해한다.",
+        "상대의 상체를 옆에서 제어하는 대표적인 탑 포지션."
+      ],
+      "techniqueIds": [
+        "bjj__mounted-triangle",
+        "bjj__head-and-arm-choke",
+        "bjj__far-side-underhook"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__s-mount-armbar"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "Near-side Underhook · Shoulder Pressure · Kesa Gatame · Reverse Kesa Gatame",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Near-side Underhook, Shoulder Pressure, Kesa Gatame, Reverse Kesa Gatame을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 상체를 옆에서 제어하는 대표적인 탑 포지션.",
+        "Shoulder Pressure의 기본 동작과 활용 상황을 이해한다.",
+        "Kesa Gatame의 기본 동작과 활용 상황을 이해한다.",
+        "Reverse Kesa Gatame의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__near-side-underhook",
+        "bjj__shoulder-pressure",
+        "bjj__kesa-gatame",
+        "bjj__reverse-kesa-gatame"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__far-side-underhook"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 16,
+      "title": "Paper Cutter Choke · Baseball Bat Choke",
+      "description": "마운트·사이드 컨트롤·니 온 벨리·백 컨트롤·터틀 등 바닥에서의 주요 포지션과 그 컨트롤 방법을 이해합니다. 오늘은 Paper Cutter Choke, Baseball Bat Choke을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 상체를 옆에서 제어하는 대표적인 탑 포지션.",
+        "Baseball Bat Choke의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__paper-cutter-choke",
+        "bjj__baseball-bat-choke"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__kesa-gatame",
+        "bjj__reverse-kesa-gatame"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "가드의 기초: Underhook · Armbar · Triangle · Kimura",
+      "description": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다. 오늘은 Underhook, Armbar, Triangle, Kimura을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 허리를 다리로 감싼 기본 가드.",
+        "Armbar의 기본 동작과 활용 상황을 이해한다.",
+        "Triangle의 기본 동작과 활용 상황을 이해한다.",
+        "Kimura의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__underhook",
+        "bjj__armbar",
+        "bjj__triangle",
+        "bjj__kimura"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 18,
+      "title": "Americana · Collar & Sleeve · Double Sleeve",
+      "description": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다. 오늘은 Americana, Collar & Sleeve, Double Sleeve을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 허리를 다리로 감싼 기본 가드.",
+        "Collar & Sleeve의 기본 동작과 활용 상황을 이해한다.",
+        "Double Sleeve의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__americana",
+        "bjj__collar-sleeve",
+        "bjj__double-sleeve"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__kimura"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 19,
+      "title": "Overhook · Wrist Control · Head Control · Hip Control",
+      "description": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다. 오늘은 Overhook, Wrist Control, Head Control, Hip Control을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 허리를 다리로 감싼 기본 가드.",
+        "Wrist Control의 기본 동작과 활용 상황을 이해한다.",
+        "Head Control의 기본 동작과 활용 상황을 이해한다.",
+        "Hip Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__overhook",
+        "bjj__wrist-control",
+        "bjj__head-control",
+        "bjj__hip-control"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__double-sleeve"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 20,
+      "title": "Posture Break · Knee-in-the-middle · Standing Guard Break",
+      "description": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다. 오늘은 Posture Break, Knee-in-the-middle, Standing Guard Break을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 허리를 다리로 감싼 기본 가드.",
+        "Knee-in-the-middle의 기본 동작과 활용 상황을 이해한다.",
+        "Standing Guard Break의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__posture-break",
+        "bjj__knee-in-the-middle",
+        "bjj__standing-guard-break"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__hip-control"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 21,
+      "title": "Double Under Guard Break · Hip Pressure Guard Break · Hip Bump Sweep · Scissor Sweep",
+      "description": "클로즈드 가드와 오픈 가드 계열의 기본 형태와 상대를 컨트롤하는 원리를 배웁니다. 오늘은 Double Under Guard Break, Hip Pressure Guard Break, Hip Bump Sweep, Scissor Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 허리를 다리로 감싼 기본 가드.",
+        "Hip Pressure Guard Break의 기본 동작과 활용 상황을 이해한다.",
+        "Hip Bump Sweep의 기본 동작과 활용 상황을 이해한다.",
+        "Scissor Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__double-under-guard-break",
+        "bjj__hip-pressure-guard-break",
+        "bjj__hip-bump-sweep",
+        "bjj__scissor-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__standing-guard-break"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 75
+    },
+    {
+      "day": 22,
+      "title": "가드의 응용: Grip Fighting · X Guard Entry · Technical Stand-Up Sweep",
+      "description": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다. 오늘은 Grip Fighting, X Guard Entry, Technical Stand-Up Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 다리 바깥쪽에서 다리를 걸어 균형을 제어하는 가드.",
+        "X Guard Entry의 기본 동작과 활용 상황을 이해한다.",
+        "Technical Stand-Up Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__grip-fighting",
+        "bjj__x-guard-entry",
+        "bjj__technical-stand-up-sweep"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 23,
+      "title": "DLR Technical Sweep · Baby Bolo Sweep",
+      "description": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다. 오늘은 DLR Technical Sweep, Baby Bolo Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 다리 바깥쪽에서 다리를 걸어 균형을 제어하는 가드.",
+        "Baby Bolo Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__dlr-technical-sweep",
+        "bjj__baby-bolo-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__x-guard-entry",
+        "bjj__technical-stand-up-sweep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 24,
+      "title": "DLR to X Guard Sweep · Berimbolo · Backstep",
+      "description": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다. 오늘은 DLR to X Guard Sweep, Berimbolo, Backstep / Inversion Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 다리 바깥쪽에서 다리를 걸어 균형을 제어하는 가드.",
+        "Berimbolo의 기본 동작과 활용 상황을 이해한다.",
+        "Backstep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__dlr-to-x-guard-sweep",
+        "bjj__berimbolo",
+        "bjj__backstep-inversion-entry"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__baby-bolo-sweep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 25,
+      "title": "DLR Hook · Berimbolo Entry",
+      "description": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다. 오늘은 DLR Hook, Berimbolo Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 다리 바깥쪽에서 다리를 걸어 균형을 제어하는 가드.",
+        "Berimbolo Entry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__dlr-hook",
+        "bjj__berimbolo-entry"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__berimbolo",
+        "bjj__backstep-inversion-entry"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 26,
+      "title": "Kiss of the Dragon · Spider Sweep",
+      "description": "데 라 히바, 스파이더, X 가드 등 더 발전된 가드 형태를 다룹니다. 오늘은 Kiss of the Dragon, Spider Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 다리 바깥쪽에서 다리를 걸어 균형을 제어하는 가드.",
+        "소매를 잡고 발을 상대의 팔/이두근 주변에 사용하는 가드."
+      ],
+      "techniqueIds": [
+        "bjj__kiss-of-the-dragon",
+        "bjj__spider-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__dlr-hook",
+        "bjj__berimbolo-entry"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 27,
+      "title": "이스케이프: Bridge and Roll · Bridge · Underhook Escape",
+      "description": "불리한 포지션에서 벗어나는 이스케이프 기술을 배웁니다. 오늘은 Bridge and Roll, Bridge, Underhook Escape을(를) 배웁니다.",
+      "learningGoals": [
+        "Bridge and Roll의 기본 동작과 활용 상황을 이해한다.",
+        "Bridge의 기본 동작과 활용 상황을 이해한다.",
+        "Underhook Escape의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__bridge-and-roll",
+        "bjj__bridge",
+        "bjj__underhook-escape"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 28,
+      "title": "Knee-Elbow Recovery · Turtle Recovery",
+      "description": "불리한 포지션에서 벗어나는 이스케이프 기술을 배웁니다. 오늘은 Knee-Elbow Recovery, Turtle Recovery을(를) 배웁니다.",
+      "learningGoals": [
+        "Knee-Elbow Recovery의 기본 동작과 활용 상황을 이해한다.",
+        "Turtle Recovery의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__knee-elbow-recovery",
+        "bjj__turtle-recovery"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__bridge",
+        "bjj__underhook-escape"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "Shoulder-to-Mat Escape · Turn-In Escape · Butterfly Recovery",
+      "description": "불리한 포지션에서 벗어나는 이스케이프 기술을 배웁니다. 오늘은 Shoulder-to-Mat Escape, Turn-In Escape, Butterfly Recovery을(를) 배웁니다.",
+      "learningGoals": [
+        "Shoulder-to-Mat Escape의 기본 동작과 활용 상황을 이해한다.",
+        "Turn-In Escape의 기본 동작과 활용 상황을 이해한다.",
+        "Butterfly Recovery의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__shoulder-to-mat-escape",
+        "bjj__turn-in-escape",
+        "bjj__butterfly-recovery"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__turtle-recovery"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 30,
+      "title": "Full Guard Recovery",
+      "description": "불리한 포지션에서 벗어나는 이스케이프 기술을 배웁니다. 오늘은 Full Guard Recovery을(를) 배웁니다.",
+      "learningGoals": [
+        "Full Guard Recovery의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__full-guard-recovery"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__turn-in-escape",
+        "bjj__butterfly-recovery"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 31,
+      "title": "가드 패스: Knee Cut Pass · Torreando Pass · Leg Drag",
+      "description": "상대의 가드를 통과해 유리한 탑 포지션으로 전환하는 방법을 배웁니다. 오늘은 Knee Cut Pass, Torreando Pass, Leg Drag을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 가드를 통과하여 상위 포지션을 확보하는 기술군.",
+        "Torreando Pass의 기본 동작과 활용 상황을 이해한다.",
+        "Leg Drag의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__knee-cut-pass",
+        "bjj__torreando-pass",
+        "bjj__leg-drag"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 32,
+      "title": "Double Under Pass · Stack Pass · Long Step",
+      "description": "상대의 가드를 통과해 유리한 탑 포지션으로 전환하는 방법을 배웁니다. 오늘은 Double Under Pass, Stack Pass, Long Step을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 가드를 통과하여 상위 포지션을 확보하는 기술군.",
+        "Stack Pass의 기본 동작과 활용 상황을 이해한다.",
+        "Long Step의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__double-under-pass",
+        "bjj__stack-pass",
+        "bjj__long-step"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__leg-drag"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 33,
+      "title": "X-Pass · Folding Pass · Crossface",
+      "description": "상대의 가드를 통과해 유리한 탑 포지션으로 전환하는 방법을 배웁니다. 오늘은 X-Pass, Folding Pass, Crossface을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 가드를 통과하여 상위 포지션을 확보하는 기술군.",
+        "Folding Pass의 기본 동작과 활용 상황을 이해한다.",
+        "Crossface의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__x-pass",
+        "bjj__folding-pass",
+        "bjj__crossface"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__long-step"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 34,
+      "title": "Leg Control",
+      "description": "상대의 가드를 통과해 유리한 탑 포지션으로 전환하는 방법을 배웁니다. 오늘은 Leg Control을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 가드를 통과하여 상위 포지션을 확보하는 기술군."
+      ],
+      "techniqueIds": [
+        "bjj__leg-control"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__folding-pass",
+        "bjj__crossface"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 35,
+      "title": "기본 서브미션: Closed Guard · Mount",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Closed Guard, Mount을(를) 배웁니다.",
+      "learningGoals": [
+        "Closed Guard의 기본 동작과 활용 상황을 이해한다.",
+        "Mount의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__closed-guard",
+        "bjj__mount"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 36,
+      "title": "Side Control · Back Control",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Side Control, Back Control을(를) 배웁니다.",
+      "learningGoals": [
+        "Side Control의 기본 동작과 활용 상황을 이해한다.",
+        "Back Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__side-control",
+        "bjj__back-control"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__closed-guard",
+        "bjj__mount"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 37,
+      "title": "Knee on Belly · Triangle → Armbar",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Knee on Belly, Triangle → Armbar을(를) 배웁니다.",
+      "learningGoals": [
+        "Knee on Belly의 기본 동작과 활용 상황을 이해한다.",
+        "Triangle → Armbar의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__knee-on-belly",
+        "bjj__triangle-armbar"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__side-control",
+        "bjj__back-control"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 38,
+      "title": "Kimura → Armbar · Omoplata → Armbar",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Kimura → Armbar, Omoplata → Armbar을(를) 배웁니다.",
+      "learningGoals": [
+        "Kimura → Armbar의 기본 동작과 활용 상황을 이해한다.",
+        "Omoplata → Armbar의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__kimura-armbar",
+        "bjj__omoplata-armbar"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__knee-on-belly",
+        "bjj__triangle-armbar"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 39,
+      "title": "Mount → S-Mount → Armbar · Side Control → Armbar",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Mount → S-Mount → Armbar, Side Control → Armbar을(를) 배웁니다.",
+      "learningGoals": [
+        "Mount → S-Mount → Armbar의 기본 동작과 활용 상황을 이해한다.",
+        "Side Control → Armbar의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__mount-s-mount-armbar",
+        "bjj__side-control-armbar"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__kimura-armbar",
+        "bjj__omoplata-armbar"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 40,
+      "title": "Triangle Choke · Reverse Triangle",
+      "description": "암바, 트라이앵글, 기무라 등 가장 기본적인 서브미션을 배웁니다. 관절기·조르기는 반드시 지도자의 감독 아래 천천히 연습해야 합니다. 오늘은 Triangle Choke, Reverse Triangle을(를) 배웁니다.",
+      "learningGoals": [
+        "Triangle Choke의 기본 동작과 활용 상황을 이해한다.",
+        "Reverse Triangle의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__triangle-choke",
+        "bjj__reverse-triangle"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__mount-s-mount-armbar",
+        "bjj__side-control-armbar"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 41,
+      "title": "레그락과 백 서브미션: Straight Ankle Lock · Outside Ankle Lock",
+      "description": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 Straight Ankle Lock, Outside Ankle Lock을(를) 배웁니다.",
+      "learningGoals": [
+        "Straight Ankle Lock의 기본 동작과 활용 상황을 이해한다.",
+        "Outside Ankle Lock의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__straight-ankle-lock",
+        "bjj__outside-ankle-lock"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 42,
+      "title": "Inside Ankle Lock · Toe Hold",
+      "description": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 Inside Ankle Lock, Toe Hold을(를) 배웁니다.",
+      "learningGoals": [
+        "Inside Ankle Lock의 기본 동작과 활용 상황을 이해한다.",
+        "Toe Hold의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__inside-ankle-lock",
+        "bjj__toe-hold"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__straight-ankle-lock",
+        "bjj__outside-ankle-lock"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 43,
+      "title": "Kneebar · Heel Hook",
+      "description": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 Kneebar, Heel Hook을(를) 배웁니다.",
+      "learningGoals": [
+        "Kneebar의 기본 동작과 활용 상황을 이해한다.",
+        "Heel Hook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__kneebar",
+        "bjj__heel-hook"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__inside-ankle-lock",
+        "bjj__toe-hold"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 44,
+      "title": "Calf Slicer · Turtle → Crucifix",
+      "description": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 Calf Slicer, Turtle → Crucifix을(를) 배웁니다.",
+      "learningGoals": [
+        "Calf Slicer의 기본 동작과 활용 상황을 이해한다.",
+        "상대의 팔을 다리와 팔로 고정하는 포지션."
+      ],
+      "techniqueIds": [
+        "bjj__calf-slicer",
+        "bjj__turtle-crucifix"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__kneebar",
+        "bjj__heel-hook"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 45,
+      "title": "Side Control → Crucifix · Back Control → Crucifix",
+      "description": "레그락 계열과 백 컨트롤에서의 서브미션을 배웁니다. 특히 레그락은 부상 위험이 높아 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 Side Control → Crucifix, Back Control → Crucifix을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 팔을 다리와 팔로 고정하는 포지션.",
+        "Back Control → Crucifix의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__side-control-crucifix",
+        "bjj__back-control-crucifix"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__calf-slicer",
+        "bjj__turtle-crucifix"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 46,
+      "title": "포지션 전환과 연결: Arm Drag → Back Take · Arm Drag → Single Leg · Arm Drag → Butterfly Sweep",
+      "description": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다. 오늘은 Arm Drag → Back Take, Arm Drag → Single Leg, Arm Drag → Butterfly Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 팔을 끌어 몸의 옆이나 뒤쪽으로 이동하는 기술.",
+        "Arm Drag → Single Leg의 기본 동작과 활용 상황을 이해한다.",
+        "Arm Drag → Butterfly Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__arm-drag-back-take",
+        "bjj__arm-drag-single-leg",
+        "bjj__arm-drag-butterfly-sweep"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 47,
+      "title": "Arm Drag → Closed Guard · Arm Drag → Turtle Attack · DLR Sweep",
+      "description": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다. 오늘은 Arm Drag → Closed Guard, Arm Drag → Turtle Attack, DLR Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "상대 팔을 끌어 몸의 옆이나 뒤쪽으로 이동하는 기술.",
+        "Arm Drag → Turtle Attack의 기본 동작과 활용 상황을 이해한다.",
+        "DLR Sweep의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__arm-drag-closed-guard",
+        "bjj__arm-drag-turtle-attack",
+        "bjj__dlr-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__arm-drag-butterfly-sweep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 48,
+      "title": "Guillotine · Go-Behind · Spin Behind",
+      "description": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다. 오늘은 Guillotine, Go-Behind, Spin Behind을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 머리와 팔을 앞에서 제어하는 포지션.",
+        "Go-Behind의 기본 동작과 활용 상황을 이해한다.",
+        "Spin Behind의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__guillotine",
+        "bjj__go-behind",
+        "bjj__spin-behind"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__dlr-sweep"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 49,
+      "title": "Japanese Necktie · Peruvian Necktie · Arm-In Guillotine",
+      "description": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다. 오늘은 Japanese Necktie, Peruvian Necktie, Arm-In Guillotine을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 머리와 팔을 앞에서 제어하는 포지션.",
+        "Peruvian Necktie의 기본 동작과 활용 상황을 이해한다.",
+        "Arm-In Guillotine의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "bjj__japanese-necktie",
+        "bjj__peruvian-necktie",
+        "bjj__arm-in-guillotine"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__spin-behind"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 50,
+      "title": "Front Headlock to Back · Loop Choke",
+      "description": "암 드래그, 스윕, 프론트 헤드락 등 포지션을 서로 연결하는 기술과, 기/노기 상황별로 특히 중요한 기술을 다룹니다. 오늘은 Front Headlock to Back, Loop Choke을(를) 배웁니다.",
+      "learningGoals": [
+        "상대의 머리와 팔을 앞에서 제어하는 포지션.",
+        "도복을 활용한 그립과 초크가 가능하다."
+      ],
+      "techniqueIds": [
+        "bjj__front-headlock-to-back",
+        "bjj__loop-choke"
+      ],
+      "reviewTechniqueIds": [
+        "bjj__peruvian-necktie",
+        "bjj__arm-in-guillotine"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 51,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "bjj__마운트-탈출",
+        "bjj__칼라-그립",
+        "bjj__bridge-and-roll-umpa",
+        "bjj__underhook",
+        "bjj__grip-fighting",
+        "bjj__bridge-and-roll",
+        "bjj__knee-cut-pass",
+        "bjj__closed-guard",
+        "bjj__straight-ankle-lock",
+        "bjj__arm-drag-back-take"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 52,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "bjj__사이드-컨트롤-탈출",
+        "bjj__러시안-타이",
+        "bjj__knee-mount",
+        "bjj__double-sleeve",
+        "bjj__baby-bolo-sweep",
+        "bjj__knee-elbow-recovery",
+        "bjj__double-under-pass",
+        "bjj__knee-on-belly",
+        "bjj__toe-hold",
+        "bjj__arm-drag-turtle-attack"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 53,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "bjj__mma-상황에서의-일어나기",
+        "bjj__오버훅",
+        "bjj__far-side-underhook",
+        "bjj__knee-in-the-middle",
+        "bjj__dlr-hook",
+        "bjj__turn-in-escape",
+        "bjj__x-pass",
+        "bjj__mount-s-mount-armbar",
+        "bjj__calf-slicer",
+        "bjj__japanese-necktie"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 129
+}

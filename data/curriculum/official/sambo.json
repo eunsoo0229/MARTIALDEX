@@ -1,0 +1,992 @@
+{
+  "id": "official__sambo",
+  "martialArt": "sambo",
+  "title": "삼보 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 자세와 그립 파이팅부터 테이크다운, 던지기, 탑 포지션 컨트롤, 관절기까지 이어지는 삼보 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 50,
+  "estimatedWeeks": 13,
+  "phases": [
+    {
+      "name": "기본 자세와 거리",
+      "blurb": "삼보의 기본 자세, 거리 개념, 균형을 무너뜨리는 원리를 이해합니다.",
+      "startDay": 1,
+      "endDay": 3
+    },
+    {
+      "name": "그립 파이팅",
+      "blurb": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다.",
+      "startDay": 4,
+      "endDay": 8
+    },
+    {
+      "name": "테이크다운 진입",
+      "blurb": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다.",
+      "startDay": 9,
+      "endDay": 13
+    },
+    {
+      "name": "다리 기술과 던지기",
+      "blurb": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다.",
+      "startDay": 14,
+      "endDay": 26
+    },
+    {
+      "name": "탑 포지션과 홀드다운",
+      "blurb": "테이크다운 이후 상대를 눌러 제압하는 홀드다운(우제르자니예)을 배웁니다.",
+      "startDay": 27,
+      "endDay": 30
+    },
+    {
+      "name": "바텀 포지션과 전환",
+      "blurb": "눌린 상태에서 벗어나거나 스윕으로 전환하는 방법을 배웁니다.",
+      "startDay": 31,
+      "endDay": 34
+    },
+    {
+      "name": "관절기",
+      "blurb": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다.",
+      "startDay": 35,
+      "endDay": 42
+    },
+    {
+      "name": "카운터와 컴뱃 삼보",
+      "blurb": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다.",
+      "startDay": 43,
+      "endDay": 47
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 자세와 거리: 스탠스 · 거리 구분",
+      "description": "삼보의 기본 자세, 거리 개념, 균형을 무너뜨리는 원리를 이해합니다. 오늘은 스탠스, 거리 구분을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보는 재킷을 잡는 스포츠이므로 유도보다 그립 교환이 더 빠르고 격렬하게 일어난다.",
+        "거리 구분의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__스탠스",
+        "sambo__거리-구분"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 2,
+      "title": "Level Change · 당겨서 무너뜨리기",
+      "description": "삼보의 기본 자세, 거리 개념, 균형을 무너뜨리는 원리를 이해합니다. 오늘은 Level Change / Footwork / Pivot / Break Step, 당겨서 무너뜨리기을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보는 재킷을 잡는 스포츠이므로 유도보다 그립 교환이 더 빠르고 격렬하게 일어난다.",
+        "삼보 지도서는 균형 무너뜨리기를 세 가지 힘의 방향으로 명확히 구분한다."
+      ],
+      "techniqueIds": [
+        "sambo__level-change-footwork-pivot-break-step",
+        "sambo__당겨서-무너뜨리기"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__스탠스",
+        "sambo__거리-구분"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 3,
+      "title": "밀어서 무너뜨리기 · 비틀어서 무너뜨리기",
+      "description": "삼보의 기본 자세, 거리 개념, 균형을 무너뜨리는 원리를 이해합니다. 오늘은 밀어서 무너뜨리기, 비틀어서 무너뜨리기을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보 지도서는 균형 무너뜨리기를 세 가지 힘의 방향으로 명확히 구분한다.",
+        "비틀어서 무너뜨리기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__밀어서-무너뜨리기",
+        "sambo__비틀어서-무너뜨리기"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__level-change-footwork-pivot-break-step",
+        "sambo__당겨서-무너뜨리기"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 4,
+      "title": "그립 파이팅: 소매 그립 · Захват за рукав куртки, з… · 옷깃 그립",
+      "description": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다. 오늘은 Sleeve Grip / Захват за рукав, Захват за рукав куртки, зацеп изнутри, Collar/Lapel Grip / Ворот을(를) 배웁니다.",
+      "learningGoals": [
+        "BJJ의 라펠/저지 그립과 달리 삼보는 **벨트(пояс)가 항상 규정상 그립 가능한 지점**이라는 점이 가장 큰 차이다.",
+        "Захват за рукав куртки, з…의 기본 동작과 활용 상황을 이해한다.",
+        "옷깃 그립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__sleeve-grip-захват-за-рукав",
+        "sambo__захват-за-рукав-куртки-зацеп-изнутри",
+        "sambo__collar-lapel-grip-ворот"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 5,
+      "title": "등 뒤 벨트 · Wrist Grip",
+      "description": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다. 오늘은 Belt Grip / Пояс 그립, Wrist Grip / Кисть 제어을(를) 배웁니다.",
+      "learningGoals": [
+        "BJJ의 라펠/저지 그립과 달리 삼보는 **벨트(пояс)가 항상 규정상 그립 가능한 지점**이라는 점이 가장 큰 차이다.",
+        "Wrist Grip의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__belt-grip-пояс-그립",
+        "sambo__wrist-grip-кисть-제어"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__захват-за-рукав-куртки-зацеп-изнутри",
+        "sambo__collar-lapel-grip-ворот"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 6,
+      "title": "Two-on-One, Underhook, Ov… · Elbow Control, Leg Grip · 그립 브레이크",
+      "description": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다. 오늘은 Two-on-One, Underhook, Overhook, Russian Tie, Elbow Control, Leg Grip, Grip Break을(를) 배웁니다.",
+      "learningGoals": [
+        "BJJ의 라펠/저지 그립과 달리 삼보는 **벨트(пояс)가 항상 규정상 그립 가능한 지점**이라는 점이 가장 큰 차이다.",
+        "Elbow Control, Leg Grip의 기본 동작과 활용 상황을 이해한다.",
+        "그립 브레이크의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__two-on-one-underhook-overhook-russian-tie",
+        "sambo__elbow-control-leg-grip",
+        "sambo__grip-break"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__wrist-grip-кисть-제어"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "소매+옷깃 그립 · 손목/팔꿈치 제어",
+      "description": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다. 오늘은 소매+옷깃 그립, 손목/팔꿈치 제어을(를) 배웁니다.",
+      "learningGoals": [
+        "BJJ의 라펠/저지 그립과 달리 삼보는 **벨트(пояс)가 항상 규정상 그립 가능한 지점**이라는 점이 가장 큰 차이다.",
+        "손목/팔꿈치 제어의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__소매-옷깃-그립",
+        "sambo__손목-팔꿈치-제어"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__elbow-control-leg-grip",
+        "sambo__grip-break"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 8,
+      "title": "벨트 그립",
+      "description": "삼보 특유의 재킷·벨트 그립 싸움을 배웁니다. 오늘은 벨트 그립을(를) 배웁니다.",
+      "learningGoals": [
+        "BJJ의 라펠/저지 그립과 달리 삼보는 **벨트(пояс)가 항상 규정상 그립 가능한 지점**이라는 점이 가장 큰 차이다."
+      ],
+      "techniqueIds": [
+        "sambo__벨트-그립"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__소매-옷깃-그립",
+        "sambo__손목-팔꿈치-제어"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 9,
+      "title": "테이크다운 진입: Single Leg · 발뒤꿈치 안/밖 잡기",
+      "description": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다. 오늘은 Single Leg / Double Leg, High Crotch, Ankle Pick을(를) 배웁니다.",
+      "learningGoals": [
+        "컴뱃 삼보와 노기 스파링에서 특히 자주 쓰이는, 다리를 잡는 계열의 진입이다.",
+        "발뒤꿈치 안/밖 잡기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__single-leg-double-leg",
+        "sambo__high-crotch-ankle-pick"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 10,
+      "title": "Knee Tap, Body Lock, Arm … · Fireman's Carry",
+      "description": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다. 오늘은 Knee Tap, Body Lock, Arm Drag, Duck Under, Snap Down, Fireman's Carry을(를) 배웁니다.",
+      "learningGoals": [
+        "컴뱃 삼보와 노기 스파링에서 특히 자주 쓰이는, 다리를 잡는 계열의 진입이다.",
+        "Fireman's Carry의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__knee-tap-body-lock-arm-drag-duck-under-snap-down",
+        "sambo__fireman-s-carry"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__single-leg-double-leg",
+        "sambo__high-crotch-ankle-pick"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 11,
+      "title": "Перевод в партер(파르테르로 전환… · Throw → Side Control",
+      "description": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다. 오늘은 Перевод в партер(파르테르로 전환시키기), Throw → Side Control / Mount / Turtle Control을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보 심판 용어로 바닥 포지션은 **партер(파르테르)**라 부른다.",
+        "Throw → Side Control의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__перевод-в-партер-파르테르로-전환시키기",
+        "sambo__throw-side-control-mount-turtle-control"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__knee-tap-body-lock-arm-drag-duck-under-snap-down",
+        "sambo__fireman-s-carry"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 12,
+      "title": "Single Leg → Top Control,… · Grip Fight → Takedown → L…",
+      "description": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다. 오늘은 Single Leg → Top Control, Body Lock → Throw → Control, Grip Fight → Takedown → Leg Lock Entry을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보 심판 용어로 바닥 포지션은 **партер(파르테르)**라 부른다.",
+        "Grip Fight → Takedown → L…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__single-leg-top-control-body-lock-throw-control",
+        "sambo__grip-fight-takedown-leg-lock-entry"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__перевод-в-партер-파르테르로-전환시키기",
+        "sambo__throw-side-control-mount-turtle-control"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 13,
+      "title": "등 뒤로 돌아가기",
+      "description": "레슬링 계열 테이크다운 진입과 스탠딩에서 파르테르(바닥)로의 전환을 배웁니다. 오늘은 Забегание за спину을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보 심판 용어로 바닥 포지션은 **партер(파르테르)**라 부른다."
+      ],
+      "techniqueIds": [
+        "sambo__забегание-за-спину"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__single-leg-top-control-body-lock-throw-control",
+        "sambo__grip-fight-takedown-leg-lock-entry"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 14,
+      "title": "다리 기술과 던지기: передняя подсечка · задняя подсечка",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 передняя подсечка, задняя подсечка을(를) 배웁니다.",
+      "learningGoals": [
+        "Подсечка는 \"베어내다·쓸어내다\"라는 어원으로, 유도의 아시바라이·오우치 가리와 유사하지만 삼보식 분류는 방향별로 더 세분화되어 있다.",
+        "задняя подсечка의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__передняя-подсечка",
+        "sambo__задняя-подсечка"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 15,
+      "title": "боковая подсечка · подсечка изнутри",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 боковая подсечка, подсечка изнутри을(를) 배웁니다.",
+      "learningGoals": [
+        "Подсечка는 \"베어내다·쓸어내다\"라는 어원으로, 유도의 아시바라이·오우치 가리와 유사하지만 삼보식 분류는 방향별로 더 세분화되어 있다.",
+        "подсечка изнутри의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__боковая-подсечка",
+        "sambo__подсечка-изнутри"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__передняя-подсечка",
+        "sambo__задняя-подсечка"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 16,
+      "title": "подсечка с заведением · 오트하바트",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 подсечка с заведением, Отхват을(를) 배웁니다.",
+      "learningGoals": [
+        "Подсечка는 \"베어내다·쓸어내다\"라는 어원으로, 유도의 아시바라이·오우치 가리와 유사하지만 삼보식 분류는 방향별로 더 세분화되어 있다.",
+        "유도 기술명을 그대로 쓰면 삼보 특유의 세부 구분이 사라진다."
+      ],
+      "techniqueIds": [
+        "sambo__подсечка-с-заведением",
+        "sambo__отхват"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__боковая-подсечка",
+        "sambo__подсечка-изнутри"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 17,
+      "title": "포드핫 · 포드사드",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 Подхват, Подсад을(를) 배웁니다.",
+      "learningGoals": [
+        "유도 기술명을 그대로 쓰면 삼보 특유의 세부 구분이 사라진다.",
+        "포드사드의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__подхват",
+        "sambo__подсад"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__подсечка-с-заведением",
+        "sambo__отхват"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 18,
+      "title": "자쳅 · 팔을 어깨 위로 잡고",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 Зацеп, захватом руки на плечо을(를) 배웁니다.",
+      "learningGoals": [
+        "유도 기술명을 그대로 쓰면 삼보 특유의 세부 구분이 사라진다.",
+        "유도의 세오이나게·타이오토시 계열에 대응하는 삼보식 백 스로우."
+      ],
+      "techniqueIds": [
+        "sambo__зацеп",
+        "sambo__захватом-руки-на-плечо"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__подхват",
+        "sambo__подсад"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 19,
+      "title": "다리 기술과 던지기 복습",
+      "description": "지금까지 배운 '다리 기술과 던지기' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "다리 기술과 던지기 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__подсечка-с-заведением",
+        "sambo__отхват",
+        "sambo__подхват",
+        "sambo__подсад",
+        "sambo__зацеп",
+        "sambo__захватом-руки-на-плечо"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 20,
+      "title": "팔을 어깨 아래로 잡고 · 양 소매를 잡고",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 захватом руки под плечо, захватом рукавов을(를) 배웁니다.",
+      "learningGoals": [
+        "유도의 세오이나게·타이오토시 계열에 대응하는 삼보식 백 스로우.",
+        "양 소매를 잡고의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__захватом-руки-под-плечо",
+        "sambo__захватом-рукавов"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__зацеп",
+        "sambo__захватом-руки-на-плечо"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 21,
+      "title": "양 옷깃을 잡고 · 팔을 교차로 잡고",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 захватом отворотов, скрестным захватом рук을(를) 배웁니다.",
+      "learningGoals": [
+        "유도의 세오이나게·타이오토시 계열에 대응하는 삼보식 백 스로우.",
+        "팔을 교차로 잡고의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__захватом-отворотов",
+        "sambo__скрестным-захватом-рук"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__захватом-руки-под-плечо",
+        "sambo__захватом-рукавов"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 22,
+      "title": "역방향 · Бросок через бедро",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 обратный, Бросок через бедро을(를) 배웁니다.",
+      "learningGoals": [
+        "유도의 세오이나게·타이오토시 계열에 대응하는 삼보식 백 스로우.",
+        "유도의 오고시·우키고시 계열에 대응한다."
+      ],
+      "techniqueIds": [
+        "sambo__обратный",
+        "sambo__бросок-через-бедро"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__захватом-отворотов",
+        "sambo__скрестным-захватом-рук"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 23,
+      "title": "боковой · с захватом пояса",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 боковой, с захватом пояса을(를) 배웁니다.",
+      "learningGoals": [
+        "유도의 오고시·우키고시 계열에 대응한다.",
+        "с захватом пояса의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__боковой",
+        "sambo__с-захватом-пояса"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__обратный",
+        "sambo__бросок-через-бедро"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 24,
+      "title": "с захватом шеи · 베르투쉬카",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 с захватом шеи, Вертушка을(를) 배웁니다.",
+      "learningGoals": [
+        "유도의 오고시·우키고시 계열에 대응한다.",
+        "**상황 설명:** 멜니차는 다리를 깊게 파고들어야 하므로 상대가 그립을 느슨히 하거나 자세가 높아졌을 때 진입 타이밍이 좋다."
+      ],
+      "techniqueIds": [
+        "sambo__с-захватом-шеи",
+        "sambo__вертушка"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__боковой",
+        "sambo__с-захватом-пояса"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 25,
+      "title": "다리 기술과 던지기 복습",
+      "description": "지금까지 배운 '다리 기술과 던지기' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "다리 기술과 던지기 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__обратный",
+        "sambo__бросок-через-бедро",
+        "sambo__боковой",
+        "sambo__с-захватом-пояса",
+        "sambo__с-захватом-шеи",
+        "sambo__вертушка"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 26,
+      "title": "Drop Seoi류, Arm Drag to T… · \"맷돌/윈드밀\"",
+      "description": "포드쎗카(발쓸기)를 포함한 다리 기술과 허리·어깨를 이용한 던지기를 배웁니다. 던지기는 낙법 없이 연습하면 부상 위험이 커 매트와 지도자 감독이 반드시 필요합니다. 오늘은 Drop Seoi류, Arm Drag to Throw, Shoulder Entry, Flying Entry, Мельница을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황 설명:** 멜니차는 다리를 깊게 파고들어야 하므로 상대가 그립을 느슨히 하거나 자세가 높아졌을 때 진입 타이밍이 좋다.",
+        "\"맷돌/윈드밀\"의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__drop-seoi류-arm-drag-to-throw-shoulder-entry-flying-entry",
+        "sambo__мельница"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__с-захватом-шеи",
+        "sambo__вертушка"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 27,
+      "title": "탑 포지션과 홀드다운: Удержание сбоку · Удержание верхом",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 홀드다운(우제르자니예)을 배웁니다. 오늘은 Удержание сбоку, Удержание верхом을(를) 배웁니다.",
+      "learningGoals": [
+        "**이 섹션이 삼보를 유도·BJJ와 가장 다르게 만드는 부분이다.** 스포츠 삼보는 초크가 금지되어 있는 대신, 상대를 일정 시간 이상 등이 바닥에 닿은 채로 …",
+        "Удержание верхом의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__удержание-сбоку",
+        "sambo__удержание-верхом"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 28,
+      "title": "Удержание поперек · Удержание со стороны голо…",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 홀드다운(우제르자니예)을 배웁니다. 오늘은 Удержание поперек, Удержание со стороны головы을(를) 배웁니다.",
+      "learningGoals": [
+        "**이 섹션이 삼보를 유도·BJJ와 가장 다르게 만드는 부분이다.** 스포츠 삼보는 초크가 금지되어 있는 대신, 상대를 일정 시간 이상 등이 바닥에 닿은 채로 …",
+        "Удержание со стороны голо…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__удержание-поперек",
+        "sambo__удержание-со-стороны-головы"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__удержание-сбоку",
+        "sambo__удержание-верхом"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "Удержание со стороны ног · Удержание спиной поперек",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 홀드다운(우제르자니예)을 배웁니다. 오늘은 Удержание со стороны ног, Удержание спиной поперек을(를) 배웁니다.",
+      "learningGoals": [
+        "**이 섹션이 삼보를 유도·BJJ와 가장 다르게 만드는 부분이다.** 스포츠 삼보는 초크가 금지되어 있는 대신, 상대를 일정 시간 이상 등이 바닥에 닿은 채로 …",
+        "Удержание спиной поперек의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__удержание-со-стороны-ног",
+        "sambo__удержание-спиной-поперек"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__удержание-поперек",
+        "sambo__удержание-со-стороны-головы"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 30,
+      "title": "추가 탑 컨트롤",
+      "description": "테이크다운 이후 상대를 눌러 제압하는 홀드다운(우제르자니예)을 배웁니다. 오늘은 추가 탑 컨트롤을(를) 배웁니다.",
+      "learningGoals": [
+        "**이 섹션이 삼보를 유도·BJJ와 가장 다르게 만드는 부분이다.** 스포츠 삼보는 초크가 금지되어 있는 대신, 상대를 일정 시간 이상 등이 바닥에 닿은 채로 …"
+      ],
+      "techniqueIds": [
+        "sambo__추가-탑-컨트롤"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__удержание-со-стороны-ног",
+        "sambo__удержание-спиной-поперек"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 31,
+      "title": "바텀 포지션과 전환: Guard(클로즈드/오픈), Half Guar… · Guard Recovery, Technical…",
+      "description": "눌린 상태에서 벗어나거나 스윕으로 전환하는 방법을 배웁니다. 오늘은 Guard(클로즈드/오픈), Half Guard, Turtle, Defensive Shell, Guard Recovery, Technical Stand-Up을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황 설명:** 스포츠 삼보는 초크·트라이앵글 등 오픈가드형 서브미션 체계가 사실상 없기 때문에, 바텀에서의 목표는 \"빠르게 스탠딩으로 복귀하거나 레그락(§…",
+        "Guard Recovery, Technical…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__guard-클로즈드-오픈-half-guard-turtle-defensive-shell",
+        "sambo__guard-recovery-technical-stand-up"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 32,
+      "title": "Bridge(Мост), Hip Escape,… · Hip Bump Sweep, Butterfly…",
+      "description": "눌린 상태에서 벗어나거나 스윕으로 전환하는 방법을 배웁니다. 오늘은 Bridge(Мост), Hip Escape, Sit-Out, Stand-Up, Granby, Turn-In, Frame Escape, Back Escape, Hip Bump Sweep, Butterfly Sweep, Technical Stand-Up Sweep을(를) 배웁니다.",
+      "learningGoals": [
+        "**상황 설명:** 스포츠 삼보는 초크·트라이앵글 등 오픈가드형 서브미션 체계가 사실상 없기 때문에, 바텀에서의 목표는 \"빠르게 스탠딩으로 복귀하거나 레그락(§…",
+        "Hip Bump Sweep, Butterfly…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__bridge-мост-hip-escape-sit-out-stand-up-granby-turn-in-frame-escape-back-escape",
+        "sambo__hip-bump-sweep-butterfly-sweep-technical-stand-up-sweep"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__guard-클로즈드-오픈-half-guard-turtle-defensive-shell",
+        "sambo__guard-recovery-technical-stand-up"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 33,
+      "title": "Guard Sweep, Reversal, Si… · Single Leg from Guard, Wr…",
+      "description": "눌린 상태에서 벗어나거나 스윕으로 전환하는 방법을 배웁니다. 오늘은 Guard Sweep, Reversal, Sit-Up Sweep, Single Leg from Guard, Wrestle-Up을(를) 배웁니다.",
+      "learningGoals": [
+        "Guard Sweep, Reversal, Si…의 기본 동작과 활용 상황을 이해한다.",
+        "Single Leg from Guard, Wr…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__guard-sweep-reversal-sit-up-sweep",
+        "sambo__single-leg-from-guard-wrestle-up"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__bridge-мост-hip-escape-sit-out-stand-up-granby-turn-in-frame-escape-back-escape",
+        "sambo__hip-bump-sweep-butterfly-sweep-technical-stand-up-sweep"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 34,
+      "title": "Заваливание",
+      "description": "눌린 상태에서 벗어나거나 스윕으로 전환하는 방법을 배웁니다. 오늘은 Заваливание을(를) 배웁니다.",
+      "learningGoals": [
+        "상대를 뒤집어 눕히기 --- 파르테르에서의 턴오버 전반을 가리키는 일반 용어"
+      ],
+      "techniqueIds": [
+        "sambo__заваливание"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__guard-sweep-reversal-sit-up-sweep",
+        "sambo__single-leg-from-guard-wrestle-up"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 35,
+      "title": "관절기: рычаг локтя · рычаг плеча",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 рычаг локтя, рычаг плеча을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보의 상체 관절기는 크게 **레버(rычаг, \"지렛대\")**형과 **노트 (узел, \"매듭\")**형으로 나뉜다.",
+        "рычаг плеча의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__рычаг-локтя",
+        "sambo__рычаг-плеча"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 36,
+      "title": "рычаг кисти · узел плеча",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 рычаг кисти, узел плеча을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보의 상체 관절기는 크게 **레버(rычаг, \"지렛대\")**형과 **노트 (узел, \"매듭\")**형으로 나뉜다.",
+        "узел плеча의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__рычаг-кисти",
+        "sambo__узел-плеча"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__рычаг-локтя",
+        "sambo__рычаг-плеча"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 37,
+      "title": "узел плеча поперек · узел плеча ногой",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 узел плеча поперек, узел плеча ногой을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보의 상체 관절기는 크게 **레버(rычаг, \"지렛대\")**형과 **노트 (узел, \"매듭\")**형으로 나뉜다.",
+        "узел плеча ногой의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__узел-плеча-поперек",
+        "sambo__узел-плеча-ногой"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__рычаг-кисти",
+        "sambo__узел-плеча"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 38,
+      "title": "узел плеча обратный · 상완 이두근 압박",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 узел плеча обратный, ущемление двуглавой мышцы плеча을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보의 상체 관절기는 크게 **레버(rычаг, \"지렛대\")**형과 **노트 (узел, \"매듭\")**형으로 나뉜다.",
+        "상완 이두근 압박의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__узел-плеча-обратный",
+        "sambo__ущемление-двуглавой-мышцы-плеча"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__узел-плеча-поперек",
+        "sambo__узел-плеча-ногой"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 39,
+      "title": "상완 삼두근 압박 · рычаг стопы",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 ущемление трехглавой мышцы плеча, рычаг стопы을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보의 상체 관절기는 크게 **레버(rычаг, \"지렛대\")**형과 **노트 (узел, \"매듭\")**형으로 나뉜다.",
+        "삼보는 역사적으로 **레그락이 가장 발달한 그래플링 종목** 중 하나다."
+      ],
+      "techniqueIds": [
+        "sambo__ущемление-трехглавой-мышцы-плеча",
+        "sambo__рычаг-стопы"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__узел-плеча-обратный",
+        "sambo__ущемление-двуглавой-мышцы-плеча"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 40,
+      "title": "관절기 복습",
+      "description": "지금까지 배운 '관절기' 관련 기술을 다시 점검하고 몸에 익힙니다.",
+      "learningGoals": [
+        "관절기 구간에서 배운 기술들의 공통 원리를 스스로 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__узел-плеча-поперек",
+        "sambo__узел-плеча-ногой",
+        "sambo__узел-плеча-обратный",
+        "sambo__ущемление-двуглавой-мышцы-плеча",
+        "sambo__ущемление-трехглавой-мышцы-плеча",
+        "sambo__рычаг-стопы"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 45
+    },
+    {
+      "day": 41,
+      "title": "рычаг колена · рычаг бедра",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 рычаг колена, рычаг бедра을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보는 역사적으로 **레그락이 가장 발달한 그래플링 종목** 중 하나다.",
+        "рычаг бедра의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__рычаг-колена",
+        "sambo__рычаг-бедра"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__ущемление-трехглавой-мышцы-плеча",
+        "sambo__рычаг-стопы"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 42,
+      "title": "ущемление икроножной мышцы · двойной зацеп",
+      "description": "삼보의 강점인 상체·하체 관절기를 배웁니다. 관절기는 특히 부상 위험이 크므로 반드시 전문 지도자의 감독 아래 천천히, 파트너와 합의된 압력으로만 연습해야 합니다. 오늘은 ущемление икроножной мышцы, двойной зацеп을(를) 배웁니다.",
+      "learningGoals": [
+        "삼보는 역사적으로 **레그락이 가장 발달한 그래플링 종목** 중 하나다.",
+        "двойной зацеп의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__ущемление-икроножной-мышцы",
+        "sambo__двойной-зацеп"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__рычаг-колена",
+        "sambo__рычаг-бедра"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 43,
+      "title": "카운터와 컴뱃 삼보: Отхват/Подсечка Counter · Бросок через спину Counter",
+      "description": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다. 오늘은 Отхват/Подсечка Counter, Бросок через спину Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 \"상대가 기술을 걸어오는 그 순간의 무게중심 이동을 역이용\" 하는 것이다.",
+        "Бросок через спину Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__отхват-подсечка-counter",
+        "sambo__бросок-через-спину-counter"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 44,
+      "title": "허리기술 Counter, 다리걸기 Counter · 희생기술 Counter",
+      "description": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다. 오늘은 허리기술 Counter, 다리걸기 Counter, 희생기술 Counter을(를) 배웁니다.",
+      "learningGoals": [
+        "카운터는 \"상대가 기술을 걸어오는 그 순간의 무게중심 이동을 역이용\" 하는 것이다.",
+        "희생기술 Counter의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__허리기술-counter-다리걸기-counter",
+        "sambo__희생기술-counter"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__отхват-подсечка-counter",
+        "sambo__бросок-через-спину-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 45,
+      "title": "Jab, Cross, Hook, Uppercut · 부위 제한 있음",
+      "description": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다. 오늘은 Jab, Cross, Hook, Uppercut, Low Kick, Body Kick, 헤드킥을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경우에 한해:",
+        "부위 제한 있음의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__jab-cross-hook-uppercut",
+        "sambo__low-kick-body-kick-헤드킥"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__허리기술-counter-다리걸기-counter",
+        "sambo__희생기술-counter"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 46,
+      "title": "Knee, Elbow · Ground Striking",
+      "description": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다. 오늘은 Knee, Elbow, Ground Striking을(를) 배웁니다.",
+      "learningGoals": [
+        "규칙상 허용되는 경우에 한해:",
+        "Ground Striking의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__knee-elbow",
+        "sambo__ground-striking"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__jab-cross-hook-uppercut",
+        "sambo__low-kick-body-kick-헤드킥"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 47,
+      "title": "Удушающий прием · Rear Naked Choke, Guillot…",
+      "description": "카운터 기술과, 타격이 포함된 컴뱃 삼보 룰의 기술을 다룹니다. 오늘은 Удушающий прием / Удушающий захват, Rear Naked Choke, Guillotine, Front Headlock Choke, Arm Triangle, Collar Choke 계열을(를) 배웁니다.",
+      "learningGoals": [
+        "스포츠 삼보에서는 완전히 금지(경고 대상)이며, **컴뱃 삼보에서만** 허용된다.",
+        "Rear Naked Choke, Guillot…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "sambo__удушающий-прием-удушающий-захват",
+        "sambo__rear-naked-choke-guillotine-front-headlock-choke-arm-triangle-collar-choke-계열"
+      ],
+      "reviewTechniqueIds": [
+        "sambo__knee-elbow",
+        "sambo__ground-striking"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 48,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__스탠스",
+        "sambo__sleeve-grip-захват-за-рукав",
+        "sambo__single-leg-double-leg",
+        "sambo__передняя-подсечка",
+        "sambo__удержание-сбоку",
+        "sambo__guard-클로즈드-오픈-half-guard-turtle-defensive-shell",
+        "sambo__рычаг-локтя",
+        "sambo__отхват-подсечка-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 49,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__level-change-footwork-pivot-break-step",
+        "sambo__belt-grip-пояс-그립",
+        "sambo__fireman-s-carry",
+        "sambo__подсад",
+        "sambo__удержание-поперек",
+        "sambo__bridge-мост-hip-escape-sit-out-stand-up-granby-turn-in-frame-escape-back-escape",
+        "sambo__узел-плеча-поперек",
+        "sambo__희생기술-counter"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 50,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "sambo__밀어서-무너뜨리기",
+        "sambo__grip-break",
+        "sambo__single-leg-top-control-body-lock-throw-control",
+        "sambo__обратный",
+        "sambo__удержание-со-стороны-ног",
+        "sambo__guard-sweep-reversal-sit-up-sweep",
+        "sambo__рычаг-стопы",
+        "sambo__knee-elbow"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 86
+}

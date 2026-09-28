@@ -1,0 +1,943 @@
+{
+  "id": "official__judo",
+  "martialArt": "judo",
+  "title": "유도 추천 커리큘럼",
+  "subtitle": "Martialdex 추천 학습 순서",
+  "description": "기본 자세와 핵심 원리부터 그립, 손·발·허리기술, 던지기, 굳히기, 조르기·관절기, 카운터까지 이어지는 유도 학습 순서입니다.",
+  "source": "official",
+  "visibility": "public",
+  "authorName": "Martialdex",
+  "totalDays": 45,
+  "estimatedWeeks": 12,
+  "phases": [
+    {
+      "name": "기본 자세와 이동",
+      "blurb": "유도의 기본 자세(시젠혼타이)와 이동 방법을 익힙니다.",
+      "startDay": 1,
+      "endDay": 3
+    },
+    {
+      "name": "유도의 핵심 원리",
+      "blurb": "쿠즈시(무너뜨리기)·츠쿠리(만들기)·카케(걸기)라는 유도 던지기의 핵심 원리를 이해합니다.",
+      "startDay": 4,
+      "endDay": 5
+    },
+    {
+      "name": "잡기(그립)",
+      "blurb": "쿠미카타, 도복을 잡는 기본 그립을 배웁니다.",
+      "startDay": 6,
+      "endDay": 9
+    },
+    {
+      "name": "손기술",
+      "blurb": "손으로 상대를 들어 던지는 테와자 계열을 배웁니다.",
+      "startDay": 10,
+      "endDay": 13
+    },
+    {
+      "name": "발기술",
+      "blurb": "다리를 이용해 상대의 균형을 무너뜨리는 아시와자 계열을 배웁니다.",
+      "startDay": 14,
+      "endDay": 17
+    },
+    {
+      "name": "허리기술",
+      "blurb": "허리를 이용해 상대를 들어 던지는 코시와자 계열을 배웁니다. 낙법 없이 연습하면 부상 위험이 크므로 매트와 지도자 감독이 필요합니다.",
+      "startDay": 18,
+      "endDay": 20
+    },
+    {
+      "name": "누우며 던지기",
+      "blurb": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다.",
+      "startDay": 21,
+      "endDay": 25
+    },
+    {
+      "name": "연결과 변화 기술",
+      "blurb": "기술을 서로 연결하는 렌라쿠와자와 헨카와자를 배웁니다.",
+      "startDay": 26,
+      "endDay": 28
+    },
+    {
+      "name": "굳히기 (바닥 포지션)",
+      "blurb": "바닥에서 상대를 제압하는 오사에코미(굳히기)와 네와자 포지션을 배웁니다.",
+      "startDay": 29,
+      "endDay": 32
+    },
+    {
+      "name": "조르기와 관절기",
+      "blurb": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다.",
+      "startDay": 33,
+      "endDay": 38
+    },
+    {
+      "name": "탈출과 카운터",
+      "blurb": "불리한 상황에서 벗어나는 탈출과, 상대의 기술을 역이용하는 카에시와자(카운터)를 배웁니다.",
+      "startDay": 39,
+      "endDay": 42
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "기본 자세와 이동: 잡기 · 몸 돌리기 · 자연 본체",
+      "description": "유도의 기본 자세(시젠혼타이)와 이동 방법을 익힙니다. 오늘은 Kumi Kata, Tai Sabaki, Shizen Hontai을(를) 배웁니다.",
+      "learningGoals": [
+        "Shizen Hontai는 공격과 방어 모두에 유연하게 대응할 수 있는 중립 자세이며, Jigo Hontai는 무게중심을 낮춰 던지기를 방어하는 데 유리하지만 …",
+        "몸 돌리기의 기본 동작과 활용 상황을 이해한다.",
+        "자연 본체의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kumi-kata",
+        "judo__tai-sabaki",
+        "judo__shizen-hontai"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 2,
+      "title": "자유 본체 · 우/좌 자연 자세 · 보통 걸음",
+      "description": "유도의 기본 자세(시젠혼타이)와 이동 방법을 익힙니다. 오늘은 Jigo Hontai, Migi Shizentai / Hidari Shizentai, Ayumi Ashi을(를) 배웁니다.",
+      "learningGoals": [
+        "Shizen Hontai는 공격과 방어 모두에 유연하게 대응할 수 있는 중립 자세이며, Jigo Hontai는 무게중심을 낮춰 던지기를 방어하는 데 유리하지만 …",
+        "우/좌 자연 자세의 기본 동작과 활용 상황을 이해한다.",
+        "보통 걸음의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__jigo-hontai",
+        "judo__migi-shizentai-hidari-shizentai",
+        "judo__ayumi-ashi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__shizen-hontai"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 3,
+      "title": "미끄러지는 걸음",
+      "description": "유도의 기본 자세(시젠혼타이)와 이동 방법을 익힙니다. 오늘은 Tsugi Ashi을(를) 배웁니다.",
+      "learningGoals": [
+        "Shizen Hontai는 공격과 방어 모두에 유연하게 대응할 수 있는 중립 자세이며, Jigo Hontai는 무게중심을 낮춰 던지기를 방어하는 데 유리하지만 …"
+      ],
+      "techniqueIds": [
+        "judo__tsugi-ashi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__migi-shizentai-hidari-shizentai",
+        "judo__ayumi-ashi"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 4,
+      "title": "유도의 핵심 원리: 앞 · 오른쪽",
+      "description": "쿠즈시(무너뜨리기)·츠쿠리(만들기)·카케(걸기)라는 유도 던지기의 핵심 원리를 이해합니다. 오늘은 앞 (Mae) / 뒤, 오른쪽 (Migi) / 왼쪽을(를) 배웁니다.",
+      "learningGoals": [
+        "모든 던지기는 이론적으로 세 단계로 이루어진다.",
+        "오른쪽의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__앞-mae-뒤",
+        "judo__오른쪽-migi-왼쪽"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 5,
+      "title": "오른앞 · 오른뒤",
+      "description": "쿠즈시(무너뜨리기)·츠쿠리(만들기)·카케(걸기)라는 유도 던지기의 핵심 원리를 이해합니다. 오늘은 오른앞 (Migi-Mae) / 왼앞, 오른뒤 (Migi-Ushiro) / 왼뒤을(를) 배웁니다.",
+      "learningGoals": [
+        "모든 던지기는 이론적으로 세 단계로 이루어진다.",
+        "오른뒤의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__오른앞-migi-mae-왼앞",
+        "judo__오른뒤-migi-ushiro-왼뒤"
+      ],
+      "reviewTechniqueIds": [
+        "judo__앞-mae-뒤",
+        "judo__오른쪽-migi-왼쪽"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 6,
+      "title": "잡기(그립): 소매+깃 · 소매 그립 · 깃 그립",
+      "description": "쿠미카타, 도복을 잡는 기본 그립을 배웁니다. 오늘은 Standard Grip, Sleeve Grip, Lapel Grip을(를) 배웁니다.",
+      "learningGoals": [
+        "Kumi Kata는 모든 던지기의 Kuzushi 1단계다.",
+        "소매 그립의 기본 동작과 활용 상황을 이해한다.",
+        "깃 그립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__standard-grip",
+        "judo__sleeve-grip",
+        "judo__lapel-grip"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 7,
+      "title": "교차 그립 · 같은 쪽 그립 · 허리띠 그립",
+      "description": "쿠미카타, 도복을 잡는 기본 그립을 배웁니다. 오늘은 Cross Grip, Same-Side Grip, Belt Grip을(를) 배웁니다.",
+      "learningGoals": [
+        "Kumi Kata는 모든 던지기의 Kuzushi 1단계다.",
+        "같은 쪽 그립의 기본 동작과 활용 상황을 이해한다.",
+        "허리띠 그립의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__cross-grip",
+        "judo__same-side-grip",
+        "judo__belt-grip"
+      ],
+      "reviewTechniqueIds": [
+        "judo__lapel-grip"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 8,
+      "title": "한쪽 팔을 양손으로 제어 · 팔을 감아 당기는 그립 · Overhook",
+      "description": "쿠미카타, 도복을 잡는 기본 그립을 배웁니다. 오늘은 Two-on-One, Russian-style Grip, Overhook / Underhook을(를) 배웁니다.",
+      "learningGoals": [
+        "Kumi Kata는 모든 던지기의 Kuzushi 1단계다.",
+        "팔을 감아 당기는 그립의 기본 동작과 활용 상황을 이해한다.",
+        "Overhook의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__two-on-one",
+        "judo__russian-style-grip",
+        "judo__overhook-underhook"
+      ],
+      "reviewTechniqueIds": [
+        "judo__belt-grip"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 9,
+      "title": "그립 끊기 · Kumi Kata 다툼",
+      "description": "쿠미카타, 도복을 잡는 기본 그립을 배웁니다. 오늘은 Grip Break, Grip Fighting을(를) 배웁니다.",
+      "learningGoals": [
+        "Kumi Kata는 모든 던지기의 Kuzushi 1단계다.",
+        "Kumi Kata 다툼의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__grip-break",
+        "judo__grip-fighting"
+      ],
+      "reviewTechniqueIds": [
+        "judo__russian-style-grip",
+        "judo__overhook-underhook"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 10,
+      "title": "손기술: 등 던지기 · 한팔 등 던지기 · 양손 등 던지기",
+      "description": "손으로 상대를 들어 던지는 테와자 계열을 배웁니다. 오늘은 Seoi Nage, Ippon Seoi Nage, Morote Seoi Nage을(를) 배웁니다.",
+      "learningGoals": [
+        "Te Waza는 대부분 **앞쪽 Kuzushi**(상대를 자기 앞으로 끌어당겨 무너뜨림)를 기반으로 한다.",
+        "한팔 등 던지기의 기본 동작과 활용 상황을 이해한다.",
+        "양손 등 던지기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__seoi-nage",
+        "judo__ippon-seoi-nage",
+        "judo__morote-seoi-nage"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 11,
+      "title": "등 떨어뜨리기 · 몸 떨어뜨리기 · 어깨 바퀴",
+      "description": "손으로 상대를 들어 던지는 테와자 계열을 배웁니다. 오늘은 Seoi Otoshi, Tai Otoshi, Kata Guruma을(를) 배웁니다.",
+      "learningGoals": [
+        "Te Waza는 대부분 **앞쪽 Kuzushi**(상대를 자기 앞으로 끌어당겨 무너뜨림)를 기반으로 한다.",
+        "몸 떨어뜨리기의 기본 동작과 활용 상황을 이해한다.",
+        "어깨 바퀴의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__seoi-otoshi",
+        "judo__tai-otoshi",
+        "judo__kata-guruma"
+      ],
+      "reviewTechniqueIds": [
+        "judo__morote-seoi-nage"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 12,
+      "title": "퍼올려 던지기 · 뜬 떨어뜨리기 · 구석 떨어뜨리기",
+      "description": "손으로 상대를 들어 던지는 테와자 계열을 배웁니다. 오늘은 Sukui Nage, Uki Otoshi, Sumi Otoshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Te Waza는 대부분 **앞쪽 Kuzushi**(상대를 자기 앞으로 끌어당겨 무너뜨림)를 기반으로 한다.",
+        "뜬 떨어뜨리기의 기본 동작과 활용 상황을 이해한다.",
+        "구석 떨어뜨리기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__sukui-nage",
+        "judo__uki-otoshi",
+        "judo__sumi-otoshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kata-guruma"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 13,
+      "title": "허리띠 떨어뜨리기 · 마른나무 쓰러뜨리기",
+      "description": "손으로 상대를 들어 던지는 테와자 계열을 배웁니다. 오늘은 Obi Otoshi, Kuchiki Daoshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Te Waza는 대부분 **앞쪽 Kuzushi**(상대를 자기 앞으로 끌어당겨 무너뜨림)를 기반으로 한다.",
+        "마른나무 쓰러뜨리기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__obi-otoshi",
+        "judo__kuchiki-daoshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__uki-otoshi",
+        "judo__sumi-otoshi"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 14,
+      "title": "발기술: 전진하는 발 후리기 · 무릎 바퀴 · 다리 지지 끌어당겨 걸기",
+      "description": "다리를 이용해 상대의 균형을 무너뜨리는 아시와자 계열을 배웁니다. 오늘은 De Ashi Barai, Hiza Guruma, Sasae Tsurikomi Ashi을(를) 배웁니다.",
+      "learningGoals": [
+        "Ashi Waza는 대체로 **상대의 발이 움직이는 순간의 순간적 Kuzushi**를 이용한다.",
+        "무릎 바퀴의 기본 동작과 활용 상황을 이해한다.",
+        "다리 지지 끌어당겨 걸기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__de-ashi-barai",
+        "judo__hiza-guruma",
+        "judo__sasae-tsurikomi-ashi"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 15,
+      "title": "큰 바깥 베기 · 큰 안 베기 · 큰 바깥 떨어뜨리기",
+      "description": "다리를 이용해 상대의 균형을 무너뜨리는 아시와자 계열을 배웁니다. 오늘은 Osoto Gari, Ouchi Gari, Osoto Otoshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Ashi Waza는 대체로 **상대의 발이 움직이는 순간의 순간적 Kuzushi**를 이용한다.",
+        "큰 안 베기의 기본 동작과 활용 상황을 이해한다.",
+        "큰 바깥 떨어뜨리기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__osoto-gari",
+        "judo__ouchi-gari",
+        "judo__osoto-otoshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__sasae-tsurikomi-ashi"
+      ],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 16,
+      "title": "큰 바깥 바퀴 · 작은 안 베기 · 작은 바깥 베기",
+      "description": "다리를 이용해 상대의 균형을 무너뜨리는 아시와자 계열을 배웁니다. 오늘은 Osoto Guruma, Kouchi Gari, Kosoto Gari을(를) 배웁니다.",
+      "learningGoals": [
+        "Ashi Waza는 대체로 **상대의 발이 움직이는 순간의 순간적 Kuzushi**를 이용한다.",
+        "작은 안 베기의 기본 동작과 활용 상황을 이해한다.",
+        "작은 바깥 베기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__osoto-guruma",
+        "judo__kouchi-gari",
+        "judo__kosoto-gari"
+      ],
+      "reviewTechniqueIds": [
+        "judo__osoto-otoshi"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 17,
+      "title": "작은 바깥 걸기",
+      "description": "다리를 이용해 상대의 균형을 무너뜨리는 아시와자 계열을 배웁니다. 오늘은 Kosoto Gake을(를) 배웁니다.",
+      "learningGoals": [
+        "Ashi Waza는 대체로 **상대의 발이 움직이는 순간의 순간적 Kuzushi**를 이용한다."
+      ],
+      "techniqueIds": [
+        "judo__kosoto-gake"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kouchi-gari",
+        "judo__kosoto-gari"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 18,
+      "title": "허리기술: 큰 허리 · 허리 바퀴 · 뜬 허리",
+      "description": "허리를 이용해 상대를 들어 던지는 코시와자 계열을 배웁니다. 낙법 없이 연습하면 부상 위험이 크므로 매트와 지도자 감독이 필요합니다. 오늘은 O Goshi, Koshi Guruma, Uki Goshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Koshi Waza는 상대의 몸통을 자신의 허리 위에 얹어 회전시키는 기술군으로, 대부분 **앞쪽 또는 앞대각선 Kuzushi** 상태에서 성립한다.",
+        "허리 바퀴의 기본 동작과 활용 상황을 이해한다.",
+        "뜬 허리의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__o-goshi",
+        "judo__koshi-guruma",
+        "judo__uki-goshi"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 19,
+      "title": "소매 끌어올려 당기는 허리 · 들어올리는 허리 · 후리기 허리",
+      "description": "허리를 이용해 상대를 들어 던지는 코시와자 계열을 배웁니다. 낙법 없이 연습하면 부상 위험이 크므로 매트와 지도자 감독이 필요합니다. 오늘은 Sode Tsurikomi Goshi, Tsuri Goshi, Harai Goshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Koshi Waza는 상대의 몸통을 자신의 허리 위에 얹어 회전시키는 기술군으로, 대부분 **앞쪽 또는 앞대각선 Kuzushi** 상태에서 성립한다.",
+        "들어올리는 허리의 기본 동작과 활용 상황을 이해한다.",
+        "후리기 허리의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__sode-tsurikomi-goshi",
+        "judo__tsuri-goshi",
+        "judo__harai-goshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__uki-goshi"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 20,
+      "title": "튀는 허리 · 허벅다리 걸기 · 옮기는 허리",
+      "description": "허리를 이용해 상대를 들어 던지는 코시와자 계열을 배웁니다. 낙법 없이 연습하면 부상 위험이 크므로 매트와 지도자 감독이 필요합니다. 오늘은 Hane Goshi, Uchi Mata, Utsuri Goshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Koshi Waza는 상대의 몸통을 자신의 허리 위에 얹어 회전시키는 기술군으로, 대부분 **앞쪽 또는 앞대각선 Kuzushi** 상태에서 성립한다.",
+        "허벅다리 걸기의 기본 동작과 활용 상황을 이해한다.",
+        "옮기는 허리의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__hane-goshi",
+        "judo__uchi-mata",
+        "judo__utsuri-goshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__harai-goshi"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 21,
+      "title": "누우며 던지기: 옆 바퀴 · 옆으로 가르기 · 옆으로 걸기",
+      "description": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다. 오늘은 Yoko Guruma, Yoko Wakare, Yoko Gake을(를) 배웁니다.",
+      "learningGoals": [
+        "Makikomi 계열(Osoto Makikomi, Uchi Makikomi, Harai Makikomi, Hane Makikomi, Uchi Mata Makik…",
+        "옆으로 가르기의 기본 동작과 활용 상황을 이해한다.",
+        "옆으로 걸기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__yoko-guruma",
+        "judo__yoko-wakare",
+        "judo__yoko-gake"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 22,
+      "title": "뜬 기술 · 골짜기 떨어뜨리기",
+      "description": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다. 오늘은 Uki Waza, Tani Otoshi을(를) 배웁니다.",
+      "learningGoals": [
+        "Makikomi 계열(Osoto Makikomi, Uchi Makikomi, Harai Makikomi, Hane Makikomi, Uchi Mata Makik…",
+        "골짜기 떨어뜨리기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__uki-waza",
+        "judo__tani-otoshi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__yoko-wakare",
+        "judo__yoko-gake"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 23,
+      "title": "안아 가르기 · 큰 바깥 감아던지기 · 안 감아던지기",
+      "description": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다. 오늘은 Daki Wakare, Osoto Makikomi, Uchi Makikomi을(를) 배웁니다.",
+      "learningGoals": [
+        "Makikomi 계열(Osoto Makikomi, Uchi Makikomi, Harai Makikomi, Hane Makikomi, Uchi Mata Makik…",
+        "큰 바깥 감아던지기의 기본 동작과 활용 상황을 이해한다.",
+        "안 감아던지기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__daki-wakare",
+        "judo__osoto-makikomi",
+        "judo__uchi-makikomi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__tani-otoshi"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 24,
+      "title": "후리기 감아던지기 · 튀는 감아던지기",
+      "description": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다. 오늘은 Harai Makikomi, Hane Makikomi을(를) 배웁니다.",
+      "learningGoals": [
+        "Makikomi 계열(Osoto Makikomi, Uchi Makikomi, Harai Makikomi, Hane Makikomi, Uchi Mata Makik…",
+        "튀는 감아던지기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__harai-makikomi",
+        "judo__hane-makikomi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__osoto-makikomi",
+        "judo__uchi-makikomi"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 25,
+      "title": "허벅다리 감아던지기",
+      "description": "스스로 누우면서 던지는 스테미와자 계열을 배웁니다. 오늘은 Uchi Mata Makikomi을(를) 배웁니다.",
+      "learningGoals": [
+        "Makikomi 계열(Osoto Makikomi, Uchi Makikomi, Harai Makikomi, Hane Makikomi, Uchi Mata Makik…"
+      ],
+      "techniqueIds": [
+        "judo__uchi-mata-makikomi"
+      ],
+      "reviewTechniqueIds": [
+        "judo__harai-makikomi",
+        "judo__hane-makikomi"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 26,
+      "title": "연결과 변화 기술: Ouchi Gari → Uchi Mata · Ouchi Gari → Seoi Nage · Kouchi Gari → Seoi Nage",
+      "description": "기술을 서로 연결하는 렌라쿠와자와 헨카와자를 배웁니다. 오늘은 Ouchi Gari → Uchi Mata, Ouchi Gari → Seoi Nage, Kouchi Gari → Seoi Nage을(를) 배웁니다.",
+      "learningGoals": [
+        "Renraku Waza는 첫 기술이 상대의 Kuzushi를 완전히 무너뜨리지 못했지만 **같은 방향으로 몸을 계속 밀어붙이는** 반응을 이끌어낸 경우에 성립한다.",
+        "Ouchi Gari → Seoi Nage의 기본 동작과 활용 상황을 이해한다.",
+        "Kouchi Gari → Seoi Nage의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__ouchi-gari-uchi-mata",
+        "judo__ouchi-gari-seoi-nage",
+        "judo__kouchi-gari-seoi-nage"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 27,
+      "title": "Kouchi Gari → Tai Otoshi · Osoto Gari → Uchi Mata · Osoto Gari → Ouchi Gari",
+      "description": "기술을 서로 연결하는 렌라쿠와자와 헨카와자를 배웁니다. 오늘은 Kouchi Gari → Tai Otoshi, Osoto Gari → Uchi Mata, Osoto Gari → Ouchi Gari을(를) 배웁니다.",
+      "learningGoals": [
+        "Renraku Waza는 첫 기술이 상대의 Kuzushi를 완전히 무너뜨리지 못했지만 **같은 방향으로 몸을 계속 밀어붙이는** 반응을 이끌어낸 경우에 성립한다.",
+        "Osoto Gari → Uchi Mata의 기본 동작과 활용 상황을 이해한다.",
+        "Osoto Gari → Ouchi Gari의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kouchi-gari-tai-otoshi",
+        "judo__osoto-gari-uchi-mata",
+        "judo__osoto-gari-ouchi-gari"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kouchi-gari-seoi-nage"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 28,
+      "title": "De Ashi Barai → Sasae Tsu… · Sasae Tsurikomi Ashi → Os…",
+      "description": "기술을 서로 연결하는 렌라쿠와자와 헨카와자를 배웁니다. 오늘은 De Ashi Barai → Sasae Tsurikomi Ashi, Sasae Tsurikomi Ashi → Osoto Gari을(를) 배웁니다.",
+      "learningGoals": [
+        "Renraku Waza는 첫 기술이 상대의 Kuzushi를 완전히 무너뜨리지 못했지만 **같은 방향으로 몸을 계속 밀어붙이는** 반응을 이끌어낸 경우에 성립한다.",
+        "Sasae Tsurikomi Ashi → Os…의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__de-ashi-barai-sasae-tsurikomi-ashi",
+        "judo__sasae-tsurikomi-ashi-osoto-gari"
+      ],
+      "reviewTechniqueIds": [
+        "judo__osoto-gari-uchi-mata",
+        "judo__osoto-gari-ouchi-gari"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 29,
+      "title": "굳히기 (바닥 포지션): Kesa Gatame · Kuzure Kesa Gatame · Kata Gatame",
+      "description": "바닥에서 상대를 제압하는 오사에코미(굳히기)와 네와자 포지션을 배웁니다. 오늘은 Kesa Gatame, Kuzure Kesa Gatame, Kata Gatame을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기가 성공한 직후, 혹은 서로 네와자로 끌려들어간 직후 어떤 굳히기 자세로 들어가는지는 상대가 쓰러진 방향과 상대의 팔 위치에 따라 결정된다.",
+        "Kuzure Kesa Gatame의 기본 동작과 활용 상황을 이해한다.",
+        "Kata Gatame의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kesa-gatame",
+        "judo__kuzure-kesa-gatame",
+        "judo__kata-gatame"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 30,
+      "title": "Kami Shiho Gatame · Kuzure Kami Shiho Gatame · Yoko Shiho Gatame",
+      "description": "바닥에서 상대를 제압하는 오사에코미(굳히기)와 네와자 포지션을 배웁니다. 오늘은 Kami Shiho Gatame, Kuzure Kami Shiho Gatame, Yoko Shiho Gatame을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기가 성공한 직후, 혹은 서로 네와자로 끌려들어간 직후 어떤 굳히기 자세로 들어가는지는 상대가 쓰러진 방향과 상대의 팔 위치에 따라 결정된다.",
+        "Kuzure Kami Shiho Gatame의 기본 동작과 활용 상황을 이해한다.",
+        "Yoko Shiho Gatame의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kami-shiho-gatame",
+        "judo__kuzure-kami-shiho-gatame",
+        "judo__yoko-shiho-gatame"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kata-gatame"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 31,
+      "title": "Tate Shiho Gatame · Kuzure Tate Shiho Gatame · Mount",
+      "description": "바닥에서 상대를 제압하는 오사에코미(굳히기)와 네와자 포지션을 배웁니다. 오늘은 Tate Shiho Gatame, Kuzure Tate Shiho Gatame, Mount을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기가 성공한 직후, 혹은 서로 네와자로 끌려들어간 직후 어떤 굳히기 자세로 들어가는지는 상대가 쓰러진 방향과 상대의 팔 위치에 따라 결정된다.",
+        "Kuzure Tate Shiho Gatame의 기본 동작과 활용 상황을 이해한다.",
+        "Mount의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__tate-shiho-gatame",
+        "judo__kuzure-tate-shiho-gatame",
+        "judo__mount"
+      ],
+      "reviewTechniqueIds": [
+        "judo__yoko-shiho-gatame"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 32,
+      "title": "뒤 제어",
+      "description": "바닥에서 상대를 제압하는 오사에코미(굳히기)와 네와자 포지션을 배웁니다. 오늘은 Back Control을(를) 배웁니다.",
+      "learningGoals": [
+        "던지기가 성공한 직후, 혹은 서로 네와자로 끌려들어간 직후 어떤 굳히기 자세로 들어가는지는 상대가 쓰러진 방향과 상대의 팔 위치에 따라 결정된다."
+      ],
+      "techniqueIds": [
+        "judo__back-control"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kuzure-tate-shiho-gatame",
+        "judo__mount"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 33,
+      "title": "조르기와 관절기: 맨손 조르기 · 보내는 깃 조르기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Hadaka Jime, Okuri Eri Jime을(를) 배웁니다.",
+      "learningGoals": [
+        "조르기는 상대의 목이 그립이나 도복 깃을 통해 노출되는 순간에 성립한다.",
+        "보내는 깃 조르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__hadaka-jime",
+        "judo__okuri-eri-jime"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 34,
+      "title": "한쪽 어깨 조르기 · 한쪽 십자 조르기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Kata Ha Jime, Kata Juji Jime을(를) 배웁니다.",
+      "learningGoals": [
+        "조르기는 상대의 목이 그립이나 도복 깃을 통해 노출되는 순간에 성립한다.",
+        "한쪽 십자 조르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kata-ha-jime",
+        "judo__kata-juji-jime"
+      ],
+      "reviewTechniqueIds": [
+        "judo__hadaka-jime",
+        "judo__okuri-eri-jime"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 35,
+      "title": "역십자 조르기 · 보통 십자 조르기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Gyaku Juji Jime, Nami Juji Jime을(를) 배웁니다.",
+      "learningGoals": [
+        "조르기는 상대의 목이 그립이나 도복 깃을 통해 노출되는 순간에 성립한다.",
+        "보통 십자 조르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__gyaku-juji-jime",
+        "judo__nami-juji-jime"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kata-ha-jime",
+        "judo__kata-juji-jime"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 36,
+      "title": "삼각 조르기 · 소매 바퀴 조르기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Sankaku Jime, Sode Guruma Jime을(를) 배웁니다.",
+      "learningGoals": [
+        "조르기는 상대의 목이 그립이나 도복 깃을 통해 노출되는 순간에 성립한다.",
+        "소매 바퀴 조르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__sankaku-jime",
+        "judo__sode-guruma-jime"
+      ],
+      "reviewTechniqueIds": [
+        "judo__gyaku-juji-jime",
+        "judo__nami-juji-jime"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 37,
+      "title": "양손 조르기 · 찔러 넣는 조르기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Ryote Jime, Tsukkomi Jime을(를) 배웁니다.",
+      "learningGoals": [
+        "조르기는 상대의 목이 그립이나 도복 깃을 통해 노출되는 순간에 성립한다.",
+        "찔러 넣는 조르기의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__ryote-jime",
+        "judo__tsukkomi-jime"
+      ],
+      "reviewTechniqueIds": [
+        "judo__sankaku-jime",
+        "judo__sode-guruma-jime"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 38,
+      "title": "십자 굳히기",
+      "description": "시메와자(조르기)와 칸세츠와자(관절기)를 배웁니다. 조르기·관절기는 부상 위험이 매우 커 반드시 지도자의 감독과 파트너의 탭 신호 확인이 필요합니다. 오늘은 Juji Gatame을(를) 배웁니다.",
+      "learningGoals": [
+        "경기에서 대표적으로 허용되는 팔꿈치 관절기:"
+      ],
+      "techniqueIds": [
+        "judo__juji-gatame"
+      ],
+      "reviewTechniqueIds": [
+        "judo__ryote-jime",
+        "judo__tsukkomi-jime"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 35
+    },
+    {
+      "day": 39,
+      "title": "탈출과 카운터: Bridge · Hip Escape · Shrimp",
+      "description": "불리한 상황에서 벗어나는 탈출과, 상대의 기술을 역이용하는 카에시와자(카운터)를 배웁니다. 오늘은 Bridge, Hip Escape, Shrimp을(를) 배웁니다.",
+      "learningGoals": [
+        "탈출은 굳히기가 완전히 고정되기 전(Osaekomi 선언 직후 1~2초, 아직 컨트롤이 확고하지 않은 순간)이 가장 성공률이 높다.",
+        "Hip Escape의 기본 동작과 활용 상황을 이해한다.",
+        "Shrimp의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__bridge",
+        "judo__hip-escape",
+        "judo__shrimp"
+      ],
+      "reviewTechniqueIds": [],
+      "difficulty": "beginner",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 40,
+      "title": "Turn-In · Frame · Guard Recovery",
+      "description": "불리한 상황에서 벗어나는 탈출과, 상대의 기술을 역이용하는 카에시와자(카운터)를 배웁니다. 오늘은 Turn-In, Frame, Guard Recovery을(를) 배웁니다.",
+      "learningGoals": [
+        "탈출은 굳히기가 완전히 고정되기 전(Osaekomi 선언 직후 1~2초, 아직 컨트롤이 확고하지 않은 순간)이 가장 성공률이 높다.",
+        "Frame의 기본 동작과 활용 상황을 이해한다.",
+        "Guard Recovery의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__turn-in",
+        "judo__frame",
+        "judo__guard-recovery"
+      ],
+      "reviewTechniqueIds": [
+        "judo__shrimp"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 41,
+      "title": "Turtle Recovery · Kesa Escape · Yoko Shiho Escape",
+      "description": "불리한 상황에서 벗어나는 탈출과, 상대의 기술을 역이용하는 카에시와자(카운터)를 배웁니다. 오늘은 Turtle Recovery, Kesa Escape, Yoko Shiho Escape을(를) 배웁니다.",
+      "learningGoals": [
+        "탈출은 굳히기가 완전히 고정되기 전(Osaekomi 선언 직후 1~2초, 아직 컨트롤이 확고하지 않은 순간)이 가장 성공률이 높다.",
+        "Kesa Escape의 기본 동작과 활용 상황을 이해한다.",
+        "Yoko Shiho Escape의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__turtle-recovery",
+        "judo__kesa-escape",
+        "judo__yoko-shiho-escape"
+      ],
+      "reviewTechniqueIds": [
+        "judo__guard-recovery"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 65
+    },
+    {
+      "day": 42,
+      "title": "Kami Shiho Escape · Tate Shiho Escape",
+      "description": "불리한 상황에서 벗어나는 탈출과, 상대의 기술을 역이용하는 카에시와자(카운터)를 배웁니다. 오늘은 Kami Shiho Escape, Tate Shiho Escape을(를) 배웁니다.",
+      "learningGoals": [
+        "탈출은 굳히기가 완전히 고정되기 전(Osaekomi 선언 직후 1~2초, 아직 컨트롤이 확고하지 않은 순간)이 가장 성공률이 높다.",
+        "Tate Shiho Escape의 기본 동작과 활용 상황을 이해한다."
+      ],
+      "techniqueIds": [
+        "judo__kami-shiho-escape",
+        "judo__tate-shiho-escape"
+      ],
+      "reviewTechniqueIds": [
+        "judo__kesa-escape",
+        "judo__yoko-shiho-escape"
+      ],
+      "difficulty": "advanced",
+      "estimatedMinutes": 50
+    },
+    {
+      "day": 43,
+      "title": "종합 복습 1/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "judo__kumi-kata",
+        "judo__앞-mae-뒤",
+        "judo__standard-grip",
+        "judo__seoi-nage",
+        "judo__de-ashi-barai",
+        "judo__o-goshi",
+        "judo__yoko-guruma",
+        "judo__ouchi-gari-uchi-mata",
+        "judo__kesa-gatame",
+        "judo__hadaka-jime",
+        "judo__bridge"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 44,
+      "title": "종합 복습 2/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "judo__shizen-hontai",
+        "judo__오른쪽-migi-왼쪽",
+        "judo__cross-grip",
+        "judo__seoi-otoshi",
+        "judo__osoto-gari",
+        "judo__sode-tsurikomi-goshi",
+        "judo__uki-waza",
+        "judo__kouchi-gari-seoi-nage",
+        "judo__kami-shiho-gatame",
+        "judo__kata-juji-jime",
+        "judo__turn-in"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    },
+    {
+      "day": 45,
+      "title": "종합 복습 3/3",
+      "description": "지금까지 배운 전체 과정을 종합적으로 복습하며 기술 사이의 연결과 흐름을 다시 정리합니다.",
+      "learningGoals": [
+        "전체 커리큘럼에서 배운 핵심 기술들이 어떤 상황에서 서로 연결되는지 설명할 수 있다."
+      ],
+      "techniqueIds": [],
+      "reviewTechniqueIds": [
+        "judo__migi-shizentai-hidari-shizentai",
+        "judo__오른앞-migi-mae-왼앞",
+        "judo__russian-style-grip",
+        "judo__uki-otoshi",
+        "judo__osoto-guruma",
+        "judo__hane-goshi",
+        "judo__uchi-makikomi",
+        "judo__osoto-gari-ouchi-gari",
+        "judo__tate-shiho-gatame",
+        "judo__sode-guruma-jime",
+        "judo__kesa-escape"
+      ],
+      "difficulty": "intermediate",
+      "estimatedMinutes": 30
+    }
+  ],
+  "techniqueCount": 103
+}

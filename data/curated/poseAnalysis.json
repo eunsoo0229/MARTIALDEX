@@ -1,0 +1,163 @@
+{
+  "boxing__jab": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip", "leftKnee", "rightKnee"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 170, "tolerance": 45 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 15, "tolerance": 30 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "boxing__cross": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip", "leftKnee", "rightKnee"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 170, "tolerance": 45 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 30, "tolerance": 30 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "boxing__hook": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 90, "tolerance": 40 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 35, "tolerance": 35 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "boxing__uppercut": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 100, "tolerance": 40 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 20, "tolerance": 30 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "boxing__high-guard": {
+    "supported": true,
+    "requiredLandmarks": ["nose", "leftShoulder", "rightShoulder", "leftWrist", "rightWrist", "leftHip", "rightHip", "leftKnee", "rightKnee"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "가드 손 위치", "params": { "mode": "guard", "tolerance": 0.18 } },
+      { "id": "headPosition", "name": "머리 정렬" },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "kickboxing__jab": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip", "leftKnee", "rightKnee"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 170, "tolerance": 45 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 15, "tolerance": 30 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "kickboxing__cross": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftElbow", "rightElbow", "leftWrist", "rightWrist", "leftHip", "rightHip", "leftKnee", "rightKnee"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세" },
+      { "id": "armPosition", "name": "팔 위치", "params": { "targetAngle": 170, "tolerance": 45 } },
+      { "id": "rotation", "name": "몸통 회전", "params": { "targetRotation": 30, "tolerance": 30 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "kickboxing__round-kick": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "hipRotation", "name": "골반 회전", "params": { "targetRotation": 45, "tolerance": 40 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임" }
+    ]
+  },
+  "kickboxing__front-kick": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.8, "tolerance": 0.5 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임", "params": { "targetDisplacement": 1.4, "tolerance": 1.0 } }
+    ]
+  },
+  "muay-thai__teep-to-leg": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임", "params": { "targetDisplacement": 1.3, "tolerance": 1.0 } }
+    ]
+  },
+  "muay-thai__lead-round-kick-rear-round-kick": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "hipRotation", "name": "골반 회전", "params": { "targetRotation": 50, "tolerance": 40 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임" }
+    ]
+  },
+  "taekwondo__앞차기": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.8, "tolerance": 0.5 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임", "params": { "targetDisplacement": 1.4, "tolerance": 1.0 } }
+    ]
+  },
+  "taekwondo__돌려차기": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "hipRotation", "name": "골반 회전", "params": { "targetRotation": 50, "tolerance": 40 } },
+      { "id": "legMovement", "name": "다리의 움직임" }
+    ]
+  },
+  "wrestling__wrestling-stance": {
+    "supported": true,
+    "requiredLandmarks": ["nose", "leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "basicStance", "name": "기본 자세", "params": { "targetAngle": 145, "tolerance": 35 } },
+      { "id": "balance", "name": "균형" },
+      { "id": "headPosition", "name": "머리 위치" }
+    ]
+  },
+  "wrestling__level-change": {
+    "supported": true,
+    "requiredLandmarks": ["nose", "leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "levelChange", "name": "레벨 체인지 폭" },
+      { "id": "basicStance", "name": "하단 자세", "params": { "targetAngle": 130, "tolerance": 35 } },
+      { "id": "headPosition", "name": "머리 위치" },
+      { "id": "balance", "name": "균형" }
+    ]
+  },
+  "wrestling__penetration-step": {
+    "supported": true,
+    "requiredLandmarks": ["nose", "leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "levelChange", "name": "레벨 체인지 폭" },
+      { "id": "legMovement", "name": "전진 스텝 크기", "params": { "targetDisplacement": 1.0, "tolerance": 0.9 } },
+      { "id": "basicStance", "name": "하단 자세", "params": { "targetAngle": 130, "tolerance": 35 } },
+      { "id": "balance", "name": "균형" }
+    ]
+  }
+}

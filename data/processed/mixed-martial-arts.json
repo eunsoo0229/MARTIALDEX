@@ -1,0 +1,877 @@
+{
+  "martialArt": {
+    "id": "mixed-martial-arts",
+    "nameEn": "MMA (Mixed Martial Arts)",
+    "nameKo": "MMA"
+  },
+  "count": 30,
+  "techniques": [
+    {
+      "id": "mixed-martial-arts__range-management",
+      "martialArt": "mixed-martial-arts",
+      "name": "Range Management",
+      "koreanName": "거리 관리",
+      "aliases": [],
+      "category": "스트라이킹 (Striking)",
+      "positions": [
+        "스트라이킹 (Striking)"
+      ],
+      "description": "타격, 클린치, 테이크다운 세 가지 위협이 동시에 존재하는 MMA 특유의 거리에서 상대와의 간격을 조절하는 기본 기술. 복싱보다 조금 더 먼 거리를 유지해 로우킥과 테이크다운 진입을 동시에 방어할 수 있는 자세를 취한다.",
+      "purpose": "타격/클린치/테이크다운 위협에 동시에 대응할 수 있는 기본 간격을 만든다.",
+      "principles": [
+        "복싱보다 약간 넓은 스탠스로 로우킥에 대비한다",
+        "체중을 양발에 분산해 테이크다운 스프롤을 준비한다"
+      ],
+      "variations": [
+        "케이지를 등지지 않는 사이드 스텝 거리 조절"
+      ],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:스트라이킹 (Striking)"
+      ],
+      "youtubeSearchQuery": "MMA Range Management technique"
+    },
+    {
+      "id": "mixed-martial-arts__check-hook",
+      "martialArt": "mixed-martial-arts",
+      "name": "Check Hook",
+      "koreanName": "체크훅",
+      "aliases": [],
+      "category": "스트라이킹 (Striking)",
+      "positions": [
+        "스트라이킹 (Striking)"
+      ],
+      "description": "상대가 전진하거나 테이크다운을 위해 파고들 때, 축을 살짝 회전시키며 던지는 훅으로 상대의 전진 라인을 차단하고 각도를 만든다. 복싱 기술이지만 MMA에서는 테이크다운 진입에 대한 카운터로 특히 자주 쓰인다.",
+      "purpose": "상대의 전진/레벨체인지 타이밍에 맞춰 각도를 만들며 카운터한다.",
+      "principles": [
+        "상대가 전진하는 순간 뒷발을 축으로 45도 회전한다"
+      ],
+      "variations": [],
+      "counters": [
+        "level-change-double-leg 시도 타이밍에 사용"
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__level-change-double-leg"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:스트라이킹 (Striking)"
+      ],
+      "youtubeSearchQuery": "MMA Check Hook technique"
+    },
+    {
+      "id": "mixed-martial-arts__spinning-backfist",
+      "martialArt": "mixed-martial-arts",
+      "name": "Spinning Backfist",
+      "koreanName": "스피닝 백핏",
+      "aliases": [],
+      "category": "스트라이킹 (Striking)",
+      "positions": [
+        "스트라이킹 (Striking)"
+      ],
+      "description": "상대의 예상을 깨기 위해 회전하며 던지는 변칙 타격. 명중률은 낮지만 거리를 좁히거나 흐름을 끊는 용도로 사용된다.",
+      "purpose": "예측 불가능한 각도로 상대의 리듬을 끊는다.",
+      "principles": [
+        "회전 중 시야가 사라지는 순간이 짧아야 한다"
+      ],
+      "variations": [],
+      "counters": [
+        "회전 종료 직후 테이크다운 진입에 취약"
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:스트라이킹 (Striking)"
+      ],
+      "youtubeSearchQuery": "MMA Spinning Backfist technique"
+    },
+    {
+      "id": "mixed-martial-arts__mma-boxing-combination",
+      "martialArt": "mixed-martial-arts",
+      "name": "MMA Boxing Combination",
+      "koreanName": "MMA 복싱 콤비네이션",
+      "aliases": [],
+      "category": "MMA 복싱",
+      "positions": [
+        "MMA 복싱"
+      ],
+      "description": "잽-크로스-훅 등 복싱 콤비네이션을 킥과 테이크다운 위협이 함께 존재하는 MMA 거리에서 사용하는 응용. 순수 복싱보다 스탠스를 낮게 유지해 로우킥 방어와 병행한다.",
+      "purpose": "복싱 콤비네이션의 리듬을 MMA 특유의 다중 위협 환경에 맞게 응용한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 복싱"
+      ],
+      "youtubeSearchQuery": "MMA MMA Boxing Combination technique"
+    },
+    {
+      "id": "mixed-martial-arts__overhand",
+      "martialArt": "mixed-martial-arts",
+      "name": "Overhand",
+      "koreanName": "오버핸드",
+      "aliases": [],
+      "category": "MMA 복싱",
+      "positions": [
+        "MMA 복싱"
+      ],
+      "description": "크로스보다 궤적이 크고 낮게 도는 강타. 상대가 레벨체인지(테이크다운 진입)로 자세를 낮출 때 정확히 맞아떨어지는 경우가 많아 MMA에서 특히 자주 쓰인다.",
+      "purpose": "상대의 레벨체인지 타이밍에 큰 궤적으로 카운터를 노린다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "level-change-double-leg 진입 시점"
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__level-change-double-leg"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 복싱"
+      ],
+      "youtubeSearchQuery": "MMA Overhand technique"
+    },
+    {
+      "id": "mixed-martial-arts__calf-kick",
+      "martialArt": "mixed-martial-arts",
+      "name": "Calf Kick",
+      "koreanName": "카프킥",
+      "aliases": [],
+      "category": "MMA 킥복싱",
+      "positions": [
+        "MMA 킥복싱"
+      ],
+      "description": "정강이 대신 종아리 아래쪽을 노리는 로우킥. 각도가 낮고 빠르게 회수할 수 있어 테이크다운 반격을 당할 위험이 적은, 현대 MMA에서 자주 쓰이는 킥.",
+      "purpose": "적은 리스크로 다리 기동력을 지속적으로 깎는다.",
+      "principles": [
+        "무릎 아래를 정면이 아닌 사선으로 타격한다"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 킥복싱"
+      ],
+      "youtubeSearchQuery": "MMA Calf Kick technique"
+    },
+    {
+      "id": "mixed-martial-arts__oblique-kick",
+      "martialArt": "mixed-martial-arts",
+      "name": "Oblique Kick",
+      "koreanName": "오블리크 킥",
+      "aliases": [],
+      "category": "MMA 킥복싱",
+      "positions": [
+        "MMA 킥복싱"
+      ],
+      "description": "무릎/대퇴사두근을 직선으로 찍어 차는 킥. 상대의 전진과 테이크다운 진입 자체를 억제하는 견제용 킥으로 MMA에서 자주 활용된다.",
+      "purpose": "상대의 전진 및 테이크다운 진입 의지를 견제한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "takedown 시도에 대한 선제 견제"
+      ],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 킥복싱"
+      ],
+      "youtubeSearchQuery": "MMA Oblique Kick technique"
+    },
+    {
+      "id": "mixed-martial-arts__dirty-boxing",
+      "martialArt": "mixed-martial-arts",
+      "name": "Dirty Boxing",
+      "koreanName": "더티 복싱",
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "클린치 상태에서 상대의 팔/목을 컨트롤한 채로 짧은 훅과 어퍼컷을 던지는 기술. 무에타이 클린치 니와 함께 MMA 클린치 게임의 핵심을 이룬다.",
+      "purpose": "클린치 컨트롤을 유지하면서 근거리 타격 데미지를 축적한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:클린치 (Clinch)"
+      ],
+      "youtubeSearchQuery": "MMA Dirty Boxing technique"
+    },
+    {
+      "id": "mixed-martial-arts__clinch-takedown-entry",
+      "martialArt": "mixed-martial-arts",
+      "name": "Clinch Takedown Entry",
+      "koreanName": "클린치 테이크다운 진입",
+      "aliases": [],
+      "category": "클린치 (Clinch)",
+      "positions": [
+        "클린치 (Clinch)"
+      ],
+      "description": "언더훅/오버훅 등 클린치 그립을 확보한 상태에서 곧바로 테이크다운으로 전환하는 진입. 타격과 그라운드 게임을 잇는 핵심 연결 동작이다.",
+      "purpose": "클린치 컨트롤을 실제 테이크다운 성공률로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [
+        "mixed-martial-arts__level-change-double-leg"
+      ],
+      "relatedTechniques": [],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:클린치 (Clinch)"
+      ],
+      "youtubeSearchQuery": "MMA Clinch Takedown Entry technique"
+    },
+    {
+      "id": "mixed-martial-arts__level-change-double-leg",
+      "martialArt": "mixed-martial-arts",
+      "name": "Level Change Double Leg",
+      "koreanName": "레벨체인지 더블레그",
+      "aliases": [],
+      "category": "테이크다운 (Takedown)",
+      "positions": [
+        "테이크다운 (Takedown)"
+      ],
+      "description": "타격 교환 중 순간적으로 레벨을 낮춰 들어가는 더블레그 테이크다운. 순수 레슬링보다 상대의 타격을 피하며 진입 각도를 만드는 것이 핵심이다.",
+      "purpose": "타격 거리에서 안전하게 테이크다운으로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [
+        "overhand",
+        "check-hook",
+        "sprawl-to-strikes"
+      ],
+      "defenses": [],
+      "transitions": [
+        "mixed-martial-arts__takedown-to-ground-and-pound-transition"
+      ],
+      "relatedTechniques": [
+        "wrestling__basic-double-leg"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:테이크다운 (Takedown)"
+      ],
+      "youtubeSearchQuery": "MMA Level Change Double Leg technique"
+    },
+    {
+      "id": "mixed-martial-arts__reactive-takedown",
+      "martialArt": "mixed-martial-arts",
+      "name": "Reactive Takedown",
+      "koreanName": "리액티브 테이크다운",
+      "aliases": [],
+      "category": "테이크다운 (Takedown)",
+      "positions": [
+        "테이크다운 (Takedown)"
+      ],
+      "description": "상대의 타격이 빗나가거나 자세가 무너진 순간을 즉시 포착해 들어가는 테이크다운. 정형화된 진입이 아니라 반응 속도가 핵심이다.",
+      "purpose": "상대의 균형이 무너지는 순간을 놓치지 않고 테이크다운으로 연결한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "wrestling__ankle-pick"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:테이크다운 (Takedown)"
+      ],
+      "youtubeSearchQuery": "MMA Reactive Takedown technique"
+    },
+    {
+      "id": "mixed-martial-arts__sprawl-to-strikes",
+      "martialArt": "mixed-martial-arts",
+      "name": "Sprawl to Strikes",
+      "koreanName": "스프롤 후 타격",
+      "aliases": [],
+      "category": "테이크다운 (Takedown)",
+      "positions": [
+        "테이크다운 (Takedown)"
+      ],
+      "description": "테이크다운을 스프롤로 방어한 뒤, 상대의 등/옆구리에 무릎이나 파운드를 던져 이어가는 연결 동작. MMA에서는 스프롤 자체가 방어로 끝나지 않고 반격으로 이어진다.",
+      "purpose": "테이크다운 방어를 곧바로 데미지로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "wrestling__sprawl"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:테이크다운 (Takedown)"
+      ],
+      "youtubeSearchQuery": "MMA Sprawl to Strikes technique"
+    },
+    {
+      "id": "mixed-martial-arts__posture-control-in-mount",
+      "martialArt": "mixed-martial-arts",
+      "name": "Posture Control in Mount",
+      "koreanName": "마운트 포스처 컨트롤",
+      "aliases": [],
+      "category": "그라운드 컨트롤 (Ground Control)",
+      "positions": [
+        "그라운드 컨트롤 (Ground Control)"
+      ],
+      "description": "마운트 포지션에서 상대의 서브미션 시도와 업킥을 피하면서 파운드를 던질 수 있는 상체 자세를 유지하는 기술. 그래플링 대회의 마운트보다 상체를 세우고 무게중심을 낮게 유지하는 것이 특징이다.",
+      "purpose": "타격과 서브미션 방어를 동시에 가능하게 하는 자세를 유지한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "bjj__mount",
+        "bjj__high-mount"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:그라운드 컨트롤 (Ground Control)"
+      ],
+      "youtubeSearchQuery": "MMA Posture Control in Mount technique"
+    },
+    {
+      "id": "mixed-martial-arts__back-mount-hooks-control",
+      "martialArt": "mixed-martial-arts",
+      "name": "Back Mount Hooks Control",
+      "koreanName": "백마운트 훅 컨트롤",
+      "aliases": [],
+      "category": "그라운드 컨트롤 (Ground Control)",
+      "positions": [
+        "그라운드 컨트롤 (Ground Control)"
+      ],
+      "description": "백을 잡은 상태에서 훅을 걸어 포지션을 유지하며, 초크 시도와 파운드(넥 크랭크성 타격 제외)를 오가는 컨트롤.",
+      "purpose": "백 컨트롤을 유지하며 초크와 타격 위협을 동시에 가한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "bjj__rear-naked-choke"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:그라운드 컨트롤 (Ground Control)"
+      ],
+      "youtubeSearchQuery": "MMA Back Mount Hooks Control technique"
+    },
+    {
+      "id": "mixed-martial-arts__ground-and-pound-from-mount",
+      "martialArt": "mixed-martial-arts",
+      "name": "Ground and Pound from Mount",
+      "koreanName": "마운트 그라운드 앤 파운드",
+      "aliases": [],
+      "category": "그라운드 앤 파운드 (Ground & Pound)",
+      "positions": [
+        "그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "description": "마운트 포지션을 유지한 채 상대의 가드/방어를 무너뜨리기 위해 반복적으로 타격을 내리치는 MMA 고유의 공격 방식.",
+      "purpose": "포지션 우위를 실제 타격 데미지로 전환한다.",
+      "principles": [
+        "팔을 완전히 펴지 않고 짧게 내리쳐 스윕 리스크를 줄인다"
+      ],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__posture-control-in-mount",
+        "mixed-martial-arts__elbow-strikes-from-top"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "youtubeSearchQuery": "MMA Ground and Pound from Mount technique"
+    },
+    {
+      "id": "mixed-martial-arts__elbow-strikes-from-top",
+      "martialArt": "mixed-martial-arts",
+      "name": "Elbow Strikes from Top Position",
+      "koreanName": "탑 포지션 엘보 스트라이크",
+      "aliases": [],
+      "category": "그라운드 앤 파운드 (Ground & Pound)",
+      "positions": [
+        "그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "description": "가드/하프가드 등 상위 포지션에서 좁은 공간을 활용해 내리치는 엘보. 절단상을 유발해 심판 판정에도 큰 영향을 준다.",
+      "purpose": "좁은 거리에서도 효과적인 데미지를 축적한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__ground-and-pound-from-mount"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "youtubeSearchQuery": "MMA Elbow Strikes from Top Position technique"
+    },
+    {
+      "id": "mixed-martial-arts__short-elbows-in-half-guard",
+      "martialArt": "mixed-martial-arts",
+      "name": "Short Elbows in Half Guard",
+      "koreanName": "하프가드 숏 엘보",
+      "aliases": [],
+      "category": "그라운드 앤 파운드 (Ground & Pound)",
+      "positions": [
+        "그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "description": "하프가드 탑 포지션에서 상대의 프레임을 무너뜨리기 위해 짧게 반복적으로 내리치는 엘보.",
+      "purpose": "상대의 프레임/그립을 무너뜨려 포지션을 발전시킬 공간을 만든다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__elbow-strikes-from-top"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:그라운드 앤 파운드 (Ground & Pound)"
+      ],
+      "youtubeSearchQuery": "MMA Short Elbows in Half Guard technique"
+    },
+    {
+      "id": "mixed-martial-arts__submission-off-strikes",
+      "martialArt": "mixed-martial-arts",
+      "name": "Submission Setup off Strikes",
+      "koreanName": "타격 연계 서브미션 셋업",
+      "aliases": [],
+      "category": "서브미션 (Submission)",
+      "positions": [
+        "서브미션 (Submission)"
+      ],
+      "description": "그라운드 앤 파운드에 상대가 방어적으로 팔을 모으거나 목을 숙이는 순간, 그 반응을 이용해 암바나 길로틴 등으로 전환하는 셋업.",
+      "purpose": "타격 압박에 대한 상대의 방어 반응을 서브미션 기회로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "bjj__armbar",
+        "bjj__guillotine",
+        "bjj__kimura"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:서브미션 (Submission)"
+      ],
+      "youtubeSearchQuery": "MMA Submission Setup off Strikes technique"
+    },
+    {
+      "id": "mixed-martial-arts__ground-and-pound-to-submission-transition",
+      "martialArt": "mixed-martial-arts",
+      "name": "Ground and Pound to Submission Transition",
+      "koreanName": "파운드-서브미션 전환",
+      "aliases": [],
+      "category": "서브미션 (Submission)",
+      "positions": [
+        "서브미션 (Submission)"
+      ],
+      "description": "파운드를 던지는 리듬 안에서 상대의 팔이 빈 순간을 포착해 곧바로 암바나 트라이앵글로 전환하는 동작.",
+      "purpose": "타격과 서브미션을 하나의 연속된 압박으로 연결한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "bjj__triangle",
+        "bjj__armbar"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:서브미션 (Submission)"
+      ],
+      "youtubeSearchQuery": "MMA Ground and Pound to Submission Transition technique"
+    },
+    {
+      "id": "mixed-martial-arts__cage-wrestling",
+      "martialArt": "mixed-martial-arts",
+      "name": "Cage Wrestling",
+      "koreanName": "케이지 레슬링",
+      "aliases": [],
+      "category": "케이지 워크 (Cage Work)",
+      "positions": [
+        "케이지 워크 (Cage Work)"
+      ],
+      "description": "케이지(펜스)를 등지게 만들거나 스스로 등을 대고 지지대로 활용해 테이크다운을 시도/방어하는 MMA 특유의 그래플링. 오픈 매트 레슬링과 달리 벽이라는 지지대가 핵심 변수가 된다.",
+      "purpose": "케이지를 지지대 삼아 테이크다운 성공률과 방어력을 높인다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__fence-takedown-defense",
+        "mixed-martial-arts__dirty-boxing"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:케이지 워크 (Cage Work)"
+      ],
+      "youtubeSearchQuery": "MMA Cage Wrestling technique"
+    },
+    {
+      "id": "mixed-martial-arts__fence-takedown-defense",
+      "martialArt": "mixed-martial-arts",
+      "name": "Fence Takedown Defense",
+      "koreanName": "케이지 테이크다운 방어",
+      "aliases": [],
+      "category": "케이지 워크 (Cage Work)",
+      "positions": [
+        "케이지 워크 (Cage Work)"
+      ],
+      "description": "등을 케이지에 댄 상태에서 상대의 테이크다운을 무게중심과 프레임으로 막아내는 방어. 오픈 공간의 스프롤과는 손/발 사용법이 다르다.",
+      "purpose": "케이지를 등진 상황에서도 그라운드로 끌려가지 않는다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "wrestling__chest-to-chest-defense"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:케이지 워크 (Cage Work)"
+      ],
+      "youtubeSearchQuery": "MMA Fence Takedown Defense technique"
+    },
+    {
+      "id": "mixed-martial-arts__framing",
+      "martialArt": "mixed-martial-arts",
+      "name": "Framing",
+      "koreanName": "프레이밍",
+      "aliases": [],
+      "category": "방어 (Defense)",
+      "positions": [
+        "방어 (Defense)"
+      ],
+      "description": "하위 포지션에서 팔뚝이나 무릎으로 상대와의 거리를 만들어 파운드 데미지를 줄이고 가드를 회복할 공간을 확보하는 기술.",
+      "purpose": "하위 포지션에서 타격 노출을 최소화하고 포지션을 회복한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__guard-recovery-under-strikes"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:방어 (Defense)"
+      ],
+      "youtubeSearchQuery": "MMA Framing technique"
+    },
+    {
+      "id": "mixed-martial-arts__guard-recovery-under-strikes",
+      "martialArt": "mixed-martial-arts",
+      "name": "Guard Recovery Under Strikes",
+      "koreanName": "타격 방어 중 가드 회복",
+      "aliases": [],
+      "category": "방어 (Defense)",
+      "positions": [
+        "방어 (Defense)"
+      ],
+      "description": "상대의 파운드를 프레임으로 막으며 동시에 가드(클로즈드/하프)를 다시 잡아 포지션을 안정시키는 기술.",
+      "purpose": "타격 노출 상황에서 그래플링 포지션을 회복해 안전을 확보한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__framing"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:방어 (Defense)"
+      ],
+      "youtubeSearchQuery": "MMA Guard Recovery Under Strikes technique"
+    },
+    {
+      "id": "mixed-martial-arts__takedown-defense-mma",
+      "martialArt": "mixed-martial-arts",
+      "name": "Takedown Defense (MMA)",
+      "koreanName": "MMA 테이크다운 방어",
+      "aliases": [],
+      "category": "방어 (Defense)",
+      "positions": [
+        "방어 (Defense)"
+      ],
+      "description": "스프롤, 언더훅, 프레임을 조합해 테이크다운을 막아내는 MMA 맥락의 기본 방어. 순수 레슬링 방어보다 방어 이후 타격 반격까지 고려한다.",
+      "purpose": "테이크다운을 막고 곧바로 타격 반격으로 전환할 수 있는 위치를 확보한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "wrestling__sprawl",
+        "wrestling__underhook",
+        "wrestling__whizzer"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "beginner",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:방어 (Defense)"
+      ],
+      "youtubeSearchQuery": "MMA Takedown Defense (MMA) technique"
+    },
+    {
+      "id": "mixed-martial-arts__scramble-to-back",
+      "martialArt": "mixed-martial-arts",
+      "name": "Scramble to Back Take",
+      "koreanName": "스크램블 백테이크",
+      "aliases": [],
+      "category": "스크램블 (Scramble)",
+      "positions": [
+        "스크램블 (Scramble)"
+      ],
+      "description": "테이크다운이나 포지션 전환 도중 발생하는 혼전(스크램블) 상황에서 상대의 등을 잡아내는 순간적인 전환 기술.",
+      "purpose": "혼전 상황을 포지션 우위로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "bjj__rear-naked-choke"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:스크램블 (Scramble)"
+      ],
+      "youtubeSearchQuery": "MMA Scramble to Back Take technique"
+    },
+    {
+      "id": "mixed-martial-arts__leg-entanglement-scramble",
+      "martialArt": "mixed-martial-arts",
+      "name": "Leg Entanglement Scramble",
+      "koreanName": "레그 엔탱글먼트 스크램블",
+      "aliases": [],
+      "category": "스크램블 (Scramble)",
+      "positions": [
+        "스크램블 (Scramble)"
+      ],
+      "description": "테이크다운 공방 중 다리가 서로 얽히는 상황에서 레그락 포지션이나 상위 포지션을 선점하기 위해 다투는 전환 구간.",
+      "purpose": "다리가 얽힌 혼전 상황에서 유리한 포지션을 선점한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "sambo__grip-fight-takedown-leg-lock-entry"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:스크램블 (Scramble)"
+      ],
+      "youtubeSearchQuery": "MMA Leg Entanglement Scramble technique"
+    },
+    {
+      "id": "mixed-martial-arts__strike-to-takedown-transition",
+      "martialArt": "mixed-martial-arts",
+      "name": "Strike to Takedown Transition",
+      "koreanName": "타격-테이크다운 전환",
+      "aliases": [],
+      "category": "MMA 전환 동작 (Transitions)",
+      "positions": [
+        "MMA 전환 동작 (Transitions)"
+      ],
+      "description": "펀치 콤비네이션의 리듬 안에서 마지막 동작을 레벨체인지로 바꿔 테이크다운으로 이어가는 연결 동작. MMA를 다른 단일 무술과 구분하는 핵심 전환 중 하나.",
+      "purpose": "타격 압박과 테이크다운 위협을 하나의 공격 흐름으로 통합한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__level-change-double-leg",
+        "mixed-martial-arts__mma-boxing-combination"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 전환 동작 (Transitions)"
+      ],
+      "youtubeSearchQuery": "MMA Strike to Takedown Transition technique"
+    },
+    {
+      "id": "mixed-martial-arts__takedown-to-ground-and-pound-transition",
+      "martialArt": "mixed-martial-arts",
+      "name": "Takedown to Ground and Pound Transition",
+      "koreanName": "테이크다운-파운드 전환",
+      "aliases": [],
+      "category": "MMA 전환 동작 (Transitions)",
+      "positions": [
+        "MMA 전환 동작 (Transitions)"
+      ],
+      "description": "테이크다운 성공 직후 상대가 가드를 잡기 전에 곧바로 파운드로 이어가는 연결 동작.",
+      "purpose": "테이크다운의 포지션 우위를 시간 지체 없이 데미지로 전환한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__level-change-double-leg",
+        "mixed-martial-arts__ground-and-pound-from-mount"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 전환 동작 (Transitions)"
+      ],
+      "youtubeSearchQuery": "MMA Takedown to Ground and Pound Transition technique"
+    },
+    {
+      "id": "mixed-martial-arts__submission-to-strikes-transition",
+      "martialArt": "mixed-martial-arts",
+      "name": "Submission to Strikes Transition",
+      "koreanName": "서브미션-타격 전환",
+      "aliases": [],
+      "category": "MMA 전환 동작 (Transitions)",
+      "positions": [
+        "MMA 전환 동작 (Transitions)"
+      ],
+      "description": "서브미션 시도가 상대에게 방어당했을 때, 무리하게 유지하기보다 즉시 타격 포지션으로 되돌아가는 전환 판단.",
+      "purpose": "실패한 서브미션 시도에서도 안전하게 우위를 유지한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__submission-off-strikes",
+        "mixed-martial-arts__ground-and-pound-from-mount"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "advanced",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 전환 동작 (Transitions)"
+      ],
+      "youtubeSearchQuery": "MMA Submission to Strikes Transition technique"
+    },
+    {
+      "id": "mixed-martial-arts__clinch-to-cage-transition",
+      "martialArt": "mixed-martial-arts",
+      "name": "Clinch to Cage Transition",
+      "koreanName": "클린치-케이지 전환",
+      "aliases": [],
+      "category": "MMA 전환 동작 (Transitions)",
+      "positions": [
+        "MMA 전환 동작 (Transitions)"
+      ],
+      "description": "오픈된 공간에서의 클린치를 상대를 케이지 쪽으로 몰아붙여 지지대를 활용하는 케이지 워크로 전환하는 동작.",
+      "purpose": "클린치 컨트롤을 케이지라는 추가 지지대를 이용해 극대화한다.",
+      "principles": [],
+      "variations": [],
+      "counters": [],
+      "defenses": [],
+      "transitions": [],
+      "relatedTechniques": [
+        "mixed-martial-arts__dirty-boxing",
+        "mixed-martial-arts__cage-wrestling"
+      ],
+      "relatedMartialArts": [],
+      "difficulty": "intermediate",
+      "tags": [
+        "martialArt:mixed-martial-arts",
+        "category:MMA 전환 동작 (Transitions)"
+      ],
+      "youtubeSearchQuery": "MMA Clinch to Cage Transition technique"
+    }
+  ]
+}

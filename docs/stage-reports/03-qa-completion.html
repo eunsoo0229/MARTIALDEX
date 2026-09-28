@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>MARTIALDEX 개발 보고서 — 전체 QA 및 완성 단계</title>
+<style>
+  @page { margin: 22mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', -apple-system, sans-serif;
+    color: #1c1b19; line-height: 1.7; font-size: 13.5px;
+    max-width: 780px; margin: 0 auto; padding: 0;
+  }
+  .doc-header { border-bottom: 3px solid #9c2b2b; padding-bottom: 16px; margin-bottom: 28px; }
+  .doc-header .stage-label {
+    display: inline-block; background: #9c2b2b; color: #fff; font-size: 11.5px; font-weight: 700;
+    padding: 3px 10px; border-radius: 999px; margin-bottom: 10px; letter-spacing: 0.03em;
+  }
+  .doc-header h1 { font-size: 25px; margin: 0 0 6px; font-family: Georgia, 'Iowan Old Style', serif; }
+  .doc-header .meta { color: #6b6459; font-size: 12px; }
+  h2 { font-size: 16.5px; margin-top: 30px; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #ddd6ca; color: #7c2020; }
+  h3 { font-size: 14px; margin-top: 18px; margin-bottom: 6px; }
+  p { margin: 6px 0; }
+  ul, ol { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 12.5px; }
+  th, td { border: 1px solid #ddd6ca; padding: 6px 10px; text-align: left; vertical-align: top; }
+  th { background: #f6f4f0; font-weight: 700; }
+  code { background: #edeae4; padding: 1px 6px; border-radius: 4px; font-size: 12px; font-family: 'SF Mono', Menlo, monospace; }
+  .callout { background: #fbf3e6; border-left: 4px solid #a3792f; padding: 10px 14px; margin: 14px 0; font-size: 12.5px; border-radius: 0 6px 6px 0; }
+  .callout.fix { background: #fdeceb; border-left-color: #9c2b2b; }
+  .stat-grid { display: flex; gap: 14px; margin: 14px 0; flex-wrap: wrap; }
+  .stat-box { flex: 1; min-width: 110px; border: 1px solid #ddd6ca; border-radius: 8px; padding: 10px 12px; text-align: center; }
+  .stat-box .num { font-size: 22px; font-weight: 800; color: #2f7a4f; font-family: Georgia, serif; }
+  .stat-box .label { font-size: 11px; color: #6b6459; margin-top: 2px; }
+  .checklist { columns: 2; column-gap: 24px; font-size: 12.5px; }
+  .checklist li { break-inside: avoid; }
+  .doc-footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #ddd6ca; color: #93897a; font-size: 11px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="doc-header">
+  <span class="stage-label">개발 단계 보고서 · QA &amp; 완성 단계</span>
+  <h1>MARTIALDEX — 전체 기능 QA 및 완성도 점검</h1>
+  <div class="meta">작업 일자: 2026-08-14 · 작성: Claude (개발 어시스턴트)</div>
+</div>
+
+<h2>1. 점검 범위</h2>
+<p>1~7단계에서 완성된 프로젝트 전체를 재검사하고, 발견되는 문제를 직접 수정한 뒤 README.md를 작성하는 마무리 단계.</p>
+<ul class="checklist">
+  <li>모든 페이지 정상 작동</li>
+  <li>모든 링크 정상 작동</li>
+  <li>검색 정상 작동</li>
+  <li>필터 정상 작동</li>
+  <li>9개 무술 데이터 정상 표시</li>
+  <li>기술 상세 페이지</li>
+  <li>관련 기술 연결</li>
+  <li>YouTube 기능</li>
+  <li>AI 기능</li>
+  <li>즐겨찾기</li>
+  <li>최근 본 기술</li>
+  <li>모바일 반응형</li>
+  <li>다크 모드</li>
+  <li>Loading / Error / Empty 상태</li>
+  <li>API Key 보안</li>
+  <li>콘솔 에러</li>
+  <li>TypeScript / 빌드 에러</li>
+  <li>불필요한 코드</li>
+</ul>
+
+<h2>2. 발견하고 수정한 문제</h2>
+<div class="callout fix">
+  <strong>죽은 코드 2건 제거.</strong> <code>useRecentlyViewed</code>(더 이상 쓰이지 않는 구버전 훅,
+  <code>useRecentlyViewedSynced</code>로 대체됨)와 <code>totalMartialArtCount</code>(아무 곳에서도
+  참조되지 않음)를 삭제.
+</div>
+<div class="callout fix">
+  <strong>QA 스크립트 자체의 버그 2건.</strong> <code>localStorage.clear()</code> 후 페이지를
+  리로드하지 않아 "빈 상태" 테스트가 잘못 실패하던 것, Node 컨텍스트에서 <code>document</code>를
+  참조하던 죽은 코드 — 앱 코드가 아닌 테스트 스크립트 자체의 문제였음을 확인하고 수정.
+</div>
+<p>앱 로직 자체의 버그는 발견되지 않았고, 플레이스홀더·더미 데이터도 없었다.</p>
+
+<h2>3. Playwright 실기 테스트 결과</h2>
+<div class="stat-grid">
+  <div class="stat-box"><div class="num">59 / 59</div><div class="label">자동 검사 통과</div></div>
+  <div class="stat-box"><div class="num">0</div><div class="label">콘솔 에러</div></div>
+</div>
+<p>확인 항목: 홈/무술목록/9개 무술 상세/전체기술 페이지, 카테고리·난이도 필터, 검색(영문/한글/미매치),
+기술 상세(영상 있음/없음/키릴 문자 id 포함), 관련 기술 링크 이동, YouTube 임베드·폴백 버튼, 즐겨찾기
+토글·홈 반영, 최근 본 기술, 다크/라이트 테마, 모바일 뷰포트(가로 스크롤 없음), AI 기능(빈 질문 경고,
+로딩, 실제 Gemini 응답, 기술 컨텍스트 반영). 잘못된 키/키 없음 오류 경로는 <code>gemini.cjs</code>
+직접 호출로 별도 검증.</p>
+
+<h2>4. Production Build</h2>
+<p>
+  <code>npx tsc --noEmit</code> 통과, <code>npm run build</code> 성공. 빌드 산출물에 API 키/Gemini
+  엔드포인트 문자열이 없음을 재확인해 보안 요건을 유지했다.
+</p>
+
+<h2>5. README.md 작성</h2>
+<p>프로젝트 소개, 실행 방법, 폴더 구조, 데이터 구조/파이프라인, 마크다운 추가 방법, YouTube 설정
+(API 미사용 근거), AI(Gemini) 설정과 provider 분리 구조, 환경변수 설정, 배포 방법을 문서화했다.
+폴더 구조는 실제 파일 목록과 대조해 검증했다.</p>
+
+<h2>6. 참고 사항</h2>
+<p>QA 중 Gemini 무료 등급 응답이 반복 테스트로 인해 가끔 25초 타임아웃에 걸렸으나, 이는 앱이 깨지는
+것이 아니라 설계된 타임아웃 오류 메시지가 정상적으로 뜨는 것으로 확인 — 실제 버그는 아니었다.</p>
+
+<div class="doc-footer">MARTIALDEX 개발 문서 · 자동 생성 보고서 (3 / 5)</div>
+</body>
+</html>

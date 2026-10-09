@@ -4,3 +4,13 @@ release/
 .DS_Store
 *.log
 .env
+
+# Separate projects / local mocap source material (not part of the MARTIALDEX app)
+mma-mocap/
+videos/
+/MMA-Fighter.glb
+/MMA-Fighter_clean_APose_mesh.glb
+
+# Python caches (Blender helper scripts)
+__pycache__/
+*.pyc

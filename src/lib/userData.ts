@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { canonicalTechniqueId } from './techniqueCanonical';
 
 const FAVORITES_KEY = 'martialdex:favorites';
 const RECENT_KEY = 'martialdex:recent';
@@ -9,7 +10,9 @@ function readList(key: string): string[] {
     const raw = window.localStorage.getItem(key);
     if (!raw) return [];
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed.filter((x) => typeof x === 'string') : [];
+    // Ids are canonicalized (a favorite saved as bjj__granby-roll is the
+    // canonical Granby Roll) and de-duplicated, order kept.
+    return Array.isArray(parsed) ? [...new Set(parsed.filter((x): x is string => typeof x === 'string').map(canonicalTechniqueId))] : [];
   } catch {
     return [];
   }
@@ -22,9 +25,10 @@ function writeList(key: string, list: string[]) {
 export function useFavorites() {
   const [favorites, setFavorites] = useState<string[]>(() => readList(FAVORITES_KEY));
 
-  const isFavorite = useCallback((id: string) => favorites.includes(id), [favorites]);
+  const isFavorite = useCallback((id: string) => favorites.includes(canonicalTechniqueId(id)), [favorites]);
 
-  const toggleFavorite = useCallback((id: string) => {
+  const toggleFavorite = useCallback((rawId: string) => {
+    const id = canonicalTechniqueId(rawId);
     setFavorites((prev) => {
       const next = prev.includes(id) ? prev.filter((x) => x !== id) : [id, ...prev];
       writeList(FAVORITES_KEY, next);
@@ -37,7 +41,8 @@ export function useFavorites() {
 
 // Records a technique view from outside a component render (e.g. inside a
 // route effect) without needing the full hook's re-render subscription.
-export function recordRecentlyViewed(id: string) {
+export function recordRecentlyViewed(rawId: string) {
+  const id = canonicalTechniqueId(rawId);
   const list = readList(RECENT_KEY);
   const next = [id, ...list.filter((x) => x !== id)].slice(0, RECENT_LIMIT);
   writeList(RECENT_KEY, next);

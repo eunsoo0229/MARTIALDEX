@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { GymWeightCalcType } from '../types';
 import { toDisplayUnit, toKg } from '../lib/gymTraining/volume';
 import { calculateActualWeightKg, getUserBodyweightKg, setUserBodyweightKg } from '../lib/gymTraining/weightCalc';
+import GymWeightComparison from './GymWeightComparison';
 
 interface SetLike {
   completed: boolean;
@@ -86,6 +87,7 @@ export default function GymSetInput({
   targetWeightKg,
   weightCalcType,
   previousSetsLabel,
+  comparison,
   onComplete,
 }: {
   targetReps: number | null;
@@ -93,6 +95,8 @@ export default function GymSetInput({
   weightCalcType?: GymWeightCalcType | null;
   /** e.g. "60kg×10, 60kg×10, 60kg×8" — the previous completed session's sets for this exercise (records.ts). */
   previousSetsLabel: string | null;
+  /** When given, shows 지난 운동/지난주/지난달 weight change for this set (GymWeightComparison). */
+  comparison?: { techniqueId: string; setIndex: number; completedSets?: { loadKg: number | null; reps: number | null }[] };
   onComplete: (result: { actualReps: number; weightKg: number; calculatedWeightKg: number; rpe: number | null }) => void;
 }) {
   const type = weightCalcType ?? 'standard';
@@ -289,6 +293,17 @@ export default function GymSetInput({
       </div>
       {(type === 'dumbbell' || type === 'assisted_machine') && (
         <p className="video-status-message">계산 중량: {calculatedKg != null ? `${Math.round(calculatedKg * 10) / 10}kg` : '-'}</p>
+      )}
+      {comparison && (
+        <GymWeightComparison
+          techniqueId={comparison.techniqueId}
+          weightCalcType={type}
+          setIndex={comparison.setIndex}
+          currentKg={calculatedKg}
+          currentReps={repsValue.trim() === '' ? null : Math.max(0, Number(repsValue) || 0)}
+          completedSets={comparison.completedSets ?? []}
+          unit={unit}
+        />
       )}
     </div>
   );

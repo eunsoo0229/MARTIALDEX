@@ -50,7 +50,12 @@ export async function checkDuplicate(input: {
     };
   }
 
-  const candidates = searchAllTechniques(input.name, CANDIDATE_LIMIT, { martialArt: input.martialArt });
+  // Searched across EVERY art: the same technique may already exist under
+  // another art (e.g. Wrestling's Granby Roll for an MMA request). Whether
+  // it is already in the requested art is a separate question the caller
+  // answers (techniqueCanonical/artLink.ts) — a match here is "the
+  // technique exists", not "the request is a duplicate".
+  const candidates = searchAllTechniques(input.name, CANDIDATE_LIMIT);
   if (candidates.length === 0) {
     return { ok: true, result: { isDuplicate: false, matchedTechniqueId: null, matchedTechniqueName: null, reason: '유사한 기존 기술을 찾지 못했습니다.' } };
   }

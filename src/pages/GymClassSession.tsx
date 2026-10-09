@@ -232,6 +232,7 @@ export default function GymClassSession() {
                   targetWeightKg={exercise.targetWeightKg}
                   weightCalcType={exercise.technique.gymWeightCalcType}
                   previousSetsLabel={formatLastSessionSets(exercise.technique.id)}
+                  comparison={{ techniqueId: exercise.technique.id, setIndex: activeSetIndex, completedSets: exercise.sets.filter((s) => s.completed).map((s) => ({ loadKg: s.calculatedWeightKg ?? s.weightKg, reps: s.actualReps })) }}
                   onComplete={recordSet}
                 />
               ) : exercise.mode === 'time' ? (

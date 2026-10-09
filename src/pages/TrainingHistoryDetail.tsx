@@ -6,7 +6,7 @@ import { getAllRecords } from '../lib/poseAnalysis/recordsService';
 import { getMartialArt, martialArtSummaries } from '../lib/loadData';
 import { resolveTechnique, resolveTechniquesByIds } from '../lib/userTechniques/service';
 import { deriveEntryCurriculumTitle, deriveEntryMartialArt, deriveEntrySetsReps, deriveEntryTechniqueNames } from '../lib/trainingAnalytics/historyView';
-import { dateKeyOf } from '../lib/dateUtil';
+import { WEEKDAY_LABEL, dateKeyOf } from '../lib/dateUtil';
 import { getSparringSession } from '../lib/sparringSession/service';
 import { INTENSITY_LABEL, SPARRING_TYPE_LABEL } from '../lib/sparringSession/types';
 import BackButton from '../components/BackButton';
@@ -21,7 +21,9 @@ const SOURCE_LABEL: Record<string, string> = {
   free_training: '자유훈련',
   gym_class: '체육관 수업',
   sparring_session: '스파링',
-  ground_battle: '그라운드 배틀',
+  // Removed feature — kept only so past entries still show a readable label.
+  ground_battle: '그라운드 배틀 (지난 기록)',
+  visual_mitt: 'AI Visualizing Mitt',
 };
 
 export default function TrainingHistoryDetail() {
@@ -103,6 +105,18 @@ export default function TrainingHistoryDetail() {
             </div>
           </div>
 
+          {entry.gymRoutine && (
+            <>
+              <div className="field-label" style={{ marginTop: 12 }}>
+                수행한 루틴
+              </div>
+              <p>
+                {entry.gymRoutine.routineName} · {WEEKDAY_LABEL[entry.gymRoutine.weekday]}요일 루틴
+                {entry.gymRoutine.substituted ? ` 기반 운동 (원래 ${WEEKDAY_LABEL[entry.gymRoutine.weekday]}요일 루틴을 ${entry.date}에 수행)` : ''}
+              </p>
+            </>
+          )}
+
           {curriculumTitle && (
             <>
               <div className="field-label" style={{ marginTop: 12 }}>
@@ -146,10 +160,30 @@ export default function TrainingHistoryDetail() {
             if (!rules) return null;
             const allowed = resolveTechniquesByIds(rules.allowedTechniqueIds);
             const prohibited = resolveTechniquesByIds(rules.prohibitedTechniqueIds);
+            const used = resolveTechniquesByIds(rules.usedTechniqueIds ?? []);
             return (
-              <details style={{ marginTop: 12 }}>
-                <summary style={{ cursor: 'pointer', fontWeight: 600 }}>스파링 룰 보기</summary>
+              <details style={{ marginTop: 12 }} open={rules.entryMode === 'manual'} data-testid="sparring-detail">
+                <summary style={{ cursor: 'pointer', fontWeight: 600 }}>{rules.entryMode === 'manual' ? '스파링 기록 보기' : '스파링 룰 보기'}</summary>
                 <div className="stack gap-2" style={{ marginTop: 10 }}>
+                  <p className="video-status-message" style={{ margin: 0 }}>
+                    {rules.date} · 실제 {rules.actualRounds}라운드 · {Math.floor(rules.actualDurationSeconds / 60)}분 {rules.actualDurationSeconds % 60}초
+                    {rules.entryMode === 'manual' ? ' (나중에 기록)' : ' (타이머로 진행)'}
+                  </p>
+                  {used.length > 0 && (
+                    <p className="video-status-message" style={{ margin: 0 }}>
+                      사용한 기술: {used.map((t) => t.koreanName || t.name).join(', ')}
+                    </p>
+                  )}
+                  {rules.wentWell && (
+                    <p className="video-status-message" style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                      잘된 점: {rules.wentWell}
+                    </p>
+                  )}
+                  {rules.toImprove && (
+                    <p className="video-status-message" style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                      보완할 점: {rules.toImprove}
+                    </p>
+                  )}
                   <p className="video-status-message" style={{ margin: 0 }}>
                     {SPARRING_TYPE_LABEL[rules.sparringType]} · {rules.plannedRounds}라운드 × {Math.round(rules.roundDurationSeconds / 60) || rules.roundDurationSeconds}
                     {rules.roundDurationSeconds % 60 === 0 ? '분' : '초'} · 휴식{' '}
@@ -176,18 +210,15 @@ export default function TrainingHistoryDetail() {
                       파트너: {rules.partnerName}
                     </p>
                   )}
+                  {rules.notes && (
+                    <p className="video-status-message" style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
+                      메모: {rules.notes}
+                    </p>
+                  )}
                 </div>
               </details>
             );
           })()}
-
-          {entry.groundBattleMatchId && (
-            <p style={{ marginTop: 12 }}>
-              <Link to={`/free-training/ground-battle/result/${entry.groundBattleMatchId}`} className="btn btn-secondary btn-sm">
-                그라운드 배틀 기록 보기
-              </Link>
-            </p>
-          )}
 
           <div className="field-label" style={{ marginTop: 12 }}>
             메모

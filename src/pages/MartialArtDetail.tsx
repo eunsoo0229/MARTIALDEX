@@ -2,6 +2,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { getUnifiedMartialArt, getUnifiedTechniquesByMartialArt } from '../lib/userTechniques/service';
 import { useAddTeqLibraryVersion } from '../lib/addTeq/useAddTeqLibrary';
 import TechniqueRow from '../components/TechniqueRow';
+import { techniqueCategoryInArt } from '../lib/techniqueCanonical';
 import DifficultyBadge from '../components/DifficultyBadge';
 import BackButton from '../components/BackButton';
 
@@ -14,7 +15,11 @@ export default function MartialArtDetail() {
   if (!art) return <Navigate to="/arts" replace />;
 
   const categoryCounts = new Map<string, number>();
-  for (const t of techniques) categoryCounts.set(t.category, (categoryCounts.get(t.category) ?? 0) + 1);
+  // One count per canonical technique, under the category THIS art files it in.
+  for (const t of techniques) {
+    const c = techniqueCategoryInArt(t, martialArtId);
+    categoryCounts.set(c, (categoryCounts.get(c) ?? 0) + 1);
+  }
   const categories = Array.from(categoryCounts.entries()).sort((a, b) => b[1] - a[1]);
 
   const preview = techniques.slice(0, 8);
@@ -80,7 +85,7 @@ export default function MartialArtDetail() {
           </div>
           <div className="stack gap-2">
             {preview.map((t) => (
-              <TechniqueRow key={t.id} technique={t} />
+              <TechniqueRow key={t.id} technique={t} contextArt={martialArtId} />
             ))}
           </div>
         </section>

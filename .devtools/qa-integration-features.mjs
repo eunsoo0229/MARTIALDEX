@@ -2,6 +2,8 @@
 // (영상 탐색/저장, AI 학습기술 제외, 헬스 세트별 무게, 해시태그, 댓글 답글)
 import { _electron as electron } from 'playwright-core';
 import path from 'node:path';
+import fs from 'node:fs';
+import os from 'node:os';
 
 const APP_DIR = '/Users/swcho/Documents/MARTIALDEX';
 const electronBin = path.join(APP_DIR, 'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron');
@@ -15,7 +17,7 @@ function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 async function main() {
   const cleanEnv = { ...process.env };
   delete cleanEnv.ELECTRON_RUN_AS_NODE;
-  const app = await electron.launch({ executablePath: electronBin, args: [APP_DIR], env: cleanEnv, timeout: 30000 });
+  const app = await electron.launch({ executablePath: electronBin, args: [APP_DIR, `--user-data-dir=${fs.mkdtempSync(path.join(os.tmpdir(), 'mdex-qa-'))}`], env: cleanEnv, timeout: 120000 });
   const page = app.windows().find((w) => w.url().startsWith('http://localhost:5173')) ?? (await app.firstWindow());
   await page.waitForLoadState('load');
   await sleep(700);

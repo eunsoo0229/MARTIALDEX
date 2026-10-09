@@ -3,11 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useTrainingHistory } from '../lib/trainingHistory/useTrainingHistory';
 import { useTodayTraining } from '../lib/todayTraining/useTodayTraining';
 import { getGymRoutine } from '../lib/gymRoutine/service';
+import GymRoutineDayPicker, { canPickOtherRoutineDay } from '../components/GymRoutineDayPicker';
 import { formatVolumeCompact, sumVolumeKg, volumeForKstMonth, volumeForKstWeek } from '../lib/gymTraining/volume';
 import { computeMonthlyVolumeGrowth } from '../lib/gymTraining/growthRate';
 import { computeAllBodyPartRecovery, GYM_BODY_PART_LABEL } from '../lib/gymTraining/recovery';
 import { computeCalendarMonth } from '../lib/trainingAnalytics/calendarData';
-import { todayDateKey } from '../lib/dateUtil';
+import { WEEKDAY_LABEL, todayDateKey } from '../lib/dateUtil';
 import TrainingCalendarView from '../components/TrainingCalendarView';
 import TrainingEntryRow from '../components/TrainingEntryRow';
 import BodyPartMap from '../components/BodyPartMap';
@@ -36,6 +37,7 @@ export default function TrainingHub() {
   const [calendarYear, setCalendarYear] = useState(now.getFullYear());
   const [calendarMonth, setCalendarMonth] = useState(now.getMonth());
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
+  const [routinePickerOpen, setRoutinePickerOpen] = useState(false);
 
   const todayVolume = useMemo(() => sumVolumeKg(allEntries.filter((e) => e.date === todayDateKey())), [allEntries]);
   const weekVolume = useMemo(() => volumeForKstWeek(allEntries), [allEntries]);
@@ -113,6 +115,7 @@ export default function TrainingHub() {
               <p className="technique-row__sub">
                 {plan.techniqueIds.length}개 운동 · 약 {plan.estimatedMinutes}분
                 {plan.gymRoutineId ? ` · 루틴: ${planRoutine?.name ?? '삭제된 루틴'}` : ''}
+                {plan.gymRoutineSubstituted && plan.gymRoutineWeekday != null ? ` (${WEEKDAY_LABEL[plan.gymRoutineWeekday]}요일 루틴 불러옴)` : ''}
               </p>
             </>
           )}
@@ -120,7 +123,21 @@ export default function TrainingHub() {
             <button className="btn btn-primary" onClick={() => navigate('/today-training')}>
               훈련 시작
             </button>
+            {canPickOtherRoutineDay() && (
+              <button className="btn btn-secondary" onClick={() => setRoutinePickerOpen(true)}>
+                다른 요일 루틴으로 운동하기
+              </button>
+            )}
           </div>
+          {routinePickerOpen && (
+            <GymRoutineDayPicker
+              onClose={() => setRoutinePickerOpen(false)}
+              onStarted={() => {
+                setRoutinePickerOpen(false);
+                navigate('/today-training');
+              }}
+            />
+          )}
         </div>
 
         {/* 2-3. 오늘/주간 볼륨 */}

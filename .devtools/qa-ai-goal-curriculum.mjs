@@ -172,9 +172,16 @@ async function main() {
     await sleep(12000);
     text = await page.evaluate(() => document.body.innerText);
   }
-  if (!text.includes('AI 분석 결과')) {
-    await sleep(15000); // one more grace window before failing the check
+  // Real Gemini latency varies a lot (grounded research + matching); poll
+  // for the preview for up to 90s more instead of one fixed grace window.
+  for (let waited = 0; !text.includes('AI 분석 결과') && waited < 90000; waited += 3000) {
+    await sleep(3000);
     text = await page.evaluate(() => document.body.innerText);
+    if (text.includes('추가로 하나만')) {
+      await page.click('button:has-text("건너뛰기")');
+      await sleep(3000);
+      text = await page.evaluate(() => document.body.innerText);
+    }
   }
   check('[10] 미리보기 화면 표시 (AI 분석 결과 + Day별 커리큘럼)', text.includes('AI 분석 결과') && text.includes('Day별 커리큘럼') && text.includes('Day 1'), text.slice(0, 600));
   check('[9] 단순 나열이 아닌 progression 존재 (기초/복습 등 여러 단계 라벨)', /기초|진입|포지션|연결|상황|복습/.test(text));
@@ -211,6 +218,7 @@ async function main() {
   await page.click('a:has-text("훈련하기")');
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(600);
   text = await page.evaluate(() => document.body.innerText);
   check('[13][14] Day 선택 후 실제 세트/횟수/타이머 Training Session 진입', /SET \d \//.test(text), text.slice(0, 400));

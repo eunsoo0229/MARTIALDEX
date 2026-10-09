@@ -206,7 +206,9 @@ export default function SparringAnalysis() {
       const visualInsights = wantVisual && motionEvents.length > 0 ? await analyzeKeyMomentsVisually(video, sport, motionEvents).catch(() => []) : [];
       const wantSynthesis = scopes.has('overall');
       const coachingSynthesis =
-        wantSynthesis && sequenceAnalysis
+        // No longer gated on sequenceAnalysis: motion + posture data alone
+        // are enough for grounded strengths/weaknesses (coachingFacts.ts).
+        wantSynthesis && (motionEvents.length > 0 || postureSegments.length > 0)
           ? await synthesizeCoaching({
               martialArt: sport,
               techniqueGuesses,
@@ -217,6 +219,9 @@ export default function SparringAnalysis() {
               postureSegments,
               styleObservations,
               weakAreas,
+              videoDurationSec: videoMeta.durationSec,
+              overallScores,
+              limitations,
             }).catch(() => null)
           : null;
 

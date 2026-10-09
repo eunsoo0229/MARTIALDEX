@@ -3,7 +3,7 @@ import type { Curriculum } from '../curriculum/types';
 import type { MasteryStatus, SkillProgress } from './types';
 import type { CanonicalPosition } from './positionClassifier';
 import { martialArtSummaries } from '../loadData';
-import { isSyntheticTrainingDomain } from '../loadData';
+import { isSyntheticTrainingDomain, splitLegacyTechniques } from '../loadData';
 import { getUnifiedAllTechniques } from '../userTechniques/service';
 import { buildSkillProgress } from './computeSkillProgress';
 import { classifyPosition, POSITION_LABEL } from './positionClassifier';
@@ -49,6 +49,26 @@ export function computeAllSkillProgress(): TechniqueSkillEntry[] {
       const override = overrides[technique.id] ?? null;
       return { technique, progress: buildSkillProgress(technique.id, summary, practice, override) };
     });
+}
+
+/**
+ * Old records split by the relation audit ("Lead Teep / Rear Teep") that the
+ * user has history / mastery / pose data on. Kept OUT of computeAllSkillProgress
+ * (recommendations, AI coach, weakness analysis must never pick an old list
+ * record as a technique to practice) — shown only where the user looks at
+ * their own records (배운 기술, 나의 기술), marked by technique.splitInto. The
+ * data is never copied onto the techniques it was split into.
+ */
+export function legacySplitSkillEntries(): TechniqueSkillEntry[] {
+  const recordIndex = buildSkillSummaryIndex(getAllRecords());
+  const practiceIndex = buildPracticeStatsIndex(listTrainingHistory());
+  const overrides = getAllOverrides();
+  return splitLegacyTechniques()
+    .map((technique) => ({
+      technique,
+      progress: buildSkillProgress(technique.id, getTechniqueSkillSummaryFromIndex(technique.id, recordIndex), getPracticeStatsFromIndex(technique.id, practiceIndex), overrides[technique.id] ?? null),
+    }))
+    .filter((e) => e.progress.practiceCount > 0 || e.progress.analysisCount > 0 || e.progress.userOverride !== null);
 }
 
 function daysSince(iso: string | null): number | null {

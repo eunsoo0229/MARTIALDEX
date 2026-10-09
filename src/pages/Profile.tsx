@@ -4,7 +4,16 @@ import { useProfileStats } from '../lib/profileStats/useProfileStats';
 import { useMyStyle } from '../lib/myStyle/useMyStyle';
 import { useAuth } from '../lib/auth/AuthProvider';
 import { signOutUser } from '../lib/auth/authService';
-import { backupLocalDataToCloud, restoreLocalDataFromCloud, hasLocalDataToBackup } from '../lib/cloudSync/dataBackup';
+import {
+  backupLocalDataToCloud,
+  restoreLocalDataFromCloud,
+  hasLocalDataToBackup,
+  getCloudBackupInfo,
+  getLocalLastBackup,
+  formatBackupDate,
+  formatBackupTime,
+  type BackupMeta,
+} from '../lib/cloudSync/dataBackup';
 import { pushCurriculaToCloud, pullCurriculaFromCloud } from '../lib/cloudSync/curriculumSync';
 import { useAutoProgress } from '../lib/todayTraining/autoProgressSetting';
 import { useMyCurricula, useCurriculumProgress } from '../lib/curriculum/useCurriculum';
@@ -12,6 +21,7 @@ import { listMySalesOrders, listMySellingListings } from '../lib/marketplace/ser
 import type { MarketplaceListing, MarketplaceOrder } from '../lib/marketplace/types';
 import { requestRefund } from '../lib/payments/paymentService';
 import BackButton from '../components/BackButton';
+import TutorVoiceSettingsPanel from '../components/TutorVoiceSettingsPanel';
 import MyCommunityPostsCard from '../components/community/MyCommunityPostsCard';
 
 function PurchasedCurriculumRow({ curriculum }: { curriculum: import('../lib/curriculum/types').Curriculum }) {
@@ -66,6 +76,25 @@ export default function Profile() {
 
   const [syncing, setSyncing] = useState(false);
   const [syncMessage, setSyncMessage] = useState<string | null>(null);
+  // 마지막 백업: the account's cloud backup (whichever device made it); this
+  // device's own last backup is shown until/unless the cloud answers.
+  const [lastBackup, setLastBackup] = useState<{ meta: BackupMeta | null; updatedAt: string | null; loaded: boolean }>(() => {
+    const local = getLocalLastBackup();
+    return { meta: local, updatedAt: local?.backupTimestamp ?? null, loaded: false };
+  });
+
+  useEffect(() => {
+    if (!user) return;
+    let active = true;
+    void getCloudBackupInfo(user.id).then((r) => {
+      if (!active) return;
+      if (r.ok) setLastBackup(r.data ? { meta: r.data.meta, updatedAt: r.data.updatedAt, loaded: true } : { meta: null, updatedAt: null, loaded: true });
+      else setLastBackup((prev) => ({ ...prev, loaded: true }));
+    });
+    return () => {
+      active = false;
+    };
+  }, [user]);
 
   const myCurricula = useMyCurricula();
   const purchasedCurricula = myCurricula.filter((c) => !!c.marketplaceMeta);
@@ -109,6 +138,7 @@ export default function Profile() {
       return;
     }
     setSyncMessage(`계정에 저장했습니다 (커리큘럼 ${curriculumResult.data.curriculumCount}개, 데이터 ${backupResult.data.keyCount}개 항목).`);
+    setLastBackup({ meta: backupResult.data.meta, updatedAt: backupResult.data.meta.backupTimestamp, loaded: true });
   }
 
   async function handleRestore() {
@@ -177,6 +207,45 @@ export default function Profile() {
                   </button>
                 </div>
                 {syncMessage && <p className="video-status-message">{syncMessage}</p>}
+                <div className="last-backup" data-testid="last-backup">
+                  <h4>마지막 백업</h4>
+                  {lastBackup.meta ? (
+                    <dl className="last-backup__grid">
+                      <div>
+                        <dt>기기</dt>
+                        <dd data-testid="last-backup-device">{lastBackup.meta.deviceName}</dd>
+                      </div>
+                      <div>
+                        <dt>백업 날짜</dt>
+                        <dd data-testid="last-backup-date">{formatBackupDate(lastBackup.meta.backupTimestamp)}</dd>
+                      </div>
+                      <div>
+                        <dt>백업 시간</dt>
+                        <dd data-testid="last-backup-time">{formatBackupTime(lastBackup.meta.backupTimestamp)}</dd>
+                      </div>
+                    </dl>
+                  ) : lastBackup.updatedAt ? (
+                    // A backup made before device info was recorded: only the date is known.
+                    <dl className="last-backup__grid">
+                      <div>
+                        <dt>기기</dt>
+                        <dd data-testid="last-backup-device">기기 정보 없음</dd>
+                      </div>
+                      <div>
+                        <dt>백업 날짜</dt>
+                        <dd data-testid="last-backup-date">{formatBackupDate(lastBackup.updatedAt)}</dd>
+                      </div>
+                      <div>
+                        <dt>백업 시간</dt>
+                        <dd data-testid="last-backup-time">{formatBackupTime(lastBackup.updatedAt)}</dd>
+                      </div>
+                    </dl>
+                  ) : (
+                    <p className="video-status-message" data-testid="last-backup-none">
+                      {lastBackup.loaded ? '백업 정보 없음' : '백업 정보를 불러오는 중…'}
+                    </p>
+                  )}
+                </div>
                 <p className="video-status-message">커리큘럼·훈련 기록·스파링 기록 등 이 기기의 데이터를 계정에 백업하거나, 다른 기기에 백업해둔 데이터를 이 기기로 복원할 수 있습니다.</p>
               </>
             ) : (
@@ -194,6 +263,12 @@ export default function Profile() {
             )}
           </div>
         )}
+
+        <div className="card info-card" data-testid="profile-tutor-voice">
+          <h3>🔊 AI 튜터 음성</h3>
+          <p className="video-status-message" style={{ marginTop: 0 }}>AI 코치와 "말로 대화"할 때 쓰는 목소리와 말하기 속도입니다. 입력으로 대화하는 모드에는 영향을 주지 않습니다.</p>
+          <TutorVoiceSettingsPanel autoSave />
+        </div>
 
         {user && (
           <div className="card info-card">

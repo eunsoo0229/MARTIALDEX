@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, session, shell, powerSaveBlocker } = require('electron');
+const { app, BrowserWindow, ipcMain, session, shell, powerSaveBlocker, systemPreferences } = require('electron');
 const path = require('node:path');
 const fs = require('node:fs');
 
@@ -54,8 +54,21 @@ require('dotenv').config({ path: resolvedEnvPath });
 // user exactly which path was actually checked, instead of a generic hint.
 process.env.MARTIALDEX_ENV_PATH = resolvedEnvPath;
 const { askGemini } = require('./gemini.cjs');
-const { searchYoutube } = require('./youtubeSearch.cjs');
+const { searchYoutube, getVideoInfo } = require('./youtubeSearch.cjs');
 const { webSearch } = require('./webSearch.cjs');
+const { getDeviceInfo } = require('./deviceInfo.cjs');
+
+ipcMain.handle('device:info', () => getDeviceInfo(app.getVersion()));
+
+// macOS gates the microphone per app (TCC): without an explicit request the
+// stream can come back silent. Ask once when the user first presses the mic;
+// report the real status so the UI can say exactly what to fix.
+ipcMain.handle('media:mic-access', async () => {
+  if (process.platform !== 'darwin' || !systemPreferences.getMediaAccessStatus) return 'granted';
+  let status = systemPreferences.getMediaAccessStatus('microphone');
+  if (status === 'not-determined') status = (await systemPreferences.askForMediaAccess('microphone')) ? 'granted' : 'denied';
+  return status;
+});
 
 ipcMain.handle('ai:ask', async (_event, request) => {
   if (!request || typeof request.question !== 'string' || !request.question.trim()) {
@@ -81,6 +94,14 @@ ipcMain.handle('youtube:search', async (_event, query) => {
     return await searchYoutube(query);
   } catch {
     return { ok: false, code: 'UNKNOWN', message: '영상 검색 중 알 수 없는 오류가 발생했습니다.' };
+  }
+});
+
+ipcMain.handle('youtube:video-info', async (_event, videoId) => {
+  try {
+    return await getVideoInfo(videoId);
+  } catch {
+    return { ok: false, code: 'UNKNOWN', message: '영상 정보를 가져오는 중 알 수 없는 오류가 발생했습니다.' };
   }
 });
 
@@ -272,6 +293,21 @@ app.whenReady().then(() => {
 
   createWindow();
 });
+
+// Chromium writes localStorage to disk lazily (batched commits). Every
+// local-first feature keeps its data there, so a quit that lands inside that
+// batching window silently dropped the latest writes (reproduced: a value set
+// 1–3 s before closing was gone on the next launch). Flush explicitly when a
+// window closes and before quitting.
+function flushStorage() {
+  try {
+    session.defaultSession.flushStorageData();
+  } catch {
+    // session not ready yet — nothing written to flush
+  }
+}
+app.on('browser-window-created', (_e, win) => win.on('close', flushStorage));
+app.on('before-quit', flushStorage);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();

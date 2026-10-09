@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useAuth } from '../../lib/auth/AuthProvider';
 import { hasLocalDataToBackup, backupLocalDataToCloud, restoreLocalDataFromCloud, getCloudBackupInfo } from '../../lib/cloudSync/dataBackup';
 import { pushCurriculaToCloud, syncCurriculaBidirectional } from '../../lib/cloudSync/curriculumSync';
@@ -7,7 +8,6 @@ import { syncCombosBidirectional } from '../../lib/cloudSync/comboSync';
 import { syncTacticsBidirectional } from '../../lib/cloudSync/tacticSync';
 import { syncTrainingHistoryBidirectional } from '../../lib/cloudSync/trainingHistorySync';
 import { syncSparringSessionsBidirectional } from '../../lib/cloudSync/sparringSessionSync';
-import { syncGroundBattleMatchesBidirectional } from '../../lib/cloudSync/groundBattleSync';
 import { syncGymRoutinesBidirectional } from '../../lib/cloudSync/gymRoutineSync';
 import { syncNutritionMealsBidirectional, syncNutritionProfileBidirectional } from '../../lib/cloudSync/nutritionSync';
 import { syncAddTeqFromCloud } from '../../lib/cloudSync/addTeqSync';
@@ -38,6 +38,7 @@ type Mode = 'push-offer' | 'restore-or-push-choice';
 //     the user wants; ask instead of picking a side and risking their data
 export default function LocalDataMigrationPrompt() {
   const { isConfigured, user } = useAuth();
+  const location = useLocation();
   const [mode, setMode] = useState<Mode | null>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
@@ -57,7 +58,6 @@ export default function LocalDataMigrationPrompt() {
     void syncTacticsBidirectional(userId);
     void syncTrainingHistoryBidirectional(userId);
     void syncSparringSessionsBidirectional(userId);
-    void syncGroundBattleMatchesBidirectional(userId);
     void syncGymRoutinesBidirectional(userId);
     void syncNutritionMealsBidirectional(userId);
     void syncNutritionProfileBidirectional(userId);
@@ -203,7 +203,9 @@ export default function LocalDataMigrationPrompt() {
     };
   }, [isConfigured, user]);
 
-  if (!mode || !user) return null;
+  // Never cover a coach-driven 체육관 live session (its timer is on screen);
+  // the prompt simply shows once the student leaves that screen.
+  if (!mode || !user || location.pathname.startsWith('/gym/live/')) return null;
 
   function dismiss() {
     window.localStorage.setItem(promptSeenKey(user!.id), '1');

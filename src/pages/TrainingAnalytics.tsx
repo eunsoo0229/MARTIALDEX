@@ -168,16 +168,34 @@ export default function TrainingAnalytics() {
               {report.topTechniques.length > 0 && (
                 <>
                   <div className="field-label" style={{ marginTop: 12 }}>
-                    가장 많이 훈련한 기술 TOP {report.topTechniques.length}
+                    🥋 가장 많이 훈련한 기술 TOP {report.topTechniques.length}
                   </div>
-                  <div className="chip-row">
+                  <ol className="top-trained-list">
                     {report.topTechniques.map((t) => (
-                      <span key={t.techniqueId} className="chip">
-                        {t.name} {t.count}회
-                      </span>
+                      <li key={t.techniqueId}>
+                        {t.name} — {t.count}회
+                      </li>
                     ))}
-                  </div>
+                  </ol>
                 </>
+              )}
+
+              {report.topGymExercises.length > 0 && (
+                <>
+                  <div className="field-label" style={{ marginTop: 12 }}>
+                    🏋️ 가장 많이 훈련한 헬스 TOP {report.topGymExercises.length}
+                  </div>
+                  <ol className="top-trained-list">
+                    {report.topGymExercises.map((t) => (
+                      <li key={t.techniqueId}>
+                        {t.name} — {t.count}회
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              )}
+              {(report.topTechniques.length > 0 || report.topGymExercises.length > 0) && (
+                <p className="technique-row__sub">횟수 = 해당 기술/운동이 포함된 훈련 세션 수</p>
               )}
 
               {report.curriculumCompletionRates.length > 0 && (

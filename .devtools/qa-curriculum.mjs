@@ -1,6 +1,7 @@
 import { _electron as electron } from 'playwright-core';
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
 
 const APP_DIR = '/Users/swcho/Documents/MARTIALDEX';
 const SHOT_DIR =
@@ -17,12 +18,17 @@ function check(name, pass, detail = '') {
   console.log((pass ? 'PASS' : 'FAIL') + ' — ' + name + (detail ? ' :: ' + detail : ''));
 }
 
+// Isolated profile shared by both launches (restart test) — never the real
+// app profile, which this script used to clear, and which a running copy of
+// MARTIALDEX keeps locked (localStorage then silently stays in memory only).
+const USER_DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'mdex-curriculum-'));
+
 async function launch() {
   const cleanEnv = { ...process.env };
   delete cleanEnv.ELECTRON_RUN_AS_NODE;
   const app = await electron.launch({
     executablePath: electronBin,
-    args: [APP_DIR],
+    args: [APP_DIR, `--user-data-dir=${USER_DATA_DIR}`],
     env: cleanEnv,
     timeout: 30000,
   });
@@ -153,7 +159,14 @@ async function main() {
   check('Curriculum overview reflects currentDay advanced to 2', currentDayStat === '2', currentDayStat);
 
   // ============ 6. RESTART APP -> PROGRESS PERSISTS ============
-  await app.close();
+  // Quit the way a user does (app.quit, then wait for the process to exit).
+  // Playwright's app.close() drops its debugging pipe right after app.quit(),
+  // which can end the process before Chromium writes localStorage to disk.
+  {
+    const exited = new Promise((r) => app.process().once('exit', r));
+    await app.evaluate(({ app: a }) => { setTimeout(() => a.quit(), 0); });
+    await exited;
+  }
   ({ app, page, consoleErrors } = await launch());
   await goto('#/learning/bjj');
   await new Promise((r) => setTimeout(r, 400));

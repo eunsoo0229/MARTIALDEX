@@ -4,7 +4,10 @@ import { todayDateKey } from '../dateUtil';
 import { deleteTrainingHistoryEntry, recordTrainingSession } from '../trainingHistory/service';
 import { ensureProgress, getProgress, setDayComplete } from '../curriculum/curriculumService';
 import { buildExerciseHistoryDetails } from './sessionDetail';
-import { buildTrainingPlanForCurriculumDay } from './planner';
+import { buildTrainingPlanForCurriculumDay, buildTrainingPlanForGymRoutineDay } from './planner';
+import { getGymRoutine } from '../gymRoutine/service';
+import type { Weekday } from '../dateUtil';
+import type { TrainingHistoryEntry } from '../trainingHistory/types';
 
 const KEY = 'martialdex:today-training-session';
 
@@ -65,6 +68,20 @@ export function setSessionNotes(session: TodaySessionState, notes: string | null
   return updated;
 }
 
+// Which routine day this session actually ran — snapshotted into the
+// history entry so 기록 can say "수요일 루틴 기반" even after the routine is
+// renamed/deleted. The entry's own `date` (today) stays the performed date.
+function gymRoutineMetaOf(session: TodaySessionState): TrainingHistoryEntry['gymRoutine'] {
+  const { gymRoutineId, gymRoutineWeekday } = session.plan;
+  if (!gymRoutineId || gymRoutineWeekday == null) return undefined;
+  return {
+    routineId: gymRoutineId,
+    routineName: getGymRoutine(gymRoutineId)?.name ?? '삭제된 루틴',
+    weekday: gymRoutineWeekday,
+    substituted: !!session.plan.gymRoutineSubstituted,
+  };
+}
+
 export interface FinalizeResult {
   entryId: string;
   /** Whether this curriculum Day was ALREADY marked complete before this finalize — lets undoTodaySessionFinalize know whether reverting should un-complete it or leave it alone (it might have been completed independently, e.g. from the Day-detail page). */
@@ -102,6 +119,7 @@ export function finalizeTodaySession(
     notes: session.sessionNotes ?? null,
     source: session.plan.mode === 'curriculum' ? 'curriculum' : 'coach_today',
     exerciseDetails: session.detail ? buildExerciseHistoryDetails(session.detail) : undefined,
+    gymRoutine: gymRoutineMetaOf(session),
   });
 
   let dayWasAlreadyComplete = false;
@@ -192,6 +210,18 @@ export function startCurriculumDayTraining(curriculum: Curriculum, day: number):
   const plan = buildTrainingPlanForCurriculumDay(curriculum, day);
   if (!plan) return null;
   ensureProgress(curriculum);
+  return startTodaySession(plan);
+}
+
+/**
+ * "다른 요일 루틴으로 운동하기" — starts today's session from another
+ * weekday's routine day. Same overwrite contract as
+ * startCurriculumDayTraining above (caller confirms first if that would
+ * discard an unfinished session). Never writes to the routine.
+ */
+export function startGymRoutineDayTraining(routineId: string, weekday: Weekday): TodaySessionState | null {
+  const plan = buildTrainingPlanForGymRoutineDay(routineId, weekday);
+  if (!plan) return null;
   return startTodaySession(plan);
 }
 

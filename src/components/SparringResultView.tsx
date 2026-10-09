@@ -11,7 +11,7 @@ import { recordTrainingSession } from '../lib/trainingHistory/service';
 import { generateTodayTrainingPlan } from '../lib/todayTraining/planner';
 import { addTechniqueToSession } from '../lib/todayTraining/sessionStore';
 import { getSportAnalysisProfile } from '../lib/sparringAnalysis/sportAnalysisProfiles';
-import { MOTION_EVENT_LABEL, type SparringSession, type TechniqueGuess } from '../lib/sparringAnalysis/types';
+import { MOTION_EVENT_LABEL, type CoachingSynthesisResult, type SparringSession, type TechniqueGuess } from '../lib/sparringAnalysis/types';
 import { generateSparringSetups, type GeneratedSetup } from '../lib/sparringAnalysis/setupGeneration';
 import { isSyntheticTrainingDomain } from '../lib/loadData';
 import { useAuth } from '../lib/auth/AuthProvider';
@@ -170,6 +170,14 @@ export default function SparringResultView({
         </div>
       )}
 
+      {session.coachingSynthesis && <SparringCoachingCard
+        coaching={session.coachingSynthesis}
+        canCreateCurriculum={session.weakAreas.length > 0}
+        onAddToToday={handleAddToTodayTraining}
+        onCreateCurriculum={() => setCurriculumSheetOpen(true)}
+        onAskCoach={() => setAiOpen(true)}
+      />}
+
       {session.coachingSynthesis && (
         <div className="card info-card">
           <h3>🧠 AI 코칭 종합 평가</h3>
@@ -188,26 +196,6 @@ export default function SparringResultView({
                 </div>
               );
             })}
-          </div>
-        </div>
-      )}
-
-      {session.coachingSynthesis && (session.coachingSynthesis.strengths.length > 0 || session.coachingSynthesis.weaknesses.length > 0) && (
-        <div className="card info-card">
-          <h3>👍 강점 · ⚠️ 개선점</h3>
-          <div className="sparring-insight-grid">
-            {session.coachingSynthesis.strengths.map((s, i) => (
-              <details key={`s-${i}`} className="sparring-insight-card sparring-insight-card--strength">
-                <summary>👍 {s.label}</summary>
-                <p>{s.evidence}</p>
-              </details>
-            ))}
-            {session.coachingSynthesis.weaknesses.map((w, i) => (
-              <details key={`w-${i}`} className="sparring-insight-card sparring-insight-card--weakness">
-                <summary>⚠️ {w.label}</summary>
-                <p>{w.evidence}</p>
-              </details>
-            ))}
           </div>
         </div>
       )}
@@ -487,6 +475,138 @@ export default function SparringResultView({
             navigate(`/learning/${curriculum.martialArt}/${curriculum.id}`);
           }}
         />
+      )}
+    </div>
+  );
+}
+
+/**
+ * "AI 스파링 코칭" — 잘한 점 / 개선할 점 / 다음 훈련 / 종합 평가 / 분석 한계.
+ * Every evidence line is the code-built fact text the item cited
+ * (coachingFacts.ts), and every drill technique is a whitelisted real id,
+ * so each improvement point leads straight to something practisable
+ * (오늘의 훈련 · 기술 상세 · 맞춤 커리큘럼 · AI 코치). Sessions saved before
+ * v2 have no facts/nextTraining and render with what they have.
+ */
+function SparringCoachingCard({
+  coaching,
+  canCreateCurriculum,
+  onAddToToday,
+  onCreateCurriculum,
+  onAskCoach,
+}: {
+  coaching: CoachingSynthesisResult;
+  canCreateCurriculum: boolean;
+  onAddToToday: (techniqueId: string, label: string) => void;
+  onCreateCurriculum: () => void;
+  onAskCoach: () => void;
+}) {
+  const next = coaching.nextTraining ?? [];
+  const legacyDirections = next.length === 0 ? coaching.improvementDirections : [];
+  return (
+    <div className="card info-card sparring-coaching">
+      <h3>🧠 AI 스파링 코칭</h3>
+      <p className="video-status-message">영상에서 실제로 측정·계산된 데이터만 근거로 작성되었습니다. 근거를 누르면 어떤 데이터인지 볼 수 있습니다.</p>
+
+      <h4>👍 잘한 점</h4>
+      {coaching.strengths.length > 0 ? (
+        <ul className="sparring-coaching__list">
+          {coaching.strengths.map((s, i) => (
+            <li key={`s-${i}`}>
+              <details className="sparring-insight-card sparring-insight-card--strength">
+                <summary>{s.label}</summary>
+                <p>근거: {s.evidence}</p>
+              </details>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="technique-row__sub">이번 데이터만으로 근거 있는 잘한 점을 찾지 못했습니다.</p>
+      )}
+
+      <h4>⚠️ 개선할 점</h4>
+      {coaching.weaknesses.length > 0 ? (
+        <ul className="sparring-coaching__list">
+          {coaching.weaknesses.map((w, i) => (
+            <li key={`w-${i}`}>
+              <details className="sparring-insight-card sparring-insight-card--weakness">
+                <summary>{w.label}</summary>
+                <p>근거: {w.evidence}</p>
+              </details>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="technique-row__sub">이번 데이터만으로 근거 있는 개선점을 찾지 못했습니다.</p>
+      )}
+
+      {(next.length > 0 || legacyDirections.length > 0) && (
+        <>
+          <h4>🎯 다음 훈련 추천</h4>
+          <ol className="sparring-coaching__list sparring-coaching__drills">
+            {next.map((n, i) => (
+              <li key={`n-${i}`}>
+                <strong>{n.title}</strong>
+                <div>{n.drill}</div>
+                <div className="technique-row__sub">이유: {n.reason}</div>
+                {n.techniqueIds.length > 0 && (
+                  <div className="chip-row" style={{ marginTop: 6 }}>
+                    {n.techniqueIds.map((id) => {
+                      const t = resolveTechnique(id);
+                      if (!t) return null;
+                      const name = t.koreanName || t.name;
+                      return (
+                        <span key={id} className="sparring-coaching__technique">
+                          <Link to={`/arts/${t.martialArt}/techniques/${t.id}`} className="chip">
+                            {name}
+                          </Link>
+                          <button type="button" className="btn btn-ghost btn-sm" onClick={() => onAddToToday(id, name)}>
+                            오늘의 훈련에 추가
+                          </button>
+                        </span>
+                      );
+                    })}
+                  </div>
+                )}
+              </li>
+            ))}
+            {legacyDirections.map((d, i) => (
+              <li key={`d-${i}`}>{d}</li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      {coaching.overallFeedback && (
+        <>
+          <h4>📝 종합 평가</h4>
+          <p>{coaching.overallFeedback}</p>
+        </>
+      )}
+
+      <div className="modal-actions modal-actions--start">
+        {canCreateCurriculum && (
+          <button className="btn btn-primary" onClick={onCreateCurriculum}>
+            🎯 개선점으로 맞춤 커리큘럼 만들기
+          </button>
+        )}
+        <button className="btn btn-secondary" onClick={onAskCoach}>
+          AI 코치에게 물어보기
+        </button>
+        <Link to="/free-training" className="btn btn-ghost">
+          자유 훈련으로 연습하기
+        </Link>
+      </div>
+
+      {(coaching.dataLimits?.length ?? 0) > 0 && (
+        <details className="sparring-coaching__limits">
+          <summary>ℹ️ 이 분석으로 알 수 없는 것</summary>
+          <ul>
+            {coaching.dataLimits!.map((l, i) => (
+              <li key={i}>{l}</li>
+            ))}
+          </ul>
+        </details>
       )}
     </div>
   );

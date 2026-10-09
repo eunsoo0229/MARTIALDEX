@@ -4,11 +4,14 @@ import { martialArtSummaries } from '../lib/loadData';
 import { buildExportPayload, deleteAllRecords } from '../lib/poseAnalysis/recordsService';
 import { classifyScore, STATUS_ICON as SCORE_ICON } from '../lib/poseAnalysis/scoring';
 import { useAllSkillProgress } from '../lib/skillProgress/useSkillProgress';
+import { legacySplitSkillEntries } from '../lib/skillProgress/weaknessEngine';
+import LegacySplitNote from '../components/LegacySplitNote';
 import { rankWeakness, summarizeByMartialArt, summarizeByPosition, summarizeOverallCounts } from '../lib/skillProgress/weaknessEngine';
 import { MASTERY_ICON, MASTERY_LABEL, type MasteryStatus } from '../lib/skillProgress/types';
 import EmptyState from '../components/EmptyState';
 import LoginToBackupBanner from '../components/auth/LoginToBackupBanner';
 import BackButton from '../components/BackButton';
+import { isTechniqueInArt } from '../lib/techniqueCanonical';
 
 type ViewMode = 'mastery' | 'martialArt' | 'position';
 type SortMode = 'default' | 'score' | 'recent';
@@ -55,8 +58,10 @@ export default function MySkills() {
     return withScore.length ? withScore.reduce((a, b) => ((b.averageScore ?? 100) < (a.averageScore ?? 100) ? b : a)) : null;
   }, [byPosition]);
 
-  const filtered = skillEntries.filter((e) => {
-    if (martialArtFilter && e.technique.martialArt !== martialArtFilter) return false;
+  // Old records split by the relation audit that hold this user's data — listed (marked), never summarized or recommended.
+  const legacyEntries = useMemo(() => legacySplitSkillEntries(), [skillEntries]);
+  const filtered = [...skillEntries, ...legacyEntries].filter((e) => {
+    if (martialArtFilter && !isTechniqueInArt(e.technique, martialArtFilter)) return false;
     if (statusFilter && e.progress.status !== statusFilter) return false;
     return true;
   });
@@ -96,6 +101,11 @@ export default function MySkills() {
           평가하지 않습니다.
         </p>
         <LoginToBackupBanner featureName="기술 숙련도" />
+        <div className="modal-actions modal-actions--start" style={{ margin: '4px 0 8px' }}>
+          <Link to="/learned-techniques" className="btn btn-secondary btn-sm">
+            📚 배운 기술 모아보기 · 숙련도 한 번에 바꾸기
+          </Link>
+        </div>
 
         <div className="curriculum-stat-row">
           <div>
@@ -229,7 +239,9 @@ export default function MySkills() {
                 <Link key={technique.id} to={`/arts/${technique.martialArt}/techniques/${technique.id}`} className="technique-row">
                   <div className="technique-row__main">
                     <div className="technique-row__name">{technique.name}</div>
-                    <div className="technique-row__sub">{technique.category}</div>
+                    <div className="technique-row__sub">
+                      {technique.splitInto ? <LegacySplitNote technique={technique} /> : technique.category}
+                    </div>
                   </div>
                   <div className="technique-row__right">
                     <span className={`chip ${progress.status !== 'not_started' ? 'active' : ''}`}>

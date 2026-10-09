@@ -22,6 +22,7 @@ import { submitTechniqueReport } from '../lib/techniqueReports/service';
 import { REPORT_REASON_ORDER, REPORT_REASON_LABEL, type ReportReason } from '../lib/techniqueReports/types';
 import BackButton from '../components/BackButton';
 import PostureSection from '../components/PostureSection';
+import { isTechniqueInArt, techniqueArts, techniqueCategoryInArt, techniqueNameInArt } from '../lib/techniqueCanonical';
 
 const MASTERY_OPTIONS: MasteryStatus[] = ['not_started', 'learning', 'average', 'proficient', 'needs_improvement'];
 
@@ -63,13 +64,16 @@ function ListCard({ title, icon, items }: { title: string; icon: string; items: 
 export default function TechniqueDetail() {
   const { martialArtId = '', techniqueId = '' } = useParams();
   const technique = resolveTechnique(techniqueId);
+  // A merged-away id (e.g. bjj__granby-roll) opens its canonical technique;
+  // every per-technique record (mastery, pose records) is keyed by that id.
+  const canonicalId = technique?.id ?? techniqueId;
   const [aiOpen, setAiOpen] = useState(false);
   const [poseOpen, setPoseOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
   const { isFavorite, toggleFavorite } = useFavorites();
-  const skillSummary = useTechniqueSkillSummary(techniqueId);
-  const skillProgress = useSkillProgress(techniqueId);
-  const scoreRecords = useTechniqueRecords(techniqueId);
+  const skillSummary = useTechniqueSkillSummary(canonicalId);
+  const skillProgress = useSkillProgress(canonicalId);
+  const scoreRecords = useTechniqueRecords(canonicalId);
   const [changingMastery, setChangingMastery] = useState(false);
 
   const { user } = useAuth();
@@ -119,7 +123,9 @@ export default function TechniqueDetail() {
   const crossArtMatches = useMemo(() => {
     if (!technique) return [];
     const normalized = technique.name.toLowerCase().replace(/[^a-z0-9가-힣]/g, '');
-    return technique.relatedMartialArts.map((artId) => {
+    const ownArts = techniqueArts(technique);
+    // Arts this technique itself belongs to are shown as its own art chips, not as "다른 무술".
+    return technique.relatedMartialArts.filter((artId) => !ownArts.includes(artId)).map((artId) => {
       const match = getUnifiedAllTechniques().find(
         (t) =>
           t.martialArt === artId &&
@@ -129,11 +135,16 @@ export default function TechniqueDetail() {
     });
   }, [technique]);
 
-  if (!technique || technique.martialArt !== martialArtId) {
+  if (!technique || !isTechniqueInArt(technique, martialArtId)) {
     return <Navigate to={`/arts/${martialArtId || ''}`} replace />;
   }
 
-  const art = getUnifiedMartialArt(technique.martialArt);
+  // Shown in the art it was opened from — a canonical technique is listed under every linked art.
+  const viewArt = martialArtId;
+  const art = getUnifiedMartialArt(viewArt);
+  const arts = techniqueArts(technique);
+  const viewCategory = techniqueCategoryInArt(technique, viewArt);
+  const nameInArt = techniqueNameInArt(technique, viewArt);
   const fav = isFavorite(technique.id);
   const displayTags = technique.tags.filter((tag) => tag.startsWith('#'));
   const poseSupported = isPoseAnalysisSupported(technique.id);
@@ -149,24 +160,29 @@ export default function TechniqueDetail() {
           <span>/</span>
           <Link to="/arts">무술 목록</Link>
           <span>/</span>
-          <Link to={`/arts/${technique.martialArt}`}>{art?.nameKo ?? technique.martialArt}</Link>
+          <Link to={`/arts/${viewArt}`}>{art?.nameKo ?? viewArt}</Link>
           <span>/</span>
-          <Link to={`/arts/${technique.martialArt}/techniques`}>전체 기술</Link>
+          <Link to={`/arts/${viewArt}/techniques`}>전체 기술</Link>
           <span>/</span>
-          <span>{technique.name}</span>
+          <span>{nameInArt.name}</span>
         </div>
 
         <div className="detail-hero">
           <div>
-            <h1>{technique.name}</h1>
-            {technique.koreanName && technique.koreanName !== technique.name && (
-              <div className="detail-hero__korean">{technique.koreanName}</div>
+            <h1 data-testid="technique-title">{nameInArt.name}</h1>
+            {nameInArt.koreanName && <div className="detail-hero__korean">{nameInArt.koreanName}</div>}
+            {nameInArt.otherNames.length > 0 && (
+              <div className="detail-hero__korean" data-testid="technique-other-names">
+                다른 이름: {nameInArt.otherNames.join(' · ')}
+              </div>
             )}
             <div className="chip-row">
-              <Link to={`/arts/${technique.martialArt}`} className="chip active">
-                {art?.nameKo ?? technique.martialArt}
-              </Link>
-              <span className="chip">{technique.category}</span>
+              {arts.map((a) => (
+                <Link key={a} to={`/arts/${a}/techniques/${technique.id}`} className={`chip ${a === viewArt ? 'active' : ''}`} data-testid="technique-art-chip" data-art={a}>
+                  {getUnifiedMartialArt(a)?.nameKo ?? a}
+                </Link>
+              ))}
+              <span className="chip" data-testid="technique-category">{viewCategory}</span>
               <DifficultyBadge difficulty={technique.difficulty} />
               {technique.source === 'user_added' && <span className="chip">🧑‍🤝‍🧑 사용자 추가 기술</span>}
               {technique.source === 'ai_web_research' && <span className="chip">🔎 웹 검색 기반 추가 기술</span>}
@@ -212,7 +228,7 @@ export default function TechniqueDetail() {
             <span className="field-label">포지션</span>
             <div className="chip-row">
               {technique.positions.map((p) => (
-                <span key={p} className={`chip ${p === technique.category ? 'active' : ''}`}>
+                <span key={p} className={`chip ${p === viewCategory ? 'active' : ''}`}>
                   {p}
                 </span>
               ))}
@@ -227,9 +243,57 @@ export default function TechniqueDetail() {
                 <p>{technique.purpose}</p>
               </InfoCard>
             )}
+            {technique.splitInto && technique.splitInto.length > 0 && (
+              <InfoCard title="여러 기술을 묶은 항목" icon="🔀">
+                <div data-testid="technique-split-into">
+                  <p className="video-status-message" style={{ marginTop: 0 }}>
+                    이 항목은 원문에서 서로 다른 기술을 한 줄로 묶어 적은 것이어서, 각 기술로 나누어 정리했습니다. 이전 학습 기록은 이 항목에 그대로 남아 있습니다.
+                  </p>
+                  <div className="chip-row">
+                    {technique.splitInto.map((id) => {
+                      const part = resolveTechnique(id);
+                      return part ? (
+                        <Link key={id} className="chip" to={`/arts/${part.martialArt}/techniques/${encodeURIComponent(part.id)}`}>
+                          {part.name}
+                        </Link>
+                      ) : null;
+                    })}
+                  </div>
+                </div>
+              </InfoCard>
+            )}
+            {technique.notTechnique && (
+              <InfoCard title="기술이 아닌 항목" icon="ℹ️">
+                <p className="video-status-message" data-testid="technique-not-technique">
+                  {technique.notTechnique} — 기술 목록에는 표시하지 않습니다.
+                </p>
+              </InfoCard>
+            )}
             {technique.description && (
               <InfoCard title="설명" icon="📖">
                 <p>{technique.description}</p>
+              </InfoCard>
+            )}
+            {arts.length > 1 && (
+              <InfoCard title="이 기술을 사용하는 무술" icon="🌐">
+                <p data-testid="technique-arts">{arts.map((a) => getUnifiedMartialArt(a)?.nameKo ?? a).join(' · ')}</p>
+                {technique.namesByArt && Object.keys(technique.namesByArt).length > 1 && (
+                  <p className="video-status-message" data-testid="technique-names-by-art">
+                    {arts
+                      .filter((a) => technique.namesByArt?.[a])
+                      .map((a) => {
+                        const n = technique.namesByArt![a];
+                        return `${getUnifiedMartialArt(a)?.nameKo ?? a}: ${n.name}${n.koreanName && n.koreanName !== n.name ? ` (${n.koreanName})` : ''}`;
+                      })
+                      .join(' · ')}
+                  </p>
+                )}
+                {technique.usageByArt &&
+                  Object.entries(technique.usageByArt).map(([a, text]) => (
+                    <p key={a} className="video-status-message">
+                      <strong>{getUnifiedMartialArt(a)?.nameKo ?? a}:</strong> {text}
+                    </p>
+                  ))}
               </InfoCard>
             )}
             {technique.posture ? (

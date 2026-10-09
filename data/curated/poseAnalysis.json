@@ -159,5 +159,27 @@
       { "id": "basicStance", "name": "하단 자세", "params": { "targetAngle": 130, "tolerance": 35 } },
       { "id": "balance", "name": "균형" }
     ]
+  },
+  "muay-thai__lead-round-kick": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "hipRotation", "name": "골반 회전", "params": { "targetRotation": 50, "tolerance": 40 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임" }
+    ]
+  },
+  "muay-thai__rear-round-kick": {
+    "supported": true,
+    "requiredLandmarks": ["leftShoulder", "rightShoulder", "leftHip", "rightHip", "leftKnee", "rightKnee", "leftAnkle", "rightAnkle"],
+    "metrics": [
+      { "id": "supportLegStability", "name": "지지 다리 안정성" },
+      { "id": "kneePosition", "name": "무릎 위치", "params": { "targetRise": 0.7, "tolerance": 0.5 } },
+      { "id": "hipRotation", "name": "골반 회전", "params": { "targetRotation": 50, "tolerance": 40 } },
+      { "id": "balance", "name": "상체 균형" },
+      { "id": "legMovement", "name": "다리의 움직임" }
+    ]
   }
 }

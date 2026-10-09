@@ -1,4 +1,5 @@
 import type { PoseAnalysisRecord, PoseAnalysisResult, TechniqueSkillSummary } from './types';
+import { canonicalTechniqueId, equivalentTechniqueIds } from '../techniqueCanonical';
 import { poseRecordsRepository } from './recordsRepository';
 import { getTechnique } from '../loadData';
 
@@ -23,8 +24,14 @@ export function saveAnalysisResult(martialArtId: string, result: PoseAnalysisRes
   return record;
 }
 
+// Records saved under a merged-away technique id (e.g. bjj__granby-roll)
+// count for its canonical technique — see techniqueCanonical/.
+function recordsForEquivalents(techniqueId: string): PoseAnalysisRecord[] {
+  return equivalentTechniqueIds(techniqueId).flatMap((id) => poseRecordsRepository.listForTechnique(id));
+}
+
 export function getRecordsForTechnique(techniqueId: string): PoseAnalysisRecord[] {
-  return poseRecordsRepository.listForTechnique(techniqueId).sort((a, b) => a.analyzedAt.localeCompare(b.analyzedAt));
+  return recordsForEquivalents(techniqueId).sort((a, b) => a.analyzedAt.localeCompare(b.analyzedAt));
 }
 
 export function getAllRecords(): PoseAnalysisRecord[] {
@@ -62,7 +69,7 @@ function computeSummaryFromRecords(techniqueId: string, records: PoseAnalysisRec
 }
 
 export function getTechniqueSkillSummary(techniqueId: string): TechniqueSkillSummary {
-  return computeSummaryFromRecords(techniqueId, poseRecordsRepository.listForTechnique(techniqueId));
+  return computeSummaryFromRecords(techniqueId, recordsForEquivalents(techniqueId));
 }
 
 /**
@@ -76,15 +83,16 @@ export function getTechniqueSkillSummary(techniqueId: string): TechniqueSkillSum
 export function buildSkillSummaryIndex(allRecords: PoseAnalysisRecord[]): Map<string, PoseAnalysisRecord[]> {
   const byTechnique = new Map<string, PoseAnalysisRecord[]>();
   for (const record of allRecords) {
-    const list = byTechnique.get(record.techniqueId);
+    const key = canonicalTechniqueId(record.techniqueId);
+    const list = byTechnique.get(key);
     if (list) list.push(record);
-    else byTechnique.set(record.techniqueId, [record]);
+    else byTechnique.set(key, [record]);
   }
   return byTechnique;
 }
 
 export function getTechniqueSkillSummaryFromIndex(techniqueId: string, index: Map<string, PoseAnalysisRecord[]>): TechniqueSkillSummary {
-  return computeSummaryFromRecords(techniqueId, index.get(techniqueId) ?? []);
+  return computeSummaryFromRecords(techniqueId, index.get(canonicalTechniqueId(techniqueId)) ?? []);
 }
 
 export function deleteRecord(recordId: string): void {
@@ -92,7 +100,7 @@ export function deleteRecord(recordId: string): void {
 }
 
 export function deleteAllRecordsForTechnique(techniqueId: string): void {
-  poseRecordsRepository.deleteForTechnique(techniqueId);
+  for (const id of equivalentTechniqueIds(techniqueId)) poseRecordsRepository.deleteForTechnique(id);
 }
 
 export function deleteAllRecords(): void {

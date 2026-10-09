@@ -37,6 +37,7 @@ export function createCombo(input: {
   techniqueIds: string[];
   aiComboMeta?: Combo['aiComboMeta'];
   sourceMeta?: Combo['sourceMeta'];
+  visualMittMeta?: Combo['visualMittMeta'];
 }): Combo {
   const now = new Date().toISOString();
   const combo: Combo = {
@@ -49,6 +50,7 @@ export function createCombo(input: {
     updatedAt: now,
     ...(input.aiComboMeta ? { aiComboMeta: input.aiComboMeta } : {}),
     ...(input.sourceMeta ? { sourceMeta: input.sourceMeta } : {}),
+    ...(input.visualMittMeta ? { visualMittMeta: input.visualMittMeta } : {}),
   };
   comboRepository.save(combo);
   return combo;

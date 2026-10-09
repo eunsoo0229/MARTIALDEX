@@ -91,4 +91,75 @@ async function searchYoutube(query) {
   return { ok: true, results };
 }
 
-module.exports = { searchYoutube };
+// Single-video metadata for the "YouTube URL 직접 추가" verification flow.
+// Keep in sync with supabase/functions/youtube-search/index.ts. Returns ONLY
+// what YouTube itself reports (title, channel, description, duration,
+// keywords, category) — the verifier must never be handed invented metadata.
+// Tries the public watch page first, then YouTube's own public player
+// endpoint (same data; the watch page is sometimes refused).
+const PLAYER_ENDPOINT = 'https://www.youtube.com/youtubei/v1/player?prettyPrint=false';
+const PLAYER_CLIENT = { clientName: 'WEB', clientVersion: '2.20240726.00.00', hl: 'en', gl: 'US' };
+
+function infoFromPlayerResponse(videoId, data) {
+  const details = data && data.videoDetails;
+  const status = data && data.playabilityStatus && data.playabilityStatus.status;
+  if (!details || details.videoId !== videoId) return null;
+  const micro = (data.microformat && data.microformat.playerMicroformatRenderer) || {};
+  return {
+    videoId,
+    title: details.title || '',
+    channel: details.author || '',
+    description: (details.shortDescription || '').slice(0, 4000),
+    lengthSeconds: Number(details.lengthSeconds) || 0,
+    keywords: Array.isArray(details.keywords) ? details.keywords.slice(0, 40) : [],
+    category: micro.category || null,
+    // Streaming eligibility (e.g. UNPLAYABLE without a browser session) is
+    // not existence — only a hard ERROR means the video is gone/private.
+    playable: status !== 'ERROR',
+  };
+}
+
+async function fetchWithTimeout(url, init) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function getVideoInfo(videoId) {
+  if (typeof videoId !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
+    return { ok: false, code: 'UNKNOWN', message: '올바른 YouTube 영상 ID가 아닙니다.' };
+  }
+  try {
+    const res = await fetchWithTimeout(`https://www.youtube.com/watch?v=${videoId}&hl=en`, {
+      headers: { 'User-Agent': SEARCH_USER_AGENT, 'Accept-Language': 'en-US,en;q=0.9' },
+    });
+    if (res.ok) {
+      const match = (await res.text()).match(/var ytInitialPlayerResponse = (\{.*?\});(?:var |<\/script>)/s);
+      if (match) {
+        const info = infoFromPlayerResponse(videoId, JSON.parse(match[1]));
+        if (info) return { ok: true, info };
+      }
+    }
+  } catch {
+    // fall through to the player endpoint
+  }
+  try {
+    const res = await fetchWithTimeout(PLAYER_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': SEARCH_USER_AGENT },
+      body: JSON.stringify({ videoId, context: { client: PLAYER_CLIENT } }),
+    });
+    if (!res.ok) return { ok: false, code: 'NETWORK', message: 'YouTube 영상 정보를 가져오지 못했습니다.' };
+    const info = infoFromPlayerResponse(videoId, await res.json());
+    if (!info) return { ok: false, code: 'EMPTY_RESPONSE', message: '재생할 수 없거나 존재하지 않는 영상입니다.' };
+    return { ok: true, info };
+  } catch (err) {
+    return { ok: false, code: 'NETWORK', message: err && err.name === 'AbortError' ? '응답 시간이 너무 오래 걸려 중단했습니다.' : '네트워크 오류로 YouTube에 연결할 수 없습니다.' };
+  }
+}
+
+module.exports = { searchYoutube, getVideoInfo, infoFromPlayerResponse };

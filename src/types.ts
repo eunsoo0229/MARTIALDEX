@@ -160,6 +160,46 @@ export interface Technique {
    * there's nothing here yet.
    */
   gymPostureNotes?: string | null;
+  /**
+   * Canonical-technique fields (data/curated/technique-canonical.json,
+   * applied in loadData.ts). Set only on a technique that several records
+   * were merged into — e.g. Granby Roll filed under both BJJ and Wrestling.
+   * `martialArt` stays the primary art; these say which OTHER arts it also
+   * belongs to and how each art files it. Absent on every unmerged record.
+   */
+  /** Every art this technique belongs to, primary first. */
+  martialArts?: string[];
+  /** The category each linked art files it under (that art's own canonical category). */
+  categoryByArt?: Record<string, string>;
+  /** Every record id merged into this one (including its own) — all of them resolve here. */
+  mergedIds?: string[];
+  /** Per-art description when the merged records described the art's use differently. */
+  usageByArt?: Record<string, string>;
+  /**
+   * The name each linked art's OWN record uses (Karate "Mae Geri" / 앞차기,
+   * Taekwondo "앞차기") — taken from the merged records, never invented. A
+   * screen showing one art displays that art's name; the canonical name stays
+   * the identity. Absent for an art linked without a record of its own.
+   */
+  namesByArt?: Record<string, { name: string; koreanName: string | null }>;
+  /**
+   * Set only on a shared-library / requested record that LINKS an existing
+   * canonical technique to one more art (e.g. MMA + Granby Roll) instead of
+   * creating a second copy. Such a record is never listed as a technique of
+   * its own — it only adds `martialArt` to the canonical technique's arts.
+   */
+  linkOf?: string;
+  /**
+   * Technique-relation audit (data/curated/technique-canonical.json `splits`):
+   * set on an official record that listed SEVERAL techniques on one line
+   * ("Lead Teep / Rear Teep"). It is no longer listed as a technique; its id
+   * keeps resolving (old history/mastery) and points at the real techniques.
+   */
+  splitInto?: string[];
+  /** Set on a technique created by splitting such a record — the record(s) it came from. */
+  splitFrom?: string[];
+  /** Set on a record that is a heading the parser picked up, not a technique (kept resolvable, never listed). */
+  notTechnique?: string;
 }
 
 export interface MartialArtMeta {

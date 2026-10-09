@@ -1,7 +1,7 @@
 import { supabase } from '../supabase/client';
 import { toKoreanAuthMessage } from '../auth/authErrors';
 import type { AuthResult } from '../auth/authService';
-import { sparringSessionRepository } from '../sparringSession/repository';
+import { isSparringRuleRecord, sparringSessionRepository } from '../sparringSession/repository';
 import type { SparringSessionRecord } from '../sparringSession/types';
 import { isStillCurrentUser } from './syncGuard';
 
@@ -22,6 +22,9 @@ export async function syncSparringSessionsBidirectional(userId: string): Promise
     // Account-switch race guard — see syncGuard.ts.
     if (!(await isStillCurrentUser(userId))) return { ok: true, data: { pulled: 0, pushed: 0 } };
 
+    // Only rule-based records belong here; anything else that reached this
+    // table through the old shared local key is left untouched in the cloud.
+    const ruleRows = (cloudRows ?? []).filter((r) => isSparringRuleRecord(r.data));
     const cloudById = new Map((cloudRows ?? []).map((r) => [r.id, r]));
     const localSessions = sparringSessionRepository.list();
     const localById = new Map(localSessions.map((s) => [s.id, s]));
@@ -29,7 +32,7 @@ export async function syncSparringSessionsBidirectional(userId: string): Promise
     let pulled = 0;
     let pushed = 0;
 
-    for (const row of cloudRows ?? []) {
+    for (const row of ruleRows) {
       const local = localById.get(row.id);
       const cloudSession = row.data as SparringSessionRecord;
       const cloudTime = new Date(row.updated_at as string).getTime();

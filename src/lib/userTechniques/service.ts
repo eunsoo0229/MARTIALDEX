@@ -10,8 +10,8 @@ import { passesVerificationGate, verifyTechnique } from './verification';
 import { generateTechniqueRecord } from './recordGenerator';
 import type { DuplicateCheckResult, UserTechniqueRecord, VerificationResult } from './types';
 import { addTeqRepository } from '../addTeq/repository';
-import { searchAddTeqTechniques } from '../addTeq/service';
 import { customMartialArtRepository } from '../customMartialArt/repository';
+import { isTechniqueInArt, libraryLinksOf, libraryTechniques, redirectedTechnique, techniqueCategoryInArt } from '../techniqueCanonical';
 
 export function listMyUserTechniques(): UserTechniqueRecord[] {
   return userTechniqueRepository.list();
@@ -29,7 +29,13 @@ export function getUserTechnique(id: string): UserTechniqueRecord | undefined {
  * never changes the behavior of the existing `getTechnique` (official-only)
  * for callers that still use that directly. */
 export function resolveTechnique(id: string): Technique | undefined {
-  return getTechnique(id) ?? addTeqRepository.get(id)?.technique ?? userTechniqueRepository.get(id)?.technique;
+  // Canonical first: an official merged-away id, a library record that
+  // duplicated an official technique, or a link record all resolve to the
+  // one canonical technique (techniqueCanonical/).
+  const official = getTechnique(id) ?? redirectedTechnique(id);
+  if (official) return official;
+  const lib = libraryTechniques();
+  return lib.addTeq.find((t) => t.id === id) ?? lib.mine.find((t) => t.id === id) ?? addTeqRepository.get(id)?.technique ?? userTechniqueRepository.get(id)?.technique;
 }
 
 /** Same as resolveTechnique but for a list of ids, in order, dropping any id that resolves to none of the three sources — mirrors getTechniquesByIds' contract exactly. */
@@ -39,8 +45,8 @@ export function resolveTechniquesByIds(ids: string[]): Technique[] {
 
 function matchesTechniqueFilters(t: Technique, filters: TechniqueFilters): boolean {
   return (
-    (!filters.martialArt || t.martialArt === filters.martialArt) &&
-    (!filters.category || t.category === filters.category) &&
+    (!filters.martialArt || isTechniqueInArt(t, filters.martialArt)) &&
+    (!filters.category || (filters.martialArt ? techniqueCategoryInArt(t, filters.martialArt) : t.category) === filters.category) &&
     (!filters.position || t.positions.includes(filters.position)) &&
     (!filters.difficulty || t.difficulty === filters.difficulty) &&
     (!filters.type || t.tags.includes(filters.type))
@@ -51,6 +57,13 @@ function matchesQuerySubstring(t: Technique, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
   return t.name.toLowerCase().includes(q) || (t.koreanName ?? '').toLowerCase().includes(q) || t.aliases.some((a) => a.toLowerCase().includes(q));
+}
+
+/** Official techniques linked to `filters.martialArt` through the shared library (e.g. MMA + Granby Roll) — the static search index only knows the official merge. */
+function linkedIntoArt(query: string, filters: TechniqueFilters): Technique[] {
+  if (!filters.martialArt) return [];
+  const art = filters.martialArt;
+  return allTechniques.filter((t) => libraryLinksOf(t.id).some((l) => l.martialArt === art) && matchesTechniqueFilters(t, filters) && matchesQuerySubstring(t, query));
 }
 
 /** Official search results, the shared add_teq library, and this user's own
@@ -69,6 +82,14 @@ function matchesQuerySubstring(t: Technique, query: string): boolean {
  * the query exactly. Search itself never touches the network — merging
  * all three is cheap regardless of corpus size.
  */
+/** A technique whose name or alias IS the query ("Guillotine") ranks above ones that only contain it ("Guillotine Tilt"). Stable otherwise. */
+function exactNameFirst(list: Technique[], query: string): Technique[] {
+  const q = normalizeTechniqueName(query);
+  if (!q) return list;
+  const isExact = (t: Technique) => [t.name, t.koreanName ?? '', ...t.aliases].some((n) => n && normalizeTechniqueName(n) === q);
+  return [...list.filter(isExact), ...list.filter((t) => !isExact(t))];
+}
+
 export function searchAllTechniques(query: string, limit = 30, filters: TechniqueFilters = {}): Technique[] {
   // add_teq/user_techniques carry BOTH real martial-arts techniques and
   // discovered gym/home-training exercises (see RequestGymExercise.tsx) —
@@ -82,23 +103,23 @@ export function searchAllTechniques(query: string, limit = 30, filters: Techniqu
   // already scoped to that domain.
   const includeSynthetic = isSyntheticTrainingDomain(filters.martialArt);
   const official = searchTechniques(query, limit > 0 ? Math.max(limit, 30) : 9999, filters);
-  const addTeq = searchAddTeqTechniques(query, filters).filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
-  const mine = userTechniqueRepository
-    .list()
-    .map((r) => r.technique)
+  const lib = libraryTechniques();
+  const addTeq = lib.addTeq.filter((t) => matchesTechniqueFilters(t, filters) && matchesQuerySubstring(t, query)).filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
+  const mine = lib.mine
     .filter((t) => matchesTechniqueFilters(t, filters))
     .filter((t) => matchesQuerySubstring(t, query))
     .filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
+  const linked = linkedIntoArt(query, filters);
 
   const seen = new Set<string>();
   const exact: Technique[] = [];
   const fuzzy: Technique[] = [];
-  for (const t of [...official, ...addTeq, ...mine]) {
+  for (const t of [...official, ...linked, ...addTeq, ...mine]) {
     if (seen.has(t.id)) continue;
     seen.add(t.id);
     (matchesQuerySubstring(t, query) ? exact : fuzzy).push(t);
   }
-  const merged = [...exact, ...fuzzy];
+  const merged = [...exactNameFirst(exact, query), ...fuzzy];
   return limit > 0 ? merged.slice(0, limit) : merged;
 }
 
@@ -114,23 +135,23 @@ export function searchAllTechniques(query: string, limit = 30, filters: Techniqu
 export async function searchAllTechniquesAsync(query: string, limit = 30, filters: TechniqueFilters = {}): Promise<Technique[]> {
   const includeSynthetic = isSyntheticTrainingDomain(filters.martialArt);
   const official = await searchTechniquesAsync(query, limit > 0 ? Math.max(limit, 30) : 9999, filters);
-  const addTeq = searchAddTeqTechniques(query, filters).filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
-  const mine = userTechniqueRepository
-    .list()
-    .map((r) => r.technique)
+  const lib = libraryTechniques();
+  const addTeq = lib.addTeq.filter((t) => matchesTechniqueFilters(t, filters) && matchesQuerySubstring(t, query)).filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
+  const mine = lib.mine
     .filter((t) => matchesTechniqueFilters(t, filters))
     .filter((t) => matchesQuerySubstring(t, query))
     .filter((t) => includeSynthetic || !isSyntheticTrainingDomain(t.martialArt));
+  const linked = linkedIntoArt(query, filters);
 
   const seen = new Set<string>();
   const exact: Technique[] = [];
   const fuzzy: Technique[] = [];
-  for (const t of [...official, ...addTeq, ...mine]) {
+  for (const t of [...official, ...linked, ...addTeq, ...mine]) {
     if (seen.has(t.id)) continue;
     seen.add(t.id);
     (matchesQuerySubstring(t, query) ? exact : fuzzy).push(t);
   }
-  const merged = [...exact, ...fuzzy];
+  const merged = [...exactNameFirst(exact, query), ...fuzzy];
   return limit > 0 ? merged.slice(0, limit) : merged;
 }
 
@@ -151,7 +172,8 @@ export async function searchAllTechniquesAsync(query: string, limit = 30, filter
 export function getUnifiedAllTechniques(): Technique[] {
   const seen = new Set<string>();
   const unique: Technique[] = [];
-  for (const t of [...allTechniques, ...addTeqRepository.list().map((r) => r.technique), ...userTechniqueRepository.list().map((r) => r.technique)]) {
+  const lib = libraryTechniques();
+  for (const t of [...allTechniques, ...lib.addTeq, ...lib.mine]) {
     // A discovered gym/home-training exercise (add_teq/user_techniques,
     // martialArt === 'gym'/'home-training') is not a martial-arts
     // technique — this function represents ONLY the unified real-technique
@@ -183,8 +205,11 @@ export function getUnifiedTechniqueCount(): number {
  * an existing row). Official data is never mutated; this returns new
  * objects each call. */
 export function getUnifiedMartialArtSummaries(): MartialArtSummary[] {
+  // Counted per canonical technique: library duplicates/link records are not
+  // extra techniques, but a link does add the linked technique to that art.
   const extra = new Map<string, number>();
-  for (const r of addTeqRepository.list()) extra.set(r.technique.martialArt, (extra.get(r.technique.martialArt) ?? 0) + 1);
+  for (const t of libraryTechniques().addTeq) extra.set(t.martialArt, (extra.get(t.martialArt) ?? 0) + 1);
+  for (const t of allTechniques) for (const l of libraryLinksOf(t.id)) extra.set(l.martialArt, (extra.get(l.martialArt) ?? 0) + 1);
 
   const official = extra.size === 0 ? martialArtSummaries : martialArtSummaries.map((a) => (extra.has(a.id) ? { ...a, techniqueCount: a.techniqueCount + (extra.get(a.id) ?? 0) } : a));
 
@@ -192,10 +217,7 @@ export function getUnifiedMartialArtSummaries(): MartialArtSummary[] {
   if (customArts.length === 0) return official;
   const custom: MartialArtSummary[] = customArts.map((c) => {
     const techniqueCount = extra.get(c.id) ?? 0;
-    const techniques = addTeqRepository
-      .list()
-      .map((r) => r.technique)
-      .filter((t) => t.martialArt === c.id);
+    const techniques = libraryTechniques().addTeq.filter((t) => t.martialArt === c.id);
     return {
       id: c.id,
       nameKo: c.nameKo,
@@ -246,14 +268,15 @@ export function getUnifiedTechniquesByMartialArt(martialArtId: string): Techniqu
   if (bundle) {
     const seen = new Set<string>();
     const combined: Technique[] = [];
-    for (const t of [...bundle, ...addTeqRepository.list().map((r) => r.technique), ...userTechniqueRepository.list().map((r) => r.technique)]) {
+    const lib = libraryTechniques();
+    for (const t of [...bundle, ...lib.addTeq, ...lib.mine]) {
       if (t.martialArt !== martialArtId || seen.has(t.id)) continue;
       seen.add(t.id);
       combined.push(t);
     }
     return combined;
   }
-  return getUnifiedAllTechniques().filter((t) => t.martialArt === martialArtId);
+  return getUnifiedAllTechniques().filter((t) => isTechniqueInArt(t, martialArtId));
 }
 
 export function normalizeTechniqueName(s: string): string {

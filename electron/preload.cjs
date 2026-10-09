@@ -17,6 +17,10 @@ contextBridge.exposeInMainWorld('martialdex', {
   // Forwards to the main process, which does the actual youtube.com fetch
   // (no API key involved — see electron/youtubeSearch.cjs).
   searchYoutube: (query) => ipcRenderer.invoke('youtube:search', query),
+  // Single-video metadata (title/channel/description) for URL verification.
+  requestMicAccess: () => ipcRenderer.invoke('media:mic-access'),
+  getDeviceInfo: () => ipcRenderer.invoke('device:info'),
+  getYoutubeVideoInfo: (videoId) => ipcRenderer.invoke('youtube:video-info', videoId),
   // Forwards to the main process, which is the only place that ever holds
   // TAVILY_API_KEY — see electron/webSearch.cjs.
   webSearch: (query) => ipcRenderer.invoke('websearch:search', query),

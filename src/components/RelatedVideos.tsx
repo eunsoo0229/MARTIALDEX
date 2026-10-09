@@ -6,7 +6,7 @@ import { openExternal, youtubeSearchUrl } from '../lib/externalLink';
 import { videoSearchProvider } from '../lib/videoSearch/provider';
 import { getCachedVideoSearch, setCachedVideoSearch } from '../lib/videoSearch/cache';
 import type { VideoSearchItem } from '../lib/videoSearch/types';
-import { getTechniqueVideoPick, saveTechniqueVideoPick } from '../lib/techniqueVideo/service';
+import { addTechniqueVideo, getTechniqueVideos, isUserAddedVideo, LIMIT_MESSAGE, MAX_RELATED_VIDEOS, removeTechniqueVideo } from '../lib/techniqueVideo/service';
 import VideoPickerModal from './VideoPickerModal';
 
 const IFRAME_ALLOW =
@@ -39,8 +39,10 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
   // src/lib/techniqueVideo/types.ts's doc comment on why this is a
   // per-user overlay, not a write to the shared record).
   const [videoPickVersion, setVideoPickVersion] = useState(0);
-  const pick = getTechniqueVideoPick(technique.id);
-  const videos = pick?.videos?.length ? pick.videos : technique.videos;
+  // Base videos + the user's added ones, de-duped, capped at 5.
+  const videos = getTechniqueVideos(technique);
+  const canAdd = videos.length < MAX_RELATED_VIDEOS;
+  const [addMessage, setAddMessage] = useState<string | null>(null);
   const [searchState, setSearchState] = useState<SearchState>({ status: 'idle' });
   const [playingId, setPlayingId] = useState<string | null>(null);
   const [pickerOpen, setPickerOpen] = useState(false);
@@ -88,16 +90,24 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [technique.id, liveSearchFallback, videos.length]);
 
-  function handleVideoPicked(item: VideoSearchItem) {
+  function handleVideoPicked(item: VideoSearchItem | CuratedVideo): boolean {
     const picked: CuratedVideo = { title: item.title, videoId: item.videoId, channel: item.channel };
-    saveTechniqueVideoPick(technique.id, [picked]);
+    const result = addTechniqueVideo(technique, picked);
+    if (!result.ok) {
+      setAddMessage(result.message);
+      return false;
+    }
+    setAddMessage(null);
     setPickerOpen(false);
+    return true;
   }
 
   if (pickerOpen) {
     return (
       <VideoPickerModal
         technique={technique}
+        existingVideoIds={videos.map((v) => v.videoId)}
+        remainingSlots={MAX_RELATED_VIDEOS - videos.length}
         onClose={() => setPickerOpen(false)}
         onSelect={handleVideoPicked}
       />
@@ -125,9 +135,26 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
               </div>
               <div className="video-embed__title">{v.title}</div>
               <div className="video-embed__channel">{v.channel}</div>
+              {isUserAddedVideo(technique.id, v.videoId) && (
+                <button type="button" className="btn btn-ghost btn-sm" onClick={() => removeTechniqueVideo(technique.id, v.videoId)}>
+                  내가 추가한 영상 삭제
+                </button>
+              )}
             </div>
           ))}
         </div>
+        <div className="modal-actions modal-actions--start" style={{ marginTop: 10 }}>
+          {canAdd ? (
+            <button className="btn btn-secondary" data-testid="related-videos-add" onClick={() => setPickerOpen(true)}>
+              ＋ 관련 영상 추가 ({videos.length}/{MAX_RELATED_VIDEOS})
+            </button>
+          ) : (
+            <p className="video-status-message" data-testid="related-videos-limit" style={{ margin: 0 }}>
+              {LIMIT_MESSAGE}
+            </p>
+          )}
+        </div>
+        {addMessage && <p className="video-status-message">{addMessage}</p>}
       </div>
     );
   }

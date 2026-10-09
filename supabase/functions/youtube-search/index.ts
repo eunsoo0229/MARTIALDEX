@@ -105,6 +105,111 @@ async function searchYoutube(query: string) {
   return { ok: true, results };
 }
 
+// Single-video metadata for the "YouTube URL 직접 추가" verification flow —
+// keep in sync with electron/youtubeSearch.cjs's getVideoInfo. Tries the
+// public watch page first, then YouTube's own public player endpoint (the
+// watch page is often refused from datacenter IPs like this function's;
+// the player endpoint still returns the real videoDetails there).
+const PLAYER_ENDPOINT = 'https://www.youtube.com/youtubei/v1/player?prettyPrint=false';
+const PLAYER_CLIENT = { clientName: 'WEB', clientVersion: '2.20240726.00.00', hl: 'en', gl: 'US' };
+
+function infoFromPlayerResponse(videoId: string, data: any) {
+  const details = data?.videoDetails;
+  const status = data?.playabilityStatus?.status as string | undefined;
+  if (!details || details.videoId !== videoId) return null;
+  const micro = data.microformat?.playerMicroformatRenderer ?? {};
+  return {
+    videoId,
+    title: (details.title ?? '') as string,
+    channel: (details.author ?? '') as string,
+    description: ((details.shortDescription ?? '') as string).slice(0, 4000),
+    lengthSeconds: Number(details.lengthSeconds) || 0,
+    keywords: Array.isArray(details.keywords) ? (details.keywords as string[]).slice(0, 40) : [],
+    category: (micro.category ?? null) as string | null,
+    // The player endpoint reports streaming eligibility (e.g. UNPLAYABLE
+    // without a browser session), not existence — only a hard ERROR means
+    // the video is gone/private.
+    playable: status !== 'ERROR',
+  };
+}
+
+async function fetchWithTimeout(url: string, init: RequestInit) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+async function getVideoInfo(videoId: string) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
+    return errorResult('UNKNOWN', '올바른 YouTube 영상 ID가 아닙니다.');
+  }
+  try {
+    const res = await fetchWithTimeout(`https://www.youtube.com/watch?v=${videoId}&hl=en`, {
+      headers: { 'User-Agent': SEARCH_USER_AGENT, 'Accept-Language': 'en-US,en;q=0.9' },
+    });
+    if (res.ok) {
+      const match = (await res.text()).match(/var ytInitialPlayerResponse = (\{.*?\});(?:var |<\/script>)/s);
+      if (match) {
+        const info = infoFromPlayerResponse(videoId, JSON.parse(match[1]));
+        if (info) return { ok: true, info };
+      }
+    }
+  } catch {
+    // fall through to the player endpoint
+  }
+  try {
+    const res = await fetchWithTimeout(PLAYER_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'User-Agent': SEARCH_USER_AGENT },
+      body: JSON.stringify({ videoId, context: { client: PLAYER_CLIENT } }),
+    });
+    if (res.ok) {
+      const info = infoFromPlayerResponse(videoId, await res.json());
+      if (info) return { ok: true, info };
+    }
+  } catch {
+    // fall through to the search-results excerpt
+  }
+  // Last resort (servers are often refused both of the above): YouTube's own
+  // search results for the id carry the real title/channel/length and the
+  // first part of the description. Marked as an excerpt so the verifier
+  // knows it is partial and can say "insufficient" honestly.
+  try {
+    const res = await fetchWithTimeout(`https://www.youtube.com/results?search_query=${encodeURIComponent(videoId)}`, {
+      headers: { 'User-Agent': SEARCH_USER_AGENT, 'Accept-Language': 'en-US,en;q=0.9' },
+    });
+    if (!res.ok) return errorResult('NETWORK', 'YouTube 영상 정보를 가져오지 못했습니다.');
+    const match = (await res.text()).match(/var ytInitialData = (\{.*?\});<\/script>/s);
+    if (!match) return errorResult('EMPTY_RESPONSE', '영상 정보를 해석하지 못했습니다.');
+    const renderers: any[] = [];
+    findVideoRenderers(JSON.parse(match[1]), renderers);
+    const v = renderers.find((r) => r?.videoId === videoId);
+    if (!v) return errorResult('EMPTY_RESPONSE', '재생할 수 없거나 존재하지 않는 영상입니다.');
+    const snippet = (v.detailedMetadataSnippets?.[0]?.snippetText?.runs ?? []).map((r: any) => r.text).join('');
+    const [mm, ss] = String(v.lengthText?.simpleText ?? '').split(':').slice(-2).map(Number);
+    return {
+      ok: true,
+      info: {
+        videoId,
+        title: (v.title?.runs?.[0]?.text ?? '') as string,
+        channel: (v.ownerText?.runs?.[0]?.text || v.longBylineText?.runs?.[0]?.text || '') as string,
+        description: snippet.replace(/\.\.\.$/, '').trim(),
+        lengthSeconds: Number.isFinite(mm) && Number.isFinite(ss) ? mm * 60 + ss : 0,
+        keywords: [],
+        category: null,
+        playable: true,
+        descriptionIsExcerpt: true,
+      },
+    };
+  } catch (err) {
+    return errorResult('NETWORK', err instanceof Error && err.name === 'AbortError' ? '응답 시간이 너무 오래 걸려 중단했습니다.' : '네트워크 오류로 YouTube에 연결할 수 없습니다.');
+  }
+}
+
 Deno.serve(async (req: Request) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 204, headers: CORS_HEADERS });
@@ -136,6 +241,11 @@ Deno.serve(async (req: Request) => {
     body = await req.json();
   } catch {
     return jsonResponse(errorResult('UNKNOWN', '요청 형식이 올바르지 않습니다.'), 400);
+  }
+
+  const videoId = (body as { videoId?: unknown })?.videoId;
+  if (typeof videoId === 'string') {
+    return jsonResponse(await getVideoInfo(videoId.trim()));
   }
 
   const query = (body as { query?: unknown })?.query;

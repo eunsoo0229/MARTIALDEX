@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Link, Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getUnifiedMartialArt } from '../lib/userTechniques/service';
-import { getCurriculum, resolveTodayDay, deleteCustomCurriculum } from '../lib/curriculum/curriculumService';
+import { getCurriculum, resolveTodayDay } from '../lib/curriculum/curriculumService';
+import { deleteCurriculumVerified } from '../lib/curriculum/deleteCurriculum';
+import { useAuth } from '../lib/auth/AuthProvider';
 import { useCurriculumProgress } from '../lib/curriculum/useCurriculum';
 import { encodeShareCode } from '../lib/curriculum/shareCode';
 import { copyToClipboard } from '../lib/clipboard';
@@ -29,6 +31,8 @@ function KeyTechniqueRow({ techniqueId, techniqueName }: { techniqueId: string; 
 export default function CurriculumDayList() {
   const { martialArtId = '', curriculumId = '' } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
+  const [deleting, setDeleting] = useState(false);
   const curriculum = getCurriculum(curriculumId);
   const { progress, setDayComplete, start } = useCurriculumProgress(curriculum);
   const [copied, setCopied] = useState(false);
@@ -60,10 +64,20 @@ export default function CurriculumDayList() {
     setTimeout(() => setCopied(false), 2000);
   }
 
-  function handleDelete() {
-    if (!window.confirm('이 커리큘럼을 삭제할까요? 되돌릴 수 없습니다.')) return;
-    deleteCustomCurriculum(curriculum!.id);
-    navigate(`/learning/${curriculum!.martialArt}`);
+  // Leaves the page only once the delete is confirmed (locally and, when
+  // signed in, on the server) — see deleteCurriculumVerified. On failure the
+  // curriculum stays visible and the user is told so.
+  async function handleDelete() {
+    if (deleting || !window.confirm('이 커리큘럼을 삭제할까요? 되돌릴 수 없습니다.\n(훈련 기록·학습한 기술·스파링 기록은 그대로 유지됩니다.)')) return;
+    const { id, martialArt } = curriculum!;
+    setDeleting(true);
+    const result = await deleteCurriculumVerified(id, user?.id ?? null);
+    setDeleting(false);
+    if (!result.ok) {
+      window.alert(result.message);
+      return;
+    }
+    navigate(`/learning/${martialArt}`);
   }
 
   function handleChangeDuration() {
@@ -143,8 +157,8 @@ export default function CurriculumDayList() {
                     🛒 마켓에 게시
                   </Link>
                 )}
-                <button className="btn btn-ghost" onClick={handleDelete}>
-                  삭제
+                <button className="btn btn-ghost" onClick={handleDelete} disabled={deleting}>
+                  {deleting ? '삭제 중…' : '삭제'}
                 </button>
               </>
             )}

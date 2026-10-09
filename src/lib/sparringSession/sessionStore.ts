@@ -1,7 +1,7 @@
 import type { SparringPhase, SparringRules, SparringRunState } from './types';
 
 // One active sparring run at a time, independent of every other training
-// mode's own session key (freeTraining/shadowBoxing/combo all follow this
+// mode's own session key (freeTraining/combo all follow this
 // same "own key, can't clobber each other" convention).
 const KEY = 'martialdex:sparring-run';
 const EVENT = 'martialdex:sparring-run-updated';
@@ -95,7 +95,7 @@ function phaseDurationSeconds(rules: SparringRules, phase: SparringPhase): numbe
   return phase === 'round' ? rules.roundDurationSeconds : rules.restDurationSeconds;
 }
 
-/** Polled every ~250ms by the UI hook — advances round<->rest<->finished on real elapsed time, never drifts (Date.now()-based absolute deadlines, same mechanic as shadowBoxing/sessionStore.ts). */
+/** Polled every ~250ms by the UI hook — advances round<->rest<->finished on real elapsed time, never drifts (Date.now()-based absolute deadlines). */
 export function tickSparringRun(): SparringRunState | null {
   let run = readRun();
   if (!run || run.paused || run.phase === 'finished') return run;

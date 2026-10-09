@@ -148,7 +148,8 @@ async function main() {
   for (let attempt = 0; attempt < 20; attempt++) {
     try {
       text = await page.evaluate(() => document.body.innerText);
-      if (text.trim().length > 0) break;
+      // wait past the lazy route's "불러오는 중..." placeholder too
+      if (text.trim().length > 0 && !text.includes('불러오는 중')) break;
     } catch {
       // Execution context can be torn down mid-navigation right after a
       // reload — just retry, this isn't a real failure.
@@ -236,11 +237,16 @@ async function main() {
   // ===================================================================
   // Regression: official technique catalog untouched
   // ===================================================================
-  const officialCount = await page.evaluate(async () => {
-    const { allTechniques } = await import('/src/lib/loadData.ts');
-    return allTechniques.length;
+  // Since canonical-technique normalization the 1,284 source records list as
+  // 1,172 canonical techniques; every original id must still resolve.
+  const official = await page.evaluate(async () => {
+    const { allTechniques, getTechnique } = await import('/src/lib/loadData.ts');
+    const files = ['bjj', 'boxing', 'judo', 'karate', 'kickboxing', 'mixed-martial-arts', 'muay-thai', 'sambo', 'taekwondo', 'wrestling'];
+    let ids = 0, unresolved = 0;
+    for (const f of files) for (const t of (await (await fetch(`/data/processed/${f}.json`)).json()).techniques) { ids++; if (!getTechnique(t.id)) unresolved++; }
+    return { canonical: allTechniques.length, ids, unresolved };
   });
-  check('[regression] Official technique catalog still has all 1284 techniques', officialCount === 1284, String(officialCount));
+  check('[regression] 원본 1284개 기술 id 전부 해석 (정규 기술 1138개 — 2026-10 관계 감사·최종 검수 후)', official.ids === 1284 && official.unresolved === 0 && official.canonical === 1138, JSON.stringify(official));
   check('[regression2] No console/page errors across the whole flow', device.consoleErrors.length === 0, JSON.stringify(device.consoleErrors));
 
   await device.app.close();

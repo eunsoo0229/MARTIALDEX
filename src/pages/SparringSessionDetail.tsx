@@ -72,7 +72,7 @@ export default function SparringSessionDetail() {
           </div>
         )}
 
-        <SparringResultView session={session} videoUrl={videoUrl} onSeek={videoUrl ? handleSeek : undefined} />
+        <SparringResultView key={session.id} session={session} videoUrl={videoUrl} onSeek={videoUrl ? handleSeek : undefined} />
       </div>
     </div>
   );

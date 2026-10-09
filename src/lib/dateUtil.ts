@@ -31,6 +31,8 @@ export function formatRelativeDays(iso: string | null): string {
 /** ISO weekday, 월=1..일=7 — avoids JS Date.getDay()'s 일=0 ambiguity for day-of-week routine matching. */
 export type Weekday = 1 | 2 | 3 | 4 | 5 | 6 | 7;
 
+export const WEEKDAY_LABEL: Record<Weekday, string> = { 1: '월', 2: '화', 3: '수', 4: '목', 5: '금', 6: '토', 7: '일' };
+
 function toKstParts(d: Date): { y: number; m: number; day: number; isoWeekday: Weekday } {
   const kst = new Date(d.getTime() + KST_OFFSET_MS);
   const jsWeekday = kst.getUTCDay(); // 0=Sun..6=Sat, computed on the KST-shifted instant
@@ -100,4 +102,25 @@ export function getPreviousKstMonthRange(now: Date = new Date()): { start: strin
 function splitDateKey(dateKey: string): [number, number, number] {
   const [y, m, d] = dateKey.split('-').map(Number);
   return [y, m - 1, d];
+}
+
+/** YYYY-MM-DD date key shifted by `deltaDays` (may be negative) — pure calendar arithmetic, timezone-independent. */
+export function shiftDateKeyDays(dateKey: string, deltaDays: number): string {
+  return shiftKstDateKey(...splitDateKey(dateKey), deltaDays);
+}
+
+/** Same day-of-month `deltaMonths` away, clamped to that month's last day (e.g. 03-31 − 1 month → 02-28/29). */
+export function shiftDateKeyMonths(dateKey: string, deltaMonths: number): string {
+  const [y, m, d] = splitDateKey(dateKey);
+  const marker = new Date(Date.UTC(y, m + deltaMonths, 1));
+  const ty = marker.getUTCFullYear();
+  const tm = marker.getUTCMonth();
+  const lastDay = new Date(Date.UTC(ty, tm + 1, 0)).getUTCDate();
+  return kstDateKeyOf(ty, tm, Math.min(d, lastDay));
+}
+
+/** KST calendar date (YYYY-MM-DD) of an ISO instant — unlike dateKeyOf(), which slices the UTC date. */
+export function kstDateKeyOfInstant(iso: string): string {
+  const { y, m, day } = toKstParts(new Date(iso));
+  return kstDateKeyOf(y, m, day);
 }

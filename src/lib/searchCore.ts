@@ -26,11 +26,13 @@ function buildSearchText(t: Technique): string {
 // into unscoped "search the whole corpus" call sites elsewhere (MMA/
 // situational/sparring candidate pools — see the guards on those files).
 export const searchCorpus: SearchableTechnique[] = [...allTechniques, ...homeTrainingExercises].map((t) => {
-  const art = getMartialArt(t.martialArt);
+  // A canonical technique linked to several arts is ONE corpus entry that
+  // every linked art's name finds ("레슬링"/"주짓수" both find Granby Roll).
+  const arts = (t.martialArts ?? [t.martialArt]).map((id) => getMartialArt(id));
   return {
     ...t,
-    martialArtNameKo: art?.nameKo ?? t.martialArt,
-    martialArtNameEn: art?.nameEn ?? '',
+    martialArtNameKo: arts.map((a, i) => a?.nameKo ?? (t.martialArts ?? [t.martialArt])[i]).join(' · '),
+    martialArtNameEn: arts.map((a) => a?.nameEn ?? '').join(' · '),
     searchText: buildSearchText(t),
   };
 });
@@ -82,10 +84,20 @@ export interface TechniqueFilters {
   type?: string; // plain "#Tag"-style technique-type tag, see techniqueTypeTags()
 }
 
+// Art/category filters are canonical-technique aware: a technique merged
+// across arts matches each of them, with that art's own category. (Links
+// added through the shared library are merged in by userTechniques/service.ts
+// — this module also runs inside the search Web Worker, so it never reads
+// browser storage.)
 export function matchesFilters(t: Technique, filters: TechniqueFilters): boolean {
-  if (filters.martialArt && t.martialArt !== filters.martialArt) return false;
+  if (filters.martialArt && t.martialArt !== filters.martialArt && !(t.martialArts?.includes(filters.martialArt) ?? false)) return false;
   if (filters.position && !t.positions.includes(filters.position)) return false;
-  if (filters.category && t.category !== filters.category) return false;
+  if (filters.category) {
+    const ok = filters.martialArt
+      ? (t.categoryByArt?.[filters.martialArt] ?? t.category) === filters.category
+      : t.category === filters.category || Object.values(t.categoryByArt ?? {}).includes(filters.category);
+    if (!ok) return false;
+  }
   if (filters.difficulty && t.difficulty !== filters.difficulty) return false;
   if (filters.type && !t.tags.includes(filters.type)) return false;
   return true;

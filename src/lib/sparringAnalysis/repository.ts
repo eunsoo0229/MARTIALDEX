@@ -24,7 +24,10 @@ function writeJson<T>(key: string, value: T) {
 
 export const sparringSessionRepository = {
   list(): SparringSession[] {
-    return readJson<SparringSession[]>(KEY, []);
+    // Rule-based sparring records once shared this key (see
+    // sparringSession/repository.ts) — never treat one as an analysis result.
+    const all = readJson<unknown>(KEY, []);
+    return (Array.isArray(all) ? all : []).filter((s): s is SparringSession => !!s && typeof s === 'object' && !('roundDurationSeconds' in s && 'equipment' in s));
   },
   get(id: string): SparringSession | undefined {
     return this.list().find((s) => s.id === id);

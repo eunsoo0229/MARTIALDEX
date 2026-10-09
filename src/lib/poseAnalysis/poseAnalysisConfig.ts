@@ -1,4 +1,5 @@
 import type { PoseAnalysisConfig } from './types';
+import { equivalentTechniqueIds } from '../techniqueCanonical';
 import poseAnalysisData from '../../../data/curated/poseAnalysis.json';
 
 // Same pattern as data/curated/videos.json (see loadData.ts): a hand-curated
@@ -7,12 +8,16 @@ import poseAnalysisData from '../../../data/curated/poseAnalysis.json';
 // is simply unsupported, not an error.
 const configs = poseAnalysisData as unknown as Record<string, PoseAnalysisConfig>;
 
+// Configs are keyed by the original record id; a canonical technique uses
+// whichever of its merged records has one.
 export function getPoseAnalysisConfig(techniqueId: string): PoseAnalysisConfig | undefined {
-  return configs[techniqueId];
+  if (configs[techniqueId]) return configs[techniqueId];
+  for (const id of equivalentTechniqueIds(techniqueId)) if (configs[id]) return configs[id];
+  return undefined;
 }
 
 export function isPoseAnalysisSupported(techniqueId: string): boolean {
-  return configs[techniqueId]?.supported === true;
+  return getPoseAnalysisConfig(techniqueId)?.supported === true;
 }
 
 export function listSupportedTechniqueIds(): string[] {

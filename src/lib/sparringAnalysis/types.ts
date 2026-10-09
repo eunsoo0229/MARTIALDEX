@@ -174,7 +174,27 @@ export interface VisualEventInsight {
 
 export interface CoachingInsight {
   label: string;
+  /** For grounded (v2) results this is the CODE-built fact text the item cites (factIds), never the AI's own wording. */
   evidence: string;
+  /** Ids into CoachingSynthesisResult.facts — validated in code; an item that cites no real fact is dropped. Absent on older sessions. */
+  factIds?: string[];
+}
+
+/** One measured/derived observation built by CODE from the analysis data (coachingFacts.ts) — the only thing the AI is allowed to cite. */
+export interface EvidenceFact {
+  id: string;
+  text: string;
+}
+
+/** "다음 훈련 추천" — a concrete drill tied to the facts that motivated it and (when possible) real technique ids from a whitelist. */
+export interface NextTrainingItem {
+  title: string;
+  drill: string;
+  /** Which weakness this addresses, in plain words. */
+  reason: string;
+  factIds: string[];
+  /** Real technique ids only (whitelist-validated) — the user's learned techniques first. */
+  techniqueIds: string[];
 }
 
 /** Must reference a pattern that actually exists in SequenceAnalysisResult.patterns — validated in coachingSynthesis.ts, never freeform. */
@@ -204,6 +224,14 @@ export interface CoachingSynthesisResult {
   categoryScores: CoachingCategoryScores;
   improvementDirections: string[];
   generatedAt: string;
+  // ---- v2 (grounded coaching) — all optional so sessions saved earlier stay valid ----
+  /** The exact fact list the AI was given and had to cite. */
+  facts?: EvidenceFact[];
+  /** What this analysis can NOT measure (code-determined, never AI) — shown so nothing unmeasured reads as fact. */
+  dataLimits?: string[];
+  nextTraining?: NextTrainingItem[];
+  /** 종합 평가 — AI prose, but only generated from the cited facts. */
+  overallFeedback?: string | null;
 }
 
 export interface SparringSession {

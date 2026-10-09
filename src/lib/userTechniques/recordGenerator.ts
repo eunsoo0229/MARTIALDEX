@@ -5,11 +5,16 @@ import { askGeminiForJsonWithGrounding } from './geminiJson';
 // relatedTechniqueName can resolve to a previously-discovered add_teq/
 // user_techniques technique too, not just the 1,253 official ones.
 import { searchAllTechniques } from './service';
+import { libraryTechniques } from '../techniqueCanonical';
+import { canonicalCategoryFor, officialCategoriesOf, unifyCustomCategory } from '../techniqueCanonical/category';
 
 const VALID_DIFFICULTIES: Difficulty[] = ['beginner', 'intermediate', 'advanced', null];
 
 interface RawGeneratedRecord {
   category: string;
+  /** true only when no existing category of the art fits (with newCategoryReason). */
+  categoryIsNew?: boolean;
+  newCategoryReason?: string | null;
   koreanName: string | null;
   aliases: string[];
   description: string;
@@ -68,6 +73,10 @@ export async function generateTechniqueRecord(input: {
   verifiedCategory: string | null;
 }): Promise<{ ok: true; record: GeneratedTechniqueRecord } | { ok: false; message: string }> {
   const sameArtTechniques = getTechniquesByMartialArt(input.martialArt);
+  // Canonical categories of this art — the AI must pick one of these
+  // (techniqueCanonical/category.ts), never coin a near-duplicate.
+  const libraryCategories = [...new Set(libraryTechniques().addTeq.filter((t) => t.martialArt === input.martialArt).map((t) => t.category))];
+  const artCategories = officialCategoriesOf(input.martialArt).length ? officialCategoriesOf(input.martialArt) : libraryCategories;
   const candidatePool = sameArtTechniques.slice(0, 200); // cap prompt size — same art can have 100s of techniques
   const candidateNames = candidatePool.map((t) => `${t.name}${t.koreanName && t.koreanName !== t.name ? ` (${t.koreanName})` : ''}`).join(', ');
 
@@ -94,7 +103,12 @@ export async function generateTechniqueRecord(input: {
     '- commonMistakes: 흔한 실수 배열',
     '자세 정보를 충분히 확신할 수 없으면 posture 전체를 null로 둔다.',
     '',
-    '출력 형식: {"category": string, "koreanName": string|null, "aliases": string[], "description": string, "purpose": string,',
+    '',
+    'category는 아래 [이 무술의 기존 카테고리] 중 이 기술에 가장 알맞은 것 하나를 철자 그대로 고른다. 번역·표기만 다른 새 카테고리(예: "escape" vs "탈출 (Escape)")를 만들지 않는다.',
+    '정말로 맞는 카테고리가 하나도 없을 때만 새 카테고리 이름을 쓰고 categoryIsNew: true, newCategoryReason(왜 기존 카테고리가 틀린지 한 문장)을 함께 쓴다.',
+    `[이 무술의 기존 카테고리]: ${artCategories.join(' | ') || '(없음 — 짧고 일반적인 분류명을 새로 쓴다)'}`,
+    '',
+    '출력 형식: {"category": string, "categoryIsNew": boolean, "newCategoryReason": string|null, "koreanName": string|null, "aliases": string[], "description": string, "purpose": string,',
     '"whenToUse": string, "principles": string[], "difficulty": string|null, "tags": string[], "relatedTechniqueNames": string[],',
     '"posture": {"overview": string, "startingPosition"?: string, "steps"?: string[], "keyPoints"?: string[], "commonMistakes"?: string[]} | null}',
   ].join('\n');
@@ -139,7 +153,7 @@ export async function generateTechniqueRecord(input: {
     name: input.name,
     koreanName: raw.koreanName,
     aliases: raw.aliases,
-    category: raw.category,
+    category: resolveGeneratedCategory(input.martialArt, raw, { id: input.id, name: input.name, koreanName: raw.koreanName }, artCategories),
     positions: [],
     // Technique has no dedicated "언제 사용하는가" field — folded into
     // description (as its own paragraph) rather than inventing a new field,
@@ -162,4 +176,17 @@ export async function generateTechniqueRecord(input: {
   };
 
   return { ok: true, record: { technique } };
+}
+
+/**
+ * Existing canonical category first (exact meaning → reviewed keyword
+ * rules); a new category survives only when the art has none that fits AND
+ * the AI explained why (spec "새 Category 생성 조건").
+ */
+function resolveGeneratedCategory(martialArt: string, raw: RawGeneratedRecord, t: { id: string; name: string; koreanName: string | null }, artCategories: string[]): string {
+  if (officialCategoriesOf(martialArt).length === 0) return unifyCustomCategory(raw.category, artCategories);
+  const canonical = canonicalCategoryFor(martialArt, raw.category, t);
+  if (canonical) return canonical;
+  if (raw.categoryIsNew && raw.newCategoryReason?.trim()) return raw.category.trim();
+  return canonicalCategoryFor(martialArt, '', t) ?? raw.category.trim();
 }

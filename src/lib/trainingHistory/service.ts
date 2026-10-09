@@ -1,6 +1,7 @@
 import type { TrainingExerciseDetail, TrainingHistoryEntry, TrainingSource } from './types';
 import { trainingHistoryRepository } from './repository';
 import { todayDateKey } from '../dateUtil';
+import { canonicalTechniqueId } from '../techniqueCanonical';
 
 
 function newId(): string {
@@ -10,6 +11,10 @@ function newId(): string {
 }
 
 export function recordTrainingSession(input: {
+  /** Deterministic id for idempotent writers (e.g. gymLive: one entry per session); random otherwise. */
+  id?: string;
+  /** Day the training happened (YYYY-MM-DD) — for training logged afterwards. Defaults to today. */
+  date?: string;
   curriculumId: string | null;
   dayNumber: number | null;
   techniqueIds: string[];
@@ -21,12 +26,15 @@ export function recordTrainingSession(input: {
   exerciseDetails?: TrainingExerciseDetail[];
   gymClassMeta?: TrainingHistoryEntry['gymClassMeta'];
   sparringSessionId?: string;
-  groundBattleMatchId?: string;
+  aiCoach?: TrainingHistoryEntry['aiCoach'];
+  visualMitt?: TrainingHistoryEntry['visualMitt'];
+  gymRoutine?: TrainingHistoryEntry['gymRoutine'];
+  gymLive?: TrainingHistoryEntry['gymLive'];
 }): TrainingHistoryEntry {
   const now = new Date().toISOString();
   const entry: TrainingHistoryEntry = {
-    id: newId(),
-    date: todayDateKey(),
+    id: input.id ?? newId(),
+    date: input.date ?? todayDateKey(),
     completedAt: now,
     updatedAt: now,
     curriculumId: input.curriculumId,
@@ -40,7 +48,10 @@ export function recordTrainingSession(input: {
     ...(input.exerciseDetails ? { exerciseDetails: input.exerciseDetails } : {}),
     ...(input.gymClassMeta ? { gymClassMeta: input.gymClassMeta } : {}),
     ...(input.sparringSessionId ? { sparringSessionId: input.sparringSessionId } : {}),
-    ...(input.groundBattleMatchId ? { groundBattleMatchId: input.groundBattleMatchId } : {}),
+    ...(input.aiCoach ? { aiCoach: input.aiCoach } : {}),
+    ...(input.visualMitt ? { visualMitt: input.visualMitt } : {}),
+    ...(input.gymRoutine ? { gymRoutine: input.gymRoutine } : {}),
+    ...(input.gymLive ? { gymLive: input.gymLive } : {}),
   };
   trainingHistoryRepository.add(entry);
   return entry;
@@ -94,7 +105,9 @@ export function getPracticeStatsForTechnique(techniqueId: string): {
   practiceCount: number;
   lastPracticedAt: string | null;
 } {
-  const entries = listTrainingHistory().filter((h) => h.completed && h.techniqueIds.includes(techniqueId));
+  // An entry that recorded a merged-away id counts for the canonical technique.
+  const target = canonicalTechniqueId(techniqueId);
+  const entries = listTrainingHistory().filter((h) => h.completed && h.techniqueIds.some((id) => canonicalTechniqueId(id) === target));
   if (entries.length === 0) return { practiceCount: 0, lastPracticedAt: null };
   // entries are stored newest-first (repository.add unshifts)
   return { practiceCount: entries.length, lastPracticedAt: entries[0].completedAt };
@@ -114,7 +127,7 @@ export function buildPracticeStatsIndex(
   const index = new Map<string, { practiceCount: number; lastPracticedAt: string | null }>();
   for (const entry of entries) {
     if (!entry.completed) continue;
-    for (const techniqueId of entry.techniqueIds) {
+    for (const techniqueId of new Set(entry.techniqueIds.map(canonicalTechniqueId))) {
       const existing = index.get(techniqueId);
       if (existing) {
         existing.practiceCount++;
@@ -132,5 +145,5 @@ export function getPracticeStatsFromIndex(
   techniqueId: string,
   index: Map<string, { practiceCount: number; lastPracticedAt: string | null }>
 ): { practiceCount: number; lastPracticedAt: string | null } {
-  return index.get(techniqueId) ?? { practiceCount: 0, lastPracticedAt: null };
+  return index.get(canonicalTechniqueId(techniqueId)) ?? { practiceCount: 0, lastPracticedAt: null };
 }

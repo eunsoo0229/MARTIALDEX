@@ -34,6 +34,7 @@ const NAV_MORE_GROUPS = [
     items: [
       { to: '/arts', label: '무술 목록' },
       { to: '/techniques', label: '전체 기술' },
+      { to: '/learned-techniques', label: '배운 기술' },
       { to: '/graph', label: '기술 그래프' },
       { to: '/techniques/request', label: '기술 요청' },
     ],
@@ -48,7 +49,6 @@ const NAV_MORE_GROUPS = [
       { to: '/combos', label: '콤보 북' },
       { to: '/tactics', label: '전술 셋업' },
       { to: '/skill-tree', label: '비주얼 기술 트리' },
-      { to: '/shadow-boxing', label: 'AI 쉐도우 복싱' },
       { to: '/training-analytics', label: '훈련 분석/캘린더' },
       { to: '/review', label: '복습' },
       { to: '/sparring/record', label: '스파링 촬영' },

@@ -5,6 +5,7 @@ import AppErrorBoundary from './components/AppErrorBoundary';
 import Home from './pages/Home';
 import { AuthProvider } from './lib/auth/AuthProvider';
 import LocalDataMigrationPrompt from './components/auth/LocalDataMigrationPrompt';
+import GymLiveWatcher from './components/GymLiveWatcher';
 
 // Every OTHER page used to be a static top-of-file import, which meant
 // Vite bundled all ~58 pages (curriculum editor, sparring analysis, pose
@@ -55,11 +56,7 @@ const Nutrition = lazy(() => import('./pages/Nutrition'));
 const NutritionGoals = lazy(() => import('./pages/NutritionGoals'));
 const FreeTraining = lazy(() => import('./pages/FreeTraining'));
 const SparringSession = lazy(() => import('./pages/SparringSession'));
-const GroundBattleHome = lazy(() => import('./pages/GroundBattleHome'));
-const GroundBattleSetup = lazy(() => import('./pages/GroundBattleSetup'));
-const GroundBattleMatch = lazy(() => import('./pages/GroundBattleMatch'));
-const GroundBattleResult = lazy(() => import('./pages/GroundBattleResult'));
-const GroundBattleHistory = lazy(() => import('./pages/GroundBattleHistory'));
+const CurriculumCoachSession = lazy(() => import('./pages/CurriculumCoachSession'));
 const AiComboGenerator = lazy(() => import('./pages/AiComboGenerator'));
 const ComboList = lazy(() => import('./pages/ComboList'));
 const AiHistory = lazy(() => import('./pages/AiHistory'));
@@ -68,7 +65,6 @@ const ComboTraining = lazy(() => import('./pages/ComboTraining'));
 const SkillTree = lazy(() => import('./pages/SkillTree'));
 const TacticList = lazy(() => import('./pages/TacticList'));
 const TacticBuilder = lazy(() => import('./pages/TacticBuilder'));
-const ShadowBoxing = lazy(() => import('./pages/ShadowBoxing'));
 const TrainingAnalytics = lazy(() => import('./pages/TrainingAnalytics'));
 const TrainingHistoryList = lazy(() => import('./pages/TrainingHistoryList'));
 const TrainingHistoryDetail = lazy(() => import('./pages/TrainingHistoryDetail'));
@@ -79,6 +75,9 @@ const MarketplaceCurriculumDetail = lazy(() => import('./pages/MarketplaceCurric
 const MarketplacePublish = lazy(() => import('./pages/MarketplacePublish'));
 const MarketplacePaymentResult = lazy(() => import('./pages/MarketplacePaymentResult'));
 const AiCoach = lazy(() => import('./pages/AiCoach'));
+const AiCoachClass = lazy(() => import('./pages/AiCoachClass'));
+const VisualMitt = lazy(() => import('./pages/VisualMitt'));
+const LearnedTechniques = lazy(() => import('./pages/LearnedTechniques'));
 const TodayTraining = lazy(() => import('./pages/TodayTraining'));
 const SparringAnalysis = lazy(() => import('./pages/SparringAnalysis'));
 const SparringSessionDetail = lazy(() => import('./pages/SparringSessionDetail'));
@@ -94,6 +93,9 @@ const Login = lazy(() => import('./pages/Login'));
 const Signup = lazy(() => import('./pages/Signup'));
 const ResetPassword = lazy(() => import('./pages/ResetPassword'));
 const NotFound = lazy(() => import('./pages/NotFound'));
+const GymLiveSession = lazy(() => import('./pages/GymLiveSession'));
+const OneOffCoachLesson = lazy(() => import('./pages/OneOffCoachLesson'));
+const GymLiveControl = lazy(() => import('./pages/GymLiveControl'));
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -125,6 +127,7 @@ export default function App() {
         <Header />
         <ScrollToTop />
         <LocalDataMigrationPrompt />
+        <GymLiveWatcher />
         <Suspense fallback={<RouteLoadingFallback />}>
           <AppErrorBoundary>
           <Routes>
@@ -138,11 +141,6 @@ export default function App() {
             <Route path="/techniques/request" element={<RequestTechnique />} />
             <Route path="/free-training" element={<FreeTraining />} />
             <Route path="/free-training/sparring" element={<SparringSession />} />
-            <Route path="/free-training/ground-battle" element={<GroundBattleHome />} />
-            <Route path="/free-training/ground-battle/setup" element={<GroundBattleSetup />} />
-            <Route path="/free-training/ground-battle/battle" element={<GroundBattleMatch />} />
-            <Route path="/free-training/ground-battle/result/:matchId" element={<GroundBattleResult />} />
-            <Route path="/free-training/ground-battle/history" element={<GroundBattleHistory />} />
             <Route path="/ai-combo" element={<AiComboGenerator />} />
             <Route path="/ai-history" element={<AiHistory />} />
             <Route path="/combos" element={<ComboList />} />
@@ -153,7 +151,6 @@ export default function App() {
             <Route path="/tactics" element={<TacticList />} />
             <Route path="/tactics/new" element={<TacticBuilder />} />
             <Route path="/tactics/:tacticId/edit" element={<TacticBuilder />} />
-            <Route path="/shadow-boxing" element={<ShadowBoxing />} />
             <Route path="/training-analytics" element={<TrainingAnalytics />} />
             <Route path="/training-analytics/history" element={<TrainingHistoryList />} />
             <Route path="/training-analytics/:entryId" element={<TrainingHistoryDetail />} />
@@ -168,11 +165,13 @@ export default function App() {
             <Route path="/learning/:martialArtId" element={<CurriculumList />} />
             <Route path="/learning/:martialArtId/:curriculumId/edit" element={<CurriculumEditor />} />
             <Route path="/learning/:martialArtId/:curriculumId/train" element={<CurriculumTrainingStart />} />
+            <Route path="/learning/:martialArtId/:curriculumId/coach/:day" element={<CurriculumCoachSession />} />
             <Route path="/learning/:martialArtId/:curriculumId/day/:day" element={<CurriculumDayDetail />} />
             <Route path="/learning/:martialArtId/:curriculumId" element={<CurriculumDayList />} />
             <Route path="/community" element={<Community />} />
             <Route path="/community/post/:postId" element={<PostDetail />} />
             <Route path="/my-skills" element={<MySkills />} />
+            <Route path="/learned-techniques" element={<LearnedTechniques />} />
             <Route path="/fighter-style" element={<FighterStyleLearning />} />
             <Route path="/ai-curriculum" element={<AiGoalCurriculum />} />
             <Route path="/home-training" element={<HomeTraining />} />
@@ -188,9 +187,14 @@ export default function App() {
             <Route path="/gym/admin" element={<GymAdminHub />} />
             <Route path="/gym/admin/:gymId" element={<GymAdminDetail />} />
             <Route path="/gym/admin/session/:sessionId" element={<GymAdminSessionRoster />} />
+            <Route path="/gym/admin/live/:sessionId" element={<GymLiveControl />} />
+            <Route path="/gym/live/:sessionId" element={<GymLiveSession />} />
             <Route path="/nutrition" element={<Nutrition />} />
             <Route path="/nutrition/goals" element={<NutritionGoals />} />
             <Route path="/coach" element={<AiCoach />} />
+            <Route path="/coach/class" element={<AiCoachClass />} />
+            <Route path="/coach/lesson" element={<OneOffCoachLesson />} />
+            <Route path="/coach/mitt" element={<VisualMitt />} />
             <Route path="/today-training" element={<TodayTraining />} />
             <Route path="/sparring" element={<SparringAnalysis />} />
             <Route path="/sparring/record" element={<SparringRecord />} />

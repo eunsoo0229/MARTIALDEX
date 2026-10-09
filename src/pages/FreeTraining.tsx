@@ -207,10 +207,7 @@ function FreeTrainingBuilder() {
         <div className="chip-row" style={{ marginBottom: 12 }}>
           <span className="chip active">일반 훈련</span>
           <Link to="/free-training/sparring" className="chip">
-            스파링
-          </Link>
-          <Link to="/free-training/ground-battle" className="chip">
-            ⚔️ 그라운드 배틀
+            🤼 스파링 기록
           </Link>
         </div>
 
@@ -626,6 +623,7 @@ export default function FreeTraining() {
                     targetWeightKg={carryForward.weightKg}
                     weightCalcType={technique.gymWeightCalcType}
                     previousSetsLabel={formatLastSessionSets(exercise.techniqueId)}
+                    comparison={{ techniqueId: exercise.techniqueId, setIndex: activeSetIndex, completedSets: exercise.sets.filter((s) => s.completed).map((s) => ({ loadKg: s.calculatedWeightKg ?? s.weightKg ?? null, reps: s.actualReps })) }}
                     onComplete={({ actualReps, weightKg, calculatedWeightKg, rpe }) =>
                       recordSet(detail.currentExerciseIndex, activeSetIndex, { actualReps, weightKg, calculatedWeightKg, rpe })
                     }

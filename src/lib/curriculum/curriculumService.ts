@@ -1,6 +1,6 @@
 import type { Curriculum, CurriculumDay, CurriculumProgress, CurriculumVisibility, ExerciseConfig } from './types';
 import { curriculumRepository } from './repository';
-import { getOfficialCurriculum, getOfficialCurriculumById, listOfficialCurricula } from './officialData';
+import { getOfficialCurriculum, getOfficialCurriculumById, listOfficialCurricula, withSplitIdsExpanded } from './officialData';
 
 
 // -----------------------------------------------------------------------
@@ -38,16 +38,19 @@ export function getMartialArtsWithOfficialCurriculum(): string[] {
 export function getCurriculumsForMartialArt(martialArt: string): { official?: Curriculum; custom: Curriculum[] } {
   return {
     official: getOfficialCurriculum(martialArt),
-    custom: curriculumRepository.listCustom().filter((c) => c.martialArt === martialArt),
+    custom: curriculumRepository.listCustom().filter((c) => c.martialArt === martialArt).map(withSplitIdsExpanded),
   };
 }
 
 export function getCurriculum(id: string): Curriculum | undefined {
-  return getOfficialCurriculumById(id) ?? curriculumRepository.getCustom(id);
+  const official = getOfficialCurriculumById(id);
+  if (official) return official;
+  const custom = curriculumRepository.getCustom(id);
+  return custom ? withSplitIdsExpanded(custom) : undefined;
 }
 
 export function listMyCurricula(): Curriculum[] {
-  return curriculumRepository.listCustom();
+  return curriculumRepository.listCustom().map(withSplitIdsExpanded);
 }
 
 /** What the "커뮤니티" explore page shows — see repository.ts for the honest scope of this (local-only for now). */

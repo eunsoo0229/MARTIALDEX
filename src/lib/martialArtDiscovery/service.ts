@@ -1,6 +1,7 @@
 import type { Technique } from '../../types';
 import { martialArtSummaries } from '../loadData';
 import { normalizeTechniqueName, findNormalizedDuplicate, getUnifiedTechniquesByMartialArt } from '../userTechniques/service';
+import { isTechniqueInArt } from '../techniqueCanonical';
 import { significantNameTokens, namesLikelySame } from '../aiCurriculum/diversity';
 import { runExpandedWebResearch } from '../webSearch/expandedSearch';
 import type { SearchResult } from '../webSearch/types';
@@ -440,7 +441,7 @@ function findExistingTechniqueMatch(martialArtId: string, requestedName: string)
   // wrong_martial_art path, decided from real evidence, not from a name
   // collision alone).
   const exactAnywhere = findNormalizedDuplicate(requestedName);
-  if (exactAnywhere && exactAnywhere.martialArt === martialArtId) return exactAnywhere;
+  if (exactAnywhere && isTechniqueInArt(exactAnywhere, martialArtId)) return exactAnywhere;
   // Spec section 4's "유사 기술" check — same significantNameTokens/0.6
   // threshold rule dedupeCandidates already uses (via namesLikelySame),
   // reused here so AI-canonicalized name variance for the SAME real

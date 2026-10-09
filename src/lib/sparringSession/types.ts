@@ -6,8 +6,10 @@
 // elapsed time" log, following the same local-first + Supabase-sync shape
 // as src/lib/combo/.
 
-export type SparringIntensity = 'light' | 'moderate' | 'hard';
-export const INTENSITY_LABEL: Record<SparringIntensity, string> = { light: '가볍게', moderate: '보통', hard: '강하게' };
+// 'unspecified' — set only on coach-run 체육관 live sparring, where nobody
+// entered an intensity (never offered in the manual form's INTENSITIES list).
+export type SparringIntensity = 'light' | 'moderate' | 'hard' | 'unspecified';
+export const INTENSITY_LABEL: Record<SparringIntensity, string> = { light: '가볍게', moderate: '보통', hard: '강하게', unspecified: '미지정' };
 
 // Only the categories the app doesn't already have a real technique-vocabulary
 // id for; anything else uses martialArtSummaries' own ids so techniques picked
@@ -47,11 +49,21 @@ export interface SparringSessionRecord extends SparringRules {
   actualRounds: number;
   createdAt: string;
   updatedAt: string;
+  /** 'manual' = a sparring already done, logged afterwards (the main use); 'timer' = run live with the round timer. Missing on older records = 'timer'. */
+  entryMode?: SparringEntryMode;
+  /** Techniques actually used in the sparring (real Martialdex ids). */
+  usedTechniqueIds?: string[];
+  wentWell?: string | null;
+  toImprove?: string | null;
+  /** Set only on records created from a coach-run 체육관 실시간 스파링 (gymLive/recorder.ts). */
+  gymLive?: { sessionId: string; gymId: string; gymName: string; opponents: string[]; status: 'completed' | 'interrupted' };
 }
+
+export type SparringEntryMode = 'manual' | 'timer';
 
 export type SparringPhase = 'round' | 'rest' | 'finished';
 
-/** The live/running timer state — same Date.now()-absolute-deadline mechanic as shadowBoxing/types.ts's ShadowSessionState, so pause/resume can never drift. */
+/** The live/running timer state — Date.now()-absolute-deadline mechanic, so pause/resume can never drift. */
 export interface SparringRunState {
   rules: SparringRules;
   currentRound: number;

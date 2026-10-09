@@ -3,17 +3,21 @@ import { Link, useNavigate } from 'react-router-dom';
 import { martialArtSummaries } from '../lib/loadData';
 import { useAuth } from '../lib/auth/AuthProvider';
 import {
+  resolveTechnique,
   runDuplicateStage,
   runVerificationStage,
   type VerificationStageResult,
 } from '../lib/userTechniques/service';
+import { checkArtLink, linkTechniqueToArt, type ArtLinkCheck } from '../lib/techniqueCanonical/artLink';
+import { getUnifiedMartialArt } from '../lib/userTechniques/service';
 import { registerDiscoveredTechnique } from '../lib/techniqueDiscovery/service';
 import type { DuplicateCheckResult, UserTechniqueRecord } from '../lib/userTechniques/types';
 import { videoSearchProvider } from '../lib/videoSearch/provider';
 import type { VideoSearchItem } from '../lib/videoSearch/types';
 import BackButton from '../components/BackButton';
 
-type Step = 'input' | 'checking' | 'duplicate' | 'rejected' | 'preview' | 'saved' | 'error';
+// 'link': the technique already exists but not in this art → offer to link it (no new copy).
+type Step = 'input' | 'checking' | 'duplicate' | 'link' | 'linked' | 'rejected' | 'preview' | 'saved' | 'error';
 
 const VERDICT_LABEL: Record<string, string> = {
   confirmed: '✅ 실제 무술 기술로 확인되었습니다.',
@@ -37,6 +41,32 @@ export default function RequestTechnique() {
   const [videoResults, setVideoResults] = useState<VideoSearchItem[] | null>(null);
   const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
+  const [artLink, setArtLink] = useState<ArtLinkCheck | null>(null);
+  const [linkResult, setLinkResult] = useState<{ category: string; shared: boolean } | null>(null);
+  const [linkError, setLinkError] = useState<string | null>(null);
+
+  /** "기술이 있다" ≠ "이 무술에 있다": already in this art → real duplicate; elsewhere only → link step. */
+  function onExistingTechnique(dup: DuplicateCheckResult) {
+    setDuplicate(dup);
+    const check = dup.matchedTechniqueId ? checkArtLink(dup.matchedTechniqueId, martialArt, resolveTechnique) : null;
+    setArtLink(check);
+    setStep(check?.kind === 'link_available' ? 'link' : 'duplicate');
+  }
+
+  async function handleLink() {
+    if (artLink?.kind !== 'link_available') return;
+    setSaving(true);
+    setLinkError(null);
+    try {
+      const r = await linkTechniqueToArt(artLink.technique, martialArt, user?.id ?? null);
+      if (r.ok) {
+        setLinkResult({ category: r.category, shared: r.shared });
+        setStep('linked');
+      } else setLinkError(r.message);
+    } finally {
+      setSaving(false);
+    }
+  }
 
   async function handleCheck() {
     if (!name.trim()) {
@@ -54,8 +84,7 @@ export default function RequestTechnique() {
       return;
     }
     if (dupResult.duplicate.isDuplicate) {
-      setDuplicate(dupResult.duplicate);
-      setStep('duplicate');
+      onExistingTechnique(dupResult.duplicate);
       return;
     }
 
@@ -68,8 +97,7 @@ export default function RequestTechnique() {
     }
     if (!verification.accepted) {
       if ('duplicate' in verification) {
-        setDuplicate(verification.duplicate);
-        setStep('duplicate');
+        onExistingTechnique(verification.duplicate);
       } else {
         setStep('rejected');
       }
@@ -123,6 +151,9 @@ export default function RequestTechnique() {
     setRecord(null);
     setVideoResults(null);
     setSelectedVideoId(null);
+    setArtLink(null);
+    setLinkResult(null);
+    setLinkError(null);
   }
 
   return (
@@ -175,9 +206,56 @@ export default function RequestTechnique() {
           </div>
         )}
 
+        {step === 'link' && artLink?.kind === 'link_available' && (
+          <div className="card info-card" data-testid="request-link">
+            <h3>"{artLink.technique.name}"은(는) 이미 MARTIALDEX에 있는 기술입니다.</h3>
+            <p>
+              아직 <strong>{getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}</strong>에는 연결되어 있지 않습니다. 새 기술을 따로 만들지 않고, 기존 기술에{' '}
+              {getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}을(를) 연결합니다.
+            </p>
+            <p className="video-status-message">
+              {getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}에서의 분류: <strong data-testid="request-link-category">{artLink.category}</strong> · 연결 전에 이 무술에서 실제로 쓰이는 기술인지 확인합니다.
+            </p>
+            {linkError && (
+              <p className="ai-inline-warning" data-testid="request-link-error">
+                {linkError}
+              </p>
+            )}
+            <div className="modal-actions modal-actions--start">
+              <button className="btn btn-primary" onClick={() => void handleLink()} disabled={saving} data-testid="request-link-confirm">
+                {saving ? '확인하는 중…' : `${getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}에 연결하기`}
+              </button>
+              <Link to={`/arts/${artLink.technique.martialArt}/techniques/${artLink.technique.id}`} className="btn btn-secondary">
+                기존 기술 보기
+              </Link>
+              <button className="btn btn-ghost" onClick={reset}>
+                취소
+              </button>
+            </div>
+          </div>
+        )}
+
+        {step === 'linked' && artLink?.kind === 'link_available' && linkResult && (
+          <div className="card info-card" data-testid="request-linked">
+            <h3>✅ {getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}에 연결했습니다.</h3>
+            <p>
+              "{artLink.technique.name}"은(는) 이제 {getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt} 기술 목록에도 표시됩니다 (분류: {linkResult.category}).
+              {linkResult.shared ? ' 모든 사용자에게 공유됩니다.' : ' 로그인하지 않아 이 기기에만 저장했습니다.'}
+            </p>
+            <div className="modal-actions modal-actions--start">
+              <Link to={`/arts/${martialArt}/techniques/${artLink.technique.id}`} className="btn btn-primary">
+                기술 보기
+              </Link>
+              <button className="btn btn-ghost" onClick={reset}>
+                다른 기술 입력
+              </button>
+            </div>
+          </div>
+        )}
+
         {step === 'duplicate' && duplicate && (
-          <div className="card info-card">
-            <h3>이미 Martialdex에 등록된 기술입니다.</h3>
+          <div className="card info-card" data-testid="request-duplicate">
+            <h3>{artLink?.kind === 'already_in_art' ? `이미 ${getUnifiedMartialArt(martialArt)?.nameKo ?? martialArt}에 등록된 기술입니다.` : '이미 Martialdex에 등록된 기술입니다.'}</h3>
             <p>{duplicate.reason}</p>
             <div className="modal-actions modal-actions--start">
               {duplicate.matchedTechniqueId && (

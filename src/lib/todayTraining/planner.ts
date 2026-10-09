@@ -1,8 +1,10 @@
 import type { Curriculum, ExerciseConfig } from '../curriculum/types';
-import type { GymRoutineDay } from '../gymRoutine/types';
+import type { GymRoutineDay, Weekday } from '../gymRoutine/types';
 import type { TodayTrainingPlan } from './types';
 import { computeAllSkillProgress, rankWeakness } from '../skillProgress/weaknessEngine';
 import { getTodayGymRoutineDay } from '../gymRoutine/todayResolver';
+import { getGymRoutine } from '../gymRoutine/service';
+import { getKstWeekday } from '../dateUtil';
 
 const DIFFICULTY_ORDER: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
 
@@ -86,6 +88,50 @@ export function buildTrainingPlanForCurriculumDay(curriculum: Curriculum, day: n
   return planFromCurriculumDay(curriculum, day, weaknessNote);
 }
 
+// The single place a (routine, weekday) pair turns into a TodayTrainingPlan
+// — shared by today's auto-loaded routine (generateTodayTrainingPlan) and
+// "다른 요일 루틴으로 운동하기" (buildTrainingPlanForGymRoutineDay), so a
+// borrowed day carries exactly the same targets (order, sets, per-set
+// reps/weight, seconds, rest) as if it had been scheduled today.
+function planFromGymRoutineDay(
+  routineId: string,
+  weekday: Weekday,
+  day: GymRoutineDay,
+  weaknessNote: TodayTrainingPlan['weaknessNote'],
+  substituted: boolean
+): TodayTrainingPlan {
+  return {
+    mode: 'gym_routine',
+    curriculumId: null,
+    curriculumTitle: null,
+    martialArt: null,
+    day: null,
+    dayTitle: null,
+    goal: '오늘의 웨이트 루틴',
+    techniqueIds: day.exercises.map((e) => e.techniqueId),
+    estimatedMinutes: day.exercises.length * 8,
+    weaknessNote,
+    gymExerciseConfig: buildGymExerciseConfig(day),
+    gymRoutineId: routineId,
+    gymRoutineWeekday: weekday,
+    ...(substituted ? { gymRoutineSubstituted: true } : {}),
+  };
+}
+
+/**
+ * "다른 요일 루틴으로 운동하기" — builds today's plan from ANY weekday of a
+ * routine (e.g. 수요일 LEGS on a Monday). Read-only on the routine: the
+ * plan gets its own copy of the day's targets, so neither the source day
+ * nor today's scheduled day is changed. Null if the routine or that day
+ * has no exercises (rest day).
+ */
+export function buildTrainingPlanForGymRoutineDay(routineId: string, weekday: Weekday, now: Date = new Date()): TodayTrainingPlan | null {
+  const routine = getGymRoutine(routineId);
+  const day = routine?.days.find((d) => d.weekday === weekday);
+  if (!routine || !day || day.exercises.length === 0) return null;
+  return planFromGymRoutineDay(routine.id, weekday, day, null, weekday !== getKstWeekday(now));
+}
+
 // "오늘의 훈련" is for RECURRING ROUTINES only (요일별 웨이트 루틴), never a
 // curriculum — a curriculum is a multi-day learning PROGRAM the user works
 // through explicitly (via each curriculum's own "훈련하기" button, which
@@ -108,21 +154,7 @@ export function generateTodayTrainingPlan(): TodayTrainingPlan {
   // A deliberately-set recurring routine is a stronger signal than an
   // inferred weakness pick, so it wins over the ad_hoc fallback below.
   if (gymDay) {
-    return {
-      mode: 'gym_routine',
-      curriculumId: null,
-      curriculumTitle: null,
-      martialArt: null,
-      day: null,
-      dayTitle: null,
-      goal: '오늘의 웨이트 루틴',
-      techniqueIds: gymDay.day.exercises.map((e) => e.techniqueId),
-      estimatedMinutes: gymDay.day.exercises.length * 8,
-      weaknessNote,
-      gymExerciseConfig: buildGymExerciseConfig(gymDay.day),
-      gymRoutineId: gymDay.routineId,
-      gymRoutineWeekday: gymDay.weekday,
-    };
+    return planFromGymRoutineDay(gymDay.routineId, gymDay.weekday, gymDay.day, weaknessNote, false);
   }
 
   // No gym routine configured for today — build a short recommendation from the user's own

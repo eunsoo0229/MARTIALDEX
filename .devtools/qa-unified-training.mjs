@@ -59,6 +59,7 @@ async function main() {
   check('[A3] Day picker lists individual Day buttons', /Day 1/.test(text) && /Day 2/.test(text), text.slice(0, 400));
 
   await page.click('button:text-is("Day 1")'); // the day-picker's exact-text chip, distinct from the "Day 1 훈련 시작" primary button
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(600);
   text = await page.evaluate(() => document.body.innerText);
   check('[A4] Picking a Day starts the real set/rep/timer Training Session (not the old read-only Day view)', /SET 1 \//.test(text), text.slice(0, 400));
@@ -93,6 +94,7 @@ async function main() {
   await page.click('a:has-text("훈련하기")');
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(600);
   text = await page.evaluate(() => document.body.innerText);
   check('[B2] Custom curriculum training starts the real set/rep/timer engine', /SET 1 \//.test(text), text.slice(0, 300));
@@ -145,6 +147,7 @@ async function main() {
   check('[C2] Style curriculum reaches the identical Day-select screen', text.includes('훈련 시작'), text.slice(0, 200));
 
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(600);
   text = await page.evaluate(() => document.body.innerText);
   check('[C3] Style curriculum drives the real set/rep/timer Training Session', /SET 1 \//.test(text), text.slice(0, 400));
@@ -199,6 +202,7 @@ async function main() {
   }, customId);
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")'); // start custom curriculum's Day 1
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(400);
 
   let confirmSeen = false;
@@ -213,6 +217,7 @@ async function main() {
   }, officialBjjId);
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")'); // different curriculum's Day 1 -> should prompt
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(400);
 
   check('[D1] Starting a different curriculum while a session is unfinished shows a confirmation dialog', confirmSeen, confirmMessage);
@@ -256,6 +261,7 @@ async function main() {
   }, curatedResultId);
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(600);
   text = await page.evaluate(() => document.body.innerText);
   check('[6] Curated video (data/curated/videos.json) is used when present — no live-search text shown', text.includes('관련 영상') && !text.includes('등록된 영상이 없어'), text.slice(-500));
@@ -279,6 +285,7 @@ async function main() {
   }, noVideoResultId);
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(500);
   text = await page.evaluate(() => document.body.innerText);
   check('[5a] Training screen shows "영상을 검색하는 중..." while the live search runs', text.includes('검색하는 중'), text.slice(-400));

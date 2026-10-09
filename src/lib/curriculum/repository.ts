@@ -28,6 +28,8 @@ export interface CurriculumRepository {
   /** Same effect as calling saveCustom() once per item, but reads/writes CUSTOM_KEY exactly once total instead of once per item — see cloudSync/curriculumSync.ts's pull loops, which used to call saveCustom() per row (an N-item pull did N full reads + N full writes of the whole custom-curricula array). */
   saveManyCustom(curricula: Curriculum[]): void;
   deleteCustom(id: string): void;
+  /** Undoes deleteCustom() exactly (same list position, its progress, no tombstone) — used only when a delete could not be confirmed (curriculum/deleteCurriculum.ts). */
+  restoreDeletedCustom(curriculum: Curriculum, index: number, progress: CurriculumProgress | undefined): void;
   /** Ids deleted locally that still need their Supabase row removed — see cloudSync/curriculumSync.ts. */
   listDeletedIds(): string[];
   /** Called once the matching Supabase row is confirmed deleted (or was never there). */
@@ -103,6 +105,20 @@ class LocalCurriculumRepository implements CurriculumRepository {
     deleted[id] = new Date().toISOString();
     writeJson(DELETED_KEY, deleted);
     window.dispatchEvent(new CustomEvent('martialdex:curricula-updated'));
+  }
+
+  restoreDeletedCustom(curriculum: Curriculum, index: number, progress: CurriculumProgress | undefined): void {
+    const list = this.listCustom().filter((c) => c.id !== curriculum.id);
+    list.splice(Math.max(0, Math.min(index, list.length)), 0, curriculum);
+    writeJson(CUSTOM_KEY, list);
+    if (progress) {
+      const all = readJson<Record<string, CurriculumProgress>>(PROGRESS_KEY, {});
+      all[curriculum.id] = progress;
+      writeJson(PROGRESS_KEY, all);
+    }
+    this.clearDeleted(curriculum.id);
+    window.dispatchEvent(new CustomEvent('martialdex:curricula-updated'));
+    window.dispatchEvent(new CustomEvent('martialdex:progress-updated'));
   }
 
   listDeletedIds(): string[] {

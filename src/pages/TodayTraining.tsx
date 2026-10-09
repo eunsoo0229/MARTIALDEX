@@ -22,6 +22,8 @@ import GymSetInput, { computeCarryForwardTarget } from '../components/GymSetInpu
 import EmptyState from '../components/EmptyState';
 import LoginToBackupBanner from '../components/auth/LoginToBackupBanner';
 import BackButton from '../components/BackButton';
+import GymRoutineDayPicker, { canPickOtherRoutineDay } from '../components/GymRoutineDayPicker';
+import { WEEKDAY_LABEL } from '../lib/dateUtil';
 
 function formatMMSS(totalMs: number): string {
   const totalSeconds = Math.max(0, Math.ceil(totalMs / 1000));
@@ -34,6 +36,19 @@ export default function TodayTraining() {
   const { session, plan, start, finish, finishAll, undoFinish, setNotes, isFullyComplete } = useTodayTraining();
   const [poseTechnique, setPoseTechnique] = useState<Technique | null>(null);
   const [actualsApplied, setActualsApplied] = useState(false);
+  const [routinePickerOpen, setRoutinePickerOpen] = useState(false);
+  const routinePicker = routinePickerOpen && (
+    <GymRoutineDayPicker onClose={() => setRoutinePickerOpen(false)} onStarted={() => setRoutinePickerOpen(false)} />
+  );
+  const otherRoutineButton = canPickOtherRoutineDay() && (
+    <button className="btn btn-secondary" onClick={() => setRoutinePickerOpen(true)}>
+      다른 요일 루틴으로 운동하기
+    </button>
+  );
+  // "불러온 루틴: 수요일" — shown only when today's session was copied from another weekday.
+  const loadedRoutineChip = plan.gymRoutineSubstituted && plan.gymRoutineWeekday != null && (
+    <span className="chip active">불러온 루틴: {WEEKDAY_LABEL[plan.gymRoutineWeekday]}요일</span>
+  );
 
   const curriculum = plan.curriculumId ? getCurriculum(plan.curriculumId) : undefined;
   const { detail, recordSet, startSetTimer, cancelSetTimer, nextExercise, setNote, pauseRest, resumeRest, skipRest, pauseSession, resumeSession } =
@@ -69,8 +84,10 @@ export default function TodayTraining() {
             <Link to="/learning" className="btn btn-primary">
               커리큘럼 만들기
             </Link>
+            {otherRoutineButton}
           </div>
         </div>
+        {routinePicker}
       </div>
     );
   }
@@ -128,8 +145,10 @@ export default function TodayTraining() {
             <button className="btn btn-primary" onClick={() => start()}>
               훈련 시작
             </button>
+            {otherRoutineButton}
           </div>
         </div>
+        {routinePicker}
       </div>
     );
   }
@@ -169,6 +188,7 @@ export default function TodayTraining() {
             <h2>🎉 오늘의 훈련 완료</h2>
           </div>
           {session.plan.day !== null && <p className="detail-hero__korean">Day {session.plan.day} · 완료율 100%</p>}
+          {loadedRoutineChip && <div className="chip-row">{loadedRoutineChip}</div>}
           <div className="curriculum-stat-row">
             <div>
               <strong>{stats ? stats.exerciseCount : session.plan.techniqueIds.length}개</strong>
@@ -201,9 +221,15 @@ export default function TodayTraining() {
 
           {routine && applicableExerciseIds.length > 0 && (
             <div className="card info-card">
-              <h3>실제 수행값을 다음 루틴에 반영하시겠습니까?</h3>
+              <h3>
+                실제 수행값을 다음 루틴에 반영하시겠습니까?
+                {session.plan.gymRoutineWeekday != null ? ` (${WEEKDAY_LABEL[session.plan.gymRoutineWeekday]}요일 루틴)` : ''}
+              </h3>
               {actualsApplied ? (
-                <p className="video-status-message">반영되었습니다 — "{routine.name}" 루틴이 오늘 수행값으로 업데이트되었습니다.</p>
+                <p className="video-status-message">
+                  반영되었습니다 — "{routine.name}" 루틴의{' '}
+                  {session.plan.gymRoutineWeekday != null ? `${WEEKDAY_LABEL[session.plan.gymRoutineWeekday]}요일` : ''} 운동이 오늘 수행값으로 업데이트되었습니다.
+                </p>
               ) : (
                 <>
                   <ul>
@@ -313,6 +339,7 @@ export default function TodayTraining() {
         </div>
         <div className="chip-row">
           {plan.day !== null && <span className="chip active">DAY {plan.day}</span>}
+          {loadedRoutineChip}
           <span className="chip">
             {detail.currentExerciseIndex + 1}/{detail.exercises.length}
           </span>
@@ -415,6 +442,7 @@ export default function TodayTraining() {
                     targetWeightKg={carryForward.weightKg}
                     weightCalcType={technique.gymWeightCalcType}
                     previousSetsLabel={formatLastSessionSets(exercise.techniqueId)}
+                    comparison={{ techniqueId: exercise.techniqueId, setIndex: activeSetIndex, completedSets: exercise.sets.filter((s) => s.completed).map((s) => ({ loadKg: s.calculatedWeightKg ?? s.weightKg ?? null, reps: s.actualReps })) }}
                     onComplete={({ actualReps, weightKg, calculatedWeightKg, rpe }) =>
                       recordSet(detail.currentExerciseIndex, activeSetIndex, { actualReps, weightKg, calculatedWeightKg, rpe })
                     }

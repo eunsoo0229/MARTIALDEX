@@ -62,6 +62,15 @@ export interface CurriculumDay {
    * todayTraining/exerciseDefaults.ts) for any technique missing an entry.
    */
   exerciseConfig?: Record<string, ExerciseConfig>;
+  /**
+   * Set only on "AI 코치 수업" curricula (aiCoachCurriculum/). The ordered,
+   * location-specific steps the AI coach session walks through. Every id is
+   * ALSO listed in techniqueIds/reviewTechniqueIds, so every other reader
+   * (Day detail, 혼자 하기) keeps working without knowing about this field.
+   */
+  coachPlan?: import('../aiCoachCurriculum/types').CoachPlanItem[];
+  /** Set only on "AI 코치 수업" curricula — the coach's one-line note for this Day. */
+  coachNotes?: string;
 }
 
 export interface CurriculumPhaseRange {
@@ -102,6 +111,8 @@ export interface Curriculum {
   aiGoalMeta?: import('../aiCurriculum/types').AiGoalCurriculumMeta;
   /** Set only for 홈트(home-training) curricula — see src/lib/homeTraining/. Independent of styleMeta/aiGoalMeta above; martialArt is HOME_TRAINING_MARTIAL_ART_ID for these. */
   homeTrainingMeta?: import('../homeTraining/types').HomeTrainingMeta;
+  /** Set only for "AI 코치 수업" curricula (집/체육관 맞춤) — see src/lib/aiCoachCurriculum/. Independent of the other *Meta fields. */
+  aiCoachMeta?: import('../aiCoachCurriculum/types').AiCoachCurriculumMeta;
   /** Set only for curricula generated from a 스파링 분석 result — see src/lib/sparringAnalysis/sparringToCurriculum.ts. Independent of the other *Meta fields above. */
   sparringAnalysisMeta?: {
     sparringSessionId: string;

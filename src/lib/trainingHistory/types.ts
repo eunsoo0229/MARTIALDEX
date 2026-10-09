@@ -9,7 +9,9 @@
 // existing video-analysis technique-confirm path, SparringResultView.tsx) —
 // different label ("스파링 분석" vs "스파링"), different source data, must
 // never be merged/confused.
-export type TrainingSource = 'curriculum' | 'coach_today' | 'sparring' | 'review' | 'combo' | 'shadow' | 'free_training' | 'gym_class' | 'sparring_session' | 'ground_battle';
+// 'ground_battle' and 'shadow' are removed features, kept in the union only
+// so existing users' past history entries keep type-checking and rendering.
+export type TrainingSource = 'curriculum' | 'coach_today' | 'sparring' | 'review' | 'combo' | 'shadow' | 'free_training' | 'gym_class' | 'sparring_session' | 'ground_battle' | 'visual_mitt';
 
 /** Per-exercise set/rep/time log for a session recorded via the "오늘의 훈련" set-tracking flow. */
 export interface TrainingExerciseDetail {
@@ -111,6 +113,61 @@ export interface TrainingHistoryEntry {
    * click/retry never creates two history entries for the same session.
    */
   sparringSessionId?: string;
-  /** Present only for source === 'ground_battle' — links this history entry back to its full match record (src/lib/groundBattle/, Supabase table ground_battle_matches). Same additive/idempotency-key convention as sparringSessionId above. */
-  groundBattleMatchId?: string;
+  /**
+   * Set only on sessions built from a 요일별 gym routine day (todayTraining/
+   * planner.ts). `weekday` is the routine day the exercises were LOADED
+   * from — not when it happened (that is always `date` above). `substituted`
+   * is true when the user ran a different weekday's routine today via
+   * "다른 요일 루틴으로 운동하기"; the routine itself is never changed by
+   * that. Additive/optional — absent on every entry recorded before this
+   * field existed.
+   */
+  gymRoutine?: {
+    routineId: string;
+    /** Name snapshot at record time — the routine may be renamed/deleted later. */
+    routineName: string;
+    weekday: import('../dateUtil').Weekday;
+    substituted: boolean;
+  };
+  /**
+   * Set only on entries from a coach-run 체육관 실시간 훈련/스파링
+   * (src/lib/gymLive/). `status` keeps COMPLETED vs INTERRUPTED (coach ended
+   * early) apart, and completedSets counts only sets whose whole WORK time
+   * was actually lived. The entry id is derived from sessionId, so one
+   * session can never become two entries (retries, second device, sync).
+   */
+  gymLive?: {
+    sessionId: string;
+    gymId: string;
+    gymName: string;
+    coachUserId: string;
+    kind: 'drill' | 'sparring';
+    status: 'completed' | 'interrupted';
+    totalSets: number;
+    completedSets: number;
+    workSeconds: number;
+    restSeconds: number;
+    startedAt: string | null;
+    endedAt: string | null;
+    /** Sparring only — this student's own opponent per round (null = 대기). */
+    opponents?: (string | null)[];
+  };
+  /** Set only on entries recorded by an AI 코치 Day session — where it happened (null = place not chosen, older sessions) and how the user talked to the coach. Lets later AI 코치 수업 plans read what earlier classes covered. */
+  aiCoach?: { location: 'home' | 'gym' | 'limited' | null; mode: 'voice' | 'text' };
+  /**
+   * Set only on AI Visualizing Mitt sessions. Everything here is what the
+   * USER did/marked — the app has no camera/sensor analysis in this mode, so
+   * nothing is a measured judgement of the technique (selfReported: true).
+   */
+  visualMitt?: {
+    comboId: string | null;
+    comboName: string;
+    stepTechniqueIds: string[];
+    /** Step indexes the user marked as practised. */
+    completedSteps: number[];
+    /** Full passes through the combo. */
+    repetitions: number;
+    stance: 'orthodox' | 'southpaw';
+    selfReported: true;
+  };
 }

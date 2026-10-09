@@ -1,6 +1,7 @@
 import type { TrainingHistoryEntry, TrainingSource } from '../lib/trainingHistory/types';
 import { getMartialArt } from '../lib/loadData';
 import { GYM_MARTIAL_ART_ID } from '../lib/gymTraining/library';
+import { WEEKDAY_LABEL } from '../lib/dateUtil';
 import { deriveEntryCurriculumTitle, deriveEntryMartialArt, deriveEntrySetsReps, deriveEntryTechniqueNames } from '../lib/trainingAnalytics/historyView';
 
 // Same "Record<T, string> icon constant" convention as MASTERY_ICON/
@@ -16,7 +17,8 @@ const SOURCE_ICON: Record<TrainingSource, string> = {
   free_training: '🏃',
   gym_class: '🥋',
   sparring_session: '🤼',
-  ground_battle: '⚔️',
+  ground_battle: '⚔️', // removed feature — past entries only
+  visual_mitt: '🥊',
 };
 
 // One real TrainingHistoryEntry rendered as a clickable row — the exact
@@ -50,8 +52,10 @@ export default function TrainingEntryRow({
     entry.source === 'gym_class' && derivedMartialArt === GYM_MARTIAL_ART_ID ? '🏋' : SOURCE_ICON[entry.source] ?? '🥋';
   const baseTitle = entry.gymClassMeta
     ? `체육관 · ${entry.gymClassMeta.classTitle}`
-    : entry.source === 'ground_battle'
-      ? `그라운드 배틀${martialArtName ? ` · ${martialArtName}` : ''}`
+    : entry.visualMitt
+        ? `AI Visualizing Mitt · ${entry.visualMitt.comboName}`
+      : entry.gymRoutine
+        ? `${entry.gymRoutine.routineName} · ${WEEKDAY_LABEL[entry.gymRoutine.weekday]}요일 루틴${entry.gymRoutine.substituted ? ' 기반' : ''}`
       : curriculumTitle ?? martialArtName ?? '훈련';
   const title = `${icon} ${baseTitle}`;
 

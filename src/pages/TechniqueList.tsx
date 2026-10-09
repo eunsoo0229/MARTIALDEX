@@ -3,6 +3,7 @@ import { Link, useParams, useSearchParams, Navigate } from 'react-router-dom';
 import TechniqueRow from '../components/TechniqueRow';
 import EmptyState from '../components/EmptyState';
 import { techniqueTypeTags, uniqueSorted } from '../lib/search';
+import { isTechniqueInArt, techniqueCategoryInArt } from '../lib/techniqueCanonical';
 import { getUnifiedAllTechniques, getUnifiedMartialArt, getUnifiedMartialArtSummaries, searchAllTechniques } from '../lib/userTechniques/service';
 import { ADD_TEQ_CACHE_EVENT } from '../lib/addTeq/repository';
 import { useCustomMartialArtLibraryVersion } from '../lib/customMartialArt/useCustomMartialArtLibrary';
@@ -87,14 +88,14 @@ export default function TechniqueList() {
   const scopedForOptions = useMemo(
     () => {
       const all = getUnifiedAllTechniques();
-      return martialArtParam ? all.filter((t) => t.martialArt === martialArtParam) : all;
+      return martialArtParam ? all.filter((t) => isTechniqueInArt(t, martialArtParam)) : all;
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [martialArtParam, userTechniquesTick]
   );
 
   const categoryOptions = useMemo(
-    () => uniqueSorted(scopedForOptions.map((t) => t.category)),
+    () => uniqueSorted(scopedForOptions.map((t) => (martialArtParam ? techniqueCategoryInArt(t, martialArtParam) : t.category))),
     [scopedForOptions]
   );
   const positionOptions = useMemo(
@@ -291,7 +292,7 @@ export default function TechniqueList() {
           <>
             <div className="stack gap-2">
               {visibleResults.map((t) => (
-                <TechniqueRow key={t.id} technique={t} />
+                <TechniqueRow key={t.id} technique={t} contextArt={martialArtParam || undefined} />
               ))}
             </div>
             {visibleCount < filtered.length && (

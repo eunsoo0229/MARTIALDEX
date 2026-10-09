@@ -48,6 +48,19 @@ export interface Combo {
   };
   /** Present only for a combo generated as a "추천 셋업" from 스파링 분석 (see sparringAnalysis/setupGeneration.ts) — purely additive, coexists with aiComboMeta (the combo was still built via the same generateCombo() pipeline). Lets the sparring result screen distinguish its own suggestions from the user's other combos while the combo itself still shows up normally in the regular Combo list. */
   sourceMeta?: { source: 'sparring'; sparringSessionId: string; difficulty: 'basic' | 'intermediate' | 'advanced' };
+  /** Present only for a combo built in "AI Visualizing Mitt" (src/lib/visualMitt/) — additive; the combo is still an ordinary combo-book entry (same ids, same sync). */
+  visualMittMeta?: {
+    createdAt: string;
+    stance: 'orthodox' | 'southpaw';
+    /** combo = 연속 공격, setup = 반응 유도 후 연결. Absent on combos saved before this existed (= combo). */
+    type?: 'combo' | 'setup';
+    purpose?: string;
+    repetitions?: number;
+    speed?: 'slow' | 'normal' | 'fast';
+    coachingNote?: string;
+    stepNotes?: { techniqueId: string; note: string; opponentReaction: string | null }[];
+    source?: 'ai' | 'user';
+  };
 }
 
 export interface RestTimerState {

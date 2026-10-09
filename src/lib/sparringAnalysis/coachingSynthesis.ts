@@ -1,11 +1,19 @@
 import { askGeminiForJson } from '../fighterStyle/geminiJson';
-import { getMartialArt } from '../loadData';
+import { getMartialArt, isSyntheticTrainingDomain } from '../loadData';
+import { searchTechniques } from '../search';
+import { listLearnedTechniques } from '../learnedTechniques/service';
+import { isTechniqueInArt } from '../techniqueCanonical';
+import { buildDataLimits, buildEvidenceFacts } from './coachingFacts';
 import type {
   CoachingCategoryScore,
   CoachingCategoryScores,
   CoachingInsight,
   CoachingSynthesisResult,
+  AnalysisLimitation,
+  EvidenceFact,
   MotionEvent,
+  NextTrainingItem,
+  OverallScores,
   PostureSegment,
   SequenceAnalysisResult,
   TechniqueGuess,
@@ -18,11 +26,15 @@ export interface CoachingSynthesisInput {
   techniqueGuesses: TechniqueGuess[];
   motionEvents: MotionEvent[];
   opponentMotionEvents: MotionEvent[];
-  sequenceAnalysis: SequenceAnalysisResult;
+  /** Optional — absent when no technique guesses survived; facts/limits are still built from motion + posture data. */
+  sequenceAnalysis?: SequenceAnalysisResult;
   visualInsights: VisualEventInsight[];
   postureSegments: PostureSegment[];
   styleObservations: string[];
   weakAreas: WeakArea[];
+  videoDurationSec?: number;
+  overallScores?: OverallScores;
+  limitations?: AnalysisLimitation[];
 }
 
 const CATEGORY_KEYS = ['attack', 'defense', 'footwork', 'distance', 'timing', 'connection', 'tacticalVariety'] as const;
@@ -45,12 +57,12 @@ function hasEvidence(key: (typeof CATEGORY_KEYS)[number], input: CoachingSynthes
     case 'distance':
       return (
         input.motionEvents.some((e) => e.category === 'distance_exit_like' || e.category === 'clinch_like') ||
-        input.sequenceAnalysis.perTechnique.some((t) => Object.keys(t.distanceBuckets).length > 0)
+        !!input.sequenceAnalysis?.perTechnique.some((t) => Object.keys(t.distanceBuckets).length > 0)
       );
     case 'timing':
-      return input.sequenceAnalysis.reactiveRatio !== null || input.motionEvents.length >= 5;
+      return (input.sequenceAnalysis?.reactiveRatio ?? null) !== null || input.motionEvents.length >= 5;
     case 'connection':
-      return input.sequenceAnalysis.timeline.length >= 2;
+      return (input.sequenceAnalysis?.timeline.length ?? 0) >= 2;
     case 'tacticalVariety':
       return input.techniqueGuesses.length >= 2;
     default:
@@ -62,105 +74,182 @@ function isValidScore(v: unknown): v is CoachingCategoryScore {
   return typeof v === 'number' || v === INSUFFICIENT;
 }
 
-interface RawResponse {
-  strengths: { label: string; evidence: string }[];
-  weaknesses: { label: string; evidence: string }[];
-  patternDiagnoses: { patternIndex: number; diagnosis: string }[];
-  categoryScores: Record<string, unknown>;
-  improvementDirections: string[];
+interface RawItem {
+  label: string;
+  factIds: string[];
 }
 
-function isCoachingInsightArray(v: unknown): v is CoachingInsight[] {
-  return Array.isArray(v) && v.every((d) => d && typeof d === 'object' && typeof (d as Record<string, unknown>).label === 'string' && typeof (d as Record<string, unknown>).evidence === 'string');
+interface RawNextTraining {
+  title: string;
+  drill: string;
+  reason: string;
+  factIds: string[];
+  techniqueIds: string[];
+}
+
+export interface RawResponse {
+  strengths: RawItem[];
+  weaknesses: RawItem[];
+  patternDiagnoses: { patternIndex: number; diagnosis: string }[];
+  categoryScores: Record<string, unknown>;
+  nextTraining: RawNextTraining[];
+  overallFeedback: string;
+}
+
+const isStr = (v: unknown): v is string => typeof v === 'string';
+const isStrArray = (v: unknown): v is string[] => Array.isArray(v) && v.every(isStr);
+
+function isRawItemArray(v: unknown): v is RawItem[] {
+  return Array.isArray(v) && v.every((d) => d && typeof d === 'object' && isStr((d as RawItem).label) && isStrArray((d as RawItem).factIds));
 }
 
 function isRawResponse(data: unknown): data is RawResponse {
   if (!data || typeof data !== 'object') return false;
   const d = data as Record<string, unknown>;
   return (
-    isCoachingInsightArray(d.strengths) &&
-    isCoachingInsightArray(d.weaknesses) &&
+    isRawItemArray(d.strengths) &&
+    isRawItemArray(d.weaknesses) &&
     Array.isArray(d.patternDiagnoses) &&
-    d.patternDiagnoses.every((p) => p && typeof p === 'object' && typeof (p as Record<string, unknown>).patternIndex === 'number' && typeof (p as Record<string, unknown>).diagnosis === 'string') &&
+    d.patternDiagnoses.every((p) => p && typeof p === 'object' && typeof (p as Record<string, unknown>).patternIndex === 'number' && isStr((p as Record<string, unknown>).diagnosis)) &&
     !!d.categoryScores &&
     typeof d.categoryScores === 'object' &&
-    Array.isArray(d.improvementDirections) &&
-    d.improvementDirections.every((s) => typeof s === 'string')
+    Array.isArray(d.nextTraining) &&
+    d.nextTraining.every((n) => {
+      const x = n as RawNextTraining;
+      return x && typeof x === 'object' && isStr(x.title) && isStr(x.drill) && isStr(x.reason) && isStrArray(x.factIds) && isStrArray(x.techniqueIds);
+    }) &&
+    isStr(d.overallFeedback)
   );
 }
 
+// Same id as fighterStyle's STYLE_CURRICULUM_MARTIAL_ART — MMA sessions search every art (no per-art filter), like SparringResultView.
+const STYLE_ART = 'mma';
+
+interface TrainingCandidate {
+  id: string;
+  name: string;
+  learned: boolean;
+}
+
 /**
- * One text-only Gemini call that turns everything already computed (real
- * pattern counts from sequenceAnalysis.ts, real motion-event rates, real
- * posture/style observations) into a coaching narrative. `patternDiagnoses`
- * is the one place this most needed a whitelist guard: Gemini is asked to
- * reference patterns only by INDEX into the real pattern list this function
- * hands it, and patternDescription/occurrenceCount in the final result are
- * always reconstructed from that real pattern — never from what Gemini said
- * the pattern was (same discipline as techniqueHypothesis.ts's candidateIds
- * whitelist). Returns null (not throws) on any failure/invalid response —
- * the caller must treat that exactly like "AI stage skipped".
+ * The ONLY technique ids "다음 훈련 추천" may reference: the user's own
+ * learned techniques in this art first, then techniques the analysis
+ * itself saw, then real search hits for each weak-area label (same
+ * deterministic lookup SparringResultView/sparringToCurriculum use).
  */
+function buildTrainingCandidates(input: CoachingSynthesisInput): TrainingCandidate[] {
+  const byId = new Map<string, TrainingCandidate>();
+  const inArt = (t: { martialArt: string } & Parameters<typeof isTechniqueInArt>[0]) =>
+    !isSyntheticTrainingDomain(t.martialArt) && (input.martialArt === STYLE_ART || isTechniqueInArt(t, input.martialArt));
+  for (const e of listLearnedTechniques()) {
+    if (byId.size >= 25) break;
+    if (inArt(e.technique)) byId.set(e.technique.id, { id: e.technique.id, name: e.technique.koreanName || e.technique.name, learned: true });
+  }
+  for (const g of input.techniqueGuesses) if (!byId.has(g.techniqueId)) byId.set(g.techniqueId, { id: g.techniqueId, name: g.techniqueName, learned: false });
+  const filters = input.martialArt === STYLE_ART ? {} : { martialArt: input.martialArt };
+  for (const w of input.weakAreas) {
+    for (const t of searchTechniques(w.label, 3, filters)) {
+      if (!isSyntheticTrainingDomain(t.martialArt) && !byId.has(t.id)) byId.set(t.id, { id: t.id, name: t.koreanName || t.name, learned: false });
+    }
+  }
+  return [...byId.values()].slice(0, 40);
+}
+
+
+/**
+ * Grounded coaching (v2). Code builds the evidence (coachingFacts.ts); the
+ * AI may only interpret it:
+ *   - every strength/weakness/drill must cite ≥1 real fact id — anything
+ *     citing none is dropped, and the displayed evidence is the code's fact
+ *     text, never the AI's wording;
+ *   - patternDiagnoses reference patterns by index and are rebuilt from the
+ *     real pattern (unchanged discipline);
+ *   - drill technique ids are filtered against buildTrainingCandidates();
+ *   - dataLimits (what is NOT measured) are code-determined and always shown.
+ * Returns null (not throws) on any AI failure/invalid response — the caller
+ * treats that exactly like "AI stage skipped".
+ */
+export interface PreparedCoaching {
+  patterns: SequenceAnalysisResult['patterns'];
+  facts: EvidenceFact[];
+  dataLimits: string[];
+  candidates: TrainingCandidate[];
+}
+
+/** Everything code decides before the AI call (facts, limits, pattern list, technique whitelist). */
+export function prepareCoaching(input: CoachingSynthesisInput): PreparedCoaching {
+  return {
+    patterns: input.sequenceAnalysis?.patterns.slice(0, 15) ?? [],
+    facts: buildEvidenceFacts(input),
+    dataLimits: buildDataLimits(input),
+    candidates: buildTrainingCandidates(input),
+  };
+}
+
 export async function synthesizeCoaching(input: CoachingSynthesisInput): Promise<CoachingSynthesisResult | null> {
   const art = getMartialArt(input.martialArt);
-  const patterns = input.sequenceAnalysis.patterns.slice(0, 15); // cap context size — the rest are lower-count, less coaching-relevant
+  const prepared = prepareCoaching(input);
+  const { patterns, facts, dataLimits, candidates } = prepared;
+  if (facts.length === 0) return null;
 
   const contextParts = [
     `종목: ${art?.nameKo ?? input.martialArt}`,
     '',
-    '실제 감지된 기술 사용 횟수:',
-    ...input.techniqueGuesses.map((g) => `- ${g.techniqueName}: ${g.occurrences.length}회`),
+    '[측정/계산된 사실 — 이것만 근거로 사용, 반드시 id로 인용]',
+    ...facts.map((f) => `${f.id}: ${f.text}`),
     '',
-    '실제 감지된 연결 패턴(발생 순서 기반, 각 항목의 인덱스를 patternDiagnoses에서 참조):',
-    ...patterns.map((p, i) => `${i}: ${p.fromTechniqueName} → ${p.toTechniqueName ?? '후속 공격 없음'} (${p.count}회)`),
+    '[측정되지 않는 것 — 이 항목에 대해서는 평가하지 말 것]',
+    ...dataLimits.map((l) => `- ${l}`),
     '',
-    `단독 공격: ${input.sequenceAnalysis.soloCount}회, 콤비네이션: ${input.sequenceAnalysis.combinationCount}회`,
-    input.sequenceAnalysis.reactiveRatio !== null
-      ? `상대 동작 직후 반응형으로 사용한 비율: ${Math.round(input.sequenceAnalysis.reactiveRatio * 100)}%`
-      : '상대방 추적 데이터 없음 — 선공/후공 경향 확인 불가',
+    '[연결 패턴 목록 — patternDiagnoses에서 인덱스로 참조]',
+    ...(patterns.length > 0 ? patterns.map((p, i) => `${i}: ${p.fromTechniqueName} → ${p.toTechniqueName ?? '후속 공격 없음'} (${p.count}회)`) : ['(없음)']),
     '',
-    input.visualInsights.length > 0
-      ? `영상 프레임 기반 적중/상대반응 관찰 (${input.visualInsights.length}개 장면): ${input.visualInsights
-          .map((v) => `${v.timestampSec}초 - 적중:${v.hitAssessment}${v.opponentReaction ? `, 상대반응:${v.opponentReaction}` : ''}`)
-          .join(' / ')}`
-      : '영상 프레임 기반 적중/상대반응 관찰 없음',
-    '',
-    input.styleObservations.length > 0 ? `기존 스타일 관찰:\n${input.styleObservations.join('\n')}` : '',
-    input.weakAreas.length > 0 ? `기존 약점 지표: ${input.weakAreas.map((w) => `${w.label}${w.score !== null ? `(${w.score}점)` : ''}`).join(', ')}` : '',
-  ].filter(Boolean);
+    '[추천 훈련에 사용할 수 있는 기술 — techniqueIds는 이 목록의 id만]',
+    ...(candidates.length > 0 ? candidates.map((c) => `${c.id}: ${c.name}${c.learned ? ' (사용자가 학습한 기술)' : ''}`) : ['(없음)']),
+  ];
 
   const result = await askGeminiForJson<RawResponse>({
     systemInstruction: [
-      '아래는 실제 스파링 영상 분석에서 코드가 계산한 데이터다(추측이 아닌 실측). 이 데이터만 근거로 코칭 진단을 작성한다.',
-      '데이터에 없는 사실을 새로 만들어내지 않는다 — 특히 상대의 심리 상태(위축됨, 자신감 등)는 절대 단정하지 않는다.',
+      '너는 스파링 코치다. 목적은 사용자가 무엇을 했는지 나열하는 것이 아니라, 잘한 점과 부족한 점을 찾아 다음 훈련에 도움을 주는 것이다.',
+      '근거는 오직 "[측정/계산된 사실]" 목록이다. 각 항목은 근거가 된 사실 id(예: "F3")를 factIds에 1개 이상 넣어야 한다.',
+      '사실 목록에 없는 행동(예: 공격 후 가드가 내려감, 피격, 체력 저하, 상대의 심리)을 측정한 것처럼 쓰지 않는다. "[측정되지 않는 것]"의 항목은 평가하지 않는다.',
+      '가능하면 기술 횟수 자체보다 거리·타이밍·공격/방어 전환·가드·움직임·공격 패턴·페이스 관점에서 해석하되, 해당 사실이 있을 때만 그렇게 한다.',
+      '근거가 부족하면 항목 수를 줄인다(억지로 채우지 않음).',
       '',
-      'strengths/weaknesses: 위 데이터에서 실제로 뒷받침되는 만큼만(각각 최대 5개, 근거 없으면 억지로 채우지 않음) 뽑는다.',
-      '각 항목은 { "label": 짧은 한국어 요약, "evidence": 근거가 된 실제 데이터를 인용한 1문장 } 형태.',
+      'strengths: 잘한 점(최대 4개) { "label": 한 문장 한국어 코칭 문장, "factIds": string[] }',
+      'weaknesses: 개선할 점(최대 4개) 같은 형식.',
+      'patternDiagnoses: "[연결 패턴 목록]"의 인덱스만 참조 { "patternIndex": number, "diagnosis": string }.',
+      'categoryScores: attack/defense/footwork/distance/timing/connection/tacticalVariety 각각 0-100 또는 "분석 데이터 부족".',
+      'nextTraining: 다음 훈련 과제(최대 3개). { "title": 짧은 제목, "drill": 실제로 할 연습(횟수/라운드 등 구체적으로), "reason": 어떤 개선점 때문인지, "factIds": string[], "techniqueIds": "[추천 훈련에 사용할 수 있는 기술]"의 id만(사용자가 학습한 기술 우선, 없으면 []) }',
+      'overallFeedback: 종합 평가 2-4문장. 잘한 점, 가장 큰 개선 포인트, 다음 훈련에서 집중할 패턴을 사실에 근거해 요약한다. 측정 한계가 결론에 중요하면 한 번 언급한다.',
       '',
-      'patternDiagnoses: 위 "실제 감지된 연결 패턴" 목록에 있는 항목에 대해서만, 그 인덱스(patternIndex)를 참조해',
-      '진단 문장(diagnosis)을 작성한다. 목록에 없는 패턴을 새로 만들어 진단하지 않는다.',
-      '',
-      'categoryScores: attack/defense/footwork/distance/timing/connection/tacticalVariety 각각 0-100 점수 또는',
-      '"분석 데이터 부족" 중 하나. 해당 항목을 뒷받침할 데이터가 부족하면 반드시 "분석 데이터 부족"으로 답한다 — 억지로 숫자를 만들지 않는다.',
-      '',
-      'improvementDirections: 위 데이터에 기반한 구체적 개선 방향 문장 배열(최대 5개).',
-      '',
-      '출력 형식(JSON 객체 하나):',
-      '{',
-      '  "strengths": [{"label": string, "evidence": string}],',
-      '  "weaknesses": [{"label": string, "evidence": string}],',
-      '  "patternDiagnoses": [{"patternIndex": number, "diagnosis": string}],',
-      '  "categoryScores": {"attack": number|"분석 데이터 부족", "defense": ..., "footwork": ..., "distance": ..., "timing": ..., "connection": ..., "tacticalVariety": ...},',
-      '  "improvementDirections": string[]',
-      '}',
+      '출력: 위 키를 모두 가진 JSON 객체 하나.',
     ].join('\n'),
     contextText: contextParts.join('\n'),
-    question: '위 실제 분석 데이터를 바탕으로 코칭 진단을 작성해줘.',
+    question: '위 사실만 근거로 스파링 코칭 분석을 작성해줘.',
     validate: isRawResponse,
   });
 
   if (!result.ok) return null;
-  const raw = result.data;
+  return groundCoachingResponse(result.data, input, prepared);
+}
+
+/**
+ * Turns a schema-valid AI response into the stored result, enforcing the
+ * grounding rules in code (see synthesizeCoaching's doc comment). Pure —
+ * exported so the rules can be tested without a live AI call.
+ */
+export function groundCoachingResponse(raw: RawResponse, input: CoachingSynthesisInput, prepared: PreparedCoaching): CoachingSynthesisResult {
+  const { patterns, facts, dataLimits, candidates } = prepared;
+  const factById = new Map(facts.map((f) => [f.id, f]));
+  const candidateIds = new Set(candidates.map((c) => c.id));
+  const validFactIds = (ids: string[]) => [...new Set(ids.filter((id) => factById.has(id)))];
+  const grounded = (items: RawItem[], max: number): CoachingInsight[] =>
+    items
+      .map((it) => ({ label: it.label.trim(), factIds: validFactIds(it.factIds) }))
+      .filter((it) => it.label && it.factIds.length > 0)
+      .slice(0, max)
+      .map((it) => ({ label: it.label, factIds: it.factIds, evidence: it.factIds.map((id) => factById.get(id)!.text).join(' / ') }));
 
   const categoryScores = {} as CoachingCategoryScores;
   for (const key of CATEGORY_KEYS) {
@@ -180,12 +269,30 @@ export async function synthesizeCoaching(input: CoachingSynthesisInput): Promise
       };
     });
 
+  const nextTraining: NextTrainingItem[] = raw.nextTraining
+    .map((n) => ({
+      title: n.title.trim(),
+      drill: n.drill.trim(),
+      reason: n.reason.trim(),
+      factIds: validFactIds(n.factIds),
+      techniqueIds: [...new Set(n.techniqueIds.filter((id) => candidateIds.has(id)))].slice(0, 3),
+    }))
+    .filter((n) => n.title && n.drill && n.factIds.length > 0)
+    .slice(0, 3);
+
+  const overallFeedback = raw.overallFeedback.trim().slice(0, 800) || null;
+
   return {
-    strengths: raw.strengths,
-    weaknesses: raw.weaknesses,
+    strengths: grounded(raw.strengths, 4),
+    weaknesses: grounded(raw.weaknesses, 4),
     patternDiagnoses,
     categoryScores,
-    improvementDirections: raw.improvementDirections,
+    // Kept for sparringToCurriculum.ts (the only consumer) — now the drills' own text.
+    improvementDirections: nextTraining.map((n) => `${n.title}: ${n.drill}`),
     generatedAt: new Date().toISOString(),
+    facts,
+    dataLimits,
+    nextTraining,
+    overallFeedback,
   };
 }

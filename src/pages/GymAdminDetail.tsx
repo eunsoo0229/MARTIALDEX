@@ -9,6 +9,7 @@ import type { ExerciseConfig } from '../lib/curriculum/types';
 import type { Technique } from '../types';
 import BackButton from '../components/BackButton';
 import EmptyState from '../components/EmptyState';
+import GymLivePanel from '../components/gymLive/GymLivePanel';
 
 // Instructor's per-gym class management (spec item 13/14): create classes
 // (reusing searchTechniques() — the same search index SearchBar.tsx uses,
@@ -109,6 +110,8 @@ export default function GymAdminDetail() {
           <p>가입 코드: <strong>{gym.joinCode}</strong></p>
           <p className="video-status-message">학생에게 이 코드를 공유하면 체육관에 참가할 수 있습니다.</p>
         </div>
+
+        <GymLivePanel gymId={gym.id} />
 
         <div className="card info-card">
           <h3>새 클래스 만들기</h3>

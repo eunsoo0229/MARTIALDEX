@@ -1,4 +1,5 @@
 import type { SparringRules, SparringRunState, SparringSessionRecord } from './types';
+import { SPARRING_TYPE_LABEL } from './types';
 import { INTENSITY_LABEL } from './types';
 import { sparringSessionRepository } from './repository';
 import { getActualSparringMs } from './sessionStore';
@@ -25,9 +26,9 @@ export function loadLastSparringRules(): SparringRules | null {
     roundDurationSeconds: last.roundDurationSeconds,
     restDurationSeconds: last.restDurationSeconds,
     intensity: last.intensity,
-    equipment: [...last.equipment],
-    allowedTechniqueIds: [...last.allowedTechniqueIds],
-    prohibitedTechniqueIds: [...last.prohibitedTechniqueIds],
+    equipment: [...(last.equipment ?? [])],
+    allowedTechniqueIds: [...(last.allowedTechniqueIds ?? [])],
+    prohibitedTechniqueIds: [...(last.prohibitedTechniqueIds ?? [])],
     partnerName: last.partnerName,
     notes: last.notes,
   };
@@ -56,7 +57,7 @@ export function finalizeSparringSession(run: SparringRunState, overrides?: { act
   const actualDurationSeconds = overrides?.actualDurationSeconds ?? Math.round(getActualSparringMs(run) / 1000);
   const plannedDurationSeconds = rules.plannedRounds * rules.roundDurationSeconds;
 
-  const existing = sparringSessionRepository.list().find((s) => s.startedAt === run.startedAt);
+  const existing = sparringSessionRepository.list().find((s) => s.entryMode !== 'manual' && s.startedAt === run.startedAt);
 
   const record: SparringSessionRecord = {
     ...rules,
@@ -69,6 +70,7 @@ export function finalizeSparringSession(run: SparringRunState, overrides?: { act
     actualRounds: run.completedRounds,
     createdAt: existing?.createdAt ?? now,
     updatedAt: now,
+    entryMode: 'timer',
   };
 
   sparringSessionRepository.save(record);
@@ -102,4 +104,78 @@ export function listSparringSessions(): SparringSessionRecord[] {
 
 export function deleteSparringSession(id: string): void {
   sparringSessionRepository.delete(id);
+}
+
+/** Inputs for a sparring that already happened, recorded afterwards. */
+export interface PastSparringInput {
+  rules: SparringRules;
+  /** YYYY-MM-DD, today or earlier */
+  date: string;
+  actualRounds: number;
+  /** Real sparring time (rounds only, rest excluded) as the user remembers it. */
+  actualDurationSeconds: number;
+  usedTechniqueIds: string[];
+  wentWell: string | null;
+  toImprove: string | null;
+}
+
+export function validatePastSparring(input: PastSparringInput, today = todayDateKey()): string | null {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(input.date)) return '날짜를 입력해 주세요.';
+  if (input.date > today) return '아직 오지 않은 날짜는 기록할 수 없습니다.';
+  if (input.date < '2000-01-01') return '날짜를 확인해 주세요.';
+  if (!Number.isInteger(input.actualRounds) || input.actualRounds < 1 || input.actualRounds > 50) return '진행한 라운드 수를 확인해 주세요 (1~50).';
+  if (!Number.isFinite(input.actualDurationSeconds) || input.actualDurationSeconds <= 0) return '스파링 시간을 입력해 주세요.';
+  if (input.actualDurationSeconds > 4 * 3600) return '스파링 시간이 너무 깁니다. 시간을 확인해 주세요.';
+  return null;
+}
+
+/**
+ * Records a sparring that already happened — saved to the sparring records
+ * AND linked into training_history ON THE SPARRING'S OWN DATE (so streaks,
+ * analytics and nutrition count it on the day it was done). Each call is one
+ * new record; the screen disables the save button after a save.
+ */
+export function recordPastSparringSession(input: PastSparringInput): SparringSessionRecord {
+  const error = validatePastSparring(input);
+  if (error) throw new Error(error);
+  const now = new Date().toISOString();
+  const rules = input.rules;
+  const plannedDurationSeconds = rules.plannedRounds * rules.roundDurationSeconds;
+  const dayStart = new Date(`${input.date}T00:00:00+09:00`).toISOString();
+  const record: SparringSessionRecord = {
+    ...rules,
+    equipment: [...rules.equipment],
+    allowedTechniqueIds: [...rules.allowedTechniqueIds],
+    prohibitedTechniqueIds: [...rules.prohibitedTechniqueIds],
+    id: newId(),
+    date: input.date,
+    // the time of day isn't asked — only the date is known
+    startedAt: dayStart,
+    endedAt: dayStart,
+    plannedDurationSeconds,
+    actualDurationSeconds: Math.round(input.actualDurationSeconds),
+    actualRounds: input.actualRounds,
+    createdAt: now,
+    updatedAt: now,
+    entryMode: 'manual',
+    usedTechniqueIds: [...new Set(input.usedTechniqueIds)],
+    wentWell: input.wentWell?.trim() || null,
+    toImprove: input.toImprove?.trim() || null,
+  };
+  sparringSessionRepository.save(record);
+
+  const techniqueIds = record.usedTechniqueIds!.length > 0 ? record.usedTechniqueIds! : record.allowedTechniqueIds;
+  recordTrainingSession({
+    date: record.date,
+    curriculumId: null,
+    dayNumber: null,
+    techniqueIds,
+    completed: true,
+    estimatedMinutes: Math.max(1, Math.round(record.actualDurationSeconds / 60)),
+    actualMinutes: Math.max(1, Math.round(record.actualDurationSeconds / 60)),
+    notes: `스파링 기록 · ${SPARRING_TYPE_LABEL[record.sparringType]} · ${record.actualRounds}라운드 · ${INTENSITY_LABEL[record.intensity]}${record.partnerName ? ` · 파트너 ${record.partnerName}` : ''}`,
+    source: 'sparring_session',
+    sparringSessionId: record.id,
+  });
+  return record;
 }

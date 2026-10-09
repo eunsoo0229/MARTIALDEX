@@ -5,7 +5,7 @@ import type { SparringRunState } from './types';
 const EVENTS = ['martialdex:sparring-run-updated', 'storage'];
 
 // Same "one persistent 250ms poll for the page's lifetime" pattern as
-// shadowBoxing/useShadowBoxing.ts — checks Date.now() against the run's own
+// the other timed training stores — checks Date.now() against the run's own
 // absolute deadlines, never drifts regardless of render timing.
 export function useSparringRun() {
   const [run, setRun] = useState<SparringRunState | null>(getSparringRun);

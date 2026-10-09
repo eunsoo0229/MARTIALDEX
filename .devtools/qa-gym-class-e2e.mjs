@@ -1,6 +1,7 @@
 import { _electron as electron } from 'playwright-core';
 import path from 'node:path';
 import fs from 'node:fs';
+import os from 'node:os';
 
 const APP_DIR = '/Users/swcho/Documents/MARTIALDEX';
 const electronBin = path.join(APP_DIR, 'node_modules/electron/dist/Electron.app/Contents/MacOS/Electron');
@@ -13,6 +14,12 @@ const STAMP = Date.now();
 const INSTRUCTOR = { email: `mdx.qa.instructor.${STAMP}@example.com`, password: 'MdxTest123!', nickname: 'QA관장' };
 const STUDENT = { email: `mdx.qa.student.${STAMP}@example.com`, password: 'MdxTest123!', nickname: 'QA학생' };
 
+// Own throwaway Electron profile — the shared default profile accumulates
+// state from every other QA script (leftover sessions, migration prompts,
+// local data), which made this test's outcome depend on what ran before it.
+const PROFILE_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'mdx-gymclass-e2e-'));
+let lastNavAt = Date.now();
+
 const results = [];
 function check(name, pass, detail = '') {
   results.push({ name, pass, detail });
@@ -22,8 +29,11 @@ function check(name, pass, detail = '') {
 async function launch() {
   const cleanEnv = { ...process.env };
   delete cleanEnv.ELECTRON_RUN_AS_NODE;
-  const app = await electron.launch({ executablePath: electronBin, args: [APP_DIR], env: cleanEnv, timeout: 30000 });
+  const app = await electron.launch({ executablePath: electronBin, args: [APP_DIR, `--user-data-dir=${PROFILE_DIR}`], env: cleanEnv, timeout: 30000 });
   const page = app.windows().find((w) => w.url().startsWith('http://localhost:5173')) ?? (await app.firstWindow());
+  page.on('framenavigated', (f) => {
+    if (f === page.mainFrame()) lastNavAt = Date.now();
+  });
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 1000));
   const consoleErrors = [];
@@ -40,19 +50,32 @@ async function goto(page, hash) {
   }, hash);
   await new Promise((r) => setTimeout(r, 500));
 }
+// An account switch makes the app wipe local data and reload on purpose
+// (auth/deviceAccountGuard.ts), so any evaluate can land mid-reload and
+// throw "Execution context was destroyed" — treat that as "not ready yet".
 async function textOf(page, sel) {
-  return page.evaluate((s) => document.querySelector(s)?.textContent?.trim() ?? null, sel);
+  return page.evaluate((s) => document.querySelector(s)?.textContent?.trim() ?? null, sel).catch(() => null);
 }
 async function bodyIncludes(page, text) {
-  return page.evaluate((t) => document.body.textContent?.includes(t) ?? false, text);
+  return page.evaluate((t) => document.body.textContent?.includes(t) ?? false, text).catch(() => false);
 }
 async function waitUntil(conditionFn, timeoutMs = 15000, stepMs = 300) {
   const start = Date.now();
   while (Date.now() - start < timeoutMs) {
-    if (await conditionFn()) return true;
+    if (await conditionFn().catch(() => false)) return true;
     await new Promise((r) => setTimeout(r, stepMs));
   }
   return false;
+}
+
+/** After signup/login: signed in, page loaded, and no navigation (incl. the account-switch reload) for 1.5s. */
+async function settleAfterAuth(page) {
+  await waitUntil(async () => {
+    if (Date.now() - lastNavAt < 1500) return false;
+    return page.evaluate(
+      () => document.readyState === 'complete' && Object.keys(localStorage).some((k) => k.startsWith('sb-') && k.endsWith('-auth-token'))
+    );
+  }, 20000);
 }
 
 async function fillSignup(page, user) {
@@ -68,7 +91,7 @@ async function fillSignup(page, user) {
     if (hash !== '#/signup') return true;
     return page.evaluate(() => document.querySelector('.ai-inline-warning') !== null);
   });
-  await new Promise((r) => setTimeout(r, 800));
+  await settleAfterAuth(page);
 }
 
 // This long-running QA session's shared Electron profile has accumulated
@@ -101,7 +124,7 @@ async function fillLogin(page, email, password) {
     if (hash !== '#/login') return true;
     return page.evaluate(() => document.querySelector('.ai-inline-warning') !== null);
   });
-  await new Promise((r) => setTimeout(r, 800));
+  await settleAfterAuth(page);
 }
 
 async function logout(page) {
@@ -178,6 +201,8 @@ async function main() {
     btn?.click();
   });
   await waitUntil(async () => (await page.evaluate(() => location.hash)).includes('/gym/admin/gym_'));
+  // The gym row loads asynchronously after navigation — wait for the code itself.
+  await waitUntil(() => page.evaluate(() => /가입 코드:\s*[A-Z0-9]{6}/.test(document.body.textContent || '')));
   const joinCode = await page.evaluate(() => {
     const m = document.body.textContent?.match(/가입 코드:\s*([A-Z0-9]{6})/);
     return m ? m[1] : null;

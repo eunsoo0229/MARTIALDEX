@@ -130,11 +130,20 @@ async function main() {
   // ===================================================================
   // 17. 기존 1284개 기술 -> 데이터 손상/변경 없음
   // ===================================================================
-  const officialCount = await page.evaluate(async () => {
-    const { allTechniques } = await import('/src/lib/loadData.ts');
-    return allTechniques.length;
+  // Since canonical-technique normalization (data/curated/technique-canonical.json)
+  // the 1,284 source records are listed as 1,172 canonical techniques — every
+  // one of the 1,284 original ids must still resolve (nothing lost).
+  const official = await page.evaluate(async () => {
+    const { allTechniques, getTechnique } = await import('/src/lib/loadData.ts');
+    const files = ['bjj', 'boxing', 'judo', 'karate', 'kickboxing', 'mixed-martial-arts', 'muay-thai', 'sambo', 'taekwondo', 'wrestling'];
+    let ids = 0, unresolved = 0;
+    for (const f of files) {
+      const j = await (await fetch(`/data/processed/${f}.json`)).json();
+      for (const t of j.techniques) { ids++; if (!getTechnique(t.id)) unresolved++; }
+    }
+    return { canonical: allTechniques.length, ids, unresolved };
   });
-  check('[17] Official technique catalog still has all 1284 techniques', officialCount === 1284, String(officialCount));
+  check('[17] 원본 1284개 기술 id 전부 그대로 해석 (정규 기술 1138개 — 통합·분리·최종 검수 후, 손실 0)', official.ids === 1284 && official.unresolved === 0 && official.canonical === 1138, official);
 
   // ===================================================================
   // 12 (search) / 7. 기술 검색 -> 새 기술 검색 가능
@@ -185,6 +194,7 @@ async function main() {
   }, curriculumResult.curriculumId);
   await sleep(400);
   await page.click('button:has-text("Day 1 훈련 시작")');
+  await page.click('button:has-text("혼자 하기")'); // Day start now asks 혼자 하기 / AI 코치와 하기 first
   await sleep(700);
   text = await page.evaluate(() => document.body.innerText);
   check('[14][22] Training Session correctly loads and displays the user-added technique', text.includes('Von Flue Choke') && /SET \d \//.test(text), text.slice(0, 400));

@@ -690,14 +690,21 @@ section + section {
   font-size: 15.5px;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px 8px;
+  /* Long English names / long Korean names wrap instead of pushing the row wider. */
+  flex-wrap: wrap;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .technique-row__sub {
   font-size: var(--fs-secondary);
   color: var(--text-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  /* Art · category · positions — information the user reads, so it wraps (never "…"). */
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.technique-row__main {
+  min-width: 0;
 }
 .technique-row__positions {
   color: var(--text-faint);
@@ -1107,6 +1114,16 @@ textarea {
   font-size: 14px;
   resize: vertical;
   outline: none;
+  /* Long Korean sentences must wrap and stay readable — even when a
+     textarea also carries a class meant for one-line controls (.select). */
+  box-sizing: border-box;
+  max-width: 100%;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-overflow: clip;
 }
 textarea:focus {
   border-color: var(--accent);
@@ -1429,6 +1446,21 @@ textarea:focus {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* .select is shared by dropdowns AND text fields. A typed text field must
+   never hide what the user wrote behind "…" (it scrolls instead); a
+   textarea wraps (see textarea above). */
+input.select,
+textarea.select {
+  text-overflow: clip;
+  min-width: 0;
+}
+textarea.select {
+  width: 100%;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  font-weight: 500;
+  min-height: 72px;
+}
 .filter-text-input {
   flex: 1;
   min-width: 160px;
@@ -1444,6 +1476,10 @@ textarea:focus {
     min-width: 0;
     max-width: 100%;
     flex-basis: 100%;
+  }
+  /* A multi-line field keeps the full width on phones (the 150px cap is for dropdowns). */
+  textarea.select {
+    max-width: 100%;
   }
 }
 .result-count {
@@ -2363,6 +2399,192 @@ textarea:focus {
   color: var(--text-muted);
 }
 
+/* 수업하고 싶은 거 입력하기 (pages/OneOffCoachLesson.tsx). */
+.oneoff-outline { margin: 8px 0; padding-left: 20px; }
+.oneoff-outline li.done { color: var(--text-muted); text-decoration: line-through; }
+.oneoff-chat { display: flex; flex-direction: column; gap: 8px; }
+.oneoff-msg { padding: 8px 12px; border-radius: var(--radius-sm, 10px); max-width: 92%; white-space: pre-wrap; line-height: 1.5; }
+.oneoff-msg--coach { background: var(--bg-subtle); align-self: flex-start; }
+.oneoff-msg--user { background: var(--accent-soft, rgba(229, 62, 62, 0.12)); align-self: flex-end; }
+.oneoff-input { display: flex; gap: 8px; }
+.oneoff-input input { flex: 1; min-width: 0; }
+
+/* 체육관 실시간 훈련 (components/gymLive, pages/GymLive*). */
+.live-timer {
+  margin: 12px 0;
+  text-align: center;
+}
+.live-timer__set {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.live-timer__clock {
+  font-size: 4rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+.live-timer__phase {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+.live-timer--work .live-timer__phase { color: var(--accent); }
+.live-timer--rest .live-timer__phase { color: var(--beginner); }
+.live-timer--paused .live-timer__clock { opacity: 0.55; }
+.live-timer__next {
+  margin-top: 6px;
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+}
+.live-timer--compact { margin: 0; text-align: right; }
+.live-timer--compact .live-timer__clock { font-size: 1.4rem; }
+.live-timer--compact .live-timer__set,
+.live-timer--compact .live-timer__phase { font-size: var(--fs-meta); }
+.live-student {
+  display: flex;
+  justify-content: center;
+}
+.live-student__card {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 24px;
+  padding: 24px 16px;
+  border-radius: var(--radius-md, 16px);
+  background: var(--bg-elevated, var(--bg-subtle));
+  border: 1px solid var(--border, rgba(127, 127, 127, 0.3));
+  text-align: center;
+}
+.live-student__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+.live-student__opponent {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1.2rem;
+}
+.live-student__big {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.live-matchups {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.live-dot {
+  color: var(--beginner);
+  font-size: var(--fs-meta);
+  margin-left: 6px;
+}
+.live-overview-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--radius-sm, 10px);
+  border: 1px solid var(--border, rgba(127, 127, 127, 0.3));
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.live-overview-row__who { font-weight: 600; }
+
+/* SparringResultView.tsx — AI 스파링 코칭 card. */
+.sparring-coaching h4 {
+  margin: 14px 0 6px;
+}
+.sparring-coaching__list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.sparring-coaching__list > li > .sparring-insight-card {
+  margin: 0;
+}
+.sparring-coaching__technique {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.sparring-coaching__limits {
+  margin-top: 12px;
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+}
+
+/* TrainingAnalytics.tsx — 헬스/무술 TOP 3 (kept separate). */
+.top-trained-list {
+  margin: 4px 0 0;
+  padding-left: 20px;
+}
+
+/* 중량 변화율 (GymWeightComparison.tsx) — deliberately small: sits under
+   GymSetInput's fields without pushing the 세트 완료 button off-screen. */
+.gym-weight-compare {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 8px;
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+}
+.gym-weight-compare__heading {
+  margin-top: 4px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+.gym-weight-compare__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+}
+.gym-weight-compare__pct {
+  min-width: 64px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.gym-weight-compare__pct--up {
+  color: var(--beginner);
+}
+.gym-weight-compare__pct--down {
+  color: var(--advanced);
+}
+.gym-weight-compare__prev {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.gym-weight-compare__meta {
+  opacity: 0.8;
+}
+.gym-weight-compare__toggle {
+  align-self: flex-start;
+  margin-top: 2px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  font-size: var(--fs-meta);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.gym-weight-compare__empty {
+  margin-top: 8px;
+  font-size: var(--fs-meta);
+  color: var(--text-muted);
+}
+
 /* ---------- 회복도 · body.png 인터랙션 (BodyPartMap.tsx) ---------- */
 .body-part-map {
   position: relative;
@@ -2995,50 +3217,227 @@ textarea:focus {
   max-width: 100%;
 }
 
-/* ---------- Ground Battle ---------- */
-.ground-battle-arena {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  text-align: center;
-}
-.ground-battle-arena__title {
-  font-weight: 700;
-  font-size: 16px;
-}
-.ground-battle-arena__fighter {
-  width: min(260px, 100%);
+.video-verify-result {
+  margin-top: 10px;
   padding: 10px 12px;
   border-radius: 10px;
+  border: 1px solid var(--border, rgba(127, 127, 127, 0.3));
+}
+.video-verify-result.is-verified { border-color: #16a34a; background: rgba(22, 163, 74, 0.08); }
+.video-verify-result.is-not_matched { border-color: #e5484d; background: rgba(229, 72, 77, 0.08); }
+.video-verify-result.is-insufficient_evidence { border-color: #ca8a04; background: rgba(202, 138, 4, 0.08); }
+
+/* ---------- Curriculum Day start chooser + AI coach session ---------- */
+.day-start-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+.day-start-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  white-space: normal;
+  height: auto;
+  padding: 12px 14px;
+}
+.day-start-option__desc {
+  font-size: 12.5px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+.coach-chat {
+  max-height: 46vh;
+  overflow-y: auto;
+}
+.coach-cue .ai-msg__bubble {
+  border: 1px dashed var(--accent);
+}
+.coach-video-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.coach-mic {
+  width: 100%;
+  min-height: 52px;
+  font-size: 16px;
+}
+.coach-mic--on {
+  animation: coach-pulse 1.2s ease-in-out infinite;
+}
+@keyframes coach-pulse {
+  50% { opacity: 0.7; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coach-mic--on { animation: none; }
+}
+/* 1:1 수업 — lesson progress + "답변 차례" */
+.coach-lesson-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 14px;
+  font-size: var(--fs-secondary);
+}
+.coach-lesson-progress__title { font-weight: 600; margin-right: 4px; }
+.coach-lesson-progress ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.coach-lesson-progress li { color: var(--text-muted); }
+.coach-lesson-progress li[data-status='understood'] { color: var(--beginner); }
+.coach-lesson-progress li[data-status='partial'] { color: var(--intermediate); }
+.coach-lesson-progress li[data-status='weak'] { color: var(--advanced); }
+.coach-lesson-progress li[data-current='true'] { color: var(--text); font-weight: 600; }
+.coach-turn {
+  border: 1.5px solid var(--accent);
+  background: var(--accent-soft);
+}
+.coach-turn__label {
   font-weight: 600;
-  border: 2px solid var(--border, rgba(127, 127, 127, 0.3));
+  color: var(--accent);
+  margin: 0 0 6px;
 }
-.ground-battle-arena__fighter.is-player {
-  background: rgba(59, 130, 246, 0.14);
-  border-color: #3b82f6;
+.coach-turn__question { margin: 0 0 8px; }
+.coach-turn__choices {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 8px;
 }
-.ground-battle-arena__fighter.is-opponent {
-  background: rgba(229, 72, 77, 0.14);
-  border-color: #e5484d;
+.coach-turn__choices .btn {
+  justify-content: flex-start;
+  text-align: left;
+  white-space: normal;
+  height: auto;
+  padding: 8px 12px;
 }
-.ground-battle-arena__fighter--top {
-  margin-bottom: -4px;
+.coach-turn__quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
-.ground-battle-arena__turn {
-  font-size: 12px;
-  color: var(--text-muted);
+
+/* ---------- 배운 기술 (LearnedTechniques) ---------- */
+.learned-bulk-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: var(--radius);
+  background: var(--bg-elevated);
+  position: sticky;
+  top: 64px;
+  z-index: 5;
 }
-.ground-battle-log-row + .ground-battle-log-row {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--border, rgba(127, 127, 127, 0.2));
+.learned-bulk-bar__count { font-weight: 600; }
+.learned-bulk-bar__actions { margin-left: auto; display: flex; gap: 6px; }
+.learned-check { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; }
+.learned-check input { width: 18px; height: 18px; accent-color: var(--accent, #3b82f6); }
+.learned-row { padding: 12px 14px; gap: 10px; cursor: default; }
+.learned-row .technique-row__main { cursor: pointer; flex: 1; min-width: 0; }
+.learned-row--selected { outline: 2px solid var(--accent, #3b82f6); }
+.learned-row__ko { font-weight: 400; opacity: 0.75; }
+.learned-row .technique-row__right { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.learned-toast { margin: 6px 0; }
+@media (max-width: 640px) {
+  .learned-bulk-bar { top: 56px; }
+  .learned-bulk-bar__actions { margin-left: 0; width: 100%; justify-content: flex-end; }
+  .learned-row { align-items: flex-start; }
+  .learned-row .technique-row__right { flex-direction: column; align-items: flex-end; }
 }
-.ground-battle-log-row__outcome {
-  font-weight: 700;
+
+/* ---------- AI 코치 수업 (AiCoachClass) ---------- */
+.coach-class-day { padding: 10px 12px; border-radius: var(--radius); background: var(--bg-elevated); }
+.coach-class-steps { margin: 6px 0 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.coach-class-steps .chip { padding: 1px 8px; font-size: 12px; }
+
+/* ---------- 마지막 백업 (Profile) ---------- */
+.last-backup { margin-top: 10px; padding: 10px 12px; border-radius: var(--radius); background: var(--bg-subtle, var(--bg-elevated)); }
+.last-backup h4 { margin: 0 0 6px; font-size: var(--fs-meta, 13px); color: var(--text-muted); }
+.last-backup__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.last-backup__grid dt { font-size: 12px; color: var(--text-faint); }
+.last-backup__grid dd { margin: 2px 0 0; font-weight: 600; }
+@media (max-width: 480px) { .last-backup__grid { grid-template-columns: 1fr; } }
+
+/* ---------- AI 튜터 음성 설정 ---------- */
+.tutor-voice { display: flex; flex-direction: column; gap: 6px; }
+.tutor-voice__row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.tutor-voice__row .select { flex: 1; min-width: 0; }
+.tutor-voice__bound { font-size: 12px; color: var(--text-faint); }
+.tutor-voice__check { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--text-muted); }
+.tutor-voice input[type='range'] { accent-color: var(--accent); }
+.coach-voice-settings summary { cursor: pointer; font-weight: 600; padding: 2px 0; }
+.coach-voice-settings[open] summary { margin-bottom: 8px; }
+
+/* ---------- AI Visualizing Mitt ---------- */
+:root {
+  --mitt-pad: #e5484d;
+  --mitt-hit: #f5a524;
+  --mitt-path: #3b82f6;
 }
-.ground-battle-log-row__outcome.is-success { color: #16a34a; }
-.ground-battle-log-row__outcome.is-partial { color: #ca8a04; }
-.ground-battle-log-row__outcome.is-fail,
-.ground-battle-log-row__outcome.is-illegal { color: var(--text-muted); }
-.ground-battle-log-row__outcome.is-reversal { color: #e5484d; }
+.mitt-stage { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 640px) { .mitt-stage { grid-template-columns: 1fr; } }
+.mitt-view { width: 100%; height: auto; background: var(--bg-subtle, var(--bg-elevated)); border-radius: var(--radius); }
+.mitt-holder circle, .mitt-holder path { fill: var(--bg-hover); stroke: var(--border-strong); stroke-width: 2; }
+.mitt-holder__legs { fill: none !important; stroke-width: 10 !important; stroke-linecap: round; }
+.mitt-pad { stroke: rgba(0, 0, 0, 0.25); stroke-width: 1.5; transition: fill 120ms; }
+.mitt-zone { fill: none; stroke: var(--mitt-pad); stroke-width: 2.5; stroke-dasharray: 5 4; }
+.mitt-path { fill: none; stroke: var(--mitt-path); stroke-width: 5; stroke-linecap: round; }
+.mitt-path--feint { stroke-dasharray: 0.03 0.03; opacity: 0.8; }
+.mitt-impact { fill: none; stroke: var(--mitt-hit); stroke-width: 4; animation: mitt-impact 500ms ease-out infinite; }
+@keyframes mitt-impact { from { opacity: 1; r: 16; } to { opacity: 0; r: 30; } }
+.mitt-spin, .mitt-pivot { fill: var(--mitt-path); font-size: 16px; font-weight: 700; }
+.mitt-level path { fill: none; stroke: var(--accent); stroke-width: 3; }
+.mitt-level text, .mitt-label { fill: var(--text-muted); font-size: 11px; }
+.mitt-foot ellipse { fill: var(--mitt-path); stroke: rgba(0, 0, 0, 0.3); }
+.mitt-foot text { fill: #fff; font-size: 10px; font-weight: 700; }
+.mitt-foot--ghost ellipse { fill: none; stroke: var(--text-faint); stroke-dasharray: 3 3; }
+.mitt-opponent-feet ellipse { fill: var(--mitt-pad); opacity: 0.6; }
+.mitt-step-arrow { stroke: var(--accent); stroke-width: 2.5; fill: none; stroke-dasharray: 6 4; }
+.mitt-arrow-head { fill: var(--accent); }
+.mitt-cog { fill: var(--gold, #f5a524); stroke: #000; stroke-opacity: 0.3; }
+.mitt-cog--low { fill: var(--accent-strong, var(--accent)); }
+.mitt-steps { display: flex; gap: 6px; flex-wrap: wrap; margin: 6px 0; }
+.mitt-step-chip { padding: 4px 10px; border-radius: 999px; background: var(--bg-elevated); font-size: 13px; border: 1px solid var(--border); }
+.mitt-step-chip--current { border-color: var(--accent); background: var(--accent-soft); font-weight: 700; }
+.mitt-step-chip--done { opacity: 0.75; }
+.mitt-controls { display: flex; flex-wrap: wrap; gap: 6px; }
+@media (prefers-reduced-motion: reduce) { .mitt-impact { animation: none; } }
+.mitt-step-arrow--return { stroke-dasharray: 2 4; }
+
+.field-block { display: flex; flex-direction: column; gap: 6px; min-width: 0; width: 100%; }
+.mitt-runner__head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; justify-content: space-between; margin-bottom: 8px; }
+.mitt-runner__combo { display: flex; flex-wrap: wrap; gap: 4px; font-weight: 700; min-width: 0; overflow-wrap: anywhere; }
+.mitt-runner__move { color: var(--text-muted); }
+.mitt-runner__move.is-current { color: var(--accent); }
+.mitt-runner__arrow { margin: 0 4px; color: var(--text-faint); }
+.mitt-runner__stats { display: flex; flex-wrap: wrap; gap: 10px; font-size: 13px; color: var(--text-muted); }
+.mitt-runner__stats strong { color: var(--text); }
+
+/* ---------- 마이크 입력 레벨 / 테스트 ---------- */
+.mic-meter { height: 8px; border-radius: 999px; background: var(--bg-hover); overflow: hidden; margin: 6px 0; }
+.mic-meter__fill { height: 100%; background: var(--accent); transition: width 80ms linear; }
+.mic-test__result { margin: 6px 0 0; font-weight: 600; overflow-wrap: anywhere; }
+.coach-video-search { display: flex; flex-direction: column; gap: 6px; }
+.coach-posture-guide ol, .coach-posture-guide ul { margin: 4px 0; padding-left: 20px; }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

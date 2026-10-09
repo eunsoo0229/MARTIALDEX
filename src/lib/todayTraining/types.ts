@@ -43,8 +43,21 @@ export interface TodayTrainingPlan {
    * behavior unchanged.
    */
   gymRoutineId?: string | null;
-  /** The weekday (KST) this plan's gym routine day was resolved for — set alongside gymRoutineId. */
+  /**
+   * The routine weekday this plan's gym exercises were LOADED from — set
+   * alongside gymRoutineId. Equals today's KST weekday for the normal
+   * auto-loaded plan, but is a different day when the user picked
+   * "다른 요일 루틴으로 운동하기" (see gymRoutineSubstituted). Never the
+   * date the workout happened — that is always TodaySessionState.date.
+   */
   gymRoutineWeekday?: Weekday | null;
+  /**
+   * True only when this plan was copied from a weekday other than today's
+   * (planner.ts's buildTrainingPlanForGymRoutineDay). The plan holds its
+   * own copy of the targets (gymExerciseConfig) — the routine itself, and
+   * today's own scheduled day in it, are never modified by this.
+   */
+  gymRoutineSubstituted?: boolean;
 }
 
 export interface SetRecord {

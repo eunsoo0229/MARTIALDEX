@@ -98,6 +98,45 @@ export default function AiCoach() {
           </div>
         </div>
 
+        <div className="card info-card" data-testid="oneoff-entry">
+          <h3>✍️ 수업하고 싶은 거 입력하기</h3>
+          <p style={{ margin: '4px 0 8px' }}>
+            오늘 배우고 싶은 것을 말하면, AI 코치가 실시간 검색으로 자료를 찾아 오늘 바로 받을 수 있는 수업 하나를 만들어 함께 진행합니다. 커리큘럼은 만들지 않습니다.
+          </p>
+          <div className="modal-actions modal-actions--start">
+            <Link to="/coach/lesson" className="btn btn-primary">
+              오늘 수업 입력하기
+            </Link>
+          </div>
+        </div>
+
+        <div className="card info-card" data-testid="coach-class-entry">
+          <h3>🧑‍🏫 AI 코치 수업</h3>
+          <p style={{ margin: '4px 0 8px' }}>
+            집이나 체육관 중 운동할 곳을 고르면, 지금까지 배운 기술 {stats.learnedCount}개와 숙련도를 바탕으로 AI 코치가 수업을 구성하고 함께 진행합니다.
+          </p>
+          <div className="modal-actions modal-actions--start">
+            <Link to="/coach/class" className="btn btn-primary">
+              AI 코치 수업 시작
+            </Link>
+            <Link to="/learned-techniques" className="btn btn-secondary">
+              📚 배운 기술
+            </Link>
+          </div>
+        </div>
+
+        <div className="card info-card" data-testid="visual-mitt-entry">
+          <h3>🥊 AI Visualizing Mitt</h3>
+          <p style={{ margin: '4px 0 8px' }}>
+            실제 미트나 파트너 없이, 화면의 미트 잡이·목표 지점·발 위치를 보며 타격 콤보와 테이크다운 진입 스텝을 AI 코치와 단계별로 반복합니다.
+          </p>
+          <div className="modal-actions modal-actions--start">
+            <Link to="/coach/mitt" className="btn btn-primary">
+              Visualizing Mitt 시작
+            </Link>
+          </div>
+        </div>
+
         {notice && <div className="ai-inline-warning">{notice}</div>}
 
         {recommendation && (

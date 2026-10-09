@@ -14,3 +14,6 @@ videos/
 # Python caches (Blender helper scripts)
 __pycache__/
 *.pyc
+
+# Third-party broadcast footage kept locally only (not redistributable)
+/NOTORIOUS.mp4

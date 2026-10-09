@@ -1,0 +1,410 @@
+{
+  "model": "martialdex_fighter.glb",
+  "coordinateSystem": "glTF: Y-up, metres; a fighter with yaw 0 faces +Z",
+  "usage": "Load the model once per fighter. Single clips are authored at the origin; place them with position/yawDeg. Pair clips are authored in one shared frame: load both fighters at the origin with no extra transform and play one clip on each.",
+  "clips": [
+    "A_Rest",
+    "Idle_Reference",
+    "Stance_Orthodox",
+    "Stance_Southpaw",
+    "Jab_Orthodox",
+    "Cross_Orthodox",
+    "Block_HighGuard",
+    "Teep_Lead",
+    "LowKick_Rear",
+    "ClosedGuard_Top",
+    "ClosedGuard_Bottom",
+    "Mount_Top",
+    "Mount_Bottom",
+    "SideControl_Top",
+    "SideControl_Bottom",
+    "BackControl_Back",
+    "BackControl_Front",
+    "Clinch_Plum",
+    "Clinch_Tied",
+    "DoubleLeg_Shot",
+    "DoubleLeg_Defend"
+  ],
+  "pairs": {
+    "ClosedGuard": {
+      "clips": [
+        "ClosedGuard_Top",
+        "ClosedGuard_Bottom"
+      ]
+    },
+    "Mount": {
+      "clips": [
+        "Mount_Top",
+        "Mount_Bottom"
+      ]
+    },
+    "SideControl": {
+      "clips": [
+        "SideControl_Top",
+        "SideControl_Bottom"
+      ]
+    },
+    "BackControl": {
+      "clips": [
+        "BackControl_Back",
+        "BackControl_Front"
+      ]
+    },
+    "Clinch": {
+      "clips": [
+        "Clinch_Plum",
+        "Clinch_Tied"
+      ]
+    },
+    "DoubleLeg": {
+      "clips": [
+        "DoubleLeg_Shot",
+        "DoubleLeg_Defend"
+      ]
+    }
+  },
+  "scenarios": [
+    {
+      "id": "range_striking",
+      "category": "distance",
+      "label": "타격 거리 대치",
+      "situation": "서로 오소독스 스탠스로 타격 거리에서 마주 섰다.",
+      "fighters": {
+        "me": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.8
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "southpaw_opponent",
+      "category": "distance",
+      "label": "사우스포 상대",
+      "situation": "상대가 사우스포 스탠스로 서 있다.",
+      "fighters": {
+        "me": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.8
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Stance_Southpaw",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "opp_jab",
+      "category": "defense",
+      "label": "상대의 잽",
+      "situation": "상대가 리드 잽을 던진다.",
+      "fighters": {
+        "me": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.8
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Jab_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "opp_cross",
+      "category": "counter",
+      "label": "상대의 크로스",
+      "situation": "상대가 뒷손 스트레이트(크로스)를 던진다.",
+      "fighters": {
+        "me": {
+          "clip": "Block_HighGuard",
+          "position": [
+            0.0,
+            0.0,
+            -0.8
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Cross_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "opp_teep",
+      "category": "distance",
+      "label": "상대의 앞차기",
+      "situation": "상대가 리드 다리로 앞차기(팁)를 찬다.",
+      "fighters": {
+        "me": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.9
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Teep_Lead",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "opp_low_kick",
+      "category": "defense",
+      "label": "상대의 로우킥",
+      "situation": "상대가 뒷다리 로우킥으로 내 앞다리를 노린다.",
+      "fighters": {
+        "me": {
+          "clip": "Stance_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.75
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "LowKick_Rear",
+          "position": [
+            0.0,
+            0.0,
+            0.75
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "me_jab_open",
+      "category": "attack",
+      "label": "내 잽 공격",
+      "situation": "내가 잽으로 거리를 잡는다. 상대는 하이가드.",
+      "fighters": {
+        "me": {
+          "clip": "Jab_Orthodox",
+          "position": [
+            0.0,
+            0.0,
+            -0.8
+          ],
+          "yawDeg": 0
+        },
+        "opp": {
+          "clip": "Block_HighGuard",
+          "position": [
+            0.0,
+            0.0,
+            0.8
+          ],
+          "yawDeg": 180
+        }
+      }
+    },
+    {
+      "id": "clinch_plum",
+      "category": "clinch",
+      "label": "상대에게 목 클린치 당함",
+      "situation": "상대가 양손으로 내 뒷머리를 잡았다(플럼).",
+      "pair": "Clinch",
+      "fighters": {
+        "me": {
+          "clip": "Clinch_Tied"
+        },
+        "opp": {
+          "clip": "Clinch_Plum"
+        }
+      }
+    },
+    {
+      "id": "takedown_double_leg",
+      "category": "takedown",
+      "label": "더블레그 테이크다운 방어",
+      "situation": "상대가 더블레그로 깊게 파고들었다.",
+      "pair": "DoubleLeg",
+      "fighters": {
+        "me": {
+          "clip": "DoubleLeg_Defend"
+        },
+        "opp": {
+          "clip": "DoubleLeg_Shot"
+        }
+      }
+    },
+    {
+      "id": "guard_bottom",
+      "category": "guard",
+      "label": "클로즈드 가드(하위)",
+      "situation": "나는 클로즈드 가드, 상대는 가드 안에서 자세를 세웠다.",
+      "pair": "ClosedGuard",
+      "fighters": {
+        "me": {
+          "clip": "ClosedGuard_Bottom"
+        },
+        "opp": {
+          "clip": "ClosedGuard_Top"
+        }
+      }
+    },
+    {
+      "id": "guard_top",
+      "category": "guard",
+      "label": "클로즈드 가드 안(상위)",
+      "situation": "상대의 클로즈드 가드 안에 있다. 패스가 필요하다.",
+      "pair": "ClosedGuard",
+      "fighters": {
+        "me": {
+          "clip": "ClosedGuard_Top"
+        },
+        "opp": {
+          "clip": "ClosedGuard_Bottom"
+        }
+      }
+    },
+    {
+      "id": "mount_bottom",
+      "category": "escape",
+      "label": "마운트 당함",
+      "situation": "상대가 마운트를 잡고 파운딩을 준비한다.",
+      "pair": "Mount",
+      "fighters": {
+        "me": {
+          "clip": "Mount_Bottom"
+        },
+        "opp": {
+          "clip": "Mount_Top"
+        }
+      }
+    },
+    {
+      "id": "mount_top",
+      "category": "ground",
+      "label": "마운트 상위",
+      "situation": "내가 마운트를 잡았다. 상대는 엉덩이를 밀어낸다.",
+      "pair": "Mount",
+      "fighters": {
+        "me": {
+          "clip": "Mount_Top"
+        },
+        "opp": {
+          "clip": "Mount_Bottom"
+        }
+      }
+    },
+    {
+      "id": "side_control_bottom",
+      "category": "escape",
+      "label": "사이드 컨트롤 하위",
+      "situation": "상대가 사이드 컨트롤에서 크로스페이스를 건다.",
+      "pair": "SideControl",
+      "fighters": {
+        "me": {
+          "clip": "SideControl_Bottom"
+        },
+        "opp": {
+          "clip": "SideControl_Top"
+        }
+      }
+    },
+    {
+      "id": "side_control_top",
+      "category": "transition",
+      "label": "사이드 컨트롤 상위",
+      "situation": "내가 사이드 컨트롤을 잡았다. 다음 전환은?",
+      "pair": "SideControl",
+      "fighters": {
+        "me": {
+          "clip": "SideControl_Top"
+        },
+        "opp": {
+          "clip": "SideControl_Bottom"
+        }
+      }
+    },
+    {
+      "id": "back_taken",
+      "category": "escape",
+      "label": "백 컨트롤 당함",
+      "situation": "상대가 등 뒤에서 훅을 넣고 시트벨트 그립을 잡았다.",
+      "pair": "BackControl",
+      "fighters": {
+        "me": {
+          "clip": "BackControl_Front"
+        },
+        "opp": {
+          "clip": "BackControl_Back"
+        }
+      }
+    },
+    {
+      "id": "back_take",
+      "category": "transition",
+      "label": "백 컨트롤 상위",
+      "situation": "내가 백을 잡았다. 초크로 마무리할 수 있을까?",
+      "pair": "BackControl",
+      "fighters": {
+        "me": {
+          "clip": "BackControl_Back"
+        },
+        "opp": {
+          "clip": "BackControl_Front"
+        }
+      }
+    }
+  ],
+  "qa": {
+    "pairMeshOverlapTrianglePairs": {
+      "ClosedGuard": 1469,
+      "Mount": 1182,
+      "SideControl": 1258,
+      "BackControl": 3440,
+      "Clinch": 2961,
+      "DoubleLeg": 1815
+    }
+  }
+}

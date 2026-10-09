@@ -16,6 +16,7 @@
     "dist:win": "npm run build && electron-builder --win --x64 --config electron-builder.config.cjs",
     "prebuild:android": "node scripts/validate-android-config.mjs",
     "check:apk-secrets": "node scripts/check-apk-no-payment-secrets.mjs",
+    "audit:technique-relations": "node scripts/consolidate-technique-art-decisions.mjs && node scripts/build-technique-canonical.mjs && node scripts/report-technique-relations.mjs && node scripts/audit-technique-art-matrix.mjs && node scripts/report-technique-art-matrix.mjs",
     "dist:android": "npm run prebuild:android && npm run build && npm run check:apk-secrets && npx cap sync android && cd android && ./gradlew assembleDebug"
   },
   "dependencies": {

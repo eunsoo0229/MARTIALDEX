@@ -1,0 +1,541 @@
+[
+ {
+  "id": "muay-thai__muay-thai-stance",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 정통 스탠스(곧은 자세)는 테이크다운 때문에 MMA에서 변형되어 쓰여 그대로 쓰이는지 불확실하다.",
+  "evidence": "S1 Range Management(MMA는 스탠스를 낮춤); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "타격 가드는 MMA 스탠딩 기본 자세다(기록의 하프가드는 그라운드 가드로 다른 개념).",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__shell",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "몸통과 턱을 감싸는 셸 가드는 MMA 스탠딩 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__dutch-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손을 낮춘 더치 가드가 MMA에서 별도 스타일로 쓰이는지 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__elbow-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔꿈치를 세워 훅·킥을 막는 가드는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__teep-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "앞다리를 띄우는 티프 가드는 테이크다운 위험 때문에 MMA 사용이 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__basic-footwork",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "기본 풋워크는 MMA 거리 관리에 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__lead-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리드 티프는 MMA 거리 견제로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__rear-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어 티프는 MMA 거리 견제로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__side-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "옆으로 차는 티프는 MMA에서 사이드킥형 견제로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__jumping-teep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점핑 티프는 MMA에서 드물게 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 합법"
+ },
+ {
+  "id": "muay-thai__push-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "밀어내는 티프는 MMA 거리 확보·전진 저지에 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__body-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 티프는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__hip-teep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "골반을 노리는 티프 변형이 MMA에서 별도로 쓰이는지 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 합법"
+ },
+ {
+  "id": "muay-thai__face-level-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "안면 프런트킥/티프는 MMA에서 실제로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__teep-to-leg",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "앞다리를 노리는 티프는 MMA 오블리크킥과 같은 계열로 쓰인다.",
+  "evidence": "S1 Oblique Kick(무릎/대퇴 직선 킥); S2 합법"
+ },
+ {
+  "id": "muay-thai__teep-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "전진하는 상대에게 맞추는 카운터 티프는 MMA에서 쓰인다.",
+  "evidence": "S1 Oblique Kick(전진 억제 견제); S2 합법"
+ },
+ {
+  "id": "muay-thai__잡힌-다리를-빠르게-접어-빼기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잡힌 다리 회수는 킥 캐치·테이크다운이 잦은 MMA에서 쓰인다.",
+  "evidence": "S1 Reactive Takedown·Takedown Defense(MMA); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__회수가-늦으면-한-발로-뛰어-균형-유지-반대손-가드",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "앞 항목에 대한 보조 요령 문장으로 독립 기술이 아니다.",
+  "evidence": "설명 문장/헤딩 → 기술 아님"
+ },
+ {
+  "id": "muay-thai__lead-round-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리드 라운드킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__rear-round-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어 라운드킥은 MMA의 기본 킥이다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__switch-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__step-up-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝업 킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__question-mark-kick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "퀘스천마크킥은 MMA에서 드물게 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 합법"
+ },
+ {
+  "id": "muay-thai__spinning-back-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스피닝 백킥은 MMA에서 바디 공격으로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__superman-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슈퍼맨 펀치는 MMA에서 쓰이는 펀치다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "muay-thai__long-guard-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "롱가드에서 뻗는 잽/크로스는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "muay-thai__jab-to-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스는 MMA 복싱 기본 콤비네이션이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "muay-thai__jab-to-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-훅은 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "muay-thai__cross-to-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스-훅은 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "muay-thai__jab-to-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-로우킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__cross-to-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스-로우킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__jab-cross-hook",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "잽-크로스-훅은 MMA Boxing Combination 기록이 직접 명시한다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__hook-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "훅-로우킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__cross-body-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스-바디킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__spinning-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스피닝 엘보는 MMA에서 실제로 쓰인다(수직 하향 엘보 아님).",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__sok-phung",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "찌르는 직선 엘보는 MMA에서 합법적으로 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__back-elbow",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "등 뒤로 찍는 엘보는 궤적에 따라 하향 엘보 반칙과 겹칠 수 있고 MMA 사용이 불확실하다.",
+  "evidence": "S2 foul: Downward pointing elbow strike 가능성"
+ },
+ {
+  "id": "muay-thai__long-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "긴 궤적 엘보는 MMA 스탠딩에서 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__short-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "짧은 엘보는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__elbow-from-clinch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 컨트롤 중 엘보는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__khao-chiang-khao-khong",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 다이애거널 니는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__side-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사이드 니는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__step-up-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝업 니는 MMA에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__clinch-knee",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "클린치 니는 MMA Dirty Boxing 기록이 직접 명시한다(무에타이 클린치 니).",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니); S2 스탠딩 상대 니 합법"
+ },
+ {
+  "id": "muay-thai__inside-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "인사이드 로우킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__outside-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "아웃사이드 로우킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__thigh-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "허벅지 킥은 MMA 로우킥으로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__lead-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리드 로우킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__rear-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어 로우킥은 MMA 기본 로우킥이다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__switch-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치 로우킥은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__low-kick-after-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펀치 후 로우킥은 MMA 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__low-kick-after-teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프 후 로우킥은 MMA 연결로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__outside-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 바깥 컨트롤은 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__curving-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "커빙 니는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__diagonal-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "다이애거널 니는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__elbow-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치에서 짧게 치고 빠지는 엘보는 MMA에서 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__turn",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "목/팔 컨트롤로 상대를 돌리는 턴은 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__tud",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 덤프/던지기는 MMA 클린치 테이크다운으로 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; S2 머리/목 스파이크만 반칙"
+ },
+ {
+  "id": "muay-thai__sweep-foot-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "발 걸어 넘기기는 MMA 클린치 테이크다운으로 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; S2 합법"
+ },
+ {
+  "id": "muay-thai__teep-catch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프 캐치는 MMA에서 테이크다운 기회로 쓰인다.",
+  "evidence": "S1 Reactive Takedown; S2 합법"
+ },
+ {
+  "id": "muay-thai__catch-and-return",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥을 잡고 반격하는 것은 MMA에서 쓰인다.",
+  "evidence": "S1 Reactive Takedown·MMA Boxing Combination; S2 합법"
+ },
+ {
+  "id": "muay-thai__catch-and-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 캐치 후 스윕은 MMA 테이크다운으로 쓰인다.",
+  "evidence": "S1 Reactive Takedown; S2 합법"
+ },
+ {
+  "id": "muay-thai__catch-and-dump",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 캐치 후 덤프는 MMA 테이크다운으로 쓰인다.",
+  "evidence": "S1 Reactive Takedown; S2 합법"
+ },
+ {
+  "id": "muay-thai__body-kick-check",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디킥 체크는 MMA 킥 방어로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__kick-parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 패리는 MMA 킥 방어로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__elbow-shield",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "엘보 쉴드는 MMA 킥·펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__cross-arm-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔을 교차하는 가드는 MMA에서 일부만 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__shoulder-block",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어깨 블록은 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "muay-thai__teep-stop",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프로 전진·킥을 끊는 방어는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__evade",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 회피는 MMA 거리 관리 방어다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "muay-thai__low-kick-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "로우킥 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "muay-thai__kick-catch-to-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 캐치 후 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 Reactive Takedown; S2 합법"
+ },
+ {
+  "id": "muay-thai__counter-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "카운터 엘보는 MMA에서 쓰인다(수직 하향 제외).",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "muay-thai__counter-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "카운터 니(레벨체인지 대응 포함)는 MMA에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "muay-thai__spinning-knee",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스피닝 니는 MMA에서 거의 보이지 않아 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 스탠딩 상대에겐 합법"
+ },
+ {
+  "id": "muay-thai__tae-chiang",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "다이애거널 라운드킥은 MMA 기본 킥 궤적이다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ }
+]

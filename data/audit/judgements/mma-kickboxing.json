@@ -1,0 +1,639 @@
+[
+ {
+  "id": "kickboxing__pivot",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "피벗은 MMA 각도 만들기·카운터에 쓰이는 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__front-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프런트킥은 MMA에서 거리 견제·안면 공격으로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__side-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사이드킥은 MMA에서 바디·무릎 견제로 쓰인다.",
+  "evidence": "S1 Oblique Kick(직선으로 찍어 차는 킥) 계열; S2 합법"
+ },
+ {
+  "id": "kickboxing__round-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "라운드킥은 MMA의 기본 킥이다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__back-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "(스피닝) 백킥은 MMA에서 바디 공격으로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__crescent-kick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "크레센트킥은 MMA에서 드물게만 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 합법"
+ },
+ {
+  "id": "kickboxing__axe-kick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "액스킥은 MMA에서 간혹 보이지만 드물어 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 스탠딩 상대에겐 합법"
+ },
+ {
+  "id": "kickboxing__angle-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "앵글 스텝은 MMA 각도 만들기 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__straight-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스트레이트 니는 MMA 스탠딩·클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__orthodox",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "오소독스 스탠스는 MMA에서 쓰이는 기본 스탠스다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__southpaw",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사우스포 스탠스는 MMA에서 쓰이는 기본 스탠스다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__high-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이가드는 MMA 스탠딩 방어 자세로 쓰인다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__body-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디킥은 MMA에서 흔히 쓰이는 킥이다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__high-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이킥은 MMA에서 쓰이는 킥이다(스탠딩 상대).",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__jab-cross-body-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스-바디킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__horizontal-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "수평 엘보는 MMA 스탠딩·클린치에서 합법적으로 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "kickboxing__downward-elbow",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "내려찍는 엘보는 Unified Rules의 downward pointing elbow 반칙과 겹칠 수 있어 추가하지 않는다.",
+  "evidence": "S2 foul: Downward pointing elbow strike"
+ },
+ {
+  "id": "kickboxing__upward-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "올려치는 엘보는 MMA 클린치에서 합법적으로 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "kickboxing__diagonal-elbow",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "대각선 엘보는 수직 하향이 아니어서 MMA에서 합법적으로 쓰인다.",
+  "evidence": "S1 Elbow Strikes from Top Position·Dirty Boxing(엘보 사용); S2 Downward pointing elbow 외 엘보는 합법"
+ },
+ {
+  "id": "kickboxing__flying-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "플라잉 니는 MMA에서 쓰이는 니 공격이다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__jumping-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "점핑 니는 MMA(테이크다운 진입 카운터 등)에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__lead-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리드 니는 MMA 스탠딩·클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__rear-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어 니는 MMA 스탠딩·클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__inside-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "인사이드 컨트롤은 MMA 클린치 핵심 기술이다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__off-balance",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치에서 균형 무너뜨리기는 MMA 클린치 테이크다운 연결에 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__catch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 캐치는 MMA에서 테이크다운 기회로 자주 쓰인다.",
+  "evidence": "S1 Reactive Takedown·Clinch Takedown Entry; S2 합법"
+ },
+ {
+  "id": "kickboxing__check",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "레그 체크는 MMA 로우킥·카프킥 방어로 쓰인다(기록의 check hook과는 다른 기술).",
+  "evidence": "S1 MMA 킥복싱(로우킥/카프킥 존재 → 방어 필요); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__shin-block",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "정강이 블록은 MMA 킥 방어로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "패리는 MMA 타격 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__slip",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슬립은 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__pull",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "풀백은 MMA 펀치 회피로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__roll",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "롤(위빙)은 MMA 펀치 회피로 쓰인다(기록의 그랜비롤과는 다름).",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__cover",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "커버는 MMA 스탠딩 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__angle-out",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "각도를 틀어 빠지는 방어는 MMA에서 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__lean-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "린백은 MMA에서 하이킥·펀치 회피로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__jab-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__cross-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__hook-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "훅 카운터는 MMA에서 쓰인다(체크훅 등).",
+  "evidence": "S1 Check Hook; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__check-and-return",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "체크 후 반격은 MMA 킥 공방에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__step-forward",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "전진 스텝은 MMA 기본 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__shuffle",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "셔플 스텝은 MMA 거리 조절 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__switch-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치 스텝은 MMA 스탠스 전환·킥 셋업에 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__circle-out",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "서클 아웃은 MMA(케이지 벗어나기)에서 쓰인다.",
+  "evidence": "S1 Range Management·Cage Wrestling(케이지 회피); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__cut-off",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "컷오프(케이지 몰기)는 MMA에서 쓰인다.",
+  "evidence": "S1 Clinch to Cage Transition·Range Management; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__shoulder-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어깨 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__장거리-long-kicking-range",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "거리 구간 명칭(개념 헤딩)으로 기술이 아니다.",
+  "evidence": "범위 명칭 헤딩 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__중거리-mid-punching-range",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "거리 구간 명칭(개념 헤딩)으로 기술이 아니다.",
+  "evidence": "범위 명칭 헤딩 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__근거리-close-range-clinch",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "거리 구간 명칭(개념 헤딩)으로 기술이 아니다(더티복싱 기록은 별도 기술).",
+  "evidence": "범위 명칭 헤딩 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__리드-lead",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "리드 손/발이라는 용어 설명으로 기술이 아니다.",
+  "evidence": "용어/개념 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__리어-rear",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "리어 손/발이라는 용어 설명으로 기술이 아니다.",
+  "evidence": "용어/개념 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__k-1-rules",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "K-1 규칙 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙 체계 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__glory-rules",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Glory 규칙 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙 체계 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__아메리칸-킥복싱",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "아메리칸 킥복싱 규칙 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙 체계 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__풀컨택트-로우킥-룰",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "풀컨택트 로우킥 규칙 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙 체계 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__포인트-스파링",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "포인트 스파링 규칙 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙 체계 → 기술 아님"
+ },
+ {
+  "id": "kickboxing__bladed-stance",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "블레이드 스탠스는 가라테 계열 MMA 파이터들이 실제로 쓴다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__square-stance",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스퀘어 스탠스는 테이크다운·로우킥 방어를 위해 MMA에서 쓰인다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__switch-stance",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치 스탠스는 MMA에서 쓰인다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__step-and-slide",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝 앤 슬라이드는 MMA 기본 이동 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__teep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프는 MMA에서 거리 견제로 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__wheel-kick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "휠킥(스피닝 훅킥)은 MMA에서 드물게 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 스탠딩 상대에겐 합법"
+ },
+ {
+  "id": "kickboxing__jumping-kick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점핑 킥은 범위가 넓고 MMA에서 드물어 판단이 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 합법"
+ },
+ {
+  "id": "kickboxing__hand-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__foot-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__level-change-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "레벨체인지 페인트는 테이크다운 위협이 있는 MMA에서 특히 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·Level Change Double Leg; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__kick-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__feint-chain",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "복합 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__short-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 숏 니는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing(무에타이 클린치 니)·Sprawl to Strikes(니); S2 스탠딩 상대 니는 합법(그라운드 상대 머리 니만 반칙)"
+ },
+ {
+  "id": "kickboxing__break-and-strike",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치를 풀며 치는 타격(브레이크 엘보·훅)은 MMA에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing; S2 휴식/브레이크 중 공격만 반칙, 스스로 풀며 치는 것은 합법"
+ },
+ {
+  "id": "kickboxing__shoulder-roll",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "숄더롤 방어는 MMA에서 일부만 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__slip-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슬립 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__parry-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "패리 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__kick-after-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펀치 후 킥 연결은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__punch-after-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 후 펀치 연결은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__angle-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "각도 전환 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__tag-and-back-off",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "포인트 스파링 특유 전술로 정의되어 있어 MMA 기술로 보기 불확실하다(유사한 히트앤런은 존재).",
+  "evidence": "포인트 스파링 전술 항목; S1 직접 언급 없음"
+ },
+ {
+  "id": "kickboxing__블리츠",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "포인트 스파링 득점 전술로 정의되어 있어 MMA 기술로 연결할지 불확실하다.",
+  "evidence": "포인트 스파링 전술 항목; S1 직접 언급 없음"
+ },
+ {
+  "id": "kickboxing__리버스-카운터",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "포인트 스파링 특유 카운터로 정의되어 MMA 사용 여부가 불확실하다.",
+  "evidence": "포인트 스파링 전술 항목; S1 직접 언급 없음"
+ },
+ {
+  "id": "kickboxing__jab-cross-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스-로우킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__jab-hook-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-훅-로우킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__cross-hook-high-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스-훅-하이킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__jab-body-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-바디킥은 MMA 펀치-킥 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__low-kick-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "로우킥-크로스는 MMA 킥-펀치 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__teep-jab",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프-잽은 MMA 거리 견제 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__check-return-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "체크 후 리턴킥은 MMA 킥 공방에서 쓰인다.",
+  "evidence": "S1 MMA 킥복싱(Calf Kick·Oblique Kick·로우킥 등 킥 사용); S2 스탠딩 상대에 대한 킥은 합법"
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "패리 후 잽/크로스 반격은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "kickboxing__hand-feint-body-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손 페인트-바디킥은 MMA 셋업으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__level-change-feint-high-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "레벨체인지 페인트-하이킥은 테이크다운 위협이 있는 MMA에서 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA 킥복싱; S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__kick-feint-low-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 페인트-로우킥은 MMA 셋업으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__switch-kick-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치킥-크로스는 MMA 킥-펀치 연결로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱(펀치-킥 연결); S2 해당 없음"
+ },
+ {
+  "id": "kickboxing__collar-tie-short-knee",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "칼라타이(목 컨트롤) 후 숏니는 MMA 클린치에서 쓰인다(도복 칼라 아님).",
+  "evidence": "S1 Dirty Boxing(목 컨트롤·클린치 니); S2 도복 불필요, 합법"
+ }
+]

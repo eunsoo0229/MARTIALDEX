@@ -1,0 +1,604 @@
+[
+ {
+  "id": "sambo__fireman-s-carry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파이어맨즈 캐리는 MMA 테이크다운으로 쓰인다.",
+  "evidence": "S1 Takedown/Clinch Takedown; no gi"
+ },
+ {
+  "id": "sambo__스탠스",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "삼보 스탠스 분류 목록으로 독립 기술이 아니다.",
+  "evidence": "heading/stance concept"
+ },
+ {
+  "id": "sambo__거리-구분",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "거리 분류 개념으로 독립 기술이 아니다.",
+  "evidence": "concept, not a technique"
+ },
+ {
+  "id": "sambo__footwork",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 풋워크 항목으로 MMA 기술 정체성이 불명확하다.",
+  "evidence": "S1 Range Management only"
+ },
+ {
+  "id": "sambo__break-step",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "브레이크 스텝의 MMA 사용 정체성이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__захват-за-рукав-куртки-зацеп-изнутри",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "sambo__벨트-그립",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "sambo__wrist-grip-кисть-제어",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손목 제어는 MMA 클린치·핸드파이팅에서 노기로 쓰인다.",
+  "evidence": "S1 Dirty Boxing/Clinch (arm control); no gi"
+ },
+ {
+  "id": "sambo__leg-grip",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 다리 잡기 항목으로 독립 기술로서 정체성이 모호하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__grip-break",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "재킷 그립 맥락의 그립 끊기로 MMA 정체성이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__소매-옷깃-그립",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "sambo__손목-팔꿈치-제어",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손목/팔꿈치 제어와 팔 등 뒤로 넘기기의 MMA 사용 정체성이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__당겨서-무너뜨리기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "sambo__밀어서-무너뜨리기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "sambo__비틀어서-무너뜨리기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "sambo__single-leg",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 라이브러리 레코드가 싱글레그를 직접 명시한다.",
+  "evidence": "mmaDataMentions: Single Leg to Ankle Lock"
+ },
+ {
+  "id": "sambo__передняя-подсечка",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "앞 발쓸기는 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__задняя-подсечка",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤 발쓸기는 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__боковая-подсечка",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "옆 발쓸기(데아시바라이 계열)는 노기 MMA 스탠딩에서 사용된다.",
+  "evidence": "S1 Reactive Takedown; no gi"
+ },
+ {
+  "id": "sambo__подсечка-изнутри",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "안쪽 발쓸기의 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__подсечка-с-заведением",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "끌어들이는 발쓸기의 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__зацеп",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "다리를 걸어 넘기는 트립은 MMA 클린치 테이크다운의 핵심이다.",
+  "evidence": "S1 Clinch Takedown Entry/Cage Wrestling; no gi"
+ },
+ {
+  "id": "sambo__отхват",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "오소토가리 계열 다리 걷기는 노기 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; no gi"
+ },
+ {
+  "id": "sambo__подхват",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "하라이고시/우치마타 계열 군으로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__подсад",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "다리 받쳐 들어 올리기의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__бросок-через-бедро",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "기본 허리 던지기(오고시 계열)는 노기 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; no gi"
+ },
+ {
+  "id": "sambo__боковой",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "측면/역방향 허리 던지기 변형의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__с-захватом-пояса",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "벨트를 잡고 던지는 기술로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: belt grip"
+ },
+ {
+  "id": "sambo__с-захватом-шеи",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "목을 감아 던지는 허리 던지기(코시구루마 계열)는 MMA 클린치에서 쓰인다.",
+  "evidence": "S1 Clinch (neck control) Takedown; no gi"
+ },
+ {
+  "id": "sambo__захватом-руки-на-плечо",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔을 어깨 위로 잡는 등 던지기는 노기 가능하나 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__захватом-руки-под-плечо",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔을 어깨 아래로 잡는 등 던지기의 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__захватом-рукавов",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "양 소매 그립 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: sleeve grip"
+ },
+ {
+  "id": "sambo__захватом-отворотов",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "양 옷깃 그립 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: lapel grip"
+ },
+ {
+  "id": "sambo__скрестным-захватом-рук",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔 교차 그립 등 던지기의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__обратный",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "역방향 등 던지기의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__мельница",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "멜니차(파이어맨즈 캐리)는 MMA 테이크다운으로 쓰인다.",
+  "evidence": "S1 Takedown; no gi"
+ },
+ {
+  "id": "sambo__вертушка",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "회전 낙하 던지기로 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__drop-seoi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "드롭 세오이는 대개 도복 그립 기반이며 MMA 사용이 드물다.",
+  "evidence": "S2 attire risk"
+ },
+ {
+  "id": "sambo__arm-drag-to-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "암드래그에서 던지기로 이어지는 동작의 MMA 정체성이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__shoulder-entry",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "어깨 진입 항목의 정체성이 모호하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__flying-entry",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "플라잉 진입의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__отхват-подсечка-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 카운터 범주로 MMA에서의 사용이 불확실하다.",
+  "evidence": "no S1 record"
+ },
+ {
+  "id": "sambo__бросок-через-спину-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 카운터 범주로 MMA에서의 사용이 불확실하다.",
+  "evidence": "no S1 record"
+ },
+ {
+  "id": "sambo__허리기술-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 카운터 범주로 MMA에서의 사용이 불확실하다.",
+  "evidence": "no S1 record"
+ },
+ {
+  "id": "sambo__다리걸기-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 카운터 범주로 MMA에서의 사용이 불확실하다.",
+  "evidence": "no S1 record"
+ },
+ {
+  "id": "sambo__희생기술-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 카운터 범주로 MMA에서의 사용이 불확실하다.",
+  "evidence": "no S1 record"
+ },
+ {
+  "id": "sambo__бросок-через-голову",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "머리 위로 넘기는 희생 던지기(토모에나게 계열)로 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__бросок-через-грудь",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가슴 아치 던지기(수플렉스형)는 MMA 사용 사례가 있으나 스파이킹 반칙 위험이 있다.",
+  "evidence": "S2 spiking foul risk"
+ },
+ {
+  "id": "sambo__перевод-в-партер-파르테르로-전환시키기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "던진 뒤 즉시 통제로 넘어가는 동작은 MMA 레코드의 테이크다운-후속 전환과 같은 유형이다.",
+  "evidence": "S1 Takedown to Ground and Pound Transition"
+ },
+ {
+  "id": "sambo__throw-side-control-mount-turtle-control",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 레코드가 마운트·백 컨트롤로의 전환을 직접 명시한다.",
+  "evidence": "mmaDataMentions: Posture Control in Mount, Back Mount Hooks Control, Mount Pass"
+ },
+ {
+  "id": "sambo__single-leg-top-control-body-lock-throw-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글레그·바디락에서 탑 컨트롤로 잇는 체인은 MMA 테이크다운 전환이다.",
+  "evidence": "S1 Takedown / Strike-Takedown Transitions; no gi"
+ },
+ {
+  "id": "sambo__grip-fight-takedown-leg-lock-entry",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 레코드(Leg Entanglement Scramble)가 테이크다운 후 레그락 진입을 명시한다.",
+  "evidence": "mmaDataMentions: Leg Entanglement Scramble"
+ },
+ {
+  "id": "sambo__забегание-за-спину",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "등 뒤로 돌아가는 백테이크는 MMA 스크램블 기술이다.",
+  "evidence": "S1 Scramble to Back Take; no gi"
+ },
+ {
+  "id": "sambo__удержание-сбоку",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "옆 홀드다운(케사가타메 계열)은 MMA 탑 컨트롤로 쓰인다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "sambo__удержание-верхом",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "마운트형 홀드다운은 MMA 핵심 포지션이다.",
+  "evidence": "S1 Posture Control in Mount; no gi"
+ },
+ {
+  "id": "sambo__удержание-поперек",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가로 홀드다운(사이드 컨트롤)은 MMA 탑 포지션이다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "sambo__удержание-со-стороны-головы",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "머리 쪽 홀드다운(노스-사우스)은 MMA 탑 컨트롤로 쓰인다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "sambo__удержание-со-стороны-ног",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "다리 쪽 홀드다운의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__удержание-спиной-поперек",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "등을 대고 가로로 누르는 홀드의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__추가-탑-컨트롤",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "벨트를 잡은 채 유지하는 컨트롤로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: belt grip"
+ },
+ {
+  "id": "sambo__guard",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 레코드가 클로즈드/하프 가드를 직접 명시한다.",
+  "evidence": "mmaDataMentions: Guard Recovery Under Strikes, Short Elbows in Half Guard"
+ },
+ {
+  "id": "sambo__defensive-shell",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "방어 쉘의 MMA 정체성(터틀/거북)이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__frame-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프레임 탈출은 MMA 레코드 Framing 방어와 같은 기술이다.",
+  "evidence": "S1 Framing (Defense); no gi"
+ },
+ {
+  "id": "sambo__back-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "백 컨트롤 탈출은 MMA 하위 방어에 쓰인다.",
+  "evidence": "S1 Back Mount Hooks Control (opponent side); no gi"
+ },
+ {
+  "id": "sambo__guard-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가드 스윕은 MMA 하위 가드에서 포지션 역전에 쓰인다.",
+  "evidence": "S1 Ground Control (closed/half guard); no gi"
+ },
+ {
+  "id": "sambo__reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 반전 항목으로 정체성이 모호하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__single-leg-from-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가드에서의 싱글레그 스윕은 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__заваливание",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "파르테르 턴오버 일반 용어로 MMA 기술 정체성이 모호하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__рычаг-локтя",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔꿈치 레버(암바)는 MMA 서브미션이다.",
+  "evidence": "S1 Submission (armbar); S2 legal"
+ },
+ {
+  "id": "sambo__рычаг-плеча",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오모플라타 계열 어깨 레버는 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__рычаг-кисти",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손목 레버는 MMA에서 합법이나 사용이 매우 드물다.",
+  "evidence": "S2 small joint rule n/a (wrist); rare"
+ },
+ {
+  "id": "sambo__узел-плеча",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어깨 노트(키무라)는 MMA 서브미션이다.",
+  "evidence": "S1 Submission (kimura); S2 legal"
+ },
+ {
+  "id": "sambo__узел-плеча-поперек",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가로 어깨 노트(아메리카나)는 MMA 탑 포지션 서브미션으로 쓰인다.",
+  "evidence": "S1 Submission; S2 legal"
+ },
+ {
+  "id": "sambo__узел-плеча-ногой",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "다리 보조 어깨 노트의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__узел-плеча-обратный",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "역방향 어깨 노트의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__ущемление-двуглавой-мышцы-плеча",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "이두근 압박(바이셉 슬라이서)은 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__ущемление-трехглавой-мышцы-плеча",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼두근 압박은 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__рычаг-бедра",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "허벅지 레버(니바)는 MMA 레그락으로 쓰인다.",
+  "evidence": "S1 leg entanglements/leg-lock entries; S2 legal"
+ },
+ {
+  "id": "sambo__рычаг-стопы",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스트레이트 앵클락은 MMA 레그락 서브미션이다.",
+  "evidence": "S1 leg-lock entries (Single Leg to Ankle Lock); S2 legal"
+ },
+ {
+  "id": "sambo__ущемление-икроножной-мышцы",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "카프 슬라이서는 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__двойной-зацеп",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "더블 자쳅 레그 컨트롤 진입의 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "sambo__узел-стопы",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "힐훅·토홀드 등 비틀림형 발 락은 삼보에선 금지지만 MMA에서는 합법이며 사용된다.",
+  "evidence": "S1 leg-lock entries; S2 legal (not small joint)"
+ },
+ {
+  "id": "sambo__удушающий-прием-удушающий-захват",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "조르기 기술 일반 용어로 독립 기술이 아니다.",
+  "evidence": "heading/general term"
+ },
+ {
+  "id": "sambo__front-headlock-choke",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 헤드락 초크(길로틴 계열)는 MMA 서브미션이다.",
+  "evidence": "S1 Submission (guillotine); no gi"
+ },
+ {
+  "id": "sambo__collar-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃을 잡는 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: collar choke"
+ },
+ {
+  "id": "sambo__ground-striking",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "그라운드 타격은 MMA 그라운드 앤 파운드에 해당한다.",
+  "evidence": "S1 Ground & Pound; S2 legal within fouls"
+ }
+]

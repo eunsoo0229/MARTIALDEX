@@ -1,0 +1,38 @@
+{
+ "unifiedRulesFouls": {
+  "source": "https://kr.ufc.com/unified-rules-mixed-martial-arts (UFC, Unified Rules of Mixed Martial Arts — fouls, copied verbatim 2026-10-03)",
+  "fouls": [
+   "Butting with the head",
+   "Eye gouging of any kind",
+   "Biting or spitting at an opponent",
+   "Fish hooking",
+   "Hair pulling",
+   "Spiking an opponent to the canvas on his head or neck",
+   "Strikes to the spine or the back of the head",
+   "Throat strikes of any kind, and/or grabbing the trachea",
+   "Fingers outstretched toward an opponent's face/eyes",
+   "Downward pointing elbow strike",
+   "Groin attacks of any kind",
+   "Kneeing and/or kicking the head of a grounded opponent",
+   "Stomping a grounded opponent",
+   "Holding opponent's gloves or shorts",
+   "Holding or grabbing the fence or ropes with fingers or toes",
+   "Small joint manipulation",
+   "Throwing opponent out of ring/fighting area",
+   "Intentionally placing a finger into any orifice or any cut or laceration of an opponent",
+   "Clawing, pinching or twisting the flesh",
+   "Timidity",
+   "Using abusive language in the fighting area",
+   "Flagrant disregarding of the referee's instructions",
+   "Unsportsmanlike conduct that causes injury to an opponent",
+   "Attacking an opponent after the bell has sounded the end of the period of unarmed combat",
+   "Attacking an opponent on or during the break",
+   "Attacking an opponent who is under the care of the referee",
+   "Interference from a mixed martial artist's corner or seconds"
+  ]
+ },
+ "unifiedRulesAttire": {
+  "source": "https://en.wikipedia.org/wiki/Mixed_martial_arts_rules (Unified Rules: Attire, quoted 2026-10-03)",
+  "text": "All competitors must fight in approved shorts, without shoes or any other sort of foot padding. Shirts (except in women categories), gis or long pants (including gi pants) are not allowed. Fighters must use approved light gloves (4–6 ounces) that allow fingers to grab."
+ }
+}

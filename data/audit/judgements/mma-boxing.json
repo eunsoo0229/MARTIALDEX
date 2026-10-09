@@ -1,0 +1,695 @@
+[
+ {
+  "id": "boxing__step-out",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펀치를 피해 뒤/옆으로 빠지는 기본 회피 풋워크로 MMA 스탠딩에서도 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__side-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사이드 스텝은 MMA 거리 조절·각도 만들기에 쓰이는 기본 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__backfist",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "백피스트는 MMA에서 합법이며 스피닝 백피스트 기록이 있으나 기록은 스피닝 변형만 명시하므로 B로 둔다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__spinning-backfist(스피닝 변형); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__long-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "롱가드(앞손으로 거리·시야를 막는 가드)는 MMA 스트라이커들이 실제로 쓰는 가드다.",
+  "evidence": "S1 Range Management·MMA Boxing Combination(MMA 스탠스/가드); S2 해당 없음"
+ },
+ {
+  "id": "boxing__step-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝백은 MMA 거리 관리의 기본 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__wrist-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손목 컨트롤은 MMA 클린치·핸드파이팅에서 핵심적으로 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__catch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펀치를 글러브로 받아내는 캐치는 MMA 스탠딩 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__peek-a-boo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "피카부는 하이가드 계열이지만 킥·테이크다운이 있는 MMA에서 그대로 쓰이는지 불확실하다.",
+  "evidence": "S1에 하이가드/피카부 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__philly-shell",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "필리셸은 리드 쪽을 킥·테이크다운에 노출해 MMA에서는 드물게만 쓰여 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__cross-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "크로스 가드(팔 교차)는 MMA에서 일부만 쓰며 그래플링 노출 위험이 있어 사용 정도가 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__shoulder-roll-stance",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "숄더롤 스탠스는 MMA에서 킥·테이크다운 때문에 드물게 쓰여 판단이 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__lateral-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "측면 스텝은 MMA 거리·각도 관리 풋워크로 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__l-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "L-스텝(뒤로 빠지며 각도 전환)은 MMA 스트라이커도 쓰는 풋워크다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__drop-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "드롭 스텝은 MMA 스탠딩 풋워크로 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__step-around",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "상대 주변을 도는 스텝은 MMA 각도 만들기에 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__in-and-out",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "들어가 치고 빠지는 인앤아웃 풋워크는 MMA에서 흔히 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트는 MMA에서 타격·테이크다운 셋업으로 널리 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__hook",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "훅은 MMA 복싱 콤비네이션 기록과 체크훅 기록이 직접 명시하는 펀치다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__check-hook, mma-boxing-combination(잽-크로스-훅); S2 해당 없음"
+ },
+ {
+  "id": "boxing__uppercut",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어퍼컷은 MMA 복싱·더티복싱에서 쓰이는 기본 펀치다.",
+  "evidence": "S1 MMA Boxing Combination·Dirty Boxing(어퍼컷); S2 해당 없음"
+ },
+ {
+  "id": "boxing__combination",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "복싱 콤비네이션은 MMA Boxing Combination 기록이 직접 명시한다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__mma-boxing-combination; S2 해당 없음"
+ },
+ {
+  "id": "boxing__short-hook",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "숏 훅은 MMA Dirty Boxing 기록이 직접 명시한다(짧은 훅).",
+  "evidence": "S1 Dirty Boxing(짧은 훅과 어퍼컷); S2 해당 없음"
+ },
+ {
+  "id": "boxing__short-uppercut",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "숏 어퍼컷은 MMA Dirty Boxing 기록이 직접 명시한다(짧은 어퍼컷).",
+  "evidence": "S1 Dirty Boxing(짧은 훅과 어퍼컷); S2 해당 없음"
+ },
+ {
+  "id": "boxing__body-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디훅은 MMA에서 흔히 쓰이는 펀치다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__infighting",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "인파이팅은 거리/스타일 명칭(거리별 포지션 항목)으로 개별 기술이 아니다.",
+  "evidence": "범위·거리 명칭 헤딩 → 기술 아님"
+ },
+ {
+  "id": "boxing__clinch",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "클린치는 MMA 클린치 관련 기록이 직접 명시한다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__clinch-takedown-entry, clinch-to-cage-transition; S2 해당 없음"
+ },
+ {
+  "id": "boxing__body-jab",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 잽은 MMA에서 쓰이는 펀치 변형이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__body-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 크로스는 MMA에서 쓰이는 펀치 변형이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__body-uppercut",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 어퍼컷은 MMA 클린치·근거리에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__shovel-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "쇼벨 훅은 MMA 근거리·더티복싱에서 쓰이는 펀치다.",
+  "evidence": "S1 Dirty Boxing(짧은 훅/어퍼컷 계열); S2 해당 없음"
+ },
+ {
+  "id": "boxing__lead-overhand",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오버핸드 기록은 일반(리어) 오버핸드를 가리키며 리드 오버핸드의 MMA 사용 정도는 불확실하다.",
+  "evidence": "S1 Overhand(리어 기준); 리드 변형은 별도 판단; S2 해당 없음"
+ },
+ {
+  "id": "boxing__rear-overhand",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "리어 오버핸드는 MMA Overhand 기록이 직접 설명하는 기술이다.",
+  "evidence": "S1 Overhand [MMA 복싱]; S2 해당 없음"
+ },
+ {
+  "id": "boxing__gazelle-punch",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가젤 펀치는 MMA에서 드물게 쓰이는 변칙 펀치라 확신하기 어렵다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__bolo-punch",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "볼로 펀치는 MMA에서 매우 드물게 쓰이는 변칙 펀치다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__corkscrew-punch",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "코크스크류 펀치가 MMA에서 별도 기술로 쓰이는지 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__pump-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펌프 페인트는 MMA 타격 셋업에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__jab-feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽 페인트는 MMA에서 흔히 쓰이는 셋업이다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__feint-double",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트 후 더블(잽) 연결은 MMA 타격 셋업으로 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__feint-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트로 거리를 좁히는 진입은 MMA 타격·테이크다운 진입에 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__1-2",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "원투(잽-크로스)는 MMA 복싱의 기본 콤비네이션이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-1-2",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블잽-크로스는 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-1-1",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "트리플 잽은 MMA에서도 쓰이는 잽 연타다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-2-3",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "잽-크로스-훅은 MMA Boxing Combination 기록이 직접 명시한다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅); S2 해당 없음"
+ },
+ {
+  "id": "boxing__1-2-3-2",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스-훅-크로스는 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-1-2-3",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블잽-크로스-훅은 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__2-3-2",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스-훅-크로스는 MMA 복싱 콤비네이션으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-2-5",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스-어퍼컷 계열 콤비네이션은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__1-2-3-6",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스-훅-어퍼컷 콤비네이션은 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__body-head-combination",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디-헤드 연결은 MMA 복싱에서 쓰이는 콤비네이션이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__head-body-combination",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "헤드-바디 연결은 MMA 복싱에서 쓰이는 콤비네이션이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__double-jab-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블잽 진입은 MMA 거리 좁히기에 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__jab-feint-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽 페인트-크로스는 MMA 타격 셋업으로 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__feint-double-jab",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트-더블잽은 MMA 타격 셋업으로 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition·MMA Boxing Combination(페인트/레벨체인지로 셋업); S2 해당 없음"
+ },
+ {
+  "id": "boxing__double-forearm-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "양팔 전완 가드는 MMA 스탠딩 방어에 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__elbow-block",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔꿈치로 바디샷을 막는 방어는 MMA에서도 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__body-cover",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 커버는 MMA 스탠딩 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__double-slip",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "연속 슬립은 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__duck",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "덕킹은 MMA에서도 쓰이는 펀치 회피다(니 위험 주의).",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__lead-hand-parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리드손 패리는 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__rear-hand-parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어손 패리는 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__double-parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "양손 패리는 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__downward-parry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "아래로 쳐내는 패리는 MMA에서 잽·바디샷 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__slip-outside",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바깥 슬립은 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__slip-inside",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "안쪽 슬립은 MMA 펀치 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__block",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "블록은 MMA 기본 타격 방어다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__step-away",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "물러나 피하는 스텝은 MMA 거리 관리 방어다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__elbow-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔꿈치 가드는 MMA에서 훅·바디 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__frame-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프레임 가드는 MMA 스탠딩 방어로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__slip-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슬립 후 크로스 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__slip-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슬립 후 훅 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__parry-jab",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "패리 후 잽 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__parry-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "패리 후 크로스 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__pull-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "풀백 후 크로스 카운터는 MMA에서 자주 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__roll-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "롤(위빙) 후 훅 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__roll-uppercut",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "롤 후 어퍼컷 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__block-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "블록 후 카운터는 MMA 기본 반격이다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__step-back-cross",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝백 크로스 카운터는 MMA에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management(MMA 거리에서의 복싱 방어/회피); S2 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__pivot-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "피벗 훅은 MMA 체크훅류 카운터로 쓰인다.",
+  "evidence": "S1 Check Hook(축 회전 훅 카운터); S2 해당 없음"
+ },
+ {
+  "id": "boxing__shoulder-bump",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "숄더 범프가 MMA에서 별도 기술로 쓰이는지 불확실하다.",
+  "evidence": "S1 직접 언급 없음; S2 해당 없음"
+ },
+ {
+  "id": "boxing__frame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "근거리 프레임은 MMA 클린치·거리 확보에 쓰인다.",
+  "evidence": "S1 Framing·Dirty Boxing(프레임/컨트롤); S2 해당 없음"
+ },
+ {
+  "id": "boxing__inside-position",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "인사이드 포지션 확보는 MMA 클린치·더티복싱에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__hand-fighting",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "핸드파이팅은 MMA 스탠딩·클린치에서 핵심적으로 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__shoulder-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어깨 컨트롤은 MMA 클린치·더티복싱의 상체 컨트롤로 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__break-and-reset",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 클린치 브레이크·리셋은 심판 브레이크 맥락이라 MMA 기술로의 대응이 불확실하다.",
+  "evidence": "S1 직접 언급 없음; 복싱 규칙 의존 가능성"
+ },
+ {
+  "id": "boxing__clinch-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치 탈출은 MMA 클린치 게임에서 쓰인다.",
+  "evidence": "S1 Dirty Boxing·Clinch Takedown Entry(목/팔 컨트롤 클린치); S2 도복 없이 가능, 반칙 해당 없음"
+ },
+ {
+  "id": "boxing__body-attack",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "상대를 몰아 바디를 공격하는 것은 MMA(케이지 압박 포함)에서 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__jab-to-body",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 잽은 MMA에서 쓰이는 펀치다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__hook-to-body",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디 훅은 MMA에서 쓰이는 펀치다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__straight-punches",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스트레이트 펀치는 MMA 기본 펀치다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__combination-pressure",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "콤비네이션 압박은 MMA에서 쓰이는 공격 운영이다.",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스-훅 등 복싱 펀치·콤비네이션) / Range Management; S2 반칙·복장 해당 없음"
+ },
+ {
+  "id": "boxing__거리-관리",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "링 제너럴십 개념 항목으로 개별 기술이 아니다.",
+  "evidence": "복싱 링 제너럴십/채점 개념 → 기술 아님"
+ },
+ {
+  "id": "boxing__앵글-관리",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "링 제너럴십 개념 항목으로 개별 기술이 아니다.",
+  "evidence": "복싱 링 제너럴십/채점 개념 → 기술 아님"
+ },
+ {
+  "id": "boxing__커팅-오프-더-링",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "링 제너럴십 개념 항목으로 개별 기술이 아니다.",
+  "evidence": "복싱 링 제너럴십/채점 개념 → 기술 아님"
+ },
+ {
+  "id": "boxing__센터-링-컨트롤",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "링 제너럴십 개념 항목으로 개별 기술이 아니다.",
+  "evidence": "복싱 링 제너럴십/채점 개념 → 기술 아님"
+ },
+ {
+  "id": "boxing__리드-핸드-컨트롤",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "상대 리드손을 누르거나 걷어내는 리드핸드 컨트롤은 MMA 핸드파이팅으로 쓰인다.",
+  "evidence": "S1 MMA Boxing Combination·Range Management; S2 장갑을 잡는 것은 반칙이므로 누르기/걷어내기만 해당"
+ },
+ {
+  "id": "boxing__크로스-스텝",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "상대 리드발 바깥을 점하는 스텝은 오소독스-사우스포 대결에서 MMA에서도 쓰인다.",
+  "evidence": "S1 Range Management(MMA 거리 조절 풋워크); S2 해당 없음"
+ },
+ {
+  "id": "boxing__센터라인-리스크",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "매치업 위험에 대한 설명 개념이지 기술이 아니다.",
+  "evidence": "개념 설명 항목 → 기술 아님"
+ },
+ {
+  "id": "boxing__아마추어",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "아마추어 복싱 채점 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙/채점 체계 → 기술 아님"
+ },
+ {
+  "id": "boxing__프로",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "프로 복싱 채점 체계 설명으로 기술이 아니다.",
+  "evidence": "규칙/채점 체계 → 기술 아님"
+ },
+ {
+  "id": "boxing__실전-함의",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "채점 체계에 따른 전술 함의 설명으로 기술이 아니다.",
+  "evidence": "규칙/채점 체계 → 기술 아님"
+ }
+]

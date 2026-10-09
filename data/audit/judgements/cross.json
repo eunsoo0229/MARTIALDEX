@@ -1,0 +1,2002 @@
+[
+ {
+  "id": "wrestling__back-step",
+  "art": "bjj",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "BJJ Backstep은 패스/전환 동작으로 레슬링 Back Step(투사 진입 스텝)과 같은 기술인지 불분명함.",
+  "evidence": "doc data/raw bjj line 290: - Berimbolo - Backstep / Inversion Entry - Kiss of the Dragon"
+ },
+ {
+  "id": "wrestling__hip-heist",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "BJJ 라이브러리에 Hip Heist Sweep으로 힙 헤이스트 동작이 쓰임.",
+  "evidence": "library add_teq bjj__hip-heist-sweep: Hip Heist Sweep / 상대의 상체가 들려 자세(Posture)가 무너졌을 때, 몸을 일으켜 엉덩이를 강하게 밀어 넣으며 상대를 넘어뜨리는 스윕 기술입니다. 싯업 가드나 클로즈드 가드 상태에서 상대가 상체를 세우거나 방어 태세를 취할 때 유용하게 연계됩니다. 상체의 반동과 엉덩이의"
+ },
+ {
+  "id": "wrestling__bridge",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 브리지가 독립 기본 동작 섹션으로 존재함.",
+  "evidence": "doc data/raw bjj line 46:  ## 2.1 브리지 (Bridge) "
+ },
+ {
+  "id": "wrestling__hand-fighting",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 백 방어 기술 목록에 Hand Fighting이 포함됨.",
+  "evidence": "doc data/raw bjj line 508: - Trap and Roll Prevention - Hand Fighting "
+ },
+ {
+  "id": "wrestling__wrist-control",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서 여러 곳에 Wrist Control이 기술로 나열됨.",
+  "evidence": "doc data/raw bjj line 152: - Underhook - Wrist Control - Head Control"
+ },
+ {
+  "id": "wrestling__over-under",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ의 Over-Under는 가드 패스로, 레슬링 클린치 그립 Over-Under와 다른 기술임.",
+  "evidence": "doc data/raw bjj line 368: - Leg Drag - Over-Under Pass - Double Under Pass"
+ },
+ {
+  "id": "wrestling__rear-lift-return",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "BJJ 문서에 Mat Return이 백/터틀 공략 기술로 나열됨.",
+  "evidence": "doc data/raw bjj line 541: - Breakdown - Mat Return - Front Headlock"
+ },
+ {
+  "id": "wrestling__headlock",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 근거는 Front Headlock으로, 던지기형 Headlock과 다른 기술임.",
+  "evidence": "doc data/raw bjj line 241: - Butterfly → Back Take - Butterfly → Front Headlock "
+ },
+ {
+  "id": "wrestling__lift",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "Leg Lift는 다른 기술로 'Lift'가 우연히 일치함.",
+  "evidence": "library add_teq bjj__leg-lift: Leg lift / 스탠딩 또는 백 포지션을 빼앗겼을 때 상대방의 한쪽 다리를 자신의 다리 사이로 들어 올려 중심을 무너뜨리는 카운터 및 탈출 기술입니다. 상대의 백 컨트롤을 무력화하면서 동시에 상대를 바닥으로 넘어뜨려 유리한 포지션을 점할 수 있습니다. 무게 중심의 반전과 다리 훅을 활용하여 상대의 "
+ },
+ {
+  "id": "wrestling__base",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'Base'는 자세 유지 의미의 일반 단어 일치임.",
+  "evidence": "library add_teq bjj__closed-guard-posture-and-base: Closed Guard Posture and Base / 클로즈드 가드 안(탑 포지션)에 갇혔을 때 상대의 서브미션과 스윕 시도를 방어하기 위해 바른 자세와 무게중심을 유지하는 기본 방어 구조입니다. 상체를 바로 세우고 상대의 그립과 골반 컨트롤을 차단하여 안정적인"
+ },
+ {
+  "id": "wrestling__tripod",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ Tripod는 스윕 이름이며 레슬링 바텀 Tripod 자세와 다름.",
+  "evidence": "doc data/raw bjj line 170: - Sit-Up Sweep - Tripod 계열 스윕 - Shoulder Clamp Sweep"
+ },
+ {
+  "id": "wrestling__whizzer",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 오버훅/위저가 기본 기술 섹션으로 존재함.",
+  "evidence": "doc data/raw bjj line 81:  ## 2.7 오버훅 / 위저 (Overhook / Whizzer) "
+ },
+ {
+  "id": "wrestling__head-position",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서 기술 목록에 Head Position이 나열됨.",
+  "evidence": "doc data/raw bjj line 935: - Underhook - Head Position "
+ },
+ {
+  "id": "wrestling__hip-pressure",
+  "art": "bjj",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Hip Pressure Guard Break라는 기술명 일부로만 등장해 동일 기술인지 불분명함.",
+  "evidence": "doc data/raw bjj line 159: 상대가 클로즈드 가드를 닫았을 때: - Posture Break - Knee-in-the-middle - Standing Guard Break - Double Under Guard Break - Hip Pressure Guard Break"
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이 타격 가드와 BJJ 가드 포지션은 다른 기술임.",
+  "evidence": "doc data/raw bjj line 29: - 터틀 (Turtle) - 하프 가드 (Half Guard) - 클로즈드 가드 (Closed Guard)"
+ },
+ {
+  "id": "kickboxing__cross",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Collar Choke의 'Cross'가 우연히 일치함.",
+  "evidence": "doc data/raw bjj line 175:  대표적인 서브미션: - Armbar - Triangle - Kimura - Americana - Cross Collar Choke - Ezekiel Choke - Omoplata"
+ },
+ {
+  "id": "boxing__wrist-control",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 클린치용 손목 제어로 BJJ 그라운드 손목 제어와 맥락이 다름.",
+  "evidence": "doc data/raw bjj line 152: - Underhook - Wrist Control - Head Control"
+ },
+ {
+  "id": "muay-thai__turn",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Turn-In Escape의 'Turn'이 우연히 일치함.",
+  "evidence": "doc data/raw bjj line 760: - Hip Escape - Turn-In Escape - Guard Recovery"
+ },
+ {
+  "id": "muay-thai__sweep-foot-sweep",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 가드 스윕들과 무에타이 클린치 발쓸기는 다른 기술임.",
+  "evidence": "doc data/raw bjj line 164:  - Hip Bump Sweep - Scissor Sweep"
+ },
+ {
+  "id": "kickboxing__roll",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Bridge and Roll 등 다른 기술명의 'Roll' 일치임.",
+  "evidence": "doc data/raw bjj line 474:  - Bridge and Roll / Umpa - Elbow-Knee Escape"
+ },
+ {
+  "id": "boxing__hook",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Hook Sweep/Heel Hook의 'Hook'이 펀치 훅과 무관함.",
+  "evidence": "doc data/raw bjj line 233: - Tripod-style Butterfly Sweep - Hook Sweep "
+ },
+ {
+  "id": "boxing__duck",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Duck Under 테이크다운으로 복싱 회피 덕과 다름.",
+  "evidence": "doc data/raw bjj line 125: - Snap Down - Duck Under - Fireman's Carry"
+ },
+ {
+  "id": "boxing__frame",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 근거리 프레임과 BJJ 그라운드 프레임은 다른 기술임.",
+  "evidence": "doc data/raw bjj line 71:  ## 2.5 프레임 (Frame) "
+ },
+ {
+  "id": "boxing__hand-fighting",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 인파이팅 손싸움으로 BJJ 백 방어 핸드파이팅과 다름.",
+  "evidence": "doc data/raw bjj line 508: - Trap and Roll Prevention - Hand Fighting "
+ },
+ {
+  "id": "sambo__single-leg",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 싱글 레그 테이크다운 섹션이 존재함.",
+  "evidence": "doc data/raw bjj line 104:  ### 싱글 레그 (Single Leg) "
+ },
+ {
+  "id": "sambo__throw-side-control-mount-turtle-control",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ는 포지션 이름만 언급하며 삼보식 던지기→파르테르 전환 기술을 다루지 않음.",
+  "evidence": "doc data/raw bjj line 24:  - 마운트 (Mount) - 사이드 컨트롤 (Side Control)"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 클로즈드 가드와 오픈 가드가 핵심 포지션으로 나열됨.",
+  "evidence": "doc data/raw bjj line 29: - 터틀 (Turtle) - 하프 가드 (Half Guard) - 클로즈드 가드 (Closed Guard)"
+ },
+ {
+  "id": "judo__turn-in",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 탈출 목록에 Turn-In Escape가 포함됨.",
+  "evidence": "doc data/raw bjj line 760: - Hip Escape - Turn-In Escape - Guard Recovery"
+ },
+ {
+  "id": "sambo__guard-sweep",
+  "art": "bjj",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "범용 'Guard Sweep' 명칭으로 BJJ의 특정 스윕들과 동일 여부가 불분명함.",
+  "evidence": "doc data/raw bjj line 285: - Baby Bolo Sweep - DLR to X Guard Sweep "
+ },
+ {
+  "id": "sambo__collar-choke",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 Collar Choke → Armbar 연결이 기술로 등장함.",
+  "evidence": "doc data/raw bjj line 176: 대표적인 서브미션: - Armbar - Triangle - Kimura - Americana - Cross Collar Choke - Ezekiel Choke - Omoplata "
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Victor roll 설명에 Kumi Kata 관련 내용이 없음.",
+  "evidence": "library add_teq bjj__victor-roll: Victor roll / 빅터 롤은 스탠딩 상황에서 상대방에게 뒤(백)를 빼앗겼을 때 사용할 수 있는 역동적인 탈출 및 레그 락 진입 기술입니다. 몸을 앞으로 숙여 상대의 다리 사이로 구르며 상대의 중심을 무너뜨리고 하체 관절기 포지션으로 전환합니다. 삼보와 주짓수에서 백 포지션 위기를 반격 기회"
+ },
+ {
+  "id": "judo__grip-fighting",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 스탠딩 단계에 Grip Fighting이 기술로 나열됨.",
+  "evidence": "doc data/raw bjj line 271: - DLR Hook - Grip Fighting - Off-balancing"
+ },
+ {
+  "id": "judo__frame",
+  "art": "bjj",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "BJJ 문서에 프레임이 기본 동작 섹션으로 존재함.",
+  "evidence": "doc data/raw bjj line 71:  ## 2.5 프레임 (Frame) "
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "bjj",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Collar Choke 등 단어 일치일 뿐 타격 콤비네이션이 없음.",
+  "evidence": "doc data/raw bjj line 175:  대표적인 서브미션: - Armbar - Triangle - Kimura - Americana - Cross Collar Choke - Ezekiel Choke - Omoplata"
+ },
+ {
+  "id": "karate__feint",
+  "art": "boxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "복싱 문서에 페인트가 독립 섹션으로 존재함.",
+  "evidence": "doc data/raw boxing line 85: > - **Drop Step**은 리드 발을 크게 밀어 넣어 순간적으로 거리를 > 좁히는 스텝으로, 페인트 이후 인파이팅으로 진입할 때 쓴다. > - **Angle Step**은 정면 승부를 피하고 상대의 사각(死角)으로"
+ },
+ {
+  "id": "karate__clinch",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 클린치는 붙잡기 위주이고 가라테 클린치는 니킥 룰용 근접 컨트롤이라 동일 여부 불분명함.",
+  "evidence": "doc data/raw boxing line 122: - Infighting - Clinch "
+ },
+ {
+  "id": "wrestling__motion-circle",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 Circle Out 풋워크와 레슬링 Motion/Circle 셋업은 다른 기술임.",
+  "evidence": "doc data/raw boxing line 65: - Angle Step - Circle Out - Cut Off"
+ },
+ {
+  "id": "wrestling__pivot",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 피벗 풋워크와 레슬링 피벗의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw boxing line 59: - Lateral Step - Pivot - L-Step"
+ },
+ {
+  "id": "wrestling__switch",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "레슬링 Switch는 리버설 기술로 복싱 Switch Step과 다름.",
+  "evidence": "doc data/raw boxing line 62: - Shuffle - Switch Step - Drop Step"
+ },
+ {
+  "id": "wrestling__hand-fighting",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 손싸움과 레슬링 핸드파이팅이 유사하나 맥락이 달라 불분명함.",
+  "evidence": "doc data/raw boxing line 458: - Inside Position - Hand Fighting - Clinch"
+ },
+ {
+  "id": "wrestling__wrist-control",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 클린치 손목 제어와 레슬링 그립 손목 제어의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw boxing line 486: - Inside Control - Wrist Control - Shoulder Control"
+ },
+ {
+  "id": "wrestling__inside-control",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 인사이드 컨트롤과 레슬링 그립 인사이드 컨트롤의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw boxing line 485: - Double Collar Tie - Inside Control - Wrist Control"
+ },
+ {
+  "id": "wrestling__drop-step",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 Drop Step은 거리 좁히는 스텝으로 레슬링 슛 진입 드롭 스텝과 다름.",
+  "evidence": "doc data/raw boxing line 63: - Switch Step - Drop Step - Angle Step"
+ },
+ {
+  "id": "wrestling__feint",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 페인트는 펀치 페인트로 레슬링 슛 페이크와 다름.",
+  "evidence": "doc data/raw boxing line 106: - Angle Step - Feint "
+ },
+ {
+  "id": "wrestling__hand-control",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 Lead Hand Control은 리드 손 선점으로 레슬링 탈출용 Hand Control과 다름.",
+  "evidence": "doc data/raw boxing line 707:  - **리드 핸드 컨트롤 (Lead Hand Control)**: 서로의 리드 손(잽 손)이 부딫히는 자리를 누가 선점하느냐가 매치업의 핵심이다. 상대의"
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 가드와 복싱 High/Long Guard의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw boxing line 18: - Southpaw - High Guard - Long Guard"
+ },
+ {
+  "id": "muay-thai__elbow-guard",
+  "art": "boxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "복싱 문서 방어 목록에 Elbow Guard가 나열됨.",
+  "evidence": "doc data/raw boxing line 382:  - Elbow Guard - Pull Back"
+ },
+ {
+  "id": "kickboxing__catch",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "복싱 Catch는 펀치를 받아내는 방어로 킥 캐치와 다름.",
+  "evidence": "doc data/raw boxing line 333: - Downward Parry - Catch "
+ },
+ {
+  "id": "kickboxing__check",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Check Hook의 'Check'가 우연히 일치하며 킥 체크와 무관함.",
+  "evidence": "doc data/raw boxing line 154: - Shovel Hook - Check Hook - Lead Overhand"
+ },
+ {
+  "id": "kickboxing__cover",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "복싱 Body Cover와 킥복싱 Cover의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw boxing line 313: - Elbow Block - Body Cover "
+ },
+ {
+  "id": "sambo__스탠스",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'스탠스'라는 일반 단어 일치임.",
+  "evidence": "doc data/raw boxing line 4: > 복싱은 규칙상 주먹을 중심으로 공격·방어·풋워크·거리 조절을 구성한다. > 아래는 **스탠스 → 거리 → 펀치 → 방어 → 카운터 → 클린치 → 포지션 전환** > 순서로 주요 기술을 정리한 참고용 기술 지도다."
+ },
+ {
+  "id": "sambo__footwork",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "해시태그 #Footwork 일반 단어 일치임.",
+  "evidence": "doc data/raw boxing line 794:  #Stance #Footwork #Jab #Cross #Hook #Uppercut #Overhand #BodyPunch #Defense #Slip #Roll #Parry #Pivot #Counter #Infighting #Clinch #Rope"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "삼보 그라운드 가드와 복싱 타격 가드는 다른 기술임.",
+  "evidence": "doc data/raw boxing line 18: - Southpaw - High Guard - Long Guard"
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "복싱 손싸움 설명의 '잡기'와 유도 Kumi Kata는 무관함.",
+  "evidence": "doc data/raw boxing line 476: > - **Inside Position, Hand Fighting**은 근거리에서 먼저 유리한 > 팔 위치(언더/오버)를 잡기 위한 손 싸움으로, 이 싸움에서 이기는 > 쪽이 다음 타격의 각도를 가져간다."
+ },
+ {
+  "id": "judo__frame",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 그라운드 탈출 프레임과 복싱 근거리 프레임은 다름.",
+  "evidence": "doc data/raw boxing line 385: - Step Back - Frame/Guard "
+ },
+ {
+  "id": "bjj__wrist-control",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ 클로즈드 가드 손목 제어와 복싱 클린치 손목 제어는 다름.",
+  "evidence": "doc data/raw boxing line 486: - Inside Control - Wrist Control - Shoulder Control"
+ },
+ {
+  "id": "bjj__hand-fighting",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ 백 컨트롤 핸드파이팅과 복싱 인파이팅 손싸움은 다름.",
+  "evidence": "doc data/raw boxing line 458: - Inside Position - Hand Fighting - Clinch"
+ },
+ {
+  "id": "kickboxing__장거리-long-kicking-range",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 장거리는 킥 거리이며 복싱 장거리(잽 거리)와 정의가 다름.",
+  "evidence": "doc data/raw boxing line 100:  ### 장거리 "
+ },
+ {
+  "id": "kickboxing__중거리-mid-punching-range",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 중거리는 니가 섞이는 정의라 복싱 중거리와 동일 여부 불분명함.",
+  "evidence": "doc data/raw boxing line 108:  ### 중거리 "
+ },
+ {
+  "id": "kickboxing__근거리-close-range-clinch",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 근거리는 니 중심 정의라 복싱 근거리와 동일 여부 불분명함.",
+  "evidence": "doc data/raw boxing line 116:  ### 근거리 "
+ },
+ {
+  "id": "kickboxing__리드-lead",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "리드 손/발 개념은 복싱에도 쓰이나 킥복싱 정의(체크 등)와 차이가 있음.",
+  "evidence": "doc data/raw boxing line 27: > > - **Orthodox / Southpaw**는 리드 손·발이 반대인 두 기본 스탠스다. > 오소독스는 왼손 리드(오른손잡이 대다수가 사용), 사우스포는"
+ },
+ {
+  "id": "kickboxing__리어-rear",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "리어 개념은 복싱에도 쓰이나 킥복싱 정의(로우킥 등)와 차이가 있음.",
+  "evidence": "doc data/raw boxing line 43: > - **Philly Shell(=Shoulder Roll Stance)**은 리드 어깨로 스트레이트를 > 흘리고 리드 손은 낮게, 리어 손은 턱 옆에 두는 자세다. 파워 > 펀처를 상대로 큰 힘을 들이지 않고 펀치를 무력화한 뒤 체크훅·"
+ },
+ {
+  "id": "kickboxing__shoulder-roll",
+  "art": "boxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "복싱 문서에 Shoulder Roll이 방어 자세/기술로 설명됨.",
+  "evidence": "doc data/raw boxing line 23: - Cross Guard - Shoulder Roll Stance "
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "boxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Jab/Cross 단어만 일치하고 Parry→Jab/Cross 연결은 근거에 직접 없음.",
+  "evidence": "doc data/raw boxing line 22: - Philly Shell - Cross Guard - Shoulder Roll Stance"
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진'이라는 일반 단어 일치임.",
+  "evidence": "doc data/raw boxing line 78: > 반격 각을 여는 데 핵심적이다. > - **L-Step**은 전진 또는 후퇴와 동시에 측면으로 빠지는 복합 > 스텝으로, 아웃복서가 펀치를 던진 뒤 안전하게 각을 바꿔 빠지는"
+ },
+ {
+  "id": "mixed-martial-arts__range-management",
+  "art": "boxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "MMA 특유의 거리 관리로 복싱 거리 관리와 다른 개념임.",
+  "evidence": "doc data/raw boxing line 684:  - **거리 관리(Distance Management)**: 자신에게 유리한 거리(아웃복서는 장거리, 인파이터는 근거리)를 계속 유지하려는 풋워크·페인트의"
+ },
+ {
+  "id": "karate__okuri-ashi",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "유도 Okuri Ashi Barai는 던지기로 가라테 이동 Okuri-ashi와 다름.",
+  "evidence": "doc data/raw judo line 130: - Kosoto Gake (작은 바깥 걸기) - Okuri Ashi Barai (양발 몰아 후리기) - Harai Tsurikomi Ashi (후리기 끌어당겨 걸기)"
+ },
+ {
+  "id": "karate__feint",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 페인트는 던지기 방향 속임으로 가라테 타격 페인트와 다름.",
+  "evidence": "doc data/raw judo line 359:  - Feint(위협 동작) → 반대 방향 던지기 - 그립 변경 → 새로운 각도 공격"
+ },
+ {
+  "id": "karate__kuzushi",
+  "art": "judo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "유도 문서에서 Kuzushi가 핵심 원리로 설명됨.",
+  "evidence": "doc data/raw judo line 8: > 이 문서는 기술 이름을 나열하는 것을 넘어, **각 기술이 어떤 쿠즈시 > (균형 무너뜨림) 방향에서 나오고, 상대가 어떤 자세·그립·반응을 보일 때 > 유효하며, 실패했을 때 어떤 카운터/연결 기술로 이어지는지**를"
+ },
+ {
+  "id": "karate__ashi-barai",
+  "art": "judo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도에는 De Ashi Barai 등 특정 발기술만 있어 가라테 Ashi-barai와 동일 여부 불분명함.",
+  "evidence": "doc data/raw judo line 120:  - De Ashi Barai (전진하는 발 후리기) - Hiza Guruma (무릎 바퀴)"
+ },
+ {
+  "id": "wrestling__bridge",
+  "art": "judo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "유도 굳히기 탈출 목록에 Bridge가 포함됨.",
+  "evidence": "doc data/raw judo line 483: 굳히기는 던지기의 Kake가 완성된 직후 상대의 등을 완전히 무너뜨린 연장선, 혹은 상대의 네와자 탈출 시도(Turn-In, Bridge 등)가 실패한 직후에 나온다. 상대가 던지기 직후 완전히 등을 대고 눕고 양팔이"
+ },
+ {
+  "id": "wrestling__feint",
+  "art": "judo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도의 던지기용 페인트와 레슬링 슛 페인트의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw judo line 359:  - Feint(위협 동작) → 반대 방향 던지기 - 그립 변경 → 새로운 각도 공격"
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Guard Recovery의 'Guard' 단어 일치로 타격 가드와 무관함.",
+  "evidence": "doc data/raw judo line 508: - Frame - Guard Recovery - Turtle Recovery"
+ },
+ {
+  "id": "kickboxing__cross",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Grip의 'Cross'가 우연히 일치함.",
+  "evidence": "doc data/raw judo line 81: - Lapel Grip (깃 그립) - Cross Grip (교차 그립) - Same-Side Grip (같은 쪽 그립, Kenka Yotsu에서 자주 사용)"
+ },
+ {
+  "id": "muay-thai__turn",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Turn-In 탈출의 'Turn'이 우연히 일치함.",
+  "evidence": "doc data/raw judo line 483: 굳히기는 던지기의 Kake가 완성된 직후 상대의 등을 완전히 무너뜨린 연장선, 혹은 상대의 네와자 탈출 시도(Turn-In, Bridge 등)가 실패한 직후에 나온다. 상대가 던지기 직후 완전히 등을 대고 눕고 양팔이"
+ },
+ {
+  "id": "boxing__feint",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 페인트는 던지기 방향 속임으로 복싱 펀치 페인트와 다름.",
+  "evidence": "doc data/raw judo line 359:  - Feint(위협 동작) → 반대 방향 던지기 - 그립 변경 → 새로운 각도 공격"
+ },
+ {
+  "id": "boxing__frame",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 그라운드 탈출 프레임과 복싱 근거리 프레임은 다름.",
+  "evidence": "doc data/raw judo line 507: - Turn-In - Frame - Guard Recovery"
+ },
+ {
+  "id": "sambo__throw-side-control-mount-turtle-control",
+  "art": "judo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도도 던지기 후 굳히기 전환을 다루나 삼보 고유 전환 기술과 동일한지 불분명함.",
+  "evidence": "doc data/raw judo line 431: - Kuzure Tate Shiho Gatame - Mount(=Tate Shiho Gatame 유사 자세) - Back Control(뒤 제어 --- 조르기 진입용)"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "judo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 근거는 Guard Recovery뿐이라 클로즈드/오픈 가드를 유도 기술로 보기 불분명함.",
+  "evidence": "doc data/raw judo line 508: - Frame - Guard Recovery - Turtle Recovery"
+ },
+ {
+  "id": "bjj__turtle",
+  "art": "judo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 Turtle Recovery는 있으나 BJJ Turtle 항목(분류 이상)과 동일 여부 불분명함.",
+  "evidence": "doc data/raw judo line 509: - Guard Recovery - Turtle Recovery - Kesa Escape"
+ },
+ {
+  "id": "bjj__grip-fighting",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 데라히바 맥락 그립 싸움으로 유도 Kumi Kata 다툼과 다름.",
+  "evidence": "doc data/raw judo line 88: - Grip Break (그립 끊기) - Grip Fighting (Kumi Kata 다툼) "
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Grip 단어 일치일 뿐 타격 콤비네이션이 없음.",
+  "evidence": "doc data/raw judo line 81: - Lapel Grip (깃 그립) - Cross Grip (교차 그립) - Same-Side Grip (같은 쪽 그립, Kenka Yotsu에서 자주 사용)"
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "judo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진'이라는 일반 단어 일치임.",
+  "evidence": "doc data/raw judo line 361: - 그립 변경 → 새로운 각도 공격 - 전진 유도 후 후퇴 방향 기술(Osoto Gari 등)로 전환 - 후퇴 유도 후 전진 방향 기술(Seoi Nage, Uchi Mata 등)로 전환"
+ },
+ {
+  "id": "wrestling__pivot",
+  "art": "karate",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 Tai Sabaki/Pivot과 레슬링 피벗의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw karate line 66:  Maai를 미세 조정할 때 자주 쓰인다. - **Tai Sabaki / Tenkan / Pivot** --- 몸의 방향을 바꾸는 회전 이동. 정면 승부를 피하고 각도를 만들 때(자세한 내용은 10장)."
+ },
+ {
+  "id": "wrestling__feint",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가라테 페인트는 타격 페인트로 레슬링 슛 페이크와 다름.",
+  "evidence": "doc data/raw karate line 224:  발차기로 먼저 견제. - Feint(페인트), Angle Step --- 상대의 반응(Sen인지 Go no Sen을 노리는지)을 확인."
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가라테 Long Guard/Distance Control과 무에타이 가드는 다름.",
+  "evidence": "doc data/raw karate line 226:  노리는지)을 확인. - Long Guard / Distance Control --- 상대가 To-ma를 깨고 들어오려는 순간을 포착해 Deai(마주치는 타이밍, 13장)로 카운터할 준비."
+ },
+ {
+  "id": "kickboxing__low-kick",
+  "art": "karate",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가라테 해시태그 기술 목록에 #LowKick이 포함됨.",
+  "evidence": "doc data/raw karate line 630: #Kick #MaeGeri #MawashiGeri #YokoGeri #UshiroGeri #UraMawashiGeri #LowKick #BodyKick #KanshetsuGeri #Block #Uke #GedanBarai #AgeUke #SotoUke #ShutoUke #NagashiUke"
+ },
+ {
+  "id": "kickboxing__body-kick",
+  "art": "karate",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가라테 해시태그 기술 목록에 #BodyKick이 포함됨.",
+  "evidence": "doc data/raw karate line 630: #Kick #MaeGeri #MawashiGeri #YokoGeri #UshiroGeri #UraMawashiGeri #LowKick #BodyKick #KanshetsuGeri #Block #Uke #GedanBarai #AgeUke #SotoUke #ShutoUke #NagashiUke"
+ },
+ {
+  "id": "boxing__feint",
+  "art": "karate",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "가라테 문서에서 Feint가 장거리 기술 및 Feint → Gyaku-zuki로 쓰임.",
+  "evidence": "doc data/raw karate line 224:  발차기로 먼저 견제. - Feint(페인트), Angle Step --- 상대의 반응(Sen인지 Go no Sen을 노리는지)을 확인."
+ },
+ {
+  "id": "boxing__combination",
+  "art": "karate",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "범용 Combination 명칭으로 가라테 Combination Entry와 동일 여부 불분명함.",
+  "evidence": "doc data/raw karate line 244:  맞붙는 거리. - Combination Entry --- 조합 기술(12장)의 시작 지점. "
+ },
+ {
+  "id": "boxing__clinch",
+  "art": "karate",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 클린치는 룰 허용 시 근접 컨트롤로 복싱 클린치와 동일 여부 불분명함.",
+  "evidence": "doc data/raw karate line 259:  짧고 강한 근접 타격. - Knee(규칙 허용 시), Clinch/근접 컨트롤(규칙 허용 시) --- 접촉이 허용되는 룰(예: Kyokushin의 니킥, 일부 실전 룰)에서만 사용."
+ },
+ {
+  "id": "boxing__block",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "해시태그 #Block 일반 단어 일치로 가라테 Uke와 별개임.",
+  "evidence": "doc data/raw karate line 631: #LowKick #BodyKick #KanshetsuGeri #Block #Uke #GedanBarai #AgeUke #SotoUke #ShutoUke #NagashiUke #Counter #Renzoku #Combination"
+ },
+ {
+  "id": "sambo__스탠스",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'스탠스' 일반 단어 일치임.",
+  "evidence": "doc data/raw karate line 487:  - 특징: 긴 스탠스, 직선적 이동, 강한 기본기(Kihon) 중심. - 대표 기술: Oi-zuki, Gyaku-zuki, Mae Geri, Mawashi Geri, Yoko"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Long Guard 단어 일치로 삼보 그라운드 가드와 무관함.",
+  "evidence": "doc data/raw karate line 226:  노리는지)을 확인. - Long Guard / Distance Control --- 상대가 To-ma를 깨고 들어오려는 순간을 포착해 Deai(마주치는 타이밍, 13장)로 카운터할 준비."
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "오키나와 원류의 잡기 언급일 뿐 현대 가라테 기술이 아님.",
+  "evidence": "doc data/raw karate line 434:  가라테의 오키나와 원류(Okinawan Te)에는 잡기·던지기(Tuidi/ Torite)가 포함되어 있었다고 알려져 있으나, 현대에는 표준화된"
+ },
+ {
+  "id": "kickboxing__장거리-long-kicking-range",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가라테 To-ma는 기술이 닿지 않는 안전거리로 킥복싱 장거리 정의와 다름.",
+  "evidence": "doc data/raw karate line 217:  ## 7. 장거리 (To-ma) "
+ },
+ {
+  "id": "kickboxing__중거리-mid-punching-range",
+  "art": "karate",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 Ma와 킥복싱 중거리(니 포함)의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw karate line 89:  가장 강력하고 자주 쓰이는 득점/파워 기술. WKF에서 Chudan Gyaku-zuki는 대표적인 Yuko(1점) 기술이며, Kyokushin에서도 근~중거리 핵심 타격."
+ },
+ {
+  "id": "kickboxing__근거리-close-range-clinch",
+  "art": "karate",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 근거리와 킥복싱 클린치/니 근거리의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw karate line 5: > 규칙에 따라 기술 구성이 크게 다르다. 아래는 **기본 자세, 이동, 주먹, > 발차기, 방어, 근거리, 경기 상황**을 중심으로 폭넓게 정리한 기술 > 지도다."
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "karate",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진'이라는 일반 단어 일치임.",
+  "evidence": "doc data/raw karate line 42: - **Fudo-dachi (부동립) / Kumite 자유 자세** --- 실전 쿠미테에서 가장 실용적인 절충형 자세. 전진·후퇴·회전이 모두 자유로워 자유 대련의 기본 자세로 쓰인다."
+ },
+ {
+  "id": "karate__feint",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 문서에 페인트가 독립 섹션으로 존재함.",
+  "evidence": "doc data/raw kickboxing line 271:  ## 9. 페인트 (Feint) "
+ },
+ {
+  "id": "karate__clinch",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥복싱 근거리 흐름에 Clinch가 룰 허용 시 사용으로 나옴.",
+  "evidence": "doc data/raw kickboxing line 24: - 중거리 (Mid/Punching Range) --- 손 콤비네이션과 니가 섞이는 거리 - 근거리 (Close Range / Clinch) --- 클린치, 숏 스트레이트, 니가 중심이 되는 거리"
+ },
+ {
+  "id": "wrestling__motion-circle",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 Circle Out 풋워크와 레슬링 Motion/Circle은 다름.",
+  "evidence": "doc data/raw kickboxing line 124: - Cut-Off - Circle Out "
+ },
+ {
+  "id": "wrestling__level-change",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 Level Change Feint는 페인트로 레슬링 레벨 체인지와 다름.",
+  "evidence": "doc data/raw kickboxing line 275: - Foot Feint (Step Feint) - Level Change Feint - Kick Feint"
+ },
+ {
+  "id": "wrestling__pivot",
+  "art": "kickboxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 피벗과 레슬링 피벗의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw kickboxing line 117: - Lateral Step - Pivot - L-Step"
+ },
+ {
+  "id": "wrestling__switch",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "레슬링 Switch는 리버설로 킥복싱 Switch Stance/Step과 다름.",
+  "evidence": "doc data/raw kickboxing line 98: - Square Stance - Switch Stance "
+ },
+ {
+  "id": "wrestling__inside-control",
+  "art": "kickboxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 클린치 Inside Control과 레슬링 그립 Inside Control의 동일 여부 불분명함.",
+  "evidence": "doc data/raw kickboxing line 307: - Double Collar Tie - Inside Control - Overhook"
+ },
+ {
+  "id": "wrestling__square-stance",
+  "art": "kickboxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 Square Stance와 레슬링 Square Stance의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw kickboxing line 97: - Bladed Stance - Square Stance - Switch Stance"
+ },
+ {
+  "id": "wrestling__feint",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 페인트는 타격 페인트로 레슬링 슛 페이크와 다름.",
+  "evidence": "doc data/raw kickboxing line 271:  ## 9. 페인트 (Feint) "
+ },
+ {
+  "id": "wrestling__rear-lift-return",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Check and Return의 'Return' 단어 일치임.",
+  "evidence": "doc data/raw kickboxing line 444: - Parry Counter - Check and Return - Catch and Return"
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "kickboxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 가드와 킥복싱 High/Long Guard의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw kickboxing line 93: - Southpaw - High Guard - Long Guard"
+ },
+ {
+  "id": "muay-thai__jab-to-cross",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 문서에 Jab → Cross 압박/콤비네이션이 나열됨.",
+  "evidence": "doc data/raw kickboxing line 506:  - Jab → Cross → Low Kick - Jab → Hook → Low Kick"
+ },
+ {
+  "id": "muay-thai__jab-to-hook",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "Jab → Hook → Low Kick 콤비네이션의 일부로만 등장함.",
+  "evidence": "doc data/raw kickboxing line 507: - Jab → Cross → Low Kick - Jab → Hook → Low Kick - Cross → Hook → High Kick"
+ },
+ {
+  "id": "muay-thai__cross-to-hook",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "Cross → Hook → High Kick 콤비네이션의 일부로만 등장함.",
+  "evidence": "doc data/raw kickboxing line 508: - Jab → Hook → Low Kick - Cross → Hook → High Kick - Jab → Body Kick"
+ },
+ {
+  "id": "muay-thai__cross-to-low-kick",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "Jab → Cross → Low Kick 콤비네이션의 일부로만 등장함.",
+  "evidence": "doc data/raw kickboxing line 506:  - Jab → Cross → Low Kick - Jab → Hook → Low Kick"
+ },
+ {
+  "id": "muay-thai__clinch-knee",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥복싱 해시태그에 #ClinchKnee가 포함됨(룰 허용 시).",
+  "evidence": "doc data/raw kickboxing line 762: #Knee #ClinchKnee #JumpingKnee"
+ },
+ {
+  "id": "boxing__catch",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 Catch는 킥 캐치로 복싱 펀치 캐치와 다름.",
+  "evidence": "doc data/raw kickboxing line 344:  포인트 감점 → 실격으로 이어질 수 있다. - **킥 캐치(Catch)** 이후의 처리도 룰마다 다르다. 상대의 로우킥이나 라운드킥을 팔로 잡아 캐치하는 것 자체는 다수의 룰에서 허용되지만,"
+ },
+ {
+  "id": "boxing__feint",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 문서에 페인트가 독립 섹션으로 존재함.",
+  "evidence": "doc data/raw kickboxing line 271:  ## 9. 페인트 (Feint) "
+ },
+ {
+  "id": "boxing__hook",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 문서에 Hook이 펀치 기술로 설명됨.",
+  "evidence": "doc data/raw kickboxing line 148: - Cross - Lead Hook - Rear Hook"
+ },
+ {
+  "id": "boxing__uppercut",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 문서에 Uppercut 사용 상황이 설명됨.",
+  "evidence": "doc data/raw kickboxing line 150: - Rear Hook - Lead Uppercut - Rear Uppercut"
+ },
+ {
+  "id": "boxing__combination",
+  "art": "kickboxing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "범용 Combination 명칭으로 동일 기술 여부가 불분명함.",
+  "evidence": "doc data/raw kickboxing line 473:  → Low Kick / Body Kick / High Kick → Combination → Exit or Clinch Entry ```"
+ },
+ {
+  "id": "boxing__clinch",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥복싱 근거리 흐름에 Clinch가 등장함.",
+  "evidence": "doc data/raw kickboxing line 24: - 중거리 (Mid/Punching Range) --- 손 콤비네이션과 니가 섞이는 거리 - 근거리 (Close Range / Clinch) --- 클린치, 숏 스트레이트, 니가 중심이 되는 거리"
+ },
+ {
+  "id": "boxing__jab-feint",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 Hand Feint 기술이 Jab Feint로 명시됨.",
+  "evidence": "doc data/raw kickboxing line 273:  - Hand Feint (Jab Feint) - Foot Feint (Step Feint)"
+ },
+ {
+  "id": "boxing__feint-entry",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 진입 흐름에 Feint → Entry가 명시됨.",
+  "evidence": "doc data/raw kickboxing line 465:  → Teep / Front Kick / Round Kick / Jab → Feint → Entry → Punch Entry / Kick Entry"
+ },
+ {
+  "id": "boxing__block",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "킥복싱 근거는 Shin Block으로 복싱 블록과 다름.",
+  "evidence": "doc data/raw kickboxing line 422: - Angle Out - Shin Block "
+ },
+ {
+  "id": "boxing__parry-jab",
+  "art": "kickboxing",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "킥복싱 카운터 목록에 Parry → Jab / Cross가 명시됨.",
+  "evidence": "doc data/raw kickboxing line 514: - Slip → Cross - Parry → Jab / Cross - Hand Feint → Body Kick"
+ },
+ {
+  "id": "sambo__스탠스",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'스탠스' 일반 단어 일치임.",
+  "evidence": "doc data/raw kickboxing line 29:  - 리드(Lead) --- 스탠스 앞쪽에 있는 손/발. 거리 측정, 잽, 체크, 페인트에 주로 사용."
+ },
+ {
+  "id": "sambo__footwork",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "해시태그 #Footwork 일반 단어 일치임.",
+  "evidence": "doc data/raw kickboxing line 741: #SwitchStance #Footwork #Jab"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "타격 가드 단어 일치로 삼보 그라운드 가드와 무관함.",
+  "evidence": "doc data/raw kickboxing line 93: - Southpaw - High Guard - Long Guard"
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "kickboxing",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진'이라는 일반 단어 일치임.",
+  "evidence": "doc data/raw kickboxing line 132: 공격(크로스, 라운드킥) 직후 그 라인에서 벗어나면서 동시에 카운터 각도를 만드는 데 쓴다. L-Step은 상대의 전진 직선 압박에 대해 사각으로 빠지며 로우킥이나 크로스를 꽂는 데 자주 쓰인다."
+ },
+ {
+  "id": "kickboxing__pivot",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 기본 풋워크 목록에 Pivot이 포함됨.",
+  "evidence": "doc data/raw muay-thai line 47: - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step"
+ },
+ {
+  "id": "kickboxing__round-kick",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 문서에 Round Kick이 장거리 킥 섹션으로 존재함.",
+  "evidence": "doc data/raw muay-thai line 132:  # 4. 장거리 킥 (Round Kick / Low Kick 계열) "
+ },
+ {
+  "id": "kickboxing__back-kick",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무에타이 문서에 Spinning Back Kick이 카운터로 설명됨.",
+  "evidence": "doc data/raw muay-thai line 150: - Axe Kick / Side Kick - Spinning Back Kick (스피닝 기술, 8장 참고) "
+ },
+ {
+  "id": "karate__feint",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무에타이 문서에 로우킥 페인트가 설명됨.",
+  "evidence": "doc data/raw muay-thai line 316:  직선 펀치로 카운터. - **체크를 유도하는 페인트** --- 로우킥 페인트로 상대가 다리를 들게 한 뒤, 실제로는 반대쪽 로우킥이나 니를 던짐."
+ },
+ {
+  "id": "karate__short-punch",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 근거리 흐름에 Short Punch가 명시됨.",
+  "evidence": "doc data/raw muay-thai line 591: Close Range → Elbow / Knee / Short Punch ↓ (붙잡히면)"
+ },
+ {
+  "id": "karate__clinch",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무에타이 클린치가 핵심 거리로 설명되나 가라테 클린치 항목과 성격 차이가 있음.",
+  "evidence": "doc data/raw muay-thai line 26: - **근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리. - **클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리."
+ },
+ {
+  "id": "karate__kuzushi",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'무너뜨림' 일반 단어 일치로 Kuzushi 기술이 아님.",
+  "evidence": "doc data/raw muay-thai line 100: - Lead Teep / Rear Teep - Side Teep (몸을 옆으로 틀어 차는 티프, 상대의 각도를 무너뜨림) - Jumping Teep"
+ },
+ {
+  "id": "karate__특징",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'특징' 일반 단어 일치임.",
+  "evidence": "doc data/raw muay-thai line 516:  스타일 특징 주요 무기 ------------------------------ -------------------------------------------------- --------------------------------"
+ },
+ {
+  "id": "wrestling__pivot",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 피벗 풋워크와 레슬링 피벗의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw muay-thai line 47: - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step"
+ },
+ {
+  "id": "wrestling__switch",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "레슬링 Switch 리버설과 무에타이 Switch Step/Kick은 다름.",
+  "evidence": "doc data/raw muay-thai line 48: - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step "
+ },
+ {
+  "id": "wrestling__wrist-control",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 클린치 Wrist Control과 레슬링 그립 Wrist Control의 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 350: - Overhook / Underhook - Biceps Control / Wrist Control - Body Lock"
+ },
+ {
+  "id": "wrestling__inside-control",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 클린치 Inside Control과 레슬링 Inside Control의 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 348:  감싸기) - Inside Control / Outside Control - Overhook / Underhook"
+ },
+ {
+  "id": "wrestling__rear-lift-return",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Check/Catch and Return의 'Return' 단어 일치임.",
+  "evidence": "doc data/raw muay-thai line 312:  - **Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다."
+ },
+ {
+  "id": "kickboxing__step-forward",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 기본 풋워크에 Step Forward가 포함됨.",
+  "evidence": "doc data/raw muay-thai line 47: - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step"
+ },
+ {
+  "id": "boxing__lateral-step",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 기본 풋워크에 Lateral Step이 포함됨.",
+  "evidence": "doc data/raw muay-thai line 47: - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step"
+ },
+ {
+  "id": "kickboxing__switch-step",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 기본 풋워크에 Switch Step이 포함됨.",
+  "evidence": "doc data/raw muay-thai line 48: - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step "
+ },
+ {
+  "id": "boxing__hook",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 중거리 펀치에 Hook과 Jab–Hook 등이 나열됨.",
+  "evidence": "doc data/raw muay-thai line 173: - Jab / Cross - Lead Hook / Rear Hook - Lead Uppercut / Rear Uppercut"
+ },
+ {
+  "id": "boxing__uppercut",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 중거리 흐름에 Uppercut이 명시됨.",
+  "evidence": "doc data/raw muay-thai line 174: - Lead Hook / Rear Hook - Lead Uppercut / Rear Uppercut - Overhand"
+ },
+ {
+  "id": "boxing__clinch",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 클린치는 니·엘보 중심이라 복싱 클린치와 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 26: - **근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리. - **클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을 쓰는 거리."
+ },
+ {
+  "id": "boxing__block",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이 근거는 Knee/Shin Block으로 복싱 블록과 다름.",
+  "evidence": "doc data/raw muay-thai line 270:  - **니 블록 (Knee Block)** --- 자신의 다리를 들어 정강이/무릎으로 상대 니의 궤적을 막는다."
+ },
+ {
+  "id": "boxing__elbow-guard",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무에타이 가드 목록에 Elbow Guard가 나열됨.",
+  "evidence": "doc data/raw muay-thai line 41: - Dutch Guard (손을 낮게 두고 펀치 스피드/콤보 위주로 운영하는 자세) - Elbow Guard (팔꿈치를 세워 로우킥/훅을 막는 자세) - Cross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는"
+ },
+ {
+  "id": "boxing__frame",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 프레임(니 차단)과 복싱 프레임의 동일 여부가 불분명함.",
+  "evidence": "doc data/raw muay-thai line 272:  상대 니의 궤적을 막는다. - **프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다."
+ },
+ {
+  "id": "boxing__거리-관리",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 거리 관리 섹션은 있으나 복싱 링 제너럴십 항목과 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 57:  # 2. 기본 움직임과 거리 관리 "
+ },
+ {
+  "id": "boxing__아마추어",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이 룰 언급이며 복싱 아마추어 규정과 무관함.",
+  "evidence": "doc data/raw muay-thai line 374:  > **주의:** 클린치 스윕/트립은 규칙(아마추어 IFMA vs 프로 무에타이 > 스타디움 룰)에 따라 허용 범위가 다르다. 반드시 체육관/시합 규칙과"
+ },
+ {
+  "id": "boxing__프로",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이 룰 언급이며 복싱 프로 규정과 무관함.",
+  "evidence": "doc data/raw muay-thai line 374:  > **주의:** 클린치 스윕/트립은 규칙(아마추어 IFMA vs 프로 무에타이 > 스타디움 룰)에 따라 허용 범위가 다르다. 반드시 체육관/시합 규칙과"
+ },
+ {
+  "id": "sambo__footwork",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "삼보 풋워크 항목과 무에타이 풋워크는 일반 단어 일치임.",
+  "evidence": "doc data/raw muay-thai line 47: - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot, Switch Step, Skip Step"
+ },
+ {
+  "id": "sambo__guard",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이 타격 가드와 삼보 그라운드 가드는 다름.",
+  "evidence": "doc data/raw muay-thai line 38: - Orthodox / Southpaw - Guard / Long Guard / High Guard - Shell (양팔로 몸통과 턱을 감싸는 방어 자세)"
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "크로스 엘보 설명에 Kumi Kata가 없음.",
+  "evidence": "library add_teq muay-thai__cross-elbow: Cross Elbow / 크로스 엘보(Cross Elbow)는 무에타이에서 후방(Rear) 손의 팔꿈치를 상대방의 가드 사이나 측면으로 대각선 또는 횡으로 수평하게 휘둘러 타격하는 기술입니다. 펀치 거리보다 가까운 근접전에서 짧고 강력한 회전력을 이용해 상대의 턱이나 관자놀이, 뺨에 큰"
+ },
+ {
+  "id": "judo__frame",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 그라운드 탈출 프레임과 무에타이 니 차단 프레임은 다름.",
+  "evidence": "doc data/raw muay-thai line 272:  상대 니의 궤적을 막는다. - **프레임 (Frame)** --- 팔이나 팔꿈치를 상대 골반/복부에 대어 거리 자체를 만들어 니가 닿지 않게 한다."
+ },
+ {
+  "id": "bjj__wrist-control",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 클로즈드 가드 손목 제어와 무에타이 클린치 손목 제어는 다름.",
+  "evidence": "doc data/raw muay-thai line 350: - Overhook / Underhook - Biceps Control / Wrist Control - Body Lock"
+ },
+ {
+  "id": "kickboxing__장거리-long-kicking-range",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 장거리(킥·티프)와 킥복싱 장거리(킥·잽) 정의가 유사하나 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 22:  - **장거리 (Long Range)** --- 킥과 티프가 닿는 거리. 서로의 팔이 닿지 않는다."
+ },
+ {
+  "id": "kickboxing__중거리-mid-punching-range",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 중거리와 킥복싱 중거리 정의가 유사하나 동일 여부 불분명함.",
+  "evidence": "doc data/raw muay-thai line 24:  닿지 않는다. - **중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리. - **근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리."
+ },
+ {
+  "id": "kickboxing__근거리-close-range-clinch",
+  "art": "muay-thai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이 근거리/클린치 구분과 킥복싱 근거리 정의가 달라 불분명함.",
+  "evidence": "doc data/raw muay-thai line 25: - **중거리 (Mid Range)** --- 펀치, 니, 로우킥이 모두 닿는 거리. - **근거리 (Close Range)** --- 엘보와 클린치 진입이 시작되는 거리. - **클린치 (Clinch)** --- 상대를 붙잡아 니와 엘보, 오프밸런스/스윕을"
+ },
+ {
+  "id": "kickboxing__teep",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 문서에 티프가 장거리 핵심 섹션으로 존재함.",
+  "evidence": "doc data/raw muay-thai line 46:  쉽다.) - Teep Guard (앞다리를 살짝 띄워 티프로 바로 전환 가능한 준비 자세) - Basic Footwork: Step Forward, Step Back, Lateral Step, Pivot,"
+ },
+ {
+  "id": "kickboxing__kick-after-punch",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무에타이 문서에 Low Kick after Punch 변형으로 등장함.",
+  "evidence": "doc data/raw muay-thai line 296: - 상대가 펀치 콤보에 집중할 때 → 하단 인식이 느려진 틈에 로우킥 삽입 (Low Kick after Punch). "
+ },
+ {
+  "id": "kickboxing__check-return-kick",
+  "art": "muay-thai",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "무에타이 문서에 Check → Return Kick이 명시됨.",
+  "evidence": "doc data/raw muay-thai line 312:  - **Check → Return Kick** --- 체크한 다리를 그대로 내리는 순간 같은 쪽 로우킥/바디킥으로 되받아친다."
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross/Jab 단어만 일치하고 Parry 연결은 없음.",
+  "evidence": "doc data/raw muay-thai line 42: - Elbow Guard (팔꿈치를 세워 로우킥/훅을 막는 자세) - Cross-Arm Guard (양팔을 X자로 교차해 몸통-턱 라인을 동시에 막는 가드. 부아카오(Buakaw) 등이 쓴 스타일로, 훅과 로우킥 양쪽을 동시에"
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진' 일반 단어 일치임.",
+  "evidence": "doc data/raw muay-thai line 61:  전진/후퇴/사이드스텝/피벗은 주짓수의 브리지·힙이스케이프처럼 모든 기술의 기반이 되는 움직임이다. 상대가 압박해오면 사이드스텝+피벗으로"
+ },
+ {
+  "id": "mixed-martial-arts__range-management",
+  "art": "muay-thai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "MMA 특유 거리 관리로 무에타이 기술 목록에 없음.",
+  "evidence": "doc data/raw muay-thai line 57:  # 2. 기본 움직임과 거리 관리 "
+ },
+ {
+  "id": "kickboxing__pivot",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 풋워크 목록의 Pivot과 킥복싱 피벗의 동일 여부 불분명함.",
+  "evidence": "doc data/raw sambo line 66:  중간(средняя), 원거리(дальняя), 그립 아웃 거리(вне захвата) - Level Change / Footwork / Pivot / Break Step "
+ },
+ {
+  "id": "wrestling__bridge",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 탈출 목록에 Bridge(Мост)가 포함됨.",
+  "evidence": "doc data/raw sambo line 347: - Guard Recovery, Technical Stand-Up - Bridge(Мост), Hip Escape, Sit-Out, Stand-Up, Granby, Turn-In, Frame Escape, Back Escape"
+ },
+ {
+  "id": "wrestling__wrist-control",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 Wrist Control은 탑 컨트롤 맥락으로 레슬링 스탠딩 그립과 다를 수 있음.",
+  "evidence": "doc data/raw sambo line 332: - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를 잡은 채 유지하는 컨트롤 --- 상대의 재기립을 막는 데 특히 유효)"
+ },
+ {
+  "id": "wrestling__front-headlock",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 근거는 컴뱃 삼보 Front Headlock Choke뿐이라 포지션 자체 사용 여부 불분명함.",
+  "evidence": "doc data/raw sambo line 451:  --- 일반 용어) - Rear Naked Choke, Guillotine, Front Headlock Choke, Arm Triangle, Collar Choke 계열"
+ },
+ {
+  "id": "wrestling__headlock",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "Front Headlock Choke만 있고 던지기 Headlock은 없음.",
+  "evidence": "doc data/raw sambo line 451:  --- 일반 용어) - Rear Naked Choke, Guillotine, Front Headlock Choke, Arm Triangle, Collar Choke 계열"
+ },
+ {
+  "id": "muay-thai__guard",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "삼보 그라운드 가드와 무에타이 타격 가드는 다름.",
+  "evidence": "doc data/raw sambo line 345:  - Guard(클로즈드/오픈), Half Guard, Turtle, Defensive Shell - Guard Recovery, Technical Stand-Up"
+ },
+ {
+  "id": "muay-thai__shell",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "삼보 Defensive Shell은 바텀 방어 자세로 무에타이 Shell과 다름.",
+  "evidence": "doc data/raw sambo line 345:  - Guard(클로즈드/오픈), Half Guard, Turtle, Defensive Shell - Guard Recovery, Technical Stand-Up"
+ },
+ {
+  "id": "boxing__wrist-control",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "삼보 탑 컨트롤 손목 제어와 복싱 클린치 손목 제어는 다름.",
+  "evidence": "doc data/raw sambo line 332: - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를 잡은 채 유지하는 컨트롤 --- 상대의 재기립을 막는 데 특히 유효)"
+ },
+ {
+  "id": "muay-thai__turn",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Turn-In 탈출의 'Turn' 단어 일치임.",
+  "evidence": "doc data/raw sambo line 347: - Guard Recovery, Technical Stand-Up - Bridge(Мост), Hip Escape, Sit-Out, Stand-Up, Granby, Turn-In, Frame Escape, Back Escape"
+ },
+ {
+  "id": "muay-thai__sweep-foot-sweep",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 발쓸기(Подсечка)와 무에타이 클린치 발쓸기의 동일 여부 불분명함.",
+  "evidence": "doc data/raw sambo line 148:  ## 6. 다리 기술 --- 포드쎗카(Подсечка) 계열: 발쓸기(Sweep) "
+ },
+ {
+  "id": "boxing__duck",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Duck Under 테이크다운으로 복싱 덕과 다름.",
+  "evidence": "doc data/raw sambo line 138:  изнутри/снаружи**(발뒤꿈치 안/밖 잡기) - Knee Tap, Body Lock, Arm Drag, Duck Under, Snap Down - Fireman's Carry --- 삼보에서는 **Мельница**(\"맷돌/윈드밀\")로"
+ },
+ {
+  "id": "boxing__frame",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "Frame Escape(그라운드)와 복싱 근거리 프레임은 다름.",
+  "evidence": "doc data/raw sambo line 348: - Bridge(Мост), Hip Escape, Sit-Out, Stand-Up, Granby, Turn-In, Frame Escape, Back Escape "
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 그립 파이팅(Захват)은 있으나 유도 Kumi Kata 항목과 동일 여부 불분명함.",
+  "evidence": "doc data/raw sambo line 137:  подколенный сгيب**(오금 잡아 던지기), **захватом пятки изнутри/снаружи**(발뒤꿈치 안/밖 잡기) - Knee Tap, Body Lock, Arm Drag, Duck Under, Snap Down"
+ },
+ {
+  "id": "judo__grip-fighting",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "삼보 해시태그에 #GripFighting이 포함됨.",
+  "evidence": "doc data/raw sambo line 554:  #SportSambo #CombatSambo #GripFighting #BeltGrip #JacketGrip #Takedown #Throw #Podsechka #Zatsep #Otkhvat #Podkhvat #Podsad"
+ },
+ {
+  "id": "judo__seoi-nage",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "삼보 Бросок через спину(등 던지기)가 Seoi Nage에 해당함.",
+  "evidence": "doc data/raw sambo line 578:  **허리/등 던지기:** Бросок через бедро(боковой/обратный/с захватом пояса/шеи), Бросок через спину(захватом рукавов/"
+ },
+ {
+  "id": "judo__mount",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "삼보 Throw → Mount 전환 및 #Mount가 등장함.",
+  "evidence": "doc data/raw sambo line 297:  통제로 이어가는 동작 - Throw → Side Control / Mount / Turtle Control - Single Leg → Top Control, Body Lock → Throw → Control"
+ },
+ {
+  "id": "judo__back-control",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "삼보 추가 탑 컨트롤 목록에 Back Control이 포함됨.",
+  "evidence": "doc data/raw sambo line 559: #Uzel #Ushchemlenie #Achilles #Kneebar #StraightAnkleLock #LegLock #Wrestling #Guard #SideControl #Mount #BackControl #Armbar #Kimura #Sweep #Escape #Choke #CombatSamboStr"
+ },
+ {
+  "id": "judo__frame",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "삼보 탈출 목록에 Frame Escape가 포함됨.",
+  "evidence": "doc data/raw sambo line 348: - Bridge(Мост), Hip Escape, Sit-Out, Stand-Up, Granby, Turn-In, Frame Escape, Back Escape "
+ },
+ {
+  "id": "bjj__armbar",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 рычаг локтя(암바 계열)와 #Armbar가 등장함.",
+  "evidence": "doc data/raw sambo line 560: #LegLock #Wrestling #Guard #SideControl #Mount #BackControl #Armbar #Kimura #Sweep #Escape #Choke #CombatSamboStriking "
+ },
+ {
+  "id": "bjj__triangle-choke",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "스포츠 삼보는 조르기 금지이고 컴뱃 삼보 목록도 Arm Triangle만 있음.",
+  "evidence": "doc data/raw sambo line 452: - Rear Naked Choke, Guillotine, Front Headlock Choke, Arm Triangle, Collar Choke 계열 "
+ },
+ {
+  "id": "bjj__거리-확보",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'거리 확보' 일반 표현 일치임.",
+  "evidence": "doc data/raw sambo line 615:  **① 규칙(스포츠/컴뱃) 확인 → ② 그립·거리 확보 → ③ 균형 무너뜨리기 방향 판단 → ④ 던지기 선택 → ⑤ 파르테르 전환 → ⑥ 홀드다운 또는"
+ },
+ {
+  "id": "bjj__wrist-control",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 가드 손목 제어와 삼보 탑 컨트롤 손목 제어는 맥락이 다름.",
+  "evidence": "doc data/raw sambo line 332: - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를 잡은 채 유지하는 컨트롤 --- 상대의 재기립을 막는 데 특히 유효)"
+ },
+ {
+  "id": "bjj__kimura",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 노트형(узел) 락에 Kimura 계열이 명시됨.",
+  "evidence": "doc data/raw sambo line 386:  **노트형(узел) --- 회전으로 조이는 락(Kimura·Americana 계열)** "
+ },
+ {
+  "id": "bjj__americana",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 노트형(узел) 락에 Americana 계열이 명시됨.",
+  "evidence": "doc data/raw sambo line 386:  **노트형(узел) --- 회전으로 조이는 락(Kimura·Americana 계열)** "
+ },
+ {
+  "id": "bjj__grip-fighting",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 데라히바 맥락 그립 싸움으로 삼보 스탠딩 그립 싸움과 다름.",
+  "evidence": "doc data/raw sambo line 554:  #SportSambo #CombatSambo #GripFighting #BeltGrip #JacketGrip #Takedown #Throw #Podsechka #Zatsep #Otkhvat #Podkhvat #Podsad"
+ },
+ {
+  "id": "bjj__leg-control",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보 Leg Control은 탑 컨트롤 맥락으로 BJJ 패스용 Leg Control과 동일 여부 불분명함.",
+  "evidence": "doc data/raw sambo line 332: - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를 잡은 채 유지하는 컨트롤 --- 상대의 재기립을 막는 데 특히 유효)"
+ },
+ {
+  "id": "bjj__collar-choke",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "컴뱃 삼보 한정으로 Collar Choke 계열이 나열됨.",
+  "evidence": "doc data/raw sambo line 452: - Rear Naked Choke, Guillotine, Front Headlock Choke, Arm Triangle, Collar Choke 계열 "
+ },
+ {
+  "id": "bjj__inside-ashi",
+  "art": "sambo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "BJJ식 레그 엔탱글 명칭은 삼보 고유 용어가 아니라고 언급되어 불분명함.",
+  "evidence": "doc data/raw sambo line 428:  삼보 모두에서 금지된다. - 50/50, Ashi Garami, Outside/Inside Ashi 같은 BJJ식 레그 엔탱글먼트 명칭은 삼보 고유 용어는 아니지만, 다리를 서로 얽어"
+ },
+ {
+  "id": "bjj__side-control",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 Throw → Side Control 및 #SideControl이 등장함.",
+  "evidence": "doc data/raw sambo line 297:  통제로 이어가는 동작 - Throw → Side Control / Mount / Turtle Control - Single Leg → Top Control, Body Lock → Throw → Control"
+ },
+ {
+  "id": "bjj__knee-on-belly",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 추가 탑 컨트롤에 Knee on Belly가 포함됨.",
+  "evidence": "doc data/raw sambo line 331:  - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를"
+ },
+ {
+  "id": "bjj__north-south",
+  "art": "sambo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "삼보 추가 탑 컨트롤에 North-South가 포함됨.",
+  "evidence": "doc data/raw sambo line 331:  - 추가 탑 컨트롤: Knee on Belly, North-South, Turtle Top, Back Control, Ride, Wrist Control, Leg Control, Belt Control(벨트를"
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "컴뱃 삼보 타격 목록에 Parry → Jab/Cross 연결은 없음.",
+  "evidence": "doc data/raw sambo line 465:  - Jab, Cross, Hook, Uppercut - Low Kick, Body Kick, 헤드킥(부위 제한 있음)"
+ },
+ {
+  "id": "taekwondo__전진",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'전진' 일반 단어 일치임.",
+  "evidence": "doc data/raw sambo line 283:  **상황 설명:** 상대가 강하게 전진 압박하거나 허리를 깊게 감아올 때, 스스로 눕으며 상대의 체중을 그대로 넘겨버리는 기술이다. 실패하면"
+ },
+ {
+  "id": "taekwondo__밀기",
+  "art": "sambo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "삼보 '밀기'는 균형 무너뜨리기로 태권도 이동 밀기와 다름.",
+  "evidence": "doc data/raw sambo line 481: 그립 파이팅(Захват) → 균형 무너뜨리기(당기기/밀기/비틀기) → 테이크다운 / 던지기(Бросок 계열)"
+ },
+ {
+  "id": "kickboxing__pivot",
+  "art": "taekwondo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태권도 해시태그에 #Pivot이 포함됨.",
+  "evidence": "doc data/raw taekwondo line 577: #WT #ITF #Kyorugi #Sparring #Poomsae #Tul #Stance #ReadyStance #Footwork #Pivot #SwitchStep #DragStep #Punch #KnifeHand #Backfist #HammerFist #ElbowStrike #PalmHeel"
+ },
+ {
+  "id": "karate__soto-uke",
+  "art": "taekwondo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 Soto Uke와 태권도 바깥막기는 방향 명칭이 반대로 쓰여 동일 기술인지 불분명함.",
+  "evidence": "doc data/raw taekwondo line 162:  자세 전환에 사용. - **몸통막기(바깥막기 / 안막기)** --- 몸통 지르기·발차기를 옆으로 흘려 중심선을 비우지 않고 반격 각을 만든다."
+ },
+ {
+  "id": "karate__uchi-uke",
+  "art": "taekwondo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 Uchi Uke와 태권도 안막기는 방향 명칭이 반대로 쓰여 동일 기술인지 불분명함.",
+  "evidence": "doc data/raw taekwondo line 162:  자세 전환에 사용. - **몸통막기(바깥막기 / 안막기)** --- 몸통 지르기·발차기를 옆으로 흘려 중심선을 비우지 않고 반격 각을 만든다."
+ },
+ {
+  "id": "karate__feint",
+  "art": "taekwondo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태권도 문서에 페인트 스텝이 사용됨.",
+  "evidence": "doc data/raw taekwondo line 110: - **점프 스텝** --- 제자리에서 가볍게 뛰며 앞/뒤 다리를 바꾸거나 (스위치) 다음 기술을 숨기는 예비 동작(페인트)으로 사용. - **스위치 스텝** --- 앞발과 뒷발을 바꿔 상대가 읽고 있던 리듬을 깨고,"
+ },
+ {
+  "id": "wrestling__pivot",
+  "art": "taekwondo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 #Pivot 해시태그와 레슬링 피벗의 동일 여부 불분명함.",
+  "evidence": "doc data/raw taekwondo line 577: #WT #ITF #Kyorugi #Sparring #Poomsae #Tul #Stance #ReadyStance #Footwork #Pivot #SwitchStep #DragStep #Punch #KnifeHand #Backfist #HammerFist #ElbowStrike #PalmHeel"
+ },
+ {
+  "id": "wrestling__feint",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "태권도 #Feint는 타격 페인트로 레슬링 슛 페이크와 다름.",
+  "evidence": "doc data/raw taekwondo line 583: #SpinningKick #JumpingKick #DoubleSideKick #TargetKick #Combination #Counter #Feint #Distance #TargetArea #Head #Trunk #LowSection #PSS #ElectronicScoring"
+ },
+ {
+  "id": "kickboxing__switch-step",
+  "art": "taekwondo",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "태권도 문서에 스위치 스텝이 설명되고 #SwitchStep이 있음.",
+  "evidence": "doc data/raw taekwondo line 577: #WT #ITF #Kyorugi #Sparring #Poomsae #Tul #Stance #ReadyStance #Footwork #Pivot #SwitchStep #DragStep #Punch #KnifeHand #Backfist #HammerFist #ElbowStrike #PalmHeel"
+ },
+ {
+  "id": "boxing__feint",
+  "art": "taekwondo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태권도 해시태그에 #Feint가 포함됨.",
+  "evidence": "doc data/raw taekwondo line 583: #SpinningKick #JumpingKick #DoubleSideKick #TargetKick #Combination #Counter #Feint #Distance #TargetArea #Head #Trunk #LowSection #PSS #ElectronicScoring"
+ },
+ {
+  "id": "boxing__combination",
+  "art": "taekwondo",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "범용 #Combination 해시태그로 복싱 콤비네이션과 동일 여부 불분명함.",
+  "evidence": "doc data/raw taekwondo line 583: #SpinningKick #JumpingKick #DoubleSideKick #TargetKick #Combination #Counter #Feint #Distance #TargetArea #Head #Trunk #LowSection #PSS #ElectronicScoring"
+ },
+ {
+  "id": "boxing__block",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "해시태그 #Block 일반 단어 일치로 태권도 막기와 별개임.",
+  "evidence": "doc data/raw taekwondo line 579: #Punch #KnifeHand #Backfist #HammerFist #ElbowStrike #PalmHeel #Block #DoubleBlock #MountainBlock #WedgingBlock #ScissorBlock #FrontKick #RoundhouseKick #SideKick #Bac"
+ },
+ {
+  "id": "sambo__footwork",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "해시태그 #Footwork 일반 단어 일치임.",
+  "evidence": "doc data/raw taekwondo line 577: #WT #ITF #Kyorugi #Sparring #Poomsae #Tul #Stance #ReadyStance #Footwork #Pivot #SwitchStep #DragStep #Punch #KnifeHand #Backfist #HammerFist #ElbowStrike #PalmHeel"
+ },
+ {
+  "id": "bjj__거리-확보",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "태권도의 '거리 확보' 표현은 BJJ 그라운드 거리 확보 기술과 무관함.",
+  "evidence": "doc data/raw taekwondo line 345: - 짧은 발차기(무릎 높이 내려차기 등), 팔굽치기·손기술(ITF/호신술 맥락), 몸통 밀어내기, 클린치 상황 대응(심판 개입 전 거리 확보). "
+ },
+ {
+  "id": "kickboxing__장거리-long-kicking-range",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "태권도 장거리는 발이 닿지 않는 거리로 킥복싱 장거리 정의와 다름.",
+  "evidence": "doc data/raw taekwondo line 325:  ## 12.1 장거리 "
+ },
+ {
+  "id": "kickboxing__중거리-mid-punching-range",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "태권도 중거리는 발차기 거리로 니가 섞이는 킥복싱 중거리와 다름.",
+  "evidence": "doc data/raw taekwondo line 332:  ## 12.2 중거리 "
+ },
+ {
+  "id": "kickboxing__근거리-close-range-clinch",
+  "art": "taekwondo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "태권도 근거리는 니·클린치 중심이 아니어서 다름.",
+  "evidence": "doc data/raw taekwondo line 339:  ## 12.3 근거리 "
+ },
+ {
+  "id": "kickboxing__jumping-kick",
+  "art": "taekwondo",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태권도 해시태그에 #JumpingKick이 포함됨.",
+  "evidence": "doc data/raw taekwondo line 582: #AxeKick #CrescentKick #PushKick #HookKick #StampingKick #TwistKick #SpinningKick #JumpingKick #DoubleSideKick #TargetKick #Combination #Counter #Feint #Distance #Targ"
+ },
+ {
+  "id": "kickboxing__pivot",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Pivot과 킥복싱 피벗 풋워크의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 31: - Shuffle Step - Pivot - Hip Heist"
+ },
+ {
+  "id": "karate__feint",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 Feint는 슛 페이크로 가라테 타격 페인트와 다름.",
+  "evidence": "doc data/raw wrestling line 113: - Body Lock Entry - Feint - Fake Shot"
+ },
+ {
+  "id": "karate__clinch",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 그레코 클린치와 가라테 근접 컨트롤은 다름.",
+  "evidence": "doc data/raw wrestling line 559: ``` text Neutral Clinch (Greco-Roman) → Collar Tie / Bear Hug"
+ },
+ {
+  "id": "kickboxing__cross",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Wrist의 'Cross'가 우연히 일치함.",
+  "evidence": "doc data/raw wrestling line 307: - Bar Arm - Cross Wrist "
+ },
+ {
+  "id": "kickboxing__inside-control",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Inside Control과 킥복싱 클린치 Inside Control의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 68: - Overhook / Whizzer - Inside Control - Snap Control"
+ },
+ {
+  "id": "boxing__wrist-control",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Wrist Control과 복싱 클린치 손목 제어의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 60: - Inside Tie - Wrist Control - Two-on-One"
+ },
+ {
+  "id": "muay-thai__turn",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Turn-In/Tilt-Turn의 'Turn' 단어 일치임.",
+  "evidence": "doc data/raw wrestling line 412: - Base Recovery - Turn-In - Granby"
+ },
+ {
+  "id": "muay-thai__sweep-foot-sweep",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Sweep Single의 'Sweep' 단어 일치임.",
+  "evidence": "doc data/raw wrestling line 134: - Inside Single - Sweep Single - Snatch Single"
+ },
+ {
+  "id": "kickboxing__roll",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Granby Roll 등의 'Roll' 단어 일치로 타격 회피 롤과 무관함.",
+  "evidence": "doc data/raw wrestling line 36: - Switch - Granby Roll - Bridge"
+ },
+ {
+  "id": "kickboxing__shuffle",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Shuffle Step과 킥복싱 Shuffle의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 30: - Back Step - Shuffle Step - Pivot"
+ },
+ {
+  "id": "boxing__drop-step",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 Drop Step은 슛 진입으로 복싱 Drop Step과 다름.",
+  "evidence": "doc data/raw wrestling line 102: - Penetration Step - Drop Step - Arm Drag"
+ },
+ {
+  "id": "boxing__feint",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 Feint는 슛 페이크로 복싱 펀치 페인트와 다름.",
+  "evidence": "doc data/raw wrestling line 113: - Body Lock Entry - Feint - Fake Shot"
+ },
+ {
+  "id": "boxing__combination",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Guillotine Pin Combination의 'Combination' 단어 일치임.",
+  "evidence": "doc data/raw wrestling line 356: - Chicken Wing (Key Lock) - Guillotine Pin Combination - Tight Waist and Half Nelson"
+ },
+ {
+  "id": "boxing__clinch",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 그레코 클린치와 복싱 클린치는 다름.",
+  "evidence": "doc data/raw wrestling line 559: ``` text Neutral Clinch (Greco-Roman) → Collar Tie / Bear Hug"
+ },
+ {
+  "id": "boxing__duck",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Duck Under 테이크다운으로 복싱 덕과 다름.",
+  "evidence": "doc data/raw wrestling line 105: - Snap Down - Duck Under - Slide By"
+ },
+ {
+  "id": "boxing__block",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Down Block의 'Block' 단어 일치임.",
+  "evidence": "doc data/raw wrestling line 448: - Sprawl - Down Block - Crossface"
+ },
+ {
+  "id": "boxing__hand-fighting",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 핸드파이팅과 복싱 인파이팅 손싸움의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 39: - Base Building - Hand Fighting - Sprawl"
+ },
+ {
+  "id": "sambo__single-leg",
+  "art": "wrestling",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "레슬링 문서와 해시태그에 Single Leg가 핵심 기술로 등장함.",
+  "evidence": "doc data/raw wrestling line 83: - Front Headlock - Single-Leg Position - Double-Leg Position"
+ },
+ {
+  "id": "judo__bridge",
+  "art": "wrestling",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "레슬링 기본 움직임 목록에 Bridge가 포함됨.",
+  "evidence": "doc data/raw wrestling line 37: - Granby Roll - Bridge - Base Building"
+ },
+ {
+  "id": "judo__turn-in",
+  "art": "wrestling",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "레슬링 탈출 목록에 Turn-In이 포함됨.",
+  "evidence": "doc data/raw wrestling line 412: - Base Recovery - Turn-In - Granby"
+ },
+ {
+  "id": "sambo__reversal",
+  "art": "wrestling",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "레슬링 문서에 리버설이 독립 섹션으로 존재함.",
+  "evidence": "doc data/raw wrestling line 418:  ## 13. 리버설 (Reversal) "
+ },
+ {
+  "id": "bjj__guillotine",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 Guillotine Tilt/Cradle은 핀 기술이며 조르기는 금지됨.",
+  "evidence": "doc data/raw wrestling line 323: - Far Wrist Tilt - Guillotine Tilt - Tight Waist Tilt"
+ },
+ {
+  "id": "judo__kumi-kata",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "'Base (베이스 잡기)'의 '잡기' 단어 일치임.",
+  "evidence": "doc data/raw wrestling line 615:  - Base (베이스 잡기) - Stand-Up"
+ },
+ {
+  "id": "bjj__wrist-control",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 가드 손목 제어와 레슬링 스탠딩 손목 제어는 맥락이 다름.",
+  "evidence": "doc data/raw wrestling line 60: - Inside Tie - Wrist Control - Two-on-One"
+ },
+ {
+  "id": "bjj__back-take",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Single to Back Take/Go-Behind와 BJJ 오픈가드 백테이크의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 146: - Single to Double - Single to Back Take "
+ },
+ {
+  "id": "bjj__elevation",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "핸드 스탠드 훈련으로 Elevation과 무관함.",
+  "evidence": "library add_teq wrestling__핸드-스탠드: 핸드 스탠드 / 핸드 스탠드는 두 손으로 지면을 짚고 몸을 거꾸로 세워 균형을 잡는 대표적인 체중 이용 훈련입니다. 어깨와 상체의 근력, 코어 안정성, 그리고 공간 감각 및 균형 감각을 동시에 강화하는 데 효과적입니다. 레슬링에서는 매트 위에서의 신체 제어 능력을 높이고 부상을 예방하기 위한 단"
+ },
+ {
+  "id": "bjj__over-under-pass",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "레슬링 Over-Under는 클린치로 BJJ 가드 패스와 다름.",
+  "evidence": "doc data/raw wrestling line 188: - Double Underhooks - Over-Under - Bear-Hug Style Control"
+ },
+ {
+  "id": "bjj__hand-fighting",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "BJJ 백 방어 핸드파이팅과 레슬링 스탠딩 핸드파이팅은 다름.",
+  "evidence": "doc data/raw wrestling line 39: - Base Building - Hand Fighting - Sprawl"
+ },
+ {
+  "id": "bjj__breakdown",
+  "art": "wrestling",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "레슬링 탑 흐름에 Breakdown이 핵심 단계로 명시됨.",
+  "evidence": "doc data/raw wrestling line 538:  → Top Control → Breakdown → Tilt / Turn"
+ },
+ {
+  "id": "kickboxing__square-stance",
+  "art": "wrestling",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 Square Stance와 킥복싱 Square Stance의 동일 여부 불분명함.",
+  "evidence": "doc data/raw wrestling line 79: - Neutral - Square Stance - Staggered Stance"
+ },
+ {
+  "id": "kickboxing__parry-jab-cross",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "Cross Wrist 등 단어 일치일 뿐 타격 콤비네이션이 없음.",
+  "evidence": "doc data/raw wrestling line 307: - Bar Arm - Cross Wrist "
+ },
+ {
+  "id": "taekwondo__밀기",
+  "art": "wrestling",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "백 브릿지 설명에 태권도 '밀기' 이동이 없음.",
+  "evidence": "library add_teq wrestling__백-브릿지: 백 브릿지 / 백 브릿지는 등과 목, 다리의 힘을 이용하여 매트 위에서 몸을 아치 형태로 들어 올리는 레슬링의 기초 방어 및 체력 훈련 동작입니다. 매트에 매칭(Pin)되는 위험한 상황에서 어깨가 바닥에 닿지 않도록 방어할 때 사용됩니다. 또한 목 근육과 후면 사슬(Posterior chain)의"
+ }
+]

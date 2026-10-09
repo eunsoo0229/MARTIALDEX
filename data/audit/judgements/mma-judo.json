@@ -1,0 +1,863 @@
+[
+ {
+  "id": "judo__ayumi-ashi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "일반적인 보행 이동으로 별도 MMA 기술로 볼 수 없다.",
+  "evidence": "generic walking, not a technique"
+ },
+ {
+  "id": "judo__tsugi-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "슬라이드 스텝은 보편적 풋워크지만 유도 고유 이동법을 MMA 기술로 연결할지 불확실하다.",
+  "evidence": "S1 Range Management only; footwork concept"
+ },
+ {
+  "id": "judo__tai-sabaki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "몸 돌리기 원리는 보편적이나 MMA 기술로서의 정체성이 불분명하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__osoto-gari",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "오버훅/언더훅 클린치에서 노기로 쓰이는 대표적 MMA 클린치 테이크다운이다.",
+  "evidence": "S1 Clinch Takedown Entry / Cage Wrestling; S2 legal, no gi needed"
+ },
+ {
+  "id": "judo__de-ashi-barai",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "타이밍 발쓸기로 노기 상태에서 MMA 스탠딩 공방에 실제 사용된다.",
+  "evidence": "S1 Reactive Takedown; S2 legal"
+ },
+ {
+  "id": "judo__two-on-one",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "투온원 팔 제어는 MMA 클린치·케이지 레슬링의 핵심 그립이다.",
+  "evidence": "S1 Clinch(arm control)/Cage Wrestling; no gi"
+ },
+ {
+  "id": "judo__sleeve-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__lapel-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__yoko-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도식 희생 던지기로 대개 도복 그립 기반이며 MMA 사용 사례가 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__sumi-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "노기 언더훅 변형이 있으나 MMA 실전 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__yoko-guruma",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "희생 던지기로 MMA 사용이 드물고 노기 적용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ura-nage",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디락 기반의 뒤로 던지기로 노기 MMA 클린치에서 사용된다.",
+  "evidence": "S1 Clinch Takedown Entry; S2 legal if not spiking"
+ },
+ {
+  "id": "judo__guard-recovery",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 레코드가 하위에서의 가드 회복을 직접 명시한다.",
+  "evidence": "mmaDataMentions: Guard Recovery Under Strikes"
+ },
+ {
+  "id": "judo__bridge",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "브릿지(업아)는 MMA에서 마운트 탈출과 가드 회복에 쓰인다.",
+  "evidence": "S1 Defense/Framing·Guard Recovery; no gi"
+ },
+ {
+  "id": "judo__turn-in",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 네와자 탈출 동작으로 MMA에서의 정체성이 불명확하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__shizen-hontai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 규칙에 맞춘 직립 기본 자세로 MMA 스탠스로 전이되지 않는다.",
+  "evidence": "sport-specific stance concept"
+ },
+ {
+  "id": "judo__jigo-hontai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 고유 방어 자세 개념으로 MMA 기술이 아니다.",
+  "evidence": "sport-specific stance concept"
+ },
+ {
+  "id": "judo__migi-shizentai-hidari-shizentai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "유도 고유 좌우 자연체 자세 개념이다.",
+  "evidence": "sport-specific stance concept"
+ },
+ {
+  "id": "judo__kumi-kata",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "유도의 쿠미카타는 도복 잡기를 뜻하며 언급된 MMA 레코드는 무관한 기술이다.",
+  "evidence": "S2 attire: gi; mmaDataMentions unrelated (passing/G&P)"
+ },
+ {
+  "id": "judo__kuzushi-mae",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-ushiro",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-migi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-hidari",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-migi-mae",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-hidari-mae",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-migi-ushiro",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__kuzushi-hidari-ushiro",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "균형 무너뜨리기 방향/원리 개념이며 독립된 기술이 아니다.",
+  "evidence": "not a technique (concept)"
+ },
+ {
+  "id": "judo__standard-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__cross-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__same-side-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__russian-style-grip",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔을 감는 러시안 그립은 노기 러시안 타이와 유사하나 유도식은 도복 등을 잡는 경우가 많아 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__grip-fighting",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복(재킷/벨트/깃/소매) 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis not allowed"
+ },
+ {
+  "id": "judo__hiza-guruma",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "도복 그립으로 상대를 돌리는 발기술로 노기 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__sasae-tsurikomi-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "끌어올리는 도복 그립 의존도가 높아 노기 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__osoto-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오소토가리 변형으로 MMA 사용 여부가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__osoto-guruma",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오소토가리 변형으로 MMA 사용 여부가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ouchi-gari",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "인사이드 트립으로 MMA 클린치·케이지에서 흔히 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry/Cage Wrestling; no gi"
+ },
+ {
+  "id": "judo__kouchi-gari",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "작은 안다리 걸기는 MMA 클린치와 케이지에서 자주 쓰이는 트립이다.",
+  "evidence": "S1 Clinch Takedown Entry/Cage Wrestling; no gi"
+ },
+ {
+  "id": "judo__kosoto-gari",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "작은 바깥 베기는 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__kosoto-gake",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "아웃사이드 트립으로 MMA 바디락·클린치에서 흔히 쓰인다.",
+  "evidence": "S1 Clinch Takedown Entry; no gi"
+ },
+ {
+  "id": "judo__okuri-ashi-barai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "양발 후리기는 도복 리프트 의존도가 높아 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__harai-tsurikomi-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "도복 리프트 기반 발기술로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ashi-guruma",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "도복 그립 기반 회전 발기술로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__seoi-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 세오이나게는 도복 그립 의존이 크고 노기 MMA 사용이 드물다.",
+  "evidence": "S2 attire risk; rare in MMA"
+ },
+ {
+  "id": "judo__ippon-seoi-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔을 잡는 노기 변형이 가능하지만 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__morote-seoi-nage",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "양손 세오이나게는 깃+소매 그립으로 정의되어 MMA에서 불가능하다.",
+  "evidence": "S2 attire: gi lapel/sleeve grip"
+ },
+ {
+  "id": "judo__seoi-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "노기 변형이 있으나 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__tai-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "타이오토시는 도복 당김 의존도가 높아 노기 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__sukui-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "다리를 퍼올리는 노기 던지기지만 MMA에서의 독립 기술 정체성이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uki-otoshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 소매·깃을 당기는 순수 손기술로 MMA에서 재현할 수 없다.",
+  "evidence": "S2 attire: gi-pull throw"
+ },
+ {
+  "id": "judo__sumi-otoshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 당김에 의존하는 손기술로 MMA에서 재현할 수 없다.",
+  "evidence": "S2 attire: gi-pull throw"
+ },
+ {
+  "id": "judo__obi-otoshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "상대 허리띠를 잡는 던지기로 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: belt grip"
+ },
+ {
+  "id": "judo__kuchiki-daoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "한 손 다리 잡기 밀기 기술로 MMA에서는 싱글레그류로 흡수되어 별도 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__kibisu-gaeshi",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "발뒤꿈치를 잡아 넘기는 앵클 픽 계열로 MMA 테이크다운에 쓰인다.",
+  "evidence": "S1 takedowns (ankle pick); no gi"
+ },
+ {
+  "id": "judo__yama-arashi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "같은 쪽 깃·소매 그립으로 정의되는 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: gi grips"
+ },
+ {
+  "id": "judo__uchi-mata-sukashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "우치마타 흘리기 카운터의 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uki-goshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "허리 감기 노기 던지기지만 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__o-goshi",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "허리를 감는 힙 스로우로 노기 MMA 클린치에서 사용된다.",
+  "evidence": "S1 Clinch Takedown Entry (underhook/body); no gi"
+ },
+ {
+  "id": "judo__koshi-guruma",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "헤드락 힙 스로우로 MMA 클린치에서 실제 사용된다.",
+  "evidence": "S1 Clinch Takedown Entry (neck control); no gi"
+ },
+ {
+  "id": "judo__tsurikomi-goshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃을 들어 올리는 그립으로 정의되어 MMA에서 불가능하다.",
+  "evidence": "S2 attire: lapel grip"
+ },
+ {
+  "id": "judo__sode-tsurikomi-goshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "소매 그립으로 정의되는 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: sleeve grip"
+ },
+ {
+  "id": "judo__tsuri-goshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "허리띠를 잡아 들어 올리는 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: belt grip"
+ },
+ {
+  "id": "judo__harai-goshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오버훅 노기 변형이 있으나 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__hane-goshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uchi-mata",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 라이브러리 레코드(Uchi Mata to Armbar)가 직접 명시하는 노기 클린치 던지기다.",
+  "evidence": "mmaDataMentions: Uchi Mata to Armbar"
+ },
+ {
+  "id": "judo__utsuri-goshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤 허리 옮기기 카운터의 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ushiro-goshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "들어 올리는 카운터 던지기로 MMA 사용이 드물고 스파이킹 위험이 있다.",
+  "evidence": "S2 spiking risk"
+ },
+ {
+  "id": "judo__tomoe-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "토모에나게는 대개 도복 그립 기반이며 MMA 사용이 매우 드물다.",
+  "evidence": "S2 attire risk"
+ },
+ {
+  "id": "judo__hikikomi-gaeshi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "상대 등 너머 허리띠를 잡는 희생 던지기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: belt grip"
+ },
+ {
+  "id": "judo__tawara-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "더블레그 방어 롤링 카운터로 노기 가능하나 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__yoko-wakare",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "희생 던지기로 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__yoko-gake",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "소매 그립 기반 희생 발기술로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uki-waza",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "희생 던지기로 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__tani-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤로 떨어뜨리는 카운터로 노기 가능하나 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__daki-wakare",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "터틀 상대 들어 넘기기로 MMA 사용이 드물다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__osoto-makikomi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "감아 던지기는 노기 가능하나 등을 내주는 위험으로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uchi-makikomi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "감아 던지기로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__harai-makikomi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "감아 던지기로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__hane-makikomi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "감아 던지기로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__uchi-mata-makikomi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "감아 던지기로 MMA 사용이 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ouchi-gari-uchi-mata",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__ouchi-gari-seoi-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__kouchi-gari-seoi-nage",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__kouchi-gari-tai-otoshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__osoto-gari-uchi-mata",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__osoto-gari-ouchi-gari",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__de-ashi-barai-sasae-tsurikomi-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__sasae-tsurikomi-ashi-osoto-gari",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__uchi-mata-ouchi-gari",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__kouchi-gari-uchi-mata",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 연결 기술 조합으로 MMA에서 이 조합 자체의 사용이 확인되지 않는다.",
+  "evidence": "combination; no S1 record names it"
+ },
+ {
+  "id": "judo__uchi-mata-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__ouchi-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__kouchi-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__osoto-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__harai-goshi-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__hane-goshi-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__tsubame-gaeshi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__sasae-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__tani-otoshi-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 되치기 카운터로 노기 MMA 사용 빈도가 불확실하다.",
+  "evidence": "kaeshi waza; no S1 record"
+ },
+ {
+  "id": "judo__kesa-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "케사가타메(스카프 홀드)는 MMA 탑 컨트롤과 파운드에 쓰인다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "judo__kuzure-kesa-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "변형 케사가타메는 노기 스카프 홀드로 MMA 탑 컨트롤에 쓰인다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "judo__kata-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "어깨 굳히기(암 트라이앵글 홀드)는 MMA 컨트롤·서브미션으로 흔히 쓰인다.",
+  "evidence": "S1 Ground Control/Submission; no gi"
+ },
+ {
+  "id": "judo__kami-shiho-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "위누르기(노스-사우스)는 노기 MMA 탑 컨트롤로 쓰인다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "judo__kuzure-kami-shiho-gatame",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "변형 위누르기로 MMA에서 별도 사용 여부가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__yoko-shiho-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "가로누르기(사이드 컨트롤)는 MMA 핵심 탑 포지션이다.",
+  "evidence": "S1 Ground Control; no gi"
+ },
+ {
+  "id": "judo__tate-shiho-gatame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "세로누르기(마운트)는 MMA 핵심 포지션이다.",
+  "evidence": "S1 Posture Control in Mount; no gi"
+ },
+ {
+  "id": "judo__kuzure-tate-shiho-gatame",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "변형 세로누르기로 MMA에서 별도 사용 여부가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__ushiro-kesa-gatame",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "역 케사가타메로 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__frame",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하위 포지션 프레이밍은 MMA 레코드 Framing과 동일한 기술이다.",
+  "evidence": "S1 Framing (Defense); no gi"
+ },
+ {
+  "id": "judo__turtle-recovery",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "터틀 회복은 MMA에서 정체성이 다를 수 있어 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__kesa-escape",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "케사 탈출의 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__yoko-shiho-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사이드 컨트롤 탈출은 MMA 하위 방어의 핵심이다.",
+  "evidence": "S1 Defense/Guard Recovery; no gi"
+ },
+ {
+  "id": "judo__kami-shiho-escape",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "노스-사우스 탈출의 MMA 사용은 가능하나 근거가 약하다.",
+  "evidence": "S1에 동일 유형 근거가 없거나 노기 MMA 실전 사용 빈도 불확실"
+ },
+ {
+  "id": "judo__tate-shiho-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "마운트 탈출은 MMA 하위 방어의 핵심이다.",
+  "evidence": "S1 Defense/Guard Recovery; no gi"
+ },
+ {
+  "id": "judo__ude-garami",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔 감아 꺾기(키무라/아메리카나)는 MMA 서브미션이다.",
+  "evidence": "S1 Submission (kimura); S2 legal"
+ },
+ {
+  "id": "judo__okuri-eri-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃을 잡는 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: lapel choke"
+ },
+ {
+  "id": "judo__kata-ha-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃 그립 기반 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: lapel choke"
+ },
+ {
+  "id": "judo__kata-juji-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃 십자 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: collar choke"
+ },
+ {
+  "id": "judo__gyaku-juji-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃 십자 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: collar choke"
+ },
+ {
+  "id": "judo__nami-juji-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃 십자 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: collar choke"
+ },
+ {
+  "id": "judo__sode-guruma-jime",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도 원형은 소매 그립이지만 노기 에제키엘이 MMA에서 사용된 사례가 있어 불확실하다.",
+  "evidence": "S2 attire (sleeve) vs no-gi Ezekiel variant"
+ },
+ {
+  "id": "judo__ryote-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "양 깃을 잡는 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: collar choke"
+ },
+ {
+  "id": "judo__tsukkomi-jime",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "깃을 찔러 넣는 조르기로 MMA에서 불가능하다.",
+  "evidence": "S2 attire: lapel choke"
+ }
+]

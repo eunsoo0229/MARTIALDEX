@@ -1,0 +1,1199 @@
+[
+ {
+  "id": "wrestling__wrestling-stance",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 그래플러가 클린치·테이크다운 공방에서 쓰는 기본 레슬링 자세다.",
+  "evidence": "S1 Range Management(테이크다운 대비 낮은 자세), Level Change Double Leg; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__motion-circle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 고유의 모션·서클링 개념으로 MMA 풋워크와 동일 기술인지 불분명하다.",
+  "evidence": "S1 Range Management와 유사하나 명시 없음"
+ },
+ {
+  "id": "wrestling__level-change",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 테이크다운 진입의 핵심 동작으로 MMA 기록이 직접 언급한다.",
+  "evidence": "mmaDataMentions: level-change-double-leg, overhand, check-hook, clinch-takedown-entry; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__penetration-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블/싱글레그 진입 스텝으로 MMA 테이크다운에서 그대로 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__back-step",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 콤비네이션 기록(킥-백스텝-더블레그)이 직접 이름을 든다.",
+  "evidence": "mmaDataMentions: lead-kick-back-step-double-leg; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__shuffle-step",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 풋워크로 레슬링 셔플 스텝이 MMA 기술로 별도 쓰이는지 불분명하다.",
+  "evidence": "S1 Range Management에 간접적; 명시 없음"
+ },
+ {
+  "id": "wrestling__pivot",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "범용 회전 동작으로 MMA 기술로서의 정체성이 불분명하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__hip-heist",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하위에서 일어나거나 스크램블할 때 MMA에서 널리 쓰는 동작이다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__stand-up",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하위 포지션에서 일어서기는 MMA(특히 케이지 월워크)의 핵심 탈출이다.",
+  "evidence": "S1 Cage Wrestling, Scramble; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__sit-out",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "등 뒤 컨트롤·터틀 상황에서 빠져나오는 탈출로 MMA 스크램블에서 사용된다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__switch",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "바텀 리버설 기술로 MMA에서는 드물게 쓰여 확신하기 어렵다.",
+  "evidence": "S1에 리버설 기록 없음; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__granby-roll",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 링크 기록이 그랜비 롤을 직접 연결하며 스크램블·가드 회복에 쓰인다.",
+  "evidence": "mmaDataMentions: link__mixed-martial-arts__wrestling__granby-roll; S1 Scramble"
+ },
+ {
+  "id": "wrestling__bridge",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 브릿지(폴 회피)는 MMA 마운트 탈출 브릿지와 용도가 달라 불확실하다.",
+  "evidence": "S1 방어(Framing/Guard Recovery)와 간접 관련; 명시 없음"
+ },
+ {
+  "id": "wrestling__base-building",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하위에서 베이스를 세워 일어나는 동작으로 MMA 터틀/스탠드업에 쓰인다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__hand-fighting",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "클린치·테이크다운 공방의 손싸움은 MMA 그래플링의 기본이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__inside-tie",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "안쪽 팔(이두) 타이는 MMA 클린치에서 흔히 쓰는 그립이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__wrist-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손목 컨트롤(투온원 등)은 MMA 케이지 레슬링에서 자주 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__russian-tie",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "러시안 타이는 MMA 케이지 레슬링에서 대표적으로 쓰이는 그립이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__elbow-control",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "팔꿈치 컨트롤 단독 그립이 MMA 기술로 구분되어 쓰이는지 불확실하다.",
+  "evidence": "S1 클린치 그립 중 언더훅/오버훅만 명시"
+ },
+ {
+  "id": "wrestling__biceps-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "이두 컨트롤은 MMA 클린치의 기본 그립으로 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__head-and-arm-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "머리와 팔 컨트롤은 MMA 클린치 및 길로틴/테이크다운 셋업에 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__inside-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "안쪽 손/언더훅 위치 선점은 MMA 클린치의 핵심이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__snap-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스냅다운 컨트롤은 MMA에서 프론트 헤드락·스프롤 반격에 쓰인다.",
+  "evidence": "S1 Sprawl to Strikes / Takedown Defense (MMA) / Submission Setup(길로틴) — 프론트 헤드락 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__neutral",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "포크스타일 경기의 시작 포지션 구분(뉴트럴)인 규칙 개념이다.",
+  "evidence": "규칙/포지션 구분 개념, S1 해당 없음"
+ },
+ {
+  "id": "wrestling__square-stance",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 스탠스 세부 분류로 MMA(타격 고려 스탠스)에 그대로 적용되는지 불분명하다.",
+  "evidence": "S1 Range Management(MMA 고유 스탠스)"
+ },
+ {
+  "id": "wrestling__staggered-stance",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스탠스 세부 분류로 MMA 기술로 별도 연결할지 불분명하다.",
+  "evidence": "S1 Range Management"
+ },
+ {
+  "id": "wrestling__low-stance",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "낮은 레슬링 자세는 MMA에서 니·어퍼컷 위험이 있어 사용 정도가 불확실하다.",
+  "evidence": "S1 Range Management(복싱보다 낮은 자세)"
+ },
+ {
+  "id": "wrestling__front-headlock",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 헤드락은 MMA에서 스프롤 후 컨트롤·길로틴·니 공격에 쓰인다.",
+  "evidence": "S1 Sprawl to Strikes / Takedown Defense (MMA) / Submission Setup(길로틴) — 프론트 헤드락 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__single-leg-position",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글레그 포지션은 MMA 케이지 레슬링에서 흔하다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__double-leg-position",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블레그 포지션은 MMA 테이크다운의 기본이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__drop-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블레그 진입·마무리 시 드롭 스텝은 MMA에서도 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__snap-down",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스냅다운은 MMA에서 프론트 헤드락·길로틴 진입에 자주 쓰인다.",
+  "evidence": "S1 Sprawl to Strikes / Takedown Defense (MMA) / Submission Setup(길로틴) — 프론트 헤드락 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__slide-by",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "슬라이드 바이로 등 뒤를 잡는 동작은 MMA 케이지 레슬링에서 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__shuck-by",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "셔크 바이가 MMA에서 실제로 얼마나 쓰이는지 확신하기 어렵다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__go-behind",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "고 비하인드(등 잡기)는 MMA 클린치·스크램블에서 쓰인다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__throw-by",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스로 바이는 MMA에서 드물어 사용 여부가 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__russian-tie-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "러시안 타이 진입은 MMA 클린치 테이크다운 셋업에 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__underhook-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "언더훅 진입은 S1 클린치 테이크다운 진입 그 자체다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__body-lock-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디락 진입은 MMA 클린치·케이지 테이크다운에 흔히 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__feint",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트는 MMA에서 테이크다운 위협과 함께 핵심적으로 쓰인다.",
+  "evidence": "S1 Strike to Takedown Transition; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__fake-shot",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태클 페이크는 MMA에서 타격과 테이크다운을 섞는 기본 셋업이다.",
+  "evidence": "S1 Strike to Takedown Transition, Overhand(레벨체인지); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__shot-feint-to-set-up",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "태클 페이크로 다른 공격을 여는 셋업은 MMA에서 흔하다.",
+  "evidence": "S1 Strike to Takedown Transition; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__high-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이 싱글은 MMA 케이지·클린치 테이크다운에서 자주 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__sweep-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스윕 싱글은 MMA 테이크다운으로 사용된다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__snatch-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스내치 싱글은 MMA에서 반응형 테이크다운으로 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__near-ankle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "니어 앵클이 픽인지 포크스타일 라이드인지 정체성이 불분명하다.",
+  "evidence": "S1 Reactive Takedown(앵클 픽)과 다를 수 있음"
+ },
+ {
+  "id": "wrestling__far-ankle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "파 앵클은 포크스타일 브레이크다운 성격이 강해 MMA 사용이 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__knee-tap-from-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글에서 니탭 전환은 MMA에서 흔히 쓰는 마무리다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__crackdown-position",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "크랙다운(싱글 방어 측 롤)은 MMA 사용이 드물고 목 착지 위험이 있다.",
+  "evidence": "S1 명시 없음; S2 머리/목 스파이킹 반칙 관련 위험"
+ },
+ {
+  "id": "wrestling__back-trip",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "백 트립은 MMA 클린치·싱글 마무리로 흔하다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__lift-and-return",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "들어 올려 매트로 되돌리기는 MMA 케이지 레슬링에서 흔하다.",
+  "evidence": "S1 Cage Wrestling; S2 머리 스파이킹만 아니면 합법"
+ },
+ {
+  "id": "wrestling__cutback",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "컷백의 정확한 정체(싱글 마무리 변형)가 MMA에서 별도 쓰이는지 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__switch-off",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스위치 오프는 MMA에서 드물게 언급되어 확신하기 어렵다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__single-to-double",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글에서 더블 전환은 MMA 체인 레슬링에서 흔하다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__single-to-back-take",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글에서 백 테이크는 MMA 스크램블에서 흔하다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__blast-double",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "블래스트 더블은 MMA에서 대표적인 테이크다운이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__snatch-double",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스내치 더블이 MMA에서 별도 기술로 쓰이는지 불분명하다.",
+  "evidence": "S1 Level Change Double Leg(일반 더블)"
+ },
+ {
+  "id": "wrestling__high-double",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이 더블은 MMA 케이지 레슬링에서 흔하다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__low-double",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "로우 더블은 MMA에서 니 카운터 위험으로 사용 빈도가 불확실하다.",
+  "evidence": "S1 Level Change Double Leg(일반 더블)"
+ },
+ {
+  "id": "wrestling__double-leg-from-tie",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "타이에서 더블레그 진입은 MMA 클린치 테이크다운이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__double-leg-from-underhook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "언더훅에서 더블레그는 S1 클린치 테이크다운 진입에 해당한다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__double-leg-finish",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블레그 마무리는 MMA 테이크다운의 필수 부분이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__corner-finish",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "코너 돌기 마무리는 MMA 더블레그에서 흔히 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__lift-finish",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "들어올려 마무리하는 더블은 MMA에서 쓰이며 머리 착지만 피하면 합법이다.",
+  "evidence": "S1 Level Change Double Leg; S2 스파이킹 금지 범위 외"
+ },
+ {
+  "id": "wrestling__cutback-finish",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "컷백 피니시의 MMA 사용 여부가 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__reshot-double",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "재슛 더블은 MMA 스크램블에서 가능하나 별도 기술로 쓰이는지 불확실하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__locking-hands-position",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손 잠금 형태 자체는 그립 세부로 MMA 기술로 연결할지 불분명하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__rear-body-lock",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "리어 바디락은 MMA에서 백 컨트롤·테이크다운에 흔하다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__front-body-lock",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 바디락은 MMA 클린치 테이크다운에 쓰인다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__double-underhooks",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블 언더훅은 MMA 클린치에서 흔한 지배 포지션이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__over-under",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "오버-언더는 S1 클린치 그립(언더훅/오버훅) 그 자체다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__bear-hug-style-control",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "베어허그식 컨트롤은 정체가 모호하여 판단이 어렵다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__body-lock-takedown",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디락 테이크다운은 MMA 클린치 테이크다운의 대표 기술이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__outside-trip",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "아웃사이드 트립은 MMA 클린치에서 흔하다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__inside-trip",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MMA 기록(Body Lock Inside Trip)이 직접 이름을 든다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__body-lock-inside-trip; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__mat-return",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "매트 리턴은 MMA 케이지 레슬링에서 상대를 다시 눕히는 데 흔히 쓰인다.",
+  "evidence": "S1 Cage Wrestling; S2 스파이킹 범위 외"
+ },
+ {
+  "id": "wrestling__rear-lift-return",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "뒤에서 들어 리턴하는 동작은 MMA 백 컨트롤 테이크다운이다.",
+  "evidence": "S1 Cage Wrestling, Scramble to Back Take"
+ },
+ {
+  "id": "wrestling__ankle-pick",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "앵클 픽은 MMA 리액티브 테이크다운 기록에서 언급된다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__reactive-takedown; S1 테이크다운(ankle pick)"
+ },
+ {
+  "id": "wrestling__single-ankle-pick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글 앵클 픽은 MMA에서 쓰이는 앵클 픽 형태다.",
+  "evidence": "S1 테이크다운(ankle pick)"
+ },
+ {
+  "id": "wrestling__double-ankle-pick",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "더블 앵클 픽은 MMA에서 드물어 불확실하다.",
+  "evidence": "S1 ankle pick 일반만 명시"
+ },
+ {
+  "id": "wrestling__high-crotch-lift",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이 크로치 리프트는 MMA 테이크다운으로 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__high-crotch-dump",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하이 크로치 덤프 마무리는 MMA에서 쓰인다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg/Reactive Takedown/Cage Wrestling); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__head-and-arm-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "헤드 앤 암 스로는 MMA에서 간혹 쓰이나 빈도가 불확실하다.",
+  "evidence": "S1 투척 기록 없음; 머리 착지 시 S2 스파이킹 주의"
+ },
+ {
+  "id": "wrestling__headlock-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "헤드락 스로는 MMA에서 드물고 등 노출 위험으로 사용 여부가 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__arm-spin",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "암 스핀은 MMA에서 드물게 쓰여 확신하기 어렵다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__arm-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "암 스로는 MMA에서 드물게 쓰인다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__hip-toss",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "힙 토스는 MMA에서 간혹 쓰이나 확신할 근거가 부족하다.",
+  "evidence": "S1 명시 없음(클린치 테이크다운 일반)"
+ },
+ {
+  "id": "wrestling__lateral-drop",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "래터럴 드롭은 MMA에서 드물고 머리/목 착지 위험이 있다.",
+  "evidence": "S2 'Spiking an opponent to the canvas on his head or neck' 반칙 위험 + S1에 투척 기록 없음"
+ },
+ {
+  "id": "wrestling__head-and-arm-spin",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "헤드 앤 암 스핀은 MMA 사용이 불분명하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__duckunder-to-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "덕언더 후 스로는 MMA에서 드물어 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__body-lock-throw",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "바디락 스로(수플렉스류)는 MMA에서 간혹 쓰이나 스파이킹 위험이 있다.",
+  "evidence": "S2 'Spiking an opponent to the canvas on his head or neck' 반칙 위험 + S1에 투척 기록 없음"
+ },
+ {
+  "id": "wrestling__bear-hug",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "베어허그(바디락) 테이크다운은 MMA 클린치에서 흔하다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__gut-wrench",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "거트 렌치는 파테르 상황에서 노출 점수를 얻는 그레코/자유형 기술로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(그레코/자유형 점수용)"
+ },
+ {
+  "id": "wrestling__suplex",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "수플렉스는 MMA에서 드물게 쓰이며 머리/목 스파이킹 반칙 위험이 있다.",
+  "evidence": "S2 'Spiking an opponent to the canvas on his head or neck' 반칙 위험 + S1에 투척 기록 없음"
+ },
+ {
+  "id": "wrestling__headlock",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "헤드락 자체는 MMA에서 쓰이나 레슬링 투척용 헤드락과 정체가 다를 수 있다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__lift",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "일반 리프트는 범위가 넓어 MMA 기술로 특정하기 어렵다.",
+  "evidence": "S1 Cage Wrestling 간접"
+ },
+ {
+  "id": "wrestling__body-lock-lift",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바디락 리프트는 MMA 케이지 레슬링에서 흔하다.",
+  "evidence": "S1 Cage Wrestling; S2 스파이킹만 금지"
+ },
+ {
+  "id": "wrestling__front-headlock-exposure",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "프론트 헤드락에서 등을 노출시켜 점수를 얻는 레슬링 득점 기술이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__sprawl-to-front-headlock",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스프롤 후 프론트 헤드락은 MMA 테이크다운 방어 후 반격의 표준이다.",
+  "evidence": "S1 Sprawl to Strikes / Takedown Defense (MMA) / Submission Setup(길로틴) — 프론트 헤드락 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__spin-behind",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스핀 비하인드(등 돌아가기)는 MMA 스프롤 후 스크램블에서 쓰인다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__near-side-crank-position",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "니어사이드 크랭크 포지션의 MMA 사용이 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__front-headlock-to-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 헤드락에서 싱글 전환은 MMA 스크램블에서 쓰인다.",
+  "evidence": "S1 Sprawl to Strikes / Takedown Defense (MMA) / Submission Setup(길로틴) — 프론트 헤드락 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__front-headlock-to-ankle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "프론트 헤드락에서 앵클 전환은 MMA 사용 빈도가 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__front-headlock-to-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 헤드락에서 백 테이크는 MMA에서 흔하다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__spiral-ride",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "스파이럴 라이드는 포크스타일 라이딩 타임용 기술로 MMA 사용이 거의 없다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__tight-waist",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "타이트 웨이스트는 MMA 터틀 라이딩에서 쓰이기도 하나 확신하기 어렵다.",
+  "evidence": "S1 Back Mount Hooks Control 간접"
+ },
+ {
+  "id": "wrestling__wrist-ride",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손목 라이드는 MMA 탑 컨트롤에 쓰이기도 하나 포크스타일 라이드 성격이 강하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__claw-ride",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "클로 라이드는 포크스타일 라이딩 기술로 MMA에서 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__chop",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "찹은 포크스타일 레퍼리 포지션 브레이크다운으로 MMA에 해당하지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__ankle-ride",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "앵클 라이드는 포크스타일 라이딩 기술이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__leg-ride",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레그 라이드(다리 걸기)는 MMA 백 컨트롤로 이어지기도 해 판단이 어렵다.",
+  "evidence": "S1 Back Mount Hooks Control 간접"
+ },
+ {
+  "id": "wrestling__half-nelson",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "하프 넬슨은 MMA 터틀 공방에서 간혹 쓰이나 확신이 없다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__power-half-nelson",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "파워 하프 넬슨은 핀/노출 점수를 위한 레슬링 턴이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__bar-arm",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "바 암은 핀을 위한 포크스타일 턴 기술이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__cross-wrist",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "크로스 리스트는 포크스타일 라이드·틸트 그립이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__wrist-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__two-on-one-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__near-wrist-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__far-wrist-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__guillotine-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__tight-waist-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__turk-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__ankle-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__navy-ride-tilt",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "등 노출(니어폴) 점수를 얻기 위한 포크스타일 틸트로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(틸트=백 포인트)"
+ },
+ {
+  "id": "wrestling__near-side-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__far-side-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__guillotine-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__cross-face-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__reverse-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__half-nelson-to-cradle",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀/니어폴을 노리는 레슬링 크레이들로 MMA에서는 거의 쓰이지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술(크레이들=핀 기술)"
+ },
+ {
+  "id": "wrestling__half-nelson-to-bar-arm",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀을 위한 레슬링 턴 연결로 MMA에 해당하지 않는다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__double-half-nelson",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀을 위한 레슬링 턴으로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__turk-to-half-nelson",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀을 위한 레슬링 턴 연결이다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__chicken-wing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 치킨 윙(턴)은 MMA 키락/기무라와 정체가 달라 판단이 어렵다.",
+  "evidence": "S1 Kimura와 유사하나 동일 기술인지 불명"
+ },
+ {
+  "id": "wrestling__guillotine-pin-combination",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀을 노리는 레슬링 조합 기술로 MMA와 무관하다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__tight-waist-and-half-nelson",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "핀을 위한 라이드 조합으로 MMA 기술이 아니다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__base",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레퍼리 포지션 바텀 베이스는 MMA 터틀과 유사하나 동일 기술로 보기 어렵다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__peterson-roll",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "피터슨 롤은 MMA에서 드물다.",
+  "evidence": "S1 리버설 기록 없음"
+ },
+ {
+  "id": "wrestling__quadpod",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "쿼드포드는 MMA에서 일어서기 과정에 보이나 별도 기술로 쓰이는지 불확실하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__tripod",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "트라이포드는 MMA 일어서기 과정과 관련되나 확신이 없다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__peek-out",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "피크 아웃은 포크스타일 바텀 기술로 MMA 사용이 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__switch-to-attack",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "스위치 공격은 MMA에서 드물어 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__knee-slide",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링 니 슬라이드의 MMA 사용 정체가 불분명하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__sit-out-to-single",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "싯아웃에서 싱글 전환은 MMA 스크램블에서 가능하나 근거가 부족하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__stand-up-to-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "하위에서 일어서 탈출하기는 MMA에서 필수적인 탈출이다.",
+  "evidence": "S1 Cage Wrestling, Scramble; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__hand-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "바텀에서 손 컨트롤·손싸움은 MMA 백/바디락 방어에서 핵심이다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__wrist-peel",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손목을 떼어 그립을 푸는 동작은 MMA 바디락·백 방어에서 쓰인다.",
+  "evidence": "S1 스크램블(Scramble to Back Take)·그라운드 컨트롤; S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__quadpod-escape",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "쿼드포드 탈출은 MMA 사용 근거가 부족하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__sit-out-to-reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "싯아웃 리버설은 MMA에서 드물다.",
+  "evidence": "S1 리버설 기록 없음"
+ },
+ {
+  "id": "wrestling__granby-roll-to-reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "그랜비 롤 리버설은 MMA에서 드물다.",
+  "evidence": "S1 리버설 기록 없음"
+ },
+ {
+  "id": "wrestling__peterson-roll-to-reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "피터슨 롤 리버설은 MMA에서 드물다.",
+  "evidence": "S1 리버설 기록 없음"
+ },
+ {
+  "id": "wrestling__waist-lock-reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "웨이스트락 리버설은 MMA에서 쓰일 수 있으나 근거가 부족하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__duck-under-reversal",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "덕언더 리버설의 MMA 사용이 불확실하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__roll-through",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "롤 스루는 MMA 스크램블에서 가능하나 근거가 부족하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__near-wrist-roll",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "손목을 잡고 굴러 리버설 점수를 얻는 포크스타일 기술로 MMA에서는 등을 내줄 위험이 크다.",
+  "evidence": "S1에 해당 범주 없음(그라운드 컨트롤은 마운트/백/가드 위주); 포크스타일 라이드·포인트용 기술"
+ },
+ {
+  "id": "wrestling__down-block",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "손으로 태클을 막는 다운 블록은 MMA 테이크다운 방어 층위에 쓰인다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__crossface",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "크로스페이스는 MMA 스프롤 및 탑 컨트롤에서 흔하다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__whizzer",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "휘저(오버훅) 방어는 MMA 테이크다운 방어 기록에서 언급된다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__takedown-defense-mma; S1 오버훅"
+ },
+ {
+  "id": "wrestling__head-position",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "머리 위치 싸움은 MMA 클린치·테이크다운 공방의 기본이다.",
+  "evidence": "S1 클린치(Clinch Takedown Entry: 언더훅/오버훅 그립, Dirty Boxing 목/팔 컨트롤); S2 노기·반칙 아님"
+ },
+ {
+  "id": "wrestling__re-single",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "재싱글은 MMA에서 가능하나 별도 기술로 근거가 부족하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__re-double",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "재더블은 MMA에서 가능하나 별도 기술로 근거가 부족하다.",
+  "evidence": "S1 Scramble 간접"
+ },
+ {
+  "id": "wrestling__sprawl-to-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스프롤 후 등 잡기는 MMA 스프롤 반격·스크램블이다.",
+  "evidence": "S1 Sprawl to Strikes, Scramble to Back Take"
+ },
+ {
+  "id": "wrestling__crackdown-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "크랙다운 카운터는 MMA 사용이 드물고 목 착지 위험이 있다.",
+  "evidence": "S1 명시 없음; S2 스파이킹 관련 위험"
+ },
+ {
+  "id": "wrestling__hip-heist-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "힙 하이스트 카운터의 MMA 사용 근거가 부족하다.",
+  "evidence": "S1 명시 없음"
+ },
+ {
+  "id": "wrestling__head-hands",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "헤드 핸즈 방어가 MMA에서 별도 기술로 쓰이는지 불분명하다.",
+  "evidence": "S1 Takedown Defense (MMA)(프레임) 간접"
+ },
+ {
+  "id": "wrestling__hip-pressure",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스프롤 시 엉덩이 압박은 MMA 테이크다운 방어의 핵심이다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__square-hips",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "엉덩이를 정면으로 유지하는 방어는 MMA 테이크다운 방어에 쓰인다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__chest-to-chest-defense",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "케이지 테이크다운 방어 기록이 직접 언급한다.",
+  "evidence": "mmaDataMentions: mixed-martial-arts__fence-takedown-defense"
+ },
+ {
+  "id": "wrestling__single-leg-down-defense",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "싱글레그 방어는 MMA 테이크다운 방어 기본이다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__double-leg-down-defense",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "더블레그 방어는 MMA 테이크다운 방어 기본이다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ },
+ {
+  "id": "wrestling__front-headlock-defense",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "프론트 헤드락(길로틴 포함) 방어는 MMA에서 필수다.",
+  "evidence": "S1 방어(Takedown Defense (MMA), Fence Takedown Defense, Sprawl to Strikes); S2 반칙 아님"
+ }
+]

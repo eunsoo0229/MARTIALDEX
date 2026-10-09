@@ -1,0 +1,639 @@
+[
+ {
+  "id": "karate__musubi-dachi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "예의·인사용 차렷 자세로 경기 기술이 아님",
+  "evidence": "의례/가타 자세 — 기술 아님"
+ },
+ {
+  "id": "karate__zenkutsu-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가타·기본기용 깊은 전굴 자세로 MMA 파이팅 스탠스와 다름",
+  "evidence": "S1 Range Management 스탠스와 무관; 가타 자세"
+ },
+ {
+  "id": "karate__kokutsu-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가타·기본기용 후굴 자세로 MMA에서 쓰지 않음",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__kiba-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "Tekki 가타 중심의 기마 자세로 MMA에서 쓰지 않음",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__neko-ashi-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형 중심의 묘족립으로 MMA 경기 자세로 쓰이지 않음",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__sanchin-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "고주류 단련·가타 자세로 MMA에서 쓰지 않음",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__shiko-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "낮고 넓은 가타 자세로 MMA 스탠스가 아님",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__fudo-dachi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형·기본기 자세로 MMA에서 쓰지 않음",
+  "evidence": "가타 자세"
+ },
+ {
+  "id": "karate__kumite-dachi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테식 쿠미테 자세는 일부 가라테 베이스 파이터만 쓰며 MMA 스탠스와 동일하지 않음",
+  "evidence": "S1 Range Management(낮은 스탠스)와 정체성 차이"
+ },
+ {
+  "id": "karate__yori-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "측면 슬라이딩 스텝은 MMA 풋워크와 유사하나 동일 기술 여부 불확실",
+  "evidence": "S1 Range Management 유사; 직접 언급 없음"
+ },
+ {
+  "id": "karate__okuri-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "WKF식 슬라이딩 거리조절은 가라테 베이스 파이터 일부만 사용",
+  "evidence": "S1 Range Management 유사; 직접 언급 없음"
+ },
+ {
+  "id": "karate__tenkan",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "회전 이동(텐칸)이 MMA 피벗과 같은 기술인지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__step-in",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "거리 진입 스텝은 MMA 거리 관리의 기본 동작",
+  "evidence": "S1 Range Management; S2 위반 없음"
+ },
+ {
+  "id": "karate__retreat",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "후퇴 스텝은 MMA 거리 관리의 기본 동작",
+  "evidence": "S1 Range Management; S2 위반 없음"
+ },
+ {
+  "id": "karate__forward-step",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "전진 스텝은 MMA 압박·거리 관리의 기본 동작",
+  "evidence": "S1 Range Management; S2 위반 없음"
+ },
+ {
+  "id": "karate__choku-zuki",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "제자리 기본 찌르기는 폼 학습용 기본기로 경기 기술이 아님",
+  "evidence": "설명상 기본기 학습용"
+ },
+ {
+  "id": "karate__oi-zuki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "전진 찌르기는 동작이 커 MMA에서 드물게만 쓰임",
+  "evidence": "S1 복싱 펀치와 형태 차이; 드문 사용"
+ },
+ {
+  "id": "karate__gyaku-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "역찌르기는 뒷손 스트레이트로 MMA에서 쓰이는 펀치",
+  "evidence": "S1 MMA Boxing Combination(크로스); S2 위반 없음"
+ },
+ {
+  "id": "karate__kagi-zuki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가타식 훅 찌르기가 MMA 훅과 같은 기술인지 불확실",
+  "evidence": "S1 훅과 유사하나 정체성 차이"
+ },
+ {
+  "id": "karate__tate-zuki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "세로 주먹 찌르기는 MMA에서 일부만 쓰여 사용 여부 불확실",
+  "evidence": "S1 복싱 펀치 변형; 직접 근거 없음"
+ },
+ {
+  "id": "karate__age-zuki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "올려 찌르기가 MMA 어퍼컷과 동일 기술인지 불확실",
+  "evidence": "S1 어퍼컷 유사; 정체성 차이"
+ },
+ {
+  "id": "karate__tettsui-uchi",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "망치주먹(해머피스트)은 MMA 그라운드 앤 파운드에서 흔히 쓰임",
+  "evidence": "S1 Ground and Pound from Mount; 뒤통수 금지 외 합법(S2)"
+ },
+ {
+  "id": "karate__mawashi-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "곡선으로 감아 치는 주먹은 MMA 훅 계열 펀치",
+  "evidence": "S1 MMA Boxing Combination(훅); S2 위반 없음"
+ },
+ {
+  "id": "karate__shuto-uchi",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "목·측두부를 노리는 손날치기로 목 타격은 MMA 반칙",
+  "evidence": "S2 Throat strikes 반칙; 가타/본카이 기술"
+ },
+ {
+  "id": "karate__haito-uchi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "반대손날은 가타 근거리 동작으로 MMA에서 쓰이지 않음",
+  "evidence": "설명상 가타 동작; S1 근거 없음"
+ },
+ {
+  "id": "karate__nukite",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "손끝 찌르기는 눈·목을 노리는 기술로 MMA 반칙",
+  "evidence": "S2 Fingers outstretched toward face/eyes, Throat strikes"
+ },
+ {
+  "id": "karate__ippon-ken",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "한 관절 주먹은 MMA 글러브로 불가능하며 쓰이지 않음",
+  "evidence": "S2 장갑 착용 규정; S1 근거 없음"
+ },
+ {
+  "id": "karate__nihon-nukite",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "두 손가락 눈 찌르기는 MMA 반칙",
+  "evidence": "S2 Eye gouging / fingers toward eyes"
+ },
+ {
+  "id": "karate__teisho",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "손바닥 타격은 합법이나 MMA에서 드물게만 쓰임",
+  "evidence": "S1 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "karate__yoko-empi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "옆 방향 팔꿈치 찌르기가 MMA에서 실제로 쓰이는지 불확실",
+  "evidence": "S1 엘보(탑 포지션)와 형태 차이"
+ },
+ {
+  "id": "karate__age-empi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "올려 팔꿈치는 클린치에서 가능하나 사용 빈도 불확실",
+  "evidence": "S1 엘보 근거는 탑 포지션 한정"
+ },
+ {
+  "id": "karate__ushiro-empi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤 팔꿈치는 MMA에서 드문 상황에서만 가능",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "karate__mawashi-empi",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "돌려 팔꿈치(수평 엘보)는 MMA 클린치·그라운드에서 쓰임",
+  "evidence": "S1 Elbow Strikes from Top Position / 클린치; S2 위반 없음"
+ },
+ {
+  "id": "karate__otoshi-empi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "내려찍는 팔꿈치는 하향 엘보 반칙에 해당할 수 있음",
+  "evidence": "S2 Downward pointing elbow strike — 합법성 경계"
+ },
+ {
+  "id": "karate__fumikomi-geri",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "밟아차기는 오블리크 킥과 유사하나 쓰러진 상대 밟기와 혼동되어 정체성 불확실",
+  "evidence": "S1 Oblique Kick 유사; S2 Stomping a grounded opponent"
+ },
+ {
+  "id": "karate__nidan-geri",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "이단 뛰어 앞차기는 MMA에서 매우 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "karate__tobi-geri",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뛰어차기는 화려하나 MMA 실제 사용이 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "karate__gedan-barai",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 하단막기는 MMA 방어 방식이 아님",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__age-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 상단막기는 MMA에서 쓰이지 않음",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__soto-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 바깥막기는 MMA에서 쓰이지 않음",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__uchi-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 안막기는 MMA에서 쓰이지 않음",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__shuto-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "후굴립과 짝을 이루는 가타용 손날막기",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__morote-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "양손막기는 가타용 막기",
+  "evidence": "가타/기본기 막기"
+ },
+ {
+  "id": "karate__juji-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "십자막기는 무기 대응 호신술 성격의 막기",
+  "evidence": "가타/호신술 막기"
+ },
+ {
+  "id": "karate__kake-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "걸어막기는 전통 응용(관절기·던지기) 출발점인 가타 막기",
+  "evidence": "가타/본카이 막기"
+ },
+ {
+  "id": "karate__nagashi-uke",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "흘려막기는 패리와 유사하나 MMA 동일 기술인지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__osae-uke",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "누르는막기는 관절기 진입용 가타 막기",
+  "evidence": "가타/본카이 막기"
+ },
+ {
+  "id": "karate__sukui-uke",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "퍼올리는막기는 킥 캐치와 유사하나 동일 기술인지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__feint",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "페인트는 MMA 테이크다운 셋업 기록에 직접 언급됨",
+  "evidence": "mmaDataMentions: mixed-martial-arts__takedown-setup(타격 페인트)"
+ },
+ {
+  "id": "karate__distance-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "거리 조절은 MMA 기본 기술",
+  "evidence": "S1 Range Management"
+ },
+ {
+  "id": "karate__counter-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "카운터 펀치는 MMA 타격에서 흔히 쓰임",
+  "evidence": "S1 Check Hook·Overhand 등 카운터 타격"
+ },
+ {
+  "id": "karate__counter-kick",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "상대 공격에 맞춘 카운터 킥은 MMA 킥 게임의 일부",
+  "evidence": "S1 MMA 킥복싱; S2 위반 없음"
+ },
+ {
+  "id": "karate__combination-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "콤비네이션 진입은 MMA 타격 운영의 기본",
+  "evidence": "S1 MMA Boxing Combination"
+ },
+ {
+  "id": "karate__short-punch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "근거리 짧은 펀치는 MMA 더티복싱에서 쓰임",
+  "evidence": "S1 Dirty Boxing"
+ },
+ {
+  "id": "karate__clinch",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "클린치 컨트롤은 MMA 기록에 직접 등장하는 핵심 영역",
+  "evidence": "mmaDataMentions: clinch-takedown-entry, clinch-to-cage-transition"
+ },
+ {
+  "id": "karate__irimi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "공격선 안으로 파고드는 회피 개념이 MMA 기술로 식별되는지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__nagashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "흘려보내는 몸놀림 개념으로 MMA 기술 정체성 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__angle-exit",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "각도를 만들며 빠지는 움직임은 MMA 거리·각도 관리의 일부",
+  "evidence": "S1 Range Management, Check Hook(각도)"
+ },
+ {
+  "id": "karate__body-shift",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "타이사바키식 몸 이동이 MMA 회피 기술과 동일한지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__kizami-zuki-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽(앞손) 카운터는 MMA 타격에서 쓰임",
+  "evidence": "S1 MMA Boxing Combination(잽); S2 위반 없음"
+ },
+ {
+  "id": "karate__gyaku-zuki-counter",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "뒷손 스트레이트 카운터는 MMA에서 쓰임",
+  "evidence": "S1 MMA Boxing Combination(크로스)"
+ },
+ {
+  "id": "karate__mae-geri-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "앞차기 카운터는 일부 가라테 베이스 파이터만 사용",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__mawashi-geri-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥에 대한 돌려차기 카운터는 MMA 사용 여부 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__uchi-uke-gyaku-zuki-soto-uke-gyaku-zuki",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 막기 후 되찌르기 기본기 패턴",
+  "evidence": "기본기 훈련 패턴; 가타 막기 기반"
+ },
+ {
+  "id": "karate__age-uke-counter",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 상단막기 기반 반격 패턴",
+  "evidence": "기본기 막기 기반"
+ },
+ {
+  "id": "karate__tai-sabaki-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "각도 이동 후 반격은 일부 사용되나 동일 기술 여부 불확실",
+  "evidence": "S1 Check Hook(각도) 유사"
+ },
+ {
+  "id": "karate__kizami-zuki-gyaku-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽-크로스에 해당하는 원투 콤비네이션",
+  "evidence": "S1 MMA Boxing Combination(잽-크로스)"
+ },
+ {
+  "id": "karate__oi-zuki-gyaku-zuki",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "오이즈키 기반 조합은 MMA에서 드묾",
+  "evidence": "S1 근거 약함"
+ },
+ {
+  "id": "karate__gyaku-zuki-mawashi-geri",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "펀치 후 돌려차기 연결은 MMA 타격 조합",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱"
+ },
+ {
+  "id": "karate__kizami-zuki-mawashi-geri",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "잽 후 돌려차기 연결은 MMA 타격 조합",
+  "evidence": "S1 MMA Boxing Combination + MMA 킥복싱"
+ },
+ {
+  "id": "karate__mae-geri-gyaku-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "앞차기 후 스트레이트 연결은 MMA 타격 조합",
+  "evidence": "S1 MMA 킥복싱 + 복싱"
+ },
+ {
+  "id": "karate__mawashi-geri-gyaku-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 후 스트레이트 연결은 MMA 타격 조합",
+  "evidence": "S1 MMA 킥복싱 + 복싱"
+ },
+ {
+  "id": "karate__feint-gyaku-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트 후 스트레이트는 MMA 타격 운영",
+  "evidence": "S1 MMA Boxing Combination; 페인트는 Takedown Setup 기록"
+ },
+ {
+  "id": "karate__step-kizami-zuki",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝 인 잽은 MMA 기본 진입 타격",
+  "evidence": "S1 Range Management + 잽"
+ },
+ {
+  "id": "karate__sen",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "선제 타이밍 개념으로 별도 MMA 기술인지 불확실",
+  "evidence": "타이밍 개념; S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__tai-no-sen",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "동시 타이밍 개념으로 MMA 기술 식별 불확실",
+  "evidence": "타이밍 개념"
+ },
+ {
+  "id": "karate__go-no-sen",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "막고 반격하는 타이밍 개념으로 MMA 기술 식별 불확실",
+  "evidence": "타이밍 개념"
+ },
+ {
+  "id": "karate__deai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "진입 순간을 받아치는 타이밍 개념으로 MMA 기술 식별 불확실",
+  "evidence": "타이밍 개념"
+ },
+ {
+  "id": "karate__tobi-komi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뛰어드는 블리츠 진입은 일부 가라테 베이스 파이터만 사용",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__maai-유지-전술",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "유리한 거리 유지 전술은 MMA 거리 관리와 같음",
+  "evidence": "S1 Range Management"
+ },
+ {
+  "id": "karate__bunkai",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "가타 해석 개념으로 기술이 아님",
+  "evidence": "가타 관련 개념"
+ },
+ {
+  "id": "karate__kuzushi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "균형 무너뜨리기 개념은 MMA 그래플링에도 있으나 여기서는 본카이 맥락",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__hiki-te",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "가타의 당기는 손 동작으로 경기 기술이 아님",
+  "evidence": "가타 동작"
+ },
+ {
+  "id": "karate__osae",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "본카이 호신술 제압 동작",
+  "evidence": "호신술/본카이"
+ },
+ {
+  "id": "karate__kansetsu-geri",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "무릎 관절을 노리는 킥은 MMA 오블리크 킥과 같은 기술",
+  "evidence": "S1 Oblique Kick(무릎 찍어차기); S2 위반 없음"
+ },
+ {
+  "id": "karate__kote-gaeshi",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "손목 꺾기 투척은 글러브 착용 MMA에서 사실상 쓰이지 않는 호신 기술",
+  "evidence": "호신 가타 맥락; S1 근거 없음"
+ },
+ {
+  "id": "karate__ashi-barai",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "발 쓸기는 MMA에서 드물게 쓰이나 여기서는 본카이 맥락",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "karate__ibuki",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "가타에서 익히는 호흡법으로 기술이 아님",
+  "evidence": "가타 호흡법"
+ },
+ {
+  "id": "karate__nogare",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "이완 호흡법으로 기술이 아님",
+  "evidence": "호흡법"
+ },
+ {
+  "id": "karate__특징",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "제목 항목으로 기술이 아님",
+  "evidence": "heading"
+ },
+ {
+  "id": "karate__대표-가타",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "가타 목록 제목으로 기술이 아님",
+  "evidence": "heading / 가타"
+ }
+]

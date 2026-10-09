@@ -1,0 +1,487 @@
+{
+ "karate__step-in|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__retreat|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__forward-step|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__gyaku-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__mawashi-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__distance-control|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__counter-punch|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__counter-kick|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__combination-entry|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__short-punch|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__angle-exit|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__kizami-zuki-counter|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__gyaku-zuki-counter|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__kizami-zuki-gyaku-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__gyaku-zuki-mawashi-geri|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__kizami-zuki-mawashi-geri|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__mae-geri-gyaku-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__mawashi-geri-gyaku-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__feint-gyaku-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__step-kizami-zuki|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__maai-유지-전술|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테 고유의 표현(지르기·콤비네이션·이동 개념) — MMA 데이터에는 복싱·킥복싱·무에타이 계열만 근거가 있어, 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "karate__feint|mixed-martial-arts": {
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 데이터의 언급은 일반어(\"타격 페인트\", \"클린치 그립\")라 A가 아닌 B (검수자 재정의)"
+ },
+ "karate__clinch|mixed-martial-arts": {
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 데이터의 언급은 일반어(\"타격 페인트\", \"클린치 그립\")라 A가 아닌 B (검수자 재정의)"
+ },
+ "taekwondo__전진|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__후진|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__사이드-스텝|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__피벗|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__스텝-인-스텝-아웃|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__스위치-스텝|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__바로지르기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__반대지르기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__지르기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__돌려지르기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__돌려차기-주먹-반대지르기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__페인트-스텝-몸통-돌려차기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "taekwondo__스위치-스텝-돌려차기|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도 고유의 표현(지르기·이동·콤비네이션) — MMA 데이터에 태권도식 근거가 없어 같은 기술로 MMA에서 쓰인다고 확정할 수 없음 (검수자 재정의)"
+ },
+ "muay-thai__khao-chiang-khao-khong|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Khao Chiang은 기술 identity 자체가 REVIEW(원문 정의 충돌) — 무술 관계도 확정하지 않음 (검수자 재정의)"
+ },
+ "muay-thai__curving-knee|mixed-martial-arts": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Khao Chiang은 기술 identity 자체가 REVIEW(원문 정의 충돌) — 무술 관계도 확정하지 않음 (검수자 재정의)"
+ },
+ "wrestling__bridge|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "레슬링 브리지(목 브리지)는 BJJ 탈출 브리지와 다른 기술로 검토된 쌍 — BJJ 문서의 브리지는 이미 연결된 탈출 브리지 (검수자 재정의)"
+ },
+ "wrestling__hand-fighting|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ에는 자체 Hand Fighting/Wrist Control 기록이 있고 레슬링 쪽과는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "boxing__hand-fighting|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ에는 자체 Hand Fighting/Wrist Control 기록이 있고 레슬링 쪽과는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "wrestling__wrist-control|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ에는 자체 Hand Fighting/Wrist Control 기록이 있고 레슬링 쪽과는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "boxing__wrist-control|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ에는 자체 Hand Fighting/Wrist Control 기록이 있고 레슬링 쪽과는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "judo__grip-fighting|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "BJJ Grip Fighting과 유도 Grip Fighting은 앞선 감사에서 다른 기술로 분리됨 — BJJ 문서 언급은 BJJ 자체 기록 (검수자 재정의)"
+ },
+ "sambo__collar-choke|bjj": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "근거 문장은 Cross Collar Choke — 삼보 Collar Choke와 같은지는 REVIEW 항목 (검수자 재정의)"
+ },
+ "boxing__frame|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "judo__frame|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "judo__turn-in|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "sambo__guard|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "wrestling__whizzer|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "wrestling__rear-lift-return|bjj": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "대상 무술에 같거나 비슷한 기술 기록이 이미 있음(프레임·Turn-In Escape·Closed Guard·Overhook/Whizzer·Mat Return) — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ },
+ "muay-thai__elbow-guard|boxing": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "복싱 Elbow Guard와 무에타이 Elbow Guard는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "karate__feint|boxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW(가라테 vs 복싱) (검수자 재정의)"
+ },
+ "wrestling__feint|boxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW(가라테 vs 복싱) (검수자 재정의)"
+ },
+ "kickboxing__shoulder-roll|boxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "근거 문장은 복싱의 Shoulder Roll Stance(자세) — 킥복싱 Shoulder Roll(방어 동작)과 같은지 불분명 (검수자 재정의)"
+ },
+ "karate__kuzushi|judo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "유도는 쿠즈시 방향별 기록과 원리 장을 따로 가짐 — 가라테 Kuzushi 개념 기록을 연결할지 판단 보류 (검수자 재정의)"
+ },
+ "wrestling__bridge|judo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "근거 문장의 Bridge는 유도 자체의 탈출 브리지(이미 연결) — 레슬링 목 브리지와 다른 기술 (검수자 재정의)"
+ },
+ "karate__feint|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW, 킥복싱은 자체 페인트 기록(Hand/Foot/Kick Feint)이 있음 (검수자 재정의)"
+ },
+ "wrestling__feint|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW, 킥복싱은 자체 페인트 기록(Hand/Foot/Kick Feint)이 있음 (검수자 재정의)"
+ },
+ "boxing__feint|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW, 킥복싱은 자체 페인트 기록(Hand/Foot/Kick Feint)이 있음 (검수자 재정의)"
+ },
+ "karate__clinch|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱은 자체 근거리/클린치 기록이 있어 같은 기술인지 판단 필요 (검수자 재정의)"
+ },
+ "boxing__clinch|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱은 자체 근거리/클린치 기록이 있어 같은 기술인지 판단 필요 (검수자 재정의)"
+ },
+ "boxing__hook|kickboxing": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "킥복싱 문서는 Lead/Rear Hook·Uppercut만 나열(이미 연결) — 리드/리어 구분 없는 일반 항목을 따로 연결하지 않음 (검수자 재정의)"
+ },
+ "boxing__uppercut|kickboxing": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "킥복싱 문서는 Lead/Rear Hook·Uppercut만 나열(이미 연결) — 리드/리어 구분 없는 일반 항목을 따로 연결하지 않음 (검수자 재정의)"
+ },
+ "boxing__jab-feint|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱에 같은 기술 기록(Hand Feint (Jab Feint), Parry → Jab / Cross)이 이미 있음 — 병합 판단 필요 (검수자 재정의)"
+ },
+ "boxing__parry-jab|kickboxing": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱에 같은 기술 기록(Hand Feint (Jab Feint), Parry → Jab / Cross)이 이미 있음 — 병합 판단 필요 (검수자 재정의)"
+ },
+ "kickboxing__round-kick|muay-thai": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이는 Lead/Rear Round Kick으로 나뉘어 있음 — 리드/리어 구분 없는 일반 항목을 따로 연결하지 않음 (검수자 재정의)"
+ },
+ "kickboxing__back-kick|muay-thai": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "근거 문장은 Spinning Back Kick(다른 기술) (검수자 재정의)"
+ },
+ "karate__feint|muay-thai": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW (검수자 재정의)"
+ },
+ "karate__clinch|muay-thai": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이는 자체 클린치 기록이 있어 같은 기술인지 판단 필요 (검수자 재정의)"
+ },
+ "boxing__elbow-guard|muay-thai": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "복싱 Elbow Guard와 무에타이 Elbow Guard는 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "kickboxing__teep|muay-thai": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥복싱 Teep의 identity가 REVIEW(무에타이 리드/리어/푸시 티프와 관계 미확정) (검수자 재정의)"
+ },
+ "kickboxing__kick-after-punch|muay-thai": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이에 같은 기술 기록(Low Kick after Punch, Check and Return)이 이미 있음 — 병합 판단 필요 (검수자 재정의)"
+ },
+ "kickboxing__check-return-kick|muay-thai": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "무에타이에 같은 기술 기록(Low Kick after Punch, Check and Return)이 이미 있음 — 병합 판단 필요 (검수자 재정의)"
+ },
+ "boxing__hook|muay-thai": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이는 Lead/Rear Hook·Uppercut만 나열(이미 연결) (검수자 재정의)"
+ },
+ "boxing__uppercut|muay-thai": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "무에타이는 Lead/Rear Hook·Uppercut만 나열(이미 연결) (검수자 재정의)"
+ },
+ "wrestling__bridge|sambo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "삼보 Bridge(Мост)는 탈출 브리지(이미 연결) — 레슬링 목 브리지와 다른 기술 (검수자 재정의)"
+ },
+ "judo__grip-fighting|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "bjj__grip-fighting|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "judo__seoi-nage|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "judo__mount|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "bjj__side-control|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "bjj__north-south|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "삼보에 같은 계열 기록(재킷 그립 파이팅, 등 던지기 변형, удержание верхом/сбоку/со стороны головы)이 이미 있음 — 연결이 아니라 병합 판단 필요 (검수자 재정의)"
+ },
+ "bjj__collar-choke|sambo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "BJJ Collar Choke와 삼보 Collar Choke의 identity가 REVIEW (검수자 재정의)"
+ },
+ "boxing__frame|sambo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "근거 문장은 삼보 Frame Escape(이미 별도 기술) (검수자 재정의)"
+ },
+ "judo__frame|sambo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "근거 문장은 삼보 Frame Escape(이미 별도 기술) (검수자 재정의)"
+ },
+ "kickboxing__pivot|taekwondo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태권도에 자체 피벗·스위치 스텝 기록이 있음(이미 연결) (검수자 재정의)"
+ },
+ "wrestling__pivot|taekwondo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태권도에 자체 피벗·스위치 스텝 기록이 있음(이미 연결) (검수자 재정의)"
+ },
+ "kickboxing__switch-step|taekwondo": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태권도에 자체 피벗·스위치 스텝 기록이 있음(이미 연결) (검수자 재정의)"
+ },
+ "karate__feint|taekwondo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW (검수자 재정의)"
+ },
+ "wrestling__feint|taekwondo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW (검수자 재정의)"
+ },
+ "boxing__feint|taekwondo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "Feint의 기술 identity가 REVIEW (검수자 재정의)"
+ },
+ "kickboxing__jumping-kick|taekwondo": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도의 뛰어차기 기록들과 킥복싱 Jumping Kick의 관계 판단 필요 (검수자 재정의)"
+ },
+ "sambo__reversal|wrestling": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "레슬링은 리버설을 구체 기술별로 가짐 — 삼보의 일반 Reversal 기록을 연결할지 판단 필요 (검수자 재정의)"
+ },
+ "judo__bridge|wrestling": {
+  "decision": "none",
+  "confidence": "A",
+  "reason": "레슬링 문서의 Bridge는 레슬링 자체의 목 브리지 기록 — 유도·BJJ 탈출 브리지와 다른 기술로 검토된 쌍 (검수자 재정의)"
+ },
+ "boxing__feint|karate": {
+  "decision": "review",
+  "confidence": "C",
+  "reason": "가라테에는 자체 Feint 기록이 있고, 복싱 Feint와 같은 기술인지가 REVIEW 항목 — 연결이 아니라 병합 판단이 필요 (검수자 재정의)"
+ }
+}

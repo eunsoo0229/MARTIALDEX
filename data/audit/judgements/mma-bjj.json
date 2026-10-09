@@ -1,0 +1,1843 @@
+[
+ {
+  "id": "bjj__arm-drag",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__duck-under",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__high-crotch",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__low-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__outside-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__inside-single",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__running-the-pipe",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-tap",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__turtle",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-stand-up",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hip-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hip-bump-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__butterfly-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-stand-up-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "데라히바 계열로 분류되어 있어 노기 MMA 사용 여부가 불확실하다.",
+  "evidence": "S1 Guard Recovery/스탠딩 복귀와 유사하나 직접 근거 없음"
+ },
+ {
+  "id": "bjj__sit-up-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__wrestle-up",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kneebar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__straight-ankle-lock",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__마운트-탈출",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__상대의-중심-이동",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "특정 기술이라기보다 일반 개념이라 MMA 기술로 연결할지 불확실하다.",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "bjj__스크램블-시작",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__포지션-회복",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__사이드-컨트롤-탈출",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__하프-가드-회복",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__가드-회복",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__스탠딩-복귀",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__거리-확보",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__mma-상황에서의-일어나기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__목-프레임",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__어깨-프레임",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__엉덩이-프레임",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__무릎-프레임",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__손목-그립",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__pant-grip",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__russian-tie-takedown",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__collar-sleeve",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__double-sleeve",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__wrist-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__head-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__hip-control",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "클로즈드 가드에서의 힙 컨트롤 의미가 모호해 MMA 기술로 확정하기 어렵다.",
+  "evidence": "S1 closed guard 범주; 직접 근거 없음"
+ },
+ {
+  "id": "bjj__posture-break",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-in-the-middle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__standing-guard-break",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__double-under-guard-break",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hip-pressure-guard-break",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__scissor-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__pendulum-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__flower-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__lumberjack-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__tripod-계열-스윕",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__shoulder-clamp-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__americana",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__cross-collar-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__ezekiel-choke",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "도복 소매 버전이 기본이나 노기 에제키엘이 MMA에서 드물게 나온 바 있어 불확실하다.",
+  "evidence": "S2 attire(도복 소매 그립 불가) vs 노기 변형 존재"
+ },
+ {
+  "id": "bjj__omoplata",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__feet-on-hips",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "파운드와 압박을 막고 공간을 만드는 프레임으로 MMA에서 핵심적이다.",
+  "evidence": "S1 Framing / Guard Recovery Under Strikes; S2 위반 없음"
+ },
+ {
+  "id": "bjj__spider-guard",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-guard",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__butterfly-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__de-la-riva",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__reverse-de-la-riva",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__x-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__single-leg-x",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__off-balancing",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "특정 기술이라기보다 일반 개념이라 MMA 기술로 연결할지 불확실하다.",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "bjj__tripod-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__balloon-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__single-leg-entry",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__back-take",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MARTIALDEX MMA 레코드가 직접 언급하는 포지션/기술로 MMA에서 핵심적으로 쓰인다.",
+  "evidence": "S1 mmaDataMentions: Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__elevation",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__sit-up-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__double-under-butterfly-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__shoulder-crunch-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__underhook-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__tripod-style-butterfly-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hook-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__spider-sweep",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__triangle-entry",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__omoplata-entry",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__de-la-riva-transition",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-transition",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__spider-to-x-guard",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__spider-to-single-leg",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-sweep",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-to-spider",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-to-omoplata",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-to-triangle",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-to-x-guard",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__lasso-to-back-take",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__dlr-hook",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__grip-fighting",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__berimbolo-entry",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__kiss-of-the-dragon",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__x-guard-entry",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__dlr-technical-sweep",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__baby-bolo-sweep",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__dlr-to-x-guard-sweep",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__berimbolo",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__backstep-entry",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__inversion-entry",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__x-guard-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__back-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__single-leg-transition",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__slx-transition",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__slx-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__outside-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__inside-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__x-guard-transition",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__ashi-garami-transition",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__back-take-transition",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-shield-half-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__z-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__deep-half-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__lockdown",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__dogfight",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__underhook-half-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__butterfly-half-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__old-school-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__electric-chair-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__plan-b-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__john-wayne-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__dogfight-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__single-leg-finish",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-shield",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "도복 그립 없이 MMA 하위 포지션에서 실제로 쓰이는 가드/스윕/컨트롤이다.",
+  "evidence": "S1 그라운드 컨트롤(closed/half guard, guard recovery); S2 위반 없음"
+ },
+ {
+  "id": "bjj__recover-full-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__recover-butterfly-guard",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__old-school",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__homer-simpson",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__electric-chair",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__backdoor-escape",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__deep-half-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-cut-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__torreando-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__leg-drag",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__over-under-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__double-under-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__body-lock-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__stack-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__smash-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__long-step",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__x-pass",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__headquarters-pass",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__folding-pass",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__leg-weave-pass",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__leg-control",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "특정 기술이라기보다 일반 개념이라 MMA 기술로 연결할지 불확실하다.",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "bjj__far-side-underhook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__near-side-underhook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__shoulder-pressure",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__reverse-kesa-gatame",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__paper-cutter-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__baseball-bat-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__north-south-choke",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__d-arce-choke",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__anaconda-choke",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__straight-armbar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-on-belly-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-mount-transition",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__mount-transition",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-on-belly-to-side-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__north-south-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__side-control-transition",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__backstep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__low-mount",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__high-mount",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MARTIALDEX MMA 레코드가 직접 언급하는 포지션/기술로 MMA에서 핵심적으로 쓰인다.",
+  "evidence": "S1 mmaDataMentions: Posture Control in Mount; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-mount",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__s-mount",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-mount",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__bridge-and-roll",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__elbow-knee-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-elbow-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__half-guard-recovery",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__gift-wrap",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__s-mount-armbar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__double-armbar",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__mounted-triangle",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__head-and-arm-choke",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__seatbelt",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__body-triangle",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hooks",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MARTIALDEX MMA 레코드가 직접 언급하는 포지션/기술로 MMA에서 핵심적으로 쓰인다.",
+  "evidence": "S1 mmaDataMentions: Back Mount Hooks Control; S2 위반 없음"
+ },
+ {
+  "id": "bjj__trap-and-roll-prevention",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__hand-fighting",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__chair-sit",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-mount-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__turtle-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__gift-wrap-back",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__crucifix-back",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__truck-back",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__short-choke",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "숏 초크는 도복/노기 변형이 섞여 있어 MMA 사용 형태가 불확실하다.",
+  "evidence": "S2 attire 해당 여부 불명확"
+ },
+ {
+  "id": "bjj__bow-and-arrow-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__collar-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__crucifix-attacks",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__breakdown",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__crucifix",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__clock-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__bow-and-arrow-entry",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__armbar-entry",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__japanese-necktie",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이지만 MMA에서 드물게만 쓰이는 초크다.",
+  "evidence": "S2 위반 없음; S1 직접 근거 없음"
+ },
+ {
+  "id": "bjj__peruvian-necktie",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "MMA에서 소수 피니시 사례가 있으나 드물어 불확실하다.",
+  "evidence": "S2 위반 없음; S1 프론트 헤드락/길로틴 계열"
+ },
+ {
+  "id": "bjj__arm-in-guillotine",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__turtle-crucifix",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__side-control-crucifix",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__back-control-crucifix",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__crucifix-choke",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__transition-to-back",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__standard-ashi",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__outside-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__inside-ashi",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__50-50",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__saddle",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__inside-sankaku",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__outside-sankaku",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__50-50-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__backside-50-50",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__transition-to-slx",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__transition-to-x-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__outside-ankle-lock",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__inside-ankle-lock",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__toe-hold",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "통합룰상 합법이지만 MMA에서 토홀드 사용 빈도는 드물어 불확실하다.",
+  "evidence": "S2 small joint manipulation만 반칙(토홀드는 발목 관절)"
+ },
+ {
+  "id": "bjj__heel-hook",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__calf-slicer",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이지만 MMA에서 카프 슬라이서는 드물게만 나와 불확실하다.",
+  "evidence": "S2 위반 없음; S1 직접 근거 없음"
+ },
+ {
+  "id": "bjj__knee-on-belly",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__triangle-armbar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-armbar",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__omoplata-armbar",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__mount-s-mount-armbar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__side-control-armbar",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 실제 피니시로 자주 나오는 노기 서브미션이다.",
+  "evidence": "S1 서브미션(armbar, guillotine, triangle, kimura, RNC) 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__reverse-triangle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__side-triangle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__inverted-triangle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__north-south",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-trap",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-sweep",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-back-take",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-control",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-triangle",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-back-take",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-single-leg",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔히 쓰이는 노기 레슬링 테이크다운 진입/마무리 기술이다.",
+  "evidence": "S1 테이크다운(Level Change Double Leg, Clinch Takedown Entry, Cage Wrestling); 도복 불필요, S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-butterfly-sweep",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-closed-guard",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__arm-drag-turtle-attack",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__technical-stand-up-back-take",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__turtle-back-take",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__seatbelt-back-take",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA에서 흔한 백 테이크/백 컨트롤 기술로 RNC·파운드로 이어진다.",
+  "evidence": "S1 Back Mount Hooks Control, Scramble to Back Take; S2 위반 없음"
+ },
+ {
+  "id": "bjj__granby-counter",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__kimura-trap-back",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "합법이고 노기로도 가능하지만 MMA에서 실제로 쓰이는 빈도가 불확실하다.",
+  "evidence": "S1 유사 범주는 있으나 직접 근거 없음; S2 위반 없음"
+ },
+ {
+  "id": "bjj__dlr-sweep",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "도복·스포츠 주짓수 오픈가드 계열로 타격이 있는 MMA에서는 사실상 쓰이지 않는다.",
+  "evidence": "S1에 해당 계열 없음; S2 attire(바지/소매 그립 불가)"
+ },
+ {
+  "id": "bjj__underhook-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__knee-elbow-recovery",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__shoulder-to-mat-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__turn-in-escape",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__butterfly-recovery",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__full-guard-recovery",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 하위 포지션에서 탈출·일어나기에 실제로 쓰이는 노기 기술이다.",
+  "evidence": "S1 방어(Framing, Guard Recovery Under Strikes), 스크램블; S2 위반 없음"
+ },
+ {
+  "id": "bjj__outside-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__inside-pass",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "MMA 상위 포지션 컨트롤·패스로 파운드와 서브미션 연결에 흔히 쓰인다.",
+  "evidence": "S1 그라운드 컨트롤 / Ground and Pound 계열; S2 위반 없음"
+ },
+ {
+  "id": "bjj__leg-entanglement",
+  "decision": "add",
+  "confidence": "A",
+  "reason": "MARTIALDEX MMA 레코드가 직접 언급하는 포지션/기술로 MMA에서 핵심적으로 쓰인다.",
+  "evidence": "S1 mmaDataMentions: Leg Entanglement Scramble; S2 위반 없음"
+ },
+ {
+  "id": "bjj__leg-locks",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "통합룰상 합법(소관절 아님)이며 MMA 레그락 공방에서 실제로 쓰인다.",
+  "evidence": "S1 Leg Entanglement Scramble(레그락 진입); S2 small joint manipulation만 반칙"
+ },
+ {
+  "id": "bjj__loop-choke",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__worm-guard",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__collar-drag",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__sleeve-drag",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ },
+ {
+  "id": "bjj__collar-sleeve-sweep",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "도복 깃/소매/바지 그립이 필수라 MMA 복장 규정상 불가능하다.",
+  "evidence": "S2 attire: gis/long pants not allowed"
+ }
+]

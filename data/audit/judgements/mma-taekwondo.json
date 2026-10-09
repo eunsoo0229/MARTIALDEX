@@ -1,0 +1,576 @@
+[
+ {
+  "id": "taekwondo__나란히서기",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "준비·인사 자세로 경기 기술이 아님",
+  "evidence": "의례 자세"
+ },
+ {
+  "id": "taekwondo__팔굽치기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "팔꿈치 치기는 MMA 클린치·그라운드에서 쓰임(내려팔굽치기는 반칙 가능)",
+  "evidence": "S1 Elbow Strikes from Top Position; S2 Downward pointing elbow 주의"
+ },
+ {
+  "id": "taekwondo__뒤후려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤후려차기는 MMA에서 드물고 화려한 기술",
+  "evidence": "S1 근거 없음(Spinning Backfist만 있음)"
+ },
+ {
+  "id": "taekwondo__후려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "후려차기는 MMA에서 드물게만 쓰임",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__준비서기-준비자세",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "동작 시작 전 의례적 대기 자세",
+  "evidence": "의례 자세"
+ },
+ {
+  "id": "taekwondo__앞서기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 짧은 걸음 자세",
+  "evidence": "품새 자세"
+ },
+ {
+  "id": "taekwondo__학다리서기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 한발 균형 자세",
+  "evidence": "품새 자세"
+ },
+ {
+  "id": "taekwondo__겨루기준비자세",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "WT식 비껴 선 겨루기 자세는 MMA 스탠스와 다름",
+  "evidence": "S1 Range Management(낮은 스탠스)와 차이"
+ },
+ {
+  "id": "taekwondo__전진",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "전진 압박은 MMA 거리 관리의 기본(언급은 단어 일치일 뿐)",
+  "evidence": "S1 Range Management; mmaDataMentions는 check-hook/oblique-kick의 상대 전진 언급"
+ },
+ {
+  "id": "taekwondo__후진",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "후진으로 거리를 벌리는 것은 MMA 거리 관리의 기본",
+  "evidence": "S1 Range Management"
+ },
+ {
+  "id": "taekwondo__사이드-스텝",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "사이드 스텝으로 각도를 만드는 것은 MMA 풋워크",
+  "evidence": "S1 Range Management, Check Hook(각도)"
+ },
+ {
+  "id": "taekwondo__피벗",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "피벗은 MMA 각도 만들기·킥 회전에 쓰임",
+  "evidence": "S1 Check Hook(축 회전); S2 위반 없음"
+ },
+ {
+  "id": "taekwondo__스텝-인-스텝-아웃",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스텝 인/아웃은 MMA 거리 관리의 기본 동작",
+  "evidence": "S1 Range Management"
+ },
+ {
+  "id": "taekwondo__점프-스텝",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 스텝 페인트는 MMA 사용 여부 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "taekwondo__스위치-스텝",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치 스텝은 MMA 스위치 킥 준비 동작으로 쓰임",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__끌기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도식 드래그 스텝이 MMA 풋워크로 쓰이는지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "taekwondo__밀기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "태권도식 미는 스텝이 MMA 풋워크로 쓰이는지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "taekwondo__바로지르기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "직선 지르기는 MMA 스트레이트 펀치",
+  "evidence": "S1 MMA Boxing Combination(잽/크로스)"
+ },
+ {
+  "id": "taekwondo__반대지르기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "직선 지르기는 MMA 스트레이트 펀치",
+  "evidence": "S1 MMA Boxing Combination(잽/크로스)"
+ },
+ {
+  "id": "taekwondo__지르기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "주먹 지르기는 MMA 기본 펀치",
+  "evidence": "S1 MMA Boxing Combination"
+ },
+ {
+  "id": "taekwondo__돌려지르기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "돌려 지르기는 MMA 훅 계열 펀치",
+  "evidence": "S1 MMA Boxing Combination(훅)"
+ },
+ {
+  "id": "taekwondo__옆지르기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "주춤서기에서 옆으로 지르는 품새 동작",
+  "evidence": "품새 동작"
+ },
+ {
+  "id": "taekwondo__내려지르기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "낮은 표적을 내려 지르는 품새 동작",
+  "evidence": "품새 동작; 그라운드 파운드와 다른 기술"
+ },
+ {
+  "id": "taekwondo__바탕손",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "바탕손 밀기/치기는 호신술 맥락이며 MMA 사용 불확실",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__편손끝",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "편손끝은 급소 찌르기로 MMA 반칙",
+  "evidence": "S2 Fingers outstretched toward face/eyes, Throat strikes"
+ },
+ {
+  "id": "taekwondo__몸통막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "형식적 몸통막기는 MMA 방어 방식이 아님",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__한손날막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 손날막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__거들어막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 보조 막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__헤쳐막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "잡기 대응 품새 막기",
+  "evidence": "품새/호신 막기"
+ },
+ {
+  "id": "taekwondo__금강막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 복합 막기",
+  "evidence": "품새 막기(태극 7장)"
+ },
+ {
+  "id": "taekwondo__두손목막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__엇걸어막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 X자 막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__가위막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__산틀막기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새용 막기",
+  "evidence": "품새 막기"
+ },
+ {
+  "id": "taekwondo__밀어차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "밀어차기(티프)는 MMA에서 거리 유지에 쓰임",
+  "evidence": "S1 MMA 킥복싱; S2 위반 없음"
+ },
+ {
+  "id": "taekwondo__찍어차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "내려찍기(액스킥)는 MMA에서 드물게만 쓰임",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__비틀어차기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "품새·시범용 비틀어차기",
+  "evidence": "품새/시범"
+ },
+ {
+  "id": "taekwondo__표적차기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "미트·격파판 정확도 훈련 방식 명칭으로 기술이 아님",
+  "evidence": "훈련 방식"
+ },
+ {
+  "id": "taekwondo__앞발-돌려차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "앞발 돌려차기는 MMA 킥으로 쓰임",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__뒷발-돌려차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "뒷발 돌려차기는 MMA 킥으로 흔히 쓰임",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__앞발-밀어차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "앞발 밀어차기(리드 티프)는 MMA 견제 킥",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__뒷발-밀어차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "뒷발 밀어차기(리어 티프)는 MMA 견제 킥",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__나래차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "나래차기는 WT 득점 패턴으로 MMA 사용 불확실",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뒷발-돌려차기의-완전-회전형",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "완전 회전형 돌려차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__회전-내려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "회전 내려차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__회전-옆차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "회전 옆차기는 MMA에서 간혹 쓰이나 빈도 불확실",
+  "evidence": "S1 근거 없음(Spinning Backfist만)"
+ },
+ {
+  "id": "taekwondo__뒤돌아차기-계열",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "등 돌리기 페인트 기반 회전 발차기 계열로 MMA 사용 불확실",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어앞차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 앞차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어돌려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 돌려차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어옆차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 옆차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어뒤차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 뒤차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어내려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "점프 내려차기는 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__이단옆차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "같은 다리 이단 옆차기는 MMA 사용 불확실",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뛰어이단옆차기",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "격파·시범용 점프 이단옆차기",
+  "evidence": "설명상 격파/시범"
+ },
+ {
+  "id": "taekwondo__공중회전-발차기",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "시범·격파 퍼포먼스 기술",
+  "evidence": "시범/격파"
+ },
+ {
+  "id": "taekwondo__다단-점프-발차기",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "시범·격파 퍼포먼스 기술",
+  "evidence": "시범/격파"
+ },
+ {
+  "id": "taekwondo__앞발-돌려차기-뒷발-돌려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "킥-킥 연결은 MMA 정형 조합인지 불확실",
+  "evidence": "S1 직접 근거 없음"
+ },
+ {
+  "id": "taekwondo__앞발-돌려차기-내려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "내려차기 포함 조합은 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__앞발-밀어차기-반대발-뒷발-돌려차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "티프 후 돌려차기 연결은 MMA 킥 조합",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__돌려차기-뒤후려차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "회전 후려차기 포함 조합은 MMA에서 드묾",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__돌려차기-뒤차기",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "뒤차기 연결 조합은 MMA 사용 불확실",
+  "evidence": "S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__돌려차기-주먹-반대지르기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "킥 후 펀치 연결은 MMA 타격 조합",
+  "evidence": "S1 MMA 킥복싱 + 복싱"
+ },
+ {
+  "id": "taekwondo__페인트-스텝-몸통-돌려차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "페인트 후 바디킥은 MMA 타격 운영",
+  "evidence": "S1 MMA 킥복싱; 페인트는 Takedown Setup 기록"
+ },
+ {
+  "id": "taekwondo__스위치-스텝-돌려차기",
+  "decision": "add",
+  "confidence": "B",
+  "reason": "스위치 킥은 MMA에서 흔히 쓰이는 킥",
+  "evidence": "S1 MMA 킥복싱"
+ },
+ {
+  "id": "taekwondo__태극-1장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-2장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-3장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-4장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-5장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-6장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-7장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__태극-8장",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "태극 품새로 형 수련 항목",
+  "evidence": "품새"
+ },
+ {
+  "id": "taekwondo__위력격파",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "격파 항목으로 경기 기술이 아님",
+  "evidence": "격파"
+ },
+ {
+  "id": "taekwondo__정확격파",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "격파 항목으로 경기 기술이 아님",
+  "evidence": "격파"
+ },
+ {
+  "id": "taekwondo__시범격파",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "격파 항목으로 경기 기술이 아님",
+  "evidence": "격파"
+ },
+ {
+  "id": "taekwondo__앞낙법",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "낙법은 MMA 훈련에서 쓰일 수 있으나 경기 기술인지 불확실",
+  "evidence": "ITF 호신/낙법; S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__뒤낙법",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "낙법은 MMA 훈련에서 쓰일 수 있으나 경기 기술인지 불확실",
+  "evidence": "ITF 호신/낙법; S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__옆낙법",
+  "decision": "review",
+  "confidence": "C",
+  "reason": "낙법은 MMA 훈련에서 쓰일 수 있으나 경기 기술인지 불확실",
+  "evidence": "ITF 호신/낙법; S1 근거 없음"
+ },
+ {
+  "id": "taekwondo__굴러-낙법",
+  "decision": "none",
+  "confidence": "B",
+  "reason": "구르기 낙법은 호신 훈련 요소로 MMA 경기 기술이 아님",
+  "evidence": "ITF 호신/낙법"
+ },
+ {
+  "id": "taekwondo__손목-잡힘-대응",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "손목 잡힘 호신술 드릴",
+  "evidence": "호신술 드릴"
+ },
+ {
+  "id": "taekwondo__옷깃-어깨-잡힘-대응",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "옷깃 잡힘 호신술 드릴로 도복 전제",
+  "evidence": "호신술 드릴; S2 gi 불허"
+ },
+ {
+  "id": "taekwondo__뒤에서-안겼을-때-대응",
+  "decision": "none",
+  "confidence": "A",
+  "reason": "뒤에서 안겼을 때 호신술 드릴(발등치기 포함)",
+  "evidence": "호신술 드릴"
+ }
+]

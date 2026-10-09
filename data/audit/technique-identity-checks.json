@@ -1,0 +1,569 @@
+{
+ "manyNames": [
+  {
+   "id": "boxing__backfist",
+   "names": [
+    "boxing:Backfist",
+    "kickboxing:Backfist",
+    "muay-thai:Backfist",
+    "karate:Uraken-uchi",
+    "taekwondo:등주먹"
+   ],
+   "reviewed": "여러 무술에 같은 이름·같은 동작으로 수록"
+  },
+  {
+   "id": "kickboxing__front-kick",
+   "names": [
+    "kickboxing:Front Kick",
+    "karate:Mae Geri",
+    "taekwondo:앞차기"
+   ],
+   "reviewed": "마에게리 = 앞차기 = 프론트 킥 (가라테 데이터의 한국어명 \"앞차기\")"
+  },
+  {
+   "id": "kickboxing__side-kick",
+   "names": [
+    "kickboxing:Side Kick",
+    "karate:Yoko Geri",
+    "taekwondo:옆차기"
+   ],
+   "reviewed": "요코게리 = 옆차기 = 사이드 킥"
+  },
+  {
+   "id": "kickboxing__round-kick",
+   "names": [
+    "kickboxing:Round Kick",
+    "karate:Mawashi Geri",
+    "taekwondo:돌려차기"
+   ],
+   "reviewed": "마와시게리 = 돌려차기 = 라운드 킥"
+  },
+  {
+   "id": "kickboxing__back-kick",
+   "names": [
+    "kickboxing:Back Kick",
+    "karate:Ushiro Geri",
+    "taekwondo:뒤차기"
+   ],
+   "reviewed": "우시로게리 = 뒤차기 = 백 킥 (회전 없이 뒤로 뻗는 차기)"
+  },
+  {
+   "id": "kickboxing__crescent-kick",
+   "names": [
+    "kickboxing:Crescent Kick",
+    "karate:Mikazuki Geri",
+    "taekwondo:반달차기"
+   ],
+   "reviewed": "미카즈키게리(데이터 한국어명 \"반달차기\") = 반달차기 = 크레센트 킥 — 막기를 걷어내는 곡선 차기"
+  },
+  {
+   "id": "kickboxing__axe-kick",
+   "names": [
+    "kickboxing:Axe Kick",
+    "karate:Kakato Geri",
+    "taekwondo:내려차기"
+   ],
+   "reviewed": "가카토게리(뒤꿈치차기/도끼차기) = 내려차기 = 액스 킥"
+  },
+  {
+   "id": "bjj__overhook",
+   "names": [
+    "bjj:Overhook",
+    "kickboxing:Overhook",
+    "wrestling:Overhook / Whizzer",
+    "bjj:오버훅"
+   ],
+   "reviewed": "여러 무술에 같은 이름·같은 동작으로 수록"
+  },
+  {
+   "id": "judo__sleeve-grip",
+   "names": [
+    "judo:Sleeve Grip",
+    "bjj:슬리브 그립",
+    "sambo:Sleeve Grip / Захват за рукав"
+   ],
+   "reviewed": "같은 도복 소매 그립 (삼보는 러시아어 병기)"
+  },
+  {
+   "id": "judo__lapel-grip",
+   "names": [
+    "judo:Lapel Grip",
+    "bjj:칼라 그립",
+    "sambo:Collar/Lapel Grip / Ворот"
+   ],
+   "reviewed": "같은 도복 깃(칼라/라펠) 그립"
+  },
+  {
+   "id": "sambo__벨트-그립",
+   "names": [
+    "sambo:벨트 그립",
+    "bjj:벨트 그립",
+    "judo:Belt Grip",
+    "sambo:Belt Grip / Пояс 그립"
+   ],
+   "reviewed": "여러 무술에 같은 이름·같은 동작으로 수록"
+  },
+  {
+   "id": "bjj__armbar",
+   "names": [
+    "bjj:Armbar",
+    "judo:Juji Gatame",
+    "judo:Ude Hishigi Juji Gatame"
+   ],
+   "reviewed": "주지가타메(우데히시기 주지가타메는 정식 명칭) = 암바 — 같은 십자 꺾기"
+  },
+  {
+   "id": "bjj__triangle-choke",
+   "names": [
+    "bjj:Triangle Choke",
+    "bjj:Triangle",
+    "judo:Sankaku Jime"
+   ],
+   "reviewed": "같은 트라이앵글 초크 (BJJ 클로즈드 가드·트라이앵글 계열에 중복 수록, 유도 산카쿠지메)"
+  }
+ ],
+ "differingDescriptions": [
+  {
+   "id": "karate__zenkutsu-dachi",
+   "primary": "전굴립; 앞으로 무게를 실어 전진하는 힘을 낼 때. Oi-zuki, Mae Geri 등 전진형 기술의 기본 플랫폼. 가타·기본 훈련(Kihon)에서 가장 많이 등장.",
+   "byArt": {
+    "taekwondo": "앞다리를 굽히고 폭을 넓게 잡아 전진하는 힘과 안정성을 주는 자세. 지르기·막기 동작의 기본 축."
+   }
+  },
+  {
+   "id": "karate__kokutsu-dachi",
+   "primary": "후굴립; 뒤로 무게를 두고 물러나며 막을 때. Shuto Uke와 함께 자주 쓰여, 막으면서 바로 반격 준비를 하는 자세.",
+   "byArt": {
+    "taekwondo": "무게중심을 뒷다리에 두어 앞다리로 막거나 찌르기 전 방어적 응용이 가능한 자세. 손날막기와 자주 결합."
+   }
+  },
+  {
+   "id": "karate__kiba-dachi",
+   "primary": "기마립; 좌우 이동 없이 옆으로 강하게 타격할 때. Tekki 계열 가타의 핵심 자세이며, 근거리에서 좌우 손기술을 교환할 때 안정성을 준다.",
+   "byArt": {
+    "taekwondo": "하체를 낮춰 좌우 균형과 힘을 기르는 자세. 옆지르기, 몸통 단련 동작에 사용."
+   }
+  },
+  {
+   "id": "karate__neko-ashi-dachi",
+   "primary": "묘족립; 체중을 뒤에 두고 앞발을 가볍게 띄워 언제든 발차기·회피가 가능한 상태. Naha-te 계열, 근~중거리에서 빠른 반응이 필요할 때.",
+   "byArt": {
+    "taekwondo": "앞다리에 무게를 살짝 얹고 뒷다리로 중심을 잡아 빠르게 앞차기·앞발 기술로 전환하기 좋은 자세."
+   }
+  },
+  {
+   "id": "judo__ayumi-ashi",
+   "primary": "보통 걸음",
+   "byArt": {
+    "karate": "일반적인 걷는 걸음. 가타의 기본 전진 이동."
+   }
+  },
+  {
+   "id": "judo__tsugi-ashi",
+   "primary": "미끄러지는 걸음, 뒷발이 앞발을 따라가는 이동",
+   "byArt": {
+    "karate": "쓰기아시, 딸림 걸음; 앞발이 먼저 나가고 뒷발이 따라붙는 이동. 자세를 유지하면서 거리를 좁힐 때, 특히 Oi-zuki나 진입 기술의 준비 단계에서 사용."
+   }
+  },
+  {
+   "id": "kickboxing__jab",
+   "primary": "잽; 앞손으로 짧고 빠르게 찌르는 견제·거리 측정용 기술. 장거리에서 상대 반응을 끌어내거나(Sen), 후속 기술의 미끄럼틀 역할.",
+   "byArt": {
+    "karate": "잽; 앞손으로 짧고 빠르게 찌르는 견제·거리 측정용 기술. 장거리에서 상대 반응을 끌어내거나(Sen), 후속 기술의 미끄럼틀 역할."
+   }
+  },
+  {
+   "id": "boxing__backfist",
+   "primary": "복싱 규칙에서는 일반 경기 기술로 사용하지 않음",
+   "byArt": {
+    "karate": "백핏; 팔을 짧게 튕겨 치는 타격. 근~중거리에서 빠른 카운터나 얼굴 쪽 견제로 유용, WKF에서도 Jodan 견제 기술로 자주 등장.",
+    "taekwondo": "등주먹치기; 짧은 거리에서 얼굴·관자놀이 측면을 타격. 접근전에서 유효."
+   }
+  },
+  {
+   "id": "karate__tettsui-uchi",
+   "primary": "망치주먹; 아래·옆으로 내리치는 타격. 가타 및 호신술 맥락에서 주로 등장.",
+   "byArt": {
+    "taekwondo": "메주먹; 위에서 내려찍듯 타격. 방어 후 반격에 사용."
+   }
+  },
+  {
+   "id": "karate__shuto-uchi",
+   "primary": "손날치기; 목·측두부를 노리는 가타/본카이 기술. WKF·Kyokushin 경기에서는 목 타격이 금지 부위라 실전 경기에서는 거의 쓰이지 않고, 전통 가타와 호신술에서 의미가 크다.",
+   "byArt": {
+    "taekwondo": "손날바깥치기 / 손날안치기 / 손날목치기; 목, 관자놀이 등 급소를 노리는 ITF·호신술 핵심 기술."
+   }
+  },
+  {
+   "id": "karate__haito-uchi",
+   "primary": "반대손날; 손날의 반대면으로 치는 기술. 근거리 가타 동작에 등장.",
+   "byArt": {
+    "taekwondo": "손날치기의 반대 방향 응용, 근접 반격용."
+   }
+  },
+  {
+   "id": "kickboxing__front-kick",
+   "primary": "앞차기; 직선으로 찌르듯 차는 가장 기본적인 발차기. 상대의 전진을 끊거나 거리를 벌릴 때 유용. 근거리에서는 Kansetsu Geri(14장)처럼 무릎을 노리는 짧은 변형으로도 쓰인다.",
+   "byArt": {
+    "karate": "앞차기; 직선으로 찌르듯 차는 가장 기본적인 발차기. 상대의 전진을 끊거나 거리를 벌릴 때 유용. 근거리에서는 Kansetsu Geri(14장)처럼 무릎을 노리는 짧은 변형으로도 쓰인다.",
+    "taekwondo": "정면의 몸통·얼굴을 직선으로 타격. 거리 확인·저지 (스토핑)용으로도 사용해 상대의 전진을 끊는다."
+   }
+  },
+  {
+   "id": "kickboxing__side-kick",
+   "primary": "옆차기, Keage/Kekomi; 측면으로 뻗어 차는 기술. 돌진해오는 상대를 막아 세우거나, 각도를 튼 상태에서 찌르듯 타격.",
+   "byArt": {
+    "karate": "옆차기, Keage/Kekomi; 측면으로 뻗어 차는 기술. 돌진해오는 상대를 막아 세우거나, 각도를 튼 상태에서 찌르듯 타격.",
+    "taekwondo": "발바닥으로 직선으로 밀어 차는 강한 발차기. 거리 유지, 카운터, 몸통 강타에 사용."
+   }
+  },
+  {
+   "id": "kickboxing__round-kick",
+   "primary": "돌려차기; 회전력으로 감아 치는 발차기. WKF에서는 Jodan(얼굴) Mawashi Geri가 Ippon(고득점) 기술이며, Kyokushin에서는 Chudan(몸통) Mawashi Geri와 다리를 노리는 **로",
+   "byArt": {
+    "karate": "돌려차기; 회전력으로 감아 치는 발차기. WKF에서는 Jodan(얼굴) Mawashi Geri가 Ippon(고득점) 기술이며, Kyokushin에서는 Chudan(몸통) Mawashi Geri와 다리를 노리는 **로우킥(Gedan Mawashi Geri)**이 경기의 중심 기술이다. WKF는 다리 로우킥을 채점 대상으로 인정하지 않는 반면, Kyokushin 낫다운 룰에서는 다리 로우킥으로 상대를 실제로 다운시킬 수 있어 비중이 매우 크다.",
+    "taekwondo": "몸을 회전시켜 옆에서 몸통·얼굴로 감아 차는 가장 빈도 높은 발차기. WT에서는 앞발/뒷발 돌려차기가 득점의 주력."
+   }
+  },
+  {
+   "id": "kickboxing__back-kick",
+   "primary": "뒤차기; 등을 돌린 상태나 회전 중 후방을 찌르는 강력한 직선 발차기. 상대가 등 뒤로 접근하거나 회전 타이밍을 만들 때.",
+   "byArt": {
+    "karate": "뒤차기; 등을 돌린 상태나 회전 중 후방을 찌르는 강력한 직선 발차기. 상대가 등 뒤로 접근하거나 회전 타이밍을 만들 때.",
+    "taekwondo": "등을 돌린 상태에서 뒤로 강하게 뻗어 차는 고위력 발차기. 카운터·마무리 기술로 활용."
+   }
+  },
+  {
+   "id": "kickboxing__crescent-kick",
+   "primary": "반달차기; 곡선으로 휘두르는 차기. 상대의 막기·팔을 걷어내며 다음 기술을 연결할 때.",
+   "byArt": {
+    "karate": "반달차기; 곡선으로 휘두르는 차기. 상대의 막기·팔을 걷어내며 다음 기술을 연결할 때.",
+    "taekwondo": "안반달차기 / 밖반달차기; 곡선 궤도로 옆에서 얼굴· 팔을 걷어차는 기술. 막기를 걷어내며 얼굴을 노릴 때 사용."
+   }
+  },
+  {
+   "id": "kickboxing__axe-kick",
+   "primary": "뒤꿈치차기/도끼차기; 위에서 아래로 내려찍는 차기. 가타·호신술에서 등장, 경기에서는 부상 위험으로 제한적.",
+   "byArt": {
+    "karate": "뒤꿈치차기/도끼차기; 위에서 아래로 내려찍는 차기. 가타·호신술에서 등장, 경기에서는 부상 위험으로 제한적.",
+    "taekwondo": "위에서 아래로 찍듯 차는 발차기. 상대의 막기·자세를 무너뜨리거나 얼굴을 노리는 기습 기술."
+   }
+  },
+  {
+   "id": "karate__gedan-barai",
+   "primary": "하단막기; 아래쪽 공격(로우킥, 복부 찌르기)을 쓸어내리는 기본 막기.",
+   "byArt": {
+    "taekwondo": "하단(낭심·복부) 공격 방어. 막은 뒤 반격을 위한 자세 전환에 사용."
+   }
+  },
+  {
+   "id": "karate__age-uke",
+   "primary": "상단막기; 위에서 오는 주먹 공격을 올려서 막는 기술.",
+   "byArt": {
+    "taekwondo": "올려막기; 상단 공격 방어. 얼굴 공격이 허용되는 ITF 스타링·호신술에서 특히 중요."
+   }
+  },
+  {
+   "id": "kickboxing__straight-knee",
+   "primary": "เข่าตรง, 스트레이트 니; 정면으로 곧게 찌르는 니. 상대의 전진을 맞카운터하기 좋음.",
+   "byArt": {
+    "muay-thai": "เข่าตรง, 스트레이트 니; 정면으로 곧게 찌르는 니. 상대의 전진을 맞카운터하기 좋음."
+   }
+  },
+  {
+   "id": "wrestling__basic-double-leg",
+   "primary": "양손 베기",
+   "byArt": {
+    "judo": "양손 베기"
+   }
+  },
+  {
+   "id": "sambo__fireman-s-carry",
+   "primary": "삼보에서는 **Мельница**(\"맷돌/윈드밀\")로 분류되며 §10에서 별도로 다룬다.",
+   "byArt": {
+    "judo": "어깨 바퀴"
+   }
+  },
+  {
+   "id": "muay-thai__spinning-backfist",
+   "primary": "스피닝 기술, 8장 참고",
+   "byArt": {
+    "mixed-martial-arts": "상대의 예상을 깨기 위해 회전하며 던지는 변칙 타격. 명중률은 낮지만 거리를 좁히거나 흐름을 끊는 용도로 사용된다."
+   }
+  },
+  {
+   "id": "kickboxing__horizontal-elbow",
+   "primary": "ศอกตัด, 커팅 엘보; 수평으로 베듯이 휘두르는 가장 기본적인 엘보. Lead/Rear Horizontal Elbow와 동일 계열.",
+   "byArt": {
+    "muay-thai": "ศอกตัด, 커팅 엘보; 수평으로 베듯이 휘두르는 가장 기본적인 엘보. Lead/Rear Horizontal Elbow와 동일 계열."
+   }
+  },
+  {
+   "id": "kickboxing__downward-elbow",
+   "primary": "ศอกสับ, 다운워드 엘보; 위에서 아래로 내리찍는 엘보. 클린치나 상대가 숙일 때 정수리/미간을 노림.",
+   "byArt": {
+    "muay-thai": "ศอกสับ, 다운워드 엘보; 위에서 아래로 내리찍는 엘보. 클린치나 상대가 숙일 때 정수리/미간을 노림."
+   }
+  },
+  {
+   "id": "kickboxing__upward-elbow",
+   "primary": "ศอกเงย, 업워드 엘보; 아래에서 위로 턱을 걷어 올리는 엘보. 근접 클린치 상황에서 특히 유효.",
+   "byArt": {
+    "muay-thai": "ศอกเงย, 업워드 엘보; 아래에서 위로 턱을 걷어 올리는 엘보. 근접 클린치 상황에서 특히 유효."
+   }
+  },
+  {
+   "id": "muay-thai__spinning-elbow",
+   "primary": "Sok Klab; 몸을 돌리며 반대쪽 팔꿈치로 치는 엘보. 클린치가 풀리는 순간이나 근거리 교환에서 사용.",
+   "byArt": {
+    "kickboxing": "규칙상 허용되는 경우",
+    "muay-thai": "ศอกกลับ, 스피닝/턴잉 엘보; 몸을 돌리며 반대쪽 팔꿈치로 치는 엘보. 상대가 등 뒤/사각으로 빠질 때 사용."
+   }
+  },
+  {
+   "id": "kickboxing__flying-knee",
+   "primary": "เข่าลอย, 플라잉 니; 몸을 띄워 뛰어드는 니.",
+   "byArt": {
+    "muay-thai": "เข่าลอย, 플라잉 니; 몸을 띄워 뛰어드는 니."
+   }
+  },
+  {
+   "id": "kickboxing__jumping-knee",
+   "primary": "เข่ากระโดด, 점핑 니; 제자리에서 점프하며 올려치는 니.",
+   "byArt": {
+    "muay-thai": "เข่ากระโดด, 점핑 니; 제자리에서 점프하며 올려치는 니."
+   }
+  },
+  {
+   "id": "kickboxing__catch",
+   "primary": "규칙상 허용되는 경우",
+   "byArt": {
+    "kickboxing": "Catch; 이후의 처리도 룰마다 다르다. 상대의 로우킥이나 라운드킥을 팔로 잡아 캐치하는 것 자체는 다수의 룰에서 허용되지만, 캐치한 다리를 잡고 밀어 넘어뜨리는 행위(테이크다운)는 대부분 금지된다. 캐치 직후 반격이 어디까지 허용되는지(니 1회 허용 여부 등)는 대회 룰북을 반드시 확인해야 한다."
+   }
+  },
+  {
+   "id": "judo__lapel-grip",
+   "primary": "깃 그립",
+   "byArt": {
+    "sambo": "옷깃 그립"
+   }
+  },
+  {
+   "id": "sambo__벨트-그립",
+   "primary": "은 상대를 완전히 통제해 몸을 들어 올리거나 회전시킬 수 있어 §9의 \"벨트 잡고 등으로 던지기(Бросок через спину с захватом пояса 계열)\"나 §8의 \"벨트 잡고 허리로 던지기(Бросо",
+   "byArt": {
+    "judo": "허리띠 그립",
+    "sambo": "등 뒤 벨트, 옆구리 벨트, 양손 벨트"
+   }
+  },
+  {
+   "id": "sambo__grip-break",
+   "primary": "그립 브레이크",
+   "byArt": {
+    "judo": "그립 끊기"
+   }
+  },
+  {
+   "id": "bjj__kneebar",
+   "primary": "(무릎 레버 = 니바)",
+   "byArt": {
+    "sambo": "(무릎 레버 = 니바)"
+   }
+  },
+  {
+   "id": "bjj__straight-ankle-lock",
+   "primary": "(아킬레스건 압박 = 아킬레스 락) --- 삼보를 대표하는 서브미션. 발목을 겨드랑이/팔뚝으로 고정하고 팔뚝뼈로 아킬레스건을 파고들어 압박한다",
+   "byArt": {
+    "sambo": "(아킬레스건 압박 = 아킬레스 락) --- 삼보를 대표하는 서브미션. 발목을 겨드랑이/팔뚝으로 고정하고 팔뚝뼈로 아킬레스건을 파고들어 압박한다"
+   }
+  },
+  {
+   "id": "bjj__rear-naked-choke",
+   "primary": "맨손 조르기",
+   "byArt": {
+    "judo": "맨손 조르기"
+   }
+  },
+  {
+   "id": "bjj__armbar",
+   "primary": "십자 굳히기 --- 팔꿈치를 반대로 꺾는 대표 암바",
+   "byArt": {
+    "judo": "십자 굳히기 --- 팔꿈치를 반대로 꺾는 대표 암바"
+   }
+  },
+  {
+   "id": "judo__ude-garami",
+   "primary": "팔 감아 꼬기",
+   "byArt": {
+    "judo": "Ude Garami의 정식 명칭"
+   }
+  },
+  {
+   "id": "bjj__triangle-choke",
+   "primary": "삼각 조르기",
+   "byArt": {
+    "judo": "삼각 조르기"
+   }
+  }
+ ],
+ "libraryRedirects": [
+  {
+   "libraryId": "mixed-martial-arts__guillotine-choke",
+   "canonical": "bjj__guillotine",
+   "reason": "MMA에 따로 등록된 길로틴 초크"
+  },
+  {
+   "libraryId": "mixed-martial-arts__arm-triangle-choke",
+   "canonical": "bjj__arm-triangle",
+   "reason": "MMA에 따로 등록된 암 트라이앵글 초크"
+  },
+  {
+   "libraryId": "mma__double-leg-takedown",
+   "canonical": "wrestling__basic-double-leg",
+   "reason": "MMA에 따로 등록된 기본 더블 레그 테이크다운"
+  },
+  {
+   "libraryId": "mixed-martial-arts__overhand-right",
+   "canonical": "mixed-martial-arts__overhand",
+   "reason": "오른손 오버핸드 = 오버핸드"
+  },
+  {
+   "libraryId": "bjj__closed-guard-armbar",
+   "canonical": "bjj__armbar",
+   "reason": "공식 Armbar가 클로즈드 가드 암바"
+  },
+  {
+   "libraryId": "bjj__니-슬라이스-패스",
+   "canonical": "bjj__knee-cut-pass",
+   "reason": "니 슬라이스 = 니 컷 패스"
+  },
+  {
+   "libraryId": "bjj__bullfighter-pass",
+   "canonical": "bjj__torreando-pass",
+   "reason": "Bullfighter Pass = Torreando(투우사) 패스"
+  },
+  {
+   "libraryId": "link__mixed-martial-arts__wrestling__granby-roll",
+   "canonical": "wrestling__granby-roll",
+   "reason": "link record (기존 기술에 무술 연결)"
+  }
+ ],
+ "smallArts": [],
+ "sameNameDifferentCanonical": [
+  {
+   "name": "pivot",
+   "ids": [
+    "kickboxing__pivot",
+    "wrestling__pivot"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "feint",
+   "ids": [
+    "karate__feint",
+    "wrestling__feint",
+    "boxing__feint"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "backstep",
+   "ids": [
+    "wrestling__back-step",
+    "bjj__backstep"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "bridge",
+   "ids": [
+    "wrestling__bridge",
+    "judo__bridge"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "handfighting",
+   "ids": [
+    "wrestling__hand-fighting",
+    "boxing__hand-fighting",
+    "bjj__hand-fighting"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "wristcontrol",
+   "ids": [
+    "wrestling__wrist-control",
+    "boxing__wrist-control",
+    "bjj__wrist-control"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "insidecontrol",
+   "ids": [
+    "wrestling__inside-control",
+    "kickboxing__inside-control"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "squarestance",
+   "ids": [
+    "wrestling__square-stance",
+    "kickboxing__square-stance"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "dropstep",
+   "ids": [
+    "wrestling__drop-step",
+    "boxing__drop-step"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "elbowguard",
+   "ids": [
+    "muay-thai__elbow-guard",
+    "boxing__elbow-guard"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "catch",
+   "ids": [
+    "kickboxing__catch",
+    "boxing__catch"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "frame",
+   "ids": [
+    "boxing__frame",
+    "judo__frame"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "collarchoke",
+   "ids": [
+    "sambo__collar-choke",
+    "bjj__collar-choke"
+   ],
+   "reviewed": true
+  },
+  {
+   "name": "gripfighting",
+   "ids": [
+    "judo__grip-fighting",
+    "bjj__grip-fighting"
+   ],
+   "reviewed": true
+  }
+ ]
+}

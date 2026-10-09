@@ -1,0 +1,961 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/build-technique-canonical.mjs",
+  "groups": [
+    {
+      "canonicalId": "bjj__arm-drag",
+      "members": [
+        "bjj__arm-drag",
+        "wrestling__arm-drag"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__butterfly-sweep",
+      "members": [
+        "bjj__butterfly-sweep",
+        "bjj__basic-butterfly-sweep"
+      ],
+      "reason": "같은 기본 버터플라이 스윕"
+    },
+    {
+      "canonicalId": "bjj__double-under-pass",
+      "members": [
+        "bjj__double-under-pass",
+        "bjj__double-under"
+      ],
+      "reason": "같은 더블 언더 패스"
+    },
+    {
+      "canonicalId": "bjj__duck-under",
+      "members": [
+        "bjj__duck-under",
+        "wrestling__duck-under"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__high-crotch",
+      "members": [
+        "bjj__high-crotch",
+        "wrestling__high-crotch"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__hip-escape",
+      "members": [
+        "bjj__hip-escape",
+        "judo__hip-escape"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__inside-single",
+      "members": [
+        "bjj__inside-single",
+        "wrestling__inside-single"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__knee-cut-pass",
+      "members": [
+        "bjj__knee-cut-pass",
+        "bjj__knee-cut"
+      ],
+      "reason": "같은 무릎 자르기 패스 (패스 가드 / 가드 패스 기술 모음에 중복 수록)"
+    },
+    {
+      "canonicalId": "bjj__knee-tap",
+      "members": [
+        "bjj__knee-tap",
+        "wrestling__knee-tap"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__leg-weave-pass",
+      "members": [
+        "bjj__leg-weave-pass",
+        "bjj__leg-weave"
+      ],
+      "reason": "같은 레그 위브 패스"
+    },
+    {
+      "canonicalId": "bjj__low-single",
+      "members": [
+        "bjj__low-single",
+        "wrestling__low-single"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__outside-single",
+      "members": [
+        "bjj__outside-single",
+        "wrestling__outside-single"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__over-under-pass",
+      "members": [
+        "bjj__over-under-pass",
+        "bjj__over-under"
+      ],
+      "reason": "같은 오버-언더 패스 (BJJ 안에서 중복)"
+    },
+    {
+      "canonicalId": "bjj__overhook",
+      "members": [
+        "bjj__overhook",
+        "kickboxing__overhook"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__running-the-pipe",
+      "members": [
+        "bjj__running-the-pipe",
+        "wrestling__running-the-pipe"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "bjj__torreando-pass",
+      "members": [
+        "bjj__torreando-pass",
+        "bjj__torreando"
+      ],
+      "reason": "같은 토레안도 패스"
+    },
+    {
+      "canonicalId": "bjj__underhook",
+      "members": [
+        "bjj__underhook",
+        "kickboxing__underhook",
+        "wrestling__underhook"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__backfist",
+      "members": [
+        "boxing__backfist",
+        "kickboxing__backfist",
+        "muay-thai__backfist"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__l-step",
+      "members": [
+        "boxing__l-step",
+        "kickboxing__l-step"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__lateral-step",
+      "members": [
+        "boxing__lateral-step",
+        "kickboxing__lateral-step"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__long-guard",
+      "members": [
+        "boxing__long-guard",
+        "kickboxing__long-guard"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__slip-cross",
+      "members": [
+        "boxing__slip-cross",
+        "kickboxing__slip-cross"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "boxing__step-back",
+      "members": [
+        "boxing__step-back",
+        "kickboxing__step-back"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__ayumi-ashi",
+      "members": [
+        "judo__ayumi-ashi",
+        "karate__ayumi-ashi"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__back-control",
+      "members": [
+        "bjj__back-control",
+        "judo__back-control"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__bridge",
+      "members": [
+        "bjj__bridge",
+        "judo__bridge"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__grip-fighting",
+      "members": [
+        "bjj__grip-fighting",
+        "judo__grip-fighting"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__guard-recovery",
+      "members": [
+        "bjj__guard-recovery",
+        "judo__guard-recovery"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__harai-goshi",
+      "members": [
+        "bjj__harai-goshi",
+        "judo__harai-goshi"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__kesa-gatame",
+      "members": [
+        "bjj__kesa-gatame",
+        "judo__kesa-gatame"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__kouchi-gari",
+      "members": [
+        "bjj__kouchi-gari",
+        "judo__kouchi-gari"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__mount",
+      "members": [
+        "bjj__mount",
+        "judo__mount"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__osoto-gari",
+      "members": [
+        "bjj__osoto-gari",
+        "judo__osoto-gari"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__ouchi-gari",
+      "members": [
+        "bjj__ouchi-gari",
+        "judo__ouchi-gari"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__sasae-tsurikomi-ashi",
+      "members": [
+        "bjj__sasae-tsurikomi-ashi",
+        "judo__sasae-tsurikomi-ashi"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__tsugi-ashi",
+      "members": [
+        "judo__tsugi-ashi",
+        "karate__tsugi-ashi"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__turtle-recovery",
+      "members": [
+        "bjj__turtle-recovery",
+        "judo__turtle-recovery"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__two-on-one",
+      "members": [
+        "bjj__two-on-one",
+        "judo__two-on-one",
+        "wrestling__two-on-one"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "judo__uchi-mata",
+      "members": [
+        "bjj__uchi-mata",
+        "judo__uchi-mata"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__angle-step",
+      "members": [
+        "boxing__angle-step",
+        "kickboxing__angle-step"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__catch",
+      "members": [
+        "boxing__catch",
+        "kickboxing__catch"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__circle-out",
+      "members": [
+        "boxing__circle-out",
+        "kickboxing__circle-out"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__cross",
+      "members": [
+        "boxing__cross",
+        "kickboxing__cross"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__cross-counter",
+      "members": [
+        "boxing__cross-counter",
+        "kickboxing__cross-counter"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__cut-off",
+      "members": [
+        "boxing__cut-off",
+        "kickboxing__cut-off"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__double-collar-tie",
+      "members": [
+        "boxing__double-collar-tie",
+        "kickboxing__double-collar-tie"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__high-guard",
+      "members": [
+        "boxing__high-guard",
+        "kickboxing__high-guard"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__inside-control",
+      "members": [
+        "boxing__inside-control",
+        "kickboxing__inside-control"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__jab",
+      "members": [
+        "boxing__jab",
+        "kickboxing__jab"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__jab-counter",
+      "members": [
+        "boxing__jab-counter",
+        "kickboxing__jab-counter"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__jab-cross-body-kick",
+      "members": [
+        "kickboxing__jab-cross-body-kick",
+        "muay-thai__jab-cross-body-kick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__lead-hook",
+      "members": [
+        "boxing__lead-hook",
+        "kickboxing__lead-hook"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__lead-uppercut",
+      "members": [
+        "boxing__lead-uppercut",
+        "kickboxing__lead-uppercut"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__lean-back",
+      "members": [
+        "boxing__lean-back",
+        "kickboxing__lean-back"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__orthodox",
+      "members": [
+        "boxing__orthodox",
+        "kickboxing__orthodox"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__parry",
+      "members": [
+        "boxing__parry",
+        "kickboxing__parry"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__pivot",
+      "members": [
+        "boxing__pivot",
+        "kickboxing__pivot"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__pull",
+      "members": [
+        "boxing__pull",
+        "kickboxing__pull"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__rear-hook",
+      "members": [
+        "boxing__rear-hook",
+        "kickboxing__rear-hook"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__rear-uppercut",
+      "members": [
+        "boxing__rear-uppercut",
+        "kickboxing__rear-uppercut"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__roll",
+      "members": [
+        "boxing__roll",
+        "kickboxing__roll"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__shoulder-feint",
+      "members": [
+        "boxing__shoulder-feint",
+        "kickboxing__shoulder-feint"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__shuffle",
+      "members": [
+        "boxing__shuffle",
+        "kickboxing__shuffle"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__slip",
+      "members": [
+        "boxing__slip",
+        "kickboxing__slip"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__southpaw",
+      "members": [
+        "boxing__southpaw",
+        "kickboxing__southpaw"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__step-forward",
+      "members": [
+        "boxing__step-forward",
+        "kickboxing__step-forward"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "kickboxing__switch-step",
+      "members": [
+        "boxing__switch-step",
+        "kickboxing__switch-step"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "mixed-martial-arts__check-hook",
+      "members": [
+        "boxing__check-hook",
+        "mixed-martial-arts__check-hook"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "mixed-martial-arts__overhand",
+      "members": [
+        "boxing__overhand",
+        "kickboxing__overhand",
+        "mixed-martial-arts__overhand",
+        "muay-thai__overhand"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__back-elbow",
+      "members": [
+        "kickboxing__back-elbow",
+        "muay-thai__back-elbow"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__catch-and-return",
+      "members": [
+        "kickboxing__catch-and-return",
+        "muay-thai__catch-and-return"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__dutch-guard",
+      "members": [
+        "kickboxing__dutch-guard",
+        "muay-thai__dutch-guard"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__question-mark-kick",
+      "members": [
+        "kickboxing__question-mark-kick",
+        "muay-thai__question-mark-kick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__shell",
+      "members": [
+        "boxing__shell",
+        "muay-thai__shell"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__spinning-back-kick",
+      "members": [
+        "kickboxing__spinning-back-kick",
+        "muay-thai__spinning-back-kick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__spinning-backfist",
+      "members": [
+        "kickboxing__spinning-backfist",
+        "mixed-martial-arts__spinning-backfist",
+        "muay-thai__spinning-backfist"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__spinning-elbow",
+      "members": [
+        "kickboxing__spinning-elbow",
+        "muay-thai__spinning-elbow"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__step-up-kick",
+      "members": [
+        "kickboxing__step-up-kick",
+        "muay-thai__step-up-kick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__superman-punch",
+      "members": [
+        "boxing__superman-punch",
+        "kickboxing__superman-punch",
+        "muay-thai__superman-punch"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "muay-thai__switch-kick",
+      "members": [
+        "kickboxing__switch-kick",
+        "muay-thai__switch-kick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "sambo__fireman-s-carry",
+      "members": [
+        "bjj__fireman-s-carry",
+        "sambo__fireman-s-carry",
+        "wrestling__fireman-s-carry"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "sambo__grip-break",
+      "members": [
+        "judo__grip-break",
+        "sambo__grip-break"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "sambo__벨트-그립",
+      "members": [
+        "bjj__벨트-그립",
+        "sambo__벨트-그립"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__ankle-pick",
+      "members": [
+        "bjj__ankle-pick",
+        "wrestling__ankle-pick"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__body-lock",
+      "members": [
+        "bjj__body-lock",
+        "kickboxing__body-lock",
+        "muay-thai__body-lock",
+        "wrestling__body-lock"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__collar-tie",
+      "members": [
+        "boxing__collar-tie",
+        "kickboxing__collar-tie",
+        "wrestling__collar-tie"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__crossface",
+      "members": [
+        "bjj__crossface",
+        "wrestling__crossface"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__front-headlock",
+      "members": [
+        "bjj__front-headlock",
+        "wrestling__front-headlock"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__front-headlock-to-back",
+      "members": [
+        "bjj__front-headlock-to-back",
+        "wrestling__front-headlock-to-back"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__go-behind",
+      "members": [
+        "bjj__go-behind",
+        "wrestling__go-behind"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__granby-roll",
+      "members": [
+        "bjj__granby-roll",
+        "wrestling__granby-roll",
+        "wrestling__granby"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__head-and-arm-control",
+      "members": [
+        "muay-thai__head-and-arm-control",
+        "wrestling__head-and-arm-control"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__mat-return",
+      "members": [
+        "bjj__mat-return",
+        "wrestling__mat-return"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__peterson-roll",
+      "members": [
+        "wrestling__peterson-roll",
+        "wrestling__peterson"
+      ],
+      "reason": "같은 피터슨 롤 (원문 탈출 목록에 약칭 \"Peterson\"으로도 수록)"
+    },
+    {
+      "canonicalId": "wrestling__russian-tie",
+      "members": [
+        "bjj__russian-tie",
+        "wrestling__russian-tie"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__sit-out",
+      "members": [
+        "bjj__sit-out",
+        "wrestling__sit-out"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__snap-down",
+      "members": [
+        "bjj__snap-down",
+        "wrestling__snap-down"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__spin-behind",
+      "members": [
+        "bjj__spin-behind",
+        "wrestling__spin-behind"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__spiral-ride",
+      "members": [
+        "bjj__spiral-ride",
+        "wrestling__spiral-ride"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    },
+    {
+      "canonicalId": "wrestling__stand-up",
+      "members": [
+        "bjj__stand-up",
+        "wrestling__stand-up"
+      ],
+      "reason": "여러 무술에 같은 이름·같은 동작으로 수록"
+    }
+  ],
+  "addTeqDuplicates": [
+    {
+      "id": "mixed-martial-arts__guillotine-choke",
+      "canonical": "bjj__guillotine",
+      "reason": "MMA에 따로 등록된 길로틴 초크"
+    },
+    {
+      "id": "mixed-martial-arts__arm-triangle-choke",
+      "canonical": "bjj__arm-triangle",
+      "reason": "MMA에 따로 등록된 암 트라이앵글 초크"
+    },
+    {
+      "id": "mma__double-leg-takedown",
+      "canonical": "wrestling__basic-double-leg",
+      "reason": "MMA에 따로 등록된 기본 더블 레그 테이크다운"
+    },
+    {
+      "id": "mixed-martial-arts__overhand-right",
+      "canonical": "mixed-martial-arts__overhand",
+      "reason": "오른손 오버핸드 = 오버핸드"
+    },
+    {
+      "id": "bjj__closed-guard-armbar",
+      "canonical": "bjj__armbar",
+      "reason": "공식 Armbar가 클로즈드 가드 암바"
+    },
+    {
+      "id": "bjj__니-슬라이스-패스",
+      "canonical": "bjj__knee-cut-pass",
+      "reason": "니 슬라이스 = 니 컷 패스"
+    },
+    {
+      "id": "bjj__bullfighter-pass",
+      "canonical": "bjj__torreando-pass",
+      "reason": "Bullfighter Pass = Torreando(투우사) 패스"
+    }
+  ],
+  "extraAliases": {
+    "wrestling__granby-roll": [
+      "Granby",
+      "그랜비 롤",
+      "그랜비롤"
+    ]
+  },
+  "excluded": [
+    {
+      "ids": [
+        "karate__대표-기술",
+        "taekwondo__대표-기술"
+      ],
+      "reason": "\"대표 기술\"은 기술이 아니라 각 무술 문서의 목록 제목"
+    },
+    {
+      "ids": [
+        "bjj__backstep",
+        "wrestling__back-step"
+      ],
+      "reason": "BJJ 백스텝(가드 패스/레그 엔트리) ≠ 레슬링 백 스텝(기본 이동)"
+    },
+    {
+      "ids": [
+        "boxing__frame",
+        "judo__frame"
+      ],
+      "reason": "복싱 근거리 프레임(밀어내기) ≠ 유도 탈출 프레임"
+    },
+    {
+      "ids": [
+        "bjj__wrist-control",
+        "boxing__wrist-control",
+        "wrestling__wrist-control"
+      ],
+      "reason": "가드 안 손목 제어 / 클린치 손목 제어 / 스탠딩 핸드파이팅 — 상황과 목적이 다름"
+    },
+    {
+      "ids": [
+        "bjj__hand-fighting",
+        "boxing__hand-fighting",
+        "wrestling__hand-fighting"
+      ],
+      "reason": "백 컨트롤 방어 / 인파이팅 / 스탠딩 그립 싸움 — 서로 다른 기술"
+    },
+    {
+      "ids": [
+        "boxing__feint",
+        "wrestling__feint"
+      ],
+      "reason": "펀치 페인트 ≠ 태클 진입 페인트"
+    },
+    {
+      "ids": [
+        "boxing__drop-step",
+        "wrestling__drop-step"
+      ],
+      "reason": "복싱 풋워크 드롭 스텝 ≠ 레슬링 태클 진입 드롭 스텝"
+    },
+    {
+      "ids": [
+        "kickboxing__square-stance",
+        "wrestling__square-stance"
+      ],
+      "reason": "타격 스탠스 ≠ 레슬링 스탠스"
+    },
+    {
+      "ids": [
+        "boxing__elbow-guard",
+        "muay-thai__elbow-guard"
+      ],
+      "reason": "바디 펀치 방어 ≠ 로우킥/훅 방어 자세"
+    },
+    {
+      "ids": [
+        "bjj__over-under",
+        "wrestling__over-under"
+      ],
+      "reason": "BJJ 오버-언더 패스 ≠ 레슬링 오버-언더 클린치"
+    },
+    {
+      "ids": [
+        "judo__overhook-underhook",
+        "muay-thai__overhook-underhook"
+      ],
+      "reason": "도복 그립 ≠ 무에타이 클린치 (두 기술을 묶은 항목)"
+    },
+    {
+      "ids": [
+        "wrestling__pivot"
+      ],
+      "reason": "레슬링 피벗(그라운드/스탠딩 방향 전환)은 복싱·킥복싱 풋워크 피벗과 다른 동작 — 타격 피벗끼리만 통합"
+    },
+    {
+      "ids": [
+        "wrestling__bridge"
+      ],
+      "reason": "레슬링 브리지(목 브리지 기본 움직임) ≠ BJJ·유도 브리지 탈출 — 탈출 브리지끼리만 통합"
+    },
+    {
+      "ids": [
+        "wrestling__inside-control"
+      ],
+      "reason": "레슬링 인사이드 컨트롤(핸드파이팅 타이) ≠ 클린치 인사이드 컨트롤 — 타격 클린치끼리만 통합"
+    }
+  ]
+}

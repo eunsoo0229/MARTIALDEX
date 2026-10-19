@@ -1,5 +1,5 @@
 import { aiProvider } from '../ai/provider';
-import type { AiErrorCode, AiImagePart } from '../ai/types';
+import type { AiErrorCode, AiImagePart, AiMediaPart } from '../ai/types';
 
 // Every structured (non-chat) Gemini call in the fighter-style feature goes
 // through here — reuses the exact same IPC path as the chat feature
@@ -30,6 +30,11 @@ export async function askGeminiForJson<T>(params: {
   validate?: (data: unknown) => data is T;
   /** 음식 사진 분석(nutrition/aiPhotoAnalysis.ts) 전용 — undefined인 다른 모든 호출부는 그대로 텍스트 전용. */
   imageParts?: AiImagePart[];
+  /** Ordered labelled media (기준 영상 비교 자세 평가) — see ai/types.ts. */
+  mediaParts?: AiMediaPart[];
+  temperature?: number;
+  maxOutputTokens?: number;
+  thinkingLevel?: 'minimal' | 'low' | 'medium';
 }): Promise<GeminiJsonOutcome<T>> {
   const result = await aiProvider.ask({
     systemInstruction: `${JSON_MODE_PREAMBLE}\n\n${params.systemInstruction}`,
@@ -37,6 +42,10 @@ export async function askGeminiForJson<T>(params: {
     history: [],
     question: params.question,
     imageParts: params.imageParts,
+    mediaParts: params.mediaParts,
+    temperature: params.temperature,
+    maxOutputTokens: params.maxOutputTokens,
+    thinkingLevel: params.thinkingLevel,
   });
 
   if (!result.ok) {

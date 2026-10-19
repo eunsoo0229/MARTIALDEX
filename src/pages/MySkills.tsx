@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { martialArtSummaries } from '../lib/loadData';
 import { buildExportPayload, deleteAllRecords } from '../lib/poseAnalysis/recordsService';
@@ -27,6 +27,8 @@ function downloadJson(data: unknown, filename: string) {
 }
 
 const MASTERY_STATUS_ORDER: MasteryStatus[] = ['proficient', 'average', 'needs_improvement', 'learning', 'not_started'];
+
+const PAGE = 60;
 
 export default function MySkills() {
   const skillEntries = useAllSkillProgress(); // reacts to pose-record / training-history / override changes
@@ -73,6 +75,9 @@ export default function MySkills() {
   });
 
   const totalAnalyzed = skillEntries.filter((e) => e.progress.analysisCount > 0).length;
+  // 1,100+ rows at once was the slowest screen on phones — draw a page, add more on request.
+  const [shown, setShown] = useState(PAGE);
+  useEffect(() => setShown(PAGE), [martialArtFilter, statusFilter, sortMode]);
 
   function handleExport() {
     downloadJson(buildExportPayload(), `martialdex-pose-records-${new Date().toISOString().slice(0, 10)}.json`);
@@ -235,7 +240,7 @@ export default function MySkills() {
             </div>
 
             <div className="stack gap-2">
-              {sorted.map(({ technique, progress }) => (
+              {sorted.slice(0, shown).map(({ technique, progress }) => (
                 <Link key={technique.id} to={`/arts/${technique.martialArt}/techniques/${technique.id}`} className="technique-row">
                   <div className="technique-row__main">
                     <div className="technique-row__name">{technique.name}</div>
@@ -251,6 +256,11 @@ export default function MySkills() {
                   </div>
                 </Link>
               ))}
+              {sorted.length > shown && (
+                <button type="button" className="btn btn-secondary" onClick={() => setShown((n) => n + PAGE)} data-testid="my-skills-more">
+                  더 보기 ({sorted.length - shown}개 남음)
+                </button>
+              )}
             </div>
           </>
         )}

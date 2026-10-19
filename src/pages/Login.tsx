@@ -54,8 +54,8 @@ export default function Login() {
         {!isConfigured && <div className="ai-inline-warning">Supabase 설정이 되어 있지 않아 로그인을 사용할 수 없습니다. 기술 백과사전은 로그인 없이 계속 이용할 수 있습니다.</div>}
 
         <form className="card info-card" onSubmit={handleSubmit}>
-          <div className="field-label">이메일</div>
-          <input className="select" style={{ width: '100%' }} type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="email" autoFocus />
+          <div className="field-label">이메일 또는 아이디</div>
+          <input className="select" style={{ width: '100%' }} type="text" inputMode="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoComplete="username" autoFocus data-testid="login-id" />
 
           <div className="field-label" style={{ marginTop: 12 }}>
             비밀번호

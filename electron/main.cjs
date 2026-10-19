@@ -54,20 +54,55 @@ require('dotenv').config({ path: resolvedEnvPath });
 // user exactly which path was actually checked, instead of a generic hint.
 process.env.MARTIALDEX_ENV_PATH = resolvedEnvPath;
 const { askGemini } = require('./gemini.cjs');
+const { askLocalModel, cancelLocalModel, localModelStatus } = require('./ollama.cjs');
 const { searchYoutube, getVideoInfo } = require('./youtubeSearch.cjs');
 const { webSearch } = require('./webSearch.cjs');
 const { getDeviceInfo } = require('./deviceInfo.cjs');
+const localStt = require('./localStt.cjs');
 
 ipcMain.handle('device:info', () => getDeviceInfo(app.getVersion()));
 
 // macOS gates the microphone per app (TCC): without an explicit request the
 // stream can come back silent. Ask once when the user first presses the mic;
 // report the real status so the UI can say exactly what to fix.
+// 로컬 음성인식 (whisper.cpp on this Mac — see localStt.cjs). Audio and text never leave the machine.
+ipcMain.handle('stt:status', (_e, model) => localStt.status(model));
+ipcMain.handle('stt:download', (event, model) =>
+  localStt.downloadModel(model, (received, total) => {
+    if (!event.sender.isDestroyed()) event.sender.send('stt:download-progress', { model, received, total });
+  }),
+);
+ipcMain.handle('stt:cancel-download', () => localStt.cancelDownload());
+ipcMain.handle('stt:delete-model', (_e, model) => localStt.deleteModel(model));
+ipcMain.handle('stt:warm-up', (_e, model) => localStt.warmUp(model));
+ipcMain.handle('stt:transcribe', (_e, payload) => {
+  const wav = payload?.wav;
+  if (!(wav instanceof Uint8Array) || wav.length < 44 || wav.length > 8 * 1024 * 1024) return { ok: false, code: 'BAD_AUDIO', message: '음성 데이터가 올바르지 않습니다.' };
+  return localStt.transcribe(wav, { model: payload.model, prompt: payload.prompt, audioCtx: payload.audioCtx });
+});
+
 ipcMain.handle('media:mic-access', async () => {
   if (process.platform !== 'darwin' || !systemPreferences.getMediaAccessStatus) return 'granted';
   let status = systemPreferences.getMediaAccessStatus('microphone');
   if (status === 'not-determined') status = (await systemPreferences.askForMediaAccess('microphone')) ? 'granted' : 'denied';
   return status;
+});
+
+// Same for the camera: until the app has asked macOS (TCC), Chromium sees NO
+// video devices and getUserMedia fails with "NotFoundError" even on a Mac
+// with a working webcam. Ask on the user's "카메라 켜기" tap; return the status.
+ipcMain.handle('media:camera-access', async () => {
+  if (process.platform !== 'darwin' || !systemPreferences.getMediaAccessStatus) return 'granted';
+  let status = systemPreferences.getMediaAccessStatus('camera');
+  if (status === 'not-determined') status = (await systemPreferences.askForMediaAccess('camera')) ? 'granted' : 'denied';
+  return status;
+});
+
+// Opens System Settings → Privacy → Camera (fixed URL, no renderer input).
+ipcMain.handle('media:open-camera-settings', async () => {
+  if (process.platform !== 'darwin') return false;
+  await shell.openExternal('x-apple.systempreferences:com.apple.preference.security?Privacy_Camera');
+  return true;
 });
 
 ipcMain.handle('ai:ask', async (_event, request) => {
@@ -78,6 +113,31 @@ ipcMain.handle('ai:ask', async (_event, request) => {
     return await askGemini(request);
   } catch {
     return { ok: false, code: 'UNKNOWN', message: 'AI 요청 중 알 수 없는 오류가 발생했습니다.' };
+  }
+});
+
+// MARTIALDEX 자체 AI 코치 — the local Ollama model (electron/ollama.cjs). Separate
+// channel from 'ai:ask' on purpose: the two coaches never share a transport,
+// and a local failure is returned as-is (no Gemini fallback here).
+ipcMain.handle('localai:status', async () => {
+  try {
+    return await localModelStatus();
+  } catch {
+    return { ok: false, running: false, model: null, models: [], reason: 'UNKNOWN' };
+  }
+});
+ipcMain.handle('localai:ask', async (_event, request) => {
+  try {
+    return await askLocalModel(request);
+  } catch {
+    return { ok: false, code: 'UNKNOWN', message: '로컬 모델 요청 중 알 수 없는 오류가 발생했습니다.' };
+  }
+});
+ipcMain.handle('localai:cancel', async (_event, requestId) => {
+  try {
+    return cancelLocalModel(requestId);
+  } catch {
+    return false;
   }
 });
 
@@ -144,6 +204,28 @@ ipcMain.handle('video:delete', async (_event, { path: filePath }) => {
     return { ok: true };
   } catch {
     return { ok: false, message: '영상 삭제 중 오류가 발생했습니다.' };
+  }
+});
+
+// Lets the renderer analyse a saved recording (스파링 분석 2.0): returns the
+// file's bytes so the analysis gets a same-origin Blob (pose detection and
+// colour sampling can't read pixels from a cross-origin file:// video in
+// dev). Read-only, and only for files strictly INSIDE SPARRING_VIDEOS_DIR —
+// the path is resolved first, so "..", symlinks-by-name or a sibling folder
+// like "sparring-videos-x" are refused. Size-capped like uploads (300MB).
+const MAX_READ_BYTES = 300 * 1024 * 1024;
+ipcMain.handle('video:read', async (_event, filePath) => {
+  if (typeof filePath !== 'string') return { ok: false, message: '잘못된 파일 경로입니다.' };
+  const resolved = path.resolve(filePath);
+  const rel = path.relative(SPARRING_VIDEOS_DIR, resolved);
+  if (!rel || rel.startsWith('..') || path.isAbsolute(rel)) return { ok: false, message: '잘못된 파일 경로입니다.' };
+  try {
+    const stat = fs.statSync(resolved);
+    if (!stat.isFile()) return { ok: false, message: '영상 파일을 찾을 수 없습니다.' };
+    if (stat.size > MAX_READ_BYTES) return { ok: false, message: '영상 파일이 너무 큽니다 (300MB 초과).' };
+    return { ok: true, data: fs.readFileSync(resolved) };
+  } catch {
+    return { ok: false, message: '영상 파일을 읽지 못했습니다.' };
   }
 });
 
@@ -308,6 +390,7 @@ function flushStorage() {
 }
 app.on('browser-window-created', (_e, win) => win.on('close', flushStorage));
 app.on('before-quit', flushStorage);
+app.on('will-quit', () => localStt.stopServer());
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();

@@ -5,7 +5,8 @@ import { getCurriculum } from '../lib/curriculum/curriculumService';
 import { buildDayContext } from '../lib/ai/context';
 import { getTechniqueVideos } from '../lib/techniqueVideo/service';
 import { isTtsSupported, speak, stopSpeaking } from '../lib/voice/tts';
-import { isVoiceInputSupported, startRecording, type Recorder, type SttPhase } from '../lib/voice/stt';
+import { isVoiceInputSupported } from '../lib/voice/stt';
+import { useVoiceInput, VoiceInputPanel } from '../components/voice/useVoiceInput';
 import { COACH_DAY_CONFIG, practiceSecondsFor } from '../lib/aiCoachDay/config';
 import { practiceRemainingMs } from '../lib/aiCoachDay/cues';
 import {
@@ -22,11 +23,9 @@ import {
   updateCoachDayRun,
 } from '../lib/aiCoachDay/sessionStore';
 import {
-  askCoach,
   coachTechniquesForDay,
   displayName,
   finalizeCoachDay,
-  gradeQuizAnswer,
   isReadyIntent,
   coachPlaceContext,
   planItemFor,
@@ -37,16 +36,26 @@ import {
 import { LOCATION_ICON, LOCATION_LABEL, locationIntro, parseLocation } from '../lib/aiCoachCurriculum/location';
 import { ROLE_LABEL } from '../lib/aiCoachCurriculum/service';
 import CoachLocationPicker from '../components/CoachLocationPicker';
+import CoachPicker from '../components/coach/CoachPicker';
+import LocalModelWaitNotice from '../components/coach/LocalModelWaitNotice';
+import { coachBackend } from '../lib/coachProvider/backend';
+import { rememberedCoach } from '../lib/coachProvider/preference';
+import { COACH_LABEL, coachKindOf, isCoachKind, type CoachKind } from '../lib/coachProvider/types';
 import TutorVoiceSettingsPanel from '../components/TutorVoiceSettingsPanel';
 import { motionForTechnique } from '../lib/visualMitt/archetypes';
-import { isSoloLocation } from '../lib/aiCoachCurriculum/location';
 import type { CoachDayRun, CoachMode, CoachStep, LessonMittPlan } from '../lib/aiCoachDay/types';
 import PostureSection from '../components/PostureSection';
-import MicTestPanel, { LevelMeter, PHASE_LABEL, useInputLevel } from '../components/MicTestPanel';
+import MicTestPanel, { LevelMeter, PHASE_LABEL } from '../components/MicTestPanel';
+import SoloDrillRunner, { type SoloDrillResult } from '../components/soloDrill/SoloDrillRunner';
+import { isMmaContext, isSubmissionGoal, planPractice, type PracticeSetup } from '../lib/aiCoachDay/practicePlan';
+import ComboVideoPanel from '../components/visualMitt/ComboVideoPanel';
 import MittRunner, { type MittRunResult } from '../components/visualMitt/MittRunner';
 import { findTutorVideos, type TutorVideo } from '../lib/techniqueVideo/tutorVideoFinder';
+import { findOtherPlatformVideos, PLATFORM_LABEL, type PlatformVideo } from '../lib/techniqueVideo/otherPlatformVideos';
+import OtherPlatformVideos from '../components/coach/OtherPlatformVideos';
 import { addTechniqueVideo } from '../lib/techniqueVideo/service';
-import { decideDrill, generateMittPlan, isMittRequest, lessonPlan, type MittPlan } from '../lib/visualMitt/aiPlan';
+import { isMittRequest, lessonPlan, type MittPlan } from '../lib/visualMitt/aiPlan';
+import { planMittTraining } from '../lib/visualMitt/mittSourcing';
 import { reviewConnections, saveMittCombo, stepsForIds, type MittCombo } from '../lib/visualMitt/combos';
 import { withObject } from '../lib/aiCoachDay/politeSpeech';
 import { resolveTechnique } from '../lib/userTechniques/service';
@@ -55,12 +64,12 @@ import type { Technique } from '../types';
 import { actionsToMessages, lessonContextFor, lessonEvent, respondToStudent, startLesson } from '../lib/coachLesson/service';
 import { buildRecap, outcomeQuiz, recapFeedback, toLearningRecord, type RecapPlan } from '../lib/coachLesson/engine';
 import { classifyIntent } from '../lib/coachLesson/intent';
-import { gradeRecap } from '../lib/coachLesson/analyzer';
 import { saveLearningRecord } from '../lib/coachLesson/records';
+import { questionAnswerPairs, saveLessonLog, techniqueSummary } from '../lib/coachLesson/lessonLog';
 import { OPTION_LETTERS } from '../lib/coachLesson/text';
 import type { ChoiceQuestion, CoachLessonState, ConceptStatus, LessonStepResult } from '../lib/coachLesson/types';
 
-const READY_PROMPT = '준비가 되셨다면 "준비됐어" 또는 "시작"이라고 말씀하시거나 아래 버튼을 눌러 주세요. 실습 타이머를 시작하겠습니다.';
+const READY_PROMPT = '준비가 되셨다면 "준비됐어" 또는 "시작"이라고 말씀하시거나 아래 버튼을 눌러 주세요. 실습 전에 자세부터 설명하겠습니다.';
 
 const IFRAME_ALLOW = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
 
@@ -116,6 +125,11 @@ export default function CurriculumCoachSession() {
   const { martialArtId = '', curriculumId = '', day: dayParam = '' } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const mode: CoachMode = searchParams.get('mode') === 'voice' ? 'voice' : 'text';
+  // 코치 선택 — chosen before the lesson starts (?coach=martialdex|gemini), or the
+  // device's remembered choice when the user asked not to be asked again.
+  const coachParam = searchParams.get('coach');
+  const chosenCoach: CoachKind | null = isCoachKind(coachParam) ? coachParam : rememberedCoach();
+  const [switchTo, setSwitchTo] = useState<'pick' | CoachKind | null>(null);
   const curriculum = getCurriculum(curriculumId);
   // Where the class happens: fixed by an AI 코치 수업 curriculum, otherwise
   // chosen right before the class (?place=home|gym&equip=a,b). With neither,
@@ -129,9 +143,6 @@ export default function CurriculumCoachSession() {
   const run = useCoachRun();
   const [busy, setBusy] = useState(false);
   const [input, setInput] = useState('');
-  const [voiceError, setVoiceError] = useState<string | null>(null);
-  const [recording, setRecording] = useState<Recorder | null>(null);
-  const [transcribing, setTranscribing] = useState(false);
   const [playingVideoId, setPlayingVideoId] = useState<string | null>(null);
   const [, forceTick] = useState(0);
   const handledSteps = useRef(new Set<string>());
@@ -139,10 +150,9 @@ export default function CurriculumCoachSession() {
   const chatRef = useRef<HTMLDivElement>(null);
   const [summary, setSummary] = useState<ReturnType<typeof finalizeCoachDay> | null>(null);
   const ttsAvailable = isTtsSupported();
-  const [micPhase, setMicPhase] = useState<SttPhase>('idle');
-  const level = useInputLevel(micPhase === 'listening' ? recording : null);
   const recordingRef = useRef(false);
   const pendingSpeech = useRef<{ text: string; interrupt: boolean }[]>([]);
+  const [otherVideos, setOtherVideos] = useState<{ techniqueId: string; videos: PlatformVideo[] } | null>(null);
   const [videoFind, setVideoFind] = useState<{ techniqueId: string; status: 'searching' | 'done'; progress: string; videos: TutorVideo[]; checked: number } | null>(null);
   const [savedVideoId, setSavedVideoId] = useState<string | null>(null);
   const [speaking, setSpeaking] = useState(false);
@@ -154,24 +164,36 @@ export default function CurriculumCoachSession() {
 
   // Start (or resume the same) session for this Day + mode.
   useEffect(() => {
-    if (!curriculum || !day || techniques.length === 0 || !location) return;
+    if (!curriculum || !day || techniques.length === 0 || !location || !chosenCoach) return;
     const existing = getCoachDayRun();
-    const same =
+    const sameDay =
       existing && existing.curriculumId === curriculum.id && existing.day === day.day && existing.mode === mode && (existing.location ?? null) === location && !existing.finishedAt;
+    // A run saved before the coach choice existed has no coach: it is resumed and the
+    // user's explicit choice applies from here on (recorded) — never assumed to be Gemini.
+    const legacy = sameDay && coachKindOf(existing) === 'unknown';
+    const same = sameDay && (legacy || existing!.coachKind === chosenCoach);
     if (!same) {
-      startCoachDayRun(curriculum.id, day.day, mode, techniques.map((t) => t.id), location, equipment);
+      startCoachDayRun(curriculum.id, day.day, mode, techniques.map((t) => t.id), location, equipment, chosenCoach);
       handledSteps.current.clear();
       spokenIds.current.clear();
     } else {
       // Resuming: never re-speak what was already said.
       for (const m of existing!.messages) spokenIds.current.add(m.id);
+      if (legacy) {
+        updateCoachDayRun((r) => ({ ...r, coachKind: chosenCoach, coachSwitches: [...(r.coachSwitches ?? []), { from: 'unknown', to: chosenCoach, at: new Date().toISOString(), index: r.index }] }));
+        appendMessages([{ role: 'coach', kind: 'system', text: `이 수업은 코치 정보가 없던 이전 세션입니다. 지금부터는 ${COACH_LABEL[chosenCoach]}가 이어서 진행합니다.` }]);
+      }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [curriculum?.id, day?.day, mode, location, equipmentKey]);
+  }, [curriculum?.id, day?.day, mode, location, equipmentKey, chosenCoach]);
 
   useEffect(() => () => stopSpeaking(), []);
 
   const current = run ? resolveTechnique(run.techniqueIds[run.index]) : undefined;
+  // Every language-model call of this lesson goes through the run's own coach.
+  const runCoach: CoachKind | null = run && isCoachKind(run.coachKind) ? run.coachKind : null;
+  const coach = coachBackend(runCoach ?? chosenCoach ?? 'gemini');
+  const ownCoach = (runCoach ?? chosenCoach) === 'martialdex';
   const planItem = day && current ? planItemFor(day, current.id) : null;
   const placeContext = useMemo(() => coachPlaceContext(location, equipment, planItem), [location, equipment, planItem]);
   const lessonCtx = useMemo(() => (current ? lessonContextFor(current) : null), [current?.id]);
@@ -236,7 +258,7 @@ export default function CurriculumCoachSession() {
     if (!before) return;
     const lines: Omit<CoachMessage, 'id' | 'at'>[] = actionsToMessages(result.actions);
     const stepFor: Record<LessonStepResult['directive'], CoachStep> = { teach: 'lesson', video: 'videos', check: 'quiz', ready: 'ready', review: 'review', next: 'review' };
-    const keep = before.step === 'practice' || before.step === 'mitt';
+    const keep = before.step === 'practice' || before.step === 'mitt' || before.step === 'drill' || before.step === 'posture';
     const nextStep = keep ? before.step : stepFor[result.directive];
     if (!keep && nextStep === 'videos' && before.step !== 'videos') {
       const videos = getTechniqueVideos(t);
@@ -245,9 +267,9 @@ export default function CurriculumCoachSession() {
         kind: 'system',
         text: videos.length > 0 ? `이 기술의 MARTIALDEX 관련 영상이 ${videos.length}개 있습니다. 영상을 보신 뒤 "영상 확인 완료"를 눌러 주세요.` : '등록된 영상이 없어 관련 영상을 찾고 내용이 이 기술과 맞는지 확인하겠습니다. 잠시만 기다려 주세요.',
       });
-      // No real mitt/partner where they train → the coach suggests the drawn mitt for this technique.
-      if (location && isSoloLocation(location) && motionForTechnique(t)) {
-        lines.push({ role: 'coach', kind: 'system', text: `실제 미트나 파트너가 없다면, 실습 전에 화면의 AI Visualizing Mitt로 ${t.name}의 목표 지점과 발 위치를 보며 연습할 수 있습니다.` });
+      // The practice itself always calls the drawn mitt (practicePlan.ts) — said up front.
+      if (motionForTechnique(t)) {
+        lines.push({ role: 'coach', kind: 'system', text: `실습 때는 AI Visualizing Mitt를 불러 ${t.name}의 목표 지점과 발 위치에 맞춰 치게 됩니다. 시작 전에 자세부터 설명하겠습니다.` });
       }
     }
     if (!keep && nextStep === 'ready' && before.step !== 'ready') lines.push({ role: 'coach', kind: 'system', text: READY_PROMPT });
@@ -316,7 +338,7 @@ export default function CurriculumCoachSession() {
       feedback = recapFeedback(plan, []);
     } else {
       setBusy(true);
-      const hits = await gradeRecap(null, plan, text);
+      const hits = await coach.gradeRecap(null, plan, text);
       setBusy(false);
       feedback = recapFeedback(plan, hits);
     }
@@ -333,16 +355,36 @@ export default function CurriculumCoachSession() {
       setVideoFind({ techniqueId: current.id, status: 'done', progress: '', videos: saved.map((v) => ({ video: v, source: 'saved' })), checked: 0 });
       return;
     }
+    if (ownCoach) {
+      // Found videos are checked by Gemini (urlVerification.ts) — the 자체 AI 코치 shows registered videos only.
+      setVideoFind({ techniqueId: current.id, status: 'done', progress: '', videos: [], checked: 0 });
+      appendMessages([{ role: 'coach', kind: 'system', text: 'MARTIALDEX에 등록된 영상이 없습니다. 자체 AI 코치는 Gemini로 영상 내용을 확인하는 검색을 하지 않으므로, 위의 자세 설명을 참고해 주세요.' }]);
+      return;
+    }
     setVideoFind({ techniqueId: current.id, status: 'searching', progress: '관련 영상을 찾는 중입니다…', videos: [], checked: 0 });
     const t = current;
-    void findTutorVideos(t, { onProgress: (msg) => setVideoFind((v) => (v && v.techniqueId === t.id ? { ...v, progress: msg } : v)) }).then((r) => {
+    void findTutorVideos(t, { onProgress: (msg) => setVideoFind((v) => (v && v.techniqueId === t.id ? { ...v, progress: msg } : v)) }).then(async (r) => {
+      // YouTube had nothing → other video platforms (web search; the real page text must name the technique).
+      let other: PlatformVideo[] = [];
+      if (!r.videos.length) {
+        const names = [t.name, t.koreanName ?? '', ...(t.aliases ?? [])].filter(Boolean);
+        const found = await findOtherPlatformVideos({
+          terms: names,
+          queries: [`${t.name} ${curriculum?.martialArt ?? ''} tutorial`.trim(), t.koreanName ? `${t.koreanName} 기술 설명` : ''].filter(Boolean),
+          onProgress: (msg) => setVideoFind((v) => (v && v.techniqueId === t.id ? { ...v, progress: msg } : v)),
+        }).catch(() => ({ videos: [] as PlatformVideo[] }));
+        other = found.videos;
+      }
+      setOtherVideos({ techniqueId: t.id, videos: other });
       setVideoFind({ techniqueId: t.id, status: 'done', progress: '', videos: r.videos, checked: r.checked });
       const watchFor = (t.posture?.keyPoints ?? []).slice(0, 3);
       appendMessages([
         {
           role: 'coach',
           kind: 'system',
-          text: r.videos.length
+          text: other.length
+            ? `유튜브에서 맞는 영상을 찾지 못해 다른 영상 플랫폼(${[...new Set(other.map((o) => PLATFORM_LABEL[o.platform]))].join(', ')})에서 찾았습니다. 영상을 보신 뒤 "다음"을 눌러 주세요.`
+            : r.videos.length
             ? `내용을 확인한 관련 영상을 찾았습니다. 영상을 보신 뒤 "영상 확인 완료"를 눌러 주세요.${watchFor.length ? ` 영상에서는 ${withObject(watchFor.join(', '))} 확인해 주세요.` : ''}`
             : `현재 등록된 관련 영상을 찾지 못했습니다${r.checked ? `(후보 ${r.checked}개를 확인했지만 이 기술과 맞는 영상이 없었습니다)` : ''}. 위의 자세 설명을 보고 준비가 되셨다면 "다음"을 눌러 주세요.`,
         },
@@ -357,6 +399,33 @@ export default function CurriculumCoachSession() {
     const result = finalizeCoachDay(run, curriculum, day);
     if (result.historyEntryId !== run.historyEntryId) updateCoachDayRun((r) => ({ ...r, historyEntryId: result.historyEntryId }));
     setSummary(result);
+    // 수업 기록 (전 수업내용 복습용): what was taught and understood — once per run (same id → replaced, not duplicated).
+    const taught = run.techniqueIds.filter((id) => run.lessons?.[id]);
+    if (taught.length) {
+      const recapAsk = run.recap?.question ?? null;
+      const recapIdx = recapAsk ? run.messages.findIndex((m) => m.role === 'coach' && m.text === recapAsk) : -1;
+      const recapFeedback = recapIdx >= 0 ? run.messages.slice(recapIdx + 1).find((m) => m.role === 'coach' && m.kind === 'feedback')?.text ?? null : null;
+      const finished = run.finishedAt ?? new Date().toISOString();
+      saveLessonLog({
+        id: `lesson_${run.id}`,
+        kind: 'curriculum_day',
+        title: `${curriculum.title} · Day ${day.day}${day.title ? ` · ${day.title}` : ''}`,
+        date: finished.slice(0, 10),
+        startedAt: run.startedAt,
+        finishedAt: finished,
+        curriculumId: curriculum.id,
+        day: day.day,
+        historyEntryId: result.historyEntryId,
+        techniques: taught.map((id) => {
+          const t = resolveTechnique(id);
+          return t ? techniqueSummary(id, displayName(t), run.lessons![id], lessonContextFor(t)) : null;
+        }).filter((x): x is NonNullable<typeof x> => !!x),
+        qa: questionAnswerPairs(run.messages),
+        recap: recapAsk && recapFeedback ? { question: recapAsk, feedback: recapFeedback } : null,
+        updatedAt: new Date().toISOString(),
+        coachKind: coachKindOf(run),
+      });
+    }
     appendMessages([{ role: 'coach', kind: 'system', text: '오늘 학습을 모두 마쳤습니다. 수고하셨습니다. 아래 요약을 확인해 주세요.' }]);
   }, [run?.step]);
 
@@ -386,8 +455,13 @@ export default function CurriculumCoachSession() {
         beginPractice();
         return;
       }
+      // 자세 설명 끝 → "준비됐어" starts the practice that was planned.
+      if (r.step === 'posture' && isReadyIntent(text)) {
+        confirmPractice();
+        return;
+      }
       // "이걸 콤보로 연습하고 싶어" … → a Visualizing Mitt drill (checked before the lesson so it is never graded as an answer).
-      if (lesson && r.step !== 'practice' && r.step !== 'mitt' && !lesson.pending && isMittRequest(text)) {
+      if (lesson && r.step !== 'practice' && r.step !== 'mitt' && r.step !== 'posture' && !lesson.pending && isMittRequest(text)) {
         await startMittFromRequest(text, r);
         return;
       }
@@ -395,7 +469,7 @@ export default function CurriculumCoachSession() {
       if (lesson && r.step !== 'mitt') {
         setBusy(true);
         try {
-          const res = await respondToStudent({ technique: current, state: lesson, text, dayContext, history: getCoachDayRun()?.messages ?? [], place: placeContext });
+          const res = await respondToStudent({ technique: current, state: lesson, text, dayContext, history: getCoachDayRun()?.messages ?? [], place: placeContext, coach });
           applyLesson(current, res);
         } finally {
           setBusy(false);
@@ -405,7 +479,7 @@ export default function CurriculumCoachSession() {
       // ---- below: runs saved before the lesson engine (no lesson state) keep their old behaviour ----
       if (r.step === 'quiz' && r.pendingQuiz) {
         setBusy(true);
-        const graded = await gradeQuizAnswer(current, r.pendingQuiz, text);
+        const graded = await coach.gradeQuiz(current, r.pendingQuiz, text);
         appendMessages([{ role: 'coach', kind: 'feedback', text: graded.feedback }]);
         updateCoachDayRun((x) => ({
           ...x,
@@ -428,18 +502,24 @@ export default function CurriculumCoachSession() {
         return;
       }
       setBusy(true);
-      const answer = await askCoach(current, dayContext, getCoachDayRun()?.messages ?? [], text, placeContext);
+      const answer = await coach.answerQuestion({ technique: current, question: text, dayContext, history: getCoachDayRun()?.messages ?? [], place: placeContext });
       appendMessages([{ role: 'coach', kind: 'answer', text: answer.ok ? answer.text : `지금은 답변을 가져오지 못했습니다: ${answer.message}` }]);
       setBusy(false);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [current?.id, busy, dayContext, placeContext]
+    [current?.id, busy, dayContext, placeContext, coach.kind]
   );
 
   async function startMittFromRequest(text: string, r: CoachDayRun) {
+    if (coach.kind === 'martialdex') {
+      // planMittTraining uses Gemini + web search — not part of the 자체 AI 코치.
+      appendMessages([{ role: 'coach', kind: 'answer', text: '자체 AI 코치는 문장으로 요청한 미트 훈련을 새로 설계하지 않습니다(그 기능은 Gemini를 사용합니다). 오늘 배운 기술의 미트 연습은 실습 단계에서 그대로 진행됩니다.' }]);
+      return;
+    }
     setBusy(true);
     const prev = r.mittPlan ? lessonPlan(r.mittPlan.techniqueIds, r.mittPlan.name) : null;
-    const res = await generateMittPlan({ purpose: text, martialArt: curriculum?.martialArt, contextTechniqueIds: r.techniqueIds.slice(0, r.index + 1), previous: prev });
+    // The coach first checks users' shared combos/setups for this purpose, otherwise builds one from a live web search.
+    const res = await planMittTraining({ purpose: text, martialArt: curriculum?.martialArt, contextTechniqueIds: r.techniqueIds.slice(0, r.index + 1), previous: prev });
     setBusy(false);
     if (!res.ok) {
       appendMessages([{ role: 'coach', kind: 'answer', text: res.message }]);
@@ -451,7 +531,7 @@ export default function CurriculumCoachSession() {
       {
         role: 'coach',
         kind: 'answer',
-        text: `${plan.type === 'setup' ? '셋업' : '콤보'}을 만들었습니다: ${plan.name}. 목적은 ${plan.purpose.replace(/[.。]$/, '')}입니다. ${how} 이 연습을 ${plan.repetitions}회 반복하겠습니다.`,
+        text: `${plan.source === 'shared' ? `MARTIALDEX 사용자 ${plan.shared?.authorNickname || '익명'}님이 공유한 ${plan.type === 'setup' ? '셋업을' : '콤보를'} 불러왔습니다` : plan.source === 'web' ? `실시간 검색 자료로 ${plan.type === 'setup' ? '셋업을' : '콤보를'} 만들었습니다` : `${plan.type === 'setup' ? '셋업을' : '콤보를'} 만들었습니다`}: ${plan.name}. ${plan.decision?.reason ? `${plan.decision.reason} ` : ''} 목적은 ${plan.purpose.replace(/[.。]$/, '')}입니다. ${how} 이 연습을 ${plan.repetitions}회 반복하겠습니다.`,
       },
     ]);
     updateCoachDayRun((x) => ({ ...x, mittPlan: planToLesson(plan, r.step as CoachStep), step: 'mitt' }));
@@ -497,24 +577,30 @@ export default function CurriculumCoachSession() {
   }
 
   // ---- Visualizing Mitt inside the lesson ----
-  function startSingleMitt() {
-    if (!current) return;
-    const steps = stepsForIds([current.id]);
-    if (!steps.length) return;
-    const d = decideDrill(steps);
-    const r = getCoachDayRun();
-    appendMessages([{ role: 'coach', kind: 'system', text: `${withObject(current.name)} Visualizing Mitt로 ${d.repetitions}회 반복하겠습니다. ${d.reason}` }]);
-    updateCoachDayRun((x) => ({
-      ...x,
-      step: 'mitt',
-      mittPlan: { techniqueIds: [current.id], name: current.name, type: 'combo', purpose: `${current.name} 동작 익히기`, repetitions: d.repetitions, speed: d.speed, reason: d.reason, coachingNote: '', stepNotes: [], source: 'lesson', resume: (r?.step ?? 'ready') as CoachStep },
-    }));
-  }
-
   function finishMitt(result: MittRunResult) {
     const r = getCoachDayRun();
     const plan = r?.mittPlan;
     if (!r || !plan) return;
+    if (plan.asPractice) {
+      // The mitt WAS this technique's practice: its run time is the practiced time.
+      const practicedSeconds = Math.max(1, Math.round((Date.now() - plan.asPractice.startedAt) / 1000));
+      const tid = plan.asPractice.techniqueId;
+      const setup = r.practiceSetup?.techniqueId === tid ? r.practiceSetup : null;
+      updateCoachDayRun((x) => ({
+        ...x,
+        mittPlan: null,
+        mittSessions: [...(x.mittSessions ?? []), { name: plan.name, techniqueIds: plan.techniqueIds, completedReps: result.completedReps, targetReps: result.targetReps, finished: result.finished }],
+        outcomes: { ...x.outcomes, [tid]: { ...x.outcomes[tid], practicedSeconds: (x.outcomes[tid]?.practicedSeconds ?? 0) + practicedSeconds, completed: result.finished } },
+        // a chain continues below (startAfterMitt) — only a mitt-only practice is done here
+        step: setup?.after ? x.step : 'practiced',
+        practiceSetup: setup?.after ? x.practiceSetup : null,
+      }));
+      appendMessages([{ role: 'coach', kind: 'system', text: result.finished ? `Visualizing Mitt로 ${withObject(plan.name)} ${result.completedReps}회 모두 쳤습니다.` : `${plan.name}은(는) ${result.completedReps}회까지 쳤습니다.` }]);
+      // A chain continues after the mitt (MMA grappling / takedown → submission); otherwise the
+      // 'practiced' step runs the usual follow-up (question / feedback / next technique).
+      if (setup?.after) startAfterMitt(setup);
+      return;
+    }
     appendMessages([
       {
         role: 'coach',
@@ -534,17 +620,84 @@ export default function CurriculumCoachSession() {
     else appendMessages([{ role: 'coach', kind: 'system', text: '수업으로 돌아가겠습니다.' }]);
   }
 
+  /**
+   * How a technique is practised in the lesson:
+   *   striking technique with a mitt motion → the Visualizing Mitt (reps the tutor decides),
+   *   wrestling / BJJ standing or solo ground movement → the solo call-out drill,
+   *   anything else (partner-only grappling…) → the timed practice as before.
+   */
+  function finishDrill(result: SoloDrillResult) {
+    const r = getCoachDayRun();
+    const plan = r?.drillPlan;
+    if (!r || !plan) return;
+    updateCoachDayRun((x) => ({
+      ...x,
+      drillPlan: null,
+      drillSessions: [...(x.drillSessions ?? []), { techniqueId: plan.techniqueId, calls: result.calls, seconds: result.seconds, finished: result.finished }],
+      outcomes: { ...x.outcomes, [plan.techniqueId]: { ...x.outcomes[plan.techniqueId], practicedSeconds: (x.outcomes[plan.techniqueId]?.practicedSeconds ?? 0) + result.seconds, completed: result.finished } },
+      practiceSetup: null,
+      step: 'practiced',
+    }));
+    // the 'practiced' step then runs the usual follow-up (question / feedback / next technique)
+    appendMessages([{ role: 'coach', kind: 'system', text: result.finished ? `솔로 드릴 구령 ${result.calls}번에 맞춰 끝까지 움직였습니다.` : `솔로 드릴은 구령 ${result.calls}번까지 했습니다.` }]);
+  }
+
+  /**
+   * "준비됐어" → the coach plans the practice (practicePlan.ts: the mitt is
+   * always called when the technique or its chain can be drawn; MMA mixes
+   * strikes with takedowns; a submission goal becomes takedown → submission)
+   * and explains the stance and posture FIRST. Nothing starts until the user
+   * confirms the posture (confirmPractice).
+   */
   function beginPractice() {
     if (!current || !day) return;
     const seconds = practiceSecondsFor(day, current, techniques.length);
-    startPractice(seconds);
+    const goal = curriculum?.aiCoachMeta?.goal ?? curriculum?.aiGoalMeta?.goalText ?? null;
+    const setup = planPractice(current, { location: location ?? null, mma: isMmaContext(curriculum?.martialArt, current), submissionGoal: isSubmissionGoal(goal), seconds });
+    appendMessages([
+      { role: 'coach', kind: 'system', text: setup.intro },
+      ...setup.briefing.map((text) => ({ role: 'coach' as const, kind: 'explain' as const, text })),
+    ]);
+    updateCoachDayRun((r) => ({ ...r, step: 'posture', practiceSetup: setup }));
+  }
+
+  /** Posture confirmed → the planned practice starts: the mitt first, otherwise the drill or the timer. */
+  function confirmPractice() {
+    const r = getCoachDayRun();
+    const setup = r?.practiceSetup;
+    if (!r || !setup || !current || setup.techniqueId !== current.id) {
+      beginPractice();
+      return;
+    }
+    if (setup.mitt) {
+      appendMessages([{ role: 'coach', kind: 'system', text: `좋습니다. Visualizing Mitt를 불러오겠습니다. ${setup.mitt.name}을(를) ${setup.mitt.repetitions}회 칩니다. ${setup.mitt.reason}` }]);
+      updateCoachDayRun((x) => ({ ...x, step: 'mitt', mittPlan: { ...setup.mitt!, resume: 'ready', asPractice: { techniqueId: setup.techniqueId, startedAt: Date.now() } } }));
+      return;
+    }
+    startAfterMitt(setup);
+  }
+
+  /** The drill / timer part of a practice (alone, or after its mitt part). */
+  function startAfterMitt(setup: PracticeSetup) {
+    if (!current) return;
+    if (setup.after === 'drill' && setup.drill) {
+      const d = setup.drill;
+      const focus = d.focusId ? d.cues.find((c) => c.id === d.focusId) : null;
+      appendMessages([{ role: 'coach', kind: 'system', text: `솔로 드릴을 시작합니다. 구령이 들리는 대로 바로 움직여 주세요.${focus ? ` "${focus.call}"을(를) 더 자주 부르겠습니다.` : ''} ${formatMMSS(d.seconds * 1000)} 동안 진행합니다.` }]);
+      updateCoachDayRun((x) => ({ ...x, step: 'drill', drillPlan: d }));
+      return;
+    }
+    startPractice(setup.timerSeconds);
+    updateCoachDayRun((x) => ({ ...x, practiceSetup: null }));
     appendMessages([
       {
         role: 'coach',
         kind: 'system',
-        text: planItem
-          ? `좋습니다. 시작하겠습니다. ${formatMMSS(seconds * 1000)} 동안 진행합니다. ${planItem.instruction}${planItem.soloAlternative ? ` 장비나 파트너가 없으면: ${planItem.soloAlternative}` : ''}`
-          : `좋습니다. 시작하겠습니다. ${formatMMSS(seconds * 1000)} 동안 ${displayName(current)}를 반복해서 연습해 주세요.`,
+        text: setup.timerText
+          ? `${setup.timerText} ${formatMMSS(setup.timerSeconds * 1000)} 동안 진행합니다.`
+          : planItem
+            ? `좋습니다. 시작하겠습니다. ${formatMMSS(setup.timerSeconds * 1000)} 동안 진행합니다. ${planItem.instruction}${planItem.soloAlternative ? ` 장비나 파트너가 없으면: ${planItem.soloAlternative}` : ''}`
+            : `좋습니다. 시작하겠습니다. ${formatMMSS(setup.timerSeconds * 1000)} 동안 ${displayName(current)}를 반복해서 연습해 주세요.`,
       },
     ]);
   }
@@ -554,37 +707,30 @@ export default function CurriculumCoachSession() {
     for (const s of pendingSpeech.current.splice(0)) speak(s.text, { interrupt: s.interrupt });
   }
 
-  async function toggleMic() {
-    setVoiceError(null);
-    if (recording) {
-      const rec = recording;
-      setRecording(null);
-      setTranscribing(true);
-      setMicPhase('recognizing');
-      const result = await rec.stop(current ? [current.name, current.koreanName ?? ''].filter(Boolean) : []);
-      setTranscribing(false);
-      setMicPhase(result.ok ? 'result' : 'error');
-      flushPendingSpeech();
-      if (result.ok) void handleUserText(result.text);
-      else setVoiceError(result.message);
-      return;
-    }
-    // The tutor stops talking while the user answers (and its own voice is never recorded as the answer).
-    stopSpeaking();
-    recordingRef.current = true;
-    setMicPhase('requesting');
-    const started = await startRecording(COACH_DAY_CONFIG.maxRecordSeconds);
-    if (started.ok) {
-      setRecording(started.recorder);
-      setMicPhase('listening');
-    } else {
-      setMicPhase('error');
-      setVoiceError(started.message);
-      flushPendingSpeech();
-    }
-  }
-
-  useEffect(() => () => recording?.cancel(), [recording]);
+  // The tutor stops talking while the user answers (and its own voice is never recorded as the answer).
+  // The recognized text goes into the input box to be checked/edited and sent — or straight in when
+  // the student turned on 말이 끝나면 바로 보내기.
+  const voice = useVoiceInput({
+    maxSeconds: COACH_DAY_CONFIG.maxRecordSeconds,
+    hints: current ? [current.name, current.koreanName ?? ''].filter(Boolean) : [],
+    // the 자체 AI 코치 uses no external AI — speech recognition stays on this device's engine, no Gemini fallback
+    allowFallback: !ownCoach,
+    onRecordingChange: (on) => {
+      if (on) recordingRef.current = true;
+      else flushPendingSpeech();
+    },
+    onFinal: (text, autoSend) => {
+      if (autoSend) void handleUserText(text);
+      else {
+        setInput((prev) => (prev.trim() ? `${prev.trim()} ${text}` : text));
+        inputRef.current?.focus();
+      }
+    },
+  });
+  const recording = voice.recording;
+  const transcribing = voice.phase === 'recognizing';
+  const micPhase = voice.phase;
+  const toggleMic = voice.toggle;
 
   if (!curriculum || curriculum.martialArt !== martialArtId || !day) return <Navigate to={`/learning/${martialArtId}`} replace />;
   if (techniques.length === 0) {
@@ -593,6 +739,26 @@ export default function CurriculumCoachSession() {
         <div className="container">
           <BackButton />
           <p className="video-status-message">이 Day에는 연습할 기술이 등록되어 있지 않습니다.</p>
+        </div>
+      </div>
+    );
+  }
+  const setCoachParam = (kind: CoachKind) => {
+    const next = new URLSearchParams(searchParams);
+    next.set('coach', kind);
+    setSearchParams(next, { replace: true });
+  };
+  if (!chosenCoach) {
+    return (
+      <div className="page">
+        <div className="container">
+          <BackButton />
+          <div className="section-title">
+            <h2>🧑‍🏫 AI 코치와 Day {day.day}</h2>
+          </div>
+          <div className="card info-card">
+            <CoachPicker onPick={setCoachParam} confirmLabel="이 코치로 수업 시작" />
+          </div>
         </div>
       </div>
     );
@@ -629,7 +795,9 @@ export default function CurriculumCoachSession() {
     ? { id: `lesson-mitt`, name: run.mittPlan.name, source: 'single', sourceLabel: 'AI 튜터 수업', steps: stepsForIds(run.mittPlan.techniqueIds), skipped: [], warnings: [] }
     : null;
   const remaining = run.practice ? practiceRemainingMs(run.practice) : 0;
-  const voiceInputOk = isVoiceInputSupported();
+  // Speech-to-text runs through Gemini (voice/stt.ts) — off for the 자체 AI 코치 (TTS still speaks).
+  // Recognition runs on this platform's own engine (sttEngines.ts) — no Gemini — so the 자체 AI 코치 can use it too.
+  const voiceInputOk = isVoiceInputSupported() || voice.info?.id === 'android';
   const lesson: CoachLessonState | null = current ? (run.lessons?.[current.id] ?? null) : null;
   // 학생이 답해야 하는 시점 — shown clearly, never auto-advanced.
   const awaiting: { text: string; choice: ChoiceQuestion | null; type: string } | null =
@@ -661,6 +829,69 @@ export default function CurriculumCoachSession() {
           · {mode === 'voice' ? '말로 대화 모드' : '입력으로 대화 모드'} · {planItem ? '단계' : '기술'} {Math.min(run.index + 1, run.techniqueIds.length)}/{run.techniqueIds.length}
           {current ? ` · ${displayName(current)}` : ''}
         </p>
+        <div className="chip-row" style={{ marginTop: -4 }}>
+          <span className="chip" data-testid="coach-kind" data-coach={coachKindOf(run)}>
+            {coachKindOf(run) === 'martialdex' ? '🥋' : coachKindOf(run) === 'gemini' ? '✨' : '❔'} {COACH_LABEL[coachKindOf(run)]}
+          </span>
+          {run.step !== 'summary' && !switchTo && (
+            <button type="button" className="btn btn-ghost btn-sm" onClick={() => setSwitchTo('pick')} data-testid="coach-switch-open">
+              코치 바꾸기
+            </button>
+          )}
+        </div>
+        {switchTo === 'pick' && (
+          <div className="card info-card" data-testid="coach-switch">
+            <CoachPicker
+              showRemember={false}
+              confirmLabel="다음"
+              note={`지금 수업은 ${COACH_LABEL[coachKindOf(run)]}로 진행 중입니다. 바꿀 코치를 고르면 지금 수업을 어떻게 할지 한 번 더 확인합니다.`}
+              onPick={(k) => setSwitchTo(k === coachKindOf(run) ? null : k)}
+            />
+            <button type="button" className="btn btn-ghost btn-sm" onClick={() => setSwitchTo(null)} data-testid="coach-switch-cancel">
+              취소
+            </button>
+          </div>
+        )}
+        {switchTo && switchTo !== 'pick' && (
+          <div className="card info-card" data-testid="coach-switch-confirm" data-to={switchTo}>
+            <p style={{ marginTop: 0 }}>
+              <strong>{COACH_LABEL[switchTo]}</strong>(으)로 바꿉니다. 지금 수업은 어떻게 할까요?
+            </p>
+            <div className="modal-actions modal-actions--start">
+              <button
+                className="btn btn-primary"
+                data-testid="coach-switch-keep"
+                onClick={() => {
+                  const from = coachKindOf(run);
+                  updateCoachDayRun((r) => ({ ...r, coachKind: switchTo, coachSwitches: [...(r.coachSwitches ?? []), { from, to: switchTo, at: new Date().toISOString(), index: r.index }] }));
+                  appendMessages([{ role: 'coach', kind: 'system', text: `코치를 ${COACH_LABEL[from]}에서 ${COACH_LABEL[switchTo]}(으)로 바꿨습니다. 지금까지의 진행과 대화는 그대로 두고, 다음 대화부터 ${COACH_LABEL[switchTo]}가 답변하고 채점합니다.` }]);
+                  setCoachParam(switchTo);
+                  setSwitchTo(null);
+                }}
+              >
+                진행 유지하고 코치만 바꾸기
+              </button>
+              <button
+                className="btn btn-secondary"
+                data-testid="coach-switch-restart"
+                onClick={() => {
+                  stopSpeaking();
+                  clearCoachDayRun();
+                  setCoachParam(switchTo);
+                  setSwitchTo(null);
+                }}
+              >
+                이 Day를 처음부터 새 코치로
+              </button>
+              <button className="btn btn-ghost" onClick={() => setSwitchTo(null)}>
+                취소
+              </button>
+            </div>
+            <p className="video-status-message" style={{ marginBottom: 0 }}>
+              처음부터 다시 하면 지금 진행 중인 이 Day 수업은 기록되지 않고 사라집니다.
+            </p>
+          </div>
+        )}
         {mode === 'voice' && !ttsAvailable && <div className="ai-inline-warning">이 기기에서는 음성 안내(TTS)를 지원하지 않아 코치 답변을 글로만 보여줍니다.</div>}
         {mode === 'voice' && ttsAvailable && (
           // 수업 중에도 바꿀 수 있음 — [적용] 후 다음 음성부터 (지금 말하는 문장은 끊지 않음).
@@ -672,7 +903,7 @@ export default function CurriculumCoachSession() {
         {mode === 'voice' && (
           <details className="card info-card coach-voice-settings" data-testid="coach-mic-test">
             <summary>🎤 마이크 테스트</summary>
-            <MicTestPanel hints={current ? [current.name] : []} />
+            <MicTestPanel hints={current ? [current.name] : []} allowFallback={!ownCoach} />
           </details>
         )}
 
@@ -713,6 +944,7 @@ export default function CurriculumCoachSession() {
                 </div>
               </div>
             )}
+            {ownCoach && <LocalModelWaitNotice />}
           </div>
         </div>
 
@@ -768,6 +1000,8 @@ export default function CurriculumCoachSession() {
               <p className="video-status-message" data-testid="coach-video-searching">
                 {videoFind.progress}
               </p>
+            ) : shownVideos.length === 0 && otherVideos?.techniqueId === current.id && otherVideos.videos.length > 0 ? (
+              <OtherPlatformVideos videos={otherVideos.videos} testId="coach-other-videos" />
             ) : shownVideos.length === 0 ? (
               <p className="video-status-message" data-testid="coach-video-none">
                 현재 등록된 관련 영상을 찾지 못했습니다. 위의 자세 설명을 참고해 주세요.
@@ -839,17 +1073,33 @@ export default function CurriculumCoachSession() {
           <div className="card info-card text-center" data-testid="coach-ready">
             <p style={{ margin: '0 0 8px' }}>준비가 되셨다면 "준비됐어" 또는 "시작"이라고 {mode === 'voice' ? '말씀하시거나' : '입력하시거나'} 아래 버튼을 눌러 주세요.</p>
             <button className="btn btn-primary" onClick={beginPractice}>
-              준비 완료 — 실습 시작
+              준비 완료 — 자세 설명 듣기
             </button>
           </div>
         )}
 
-        {(run.step === 'videos' || run.step === 'ready') && current && motionForTechnique(current) && (
-          <div className="card info-card" data-testid="coach-mitt-link">
-            <p style={{ margin: '0 0 6px' }}>🥊 {current.name}의 목표 지점·궤적·발 위치를 보며 반복하려면 Visualizing Mitt를 사용해 주세요. "콤보로 연습하고 싶어"처럼 말씀하시면 연결 동작도 만들어 드립니다.</p>
-            <button className="btn btn-secondary btn-sm" onClick={startSingleMitt} data-testid="coach-mitt-start">
-              🥊 Visualizing Mitt로 연습하기
-            </button>
+        {run.step === 'posture' && run.practiceSetup && current && (
+          <div className="card info-card" data-testid="coach-posture" data-mode={run.practiceSetup.mode}>
+            <h3 style={{ margin: 0 }}>🧍 실습 전 자세 설명 · {displayName(current)}</h3>
+            <p className="video-status-message" style={{ margin: '4px 0 6px' }} data-testid="coach-posture-intro">
+              {run.practiceSetup.intro}
+            </p>
+            <ol className="coach-class-steps" data-testid="coach-posture-lines">
+              {run.practiceSetup.briefing.slice(0, -1).map((line, i) => (
+                <li key={i}>{line}</li>
+              ))}
+            </ol>
+            {run.practiceSetup.mitt && (
+              <p className="video-status-message" style={{ margin: '6px 0 0' }} data-testid="coach-posture-mitt">
+                🥊 이어서 Visualizing Mitt: {run.practiceSetup.mitt.name} · {run.practiceSetup.mitt.repetitions}회
+                {run.practiceSetup.after === 'drill' ? ' → 솔로 드릴' : run.practiceSetup.after === 'timer' ? ' → 마무리 반복' : ''}
+              </p>
+            )}
+            <div className="modal-actions modal-actions--start" style={{ marginTop: 10 }}>
+              <button className="btn btn-primary" onClick={confirmPractice} data-testid="coach-posture-start">
+                자세 확인 — 실습 시작
+              </button>
+            </div>
           </div>
         )}
 
@@ -862,6 +1112,11 @@ export default function CurriculumCoachSession() {
               <p className="video-status-message" style={{ margin: '4px 0 0' }}>
                 {run.mittPlan.purpose} · {run.mittPlan.reason}
               </p>
+              {run.mittPlan.asPractice && planItem && (
+                <p className="video-status-message" data-testid="coach-plan-instruction" style={{ margin: '4px 0 0' }}>
+                  {planItem.instruction}
+                </p>
+              )}
               {run.mittPlan.stepNotes.some((n) => n.opponentReaction) && (
                 <ol className="coach-class-steps">
                   {run.mittPlan.stepNotes.map((n, i) => (
@@ -893,6 +1148,7 @@ export default function CurriculumCoachSession() {
                 </button>
               )}
             </div>
+            <ComboVideoPanel techniques={mittCombo.steps.map((x) => x.technique)} comboName={run.mittPlan.name} />
             <MittRunner
               key={`${run.mittPlan.name}:${run.mittPlan.techniqueIds.join('+')}`}
               combo={mittCombo}
@@ -900,6 +1156,31 @@ export default function CurriculumCoachSession() {
               speed={run.mittPlan.speed}
               onLastRep={() => appendMessages([{ role: 'coach', kind: 'cue', text: '마지막 1회입니다.' }])}
               onDone={finishMitt}
+            />
+          </div>
+        )}
+
+        {run.step === 'drill' && run.drillPlan && (
+          <div data-testid="coach-drill">
+            <div className="card info-card" style={{ marginBottom: 8 }}>
+              <h3 style={{ margin: 0 }}>🤼 솔로 드릴 · {current ? displayName(current) : ''}</h3>
+              <p className="video-status-message" style={{ margin: '4px 0 0' }}>
+                {run.drillPlan.group === 'standing' ? '스탠딩 자세에서 시작합니다.' : '바닥에 누운/앉은 자세에서 시작합니다.'} 구령을 듣는 즉시 움직이고, 동작 뒤에는 바로 자세를 회복해 주세요.
+              </p>
+              {planItem && (
+                <p className="video-status-message" data-testid="coach-plan-instruction" style={{ margin: '4px 0 0' }}>
+                  {planItem.instruction}
+                </p>
+              )}
+            </div>
+            <SoloDrillRunner
+              key={`${run.drillPlan.techniqueId}:${run.index}`}
+              cues={run.drillPlan.cues}
+              focusId={run.drillPlan.focusId}
+              seconds={run.drillPlan.seconds}
+              pace={run.drillPlan.pace}
+              voice
+              onDone={finishDrill}
             />
           </div>
         )}
@@ -997,13 +1278,18 @@ export default function CurriculumCoachSession() {
                 <span className="video-status-message" data-testid="coach-mic-phase" data-phase={micPhase} style={{ marginLeft: 8 }}>
                   {micPhase === 'listening' ? PHASE_LABEL.listening : micPhase === 'requesting' || micPhase === 'recognizing' ? PHASE_LABEL[micPhase] : speaking ? 'AI 튜터가 말하는 중입니다.' : ''}
                 </span>
-                {micPhase === 'listening' && <LevelMeter level={level} />}
-                {!voiceInputOk && <p className="video-status-message">이 기기에서는 음성 입력을 사용할 수 없습니다. 아래 입력창에 적어서 대화해 주세요.</p>}
-                {voiceError && (
-                  <p className="ai-inline-warning" data-testid="coach-voice-error">
-                    {voiceError}
+                {recording && (
+                  <button type="button" className="btn btn-ghost btn-sm" style={{ marginLeft: 6 }} onClick={voice.cancel} data-testid="coach-mic-cancel">
+                    취소
+                  </button>
+                )}
+                {micPhase === 'listening' && voice.level >= 0 && <LevelMeter level={voice.level} />}
+                {!voiceInputOk && (
+                  <p className="video-status-message" data-testid="coach-mic-off-reason">
+                    이 기기에서는 음성 입력을 사용할 수 없습니다. 아래 입력창에 적어서 대화해 주세요.
                   </p>
                 )}
+                <VoiceInputPanel voice={voice} testIdPrefix="coach-voice" />
               </>
             )}
             <div className="modal-actions modal-actions--start" style={{ marginTop: mode === 'voice' ? 8 : 0 }}>

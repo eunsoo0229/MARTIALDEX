@@ -46,3 +46,26 @@ export async function deleteCurriculumVerified(id: string, userId: string | null
   if (curriculumRepository.getCustom(id)) return { ok: false, message: FAILED_MESSAGE };
   return { ok: true };
 }
+
+export interface BulkDeleteResult {
+  deletedIds: string[];
+  failed: { id: string; message: string }[];
+}
+
+/**
+ * "여러 개 선택해서 삭제" — runs deleteCurriculumVerified for each id, one
+ * after another (each one confirmed locally and, when signed in, on the
+ * server), so a failure never hides a curriculum that is still there:
+ * failed ids are reported back and stay in the list. `onProgress` reports
+ * how many have been processed.
+ */
+export async function deleteCurriculaVerified(ids: string[], userId: string | null, onProgress?: (done: number, total: number) => void): Promise<BulkDeleteResult> {
+  const result: BulkDeleteResult = { deletedIds: [], failed: [] };
+  for (const [i, id] of ids.entries()) {
+    const r = await deleteCurriculumVerified(id, userId);
+    if (r.ok) result.deletedIds.push(id);
+    else result.failed.push({ id, message: r.message });
+    onProgress?.(i + 1, ids.length);
+  }
+  return result;
+}

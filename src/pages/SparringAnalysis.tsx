@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
+import { getSparringVideo, resolvePlayableSrc } from '../lib/sparringVideo/service';
 import { SPARRING_SPORTS } from '../lib/sparringAnalysis/martialArtCriteria';
 import { formatDuration, readVideoMeta, validateVideoFile, type VideoMeta } from '../lib/sparringAnalysis/videoMeta';
 import { createMultiPoseLandmarker } from '../lib/poseAnalysis/poseEstimator';
 import { ALL_LANDMARK_NAMES } from '../lib/poseAnalysis/landmarks';
 import { point } from '../lib/poseAnalysis/geometry';
 import type { PoseFrame } from '../lib/poseAnalysis/types';
-import { buildSampleTimestamps, samplePosesFromVideo, seekTo } from '../lib/sparringAnalysis/frameSampler';
+import { AnalysisCancelledError, buildSampleTimestamps, samplePosesFromVideo, seekTo } from '../lib/sparringAnalysis/frameSampler';
 import { centroidOf, trackSelectedPerson, trackOpponent, trackingLossRatio } from '../lib/sparringAnalysis/personTracker';
 import { computePostureSegments } from '../lib/sparringAnalysis/postureMetrics';
 import { detectMotionEvents } from '../lib/sparringAnalysis/motionEventDetector';
@@ -18,7 +19,11 @@ import { analyzeSequences } from '../lib/sparringAnalysis/sequenceAnalysis';
 import { analyzeKeyMomentsVisually } from '../lib/sparringAnalysis/visualEventAnalysis';
 import { synthesizeCoaching } from '../lib/sparringAnalysis/coachingSynthesis';
 import { applySportProfile, getSportAnalysisProfile } from '../lib/sparringAnalysis/sportAnalysisProfiles';
-import { saveSparringSession } from '../lib/sparringAnalysis/sparringSessionService';
+import { extractSessionClips, saveSparringSession } from '../lib/sparringAnalysis/sparringSessionService';
+import { attireMatch, attireUsable, describeAttire, emptyAttire, grabFrame, identityOf, measurePersonColors, suggestMe, ATTIRE_COLOR_LABEL, type FrameIdentity, type PersonColors, type SparringAttire } from '../lib/sparringAnalysis/attire';
+import { findWeaknessScenes } from '../lib/sparringAnalysis/weaknessScenes';
+import type { IdentificationSummary } from '../lib/sparringAnalysis/types';
+import AttireForm from '../components/sparring/AttireForm';
 import { useSparringSessions } from '../lib/sparringAnalysis/useSparringSessions';
 import { ANALYSIS_SCOPE_LABEL, type PersonCandidate, type SparringAnalysisScope, type SparringSession } from '../lib/sparringAnalysis/types';
 import SparringResultView from '../components/SparringResultView';
@@ -56,6 +61,37 @@ export default function SparringAnalysis() {
   const [scopes, setScopes] = useState<Set<SparringAnalysisScope>>(new Set(ALL_SCOPES));
   const [analyzeProgress, setAnalyzeProgress] = useState<{ done: number; total: number } | null>(null);
   const [resultSession, setResultSession] = useState<SparringSession | null>(null);
+  // 2.0: attire-based identification + cancel + stage label
+  const [attire, setAttire] = useState<SparringAttire>(() => ({ me: emptyAttire(), opponent: emptyAttire(), gi: null }));
+  const [candidateColors, setCandidateColors] = useState<PersonColors[]>([]);
+  const [stage, setStage] = useState<string>('');
+  const abortRef = useRef<AbortController | null>(null);
+  // 촬영한 영상 → 분석: /sparring?video=<id> loads a recording from 스파링 영상 목록 into the SAME pipeline as an upload.
+  const [searchParams] = useSearchParams();
+  const [pendingFile, setPendingFile] = useState<File | null>(null);
+  useEffect(() => {
+    const id = searchParams.get('video');
+    if (!id) return;
+    const rec = getSparringVideo(id);
+    if (!rec) {
+      setError('녹화 영상을 찾을 수 없습니다. 파일을 직접 선택해 주세요.');
+      return;
+    }
+    const load: Promise<Blob> = window.martialdex?.readVideo
+      ? window.martialdex.readVideo(rec.localUri).then((r) => (r.ok ? new Blob([r.data], { type: 'video/webm' }) : Promise.reject(new Error(r.message))))
+      : fetch(resolvePlayableSrc(rec.localUri)).then((r) => (r.ok ? r.blob() : Promise.reject(new Error(String(r.status)))));
+    void load
+      .then((blob) => {
+        const type = blob.type || 'video/webm';
+        const ext = type.includes('mp4') ? 'mp4' : 'webm';
+        setPendingFile(new File([blob], `녹화-${new Date(rec.createdAt).toISOString().slice(0, 16).replace(/[:T]/g, '-')}.${ext}`, { type }));
+        setStep('sportSelect');
+      })
+      .catch(() => setError('녹화 영상을 불러오지 못했습니다. "영상 업로드"로 파일을 직접 선택해 주세요.'));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const meReady = attireUsable(attire.me) && !!attire.me.topColor && !!attire.me.bottomColor;
+  const suggestion = meReady && candidateColors.length ? suggestMe(candidateColors, attire) : null;
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const objectUrlRef = useRef<string | null>(null);
@@ -80,6 +116,8 @@ export default function SparringAnalysis() {
     setScopes(new Set(ALL_SCOPES));
     setAnalyzeProgress(null);
     setResultSession(null);
+    setCandidateColors([]);
+    abortRef.current?.abort();
     setStep('hub');
   }
 
@@ -128,13 +166,20 @@ export default function SparringAnalysis() {
       await seekTo(video, t);
       const poses = landmarker.detect(video);
       landmarker.close();
+      // Real pixel colours under each detected person at this frame (for the attire suggestion).
+      const img = grabFrame(video);
 
       const list: PersonCandidate[] = [];
+      const colors: PersonColors[] = [];
       poses.forEach((pose, i) => {
         const bbox = bboxOf(pose);
         const centroid = centroidOf(pose);
-        if (bbox && centroid) list.push({ index: i, label: `사람 ${String.fromCharCode(65 + i)}`, centroid, bbox });
+        if (bbox && centroid) {
+          list.push({ index: list.length, label: `사람 ${String.fromCharCode(65 + list.length)}`, centroid, bbox });
+          colors.push(img ? measurePersonColors(img, pose) : { top: null, bottom: null, gloves: null });
+        }
       });
+      setCandidateColors(colors);
 
       setReferenceTimestamp(t);
       if (list.length === 0) {
@@ -164,11 +209,53 @@ export default function SparringAnalysis() {
     setStep('analyzing');
     setError(null);
     setAnalyzeProgress({ done: 0, total: 1 });
+    const controller = new AbortController();
+    abortRef.current = controller;
+    const attireUsed = attireUsable(attire.me);
     try {
+      setStage('영상 프레임에서 사람·자세 찾는 중');
       const timestamps = buildSampleTimestamps(videoMeta.durationSec);
-      const samples = await samplePosesFromVideo(video, timestamps, NUM_POSES, (done, total) => setAnalyzeProgress({ done, total }));
+      const samples = await samplePosesFromVideo(video, timestamps, NUM_POSES, (done, total) => setAnalyzeProgress({ done, total }), {
+        measureColors: attireUsed,
+        signal: controller.signal,
+      });
       const selectedCandidate = candidates[selectedIndex];
-      const tracked = trackSelectedPerson(samples, referenceTimestamp, selectedCandidate.centroid);
+      // Position tracking, with attire as a tie-breaker when people are close (e.g. crossing).
+      const rawTracked = trackSelectedPerson(
+        samples,
+        referenceTimestamp,
+        selectedCandidate.centroid,
+        attireUsed
+          ? (fi, pi) => {
+              const c = samples[fi].colors?.[pi];
+              if (!c) return 0;
+              const m = attireMatch(c, attire.me);
+              return (1 - m.score) * m.coverage;
+            }
+          : undefined
+      );
+      // Per-frame identity check: frames where the tracked person clearly looks like the OPPONENT
+      // (a likely ID swap) are excluded from analysis instead of being attributed to the user.
+      const identity: FrameIdentity[] = rawTracked.map((t, i) => {
+        if (!t.matched || !t.landmarks || !attireUsed) return 'unobserved';
+        const pi = samples[i].poses.indexOf(t.landmarks);
+        return identityOf(samples[i].colors?.[pi] ?? null, attire);
+      });
+      const tracked = rawTracked.map((t, i) => (identity[i] === 'opponent' ? { ...t, landmarks: null, matched: false } : t));
+      const observedIds = identity.filter((x) => x !== 'unobserved');
+      const identification: IdentificationSummary = {
+        method: attireUsed ? 'manual+attire' : 'manual',
+        attire: attireUsed ? attire : null,
+        suggestion: suggestion ? { index: suggestion.index, confidence: Math.round(suggestion.confidence * 100) / 100, followed: suggestion.index === selectedIndex } : null,
+        observedFrames: observedIds.length,
+        meFrames: identity.filter((x) => x === 'me').length,
+        opponentLikeFrames: identity.filter((x) => x === 'opponent').length,
+        unclearFrames: identity.filter((x) => x === 'unclear').length,
+        excludedFrames: identity.filter((x) => x === 'opponent').length,
+        consistency: observedIds.length ? Math.round((identity.filter((x) => x === 'me').length / observedIds.length) * 100) / 100 : null,
+      };
+      if (controller.signal.aborted) throw new AnalysisCancelledError();
+      setStage('동작·자세 분석 중');
       const lossRatio = trackingLossRatio(tracked);
       const usableCount = tracked.filter((t) => t.matched).length;
       const maxPeopleAtOnce = samples.reduce((m, s) => Math.max(m, s.poses.length), 0);
@@ -225,6 +312,22 @@ export default function SparringAnalysis() {
             }).catch(() => null)
           : null;
 
+      setStage('약점 장면 찾는 중');
+      const scenes = findWeaknessScenes({
+        martialArt: sport,
+        durationSec: videoMeta.durationSec,
+        me: tracked,
+        opponent: opponentTracked,
+        identity,
+        attireUsed,
+        myEvents: motionEvents,
+        opponentEvents: opponentMotionEvents,
+        postureSegments,
+        sequence: sequenceAnalysis,
+        sampleIntervalSec: timestamps.length > 1 ? timestamps[1] - timestamps[0] : videoMeta.durationSec,
+      });
+      if (controller.signal.aborted) throw new AnalysisCancelledError();
+
       const session = saveSparringSession({
         martialArt: sport,
         videoName: videoMeta.fileName,
@@ -246,14 +349,32 @@ export default function SparringAnalysis() {
         opponentMotionEvents: opponentMotionEvents.length > 0 ? opponentMotionEvents : undefined,
         visualInsights: visualInsights.length > 0 ? visualInsights : undefined,
         coachingSynthesis,
+        identification,
+        weaknesses: scenes.weaknesses,
+        clips: scenes.clips,
+        weaknessNotes: scenes.notes,
       });
 
       setResultSession(session);
       setStep('result');
-    } catch {
-      setError('영상 분석 중 문제가 발생했습니다. 다시 시도해주세요.');
+      // Cut the weakness clips out of the original file while it is still loaded.
+      if (videoUrl && scenes.clips.length) {
+        void extractSessionClips(session.id, videoUrl, { signal: controller.signal, onUpdate: (s) => setResultSession(s) });
+      }
+    } catch (e) {
+      if (e instanceof AnalysisCancelledError || controller.signal.aborted) {
+        setError('분석을 취소했습니다. 설정을 바꾸거나 다시 시작할 수 있습니다.');
+      } else {
+        setError('영상 분석 중 문제가 발생했습니다. 다시 시도해주세요.');
+      }
       setStep('scopeSelect');
+    } finally {
+      setStage('');
     }
+  }
+
+  function handleCancelAnalysis() {
+    abortRef.current?.abort();
   }
 
   function handleSeekResult(t: number) {
@@ -281,7 +402,8 @@ export default function SparringAnalysis() {
           <>
             <p className="video-status-message" style={{ marginTop: -8 }}>
               실제 스파링/대련 영상을 업로드하고, 영상 속에서 본인을 직접 지정하면 자세·움직임·스타일을
-              분석합니다. 영상은 이 기기에서만 처리되며 저장되거나 외부로 전송되지 않습니다.
+              분석하고 약점 장면을 원본에서 잘라 보여줍니다. 원본 영상은 저장되지 않고, 약점 장면 클립만 이 기기에
+              저장됩니다(전체 분석을 고르면 일부 장면 이미지가 AI 판정을 위해 전송됩니다).
             </p>
             <div className="chip-row" style={{ marginBottom: 8 }}>
               <Link to="/sparring/record" className="chip">
@@ -400,7 +522,17 @@ export default function SparringAnalysis() {
               ))}
             </div>
             <div className="modal-actions modal-actions--start">
-              <button className="btn btn-primary" disabled={!sport} onClick={() => setStep('upload')}>
+              <button
+                className="btn btn-primary"
+                disabled={!sport}
+                onClick={() => {
+                  if (pendingFile) {
+                    handleFile(pendingFile);
+                    setPendingFile(null);
+                  } else setStep('upload');
+                }}
+                data-testid="sport-next"
+              >
                 다음
               </button>
             </div>
@@ -492,6 +624,12 @@ export default function SparringAnalysis() {
               </div>
             )}
             <p className="video-status-message">{videoFile?.name}</p>
+            {/* Errors raised while previewing / picking the person (corrupt file, detection failure) — previously only the upload card showed them. */}
+            {error && (step === 'preview' || step === 'personLoading' || step === 'personSelect' || step === 'personNotFound') && (
+              <div className="ai-inline-warning" role="alert">
+                {error}
+              </div>
+            )}
 
             {step === 'preview' && (
               <div className="modal-actions modal-actions--start">
@@ -521,6 +659,49 @@ export default function SparringAnalysis() {
 
             {step === 'personSelect' && (
               <>
+                <div className="card info-card" data-testid="attire-card" style={{ marginTop: 10 }}>
+                  <h3 style={{ marginTop: 0 }}>복장 정보 (선수 식별용)</h3>
+                  <p className="technique-row__sub">본인 상의·하의 색을 입력하면 영상 속 색과 비교해 본인을 더 정확히 추적합니다. 비워 두면 위치 추적만 사용합니다.</p>
+                  <AttireForm title="나" value={attire.me} required onChange={(me) => setAttire((a) => ({ ...a, me }))} />
+                  <AttireForm title="상대" value={attire.opponent ?? emptyAttire()} required={false} onChange={(opponent) => setAttire((a) => ({ ...a, opponent }))} />
+                  {(sport === 'bjj' || sport === 'judo') && (
+                    <label className="field-label" style={{ display: 'block', marginTop: 6 }}>
+                      Gi / No-Gi (선택)
+                      <select className="select" value={attire.gi ?? ''} onChange={(e) => setAttire((a) => ({ ...a, gi: (e.target.value || null) as SparringAttire['gi'] }))} style={{ marginLeft: 8 }}>
+                        <option value="">선택 안 함</option>
+                        <option value="gi">Gi</option>
+                        <option value="nogi">No-Gi</option>
+                      </select>
+                    </label>
+                  )}
+                  {candidateColors.length > 0 && (
+                    <ul className="attire-measured" data-testid="attire-measured">
+                      {candidates.map((c, i) => (
+                        <li key={c.index}>
+                          {c.label}: 상의 {candidateColors[i]?.top ? ATTIRE_COLOR_LABEL[candidateColors[i].top!] : '확인 불가'} · 하의{' '}
+                          {candidateColors[i]?.bottom ? ATTIRE_COLOR_LABEL[candidateColors[i].bottom!] : '확인 불가'} · 손{' '}
+                          {candidateColors[i]?.gloves ? ATTIRE_COLOR_LABEL[candidateColors[i].gloves!] : '확인 불가'}
+                          <span className="technique-row__sub"> (이 장면에서 측정한 색)</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {meReady &&
+                    (suggestion ? (
+                      <p data-testid="attire-suggestion">
+                        복장으로 보면 <strong>{candidates[suggestion.index]?.label}</strong>이(가) 본인일 가능성이 높습니다 (일치도 {Math.round(suggestion.confidence * 100)}% · {suggestion.reason}).{' '}
+                        {selectedIndex !== suggestion.index && (
+                          <button type="button" className="btn btn-ghost btn-sm" onClick={() => setSelectedIndex(suggestion.index)}>
+                            이 사람 선택
+                          </button>
+                        )}
+                      </p>
+                    ) : (
+                      <p className="technique-row__sub" data-testid="attire-suggestion-none">
+                        입력한 복장({describeAttire(attire.me)})과 일치하는 사람을 이 장면에서 찾지 못했습니다. 직접 선택해 주세요.
+                      </p>
+                    ))}
+                </div>
                 <p>영상에서 사람을 클릭하세요.</p>
                 {selectedIndex !== null && <p>선택한 사람: {candidates[selectedIndex]?.label}</p>}
                 <div className="modal-actions modal-actions--start">
@@ -555,6 +736,11 @@ export default function SparringAnalysis() {
                 분석 시작
               </button>
             </div>
+            {error && (
+              <div className="ai-inline-warning" role="alert">
+                {error}
+              </div>
+            )}
           </div>
         )}
 
@@ -565,11 +751,17 @@ export default function SparringAnalysis() {
               영상을 프레임 단위로 살펴보며 지정하신 분이 맞는지 추적하고 있습니다. 영상 길이에 따라 시간이 걸릴 수
               있습니다.
             </p>
+            {stage && <p data-testid="analysis-stage">현재 단계: {stage}</p>}
             {analyzeProgress && (
               <div className="progress-track">
                 <div className="progress-fill" style={{ width: `${Math.round((analyzeProgress.done / analyzeProgress.total) * 100)}%` }} />
               </div>
             )}
+            <div className="modal-actions modal-actions--start">
+              <button className="btn btn-ghost" onClick={handleCancelAnalysis} data-testid="analysis-cancel">
+                분석 취소
+              </button>
+            </div>
             {error && <div className="ai-inline-warning">{error}</div>}
           </div>
         )}

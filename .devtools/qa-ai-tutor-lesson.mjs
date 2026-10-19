@@ -36,6 +36,7 @@ async function main() {
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('dialog', (d) => d.accept());
   await page.waitForLoadState('load');
+  await page.evaluate(() => localStorage.setItem('martialdex:coach-kind-pref', JSON.stringify({ last: 'gemini', remember: true }))); // 이 QA는 기존 Gemini 코치를 검증 — 수업 전 코치 선택(2026-10-19) 이후 Gemini를 명시적으로 선택
   await sleep(1000);
   const question = fs.readFileSync(path.join(APP_DIR, '.devtools/fixtures-voice-question.wav')).toString('base64');
   await page.evaluate(() => {
@@ -169,6 +170,7 @@ async function main() {
   check('[T10] 의미 기반 채점: 정답 / (부분)정답 / 오답 구분', grades[0].verdict === 'correct' && ['partial', 'correct'].includes(grades[1].verdict) && grades[2].verdict === 'incorrect' && grades.every((g) => g.method === 'ai'), grades);
   // practice WGS briefly
   await page.locator('[data-testid="coach-ready"] button').click();
+  await page.locator('[data-testid="coach-posture-start"]').click(); // 자세 설명 → 실습 시작
   await page.locator('[data-testid="coach-timer"]').waitFor();
   await sleep(1200);
   await page.locator('button', { hasText: '여기서 끝내기' }).click();
@@ -180,9 +182,13 @@ async function main() {
     await page.locator('[data-testid="coach-videos"] button', { hasText: '질문 건너뛰기' }).click();
     await waitStep('ready', 10000);
     await page.locator('[data-testid="coach-ready"] button').click();
-    await page.locator('[data-testid="coach-timer"]').waitFor();
-    await sleep(1200);
-    await page.locator('button', { hasText: '여기서 끝내기' }).click();
+    await page.locator('[data-testid="coach-posture-start"]').click(); // 자세 설명 → 실습 시작
+    // a striking technique is practised on the Visualizing Mitt (not "N분 동안 반복" with a timer)
+    await page.locator('[data-testid="coach-mitt"] [data-testid="mitt-runner"]').waitFor({ timeout: 15000 });
+    const asPractice = await page.evaluate(async () => !!(await import('/src/lib/aiCoachDay/sessionStore.ts')).getCoachDayRun()?.mittPlan?.asPractice);
+    check(`[T10b] ${name} 실습 = Visualizing Mitt (타이머 대신)`, asPractice && (await page.locator('[data-testid="coach-timer"]').count()) === 0);
+    await sleep(1500);
+    await page.locator('[data-testid="mitt-runner-stop"]').click();
     await skipReview();
     console.log('   practised', name);
   }
@@ -227,7 +233,7 @@ async function main() {
   lines = await coachLines();
   check('[T15] 콤보 종료 후 튜터 피드백 → 수업 복귀 → 다음 단계(수업 요약)', lines.some((l) => /좋습니다\. Jab → Cross를 \d+회 모두 반복했습니다/.test(l.text)) && (await step()) === 'summary');
   const hist = await page.evaluate(async () => (await import('/src/lib/trainingHistory/service.ts')).listTrainingHistory()[0]);
-  check('[T16] 수업 기록에 Visualizing Mitt 수행 결과 연동 (사용자 수행 기록, 측정 아님)', /Visualizing Mitt Jab → Cross \d+\/\d+회 \(사용자 수행 기록, 동작 측정 아님\)/.test(hist?.notes ?? ''), hist?.notes);
+  check('[T16] 수업 기록에 Visualizing Mitt 수행 결과 연동 — 실습 미트(Jab·Cross) + 연결 콤보 (사용자 수행 기록, 측정 아님)', /Visualizing Mitt .*Jab → Cross \d+\/\d+회.* \(사용자 수행 기록, 동작 측정 아님\)/.test(hist?.notes ?? '') && /(Jab|잽) \d+\/\d+회/.test(hist?.notes ?? ''), hist?.notes);
 
   // ---- natural-language request → AI setup → Mitt → back to the lesson ----
   await page.evaluate(async () => (await import('/src/lib/aiCoachDay/sessionStore.ts')).clearCoachDayRun());

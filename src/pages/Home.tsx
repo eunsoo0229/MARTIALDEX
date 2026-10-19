@@ -191,7 +191,7 @@ export default function Home() {
                   <span>예상 시간</span>
                 </div>
               </div>
-              <Link to="/review" className="btn btn-primary">
+              <Link to="/review/ai" className="btn btn-primary">
                 복습 시작
               </Link>
             </div>
@@ -285,6 +285,9 @@ export default function Home() {
         <section>
           <div className="section-title">
             <h2>즐겨찾기</h2>
+            <Link to="/favorites" className="see-all">
+              기술 · 콤보·셋업 전체 보기 →
+            </Link>
           </div>
           {favoriteTechniques.length === 0 ? (
             <EmptyState icon="★" text="아직 즐겨찾기한 기술이 없습니다. 기술 상세 페이지에서 별표를 눌러 추가해보세요." />

@@ -10,6 +10,7 @@ import { customMartialArtRepository } from '../customMartialArt/repository';
 import { insertCustomMartialArt } from '../customMartialArt/service';
 import type { CustomMartialArt, WebEvidenceSource } from '../customMartialArt/types';
 import { insertAddTeqTechnique } from '../addTeq/service';
+import { withGiNoGi } from '../grappling/analyzeNewTechnique';
 import { saveUserTechnique } from '../userTechniques/service';
 import type { AddTeqRecord } from '../addTeq/types';
 import type { UserTechniqueRecord } from '../userTechniques/types';
@@ -554,7 +555,8 @@ export async function registerMissingTechnique(
 
   const now = new Date().toISOString();
   const id = `${martialArtId}__${candidate.name.trim().toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').replace(/\s+/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '') || 'technique'}`;
-  const technique = buildTechniqueFromCandidate(martialArtId, candidate, id);
+  // Grappling techniques get their Gi / No-Gi split researched before saving (add_teq rows can't be updated later).
+  const technique = await withGiNoGi(buildTechniqueFromCandidate(martialArtId, candidate, id));
   const record: UserTechniqueRecord = {
     id,
     technique,

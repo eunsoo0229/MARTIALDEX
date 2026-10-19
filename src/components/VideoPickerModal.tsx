@@ -24,6 +24,8 @@ interface VideoPickerModalProps {
   onClose: () => void;
   /** Returns false when the add was refused (cap/duplicate) so the picker stays open. */
   onSelect: (item: VideoSearchItem | { title: string; videoId: string; channel: string }) => boolean | void;
+  /** Extra search words (Gi/No-Gi tab: "gi" / "no gi") — only refines the query; a video's style is decided from its own title. */
+  queryHint?: string;
 }
 
 type Method = 'search' | 'url';
@@ -37,11 +39,11 @@ type Method = 'search' | 'url';
  * concerns (this never calls webSearchProvider) — the "자연어 조건" input
  * below only ever refines the YouTube query text itself.
  */
-export default function VideoPickerModal({ technique, existingVideoIds = [], remainingSlots = 1, onClose, onSelect }: VideoPickerModalProps) {
+export default function VideoPickerModal({ technique, existingVideoIds = [], remainingSlots = 1, onClose, onSelect, queryHint }: VideoPickerModalProps) {
   const [method, setMethod] = useState<Method>('search');
   const full = remainingSlots <= 0;
   const art = getMartialArt(technique.martialArt);
-  const baseQuery = buildYoutubeQuery(technique, art);
+  const baseQuery = `${buildYoutubeQuery(technique, art)}${queryHint ? ` ${queryHint}` : ''}`;
   const [refineInput, setRefineInput] = useState('');
   const [activeQuery, setActiveQuery] = useState(baseQuery);
   const [state, setState] = useState<SearchState>({ status: 'loading' });

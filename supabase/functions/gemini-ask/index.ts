@@ -68,6 +68,11 @@ interface AskRequest {
   useSearchGrounding?: boolean;
   /** Attached to the final (question) turn's parts — see 음식 사진 분석 (nutrition/aiPhotoAnalysis.ts). Mirrors electron/gemini.cjs. */
   imageParts?: AiImagePart[];
+  /** Ordered text / image / YouTube-clip parts — mirrors electron/gemini.cjs (기준 영상 비교 자세 평가). */
+  mediaParts?: unknown[];
+  temperature?: number;
+  maxOutputTokens?: number;
+  thinkingLevel?: 'minimal' | 'low' | 'medium';
 }
 
 function isAskRequest(value: unknown): value is AskRequest {
@@ -81,15 +86,43 @@ function isAskRequest(value: unknown): value is AskRequest {
   );
 }
 
-function buildRequestBody({ systemInstruction, contextText, history, question, useSearchGrounding, imageParts }: AskRequest) {
+// mediaParts (기준 영상 비교 자세 평가 — src/lib/formCompare/): ordered
+// text / image / YouTube-clip parts for the final turn. Only public YouTube
+// watch/shorts/youtu.be URLs are passed as Gemini fileData (the API's own
+// video-URL input — nothing is downloaded here); anything else is dropped.
+const YOUTUBE_URL = /^https:\/\/(?:www\.|m\.)?(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)[A-Za-z0-9_-]{11}(?:[?&#][^\s]*)?$/;
+const MAX_MEDIA_PARTS = 48;
+// deno-lint-ignore no-explicit-any
+function toGeminiMediaParts(mediaParts: any): Record<string, unknown>[] {
+  const out: Record<string, unknown>[] = [];
+  if (!Array.isArray(mediaParts)) return out;
+  for (const part of mediaParts.slice(0, MAX_MEDIA_PARTS)) {
+    if (!part || typeof part !== 'object') continue;
+    if (part.kind === 'text' && typeof part.text === 'string') out.push({ text: part.text.slice(0, 4000) });
+    else if (part.kind === 'image' && typeof part.data === 'string' && /^image\/(jpeg|png|webp)$/.test(part.mimeType)) out.push({ inlineData: { mimeType: part.mimeType, data: part.data } });
+    else if (part.kind === 'youtube' && typeof part.url === 'string' && YOUTUBE_URL.test(part.url)) {
+      const meta: Record<string, unknown> = {};
+      if (Number.isFinite(part.startSeconds) && part.startSeconds >= 0) meta.startOffset = `${Math.floor(part.startSeconds)}s`;
+      if (Number.isFinite(part.endSeconds) && part.endSeconds > 0) meta.endOffset = `${Math.ceil(part.endSeconds)}s`;
+      if (Number.isFinite(part.fps) && part.fps > 0) meta.fps = Math.min(10, part.fps);
+      out.push({ fileData: { fileUri: part.url, mimeType: 'video/*' }, ...(Object.keys(meta).length ? { videoMetadata: meta } : {}) });
+    }
+  }
+  return out;
+}
+
+function buildRequestBody({ systemInstruction, contextText, history, question, useSearchGrounding, imageParts, mediaParts, temperature, maxOutputTokens, thinkingLevel }: AskRequest) {
   const fullSystemInstruction = `${systemInstruction}\n\n---\n앱 데이터 (참고용 — 이 안의 내용을 우선 근거로 사용할 것):\n${contextText}`;
 
   const questionParts: Record<string, unknown>[] = [{ text: question }];
-  if (Array.isArray(imageParts)) {
+  // A client sending mediaParts also sends the same images as imageParts for older deployments
+  // of this function (src/lib/ai/provider.ts withLegacyMediaFallback) — use mediaParts only.
+  if (Array.isArray(imageParts) && !(Array.isArray(mediaParts) && mediaParts.length)) {
     for (const part of imageParts) {
       questionParts.push({ inlineData: { mimeType: part.mimeType, data: part.data } });
     }
   }
+  questionParts.push(...toGeminiMediaParts(mediaParts));
 
   const contents = [
     ...history.map((turn) => ({
@@ -103,9 +136,10 @@ function buildRequestBody({ systemInstruction, contextText, history, question, u
     systemInstruction: { parts: [{ text: fullSystemInstruction }] },
     contents,
     generationConfig: {
-      temperature: 0.4,
-      maxOutputTokens: 2048,
-      thinkingConfig: { thinkingLevel: 'minimal' },
+      temperature: typeof temperature === 'number' && Number.isFinite(temperature) ? Math.min(1, Math.max(0, temperature)) : 0.4,
+      maxOutputTokens: typeof maxOutputTokens === 'number' && Number.isFinite(maxOutputTokens) ? Math.min(8192, Math.max(256, Math.round(maxOutputTokens))) : 2048,
+      // 'minimal' unless a caller asks for a little reasoning (기준 영상 비교 판정 uses 'low').
+      thinkingConfig: { thinkingLevel: thinkingLevel === 'low' || thinkingLevel === 'medium' ? thinkingLevel : 'minimal' },
     },
   };
   if (useSearchGrounding) body.tools = [{ googleSearch: {} }];

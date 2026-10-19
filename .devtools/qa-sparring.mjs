@@ -108,11 +108,11 @@ async function main() {
   await new Promise((r) => setTimeout(r, 800));
 
   // ============ 1. NAV + EMPTY HUB ============
-  // "스파링 분석" now lives in the header's collapsed "메뉴" dropdown.
-  check('메뉴 dropdown opens ->', (await clickText('메뉴', 'button')) === 'OK');
-  await new Promise((r) => setTimeout(r, 200));
-  check('Nav has "스파링 분석" link', (await clickText('스파링 분석', 'a')) === 'OK');
-  await new Promise((r) => setTimeout(r, 400));
+  // AI 화면은 이제 상단 "AI 코치" 탭의 AI 기능 목록에서 엽니다.
+  check('AI 코치 탭 열기 ->', (await clickText('AI 코치', 'a')) === 'OK');
+  await new Promise((r) => setTimeout(r, 500));
+  check('AI 코치 탭에 "스파링 영상 AI 분석" 카드', await page.evaluate(() => { const a = document.querySelector('[data-feature="sparring"] a'); if (!a) return false; a.click(); return true; }));
+  await new Promise((r) => setTimeout(r, 1500));
   check('Landed on sparring hub', ((await textOf('.section-title h2')) ?? '').includes('스파링 분석'));
   check('Empty state shown with no sessions', ((await textOf('.empty-state')) ?? '').includes('아직 분석한'));
   await shot('01-empty-hub');
@@ -318,7 +318,7 @@ async function main() {
   check('[Regression] Fighter-style hub still works', ((await textOf('.section-title h2')) ?? '') === '선수 스타일 학습');
 
   await goto('#/coach');
-  check('[Regression] AI Coach page still works', ((await textOf('.section-title h2')) ?? '').includes('AI 개인 코치'));
+  check('[Regression] AI Coach page still works', ((await textOf('.section-title h2')) ?? '').includes('AI 코치'));
 
   await goto('#/my-skills');
   const overallStats = await textsOf('.curriculum-stat-row strong');

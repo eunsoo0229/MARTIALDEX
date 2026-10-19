@@ -40,7 +40,27 @@ export interface AskAiRequest {
   useSearchGrounding?: boolean;
   /** Attached to the final (question) turn's parts — see 음식 사진 분석 (nutrition/aiPhotoAnalysis.ts). Supported identically on Electron (electron/gemini.cjs) and Android (supabase/functions/gemini-ask). Undefined/empty for every existing text-only caller — fully additive. */
   imageParts?: AiImagePart[];
+  /**
+   * Ordered media for the final turn — labelled text, images and YouTube clips
+   * interleaved ("[기준 R1 · 준비]" → image → "[사용자 U1]" → image …) so the
+   * model can tell which frame is which. Added after `imageParts`. YouTube clips
+   * use Gemini's official video-URL input (public videos only, no download).
+   * Validated server-side by both transports (electron/gemini.cjs and
+   * supabase/functions/gemini-ask). See formCompare/ (기준 영상 비교 자세 평가).
+   */
+  mediaParts?: AiMediaPart[];
+  /** 0–1; defaults to the transport's 0.4. Lower = more consistent grading. */
+  temperature?: number;
+  /** Defaults to 2048; capped at 8192 by the transports. */
+  maxOutputTokens?: number;
+  /** Gemini thinking level — 'minimal' (default, fastest) unless a careful judgement needs 'low'/'medium'. */
+  thinkingLevel?: 'minimal' | 'low' | 'medium';
 }
+
+export type AiMediaPart =
+  | { kind: 'text'; text: string }
+  | { kind: 'image'; mimeType: string; data: string }
+  | { kind: 'youtube'; url: string; startSeconds?: number; endSeconds?: number; fps?: number };
 
 export type AskAiResult =
   // webSearchQueries: Gemini's own groundingMetadata.webSearchQueries — the

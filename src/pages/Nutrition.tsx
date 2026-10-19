@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { todayDateKey } from '../lib/dateUtil';
 import { useNutritionMeals } from '../lib/nutrition/useNutritionMeals';
 import { useNutritionProfile } from '../lib/nutrition/useNutritionProfile';
@@ -95,6 +95,19 @@ export default function Nutrition() {
   const [aiGenOpen, setAiGenOpen] = useState(false);
   const [aiTextOpen, setAiTextOpen] = useState(false);
   const [aiPhotoOpen, setAiPhotoOpen] = useState(false);
+  // ?ai=gen|text|photo — opened straight from the AI 코치 tab's feature catalog.
+  const [searchParams, setSearchParams] = useSearchParams();
+  useEffect(() => {
+    const ai = searchParams.get('ai');
+    if (!ai) return;
+    if (ai === 'gen') setAiGenOpen(true);
+    else if (ai === 'text') setAiTextOpen(true);
+    else if (ai === 'photo') setAiPhotoOpen(true);
+    const next = new URLSearchParams(searchParams);
+    next.delete('ai');
+    setSearchParams(next, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [editingMeal, setEditingMeal] = useState<NutritionMealEntry | null>(null);
   const [pendingReview, setPendingReview] = useState<{ mealType: MealType; foods: NutritionFoodItem[]; source: 'ai_photo' | 'ai_text' } | null>(
     null

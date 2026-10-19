@@ -1,4 +1,5 @@
 import { NavLink, Link, useLocation, useNavigate } from 'react-router-dom';
+import { isAiCoachPath } from '../lib/aiCoach/aiFeatureCatalog';
 import { useEffect, useRef, useState } from 'react';
 import SearchBar from './SearchBar';
 import AiAskModal from './AiAskModal';
@@ -37,6 +38,8 @@ const NAV_MORE_GROUPS = [
       { to: '/learned-techniques', label: '배운 기술' },
       { to: '/graph', label: '기술 그래프' },
       { to: '/techniques/request', label: '기술 요청' },
+      { to: '/user-combos', label: '사용자 콤보·셋업' },
+      { to: '/favorites', label: '즐겨찾기' },
     ],
   },
   {
@@ -58,8 +61,6 @@ const NAV_MORE_GROUPS = [
     label: '커리큘럼',
     items: [
       { to: '/learning', label: '학습 커리큘럼' },
-      { to: '/ai-curriculum', label: 'AI 맞춤 커리큘럼' },
-      { to: '/fighter-style', label: '선수 스타일 학습' },
       { to: '/marketplace', label: '커리큘럼 마켓' },
     ],
   },
@@ -78,16 +79,11 @@ const NAV_MORE_GROUPS = [
     ],
   },
   {
-    label: 'AI',
-    items: [
-      { to: '/personal-coach', label: 'AI Personal Coach' },
-      { to: '/ai-combo', label: 'AI 콤비네이션' },
-      { to: '/ai-history', label: 'AI 질문 기록' },
-    ],
-  },
-  {
     label: '커뮤니티',
-    items: [{ to: '/community', label: '커뮤니티' }],
+    items: [
+      { to: '/community', label: '커뮤니티' },
+      { to: '/shorts', label: '숏폼' },
+    ],
   },
   {
     label: '체육관',
@@ -100,9 +96,7 @@ const NAV_MORE_GROUPS = [
     label: '계정',
     items: [
       { to: '/dashboard', label: '대시보드' },
-      { to: '/sparring', label: '스파링 분석' },
       { to: '/stats', label: '나의 통계' },
-      { to: '/my-style', label: '나의 스타일' },
       { to: '/profile', label: '프로필' },
     ],
   },
@@ -170,7 +164,7 @@ export default function Header() {
             홈
           </NavLink>
           {NAV_PRIMARY.map((item) => (
-            <NavLink key={item.to} to={item.to}>
+            <NavLink key={item.to} to={item.to} className={({ isActive }) => (isActive || (item.to === '/coach' && isAiCoachPath(pathname)) ? 'active' : '')}>
               {item.label}
             </NavLink>
           ))}
@@ -216,7 +210,7 @@ export default function Header() {
                 홈
               </NavLink>
               {NAV_PRIMARY.map((item) => (
-                <NavLink key={item.to} to={item.to}>
+                <NavLink key={item.to} to={item.to} className={({ isActive }) => (isActive || (item.to === '/coach' && isAiCoachPath(pathname)) ? 'active' : '')}>
                   {item.label}
                 </NavLink>
               ))}

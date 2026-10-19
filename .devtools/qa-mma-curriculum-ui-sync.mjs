@@ -94,8 +94,8 @@ async function main() {
   await page.evaluate(() => { location.hash = '#/personal-coach'; });
   await sleep(500);
   await page.fill('textarea', 'MMA에서 그래플링이 부족한 것 같아. 테이크다운도 더 배우고 싶어.');
-  await page.click('button:has-text("AI에게 물어보기")');
-  await page.waitForFunction(() => !document.body.innerText.includes('분석하고 있습니다'), { timeout: 40000 });
+  await page.click('[data-testid="personal-coach-analyze"]');
+  await page.waitForFunction(() => !!document.querySelector('[data-testid="personal-coach-result"]'), { timeout: 40000 });
   await sleep(300);
   const hasMakeCurriculumBtn = await page.evaluate(() => document.body.innerText.includes('이 추천으로 커리큘럼 만들기'));
   if (hasMakeCurriculumBtn) {

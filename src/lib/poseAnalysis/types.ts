@@ -69,6 +69,15 @@ export interface PoseAnalysisRecord {
   status: Exclude<SkillStatus, 'not_analyzed'>;
   metricScores: Record<string, number>;
   analyzedAt: string;
+  /**
+   * How the score was produced. Absent = the original joint-metric analysis
+   * (analyzeTechnique.ts). 'video_compare' = 기준 영상 비교 (formCompare/):
+   * metricScores are then per-criterion (match 100 · partial 50 · mismatch 0)
+   * and the full evaluation is in martialdex:form-compare-records.
+   */
+  method?: 'landmark' | 'video_compare';
+  referenceId?: string;
+  reliability?: 'high' | 'medium' | 'low';
 }
 
 export interface TechniqueSkillSummary {

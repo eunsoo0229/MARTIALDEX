@@ -1,0 +1,114 @@
+{
+  "jab_reference": {
+    "frames": 60,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      21,
+      27,
+      38,
+      60
+    ]
+  },
+  "jab_good": {
+    "frames": 98,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      36,
+      46,
+      55,
+      72,
+      98
+    ]
+  },
+  "jab_good_altlook": {
+    "frames": 60,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      21,
+      27,
+      38,
+      60
+    ]
+  },
+  "jab_medium": {
+    "frames": 60,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      21,
+      27,
+      38,
+      60
+    ]
+  },
+  "jab_wrong": {
+    "frames": 60,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      21,
+      27,
+      38,
+      60
+    ]
+  },
+  "still_noaction": {
+    "frames": 72,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      29,
+      44,
+      58,
+      72
+    ]
+  },
+  "jab_reference_side": {
+    "frames": 60,
+    "fps": 24.0,
+    "size": [
+      640,
+      480
+    ],
+    "frames_picked": [
+      1,
+      15,
+      21,
+      27,
+      38,
+      60
+    ]
+  }
+}

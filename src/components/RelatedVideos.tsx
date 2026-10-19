@@ -7,7 +7,9 @@ import { videoSearchProvider } from '../lib/videoSearch/provider';
 import { getCachedVideoSearch, setCachedVideoSearch } from '../lib/videoSearch/cache';
 import type { VideoSearchItem } from '../lib/videoSearch/types';
 import { addTechniqueVideo, getTechniqueVideos, isUserAddedVideo, LIMIT_MESSAGE, MAX_RELATED_VIDEOS, removeTechniqueVideo } from '../lib/techniqueVideo/service';
+import YouTubeLite from './YouTubeLite';
 import VideoPickerModal from './VideoPickerModal';
+import { detectVideoStyle, STYLE_LABEL, videosForStyle, type GiNoGiRecord, type GrapplingStyle } from '../lib/grappling/giNoGi';
 
 const IFRAME_ALLOW =
   'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
@@ -30,9 +32,16 @@ interface RelatedVideosProps {
    * one at a time.
    */
   liveSearchFallback?: boolean;
+  /**
+   * Grappling Gi / No-Gi tab: show only this style's videos (and ones tagged
+   * for both); unclassified videos are listed separately, the other style's
+   * are not shown. Absent = every video, as before.
+   */
+  style?: GrapplingStyle;
+  styleRecord?: GiNoGiRecord;
 }
 
-export default function RelatedVideos({ technique, liveSearchFallback = false }: RelatedVideosProps) {
+export default function RelatedVideos({ technique, liveSearchFallback = false, style, styleRecord }: RelatedVideosProps) {
   // The user's own persisted pick (spec section 7) overlays the technique's
   // base curated/add_teq videos — never mutates `technique.videos` itself,
   // so this stays correct even for a technique shared across users (see
@@ -40,8 +49,12 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
   // per-user overlay, not a write to the shared record).
   const [videoPickVersion, setVideoPickVersion] = useState(0);
   // Base videos + the user's added ones, de-duped, capped at 5.
-  const videos = getTechniqueVideos(technique);
-  const canAdd = videos.length < MAX_RELATED_VIDEOS;
+  const allVideos = getTechniqueVideos(technique);
+  const split = style && styleRecord ? videosForStyle(allVideos, style, styleRecord) : null;
+  const videos = split ? split.shown : allVideos;
+  const unclassified = split?.unknown ?? [];
+  const canAdd = allVideos.length < MAX_RELATED_VIDEOS;
+  const heading = style ? `${STYLE_LABEL[style]} 관련 영상` : '관련 영상';
   const [addMessage, setAddMessage] = useState<string | null>(null);
   const [searchState, setSearchState] = useState<SearchState>({ status: 'idle' });
   const [playingId, setPlayingId] = useState<string | null>(null);
@@ -91,23 +104,51 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
   }, [technique.id, liveSearchFallback, videos.length]);
 
   function handleVideoPicked(item: VideoSearchItem | CuratedVideo): boolean {
-    const picked: CuratedVideo = { title: item.title, videoId: item.videoId, channel: item.channel };
+    // Style comes ONLY from the video's own title — never from which tab it was added in.
+    const detected = style ? detectVideoStyle(item.title) : undefined;
+    const picked: CuratedVideo = { title: item.title, videoId: item.videoId, channel: item.channel, ...(detected ? { style: detected } : {}) };
     const result = addTechniqueVideo(technique, picked);
     if (!result.ok) {
       setAddMessage(result.message);
       return false;
     }
-    setAddMessage(null);
+    setAddMessage(
+      style && detected && detected !== style && detected !== 'both'
+        ? detected === 'unknown'
+          ? `영상 제목에서 ${STYLE_LABEL[style]} 여부를 확인하지 못해 '스타일 미확인 영상'으로 저장했습니다.`
+          : `영상 제목이 ${STYLE_LABEL[detected]} 영상이라 ${STYLE_LABEL[detected]} 탭에 저장했습니다.`
+        : null
+    );
     setPickerOpen(false);
     return true;
   }
+
+  const unclassifiedList =
+    unclassified.length > 0 ? (
+      <details className="video-unclassified" data-testid="videos-unclassified" style={{ marginTop: 10 }}>
+        <summary>스타일(Gi/No-Gi)이 확인되지 않은 영상 {unclassified.length}개</summary>
+        <p className="video-status-message">영상 제목·설명에서 Gi인지 No-Gi인지 확인되지 않은 영상입니다. 어느 스타일의 영상으로도 표시하지 않습니다.</p>
+        <div className="video-embed-grid">
+          {unclassified.map((v) => (
+            <div key={v.videoId} className="video-embed">
+              <div className="video-embed__frame-wrap">
+                <YouTubeLite videoId={v.videoId} title={v.title} />
+              </div>
+              <div className="video-embed__title">{v.title}</div>
+              <div className="video-embed__channel">{v.channel}</div>
+            </div>
+          ))}
+        </div>
+      </details>
+    ) : null;
 
   if (pickerOpen) {
     return (
       <VideoPickerModal
         technique={technique}
-        existingVideoIds={videos.map((v) => v.videoId)}
-        remainingSlots={MAX_RELATED_VIDEOS - videos.length}
+        existingVideoIds={allVideos.map((v) => v.videoId)}
+        remainingSlots={MAX_RELATED_VIDEOS - allVideos.length}
+        queryHint={style === 'gi' ? 'gi' : style === 'nogi' ? 'no gi' : undefined}
         onClose={() => setPickerOpen(false)}
         onSelect={handleVideoPicked}
       />
@@ -116,22 +157,15 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
 
   if (videos.length > 0) {
     return (
-      <div className="card info-card">
+      <div className="card info-card" data-testid="related-videos" data-style={style ?? ''}>
         <h3>
-          <span aria-hidden="true">▶</span> 관련 영상
+          <span aria-hidden="true">▶</span> {heading}
         </h3>
         <div className="video-embed-grid">
           {videos.map((v) => (
             <div key={v.videoId} className="video-embed">
               <div className="video-embed__frame-wrap">
-                <iframe
-                  src={`https://www.youtube.com/embed/${v.videoId}`}
-                  title={v.title}
-                  loading="lazy"
-                  allow={IFRAME_ALLOW}
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
+                <YouTubeLite videoId={v.videoId} title={v.title} />
               </div>
               <div className="video-embed__title">{v.title}</div>
               <div className="video-embed__channel">{v.channel}</div>
@@ -146,7 +180,7 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
         <div className="modal-actions modal-actions--start" style={{ marginTop: 10 }}>
           {canAdd ? (
             <button className="btn btn-secondary" data-testid="related-videos-add" onClick={() => setPickerOpen(true)}>
-              ＋ 관련 영상 추가 ({videos.length}/{MAX_RELATED_VIDEOS})
+              ＋ {style ? `${STYLE_LABEL[style]} ` : ''}관련 영상 추가 ({allVideos.length}/{MAX_RELATED_VIDEOS})
             </button>
           ) : (
             <p className="video-status-message" data-testid="related-videos-limit" style={{ margin: 0 }}>
@@ -155,33 +189,38 @@ export default function RelatedVideos({ technique, liveSearchFallback = false }:
           )}
         </div>
         {addMessage && <p className="video-status-message">{addMessage}</p>}
+        {unclassifiedList}
       </div>
     );
   }
 
   if (!liveSearchFallback) {
     return (
-      <div className="card info-card">
+      <div className="card info-card" data-testid="related-videos" data-style={style ?? ''}>
         <h3>
-          <span aria-hidden="true">▶</span> 관련 영상
+          <span aria-hidden="true">▶</span> {heading}
         </h3>
-        <p className="video-status-message">
-          아직 이 기술에 등록된 영상이 없습니다. 관련 영상을 찾아 이 기술에 연결하거나, YouTube에서 직접 검색해볼 수 있습니다.
+        <p className="video-status-message" data-testid={style ? 'style-videos-missing' : undefined}>
+          {style
+            ? `이 기술의 ${STYLE_LABEL[style]} 영상이 아직 등록되지 않았습니다(누락). 다른 스타일의 영상으로 대신하지 않습니다.`
+            : '아직 이 기술에 등록된 영상이 없습니다. 관련 영상을 찾아 이 기술에 연결하거나, YouTube에서 직접 검색해볼 수 있습니다.'}
         </p>
         <div className="modal-actions modal-actions--start">
-          <button className="btn btn-secondary" onClick={() => setPickerOpen(true)}>
-            🔎 관련 영상 찾기
+          <button className="btn btn-secondary" onClick={() => setPickerOpen(true)} disabled={!canAdd}>
+            🔎 {style ? `${STYLE_LABEL[style]} ` : ''}관련 영상 찾기
           </button>
           <button
             className="btn btn-ghost"
             onClick={() => {
               const art = getMartialArt(technique.martialArt);
-              openExternal(youtubeSearchUrl(buildYoutubeQuery(technique, art)));
+              openExternal(youtubeSearchUrl(`${buildYoutubeQuery(technique, art)}${style === 'gi' ? ' gi' : style === 'nogi' ? ' no gi' : ''}`));
             }}
           >
             ▶ YouTube에서 바로 보기
           </button>
         </div>
+        {addMessage && <p className="video-status-message">{addMessage}</p>}
+        {unclassifiedList}
       </div>
     );
   }

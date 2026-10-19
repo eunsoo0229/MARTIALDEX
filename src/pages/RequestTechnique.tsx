@@ -418,7 +418,7 @@ export default function RequestTechnique() {
 
             <div className="modal-actions modal-actions--start">
               <button className="btn btn-primary" onClick={handleSave} disabled={saving}>
-                {saving ? '등록 중...' : '등록하기'}
+                {saving ? '등록 중... (그래플링 기술은 Gi·No-Gi 조사 포함)' : '등록하기'}
               </button>
               <button className="btn btn-ghost" onClick={reset} disabled={saving}>
                 취소

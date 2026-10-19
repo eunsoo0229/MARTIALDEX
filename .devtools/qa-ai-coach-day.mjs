@@ -29,6 +29,7 @@ async function launch(extraArgs = []) {
   page.on('pageerror', (e) => errors.push(e.message));
   page.on('dialog', (d) => d.accept());
   await page.waitForLoadState('load');
+  await page.evaluate(() => localStorage.setItem('martialdex:coach-kind-pref', JSON.stringify({ last: 'gemini', remember: true }))); // 이 QA는 기존 Gemini 코치를 검증 — 수업 전 코치 선택(2026-10-19) 이후 Gemini를 명시적으로 선택
   await sleep(800);
   return { app, page, errors };
 }
@@ -125,22 +126,36 @@ async function main() {
   const answerText = await page.evaluate(() => [...document.querySelectorAll('[data-testid="coach-chat"] [data-kind="answer"]')].pop()?.textContent ?? '');
   check('[C7b] 코치가 사용자를 "보고 있다"고 말하지 않음 (카메라 없음)', !/(보니|보이네요|자세가 좋|잘 하고 계시|화면으로 보)/.test(answerText), answerText.slice(0, 200));
 
+  // High Crotch is a BJJ standing takedown entry and the class is at home → "준비됐어요" first
+  // brings the posture briefing (nothing starts), then the Visualizing Mitt is ALWAYS called,
+  // then the solo call-out drill (cues called quickly) — never "N분 동안 반복" with a timer.
   await send(page, '준비됐어요');
-  await waitStep(page, 'practice', 10000);
-  const shown = await page.textContent('[data-testid="coach-timer-display"]');
-  const mm = String(Math.floor(day10.seconds / 60)).padStart(2, '0');
-  check('[C8] "준비됐어요" → 타이머 시작, 길이는 Day 설정(estimatedMinutes)에서 계산된 값', /^\d\d:\d\d$/.test(shown) && (shown.startsWith(mm) || shown === `${String(Math.floor((day10.seconds - 1) / 60)).padStart(2, '0')}:59`), { shown, seconds: day10.seconds, est: day10.est });
-
-  // Fast-forward the real stored run (not the logic): 75s practice with 12s left.
+  await waitStep(page, 'posture', 10000);
+  const posture = await page.evaluate(() => ({
+    lines: [...document.querySelectorAll('[data-testid="coach-posture-lines"] li')].map((l) => l.textContent),
+    mitt: document.querySelector('[data-testid="coach-posture-mitt"]')?.textContent ?? '',
+    running: !!document.querySelector('[data-testid="mitt-runner"], [data-testid="solo-drill"], [data-testid="coach-timer"]'),
+  }));
+  check('[C8a] "준비됐어요" → 바로 실습하지 않고 자세 설명부터 (기본 자세 + 기술 자세, 미트 예고)', posture.lines.length >= 2 && /기본 자세/.test(posture.lines[0]) && /High Crotch|하이 크로치/.test(posture.lines.join(' ')) && /Visualizing Mitt/.test(posture.mitt) && !posture.running, posture);
+  await send(page, '준비됐어');
+  await waitStep(page, 'mitt', 10000);
+  check('[C8b] 자세 확인 후 Visualizing Mitt를 자동으로 불러옴 (요청 없이)', (await page.locator('[data-testid="coach-mitt"] [data-testid="mitt-runner"]').count()) === 1);
+  await page.locator('[data-testid="mitt-runner-stop"]').click();
+  await waitStep(page, 'drill', 10000);
+  const drillInfo = await page.evaluate(() => {
+    const raw = JSON.parse(localStorage.getItem('martialdex:ai-coach-day-run'));
+    return { cues: raw.drillPlan?.cues?.map((c) => c.call) ?? [], seconds: raw.drillPlan?.seconds, timer: !!raw.practice };
+  });
+  check('[C8] 미트 뒤 (집 · BJJ 스탠딩 테이크다운) 솔로 드릴로 이어짐 — 실제 기술 구령, 타이머 아님', (await page.locator('[data-testid="solo-drill"]').count()) === 1 && drillInfo.cues.length >= 5 && !drillInfo.timer && drillInfo.cues.includes('High Crotch'), drillInfo);
+  await sleep(6000);
+  const calls = await page.evaluate(() => Number(document.querySelector('[data-testid="solo-drill"]')?.dataset.calls));
+  // Fast-forward the stored drill (not the logic): finish it now.
   await page.evaluate(() => {
     const raw = JSON.parse(localStorage.getItem('martialdex:ai-coach-day-run'));
-    raw.practice.totalSeconds = 75;
-    raw.practice.phaseEndTimestamp = Date.now() + 12000;
+    raw.drillPlan.seconds = 7;
     localStorage.setItem('martialdex:ai-coach-day-run', JSON.stringify(raw));
     window.dispatchEvent(new CustomEvent('martialdex:ai-coach-day-updated'));
   });
-  await sleep(2000);
-  const midCues = await page.evaluate(() => [...document.querySelectorAll('[data-testid="coach-chat"] [data-kind="cue"]')].map((e) => e.textContent));
   // 수행 후 질문 → (상황 판단) → 복습 — skipped here; qa-coach-lesson-live.mjs answers them.
   await waitStep(page, 'review', 30000);
   check('[C9a] 실습 후 바로 끝내지 않고 수행 후 질문', (await page.locator('[data-testid="coach-awaiting"]').count()) === 1);
@@ -150,9 +165,9 @@ async function main() {
   }
   await waitStep(page, 'summary', 30000);
   const cues = await page.evaluate(() => [...document.querySelectorAll('[data-testid="coach-chat"] [data-kind="cue"]')].map((e) => e.textContent));
-  const once = (re) => cues.filter((c) => re.test(c)).length === 1;
-  check('[C9] 시간 알림: 1분 경과·핵심 포인트·10초 남음·종료가 각각 정확히 1번', once(/1분이 지났습니다/) && once(/핵심 포인트를 떠올려/) && once(/10초 남았습니다/) && once(/연습을 마쳤습니다/) && !cues.some((c) => /2분|조금만 더/.test(c)), { cues, midCues });
-  check('[C10] 75초 실습에서는 발생 불가능한 "2분 경과" 알림 없음, 알림은 매초가 아닌 이벤트로만', cues.length === 4, cues);
+  const drillRun = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:ai-coach-day-run'))?.drillSessions ?? []);
+  check('[C9] 솔로 드릴: 구령이 이어졌고(6초에 2번 이상) 끝까지 진행하면 완료로 기록', calls >= 2 && drillRun.length === 1 && drillRun[0].finished === true, { calls, drillRun });
+  check('[C10] 드릴에는 타이머용 시간 알림(1분 경과·10초 남음)이 섞이지 않음 — 타이머 알림 규칙은 C14·C15에서 검증', !cues.some((c) => /1분이 지났습니다|10초 남았습니다/.test(c)), cues);
 
   const summaryText = await page.textContent('[data-testid="coach-summary"]');
   const hist = await page.evaluate(async () => {
@@ -168,6 +183,8 @@ async function main() {
   await sleep(1500);
   const histAfterReload = await page.evaluate(async () => (await import('/src/lib/trainingHistory/service.ts')).listTrainingHistory().filter((x) => x.curriculumId === 'official__bjj' && x.dayNumber === 10 && (x.notes ?? '').includes('AI 코치')).length);
   check('[C12b] 요약 화면 새로고침해도 중복 기록 없음', histAfterReload === 1, histAfterReload);
+  const lessonLog = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:coach-lesson-log') || '[]'));
+  check('[C12c] 수업 요약(전 수업내용 복습용) 1건 저장 · 기술·개념 이해 결과 포함 · 새로고침해도 1건', lessonLog.length === 1 && lessonLog[0].kind === 'curriculum_day' && lessonLog[0].techniques.some((t) => t.techniqueId === 'bjj__high-crotch' && t.concepts.length > 0), lessonLog.map((l) => ({ kind: l.kind, techniques: l.techniques.map((t) => [t.techniqueId, t.concepts.length]), qa: l.qa.length })));
   const dayDone = await page.evaluate(async () => {
     const { getCurriculum } = await import('/src/lib/curriculum/curriculumService.ts');
     const m = await import('/src/lib/curriculum/curriculumService.ts');
@@ -267,7 +284,9 @@ async function main() {
   const answer = await page.evaluate(() => [...document.querySelectorAll('[data-testid="coach-chat"] [data-kind="answer"]')].pop()?.textContent ?? '');
   await sleep(300);
   const spoken2 = await page.evaluate(() => window.__spoken.slice());
-  check('[V3] 음성 질문에 코치가 답하고 그 답을 음성으로 읽어줌', answer.length > 5 && spoken2.includes(answer), answer.slice(0, 160));
+  // Long lines are spoken in sentence chunks (tts.ts splits at ≤160 chars) — compare the spoken text joined.
+  const flat = (x) => x.replace(/\s+/g, '');
+  check('[V3] 음성 질문에 코치가 답하고 그 답을 음성으로 읽어줌', answer.length > 5 && flat(spoken2.join('')).includes(flat(answer)), { len: answer.length, answer: answer.slice(0, 160) });
   const readyVoice = await page.evaluate(async (b64) => {
     const { transcribeWav } = await import('/src/lib/voice/stt.ts');
     const { isReadyIntent } = await import('/src/lib/aiCoachDay/service.ts');

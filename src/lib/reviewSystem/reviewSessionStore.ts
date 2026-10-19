@@ -1,11 +1,13 @@
 import type { ReviewSessionState } from './types';
 import { todayDateKey } from '../dateUtil';
-import { recordTrainingSession } from '../trainingHistory/service';
+import { startReviewLog, updateReviewLog } from '../review/reviewLog';
 
 // Same local-first "daily session" pattern as todayTraining/sessionStore.ts
-// (12~13단계) — a new calendar day always recomputes a fresh candidate list,
-// and completion writes into the SAME trainingHistory log (source: 'review'),
-// never a separate/duplicate record of what was reviewed.
+// (12~13단계) — a new calendar day always recomputes a fresh candidate list.
+// What was reviewed goes to the REVIEW log (review/reviewLog.ts, mode 'ai'),
+// not to training history: reviewing a technique is not training it, so it
+// no longer adds a `source: 'review'` training entry. (Entries older apps
+// already wrote are left as they are.)
 const KEY = 'martialdex:review-session';
 
 function readSession(): ReviewSessionState | null {
@@ -30,7 +32,9 @@ export function getTodayReviewSession(): ReviewSessionState | null {
 }
 
 export function startReviewSession(techniqueIds: string[]): ReviewSessionState {
+  const log = startReviewLog('ai', null, techniqueIds);
   const session: ReviewSessionState = {
+    reviewLogId: log.id,
     date: todayDateKey(),
     techniqueIds,
     completedTechniqueIds: [],
@@ -47,6 +51,7 @@ export function markReviewTechniqueComplete(techniqueId: string): ReviewSessionS
   if (!session.completedTechniqueIds.includes(techniqueId)) {
     session.completedTechniqueIds = [...session.completedTechniqueIds, techniqueId];
   }
+  if (session.reviewLogId) updateReviewLog(session.reviewLogId, (e) => ({ ...e, completedTechniqueIds: [...session.completedTechniqueIds] }));
   writeSession(session);
   return session;
 }
@@ -55,19 +60,13 @@ export function isReviewSessionFullyComplete(session: ReviewSessionState): boole
   return session.techniqueIds.length > 0 && session.techniqueIds.every((id) => session.completedTechniqueIds.includes(id));
 }
 
-export function finalizeReviewSession(session: ReviewSessionState, actualMinutes?: number) {
-  const entry = recordTrainingSession({
-    curriculumId: null,
-    dayNumber: null,
-    techniqueIds: session.techniqueIds,
-    completed: true,
-    estimatedMinutes: session.techniqueIds.length * 7,
-    actualMinutes: actualMinutes ?? null,
-    notes: null,
-    source: 'review',
-  });
-  writeSession({ ...session, finishedAt: new Date().toISOString() });
-  return entry;
+export function finalizeReviewSession(session: ReviewSessionState) {
+  const finishedAt = new Date().toISOString();
+  // A session started before the review log existed has no log yet — open one now.
+  const logId = session.reviewLogId ?? startReviewLog('ai', null, session.techniqueIds).id;
+  const log = updateReviewLog(logId, (e) => ({ ...e, completedTechniqueIds: [...session.completedTechniqueIds], finishedAt }));
+  writeSession({ ...session, reviewLogId: logId, finishedAt });
+  return log;
 }
 
 export function clearReviewSession(): void {

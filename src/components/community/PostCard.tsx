@@ -4,6 +4,8 @@ import type { CommunityFeedItem, CommunityPost } from '../../lib/communityPost/t
 import { deletePost, likePost, repost, savePost, unlikePost, unrepost, unsavePost, updatePostContent } from '../../lib/communityPost/service';
 import { openInApp } from '../../lib/externalLink';
 import CommentsSheet from './CommentsSheet';
+import LearnSheet from '../shorts/LearnSheet';
+import type { PostTag } from '../../lib/communityPost/types';
 
 function timeAgo(iso: string): string {
   const diffMs = Date.now() - new Date(iso).getTime();
@@ -90,6 +92,7 @@ function PostBody({ post: initialPost, currentUserId, currentUserNickname, onDel
   const [post, setPost] = useState(initialPost);
   const [busy, setBusy] = useState(false);
   const [commentsOpen, setCommentsOpen] = useState(false);
+  const [learn, setLearn] = useState<{ tag?: PostTag } | null>(null);
   const [editing, setEditing] = useState(false);
   const [editText, setEditText] = useState(initialPost.content);
   const isOwn = !!currentUserId && post.authorId === currentUserId;
@@ -183,6 +186,24 @@ function PostBody({ post: initialPost, currentUserId, currentUserNickname, onDel
 
       <PostMediaGrid media={post.media} />
 
+      {post.tags.length > 0 && (
+        <div className="chip-row community-post-card__tags" data-testid="post-tags">
+          {post.tags.map((t) => (
+            <button key={`${t.type}:${t.id}`} type="button" className="chip" onClick={() => setLearn({ tag: t })}>
+              {t.type === 'technique' ? '🥋' : t.kind === 'setup' ? '🧩' : '🔗'} {t.name}
+            </button>
+          ))}
+          <button type="button" className="btn btn-secondary btn-sm" onClick={() => setLearn({})} data-testid="post-learn">
+            🎓 영상에 나온 내용 배우기
+          </button>
+          {post.media.some((m) => m.type === 'video') && (
+            <Link to={`/shorts?post=${encodeURIComponent(post.id)}`} className="btn btn-ghost btn-sm">
+              ▶ 숏폼으로 보기
+            </Link>
+          )}
+        </div>
+      )}
+
       {post.curriculumSnapshot && (
         <Link to={`/learning/${post.curriculumSnapshot.martialArt}/${post.curriculumSnapshot.curriculumId}`} className="community-post-card__curriculum-chip">
           🧠 {post.curriculumSnapshot.title} · {post.curriculumSnapshot.totalDays}일 · 기술 {post.curriculumSnapshot.techniqueCount}개
@@ -208,6 +229,7 @@ function PostBody({ post: initialPost, currentUserId, currentUserNickname, onDel
         )}
       </div>
 
+      {learn && <LearnSheet tags={post.tags} initial={learn.tag} onClose={() => setLearn(null)} />}
       {commentsOpen && (
         <CommentsSheet
           post={post}

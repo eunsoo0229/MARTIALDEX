@@ -36,8 +36,20 @@ export async function signUpWithEmail(email: string, password: string, nickname:
   }
 }
 
-export async function signInWithEmail(email: string, password: string): Promise<AuthResult> {
+/**
+ * Sign-in accepts an e-mail OR an account ID. Supabase auth needs an e-mail,
+ * so an ID (no "@", e.g. the operator account "MARTIALDEX") maps to the
+ * internal address `<id>@martialdex.local` it was created with.
+ */
+export const ID_LOGIN_DOMAIN = 'martialdex.local';
+export function loginEmailFor(idOrEmail: string): string {
+  const v = idOrEmail.trim();
+  return v.includes('@') ? v : `${v.toLowerCase()}@${ID_LOGIN_DOMAIN}`;
+}
+
+export async function signInWithEmail(emailOrId: string, password: string): Promise<AuthResult> {
   if (!supabase) return { ok: false, message: NOT_CONFIGURED_MESSAGE };
+  const email = loginEmailFor(emailOrId);
   try {
     const { error } = await supabase.auth.signInWithPassword({ email, password });
     if (error) return { ok: false, message: toKoreanAuthMessage(error) };

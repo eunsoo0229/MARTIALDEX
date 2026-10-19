@@ -48,6 +48,21 @@ export interface Combo {
   };
   /** Present only for a combo generated as a "추천 셋업" from 스파링 분석 (see sparringAnalysis/setupGeneration.ts) — purely additive, coexists with aiComboMeta (the combo was still built via the same generateCombo() pipeline). Lets the sparring result screen distinguish its own suggestions from the user's other combos while the combo itself still shows up normally in the regular Combo list. */
   sourceMeta?: { source: 'sparring'; sparringSessionId: string; difficulty: 'basic' | 'intermediate' | 'advanced' };
+  /**
+   * Present only for a copy saved from someone else's 사용자 콤보·셋업 (☆ 즐겨찾기 / 내 콤보에 저장 —
+   * sharedCombo/myComboCopy.ts). Additive: the copy is an ordinary combo-book entry, so 콤보 훈련
+   * and AI Visualizing Mitt use it like any other. Steps the copy couldn't resolve (the author's
+   * own private techniques) are listed in missingSteps instead of being invented.
+   */
+  sharedMeta?: {
+    sharedComboId: string;
+    authorNickname: string;
+    kind: 'combo' | 'setup';
+    purpose: string;
+    savedAt: string;
+    missingSteps: string[];
+    stepNotes: { techniqueId: string; note: string; opponentReaction: string | null }[];
+  };
   /** Present only for a combo built in "AI Visualizing Mitt" (src/lib/visualMitt/) — additive; the combo is still an ordinary combo-book entry (same ids, same sync). */
   visualMittMeta?: {
     createdAt: string;

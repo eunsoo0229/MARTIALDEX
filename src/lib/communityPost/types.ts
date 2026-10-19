@@ -25,6 +25,18 @@ export interface CommunityCurriculumSnapshot {
   techniqueCount: number;
 }
 
+/** A technique or a shared combo/setup the author tagged on the post (숏폼 "영상에 나온 내용 배우기"). */
+export interface PostTag {
+  type: 'technique' | 'combo';
+  /** technique id, or shared_combos id */
+  id: string;
+  name: string;
+  martialArt: string | null;
+  /** combo tags: 'combo' | 'setup' */
+  kind?: 'combo' | 'setup';
+}
+export const MAX_POST_TAGS = 10;
+
 export interface CommunityPost {
   id: string;
   authorId: string;
@@ -37,6 +49,8 @@ export interface CommunityPost {
   gymId: string | null;
   gymName: string | null;
   curriculumSnapshot: CommunityCurriculumSnapshot | null;
+  /** Techniques / combos-setups the author tagged (empty for older posts). */
+  tags: PostTag[];
   likeCount: number;
   commentCount: number;
   saveCount: number;
@@ -60,6 +74,10 @@ export interface CommunityComment {
   parentCommentId: string | null;
   /** Denormalized, maintained by a DB trigger (see 0030_community_comment_replies.sql) — real count of comments whose parentCommentId is this one's id, never client-computed from a partial page. */
   replyCount: number;
+  /** Maintained by a DB trigger (0039). */
+  likeCount: number;
+  /** Per-viewer, merged in from community_comment_likes. */
+  viewerHasLiked: boolean;
 }
 
 export interface CommunityRepost {

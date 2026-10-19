@@ -12,7 +12,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "electron": "electron .",
-    "dist:mac": "npm run build && electron-builder --mac --x64 --config electron-builder.config.cjs",
+    "dist:mac": "bash scripts/build-whisper-mac.sh && npm run build && electron-builder --mac --x64 --config electron-builder.config.cjs",
     "dist:win": "npm run build && electron-builder --win --x64 --config electron-builder.config.cjs",
     "prebuild:android": "node scripts/validate-android-config.mjs",
     "check:apk-secrets": "node scripts/check-apk-no-payment-secrets.mjs",
@@ -20,10 +20,11 @@
     "dist:android": "npm run prebuild:android && npm run build && npm run check:apk-secrets && npx cap sync android && cd android && ./gradlew assembleDebug"
   },
   "dependencies": {
+    "@capacitor-community/speech-recognition": "^7.0.1",
     "@capacitor/android": "^8.5.0",
     "@capacitor/core": "^8.5.0",
     "@capacitor/filesystem": "^8.1.3",
-    "@mediapipe/tasks-vision": "^1.0.1",
+    "@mediapipe/tasks-vision": "1.0.1",
     "@supabase/supabase-js": "^2.112.3",
     "@tosspayments/tosspayments-sdk": "^2.8.0",
     "dotenv": "^17.4.2",

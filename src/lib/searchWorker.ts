@@ -39,7 +39,15 @@ function getOrCreateWorker(): Worker {
 // Fire-and-forget warm-up — module-load-time side effect, safe in a Vite
 // worker module (no-op during SSR/non-browser contexts, which this app
 // doesn't have anyway).
-getOrCreateWorker();
+// Phones: the worker loads its own copy of the technique data (~2.7 MB) — starting it at boot
+// competed with the main bundle's parse on slow CPUs. Warm it once the app is idle instead
+// (still long before most first searches; a search before then simply creates it on demand).
+if (typeof window !== 'undefined') {
+  const warm = () => getOrCreateWorker();
+  const ric = (window as Window & { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
+  if (ric) ric(warm, { timeout: 6000 });
+  else window.setTimeout(warm, 3000);
+}
 
 export function getSearchWorker(): { search(query: string): Promise<string[]> } {
   return {

@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import type { GymRoutine, Weekday } from '../lib/gymRoutine/types';
+import type { GymRoutine, GymRoutineExerciseTarget, Weekday } from '../lib/gymRoutine/types';
 import {
   addExerciseToDay,
   createGymRoutine,
   deleteGymRoutine,
   listMyGymRoutines,
+  pasteDayToWeekdays,
   removeExerciseFromDay,
   reorderExercise,
   setActiveGymRoutine,
@@ -37,6 +38,9 @@ export default function GymRoutineManager() {
   const [activeWeekday, setActiveWeekday] = useState<Weekday>(1);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [newName, setNewName] = useState('');
+  // 루틴 복사/붙여넣기 — a copied day, kept while switching weekdays/routines.
+  const [clipboard, setClipboard] = useState<{ label: string; exercises: GymRoutineExerciseTarget[] } | null>(null);
+  const [pasteTargets, setPasteTargets] = useState<Weekday[]>([]);
 
   useEffect(() => {
     const onUpdate = () => setRoutines(listMyGymRoutines());
@@ -63,6 +67,29 @@ export default function GymRoutineManager() {
   }
 
   const day = selected?.days.find((d) => d.weekday === activeWeekday);
+
+  function handleCopyDay() {
+    if (!selected || !day || day.exercises.length === 0) return;
+    const label = `${selected.name} · ${WEEKDAYS.find((w) => w.value === activeWeekday)?.label}요일`;
+    setClipboard({ label, exercises: day.exercises.map((e) => ({ ...e, targetReps: [...e.targetReps], targetWeightKg: [...e.targetWeightKg] })) });
+    setPasteTargets([]);
+  }
+
+  function togglePasteTarget(w: Weekday) {
+    setPasteTargets((prev) => (prev.includes(w) ? prev.filter((x) => x !== w) : [...prev, w]));
+  }
+
+  function handlePaste() {
+    if (!selected || !clipboard || pasteTargets.length === 0) return;
+    const overwritten = pasteTargets.filter((w) => (selected.days.find((d) => d.weekday === w)?.exercises.length ?? 0) > 0);
+    if (overwritten.length > 0) {
+      const names = overwritten.map((w) => `${WEEKDAYS.find((x) => x.value === w)?.label}요일`).join(', ');
+      if (!window.confirm(`${names}에 이미 운동이 있습니다. 복사한 루틴으로 바꿀까요? (기존 운동은 지워집니다)`)) return;
+    }
+    pasteDayToWeekdays(selected, clipboard.exercises, pasteTargets);
+    setActiveWeekday([...pasteTargets].sort((a, b) => a - b)[0]);
+    setPasteTargets([]);
+  }
 
   return (
     <div className="page">
@@ -149,6 +176,50 @@ export default function GymRoutineManager() {
                         </button>
                       ))}
                     </div>
+
+                    <div className="chip-row" style={{ marginTop: 8 }}>
+                      <button type="button" className="btn btn-secondary btn-sm" onClick={handleCopyDay} disabled={!day || day.exercises.length === 0} data-testid="routine-copy-day">
+                        📋 이 요일 복사
+                      </button>
+                    </div>
+
+                    {clipboard && (
+                      <div className="routine-clipboard" data-testid="routine-clipboard">
+                        <div>
+                          <strong>복사됨:</strong> {clipboard.label} ({clipboard.exercises.length}개 운동)
+                        </div>
+                        <div className="technique-row__sub">붙여넣을 요일을 고르세요 (여러 개 선택 가능)</div>
+                        <div className="chip-row">
+                          {WEEKDAYS.map((w) => (
+                            <button
+                              key={w.value}
+                              type="button"
+                              className={`chip${pasteTargets.includes(w.value) ? ' active' : ''}`}
+                              onClick={() => togglePasteTarget(w.value)}
+                              data-testid="routine-paste-target"
+                            >
+                              {pasteTargets.includes(w.value) ? '✓ ' : ''}
+                              {w.label}
+                            </button>
+                          ))}
+                        </div>
+                        <div className="chip-row">
+                          <button type="button" className="btn btn-primary btn-sm" onClick={handlePaste} disabled={pasteTargets.length === 0} data-testid="routine-paste">
+                            📥 {pasteTargets.length > 0 ? `${pasteTargets.length}개 요일에 ` : ''}붙여넣기
+                          </button>
+                          <button
+                            type="button"
+                            className="btn btn-ghost btn-sm"
+                            onClick={() => {
+                              setClipboard(null);
+                              setPasteTargets([]);
+                            }}
+                          >
+                            복사 취소
+                          </button>
+                        </div>
+                      </div>
+                    )}
 
                     {(!day || day.exercises.length === 0) && <p className="video-status-message">이 요일은 휴식일입니다.</p>}
 

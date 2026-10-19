@@ -43,7 +43,10 @@ async function main() {
   // removing AI 쉐도우 복싱 from the 훈련 group; 38 again with 배운 기술 (무술
   // group) — this count will keep drifting as features are added; update it
   // here when it does.
-  check('[375px] menu panel lists all current destinations (38, incl. 스파링 촬영 + 배운 기술)', panelLinks.length === 38, JSON.stringify(panelLinks));
+  // 31 since every AI feature moved into the AI 코치 tab: the "AI" group (3) and the AI-only screens
+  // (AI 맞춤 커리큘럼, 선수 스타일 학습, 스파링 분석, 나의 스타일) left the other menus.
+  // 33 = 31 + 사용자 콤보·셋업 + 즐겨찾기 (무술 group).
+  check('[375px] menu panel lists all current destinations (33; AI 기능은 AI 코치 탭으로, + 사용자 콤보·셋업·즐겨찾기)', panelLinks.length === 33 && panelLinks.includes('사용자 콤보·셋업') && panelLinks.includes('즐겨찾기') && panelLinks.includes('AI 코치') && !panelLinks.some((l) => /AI 콤비네이션|AI 질문 기록|AI 맞춤 커리큘럼|선수 스타일 학습|^스파링 분석$|나의 스타일/.test(l)), JSON.stringify(panelLinks));
   check('[375px] "프로필" (previously unreachable on mobile) is in the menu', panelLinks.includes('프로필'));
   check('[375px] "커뮤니티" (previously unreachable on mobile) is in the menu', panelLinks.includes('커뮤니티'));
 

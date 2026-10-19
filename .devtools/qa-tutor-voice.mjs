@@ -156,6 +156,7 @@ async function main() {
 
   // Practice start + countdown cues + end/next-step lines.
   await page.locator('[data-testid="coach-ready"] button').click();
+  await page.locator('[data-testid="coach-posture-start"]').click(); // 자세 설명 → 실습 시작
   await page.locator('[data-testid="coach-timer"]').waitFor();
   await sleep(300);
   // Jump the (real, Date.now()-based) timer to its last 11 seconds instead of waiting minutes.

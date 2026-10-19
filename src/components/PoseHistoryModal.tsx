@@ -4,6 +4,7 @@ import { useTechniqueRecords, useTechniqueSkillSummary } from '../lib/poseAnalys
 import { deleteAllRecordsForTechnique, deleteRecord } from '../lib/poseAnalysis/recordsService';
 import { STATUS_ICON, STATUS_LABEL } from '../lib/poseAnalysis/scoring';
 import ScoreHistoryChart from './ScoreHistoryChart';
+import { listCompareRecords } from '../lib/formCompare/referenceStore';
 
 export default function PoseHistoryModal({ technique, onClose }: { technique: Technique; onClose: () => void }) {
   const records = useTechniqueRecords(technique.id);
@@ -63,7 +64,7 @@ export default function PoseHistoryModal({ technique, onClose }: { technique: Te
                   <button className="pose-history-row__main" onClick={() => setExpandedId(expandedId === r.recordId ? null : r.recordId)}>
                     <span>{r.analyzedAt.slice(0, 10)}</span>
                     <span>
-                      {STATUS_ICON[r.status]} {r.score}점
+                      {STATUS_ICON[r.status]} {r.score}점{r.method === 'video_compare' ? ' · 🎬 기준 영상 비교' : ''}
                     </span>
                   </button>
                   <button className="btn btn-ghost btn-sm" onClick={() => handleDeleteOne(r.recordId)}>
@@ -72,11 +73,27 @@ export default function PoseHistoryModal({ technique, onClose }: { technique: Te
                   {expandedId === r.recordId && (
                     <div className="pose-history-row__detail">
                       <div>종합 점수: {r.score}점 ({STATUS_LABEL[r.status]})</div>
-                      {Object.entries(r.metricScores).map(([id, score]) => (
-                        <div key={id}>
-                          {id}: {score}점
-                        </div>
-                      ))}
+                      {r.method === 'video_compare'
+                        ? (() => {
+                            // the full comparison (criteria, feedback) is kept in formCompare's own records
+                            const cmp = listCompareRecords(r.techniqueId).find((c) => c.poseRecordId === r.recordId);
+                            return cmp ? (
+                              <>
+                                <div>분석 신뢰도: {cmp.breakdown.reliability === 'high' ? '높음' : cmp.breakdown.reliability === 'medium' ? '보통' : '낮음'}</div>
+                                {cmp.judgement.criteria.map((c) => (
+                                  <div key={c.criterionId}>
+                                    {cmp.criteria.find((x) => x.id === c.criterionId)?.description ?? c.criterionId}: {c.verdict === 'match' ? '일치' : c.verdict === 'partial' ? '부분 일치' : c.verdict === 'mismatch' ? '다름' : '판단 불가'}
+                                  </div>
+                                ))}
+                                {cmp.judgement.focus.length > 0 && <div>집중할 점: {cmp.judgement.focus.join(' / ')}</div>}
+                              </>
+                            ) : null;
+                          })()
+                        : Object.entries(r.metricScores).map(([id, score]) => (
+                            <div key={id}>
+                              {id}: {score}점
+                            </div>
+                          ))}
                     </div>
                   )}
                 </div>

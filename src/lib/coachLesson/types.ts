@@ -149,7 +149,17 @@ export interface AnswerAnalysis {
   reexplain: string | null;
   /** When kind === 'question': the coach's answer. */
   reply: string | null;
-  method: 'ai' | 'keyword';
+  /** 'ai' = a language model graded it (bounded by the deterministic grade), 'keyword' = legacy offline overlap, 'evidence' = deterministic required-element grading (evidenceGrader.ts). */
+  method: 'ai' | 'keyword' | 'evidence';
+  /** How the verdict was reached (absent on analyses made before the evidence grader existed). */
+  grading?: {
+    deterministic: ConceptStatus;
+    coverage: 'full_match' | 'partial_match' | 'no_match' | 'contradicted' | 'not_evaluable';
+    model: ConceptStatus | null;
+    final: ConceptStatus;
+    /** The model's verdict was replaced because the evidence did not support it. */
+    modelOverruled: boolean;
+  };
 }
 
 /** Events the engine reacts to. */

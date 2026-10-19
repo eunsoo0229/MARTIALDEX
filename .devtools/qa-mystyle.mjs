@@ -464,7 +464,7 @@ async function main() {
   check('[Home] "나의 성장" card appears with real level/streak', await bodyIncludes('나의 성장'));
   check('[Home] "나의 스타일 보기" link present once analysis exists', await bodyIncludes('나의 스타일 보기'));
   await goto('#/coach');
-  check('[AiCoach] "나의 스타일" entry card present', await bodyIncludes('나의 스타일 · 목표 스타일 비교'));
+  check('[AiCoach] "나의 스타일" entry card present', await page.evaluate(() => !!document.querySelector('[data-feature="my-style"] a[href="#/my-style"]')));
 
   // ============ 12. AI COACH CONTEXT INCLUDES STAGE-20 DATA ============
   check('AI에게 직접 물어보기 click ->', (await clickText('AI에게 직접 물어보기', 'button')) === 'OK');
@@ -527,7 +527,7 @@ async function main() {
   check('[Regression] Fighter-style hub still works', ((await textOf('.section-title h2')) ?? '') === '선수 스타일 학습');
 
   await goto('#/coach');
-  check('[Regression] AI Coach page still works', ((await textOf('.section-title h2')) ?? '').includes('AI 개인 코치'));
+  check('[Regression] AI Coach page still works', ((await textOf('.section-title h2')) ?? '').includes('AI 코치'));
 
   await goto('#/today-training');
   check('[Regression] Today Training page still works', !(await bodyIncludes('오류')));
@@ -557,10 +557,11 @@ async function main() {
   await goto('#/');
   check('[Regression] Header logo image renders', await page.evaluate(() => !!document.querySelector('.brand__mark[src]')));
   check('[Regression] "메뉴 ▾" nav dropdown still present', await bodyIncludes('메뉴'));
-  check('[Regression] "나의 스타일" nav link click ->', (await clickText('메뉴', 'button')) === 'OK');
-  await new Promise((r) => setTimeout(r, 200));
-  check('[Regression] "나의 스타일"/"프로필" links present in nav dropdown', (await clickText('나의 스타일', 'a')) === 'OK');
-  await new Promise((r) => setTimeout(r, 300));
+  // AI 화면은 이제 상단 "AI 코치" 탭의 AI 기능 목록에서 엽니다.
+  check('[Regression] AI 코치 탭 열기 ->', (await clickText('AI 코치', 'a')) === 'OK');
+  await new Promise((r) => setTimeout(r, 500));
+  check('[Regression] AI 코치 탭에 "나의 스타일 분석" 카드', await page.evaluate(() => { const a = document.querySelector('[data-feature="my-style"] a'); if (!a) return false; a.click(); return true; }));
+  await new Promise((r) => setTimeout(r, 1500));
   check('[Regression] Nav link navigates to /my-style', (await page.evaluate(() => location.hash)) === '#/my-style');
 
   console.log('\n=== CONSOLE ERRORS TOTAL (' + consoleErrors.length + ') ===');

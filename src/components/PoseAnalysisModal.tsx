@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, lazy, Suspense } from 'react';
 import type { Technique } from '../types';
 import type { PoseFrame } from '../lib/poseAnalysis/types';
 import { POSE_CONNECTIONS } from '../lib/poseAnalysis/landmarks';
@@ -7,6 +7,8 @@ import { analyzeTechnique, type AnalyzeOutcome } from '../lib/poseAnalysis/analy
 import { saveAnalysisResult } from '../lib/poseAnalysis/recordsService';
 import { STATUS_ICON, STATUS_LABEL } from '../lib/poseAnalysis/scoring';
 import AiAskModal from './AiAskModal';
+// loaded only when opened (keeps this page's first load unchanged)
+const FormCompareModal = lazy(() => import('./formCompare/FormCompareModal'));
 
 const RECORDING_MS = 4000;
 const COUNTDOWN_SECONDS = 5;
@@ -20,6 +22,7 @@ export default function PoseAnalysisModal({ technique, onClose }: { technique: T
   const [recordingMsLeft, setRecordingMsLeft] = useState(RECORDING_MS);
   const [countdownSecondsLeft, setCountdownSecondsLeft] = useState(COUNTDOWN_SECONDS);
   const [aiOpen, setAiOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -206,10 +209,31 @@ export default function PoseAnalysisModal({ technique, onClose }: { technique: T
     rafRef.current = requestAnimationFrame(drawLoop);
   }
 
+  // Switched to the reference-video comparison (camera already released by cleanup()).
+  if (compareOpen)
+    return (
+      <Suspense fallback={null}>
+        <FormCompareModal technique={technique} onClose={onClose} />
+      </Suspense>
+    );
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-panel pose-modal" onClick={(e) => e.stopPropagation()}>
         <h3>📷 {technique.name} 자세 분석</h3>
+        <div className="chip-row" style={{ marginBottom: 8 }}>
+          <button
+            type="button"
+            className="chip"
+            onClick={() => {
+              cleanup();
+              setCompareOpen(true);
+            }}
+            data-testid="pose-to-form-compare"
+          >
+            🎬 기준 시연 영상과 비교해 평가하기 (새 방식)
+          </button>
+        </div>
         <div className="modal-note" style={{ marginTop: 0, marginBottom: 14 }}>
           카메라로 확인 가능한 자세 요소를 기준으로 분석한 참고용 결과입니다. 실제 무술 실력이나 기술의 완성도를
           완전히 평가하는 결과는 아니며, 실제 훈련에서는 전문 지도자의 피드백이 필요합니다. 카메라 영상은 저장되지

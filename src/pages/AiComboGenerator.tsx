@@ -18,7 +18,7 @@ export default function AiComboGenerator() {
   const { user } = useAuth();
   const initial = readAiComboDraft();
 
-  const [martialArt, setMartialArt] = useState(initial?.martialArt ?? martialArtSummaries[0]?.id ?? 'boxing');
+  const [martialArt, setMartialArt] = useState(initial?.martialArt || martialArtSummaries[0]?.id || 'boxing');
   const [freeText, setFreeText] = useState(initial?.freeText ?? '');
   const [preview, setPreview] = useState(initial?.preview ?? null);
   const [errorMessage, setErrorMessage] = useState(initial?.errorMessage ?? null);

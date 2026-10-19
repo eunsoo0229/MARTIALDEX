@@ -1,29 +1,19 @@
 import { aiProvider } from '../ai/provider';
+import { detectSttEngine, startAndroidSession, startLocalSession, startWebSession, claimSttSession, releaseSttSession, type SttEngineId, type SttErrorCode, type SttResult, type SttSession } from './sttEngines';
 
-// Speech INPUT. The Web Speech recognition API is not usable here: in
-// Electron it needs Google API keys Chromium doesn't ship (it errors with
-// "network"), and Android System WebView doesn't implement it at all. So the
-// mic is recorded locally (getUserMedia + MediaRecorder, both supported in
-// Electron and the Android WebView), converted to 16 kHz mono WAV (a format
-// Gemini accepts; Chromium's own recording format, webm/opus, isn't on its
-// supported list), and transcribed through the SAME Gemini transport every
-// other AI feature uses (Electron IPC / gemini-ask Edge Function). No new
-// key, no new dependency.
+// Speech INPUT — one entry point (startRecording) for the AI 코치 / AI 튜터 /
+// 마이크 테스트, routed to the engine this runtime really has (sttEngines.ts):
+// the Mac app → whisper.cpp on the Mac (offline after a one-time model
+// download), the APK → the phone's own recognizer, browsers → the Web Speech
+// API. The previous Gemini transcription below is kept ONLY as an explicit
+// "AI 받아쓰기" fallback for the web/APK (engine: 'gemini') — never used on
+// the Mac and never chosen automatically.
 //
 // Lifecycle (what the UI shows): IDLE → REQUEST_PERMISSION → LISTENING
-// (live input level) → RECOGNIZING → RESULT, or one specific error. Every
-// failure says WHICH step failed — "마이크 권한 없음", "입력이 완전히 무음
-// (장치/권한)", "소리가 너무 작음", "녹음은 됐지만 알아듣지 못함", "받아쓰기
-// 서버 오류" — instead of one generic "말소리가 들리지 않았습니다".
-//
-// Capture: the tutor's own TTS is stopped while the mic is open, so
-// browser echo-cancellation / noise-suppression (which on real hardware
-// mangled the recording badly enough that the speech model could not
-// understand it) are turned off; the recording is level-normalised before
-// it is sent instead.
+// (live input level / live text) → RECOGNIZING → RESULT, or one specific
+// error that says WHICH step failed.
 
-export type SttErrorCode = 'UNSUPPORTED' | 'PERMISSION_DENIED' | 'MIC_SILENT' | 'NO_SPEECH' | 'NOT_UNDERSTOOD' | 'TRANSCRIBE_FAILED' | 'NO_AUDIO';
-export type SttResult = { ok: true; text: string } | { ok: false; code: SttErrorCode; message: string };
+export type { SttEngineId, SttErrorCode, SttResult } from './sttEngines';
 export type SttPhase = 'idle' | 'requesting' | 'listening' | 'recognizing' | 'result' | 'error';
 
 export function isVoiceInputSupported(): boolean {
@@ -31,11 +21,46 @@ export function isVoiceInputSupported(): boolean {
 }
 
 export interface Recorder {
+  /** Which engine is listening. */
+  engine: SttEngineId;
   /** Stops recording and resolves with the transcript (or a specific error). */
   stop: (hints?: string[]) => Promise<SttResult>;
   cancel: () => void;
-  /** Current input level 0–1 (RMS), for a live meter while listening. */
+  /** Current input level 0–1 (RMS), for a live meter while listening; -1 when the engine has none. */
   level: () => number;
+}
+
+export interface RecordingOptions {
+  hints?: string[];
+  onPartial?: (text: string) => void;
+  onEnded?: (r: SttResult) => void;
+  /** Force an engine — 'gemini' only for the explicit AI 받아쓰기 fallback. */
+  engine?: SttEngineId;
+}
+
+const asRecorder = (s: SttSession): Recorder => ({ engine: s.engine, stop: () => s.stop(), cancel: s.cancel, level: s.level });
+
+/** Starts listening with this runtime's engine (or `opts.engine`). */
+export async function startRecording(maxSeconds: number, opts: RecordingOptions = {}): Promise<{ ok: true; recorder: Recorder } | { ok: false; code: SttErrorCode; message: string }> {
+  const engine = opts.engine ?? (await detectSttEngine()).id;
+  const o = { maxSeconds, hints: opts.hints, onPartial: opts.onPartial, onEnded: opts.onEnded };
+  if (engine === 'local') {
+    const r = await startLocalSession(o);
+    return r.ok ? { ok: true, recorder: asRecorder(r.session) } : r;
+  }
+  if (engine === 'web') {
+    const r = await startWebSession(o);
+    return r.ok ? { ok: true, recorder: asRecorder(r.session) } : r;
+  }
+  if (engine === 'android') {
+    const r = await startAndroidSession(o);
+    return r.ok ? { ok: true, recorder: asRecorder(r.session) } : r;
+  }
+  if (engine === 'gemini') {
+    if (window.martialdex?.stt) return { ok: false, code: 'UNSUPPORTED', message: 'Mac 앱은 로컬 음성인식만 사용합니다.' };
+    return startGeminiRecording(maxSeconds);
+  }
+  return { ok: false, code: 'UNSUPPORTED', message: '이 환경에서는 음성인식을 사용할 수 없습니다. 입력창에 적어서 대화해 주세요.' };
 }
 
 const TARGET_RATE = 16000;
@@ -146,7 +171,8 @@ async function ensureOsMicAccess(): Promise<SttResult | null> {
   return null;
 }
 
-export async function startRecording(maxSeconds: number): Promise<{ ok: true; recorder: Recorder } | { ok: false; code: SttErrorCode; message: string }> {
+/** AI 받아쓰기 (Gemini) — the explicit web/APK fallback: record, then send the clip to the AI server. */
+async function startGeminiRecording(maxSeconds: number): Promise<{ ok: true; recorder: Recorder } | { ok: false; code: SttErrorCode; message: string }> {
   if (!isVoiceInputSupported()) return { ok: false, code: 'UNSUPPORTED', message: '이 기기에서는 음성 입력을 사용할 수 없습니다. 입력창에 적어서 대화해 주세요.' };
   const denied = await ensureOsMicAccess();
   if (denied && !denied.ok) return denied;
@@ -184,9 +210,8 @@ export async function startRecording(maxSeconds: number): Promise<{ ok: true; re
   rec.start();
   const autoStop = window.setTimeout(() => { if (rec.state !== 'inactive') rec.stop(); }, maxSeconds * 1000);
 
-  return {
-    ok: true,
-    recorder: {
+  const recorder: Recorder = {
+      engine: 'gemini',
       level() {
         if (!analyser) return 0;
         analyser.getFloatTimeDomainData(buf);
@@ -209,13 +234,17 @@ export async function startRecording(maxSeconds: number): Promise<{ ok: true; re
         }
         if (wav.peak === 0) return { ok: false, code: 'MIC_SILENT', message: '마이크에서 소리가 전혀 들어오지 않습니다. 시스템의 마이크 권한과 입력 장치(음소거 여부)를 확인해 주세요.' };
         if (wav.seconds < 0.3 || wav.peak < MIN_SPEECH_PEAK) return { ok: false, code: 'NO_SPEECH', message: '음성이 인식되지 않았습니다. 마이크 가까이에서 다시 말씀해 주세요.' };
+        releaseSttSession(session);
         return transcribeWav(wav.base64, hints);
       },
       cancel() {
         window.clearTimeout(autoStop);
         if (rec.state !== 'inactive') rec.stop();
         release();
+        releaseSttSession(session);
       },
-    },
   };
+  const session: SttSession = { engine: 'gemini', stop: () => recorder.stop(), cancel: () => recorder.cancel(), level: () => recorder.level() };
+  claimSttSession(session);
+  return { ok: true, recorder };
 }

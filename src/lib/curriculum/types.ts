@@ -118,6 +118,12 @@ export interface Curriculum {
     sparringSessionId: string;
     weakAreaLabels: string[];
     generatedAt: string;
+    /** 2.0: the weakness scenes / clips this curriculum targets (sparringAnalysis/weaknessScenes.ts). */
+    weaknessIds?: string[];
+    clipIds?: string[];
+    /** Real web sources found by the live search for these weaknesses — never generated; empty when search failed/was insufficient. */
+    webSources?: { title: string; url: string; domain: string; weaknessId: string | null }[];
+    webResearch?: { status: 'ok' | 'insufficient' | 'unavailable' | 'failed'; queries: string[]; resultCount: number; note: string | null };
   };
   /** Set on the SELLER's own local curriculum once it's been published to the marketplace — lets the curriculum screen show "마켓에서 보기" instead of "마켓에 게시" again. See src/lib/marketplace/. */
   marketplaceListingId?: string;

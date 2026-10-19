@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getMartialArt } from '../lib/loadData';
 import { searchTechniques } from '../lib/search';
@@ -17,6 +17,7 @@ import { isSyntheticTrainingDomain } from '../lib/loadData';
 import { useAuth } from '../lib/auth/AuthProvider';
 import AiAskModal from './AiAskModal';
 import CurriculumOptionsSheet from './sparring/CurriculumOptionsSheet';
+import WeaknessScenes from './sparring/WeaknessScenes';
 
 const POSTURE_STATUS_TEXT: Record<string, string> = { good: '좋음', average: '보통', needs_improvement: '개선 필요' };
 const CATEGORY_SCORE_LABEL: Record<string, string> = {
@@ -40,6 +41,8 @@ export default function SparringResultView({
   onSeek?: (timestampSec: number) => void;
 }) {
   const [session, setSession] = useState(initialSession);
+  // Follow updates from the page (e.g. clip extraction progress after analysis).
+  useEffect(() => setSession(initialSession), [initialSession]);
   const [aiOpen, setAiOpen] = useState(false);
   const [confirmingTechnique, setConfirmingTechnique] = useState<TechniqueGuess | null>(null);
   const [curriculumSheetOpen, setCurriculumSheetOpen] = useState(false);
@@ -170,9 +173,11 @@ export default function SparringResultView({
         </div>
       )}
 
+      <WeaknessScenes session={session} videoUrl={videoUrl} onSeek={onSeek} onSessionChange={setSession} />
+
       {session.coachingSynthesis && <SparringCoachingCard
         coaching={session.coachingSynthesis}
-        canCreateCurriculum={session.weakAreas.length > 0}
+        canCreateCurriculum={session.weakAreas.length > 0 || (session.weaknesses ?? []).some((w) => w.status !== 'on_hold')}
         onAddToToday={handleAddToTodayTraining}
         onCreateCurriculum={() => setCurriculumSheetOpen(true)}
         onAskCoach={() => setAiOpen(true)}

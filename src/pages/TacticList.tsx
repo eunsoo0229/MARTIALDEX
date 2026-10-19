@@ -6,11 +6,21 @@ import { resolveTechniquesByIds } from '../lib/userTechniques/service';
 import type { Tactic } from '../lib/tactic/types';
 import EmptyState from '../components/EmptyState';
 import BackButton from '../components/BackButton';
+import ShareComboModal, { type ShareSource } from '../components/sharedCombo/ShareComboModal';
+import { useMySharedSources } from '../lib/sharedCombo/useMySharedSources';
 
 export default function TacticList() {
   const [tactics, setTactics] = useState<Tactic[]>(() => listMyTactics());
   const [loadingFeedbackId, setLoadingFeedbackId] = useState<string | null>(null);
   const [errorByTactic, setErrorByTactic] = useState<Record<string, string>>({});
+  const [sharing, setSharing] = useState<ShareSource | null>(null);
+  const [sharedNotice, setSharedNotice] = useState<{ id: string; name: string } | null>(null);
+  const { shared, refresh } = useMySharedSources();
+
+  // 전술 셋업 (IF 상황 → THEN 기술) is shared as a 셋업; its situation is the purpose.
+  function shareSourceFor(t: Tactic): ShareSource {
+    return { sourceRef: `tactic:${t.id}`, kind: 'setup', name: t.name, purpose: t.situation, description: t.feedback ?? '', techniqueIds: t.techniqueIds, alreadyShared: shared.has(`tactic:${t.id}`) };
+  }
 
   useEffect(() => {
     const onUpdate = () => setTactics(listMyTactics());
@@ -58,6 +68,11 @@ export default function TacticList() {
           IF(상황) → THEN(대응 기술 순서) 형태로 나만의 전술을 만들고 AI 피드백을 받아보세요.
         </p>
 
+        {sharedNotice && (
+          <div className="card info-card" data-testid="share-done">
+            "{sharedNotice.name}"을(를) 셋업으로 공유했습니다. <Link to={`/user-combos/${sharedNotice.id}`}>공유된 화면 보기</Link>
+          </div>
+        )}
         {tactics.length === 0 ? (
           <EmptyState icon="🧩" text="아직 만든 전술이 없습니다. 상황과 대응 기술을 연결해 나만의 전술을 만들어보세요." />
         ) : (
@@ -97,6 +112,9 @@ export default function TacticList() {
                     <Link to={`/tactics/${tactic.id}/edit`} className="btn btn-secondary">
                       편집
                     </Link>
+                    <button className="btn btn-ghost" onClick={() => setSharing(shareSourceFor(tactic))} data-testid="tactic-share">
+                      {shared.has(`tactic:${tactic.id}`) ? '🔗 공유됨 · 갱신' : '🔗 공유'}
+                    </button>
                     <button className="btn btn-ghost" onClick={() => handleDelete(tactic.id)}>
                       삭제
                     </button>
@@ -107,6 +125,17 @@ export default function TacticList() {
           </div>
         )}
       </div>
+      {sharing && (
+        <ShareComboModal
+          source={sharing}
+          onClose={() => setSharing(null)}
+          onShared={(c) => {
+            setSharing(null);
+            setSharedNotice({ id: c.id, name: c.name });
+            refresh();
+          }}
+        />
+      )}
     </div>
   );
 }

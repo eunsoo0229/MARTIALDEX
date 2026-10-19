@@ -1,3 +1,4 @@
+import { isSubmissionGoal, MMA_ART_IDS } from '../aiCoachDay/practicePlan';
 import type { Technique } from '../../types';
 import type { Curriculum, CurriculumDay, ExerciseConfig } from '../curriculum/types';
 import { getMartialArt, getTechniquesByMartialArt, gymExercises, homeTrainingExercises, isSyntheticTrainingDomain } from '../loadData';
@@ -213,6 +214,18 @@ function poolLine(t: Technique): string {
   return `${t.id} | ${t.name}${t.koreanName ? ` (${t.koreanName})` : ''}${extra}`;
 }
 
+/**
+ * MMA classes mix striking and grappling in every Day, and a submission goal
+ * is taught as takedown → (position) → submission. The coach's practice
+ * follows the same order (aiCoachDay/practicePlan.ts).
+ */
+export function mmaRules(input: Pick<CoachClassInput, 'martialArt' | 'goal'>): string[] {
+  if (!MMA_ART_IDS.has(input.martialArt)) return [];
+  const rules = ['[MMA 규칙]', '- 매일 타격(펀치·킥)과 그래플링(테이크다운·그라운드)을 함께 넣는다. 타격만 하거나 그래플링만 하는 Day를 만들지 않는다.', '- connection 단계로 타격 → 테이크다운 연결(예: 잽·크로스 뒤 더블렉)을 넣는다.'];
+  if (isSubmissionGoal(input.goal)) rules.push('- 목표가 서브미션이므로 같은 Day 안에서 테이크다운 → (포지션 컨트롤) → 서브미션 순서로 배치하고, 서브미션 단계의 linkedTechniqueId에 앞의 테이크다운 기술을 넣는다.');
+  return [rules.join('\n')];
+}
+
 export function buildPlanContext(input: CoachClassInput, profile: LearnerProfile, newPool: Technique[], drills: Technique[]): string {
   const art = getMartialArt(input.martialArt);
   return [
@@ -224,6 +237,7 @@ export function buildPlanContext(input: CoachClassInput, profile: LearnerProfile
     `[이전 AI 코치 수업]\n${profile.previousClasses.join('\n') || '없음'}`,
     `[새 기술 후보] (아직 배우지 않은 기술)\n${newPool.map(poolLine).join('\n') || '없음'}`,
     `[드릴 후보] (실제 MARTIALDEX 운동, 장비 조건 충족)\n${drills.map(poolLine).join('\n') || '없음'}`,
+    ...mmaRules(input),
   ].join('\n\n');
 }
 

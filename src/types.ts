@@ -4,6 +4,8 @@ export type Difficulty = 'beginner' | 'intermediate' | 'advanced' | null;
 // involved) — see data/curated/videos.json and CURATION.md. Up to 2 per
 // technique, only ever real, human-checked video IDs.
 export interface CuratedVideo {
+  /** Gi / No-Gi tag (grappling) — set only from evidence in the video's own title/description; absent = not classified. */
+  style?: 'gi' | 'nogi' | 'both' | 'unknown';
   title: string;
   videoId: string;
   channel: string;
@@ -127,6 +129,13 @@ export interface Technique {
   videos: CuratedVideo[];
   /** Present only for the small curated subset with hand-authored posture data — see data/curated/posture.json. */
   posture?: PostureInfo;
+  /**
+   * Gi / No-Gi classification + per-style postures for an ADDED grappling
+   * technique (add_teq / user_techniques), researched when it was added
+   * (lib/grappling/analyzeNewTechnique.ts). Official techniques keep theirs in
+   * data/curated/gi-nogi.json instead; this is absent for them.
+   */
+  giNoGi?: import('./lib/grappling/types').GiNoGiRecord;
   /** Set only for techniques added via "기술 추가 요청" (src/lib/userTechniques/) or the new-martial-art / missing-technique web-research flow (src/lib/martialArtDiscovery/) — absent (undefined) for all 1,253 official techniques. */
   source?: 'user_added' | 'ai_web_research';
   /** Home-training / gym reference-data fields below — always undefined for the 1,283 official combat techniques. */

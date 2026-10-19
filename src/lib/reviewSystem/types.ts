@@ -31,6 +31,8 @@ export interface ReviewCandidate {
 }
 
 export interface ReviewSessionState {
+  /** review/reviewLog.ts entry this session writes to (absent on sessions saved before it existed). */
+  reviewLogId?: string;
   date: string; // YYYY-MM-DD — a new day always gets a freshly recomputed candidate list
   techniqueIds: string[]; // the actionable ("오늘 복습 추천"/"곧 복습") candidates at the time the session started
   completedTechniqueIds: string[];

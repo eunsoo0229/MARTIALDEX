@@ -17,3 +17,7 @@ __pycache__/
 
 # Third-party broadcast footage kept locally only (not redistributable)
 /NOTORIOUS.mp4
+
+# local speech recognition (whisper.cpp build cache + built binary — scripts/build-whisper-mac.sh)
+.cache/
+electron/vendor/whisper/whisper-server

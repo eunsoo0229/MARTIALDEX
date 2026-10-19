@@ -103,6 +103,9 @@ export default function Community() {
 
         <div className="section-title">
           <h2>커뮤니티</h2>
+          <Link to="/shorts" className="btn btn-primary btn-sm" data-testid="open-shorts">
+            ▶ 숏폼으로 보기
+          </Link>
         </div>
 
         <div className="chip-row community-tab-switcher">

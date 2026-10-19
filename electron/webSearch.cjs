@@ -107,13 +107,14 @@ async function webSearch(query) {
   if (!res.ok) {
     // Never logs the Authorization header or the key itself — only Tavily's
     // own JSON error body (which never echoes the key back).
-    const errorType = res.status === 401 || res.status === 403 ? 'AUTH_FAILED' : res.status === 429 ? 'RATE_LIMIT' : res.status >= 500 ? 'SERVER_ERROR' : 'BAD_RESPONSE';
+    const errorType = res.status === 401 || res.status === 403 ? 'AUTH_FAILED' : res.status === 429 || res.status === 432 ? 'RATE_LIMIT' : res.status >= 500 ? 'SERVER_ERROR' : 'BAD_RESPONSE';
     runtimeLog({ status: 'FAILED', transport: 'electron', errorType, httpStatus: res.status, errorMessage: JSON.stringify(json?.error ?? '(no body)'), queryCount: 1 });
     if (res.status === 401 || res.status === 403) {
       return { ok: false, code: 'INVALID_API_KEY', message: 'Tavily API 키가 올바르지 않거나 권한이 없습니다.' };
     }
-    if (res.status === 429) {
-      return { ok: false, code: 'RATE_LIMIT', message: 'Tavily 검색 사용량 한도에 도달했습니다.' };
+    // 432 = Tavily plan/credit usage limit exceeded (e.g. the free monthly quota) — same handling as 429, no retries.
+    if (res.status === 429 || res.status === 432) {
+      return { ok: false, code: 'RATE_LIMIT', message: res.status === 432 ? 'Tavily 검색 사용량(요금제 한도)을 모두 사용했습니다.' : 'Tavily 검색 사용량 한도에 도달했습니다.' };
     }
     return { ok: false, code: 'UNKNOWN', message: json?.error ? `검색 요청이 실패했습니다: ${json.error}` : '검색 요청이 실패했습니다.' };
   }

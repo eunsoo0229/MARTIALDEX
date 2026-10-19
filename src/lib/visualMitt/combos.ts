@@ -19,14 +19,17 @@ import { KIND_LABEL, motionForTechnique, type TechniqueMotion } from './archetyp
 // Every step is a real technique id resolved through resolveTechnique(), so
 // renamed/merged techniques keep working.
 
-export type StepRole = 'setup' | 'strike' | 'entry' | 'followup';
-export const ROLE_LABEL: Record<StepRole, string> = { setup: '셋업', strike: '타격', entry: '테이크다운 진입', followup: '후속 동작' };
+export type StepRole = 'setup' | 'strike' | 'entry' | 'followup' | 'defense' | 'trap' | 'counter';
+export const ROLE_LABEL: Record<StepRole, string> = { setup: '셋업', strike: '타격', entry: '테이크다운 진입', followup: '후속 동작', defense: '방어·회피', trap: '가드 조작', counter: '카운터' };
 
 export interface MittStep {
   techniqueId: string;
   technique: Technique;
   motion: TechniqueMotion;
   role: StepRole;
+  /** Saved combos only: the author's note / the reaction this step draws (setups) — read aloud with the step. */
+  note?: string;
+  opponentReaction?: string;
 }
 
 export interface MittCombo {
@@ -50,13 +53,24 @@ function norm(s: string): string {
 }
 
 /** A component name inside a combination record → the real technique, same art first. "Double Leg" also matches "Basic Double Leg"; a trailing "Takedown" is ignored. */
-function resolveComponent(rawName: string, art: string, artPool: (a: string) => Technique[]): Technique | null {
+interface ArtIndex {
+  /** normalized name / Korean name / alias → techniques */
+  byName: Map<string, Technique[]>;
+  /** position in the art's own technique order */
+  order: Map<Technique, number>;
+}
+
+function resolveComponent(rawName: string, art: string, artIndex: (a: string) => ArtIndex): Technique | null {
   const name = rawName.replace(/\btakedown\b/i, '').trim();
-  const keys = new Set([norm(name), `basic${norm(name)}`]);
-  const matches = (t: Technique) => [t.name, t.koreanName ?? '', ...t.aliases].some((n) => n && keys.has(norm(n)));
+  const keys = [norm(name), `basic${norm(name)}`];
   const pools = [art, ...STRIKING_ARTS.filter((a) => a !== art)];
   for (const a of pools) {
-    const hit = artPool(a).find((t) => matches(t) && motionForTechnique(t));
+    const { byName, order } = artIndex(a);
+    // earliest in the art's own order among both spellings (same pick as a linear scan)
+    const hit = keys
+      .flatMap((k) => byName.get(k) ?? [])
+      .filter((t) => motionForTechnique(t))
+      .sort((x, y) => order.get(x)! - order.get(y)!)[0];
     if (hit) return hit;
   }
   return null;
@@ -74,6 +88,10 @@ function splitComboName(name: string, art: string): string[][] {
 function rolesFor(motions: TechniqueMotion[]): StepRole[] {
   let seenEntry = false;
   return motions.map((m, i) => {
+    if (m.archetype.kind === 'defense') return 'defense';
+    if (m.archetype.kind === 'trap') return 'trap';
+    // the first attack right after a defense is the counter
+    if (i > 0 && motions[i - 1].archetype.kind === 'defense' && m.archetype.kind === 'strike') return 'counter';
     if (seenEntry) return 'followup';
     if (m.archetype.kind === 'entry') {
       seenEntry = true;
@@ -106,6 +124,8 @@ export function reviewConnections(steps: MittStep[]): string[] {
     if (a.kind === 'entry' && b.kind === 'entry') notes.push(`${i}→${i + 1}단계: 진입 두 번이 이어집니다 — 첫 진입이 막혔을 때의 체인 레슬링으로 연습하세요.`);
     if (a.spin && b.spin) notes.push(`${i}→${i + 1}단계: 회전 기술 두 개가 연속입니다 — 균형을 되찾을 시간이 필요합니다.`);
     if (a.limb === 'foot' && b.limb === 'foot' && a.side === b.side && a.side === 'rear') notes.push(`${i}→${i + 1}단계: 같은 뒷다리 킥이 연속입니다 — 다리를 내려 자세를 다시 잡은 뒤 이어 가세요.`);
+    if (a.kind === 'trap' && b.kind !== 'strike') notes.push(`${i}→${i + 1}단계: 가드를 내린 뒤에는 바로 그 열린 라인으로 공격해야 합니다.`);
+    if (a.kind === 'defense' && b.kind === 'defense' && a.key === b.key) notes.push(`${i}→${i + 1}단계: 같은 방어가 연속입니다 — 방어 뒤에는 카운터로 이어 가세요.`);
     if (a.kind === 'feint' && b.kind === 'feint') notes.push(`${i}→${i + 1}단계: 페인트 뒤에 또 페인트입니다 — 마지막에는 실제 공격으로 마무리하세요.`);
   });
   return notes;
@@ -116,16 +136,29 @@ let dbCache: { libraryCount: number; combos: MittCombo[] } | null = null;
 export function listDbCombos(): MittCombo[] {
   const library = libraryTechniques().addTeq;
   if (dbCache && dbCache.libraryCount === library.length) return dbCache.combos;
-  const pools = new Map<string, Technique[]>();
-  const artPool = (a: string) => {
-    if (!pools.has(a)) pools.set(a, getUnifiedTechniquesByMartialArt(a));
-    return pools.get(a)!;
+  // name index per art, built once (instead of re-normalizing every technique name for every step)
+  const indexes = new Map<string, ArtIndex>();
+  const artIndex = (a: string): ArtIndex => {
+    let idx = indexes.get(a);
+    if (!idx) {
+      idx = { byName: new Map(), order: new Map() };
+      for (const t of getUnifiedTechniquesByMartialArt(a)) {
+        idx.order.set(t, idx.order.size);
+        for (const k of new Set([t.name, t.koreanName ?? '', ...t.aliases].filter(Boolean).map(norm))) {
+          const list = idx.byName.get(k);
+          if (list) list.push(t);
+          else idx.byName.set(k, [t]);
+        }
+      }
+      indexes.set(a, idx);
+    }
+    return idx;
   };
   const out: MittCombo[] = [];
   const candidates = [...allTechniques, ...library].filter((t) => /→|->|--|\bto\b/i.test(t.name));
   for (const t of candidates) {
     splitComboName(t.name, t.martialArt).forEach((parts, i) => {
-      const resolved = parts.map((p) => resolveComponent(p, t.martialArt, artPool));
+      const resolved = parts.map((p) => resolveComponent(p, t.martialArt, artIndex));
       if (resolved.some((r) => !r)) return;
       const { steps, skipped } = buildSteps(resolved as Technique[]);
       if (skipped.length || steps.length < 2) return;
@@ -153,8 +186,17 @@ export function listDbCombos(): MittCombo[] {
 
 export function comboFromBook(c: Combo): MittCombo {
   const techniques = c.techniqueIds.map((id) => resolveTechnique(id)).filter((t): t is Technique => !!t);
-  const { steps, skipped } = buildSteps(techniques);
-  return { id: c.id, name: c.name, source: 'saved', sourceLabel: c.visualMittMeta ? '내 콤보 (Visualizing Mitt에서 만듦)' : '내 콤보 북', steps, skipped, warnings: reviewConnections(steps) };
+  const built = buildSteps(techniques);
+  const skipped = built.skipped;
+  // Step notes (a shared setup's opponent reactions, or a Mitt-built setup's), matched in order per technique.
+  const notes = [...(c.sharedMeta?.stepNotes ?? c.visualMittMeta?.stepNotes ?? [])];
+  const steps = built.steps.map((st) => {
+    const i = notes.findIndex((n) => n.techniqueId === st.techniqueId);
+    if (i < 0) return st;
+    const [n] = notes.splice(i, 1);
+    return { ...st, ...(n.note ? { note: n.note } : {}), ...(n.opponentReaction ? { opponentReaction: n.opponentReaction } : {}) };
+  });
+  return { id: c.id, name: c.name, source: 'saved', sourceLabel: c.sharedMeta ? `공유받은 ${c.sharedMeta.kind === 'setup' ? '셋업' : '콤보'} · by ${c.sharedMeta.authorNickname || '익명'}` : c.visualMittMeta ? '내 콤보 (Visualizing Mitt에서 만듦)' : '내 콤보 북', steps, skipped, warnings: reviewConnections(steps) };
 }
 
 export function listBookCombos(): MittCombo[] {
@@ -196,7 +238,15 @@ export function saveMittCombo(name: string, techniqueIds: string[], stance: 'ort
 }
 
 /** One training-history entry for a Mitt session — everything is user-reported (no motion is measured in this mode). */
-export function recordMittSession(input: { combo: MittCombo; completedSteps: number[]; repetitions: number; stance: 'orthodox' | 'southpaw'; minutes: number; markedComplete: boolean }) {
+export function recordMittSession(input: {
+  combo: MittCombo;
+  completedSteps: number[];
+  repetitions: number;
+  stance: 'orthodox' | 'southpaw';
+  minutes: number;
+  markedComplete: boolean;
+  cameraPadwork?: NonNullable<NonNullable<import('../trainingHistory/types').TrainingHistoryEntry['visualMitt']>['cameraPadwork']>;
+}) {
   const ids = [...new Set(input.combo.steps.map((s) => s.techniqueId))];
   return recordTrainingSession({
     curriculumId: null,
@@ -205,7 +255,11 @@ export function recordMittSession(input: { combo: MittCombo; completedSteps: num
     completed: input.markedComplete,
     estimatedMinutes: Math.max(1, input.minutes),
     actualMinutes: Math.max(1, input.minutes),
-    notes: `AI Visualizing Mitt · ${input.combo.name} · 반복 ${input.repetitions}회 · 완료 표시 ${input.completedSteps.length}/${input.combo.steps.length}단계 (사용자 표시 — 자세 측정 아님)`,
+    notes:
+      `AI Visualizing Mitt · ${input.combo.name} · 반복 ${input.repetitions}회 · 완료 표시 ${input.completedSteps.length}/${input.combo.steps.length}단계 (사용자 표시 — 자세 측정 아님)` +
+      (input.cameraPadwork
+        ? ` · 카메라 판정 ${input.cameraPadwork.score}점, 유효 타격 ${input.cameraPadwork.validStrikes}회 (잽 ${input.cameraPadwork.byType.jab} · 스트레이트 ${input.cameraPadwork.byType.straight} · 훅 ${input.cameraPadwork.byType.hook}), 최고 콤보 ${input.cameraPadwork.maxCombo}`
+        : ''),
     source: 'visual_mitt',
     visualMitt: {
       comboId: input.combo.source === 'saved' ? input.combo.id : input.combo.source === 'db' ? input.combo.id : null,
@@ -215,6 +269,7 @@ export function recordMittSession(input: { combo: MittCombo; completedSteps: num
       repetitions: input.repetitions,
       stance: input.stance,
       selfReported: true,
+      ...(input.cameraPadwork ? { cameraPadwork: input.cameraPadwork } : {}),
     },
   });
 }

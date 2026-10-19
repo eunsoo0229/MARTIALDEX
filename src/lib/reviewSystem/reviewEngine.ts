@@ -1,5 +1,7 @@
 import { computeAllSkillProgress, type TechniqueSkillEntry } from '../skillProgress/weaknessEngine';
 import { listSparringSessions } from '../sparringAnalysis/sparringSessionService';
+import { REVIEW_INTERVAL_DAYS } from '../skillProgress/computeSkillProgress';
+import { canonicalReviewedIndex, weakTechniques, WEAK_SIGNAL_LABEL } from '../review/sources';
 import type { ReviewCandidate, ReviewTier } from './types';
 
 const RECENT_SPARRING_DAYS = 14;
@@ -29,12 +31,22 @@ function recentlyUsedTechniqueIds(): Set<string> {
 export function computeReviewCandidates(entries: TechniqueSkillEntry[] = computeAllSkillProgress()): ReviewCandidate[] {
   const now = new Date();
   const recentSparringIds = recentlyUsedTechniqueIds();
+  // A review (review log) resets the schedule just like practice does — but
+  // it's read from the review log, never counted as a training session.
+  const lastReviewed = canonicalReviewedIndex();
+  // Recorded weaknesses (부족 기술 — review checks, AI-coach lessons, own marks).
+  const weak = new Map(weakTechniques().map((w) => [w.techniqueId, w]));
   const candidates: ReviewCandidate[] = [];
 
   for (const { technique, progress } of entries) {
     if (progress.status === 'not_started') continue;
 
-    const daysOverdue = progress.nextReviewAt ? daysBetween(now, new Date(progress.nextReviewAt)) : null;
+    const interval = REVIEW_INTERVAL_DAYS[progress.status];
+    const reviewedAt = lastReviewed.get(technique.id) ?? null;
+    const afterReview = interval && reviewedAt ? new Date(Date.parse(reviewedAt) + interval * 86400000).toISOString() : null;
+    const nextReviewAt = [progress.nextReviewAt, afterReview].filter((x): x is string => !!x).sort().at(-1) ?? null;
+    const daysOverdue = nextReviewAt ? daysBetween(now, new Date(nextReviewAt)) : null;
+    const weakness = weak.get(technique.id);
     const usedInRecentSparring = recentSparringIds.has(technique.id);
 
     let urgencyScore = 0;
@@ -44,6 +56,7 @@ export function computeReviewCandidates(entries: TechniqueSkillEntry[] = compute
     else if (progress.status === 'average') urgencyScore += 10;
     if (progress.scoreDelta !== null && progress.scoreDelta < 0) urgencyScore += Math.min(30, Math.abs(progress.scoreDelta) * 1.2);
     if (usedInRecentSparring) urgencyScore += 15;
+    if (weakness && weakness.signal !== 'pose_stale') urgencyScore += weakness.signal === 'review_repeated' ? 35 : weakness.signal === 'user_marked' ? 20 : 25;
 
     const tier: ReviewTier = urgencyScore >= TODAY_THRESHOLD ? 'today' : urgencyScore >= SOON_THRESHOLD ? 'soon' : 'maintained';
 
@@ -53,6 +66,8 @@ export function computeReviewCandidates(entries: TechniqueSkillEntry[] = compute
     if (progress.status === 'needs_improvement') reasonParts.push('최근 분석 점수가 개선이 필요한 수준입니다');
     if (progress.scoreDelta !== null && progress.scoreDelta < 0) reasonParts.push('최근 점수가 하락하는 추세입니다');
     if (usedInRecentSparring) reasonParts.push('최근 스파링에서 사용이 관찰되었습니다');
+    if (weakness && weakness.signal !== 'pose_stale') reasonParts.push(WEAK_SIGNAL_LABEL[weakness.signal]);
+    if (reviewedAt) reasonParts.push(`마지막 복습 ${reviewedAt.slice(0, 10)}`);
     if (reasonParts.length === 0) reasonParts.push('꾸준히 유지되고 있습니다');
 
     candidates.push({
@@ -65,7 +80,7 @@ export function computeReviewCandidates(entries: TechniqueSkillEntry[] = compute
       latestScore: progress.latestScore,
       scoreDelta: progress.scoreDelta,
       lastPracticedAt: progress.lastPracticedAt,
-      nextReviewAt: progress.nextReviewAt,
+      nextReviewAt,
       usedInRecentSparring,
     });
   }

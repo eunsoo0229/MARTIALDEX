@@ -11,6 +11,7 @@ import { computeReviewCandidates } from '../lib/reviewSystem/reviewEngine';
 import EmptyState from '../components/EmptyState';
 import AiAskModal from '../components/AiAskModal';
 import BackButton from '../components/BackButton';
+import AiFeatureCatalog from '../components/coach/AiFeatureCatalog';
 
 function techniqueLink(techniqueId: string): string {
   const t = getTechnique(techniqueId);
@@ -56,17 +57,19 @@ export default function AiCoach() {
         <div className="breadcrumb">
           <Link to="/">홈</Link>
           <span>/</span>
-          <span>AI 개인 코치</span>
+          <span>AI 코치</span>
         </div>
 
         <div className="section-title">
-          <h2>🥋 AI 개인 코치</h2>
+          <h2>🥋 AI 코치</h2>
         </div>
         <p className="video-status-message" style={{ marginTop: -8 }}>
-          안녕하세요. 현재 학습 기록과 기술 분석 결과를 확인하여 오늘 가장 효율적인 학습 방법을 추천해드립니다. AI
-          분석 기록을 기반으로 한 학습 추천이며, 실제 전문 지도자를 대체하지 않습니다.
+          MARTIALDEX의 AI 기능을 모두 이곳에서 시작할 수 있습니다. 수업·코칭부터 기술·콤보, 커리큘럼, 분석, 홈트·영양까지 — 실제 학습 기록을 바탕으로 한 추천이며, 실제 전문 지도자를 대체하지 않습니다.
         </p>
 
+        <AiFeatureCatalog onAsk={() => setAiOpen(true)} />
+
+        <h3 className="ai-catalog__section">내 학습 상태와 오늘의 코칭</h3>
         <div className="card info-card">
           <h3>현재 상태</h3>
           <div className="curriculum-stat-row">
@@ -94,45 +97,6 @@ export default function AiCoach() {
             </button>
             <Link to="/today-training" className="btn btn-secondary">
               🔥 오늘의 훈련 보기
-            </Link>
-          </div>
-        </div>
-
-        <div className="card info-card" data-testid="oneoff-entry">
-          <h3>✍️ 수업하고 싶은 거 입력하기</h3>
-          <p style={{ margin: '4px 0 8px' }}>
-            오늘 배우고 싶은 것을 말하면, AI 코치가 실시간 검색으로 자료를 찾아 오늘 바로 받을 수 있는 수업 하나를 만들어 함께 진행합니다. 커리큘럼은 만들지 않습니다.
-          </p>
-          <div className="modal-actions modal-actions--start">
-            <Link to="/coach/lesson" className="btn btn-primary">
-              오늘 수업 입력하기
-            </Link>
-          </div>
-        </div>
-
-        <div className="card info-card" data-testid="coach-class-entry">
-          <h3>🧑‍🏫 AI 코치 수업</h3>
-          <p style={{ margin: '4px 0 8px' }}>
-            집이나 체육관 중 운동할 곳을 고르면, 지금까지 배운 기술 {stats.learnedCount}개와 숙련도를 바탕으로 AI 코치가 수업을 구성하고 함께 진행합니다.
-          </p>
-          <div className="modal-actions modal-actions--start">
-            <Link to="/coach/class" className="btn btn-primary">
-              AI 코치 수업 시작
-            </Link>
-            <Link to="/learned-techniques" className="btn btn-secondary">
-              📚 배운 기술
-            </Link>
-          </div>
-        </div>
-
-        <div className="card info-card" data-testid="visual-mitt-entry">
-          <h3>🥊 AI Visualizing Mitt</h3>
-          <p style={{ margin: '4px 0 8px' }}>
-            실제 미트나 파트너 없이, 화면의 미트 잡이·목표 지점·발 위치를 보며 타격 콤보와 테이크다운 진입 스텝을 AI 코치와 단계별로 반복합니다.
-          </p>
-          <div className="modal-actions modal-actions--start">
-            <Link to="/coach/mitt" className="btn btn-primary">
-              Visualizing Mitt 시작
             </Link>
           </div>
         </div>
@@ -223,37 +187,13 @@ export default function AiCoach() {
             <p className="video-status-message">
               복습이 필요한 기술 {reviewActionableCount}개가 있습니다. 학습 기록과 점수 변화를 바탕으로 계산한 우선순위입니다.
             </p>
-            <Link to="/review" className="btn btn-secondary">
+            <Link to="/review/ai" className="btn btn-secondary">
               오늘의 복습 보기 →
             </Link>
           </div>
         )}
 
-        <div className="card info-card">
-          <h3>🥋 나의 스타일 · 목표 스타일 비교</h3>
-          <p className="video-status-message">
-            실제 학습/스파링 데이터를 바탕으로 나의 무술 스타일을 분석하고, 목표로 하는 선수/스타일과 비교해 우선 학습할 부분을 추천받을 수 있습니다.
-          </p>
-          <Link to="/my-style" className="btn btn-secondary">
-            나의 스타일 보기 →
-          </Link>
-        </div>
-
-        <div className="card info-card">
-          <h3>🎯 상황별 기술 추천</h3>
-          <p className="video-status-message">
-            "상대가 계속 압박해", "클린치에서 뭘 해야 해?" 같은 실제 상황을 설명하면 관련 기술을
-            찾아드립니다.
-          </p>
-          <Link to="/situation" className="btn btn-secondary">
-            상황 추천 받기 →
-          </Link>
-        </div>
-
         <div className="modal-actions modal-actions--start">
-          <button className="btn btn-secondary" onClick={() => setAiOpen(true)}>
-            ✦ AI에게 직접 물어보기
-          </button>
           <Link to="/my-skills" className="btn btn-ghost">
             나의 기술 대시보드
           </Link>

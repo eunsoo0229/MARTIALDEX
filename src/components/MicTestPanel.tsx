@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import { isVoiceInputSupported, startRecording, type Recorder, type SttPhase } from '../lib/voice/stt';
-import { stopSpeaking } from '../lib/voice/tts';
+import { isVoiceInputSupported, type Recorder, type SttPhase } from '../lib/voice/stt';
+import { useVoiceInput, VoiceInputPanel } from './voice/useVoiceInput';
 
-// 🎤 마이크 테스트 — the SAME recording + transcription path the lesson uses
-// (stt.ts), so a pass here means the lesson's mic answer will work too.
-// Shows each stage (권한 요청 → 듣는 중 + 입력 레벨 → 인식 중 → 결과/오류).
+// 🎤 마이크 테스트 — the SAME speech engine the lesson uses (useVoiceInput →
+// stt.ts), so a pass here means the lesson's mic answer will work too. On the
+// Mac it is also where the local recognition model is chosen / removed.
 
 export function useInputLevel(recorder: Recorder | null): number {
   const [level, setLevel] = useState(0);
@@ -41,69 +41,60 @@ export const PHASE_LABEL: Record<SttPhase, string> = {
   error: '문제가 있습니다.',
 };
 
-export default function MicTestPanel({ hints = [] }: { hints?: string[] }) {
-  const [phase, setPhase] = useState<SttPhase>('idle');
-  const [recorder, setRecorder] = useState<Recorder | null>(null);
+export default function MicTestPanel({ hints = [], allowFallback }: { hints?: string[]; /** false = never offer the Gemini 받아쓰기 fallback. */ allowFallback?: boolean }) {
   const [text, setText] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const level = useInputLevel(phase === 'listening' ? recorder : null);
-  const recRef = useRef<Recorder | null>(null);
-  useEffect(() => () => recRef.current?.cancel(), []);
+  const voice = useVoiceInput({ maxSeconds: 15, hints, allowFallback, onFinal: (t) => setText(t) });
+  const { phase, local } = voice;
 
-  async function toggle() {
-    if (phase === 'listening' && recorder) {
-      setPhase('recognizing');
-      const r = await recorder.stop(hints);
-      recRef.current = null;
-      setRecorder(null);
-      if (r.ok) {
-        setText(r.text);
-        setPhase('result');
-      } else {
-        setError(r.message);
-        setPhase('error');
-      }
-      return;
-    }
-    stopSpeaking();
-    setText(null);
-    setError(null);
-    setPhase('requesting');
-    const s = await startRecording(8);
-    if (!s.ok) {
-      setError(s.message);
-      setPhase('error');
-      return;
-    }
-    recRef.current = s.recorder;
-    setRecorder(s.recorder);
-    setPhase('listening');
-  }
-
-  if (!isVoiceInputSupported()) return <p className="video-status-message">이 기기에서는 음성 입력을 사용할 수 없습니다.</p>;
+  if (!isVoiceInputSupported() && voice.info?.id !== 'android') return <p className="video-status-message">이 기기에서는 음성 입력을 사용할 수 없습니다.</p>;
   return (
     <div className="mic-test" data-testid="mic-test" data-phase={phase}>
       <p className="video-status-message" style={{ margin: '0 0 6px' }}>
         버튼을 누르고 "안녕하세요"처럼 짧게 말씀하신 뒤 다시 눌러 주세요. 수업과 같은 방식으로 인식합니다.
       </p>
       <div className="modal-actions modal-actions--start">
-        <button className={`btn btn-sm ${phase === 'listening' ? 'btn-primary' : 'btn-secondary'}`} onClick={() => void toggle()} disabled={phase === 'requesting' || phase === 'recognizing'} data-testid="mic-test-button">
-          {phase === 'listening' ? '■ 말하기 끝' : '🎤 마이크 테스트'}
+        <button
+          className={`btn btn-sm ${voice.recording ? 'btn-primary' : 'btn-secondary'}`}
+          onClick={() => {
+            if (!voice.recording) setText(null);
+            void voice.toggle();
+          }}
+          disabled={phase === 'requesting' || phase === 'recognizing' || !!voice.download}
+          data-testid="mic-test-button"
+        >
+          {voice.recording ? '■ 말하기 끝' : '🎤 마이크 테스트'}
         </button>
         <span className="video-status-message" data-testid="mic-test-phase">
           {PHASE_LABEL[phase]}
         </span>
       </div>
-      {phase === 'listening' && <LevelMeter level={level} />}
-      {text && (
+      {phase === 'listening' && voice.level >= 0 && <LevelMeter level={voice.level} />}
+      {text && phase === 'result' && (
         <p className="mic-test__result" data-testid="mic-test-result">
           인식된 내용: "{text}"
         </p>
       )}
-      {error && (
-        <p className="ai-inline-warning" data-testid="mic-test-error">
-          {error}
-        </p>
+      <VoiceInputPanel voice={voice} testIdPrefix="mic-test" showAutoSend={false} />
+      {voice.info?.id === 'local' && local && (
+        <details className="mic-test__model" data-testid="mic-test-model-settings">
+          <summary>🧠 음성인식 모델 (이 Mac)</summary>
+          <div className="chip-row" style={{ marginTop: 6 }}>
+            {local.models.map((m) => (
+              <label key={m.id} className="chip" style={{ cursor: 'pointer' }}>
+                <input type="radio" name="stt-model" checked={local.model === m.id} onChange={() => void voice.setModel(m.id)} disabled={voice.recording || !!voice.download} /> {m.label}
+                {m.downloaded ? ' ✓' : ''}
+              </label>
+            ))}
+          </div>
+          <p className="technique-row__sub" style={{ margin: '4px 0' }}>
+            저장 위치: {local.path} · {local.downloaded ? '내려받음' : '아직 내려받지 않음'}
+          </p>
+          {local.downloaded && (
+            <button type="button" className="btn btn-ghost btn-sm" onClick={() => void voice.deleteModel()} disabled={voice.recording} data-testid="mic-test-model-delete">
+              이 모델 삭제
+            </button>
+          )}
+        </details>
       )}
     </div>
   );

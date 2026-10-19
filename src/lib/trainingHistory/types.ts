@@ -169,5 +169,31 @@ export interface TrainingHistoryEntry {
     repetitions: number;
     stance: 'orthodox' | 'southpaw';
     selfReported: true;
+    /** 카메라 타격 판정 (removed feature) — kept only for entries saved while it existed. */
+    cameraPadwork?: {
+      score: number;
+      validStrikes: number;
+      rejected: number;
+      byType: { jab: number; straight: number; hook: number };
+      maxCombo: number;
+      rounds: { round: number; score: number; validStrikes: number }[];
+    };
+    /** 영상 AI 채점 (removed feature) — kept only so entries saved while it existed keep type-checking. */
+    videoAnalysis?: {
+      score: number | null;
+      judged: number;
+      hits: number;
+      partial: number;
+      missed: number;
+      wrongHand: number;
+      untracked: number;
+      skipped: number;
+      avgReactionMs: number | null;
+      avgTimingMs: number | null;
+      avgPeakSpeed: number | null;
+      avgReturnMs: number | null;
+      guardDrops: number;
+      feedback: string | null;
+    };
   };
 }

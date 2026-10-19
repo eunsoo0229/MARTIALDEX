@@ -1,8 +1,7 @@
 import type { Technique } from '../../types';
-import { askCoach } from '../aiCoachDay/service';
 import type { CoachMessage } from '../aiCoachDay/types';
+import { geminiCoach, type CoachBackend } from '../coachProvider/backend';
 import { resolveTechniquesByIds } from '../userTechniques/service';
-import { analyzeAnswer } from './analyzer';
 import { buildConcepts, keyPointsReference, lessonName } from './concepts';
 import { createLessonState, gradeChoice, lessonStep, type LessonContext } from './engine';
 import { classifyIntent } from './intent';
@@ -14,10 +13,13 @@ import type { CoachAction, CoachLessonState, LessonStepResult } from './types';
 // The one entry point both the voice UI and the text UI use:
 //
 //   student utterance (STT transcript or typed) → intent (local)
-//     → question: coach answers (1 AI call)          ┐
-//     → answer:   meaning-based analysis (1 AI call) ├→ Coach Lesson Engine → actions
-//     → 모르겠어 / 다시 / 이해했어 / 건너뛰기 (no call) ┘
+//     → question: the lesson's coach answers                     ┐
+//     → answer:   deterministic required-element grade            ├→ Coach Lesson Engine → actions
+//                 (+ the coach's model, bounded by it)            │
+//     → 모르겠어 / 다시 / 이해했어 / 건너뛰기 (no call)            ┘
 //
+// `coach` is the lesson's chosen coach (coachProvider/backend.ts); omitted =
+// the Gemini coach, i.e. the behaviour before the coach choice existed.
 // The UI never decides the lesson flow — it renders actions and speaks them.
 
 /** Lesson context for a technique, rebuilt deterministically from MARTIALDEX data (never persisted). */
@@ -74,15 +76,18 @@ export interface RespondInput {
   dayContext: string;
   history: CoachMessage[];
   place: string;
+  /** The lesson's coach (default: Gemini — the pre-choice behaviour). */
+  coach?: CoachBackend;
 }
 
 export async function respondToStudent(input: RespondInput): Promise<LessonStepResult> {
   const { technique, state, text } = input;
+  const coach = input.coach ?? geminiCoach;
   const ctx = lessonContextFor(technique);
   const intent = classifyIntent(text, state.pending);
 
   if (intent === 'question') {
-    const res = await askCoach(technique, input.dayContext, input.history, text, [input.place, lessonPositionContext(state, ctx)].filter(Boolean).join('\n\n'));
+    const res = await coach.answerQuestion({ technique, question: text, dayContext: input.dayContext, history: input.history, place: [input.place, lessonPositionContext(state, ctx)].filter(Boolean).join('\n\n') });
     return lessonStep(state, ctx, { type: 'STUDENT', text, intent, answer: res.ok ? res.text : `지금은 답변을 가져오지 못했습니다: ${res.message}` });
   }
 
@@ -91,7 +96,7 @@ export async function respondToStudent(input: RespondInput): Promise<LessonStepR
     const scenario = ctx.scenarios.find((s) => s.id === state.pending!.conceptId) ?? null;
     const reference = scenario ? `${scenario.answer} (${scenario.why})` : ctx.keyPointsReference;
     const used = concept ? [concept.explain, ...concept.variants].slice(0, state.understanding.concepts[concept.id]?.explained ?? 1) : [];
-    const analysis = await analyzeAnswer({ technique, concept, reference, pending: state.pending, answer: text, level: state.level, alreadyExplained: used, place: input.place });
+    const analysis = await coach.gradeAnswer({ technique, concept, scenario, reference, pending: state.pending, answer: text, level: state.level, alreadyExplained: used, place: input.place });
     return lessonStep(state, ctx, { type: 'STUDENT', text, intent, analysis, answer: analysis.reply });
   }
 

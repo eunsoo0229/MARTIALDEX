@@ -8,6 +8,7 @@ import { syncCombosBidirectional } from '../../lib/cloudSync/comboSync';
 import { syncTacticsBidirectional } from '../../lib/cloudSync/tacticSync';
 import { syncTrainingHistoryBidirectional } from '../../lib/cloudSync/trainingHistorySync';
 import { syncSparringSessionsBidirectional } from '../../lib/cloudSync/sparringSessionSync';
+import { syncLessonLogsBidirectional, syncReviewLogsBidirectional } from '../../lib/cloudSync/jsonRowSync';
 import { syncGymRoutinesBidirectional } from '../../lib/cloudSync/gymRoutineSync';
 import { syncNutritionMealsBidirectional, syncNutritionProfileBidirectional } from '../../lib/cloudSync/nutritionSync';
 import { syncAddTeqFromCloud } from '../../lib/cloudSync/addTeqSync';
@@ -65,6 +66,9 @@ export default function LocalDataMigrationPrompt() {
     void syncAddTeqFromCloud();
     void syncCustomMartialArtsFromCloud();
     void syncTechniqueVideoPicksBidirectional(userId);
+    // 0038 — if the tables aren't deployed yet these just return an error; local data is unaffected.
+    void syncReviewLogsBidirectional(userId);
+    void syncLessonLogsBidirectional(userId);
 
     if (window.localStorage.getItem(promptSeenKey(userId))) return;
     const localHasData = hasLocalDataToBackup();

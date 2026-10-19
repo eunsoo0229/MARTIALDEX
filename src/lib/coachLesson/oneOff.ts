@@ -10,13 +10,16 @@ import type { SearchResult } from '../webSearch/types';
 import { COACH_SYSTEM_INSTRUCTION, techniqueData } from '../aiCoachDay/service';
 import { politeFix } from '../aiCoachDay/politeSpeech';
 import type { CoachMessage } from '../aiCoachDay/types';
-import { buildConcepts, keyPointsReference } from './concepts';
+import { buildConcepts, keyPointsReference, lessonName } from './concepts';
 import { buildScenarios } from './scenario';
-import { getLearningRecord } from './records';
-import { analyzeAnswer } from './analyzer';
+import { getLearningRecord, listLearningRecords } from './records';
+import { buildTrainingAiContext } from '../trainingAnalytics/aiContext';
+import { parseWorkoutSpec, planErrors, type WorkoutSpec } from './workoutPlan';
+import { geminiCoach, type CoachBackend } from '../coachProvider/backend';
+import { exactTechniquesInText, lookupTechnique } from '../coachKnowledge/lookup';
 import { classifyIntent } from './intent';
 import { createLessonState, gradeChoice, lessonStep, type LessonContext } from './engine';
-import { lessonPositionContext } from './service';
+import { lessonContextFor, lessonPositionContext } from './service';
 import type { CoachLessonState, LessonConcept, LessonStepResult, ScenarioItem } from './types';
 
 // 「수업하고 싶은 거 입력하기」 — one free-text request → ONE lesson for today,
@@ -69,6 +72,18 @@ export interface OneOffLesson {
   /** Learned techniques the lesson connects to ("전에 배운 Jab을 …"). */
   linkedLearned: { techniqueId: string; name: string; line: string }[];
   practice: string;
+  /**
+   * The practice as timer data. `spec` is read from the practice sentence the
+   * student actually sees/hears; `ai` is the structured plan the AI returned.
+   * When they disagree the sentence wins and `mismatch` is set.
+   */
+  workout: { spec: WorkoutSpec; ai: { exerciseDurationSeconds: number | null; sets: number | null; restDurationSeconds: number | null } | null; mismatch: boolean };
+  /** YouTube searches for lesson videos (from the lesson AI, falling back to the topic). */
+  videoQueries: string[];
+  /** Words a lesson video must really be about. */
+  videoTerms: string[];
+  /** Personal data the lesson was adapted to (shown to the student; nothing sent beyond aggregates). */
+  personalization: string[];
   /** Grounded material text for coach Q&A and answer grading. */
   material: string;
   createdAt: string;
@@ -76,7 +91,7 @@ export interface OneOffLesson {
 
 export type BuildOneOffResult =
   | { ok: true; lesson: OneOffLesson; classification: OneOffClassification }
-  | { ok: false; code: 'EMPTY' | 'INSUFFICIENT_WEB_EVIDENCE' | 'SEARCH_UNAVAILABLE' | 'AI_FAILED'; message: string; classification?: OneOffClassification };
+  | { ok: false; code: 'EMPTY' | 'INSUFFICIENT_WEB_EVIDENCE' | 'SEARCH_UNAVAILABLE' | 'AI_FAILED' | 'NOT_IN_DB' | 'CHOOSE_TECHNIQUE'; message: string; classification?: OneOffClassification; candidates?: { techniqueId: string; name: string; martialArt: string }[] };
 
 // ---------------------------------------------------------------- classification
 
@@ -89,17 +104,21 @@ function norm(s: string): string {
   return s.toLowerCase().replace(/[\s\-_.·]/g, '');
 }
 
-function techniqueNames(t: Technique): string[] {
-  return [t.name, t.koreanName ?? '', ...(t.aliases ?? [])].map((n) => n?.trim()).filter((n): n is string => !!n && n.length >= 2);
+function techniqueNames(t: Technique, minLength = 2): string[] {
+  return [t.name, t.koreanName ?? '', ...(t.aliases ?? [])].map((n) => n?.trim()).filter((n): n is string => !!n && n.length >= minLength);
 }
 
 /** A technique counts as "named" only if one of its names literally appears in the request (and isn't a goal word). */
 function literallyNamed(request: string, t: Technique): boolean {
   const r = norm(request);
-  return techniqueNames(t).some((n) => {
+  const substring = techniqueNames(t).some((n) => {
     const k = norm(n);
     return k.length >= 2 && r.includes(k) && !GOAL_TERMS.some((g) => norm(g) === k);
   });
+  if (substring) return true;
+  // One-syllable names ("잽", "훅") only as a whole word ("잽으로" → "잽"), never inside another word.
+  const words = new Set(requestPhrases(request).filter((p) => !p.includes(' ')).map(norm));
+  return techniqueNames(t, 1).some((n) => norm(n).length === 1 && words.has(norm(n)));
 }
 
 function detectArt(request: string): string | null {
@@ -110,11 +129,44 @@ function detectArt(request: string): string | null {
   return null;
 }
 
+/** Words that never name a technique in a lesson request. */
+const REQUEST_FILLER = /^(오늘|오늘은|지금|제대로|좀|더|잘|배우고|배우기|배울래|연습하고|연습|수업|수업하고|하고|싶어|싶어요|싶다|싶습니다|어떻게|사용하는지|사용하는|쓰는|법|방법|하는|해서|그리고|에서|대해|대한)$/;
+
+/**
+ * Phrases a technique name could be ("Double Leg", "잽", "원투") — 1–3 word
+ * spans of the request with Korean particles removed. The technique search
+ * matches names, so a whole sentence ("오늘 Jab을 배우고 싶어") finds nothing;
+ * its parts do.
+ */
+export function requestPhrases(request: string): string[] {
+  const words = request
+    .replace(/[?!.,~"'“”]/g, ' ')
+    .split(/\s+/)
+    .map((w) => w.replace(/(으로|에서|으로는|에게|을|를|이|가|은|는|로|의|와|과|도|만)$/, '').trim())
+    .filter((w) => w.length >= 1);
+  const out: string[] = [];
+  for (let n = 3; n >= 1; n--) {
+    for (let i = 0; i + n <= words.length; i++) {
+      const span = words.slice(i, i + n);
+      if (span.some((w) => REQUEST_FILLER.test(w))) continue;
+      const phrase = span.join(' ');
+      if (phrase.replace(/\s/g, '').length >= 2) out.push(phrase);
+    }
+  }
+  return [...new Set(out)];
+}
+
 function candidatesFor(request: string, martialArt: string | null): Technique[] {
   const filters = martialArt ? { martialArt } : {};
-  const pool = [...searchTechniques(request, 10, filters), ...(martialArt ? searchTechniques(request, 5) : [])];
+  const phrases = requestPhrases(request);
+  const pool = [
+    ...searchTechniques(request, 10, filters),
+    ...phrases.flatMap((p) => [...searchTechniques(p, 5, filters), ...(martialArt ? searchTechniques(p, 3) : [])]),
+  ];
   const seen = new Set<string>();
-  return pool.filter((t) => !isSyntheticTrainingDomain(t.martialArt) && !seen.has(t.id) && seen.add(t.id)).slice(0, 12);
+  const unique = pool.filter((t) => !isSyntheticTrainingDomain(t.martialArt) && !seen.has(t.id) && seen.add(t.id));
+  // Techniques whose name is literally in the request come first, so they survive the cap.
+  return [...unique.filter((t) => literallyNamed(request, t)), ...unique.filter((t) => !literallyNamed(request, t))].slice(0, 12);
 }
 
 function defaultQueries(topic: string, artLabel: string | null, technique: Technique | null): string[] {
@@ -185,6 +237,11 @@ export async function classifyRequest(request: string, selectedArt: string | nul
     mode = technique ? (mode === 'technique' && local.mode === 'technique' ? 'technique' : 'technique_goal') : 'topic';
   }
   if (mode === 'technique' && local.mode === 'technique_goal') mode = 'technique_goal';
+  // Code guard the other way: a technique literally named in the request is never "just a topic".
+  if (mode === 'topic' && local.mode !== 'topic' && local.techniqueId) {
+    technique = resolveTechnique(local.techniqueId) ?? null;
+    if (technique) mode = local.mode;
+  }
   const queries = raw.searchQueries.map((q) => q.trim()).filter(Boolean).slice(0, 4);
   return {
     mode,
@@ -254,6 +311,9 @@ interface RawLesson {
   concepts: RawConcept[];
   scenarios: RawScenario[];
   practice: string;
+  /** Structured copy of the practice sentence's numbers (null when the sentence states none). */
+  practicePlan?: { exerciseDurationSeconds: unknown; sets: unknown; restDurationSeconds: unknown } | null;
+  videoQueries?: unknown;
   learnedLinks: { techniqueId: string; line: string }[];
 }
 
@@ -292,6 +352,41 @@ function newLessonId(): string {
   return `oneoff_${typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36)}`;
 }
 
+/**
+ * Personal context (what AI Personal Coach used, now part of the AI 코치):
+ * aggregated training numbers + weak techniques (buildTrainingAiContext — the
+ * same shared builder), plus what earlier coach lessons recorded: concepts
+ * still not understood and questions the student asked. Aggregates only —
+ * no email, name or user id.
+ */
+export function personalLessonContext(): { lines: string[]; summary: string[] } {
+  const training = buildTrainingAiContext();
+  const records = listLearningRecords().slice(0, 8);
+  const weak = records.filter((r) => r.needsReview.length).map((r) => `${r.techniqueName}: ${r.needsReview.slice(0, 2).join(', ')}`).slice(0, 5);
+  const questions = records.flatMap((r) => r.questions).slice(-5);
+  const lines = [
+    ...(training.hasAnyData ? training.contextLines : ['훈련 기록: 아직 없음']),
+    weak.length ? `이전 AI 코치 수업에서 아직 어려워한 부분: ${weak.join(' / ')}` : '',
+    questions.length ? `학생이 이전 수업에서 한 질문: ${questions.join(' / ')}` : '',
+  ].filter(Boolean);
+  const summary = [training.hasAnyData ? '최근 훈련 기록' : '', weak.length ? `이전 수업에서 어려워한 부분 ${weak.length}개` : '', questions.length ? `이전 질문 ${questions.length}개` : ''].filter(Boolean);
+  return { lines, summary };
+}
+
+const toNumOrNull = (v: unknown): number | null => (typeof v === 'number' && Number.isFinite(v) && v >= 0 ? Math.round(v) : null);
+
+/** The sentence is what the student sees and hears — it wins over the structured copy when they disagree. */
+export function reconcileWorkout(practice: string, raw: RawLesson['practicePlan']): OneOffLesson['workout'] {
+  const spec = parseWorkoutSpec(practice);
+  const ai = raw ? { exerciseDurationSeconds: toNumOrNull(raw.exerciseDurationSeconds), sets: toNumOrNull(raw.sets), restDurationSeconds: toNumOrNull(raw.restDurationSeconds) } : null;
+  const mismatch =
+    !!ai &&
+    ((ai.exerciseDurationSeconds !== null && spec.exerciseDurationSeconds !== null && ai.exerciseDurationSeconds !== spec.exerciseDurationSeconds) ||
+      (ai.sets !== null && spec.sets !== null && ai.sets !== spec.sets) ||
+      (ai.restDurationSeconds !== null && spec.restDurationSeconds !== null && ai.restDurationSeconds !== spec.restDurationSeconds));
+  return { spec, ai, mismatch };
+}
+
 /** Builds today's single lesson. Never creates or stores a curriculum. */
 export async function buildOneOffLesson(request: string, selectedArt: string | null): Promise<BuildOneOffResult> {
   const text = request.trim();
@@ -328,6 +423,8 @@ export async function buildOneOffLesson(request: string, selectedArt: string | n
     .slice(0, 15)
     .map((e) => ({ id: e.technique.id, name: e.technique.koreanName || e.technique.name }));
 
+  const personal = personalLessonContext();
+
   // --- lesson from the search material (+ the named technique's MARTIALDEX data, if any)
   const plan = await askGeminiForJson<RawLesson>({
     systemInstruction: [
@@ -338,7 +435,10 @@ export async function buildOneOffLesson(request: string, selectedArt: string | n
       '각 concept: label(짧은 이름), importance("core"|"support"), explain(1~2문장, 말하듯), variants(다른 설명 2개), reference(정답에 들어갈 핵심), keywords(채점용 핵심 단어 3~6개),',
       '  confirm/explainQuestion/why(학생에게 물을 질문 — 확인, 네 말로 설명, 이유), sourceIds(근거가 된 검색 자료 id, 예 ["S1","S3"]; 검색 자료가 없으면 기술 데이터 근거로 ["DB"]).',
       'scenarios 0~2개: 실전 상황 판단 문제 {situation, question, answer, why, cue, keywords, sourceIds}.',
-      'practice: 혼자 또는 파트너와 오늘 할 구체적 실습(시간/횟수 포함) 1~2문장.',
+      'practice: 혼자 또는 파트너와 오늘 할 구체적 실습 1~2문장. 시간으로 하는 연습이면 "3분씩 3세트, 세트 사이 1분 휴식"처럼 운동 시간·세트 수·휴식 시간을 숫자로 문장에 쓴다.',
+      'practicePlan: practice 문장에 쓴 숫자를 그대로 {"exerciseDurationSeconds": 초, "sets": 세트 수, "restDurationSeconds": 초}로. 문장에 없는 값은 null (지어내지 않는다).',
+      'videoQueries: 이 수업 주제를 가르치는 YouTube 교육 영상을 찾을 검색어 2~3개(영어 1~2개 + 한국어 1개, 무술 이름 포함, 예: "boxing distance management footwork tutorial").',
+      '[학생 개인 정보]가 있으면 수업 수준과 예시를 거기에 맞춘다(예: 이전에 어려워한 부분을 한 번 더 짚기). 없는 사실은 지어내지 않는다.',
       'learnedLinks: [사용자가 이미 배운 기술] 중 이 수업과 실제로 연결되는 것만 {techniqueId, line}("전에 배운 잽을 거리 조절에 활용해 보겠습니다" 같은 한 문장). 없으면 [].',
       'intro: 오늘 수업을 여는 코치의 첫 말 1~2문장. 모든 문장은 존댓말, 마크다운/이모지 없이.',
     ].join('\n'),
@@ -349,10 +449,11 @@ export async function buildOneOffLesson(request: string, selectedArt: string | n
       labeledSources.length ? '[검색 자료]' : '',
       ...sources.map((s, i) => `[S${i + 1}] ${s.title} (${s.domain})\n${(s.content ?? s.snippet ?? '').replace(/\s+/g, ' ').slice(0, 1400)}`),
       `[사용자가 이미 배운 기술] ${learned.length ? learned.map((l) => `${l.id}: ${l.name}`).join(', ') : '없음'}`,
+      `[학생 개인 정보]\n${personal.lines.join('\n')}`,
     ]
       .filter(Boolean)
       .join('\n\n'),
-    question: 'JSON {"title","intro","concepts","scenarios","practice","learnedLinks"} 로 오늘 수업을 만들어줘.',
+    question: 'JSON {"title","intro","concepts","scenarios","practice","practicePlan","videoQueries","learnedLinks"} 로 오늘 수업을 만들어줘.',
     validate: isRawLesson,
   });
   if (!plan.ok) return { ok: false, code: 'AI_FAILED', message: `수업을 구성하지 못했습니다: ${plan.message}`, classification };
@@ -386,6 +487,17 @@ export async function buildOneOffLesson(request: string, selectedArt: string | n
   webSearch.used = webConcepts.some((c, i) => grounded[i].sourceIds.some((id) => id.startsWith('S')));
 
   const name = plan.data.title.trim() || classification.topic;
+  const practice = plan.data.practice.trim();
+  const workout = reconcileWorkout(practice, plan.data.practicePlan);
+  const rawVideoQueries = Array.isArray(plan.data.videoQueries) ? plan.data.videoQueries.filter((q): q is string => typeof q === 'string' && !!q.trim()) : [];
+  const artEn = classification.martialArt ? getMartialArt(classification.martialArt)?.nameEn ?? '' : '';
+  const videoQueries = [...rawVideoQueries.slice(0, 3), `${artEn} ${technique ? technique.name : classification.topic} tutorial`.trim()];
+  const videoTerms = [
+    classification.topic,
+    ...(technique ? [technique.name, technique.koreanName ?? '', ...technique.aliases] : []),
+    ...concepts.map((c) => c.label),
+    ...rawVideoQueries,
+  ].filter(Boolean);
   const material = [
     technique ? `[MARTIALDEX 기술 데이터]\n${techniqueData(technique)}` : '',
     '[오늘 수업 핵심]',
@@ -417,7 +529,103 @@ export async function buildOneOffLesson(request: string, selectedArt: string | n
       sources: labeledSources,
       webSearch,
       linkedLearned,
-      practice: plan.data.practice.trim(),
+      practice,
+      workout,
+      videoQueries,
+      videoTerms,
+      personalization: personal.summary,
+      material,
+      createdAt: new Date().toISOString(),
+    },
+  };
+}
+
+// ---------------------------------------------------------------- MARTIALDEX 자체 AI 코치: data-only lesson
+
+const LOCAL_PRACTICE = '자세 설명의 단계와 핵심 포인트를 떠올리며 천천히 반복해 주세요. 연습 시간과 세트는 직접 정해 주세요.';
+
+/**
+ * The 자체 AI 코치's lesson: no web search and no model — only a technique
+ * that MARTIALDEX really has (named in the request, matched exactly by the
+ * local classifier), taught from its own data with the deterministic
+ * concepts/scenarios. A topic with no such technique is refused with the
+ * similar-name candidates (not assumed to be the same technique).
+ */
+export function buildLocalOneOffLesson(request: string, selectedArt: string | null, opts: { techniqueId?: string | null } = {}): BuildOneOffResult {
+  const text = request.trim();
+  if (!text) return { ok: false, code: 'EMPTY', message: '오늘 배우고 싶은 것을 입력해 주세요.' };
+  const classification = classifyLocally(text, selectedArt);
+  const brief = (t: Technique) => ({ techniqueId: t.id, name: lessonName(t), martialArt: t.martialArt });
+  let technique: Technique | null = null;
+  if (opts.techniqueId) {
+    // The student picked one of the candidates we listed.
+    technique = resolveTechnique(opts.techniqueId) ?? null;
+  } else {
+    // Phrases of the request that are EXACTLY a technique's name — incl. Korean names from its own data ("암바").
+    const exact = exactTechniquesInText(text, selectedArt);
+    const named = exact.matches.length + exact.ambiguous.length;
+    if (named > 1) {
+      const all = [...exact.matches.map(brief), ...exact.ambiguous.flatMap((a) => a.candidates)];
+      return {
+        ok: false,
+        code: 'CHOOSE_TECHNIQUE',
+        classification,
+        candidates: all,
+        message: `요청에 MARTIALDEX 기술 이름이 여러 개 있습니다: ${all.map((c) => c.name).join(', ')}. 오늘 배울 기술 하나를 골라 주세요.`,
+      };
+    }
+    if (exact.ambiguous.length === 1) {
+      const a = exact.ambiguous[0];
+      return {
+        ok: false,
+        code: 'CHOOSE_TECHNIQUE',
+        classification,
+        candidates: a.candidates,
+        message: `"${a.phrase}"라는 이름의 기술이 MARTIALDEX에 ${a.candidates.length}개 있습니다. 어떤 기술을 배울지 골라 주세요. (자동으로 고르지 않습니다)`,
+      };
+    }
+    technique = exact.matches[0] ?? (classification.techniqueId ? resolveTechnique(classification.techniqueId) ?? null : null);
+  }
+  if (technique) {
+    classification.techniqueId = technique.id;
+    classification.martialArt = technique.martialArt;
+    classification.mode = classification.mode === 'topic' ? 'technique' : classification.mode;
+  }
+  if (!technique) {
+    const look = lookupTechnique({ query: classification.topic, martialArt: classification.martialArt });
+    const candidates = look.status === 'found' ? [] : look.candidates;
+    return {
+      ok: false,
+      code: 'NOT_IN_DB',
+      classification,
+      candidates,
+      message: `자체 AI 코치는 MARTIALDEX 기술 DB에 있는 기술만 수업합니다. 요청에서 DB에 있는 기술 이름을 정확히 찾지 못했습니다.${candidates.length ? ` 이름이 비슷한 기술: ${candidates.map((c) => c.name).join(', ')} (같은 기술인지 확인되지 않아 자동으로 고르지 않았습니다. 아래에서 고르거나 정확한 이름으로 다시 입력해 주세요.)` : ''}`,
+    };
+  }
+  const context = lessonContextFor(technique);
+  const name = lessonName(technique);
+  const goal = classification.mode === 'technique_goal' ? ` 요청하신 내용 중 실전 활용·전략처럼 기술 자료에 없는 부분은 다루지 않고, 자료에 있는 범위에서만 진행합니다.` : '';
+  const material = `[MARTIALDEX 기술 데이터]\n${techniqueData(technique)}`;
+  return {
+    ok: true,
+    classification,
+    lesson: {
+      id: newLessonId(),
+      request: text,
+      mode: classification.mode,
+      title: name,
+      martialArt: technique.martialArt,
+      techniqueId: technique.id,
+      intro: `오늘은 ${name} 수업입니다. 이 수업은 MARTIALDEX 기술 자료만으로 진행하고, 자료에 없는 내용은 추측하지 않습니다.${goal}`,
+      context,
+      sources: [],
+      webSearch: { called: false, queries: [], resultCount: 0, used: false, note: '자체 AI 코치는 실시간 웹 검색을 사용하지 않습니다.' },
+      linkedLearned: [],
+      practice: LOCAL_PRACTICE,
+      workout: reconcileWorkout(LOCAL_PRACTICE, null),
+      videoQueries: [],
+      videoTerms: [technique.name, technique.koreanName ?? ''].filter(Boolean),
+      personalization: [],
       material,
       createdAt: new Date().toISOString(),
     },
@@ -434,10 +642,19 @@ export function startOneOffLesson(lesson: OneOffLesson): LessonStepResult {
   return lessonStep(createLessonState(lesson.techniqueId ?? lesson.id, lesson.context), lesson.context, { type: 'START', lead });
 }
 
-export async function respondOneOff(lesson: OneOffLesson, state: CoachLessonState, text: string, history: CoachMessage[]): Promise<LessonStepResult> {
+/** `coach` = the lesson's chosen coach (default Gemini — the behaviour before the choice existed). */
+export async function respondOneOff(lesson: OneOffLesson, state: CoachLessonState, text: string, history: CoachMessage[], coach: CoachBackend = geminiCoach): Promise<LessonStepResult> {
   const ctx = lesson.context;
   const technique = lesson.techniqueId ? resolveTechnique(lesson.techniqueId) ?? null : null;
   const intent = classifyIntent(text, state.pending);
+
+  if (intent === 'question' && coach.kind === 'martialdex') {
+    // 자체 AI 코치: grounded in the technique's data only — never Gemini.
+    const res = technique
+      ? await coach.answerQuestion({ technique, question: text, dayContext: '', history, place: lessonPositionContext(state, ctx) })
+      : { ok: true as const, text: '이 수업에는 MARTIALDEX 기술 자료가 연결되어 있지 않아 질문에 답할 근거가 없습니다. 추측해서 말씀드리지 않겠습니다.', source: 'evidence' as const };
+    return lessonStep(state, ctx, { type: 'STUDENT', text, intent, answer: res.ok ? res.text : `지금은 답변을 가져오지 못했습니다: ${res.message}` });
+  }
 
   if (intent === 'question') {
     const res = await aiProvider.ask({
@@ -454,7 +671,7 @@ export async function respondOneOff(lesson: OneOffLesson, state: CoachLessonStat
     const scenario = ctx.scenarios.find((s) => s.id === state.pending!.conceptId) ?? null;
     const reference = scenario ? `${scenario.answer} (${scenario.why})` : ctx.keyPointsReference;
     const used = concept ? [concept.explain, ...concept.variants].slice(0, state.understanding.concepts[concept.id]?.explained ?? 1) : [];
-    const analysis = await analyzeAnswer({ technique, material: lesson.material, concept, reference, pending: state.pending, answer: text, level: state.level, alreadyExplained: used });
+    const analysis = await coach.gradeAnswer({ technique, material: lesson.material, concept, scenario, reference, pending: state.pending, answer: text, level: state.level, alreadyExplained: used });
     return lessonStep(state, ctx, { type: 'STUDENT', text, intent, analysis, answer: analysis.reply });
   }
   return lessonStep(state, ctx, { type: 'STUDENT', text, intent });

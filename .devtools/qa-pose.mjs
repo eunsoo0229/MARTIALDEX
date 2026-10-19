@@ -73,6 +73,8 @@ async function main() {
 
   // ============ 1. TECHNIQUE DETAIL — SUPPORTED TECHNIQUE ============
   await goto('#/arts/boxing/techniques/boxing__jab');
+  // first visit loads the page's modules cold in dev mode (~1.7 s) — wait for the page, not a fixed 500 ms
+  await page.waitForSelector('.detail-hero h1', { timeout: 15000 }).catch(() => {});
   const h1 = await textOf('.detail-hero h1');
   check('Boxing Jab technique detail loads', h1 === 'Jab', h1);
   const analyzeBtnPresent = await page.evaluate(() =>

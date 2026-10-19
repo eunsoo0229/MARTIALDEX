@@ -1,11 +1,20 @@
 import type { PoseFrame } from '../poseAnalysis/types';
 import { createMultiPoseLandmarker } from '../poseAnalysis/poseEstimator';
 import { MAX_FRAME_SAMPLES, MIN_SAMPLE_INTERVAL_SEC } from './types';
+import { grabFrame, measurePersonColors, type PersonColors } from './attire';
 
 export interface SampledFrame {
   timestampSec: number;
   /** One entry per detected person in this frame — order is NOT stable across frames. */
   poses: PoseFrame[];
+  /** Measured clothing colours per pose (same order as `poses`) — only when sampling was asked to measure them (복장 기반 식별). */
+  colors?: PersonColors[];
+}
+
+export class AnalysisCancelledError extends Error {
+  constructor() {
+    super('분석이 취소되었습니다.');
+  }
 }
 
 export function seekTo(video: HTMLVideoElement, t: number): Promise<void> {
@@ -41,7 +50,8 @@ export async function samplePosesFromVideo(
   video: HTMLVideoElement,
   timestamps: number[],
   numPoses: number,
-  onProgress?: (done: number, total: number) => void
+  onProgress?: (done: number, total: number) => void,
+  options: { measureColors?: boolean; signal?: AbortSignal } = {}
 ): Promise<SampledFrame[]> {
   const landmarker = await createMultiPoseLandmarker(numPoses);
   const wasPlaying = !video.paused;
@@ -49,9 +59,11 @@ export async function samplePosesFromVideo(
   const results: SampledFrame[] = [];
   try {
     for (let i = 0; i < timestamps.length; i++) {
+      if (options.signal?.aborted) throw new AnalysisCancelledError();
       await seekTo(video, timestamps[i]);
       const poses = landmarker.detect(video);
-      results.push({ timestampSec: timestamps[i], poses });
+      const img = options.measureColors && poses.length ? grabFrame(video) : null;
+      results.push({ timestampSec: timestamps[i], poses, ...(img ? { colors: poses.map((p) => measurePersonColors(img, p)) } : {}) });
       onProgress?.(i + 1, timestamps.length);
     }
   } finally {

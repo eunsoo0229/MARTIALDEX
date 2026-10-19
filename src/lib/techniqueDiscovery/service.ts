@@ -2,6 +2,7 @@ import type { DiscoveryOutcome } from './types';
 import type { UserTechniqueRecord } from '../userTechniques/types';
 import { findNormalizedDuplicate, normalizeTechniqueName, runDuplicateStage, runVerificationStage, saveUserTechnique } from '../userTechniques/service';
 import { pullAddTeqFromCloud, insertAddTeqTechnique } from '../addTeq/service';
+import { withGiNoGi } from '../grappling/analyzeNewTechnique';
 import type { AddTeqRecord } from '../addTeq/types';
 import { martialArtSummaries } from '../loadData';
 import { MMA_SOURCE_MARTIAL_ARTS } from '../mmaCurriculum/types';
@@ -73,6 +74,8 @@ async function attachDiscoveredVideo(record: UserTechniqueRecord): Promise<{ rec
  * "등록하기" button, so this branch exists in exactly one place.
  */
 export async function registerDiscoveredTechnique(record: UserTechniqueRecord, userId: string | null): Promise<{ id: string; techniqueName: string }> {
+  // Grappling techniques get their Gi / No-Gi split researched before saving (add_teq rows can't be updated later).
+  record = { ...record, technique: await withGiNoGi(record.technique) };
   if (!userId) {
     const saved = saveUserTechnique(record, null);
     return { id: saved.id, techniqueName: saved.technique.name };

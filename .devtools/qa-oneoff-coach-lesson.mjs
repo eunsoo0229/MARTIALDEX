@@ -37,9 +37,16 @@ async function main() {
   const app = await electron.launch({ executablePath: electronBin, args: [APP_DIR, `--user-data-dir=${dir}`], env, timeout: 30000 });
   const page = app.windows().find((w) => w.url().startsWith('http://localhost:5173')) ?? (await app.firstWindow());
   await page.waitForLoadState('load');
+  await page.evaluate(() => localStorage.setItem('martialdex:coach-kind-pref', JSON.stringify({ last: 'gemini', remember: true }))); // 이 QA는 기존 Gemini 코치를 검증 — 수업 전 코치 선택(2026-10-19) 이후 Gemini를 명시적으로 선택
   await sleep(800);
   const errors = [];
   page.on('pageerror', (e) => errors.push(e.message));
+  // Diagnostics: if the window goes away, say why (renderer crash vs app exit) instead of a bare "page closed".
+  page.on('crash', () => console.log('DIAG renderer CRASHED'));
+  page.on('close', () => console.log('DIAG page closed'));
+  app.process().on('exit', (code, signal) => console.log(`DIAG electron exited code=${code} signal=${signal}`));
+  app.process().stderr?.on('data', (d) => { const t = String(d); if (/crash|fatal|FATAL|Segmentation|abort/i.test(t)) console.log('DIAG stderr', t.slice(0, 400)); });
+  page.on('console', (m) => { if (m.type() === 'error') console.log('DIAG console.error', m.text().slice(0, 200)); });
   let searchCalls = 0;
   page.on('console', (m) => {
     if (m.text().includes('[CURRICULUM_TAVILY_RUNTIME] phase=transport_select')) searchCalls++;
@@ -107,7 +114,14 @@ async function main() {
   let sawFeedback = false;
   while (turns < 45) {
     if (await page.$('[data-testid="oneoff-complete"]')) break;
+    console.log(`DIAG turn ${turns} directive=${await page.evaluate(() => document.querySelector('[data-testid="oneoff-chat"]')?.dataset.directive ?? '-')}`);
     if (await page.$('[data-testid="oneoff-video-done"]')) await page.locator('[data-testid="oneoff-video-done"]').click();
+    // practice on the Visualizing Mitt (techniques named in the lesson): posture briefing → mitt
+    else if (await page.$('[data-testid="oneoff-posture-start"]')) await page.locator('[data-testid="oneoff-posture-start"]').click();
+    else if (await page.$('[data-testid="oneoff-mitt"] [data-testid="mitt-runner-stop"]')) {
+      await sleep(1500);
+      await page.locator('[data-testid="mitt-runner-stop"]').click();
+    }
     else if (await page.$('[data-testid="oneoff-practice-done"]')) await page.locator('[data-testid="oneoff-practice-done"]').click();
     else if (await page.$('[data-testid="oneoff-answer"]')) {
       await page.locator('[data-testid="oneoff-answer"]').fill(replies[turns % replies.length]);
@@ -130,6 +144,8 @@ async function main() {
   check('[C1] 모든 테스트에서 커리큘럼 생성/저장 없음', after.curricula === curriculaBefore, after.curricula.slice(0, 200));
 
   // ---------- UI: technique lesson enters the coach normally ----------
+  // A finished lesson offers "다른 수업 하기" to start a new request.
+  if (await page.$('[data-testid="oneoff-reset"]')) await page.locator('[data-testid="oneoff-reset"]').click();
   await page.evaluate(() => (location.hash = '#/coach/lesson'));
   await sleep(800);
   const callsBeforeJab = searchCalls;

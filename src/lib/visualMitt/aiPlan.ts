@@ -32,7 +32,16 @@ export interface MittPlan {
   /** Why this many repetitions / this speed (shown + spoken). */
   reason: string;
   combo: MittCombo;
-  source: 'ai' | 'lesson';
+  /** ai = built from the technique DB · web = built from a live web search · shared = a MARTIALDEX user's shared combo/setup · lesson = today's lesson. */
+  source: 'ai' | 'lesson' | 'web' | 'shared';
+  /** How the coach chose where the drill comes from (mittSourcing.ts). */
+  decision?: { choice: 'shared' | 'web' | 'db'; reason: string };
+  /** source 'web': the pages the drill was built from. */
+  webSources?: { title: string; url: string }[];
+  /** source 'shared': the shared combo/setup it was loaded from. */
+  shared?: { id: string; authorNickname: string; likeCount: number; kind: 'combo' | 'setup' };
+  /** Techniques the author wrote that MARTIALDEX could not match (never invented). */
+  unmapped?: string[];
 }
 
 const MASTERY_WEIGHT: Record<MasteryStatus, number> = { not_started: 0, needs_improvement: 0, learning: 1, average: 2, proficient: 3 };
@@ -97,6 +106,8 @@ export async function generateMittPlan(input: {
   contextTechniqueIds?: string[];
   /** The previous plan, when the user asks to change it ("더 쉽게", "더 빠르게"). */
   previous?: MittPlan | null;
+  /** Live web search results to build from (titles, urls, excerpts) — see mittSourcing.ts. */
+  researchText?: string;
 }): Promise<{ ok: true; plan: MittPlan } | { ok: false; message: string }> {
   const all = listVisualizableTechniques();
   const pool = (input.martialArt ? all.filter((t) => techniqueArts(t).includes(input.martialArt!) || ['boxing', 'kickboxing', 'wrestling'].some((a) => techniqueArts(t).includes(a))) : all).slice(0, 120);
@@ -114,12 +125,14 @@ export async function generateMittPlan(input: {
       '- 2~5단계. 실제로 자연스럽게 이어지는 순서만 쓴다. 테이크다운 진입은 보통 마지막에 둔다.',
       '- [오늘 수업 기술]이 목적에 맞으면 우선 사용한다. 숙련도가 낮으면 더 단순하게 만든다.',
       '- repetitions(3~10)와 speed("slow"|"normal"|"fast")를 숙련도·복잡도에 맞게 정한다.',
+      input.researchText ? '- [실시간 검색 자료]에서 이 목적에 맞는 미트 훈련 방법을 참고해 만든다. 자료에 나온 기술도 반드시 [사용 가능한 기술] 목록의 id로만 쓰고, 자료에 없는 내용을 지어내지 않는다.' : '',
       `- note, purpose, coachingNote는 짧은 한국어. ${TUTOR_SPEECH_RULE}`,
       '출력: {"type": "combo"|"setup", "name": string, "purpose": string, "steps": [{"techniqueId": string, "note": string, "opponentReaction": string|null}], "repetitions": number, "speed": string, "coachingNote": string}',
-    ].join('\n'),
+    ].filter(Boolean).join("\n"),
     contextText: [
       `[사용 가능한 기술]\n${[...byId.values()].map(line).join('\n')}`,
       context.length ? `[오늘 수업 기술]\n${context.map(line).join('\n')}` : '',
+      input.researchText ? `[실시간 검색 자료]\n${input.researchText}` : '',
       input.previous ? `[이전에 만든 연습]\n${input.previous.type} ${input.previous.name}: ${input.previous.combo.steps.map((s) => s.technique.name).join(' → ')} (${input.previous.repetitions}회, ${input.previous.speed})` : '',
     ]
       .filter(Boolean)

@@ -38,6 +38,7 @@ export function createCombo(input: {
   aiComboMeta?: Combo['aiComboMeta'];
   sourceMeta?: Combo['sourceMeta'];
   visualMittMeta?: Combo['visualMittMeta'];
+  sharedMeta?: Combo['sharedMeta'];
 }): Combo {
   const now = new Date().toISOString();
   const combo: Combo = {
@@ -51,6 +52,7 @@ export function createCombo(input: {
     ...(input.aiComboMeta ? { aiComboMeta: input.aiComboMeta } : {}),
     ...(input.sourceMeta ? { sourceMeta: input.sourceMeta } : {}),
     ...(input.visualMittMeta ? { visualMittMeta: input.visualMittMeta } : {}),
+    ...(input.sharedMeta ? { sharedMeta: input.sharedMeta } : {}),
   };
   comboRepository.save(combo);
   return combo;

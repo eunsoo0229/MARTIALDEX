@@ -224,3 +224,22 @@ export function reorderExercise(routine: GymRoutine, weekday: Weekday, fromIndex
   gymRoutineRepository.save(updated);
   return updated;
 }
+
+/**
+ * "루틴 복사/붙여넣기" — puts a copy of one day's exercises (order, sets,
+ * per-set reps/weights, seconds, rest) onto each of `weekdays`, replacing
+ * what those days had. Each target gets its OWN deep copy, so editing
+ * Wednesday later never changes Monday. `exercises` may come from another
+ * routine (the clipboard isn't tied to one routine). An empty list clears
+ * the target days (they become rest days).
+ */
+export function pasteDayToWeekdays(routine: GymRoutine, exercises: GymRoutineExerciseTarget[], weekdays: Weekday[]): GymRoutine {
+  const targets = new Set(weekdays);
+  const copy = () => exercises.map((e) => ({ ...e, targetReps: [...e.targetReps], targetWeightKg: [...e.targetWeightKg] }));
+  const kept = routine.days.filter((d) => !targets.has(d.weekday)).map((d) => ({ ...d, exercises: [...d.exercises] }));
+  const pasted = [...targets].map((weekday) => ({ weekday, exercises: copy() }));
+  const days = [...kept, ...pasted].filter((d) => d.exercises.length > 0).sort((a, b) => a.weekday - b.weekday);
+  const updated: GymRoutine = { ...routine, days, updatedAt: new Date().toISOString() };
+  gymRoutineRepository.save(updated);
+  return updated;
+}

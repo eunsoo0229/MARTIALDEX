@@ -267,10 +267,14 @@ async function main() {
     if ((await page.locator('[data-testid="coach-step"]').getAttribute('data-step')) === 'summary') break;
     await page.locator('button', { hasText: '질문 건너뛰기' }).click();
     await page.locator('[data-testid="coach-ready"] button').click();
-    await page.locator('[data-testid="coach-timer"]').waitFor();
+    await page.locator('[data-testid="coach-posture-start"]').click(); // 자세 설명 → 실습 시작
+    // practice = timer, the Visualizing Mitt (striking) or the solo call-out drill (wrestling/BJJ standing at home)
+    await page.locator('[data-testid="coach-timer"], [data-testid="coach-mitt"], [data-testid="coach-drill"]').first().waitFor();
     instructionSeen ||= (await page.locator('[data-testid="coach-plan-instruction"]').count()) > 0;
     await sleep(1300);
-    await page.locator('button', { hasText: '여기서 끝내기' }).click();
+    if (await page.locator('[data-testid="coach-timer"]').count()) await page.locator('button', { hasText: '여기서 끝내기' }).click();
+    else if (await page.locator('[data-testid="coach-mitt"]').count()) await page.locator('[data-testid="mitt-runner-stop"]').click();
+    else await page.locator('[data-testid="solo-drill-stop"]').click();
     // 수행 후 질문: the coach asks what was applied before moving on.
     await page.waitForFunction(() => document.querySelector('[data-testid="coach-step"]')?.dataset.step === 'review', null, { timeout: 10000 });
     feedbackSeen ||= await page.evaluate(() => [...document.querySelectorAll('[data-testid="coach-chat"] .ai-msg[data-kind="quiz"]')].some((m) => /방금 (하신 동작|실제로 적용|연습하면서)/.test(m.textContent) || /적용해 본 것/.test(m.textContent)));

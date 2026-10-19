@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, lazy, Suspense } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { getUnifiedAllTechniques, getUnifiedMartialArt, resolveTechnique, resolveTechniquesByIds } from '../lib/userTechniques/service';
 import DifficultyBadge from '../components/DifficultyBadge';
@@ -6,6 +6,8 @@ import AiAskModal from '../components/AiAskModal';
 import RelatedVideos from '../components/RelatedVideos';
 import PoseAnalysisModal from '../components/PoseAnalysisModal';
 import PoseHistoryModal from '../components/PoseHistoryModal';
+// loaded only when opened (keeps this page's first load unchanged)
+const FormCompareModal = lazy(() => import('../components/formCompare/FormCompareModal'));
 import { recordRecentlyViewed, useFavorites } from '../lib/userData';
 import { isPoseAnalysisSupported } from '../lib/poseAnalysis/poseAnalysisConfig';
 import { useTechniqueRecords, useTechniqueSkillSummary } from '../lib/poseAnalysis/usePoseRecords';
@@ -22,6 +24,10 @@ import { submitTechniqueReport } from '../lib/techniqueReports/service';
 import { REPORT_REASON_ORDER, REPORT_REASON_LABEL, type ReportReason } from '../lib/techniqueReports/types';
 import BackButton from '../components/BackButton';
 import PostureSection from '../components/PostureSection';
+import GrapplingStylePanel from '../components/GrapplingStylePanel';
+import { getGiNoGi } from '../lib/grappling/giNoGi';
+import { getLocalGiNoGi, isGiNoGiTarget, LOCAL_GI_NOGI_EVENT } from '../lib/grappling/analyzeNewTechnique';
+import GiNoGiResearch from '../components/GiNoGiResearch';
 import { isTechniqueInArt, techniqueArts, techniqueCategoryInArt, techniqueNameInArt } from '../lib/techniqueCanonical';
 
 const MASTERY_OPTIONS: MasteryStatus[] = ['not_started', 'learning', 'average', 'proficient', 'needs_improvement'];
@@ -67,9 +73,21 @@ export default function TechniqueDetail() {
   // A merged-away id (e.g. bjj__granby-roll) opens its canonical technique;
   // every per-technique record (mastery, pose records) is keyed by that id.
   const canonicalId = technique?.id ?? techniqueId;
+  // Official techniques: the curated file. Added techniques: a re-research on this device, else the record saved when it was added.
+  const [, setLocalTick] = useState(0);
+  useEffect(() => {
+    const on = () => setLocalTick((n) => n + 1);
+    window.addEventListener(LOCAL_GI_NOGI_EVENT, on);
+    return () => window.removeEventListener(LOCAL_GI_NOGI_EVENT, on);
+  }, []);
+  const curatedGiNoGi = getGiNoGi(canonicalId);
+  const addedGiNoGi = curatedGiNoGi ? null : (getLocalGiNoGi(canonicalId) ?? technique?.giNoGi ?? null);
+  const giNoGi = curatedGiNoGi ?? (addedGiNoGi && addedGiNoGi.method !== 'pending' ? addedGiNoGi : null);
+  const canResearchGiNoGi = !!technique && !curatedGiNoGi && isGiNoGiTarget(technique) && (!addedGiNoGi || addedGiNoGi.method === 'pending' || addedGiNoGi.method === 'ai_rejected');
   const [aiOpen, setAiOpen] = useState(false);
   const [poseOpen, setPoseOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
+  const [compareOpen, setCompareOpen] = useState(false);
   const { isFavorite, toggleFavorite } = useFavorites();
   const skillSummary = useTechniqueSkillSummary(canonicalId);
   const skillProgress = useSkillProgress(canonicalId);
@@ -210,8 +228,19 @@ export default function TechniqueDetail() {
                 </button>
               </>
             ) : (
-              <span className="pose-unsupported-note">현재 이 기술은 카메라 자세 분석을 지원하지 않습니다.</span>
+              <>
+                <span className="pose-unsupported-note">관절 지표 자세 분석은 이 기술을 지원하지 않습니다 — 기준 영상 비교 평가를 이용해 주세요.</span>
+                {skillSummary.analysisCount > 0 && (
+                  <button className="btn btn-secondary" onClick={() => setHistoryOpen(true)}>
+                    📊 분석 기록 ({skillSummary.analysisCount})
+                  </button>
+                )}
+              </>
             )}
+            {/* 기준 시연 영상 ↔ 내 수행 영상 AI 비교 — every technique (criteria are built from the reference video). */}
+            <button className="btn btn-primary" onClick={() => setCompareOpen(true)} data-testid="form-compare-open">
+              🎬 기준 영상과 비교해 평가
+            </button>
           </div>
         </div>
 
@@ -296,7 +325,11 @@ export default function TechniqueDetail() {
                   ))}
               </InfoCard>
             )}
-            {technique.posture ? (
+            {canResearchGiNoGi && <GiNoGiResearch technique={technique} failedReason={addedGiNoGi?.reason ?? null} />}
+            {/* Grappling techniques: one Gi / No-Gi panel switches posture + videos together. Others: unchanged. */}
+            {giNoGi ? (
+              <GrapplingStylePanel key={technique.id} technique={technique} record={giNoGi} />
+            ) : technique.posture ? (
               <PostureSection posture={technique.posture} />
             ) : (
               <InfoCard title="자세 잡기" icon="🧍">
@@ -309,7 +342,7 @@ export default function TechniqueDetail() {
             <ListCard title="카운터" icon="⚔" items={technique.counters} />
             <ListCard title="연결 기술" icon="➡" items={technique.transitions} />
 
-            <RelatedVideos technique={technique} />
+            {!giNoGi && <RelatedVideos technique={technique} />}
           </div>
 
           <div>
@@ -330,6 +363,10 @@ export default function TechniqueDetail() {
                   <strong>{skillProgress.practiceCount}회</strong>
                   <span>학습 횟수</span>
                 </div>
+                <div data-testid="skill-coach-lessons">
+                  <strong>{skillProgress.coachLessonCount}회</strong>
+                  <span>AI 코치 수업 (이해+연습 {skillProgress.coachMasteredDays}일)</span>
+                </div>
                 <div>
                   <strong>{formatRelativeDays(skillProgress.lastPracticedAt)}</strong>
                   <span>최근 학습</span>
@@ -340,6 +377,11 @@ export default function TechniqueDetail() {
                 </div>
               </div>
 
+              {skillProgress.analysisCount === 0 && skillProgress.coachLessonCount > 0 && !skillProgress.userOverride && (
+                <p className="video-status-message" style={{ margin: '4px 0' }} data-testid="skill-coach-basis">
+                  AI 코치 수업 기록으로 정한 숙련도입니다 — 수업에서 이해하고 연습까지 마친 날이 1일 이상이면 보통, 3일 이상이면 숙련. 카메라 자세 분석을 하면 그 측정 결과가 우선합니다.
+                </p>
+              )}
               {scoreRecords.length >= 2 ? (
                 <>
                   <div className="field-label" style={{ marginTop: 8 }}>
@@ -541,6 +583,11 @@ export default function TechniqueDetail() {
       {aiOpen && <AiAskModal onClose={() => setAiOpen(false)} technique={technique} />}
       {poseOpen && <PoseAnalysisModal technique={technique} onClose={() => setPoseOpen(false)} />}
       {historyOpen && <PoseHistoryModal technique={technique} onClose={() => setHistoryOpen(false)} />}
+      {compareOpen && (
+        <Suspense fallback={null}>
+          <FormCompareModal technique={technique} onClose={() => setCompareOpen(false)} />
+        </Suspense>
+      )}
     </div>
   );
 }

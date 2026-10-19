@@ -13,7 +13,7 @@ export const COACH_DAY_CONFIG = {
   /** Fraction of a Day's estimatedMinutes treated as hands-on practice (the rest is explanation/videos/rest). */
   practiceShareOfDay: 0.6,
   /** Max seconds of audio recorded for one spoken question. */
-  maxRecordSeconds: 15,
+  maxRecordSeconds: 60,
 };
 
 export type CueTrigger = { kind: 'elapsed'; seconds: number } | { kind: 'remaining'; seconds: number } | { kind: 'end' } | { kind: 'reminder'; atFraction: number };

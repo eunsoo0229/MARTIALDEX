@@ -234,6 +234,112 @@ export interface CoachingSynthesisResult {
   overallFeedback?: string | null;
 }
 
+// ---------------- 스파링 분석 2.0: 선수 식별 · 약점 장면 · 클립 ----------------
+
+export type WeaknessStatus = 'observed' | 'tentative' | 'on_hold';
+
+export const WEAKNESS_STATUS_LABEL: Record<WeaknessStatus, string> = {
+  observed: '확인된 관찰',
+  tentative: '근거가 있는 잠정적 분석',
+  on_hold: '판단 보류',
+};
+
+export interface WeaknessOccurrence {
+  /** When the problem happens in the ORIGINAL video (seconds). */
+  eventSec: number;
+  /** Clip window around it in the original video (clamped to the video). */
+  startSec: number;
+  endSec: number;
+  note: string;
+}
+
+/** How the confidence number was built — shown to the user next to it. */
+export interface WeaknessConfidenceBasis {
+  /** Share of frames in the scenes where the tracked person looked like "me" (attire) — 0.6 when no attire was given (position tracking only). */
+  identity: number;
+  /** Share of opportunities where the needed body points were actually visible. */
+  observability: number;
+  /** occurrences / opportunities. */
+  consistency: number;
+  /** 1 = measured geometry; lower when it rests on AI-estimated technique names. */
+  classification: number;
+  /** No labelled ground-truth data exists yet — this is a provisional index. */
+  calibrated: false;
+  notes: string[];
+}
+
+export interface SparringWeakness {
+  id: string;
+  subject: 'me';
+  martialArt: string;
+  situationType:
+    | 'post_attack_guard'
+    | 'no_reaction'
+    | 'static_after_attack'
+    | 'late_guard_drop'
+    | 'single_attacks'
+    // grappling (wrestling / judo / sambo / bjj / MMA)
+    | 'takedown_no_finish'
+    | 'no_takedown_defense'
+    | 'clinch_posture_break'
+    | 'bottom_position';
+  title: string;
+  description: string;
+  /** What the video data directly shows. */
+  observedEvidence: string[];
+  /** Interpretation built on that evidence — never shown as fact. */
+  inference: string;
+  recommendation: string;
+  startSec: number;
+  eventSec: number;
+  endSec: number;
+  occurrences: WeaknessOccurrence[];
+  opportunities: number;
+  /** 0–100 provisional index (see confidenceBasis). */
+  confidence: number;
+  confidenceBasis: WeaknessConfidenceBasis;
+  status: WeaknessStatus;
+  /** The user's own check after watching the clip: true = 맞아요, false = 아니에요, null = not checked. */
+  verifiedOnVideo: boolean | null;
+  relatedTechniqueIds: string[];
+  curriculumId: string | null;
+  clipIds: string[];
+}
+
+export type SparringClipStatus = 'pending' | 'ready' | 'failed';
+
+/** A clip cut from the ORIGINAL video; the media itself lives in IndexedDB (clipStore.ts). */
+export interface SparringClip {
+  id: string;
+  /** Requested window in the original video. */
+  startSec: number;
+  endSec: number;
+  /** What the recorder really captured (first/last frame media time of the original). */
+  actualStartSec: number | null;
+  actualEndSec: number | null;
+  weaknessIds: string[];
+  status: SparringClipStatus;
+  error: string | null;
+  sizeBytes: number | null;
+  mimeType: string | null;
+  createdAt: string;
+}
+
+export interface IdentificationSummary {
+  method: 'manual' | 'manual+attire';
+  attire: import('./attire').SparringAttire | null;
+  /** Attire-based suggestion shown on the person-select screen, and whether the user picked it. */
+  suggestion: { index: number; confidence: number; followed: boolean } | null;
+  observedFrames: number;
+  meFrames: number;
+  opponentLikeFrames: number;
+  unclearFrames: number;
+  /** Frames dropped from analysis because the tracked person looked like the opponent (possible ID swap). */
+  excludedFrames: number;
+  /** meFrames / observedFrames (null when attire couldn't be compared at all). */
+  consistency: number | null;
+}
+
 export interface SparringSession {
   id: string;
   date: string;
@@ -269,6 +375,12 @@ export interface SparringSession {
   visualInsights?: VisualEventInsight[];
   /** AI, optional — coachingSynthesis.ts. Explicit null (not just absent) means the call was attempted and failed/parsed-invalid, so the UI can distinguish "not tried" from "tried, no result" if it ever matters. */
   coachingSynthesis?: CoachingSynthesisResult | null;
+  // ---- 2.0 (all optional: older sessions stay valid) ----
+  identification?: IdentificationSummary;
+  weaknesses?: SparringWeakness[];
+  clips?: SparringClip[];
+  /** Why fewer/no weakness scenes were reported (e.g. unsupported sport, no opponent tracking). */
+  weaknessNotes?: string[];
 }
 
 export const MIN_SAMPLE_INTERVAL_SEC = 1;

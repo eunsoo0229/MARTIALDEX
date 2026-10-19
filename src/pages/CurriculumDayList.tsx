@@ -167,6 +167,40 @@ export default function CurriculumDayList() {
 
         {manualCopyCode && <ManualCopyBox text={manualCopyCode} onClose={() => setManualCopyCode(null)} />}
 
+        {curriculum.sparringAnalysisMeta && (
+          <div className="card info-card" data-testid="sparring-curriculum-meta">
+            <h3 style={{ marginTop: 0 }}>🥊 스파링 분석에서 온 커리큘럼</h3>
+            <p>
+              해결하려는 약점: {curriculum.sparringAnalysisMeta.weakAreaLabels.join(', ')}{' '}
+              <Link to={`/sparring/${curriculum.sparringAnalysisMeta.sparringSessionId}`}>분석·약점 장면 보기</Link>
+            </p>
+            {curriculum.sparringAnalysisMeta.webResearch && (
+              <p className="technique-row__sub" data-testid="sparring-curriculum-research">
+                실시간 웹 검색:{' '}
+                {curriculum.sparringAnalysisMeta.webResearch.status === 'ok'
+                  ? `자료 ${curriculum.sparringAnalysisMeta.webSources?.length ?? 0}개 참고 (검색어 ${curriculum.sparringAnalysisMeta.webResearch.queries.length}개)`
+                  : curriculum.sparringAnalysisMeta.webResearch.note}
+              </p>
+            )}
+            {(curriculum.sparringAnalysisMeta.webSources ?? []).length > 0 && (
+              <details>
+                <summary>참고한 웹 자료 (웹 페이지의 설명이며 Martialdex 검증 정보가 아닙니다)</summary>
+                <ul>
+                  {curriculum.sparringAnalysisMeta.webSources!.map((s) => (
+                    <li key={s.url}>
+                      <a href={s.url} target="_blank" rel="noreferrer">
+                        {s.title}
+                      </a>{' '}
+                      <span className="technique-row__sub">({s.domain})</span>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            )}
+            <p className="technique-row__sub">완료 조건과 재평가: 각 Day를 실제로 마치면 완료로 표시됩니다. 커리큘럼을 마친 뒤 새 스파링 영상을 분석하면 같은 약점 장면이 줄었는지 이전 분석과 비교해 보여줍니다.</p>
+          </div>
+        )}
+
         {progress && (
           <div className="progress-track" style={{ marginBottom: 24 }}>
             <div className="progress-fill" style={{ width: `${progress.progress}%` }} />

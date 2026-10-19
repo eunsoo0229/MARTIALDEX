@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
+import TagPicker from '../shorts/TagPicker';
+import type { PostTag } from '../../lib/communityPost/types';
 import BottomSheet from '../BottomSheet';
 import { useMyCurricula } from '../../lib/curriculum/useCurriculum';
 import { listMyGyms } from '../../lib/gymClass/service';
@@ -33,6 +35,7 @@ export default function PostComposer({ onClose, onCreated, currentUserId, curren
   const [gyms, setGyms] = useState<MyGymMembership[]>([]);
   const [selectedGymId, setSelectedGymId] = useState('');
   const [selectedCurriculumId, setSelectedCurriculumId] = useState('');
+  const [tags, setTags] = useState<PostTag[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -83,6 +86,7 @@ export default function PostComposer({ onClose, onCreated, currentUserId, curren
       media: media.map((m) => ({ file: m.file, type: m.type })),
       gym: selectedGym ? { id: selectedGym.gym.id, name: selectedGym.gym.name } : null,
       curriculumSnapshot: selectedCurriculum ? buildCurriculumSnapshot(selectedCurriculum) : null,
+      tags,
     });
     setSubmitting(false);
     if (!result.ok) {
@@ -124,6 +128,10 @@ export default function PostComposer({ onClose, onCreated, currentUserId, curren
           📷 사진/영상 추가
           <input type="file" accept="image/*,video/*" multiple hidden onChange={handleFileChange} disabled={media.length >= MAX_MEDIA_ITEMS} />
         </label>
+      </div>
+
+      <div style={{ marginTop: 12 }}>
+        <TagPicker value={tags} onChange={setTags} viewerId={currentUserId} />
       </div>
 
       <div className="chip-row" style={{ marginTop: 12 }}>

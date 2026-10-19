@@ -80,8 +80,8 @@ export default function TodayReview() {
   const myCurricula = listMyCurricula();
 
   // 19-5: as soon as every technique in today's review session is checked
-  // off, finalize once — writes the trainingHistory entry (source: 'review'),
-  // exactly like 13-5's TodayTraining auto-finish.
+  // off, finalize once — closes the review-log entry (NOT a training record:
+  // reviewing isn't training), like 13-5's TodayTraining auto-finish.
   useEffect(() => {
     if (session && isFullyComplete && !session.finishedAt) {
       finish();
@@ -273,7 +273,7 @@ export default function TodayReview() {
               <span>완료율</span>
             </div>
           </div>
-          <p className="video-status-message">오늘의 복습을 완료했습니다. 학습 기록에 저장되었습니다.</p>
+          <p className="video-status-message">오늘의 복습을 완료했습니다. 복습 기록에 저장되었습니다 (훈련 기록과는 따로 보관됩니다).</p>
 
           <div className="card info-card">
             <h3>다시 자세 분석하기</h3>
@@ -288,8 +288,8 @@ export default function TodayReview() {
           </div>
 
           <div className="modal-actions modal-actions--start">
-            <Link to="/my-skills" className="btn btn-secondary">
-              학습 기록 보기
+            <Link to="/review" className="btn btn-secondary">
+              복습 메인으로
             </Link>
             <Link to="/coach" className="btn btn-ghost">
               AI 코치로 돌아가기

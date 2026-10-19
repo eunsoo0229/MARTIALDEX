@@ -13,7 +13,9 @@ import type {
   CommunityPostMedia,
   CommunityPostType,
   CommunityRepost,
+  PostTag,
 } from './types';
+import { MAX_POST_TAGS } from './types';
 
 // Same "live Supabase read, no local cache" pattern as marketplace/service.ts
 // and gymClass/service.ts — this is other users' content, so a local-first
@@ -37,6 +39,15 @@ function mapMedia(row: Record<string, unknown>): CommunityPostMedia {
   };
 }
 
+/** Tags from the row — only well-formed entries (the column is free-form jsonb). */
+export function sanitizeTags(v: unknown): PostTag[] {
+  if (!Array.isArray(v)) return [];
+  return v
+    .filter((t): t is PostTag => !!t && typeof t === 'object' && (t.type === 'technique' || t.type === 'combo') && typeof t.id === 'string' && typeof t.name === 'string')
+    .map((t) => ({ type: t.type, id: t.id, name: t.name, martialArt: typeof t.martialArt === 'string' ? t.martialArt : null, ...(t.kind === 'combo' || t.kind === 'setup' ? { kind: t.kind } : {}) }))
+    .slice(0, MAX_POST_TAGS);
+}
+
 function mapPost(row: Record<string, unknown>, media: CommunityPostMedia[]): CommunityPost {
   const content = row.content as string;
   return {
@@ -50,6 +61,7 @@ function mapPost(row: Record<string, unknown>, media: CommunityPostMedia[]): Com
     gymId: (row.gym_id as string | null) ?? null,
     gymName: (row.gym_name as string | null) ?? null,
     curriculumSnapshot: (row.curriculum_snapshot as CommunityCurriculumSnapshot | null) ?? null,
+    tags: sanitizeTags(row.tags),
     likeCount: row.like_count as number,
     commentCount: row.comment_count as number,
     saveCount: row.save_count as number,
@@ -72,6 +84,8 @@ function mapComment(row: Record<string, unknown>): CommunityComment {
     createdAt: row.created_at as string,
     parentCommentId: (row.parent_comment_id as string | null | undefined) ?? null,
     replyCount: (row.reply_count as number | undefined) ?? 0,
+    likeCount: (row.like_count as number | undefined) ?? 0,
+    viewerHasLiked: false,
   };
 }
 
@@ -296,6 +310,7 @@ export interface CreatePostInput {
   media: { file: File; type: 'image' | 'video' }[];
   gym?: { id: string; name: string } | null;
   curriculumSnapshot?: CommunityCurriculumSnapshot | null;
+  tags?: PostTag[];
 }
 
 /** Every combination is supported (text-only / photo / video / photo+video / +curriculum) — media is entirely optional, matching AiMealPhotoModal's own "no photo required" precedent. */
@@ -322,6 +337,8 @@ export async function createPost(input: CreatePostInput): Promise<AuthResult<Com
       gym_id: input.gym?.id ?? null,
       gym_name: input.gym?.name ?? null,
       curriculum_snapshot: input.curriculumSnapshot ?? null,
+      // only sent when there are tags, so untagged posts keep working on a DB without the column yet
+      ...(input.tags?.length ? { tags: sanitizeTags(input.tags) } : {}),
     });
     if (postError) return { ok: false, message: toKoreanAuthMessage(postError) };
 
@@ -469,14 +486,47 @@ export async function unrepost(userId: string, originalPostId: string): Promise<
   }
 }
 
-/** Top-level comments only (parentCommentId null) — replies are fetched separately via listReplies(), lazily, only once the user expands a comment's "답글 N개" (spec section 9's "너무 복잡해지지 않도록"). */
+/** This viewer's likes on a batch of comments. */
+async function withViewerLikes(comments: CommunityComment[], viewerUserId: string | null): Promise<CommunityComment[]> {
+  if (!supabase || !viewerUserId || comments.length === 0) return comments;
+  const { data, error } = await supabase.from('community_comment_likes').select('comment_id').eq('user_id', viewerUserId).in('comment_id', comments.map((c) => c.id));
+  if (error) return comments; // likes table not deployed yet → just no hearts lit
+  const liked = new Set((data ?? []).map((r) => (r as { comment_id: string }).comment_id));
+  return comments.map((c) => ({ ...c, viewerHasLiked: liked.has(c.id) }));
+}
+
+export type CommentSort = 'popular' | 'latest';
+
+/**
+ * Top-level comments only (parentCommentId null) — replies come from listReplies(), lazily.
+ * 'popular' (TikTok/Instagram default): most liked first (offset cursor "p:<n>");
+ * 'latest': oldest → newest by time (created_at cursor), the original behaviour.
+ */
 export async function listComments(
   postId: string,
   cursor?: string | null,
-  limit = 20
+  limit = 20,
+  opts: { sort?: CommentSort; viewerUserId?: string | null } = {}
 ): Promise<AuthResult<{ comments: CommunityComment[]; nextCursor: string | null }>> {
   if (!supabase) return { ok: false, message: NOT_CONFIGURED };
+  const sort = opts.sort ?? 'latest';
   try {
+    if (sort === 'popular') {
+      const offset = cursor?.startsWith('p:') ? Number(cursor.slice(2)) || 0 : 0;
+      const { data, error } = await supabase
+        .from('community_post_comments')
+        .select('*')
+        .eq('post_id', postId)
+        .is('parent_comment_id', null)
+        .order('like_count', { ascending: false })
+        .order('created_at', { ascending: true })
+        .range(offset, offset + limit - 1);
+      if (!error) {
+        const comments = await withViewerLikes((data ?? []).map(mapComment), opts.viewerUserId ?? null);
+        return { ok: true, data: { comments, nextCursor: comments.length === limit ? `p:${offset + limit}` : null } };
+      }
+      // like_count not deployed yet → fall through to time order
+    }
     let q = supabase
       .from('community_post_comments')
       .select('*')
@@ -484,10 +534,10 @@ export async function listComments(
       .is('parent_comment_id', null)
       .order('created_at', { ascending: true })
       .limit(limit);
-    if (cursor) q = q.gt('created_at', cursor);
+    if (cursor && !cursor.startsWith('p:')) q = q.gt('created_at', cursor);
     const { data, error } = await q;
     if (error) return { ok: false, message: toKoreanAuthMessage(error) };
-    const comments = (data ?? []).map(mapComment);
+    const comments = await withViewerLikes((data ?? []).map(mapComment), opts.viewerUserId ?? null);
     const nextCursor = comments.length === limit ? comments[comments.length - 1].createdAt : null;
     return { ok: true, data: { comments, nextCursor } };
   } catch (e) {
@@ -495,8 +545,8 @@ export async function listComments(
   }
 }
 
-/** All replies to one top-level comment, oldest first — called only when the user expands that comment (spec section 9). Capped at 200: a single comment realistically never needs true pagination for this app's scale. */
-export async function listReplies(parentCommentId: string): Promise<AuthResult<CommunityComment[]>> {
+/** All replies to one top-level comment, oldest first — called only when the user expands that comment. Capped at 200. */
+export async function listReplies(parentCommentId: string, viewerUserId: string | null = null): Promise<AuthResult<CommunityComment[]>> {
   if (!supabase) return { ok: false, message: NOT_CONFIGURED };
   try {
     const { data, error } = await supabase
@@ -506,7 +556,29 @@ export async function listReplies(parentCommentId: string): Promise<AuthResult<C
       .order('created_at', { ascending: true })
       .limit(200);
     if (error) return { ok: false, message: toKoreanAuthMessage(error) };
-    return { ok: true, data: (data ?? []).map(mapComment) };
+    return { ok: true, data: await withViewerLikes((data ?? []).map(mapComment), viewerUserId) };
+  } catch (e) {
+    return { ok: false, message: toKoreanAuthMessage(e) };
+  }
+}
+
+export async function likeComment(commentId: string, userId: string): Promise<AuthResult<void>> {
+  if (!supabase) return { ok: false, message: NOT_CONFIGURED };
+  try {
+    const { error } = await supabase.from('community_comment_likes').insert({ comment_id: commentId, user_id: userId });
+    if (error && !isDuplicateKeyError(error)) return { ok: false, message: toKoreanAuthMessage(error) };
+    return { ok: true, data: undefined };
+  } catch (e) {
+    return { ok: false, message: toKoreanAuthMessage(e) };
+  }
+}
+
+export async function unlikeComment(commentId: string, userId: string): Promise<AuthResult<void>> {
+  if (!supabase) return { ok: false, message: NOT_CONFIGURED };
+  try {
+    const { error } = await supabase.from('community_comment_likes').delete().eq('comment_id', commentId).eq('user_id', userId);
+    if (error) return { ok: false, message: toKoreanAuthMessage(error) };
+    return { ok: true, data: undefined };
   } catch (e) {
     return { ok: false, message: toKoreanAuthMessage(e) };
   }

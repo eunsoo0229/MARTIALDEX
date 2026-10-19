@@ -150,7 +150,7 @@ async function main() {
   // ============ 1. NAV MENU ============
   check('Nav has "AI 코치" link', (await clickText('AI 코치', 'a')) === 'OK');
   await new Promise((r) => setTimeout(r, 400));
-  check('Landed on AI Coach page', ((await textOf('.section-title h2')) ?? '').includes('AI 개인 코치'));
+  check('Landed on AI Coach page', ((await textOf('.section-title h2')) ?? '').includes('AI 코치'));
   await shot('01-coach-hub');
 
   // ============ 2. STATS REFLECT SEEDED DATA ============

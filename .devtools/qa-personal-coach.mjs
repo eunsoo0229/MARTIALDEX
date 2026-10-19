@@ -75,13 +75,17 @@ async function main() {
 
   // ---- UI: full flow ----
   await page.evaluate(() => { location.hash = '#/personal-coach'; });
-  await sleep(500);
+  await sleep(800);
+  const redirected = await page.evaluate(() => ({ hash: location.hash, moved: !!document.querySelector('[data-testid="personal-coach-moved"]') }));
+  check('[통합] 이전 /personal-coach 주소 → AI 코치(/coach/lesson)로 이동 + 안내', redirected.hash.startsWith('#/coach/lesson') && redirected.moved, redirected);
+  const menu = await page.evaluate(() => [...document.querySelectorAll('header a, nav a')].map((a) => a.getAttribute('href') ?? ''));
+  check('[통합] 메뉴에 별도 AI Personal Coach 진입점 없음', !menu.some((h) => h.includes('personal-coach')), menu.filter((h) => /coach/.test(h)));
   await page.fill('textarea', '복싱 풋워크가 부족한 것 같아.');
-  await page.click('button:has-text("AI에게 물어보기")');
-  await page.waitForFunction(() => !document.body.innerText.includes('분석하고 있습니다'), { timeout: 30000 });
+  await page.click('[data-testid="personal-coach-analyze"]');
+  await page.waitForFunction(() => !!document.querySelector('[data-testid="personal-coach-result"]'), { timeout: 30000 });
   await sleep(300);
   let bodyText = await page.evaluate(() => document.body.innerText);
-  check('[UI] AI 분석 결과와 바로가기 섹션이 표시됨', bodyText.includes('AI 분석') && bodyText.includes('추천 훈련') && bodyText.includes('바로가기'), bodyText.slice(0, 600));
+  check('[UI] AI 분석 결과와 바로가기 섹션이 표시됨', bodyText.includes('내 기록 분석') && bodyText.includes('추천 훈련') && bodyText.includes('훈련 기록'), bodyText.slice(0, 600));
   check('[4][기존 기능 바로가기] 8개 화면으로 이동하는 링크 존재(커리큘럼/훈련하기/자세분석/스파링분석/콤보/전술/훈련기록)', bodyText.includes('커리큘럼') && bodyText.includes('훈련하기') && bodyText.includes('자세 분석') && bodyText.includes('스파링 분석') && bodyText.includes('콤보') && bodyText.includes('전술') && bodyText.includes('훈련 기록'), '');
 
   // ---- [3] "이 추천으로 커리큘럼 만들기" hands off to the EXISTING curriculum system with prefilled text ----
@@ -101,10 +105,10 @@ async function main() {
   await page.evaluate(() => { location.hash = '#/personal-coach'; });
   await sleep(500);
   await page.fill('textarea', '내 훈련 기록을 보고 부족한 부분을 알려줘.');
-  await page.click('button:has-text("AI에게 물어보기")');
-  await page.waitForFunction(() => !document.body.innerText.includes('분석하고 있습니다'), { timeout: 30000 });
+  await page.click('[data-testid="personal-coach-analyze"]');
+  await page.waitForFunction(() => !!document.querySelector('[data-testid="personal-coach-result"]'), { timeout: 30000 });
   await sleep(300);
-  await page.click('a:has-text("훈련 기록")');
+  await page.click('[data-testid="personal-coach-result"] a:has-text("훈련 기록")');
   await sleep(500);
   let url = await page.evaluate(() => location.href);
   check('[4] "훈련 기록" 바로가기 -> /training-analytics 이동', url.includes('/training-analytics'), url);

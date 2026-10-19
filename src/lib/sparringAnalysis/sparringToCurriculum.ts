@@ -9,7 +9,10 @@ import { INTENSITY_PER_DAY, planGoalCurriculum } from '../aiCurriculum/curriculu
 import { validateCurriculumDays } from '../aiCurriculum/validator';
 import { computeAllSkillProgress } from '../skillProgress/weaknessEngine';
 import type { MasteryStatus } from '../skillProgress/types';
-import type { SparringSession } from './types';
+import type { SparringSession, SparringWeakness } from './types';
+import { runExpandedWebResearch } from '../webSearch/expandedSearch';
+import { getMartialArt } from '../loadData';
+import { updateSparringSession } from './sparringSessionService';
 
 // Upgraded from the original bare `searchTechniques(area.label, 4)` version
 // to reuse the EXACT SAME matching/planning pipeline "AI 맞춤 커리큘럼" uses
@@ -65,7 +68,9 @@ export interface SparringCurriculumOptions {
  * actually observed.
  */
 function buildSyntheticGoalAnalysis(session: SparringSession, focusAreaLabels?: string[]): GoalAnalysis {
-  const areaLabels = (focusAreaLabels && focusAreaLabels.length > 0 ? focusAreaLabels : session.weakAreas.map((a) => a.label)).slice(0, 5);
+  // 2.0 weakness scenes (measured, timestamped) come first, then the older weak-area labels.
+  const sceneTitles = (session.weaknesses ?? []).filter((w) => w.status !== 'on_hold' && w.verifiedOnVideo !== false).map((w) => w.title);
+  const areaLabels = [...new Set([...sceneTitles, ...(focusAreaLabels && focusAreaLabels.length > 0 ? focusAreaLabels : session.weakAreas.map((a) => a.label))])].slice(0, 6);
   const patternPhrases = (session.sequenceAnalysis?.repeatedPatterns ?? [])
     .slice(0, 3)
     .map((p) => `${p.fromTechniqueName} 이후 ${p.toTechniqueName ?? '후속 공격'} 연결`);
@@ -121,12 +126,86 @@ function buildSyntheticGoalAnalysis(session: SparringSession, focusAreaLabels?: 
   };
 }
 
+/** English search phrase per weakness type (sources are mostly English); the art name is prefixed. */
+const WEAKNESS_QUERY: Record<SparringWeakness['situationType'], string> = {
+  post_attack_guard: 'returning guard after punching drill',
+  no_reaction: 'defensive reaction drills for sparring',
+  static_after_attack: 'footwork angle after combination drill',
+  late_guard_drop: 'keeping hands up when tired drill',
+  single_attacks: 'combination drills to stop throwing single shots',
+  takedown_no_finish: 'finishing takedown after penetration step chain wrestling drill',
+  no_takedown_defense: 'sprawl takedown defense reaction drill',
+  clinch_posture_break: 'maintaining posture in clinch drill',
+  bottom_position: 'escaping bottom position hip escape guard recovery drill',
+};
+
+/** Login-walled social posts — not usable as training references. */
+const EXCLUDED_DOMAINS = ['facebook.com', 'instagram.com', 'tiktok.com', 'threads.net', 'x.com', 'twitter.com'];
+/** Forums/video sites are kept but ranked after dedicated coaching/editorial pages. */
+const LOW_PRIORITY_DOMAINS = ['reddit.com', 'youtube.com', 'quora.com', 'pinterest.com'];
+
+function domainOf(url: string): string {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return '';
+  }
+}
+
+/**
+ * Live web search (the existing Tavily path — webSearch/expandedSearch.ts)
+ * for the session's specific weaknesses only: one small wave (≤4 queries)
+ * to keep cost down. Returns real sources only; a failure or thin result is
+ * reported in `research`, never papered over with invented links.
+ */
+type SparringMeta = NonNullable<Curriculum['sparringAnalysisMeta']>;
+type WeaknessResearch = { sources: NonNullable<SparringMeta['webSources']>; research: NonNullable<SparringMeta['webResearch']> };
+
+async function researchWeaknesses(session: SparringSession, targets: SparringWeakness[]): Promise<WeaknessResearch> {
+  const art = getMartialArt(session.martialArt);
+  const artName = art?.nameEn ?? session.martialArt;
+  const picked = targets.slice(0, 3);
+  const queries = picked.map((w) => `${artName} ${WEAKNESS_QUERY[w.situationType]}`);
+  if (picked[0]) queries.push(`${art?.nameKo ?? ''} ${picked[0].title} 훈련 방법`.trim());
+  // No confident weakness scene → search for the measured weak areas instead (still the session's own data).
+  if (queries.length === 0) {
+    for (const a of session.weakAreas.slice(0, 2)) queries.push(`${artName} ${a.label} drills`, `${art?.nameKo ?? ''} ${a.label} 훈련 방법`.trim());
+  }
+  if (queries.length === 0) return { sources: [], research: { status: 'insufficient', queries: [], resultCount: 0, note: '검색할 약점이 없습니다.' } };
+  const outcome = await runExpandedWebResearch([queries.slice(0, 4)]);
+  if (outcome.notConfigured) return { sources: [], research: { status: 'unavailable', queries, resultCount: 0, note: '실시간 검색을 사용할 수 없어 기술 DB만으로 구성했습니다.' } };
+  if (!outcome.ok) return { sources: [], research: { status: 'failed', queries: outcome.executedQueries, resultCount: 0, note: `${outcome.errorMessage ?? '검색에 실패했습니다.'} 기술 DB만으로 구성했습니다.` } };
+  const perDomain = new Map<string, number>();
+  const sources: WeaknessResearch['sources'] = [];
+  const isIn = (list: string[], d: string) => list.some((x) => d === x || d.endsWith(`.${x}`));
+  const ranked = outcome.collected
+    .filter((r) => !isIn(EXCLUDED_DOMAINS, domainOf(r.url)))
+    .sort((a, b) => Number(isIn(LOW_PRIORITY_DOMAINS, domainOf(a.url))) - Number(isIn(LOW_PRIORITY_DOMAINS, domainOf(b.url))));
+  for (const r of ranked) {
+    const domain = domainOf(r.url);
+    if (!domain || ((r.content ?? r.snippet ?? '').trim().length < 120) || (perDomain.get(domain) ?? 0) >= 2) continue;
+    perDomain.set(domain, (perDomain.get(domain) ?? 0) + 1);
+    // Attribute each result to a weakness by its query keywords (collection order doesn't keep which query found it).
+    const text = `${r.title} ${r.snippet ?? ''}`.toLowerCase();
+    const owner = picked.find((w) => WEAKNESS_QUERY[w.situationType].split(' ').filter((k) => k.length > 4).some((k) => text.includes(k))) ?? null;
+    sources.push({ title: r.title, url: r.url, domain, weaknessId: owner?.id ?? null });
+    if (sources.length >= 8) break;
+  }
+  const status = sources.length >= 2 && new Set(sources.map((s) => s.domain)).size >= 2 ? 'ok' : 'insufficient';
+  return {
+    sources: status === 'ok' ? sources : [],
+    research: { status: status as WeaknessResearch['research']['status'], queries: outcome.executedQueries, resultCount: outcome.collected.length, note: status === 'ok' ? null : '믿을 만한 웹 자료가 부족해 기술 DB만으로 구성했습니다.' },
+  };
+}
+
 export async function createSparringImprovementCurriculum(
   session: SparringSession,
   userId: string | null,
   options?: SparringCurriculumOptions
 ): Promise<Curriculum> {
-  if (session.weakAreas.length === 0) throw new Error('createSparringImprovementCurriculum: session has no weak areas');
+  const targets = (session.weaknesses ?? []).filter((w) => w.status !== 'on_hold' && w.verifiedOnVideo !== false);
+  if (session.weakAreas.length === 0 && targets.length === 0) throw new Error('createSparringImprovementCurriculum: session has no weak areas');
+  const { sources: webSources, research: webResearch } = await researchWeaknesses(session, targets);
 
   const analysis = buildSyntheticGoalAnalysis(session, options?.focusAreaLabels);
   const totalDays = Math.round(Math.max(GOAL_MIN_DURATION_DAYS, Math.min(GOAL_MAX_DURATION_DAYS, options?.durationDays ?? 14)));
@@ -201,9 +280,22 @@ export async function createSparringImprovementCurriculum(
     techniqueCount,
     createdAt: now,
     updatedAt: now,
-    sparringAnalysisMeta: { sparringSessionId: session.id, weakAreaLabels: analysis.weaknesses, generatedAt: now },
+    sparringAnalysisMeta: {
+      sparringSessionId: session.id,
+      weakAreaLabels: analysis.weaknesses,
+      generatedAt: now,
+      weaknessIds: targets.map((w) => w.id),
+      clipIds: [...new Set(targets.flatMap((w) => w.clipIds))],
+      webSources,
+      webResearch,
+    },
   };
 
   curriculumRepository.saveCustom(curriculum);
+  // Link back: each targeted weakness now points at this curriculum.
+  if (targets.length) {
+    const ids = new Set(targets.map((w) => w.id));
+    updateSparringSession(session.id, (s) => ({ ...s, weaknesses: (s.weaknesses ?? []).map((w) => (ids.has(w.id) ? { ...w, curriculumId: curriculum.id } : w)) }));
+  }
   return curriculum;
 }

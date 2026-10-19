@@ -1,0 +1,323 @@
+{
+ "account": "created",
+ "email": "martialdex@martialdex.local",
+ "userId": "8840f49f-9e8f-4ee5-aac4-ccb3af336e01",
+ "combos": 103,
+ "published": 103,
+ "failed": [],
+ "skipped": [
+  {
+   "recordId": "karate__step-kizami-zuki",
+   "name": "Step → Kizami-zuki",
+   "reason": "실제 기술로 확인되지 않는 단계: Step (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__body-head-combination",
+   "name": "Body--Head Combination",
+   "reason": "실제 기술로 확인되지 않는 단계: Body, Head Combination (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__head-body-combination",
+   "name": "Head--Body Combination",
+   "reason": "실제 기술로 확인되지 않는 단계: Head, Body Combination (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__feint-double-jab",
+   "name": "Feint → Double Jab",
+   "reason": "실제 기술로 확인되지 않는 단계: Double Jab (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "kickboxing__check-return-kick",
+   "name": "Check → Return Kick",
+   "reason": "실제 기술로 확인되지 않는 단계: Return Kick (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "taekwondo__페인트-스텝-몸통-돌려차기",
+   "name": "페인트 스텝 → 몸통 돌려차기",
+   "reason": "실제 기술로 확인되지 않는 단계: 페인트 스텝, 몸통 돌려차기 (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "karate__age-uke-counter",
+   "name": "Age Uke → Counter",
+   "reason": "실제 기술로 확인되지 않는 단계: Counter (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "karate__tai-sabaki-counter",
+   "name": "Tai Sabaki → Counter",
+   "reason": "실제 기술로 확인되지 않는 단계: Counter (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__shot-feint-to-set-up",
+   "name": "Shot Feint to Set-Up",
+   "reason": "실제 기술로 확인되지 않는 단계: Shot Feint, Set-Up (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__duckunder-to-throw",
+   "name": "Duckunder to Throw",
+   "reason": "실제 기술로 확인되지 않는 단계: Throw (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__half-nelson-to-cradle",
+   "name": "Half Nelson to Cradle",
+   "reason": "실제 기술로 확인되지 않는 단계: Cradle (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__turk-to-half-nelson",
+   "name": "Turk to Half Nelson",
+   "reason": "실제 기술로 확인되지 않는 단계: Turk (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__switch-to-attack",
+   "name": "Switch to Attack",
+   "reason": "실제 기술로 확인되지 않는 단계: Attack (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "wrestling__stand-up-to-escape",
+   "name": "Stand-Up to Escape",
+   "reason": "실제 기술로 확인되지 않는 단계: Escape (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "muay-thai__teep-to-leg",
+   "name": "Teep to Leg",
+   "reason": "실제 기술로 확인되지 않는 단계: Leg (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "muay-thai__jab-to-cross",
+   "name": "Jab → Cross",
+   "reason": "같은 순서의 콤보가 이미 있음"
+  },
+  {
+   "recordId": "muay-thai__kick-catch-to-counter",
+   "name": "Kick Catch to Counter",
+   "reason": "실제 기술로 확인되지 않는 단계: Counter (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__feint-entry",
+   "name": "Feint → Entry",
+   "reason": "실제 기술로 확인되지 않는 단계: Entry (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__parry-jab",
+   "name": "Parry → Jab",
+   "reason": "같은 순서의 콤보가 이미 있음"
+  },
+  {
+   "recordId": "boxing__block-counter",
+   "name": "Block → Counter",
+   "reason": "실제 기술로 확인되지 않는 단계: Counter (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__jab-to-body",
+   "name": "Jab to Body",
+   "reason": "실제 기술로 확인되지 않는 단계: Body (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__hook-to-body",
+   "name": "Hook to Body",
+   "reason": "실제 기술로 확인되지 않는 단계: Body (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "sambo__arm-drag-to-throw",
+   "name": "Arm Drag to Throw",
+   "reason": "실제 기술로 확인되지 않는 단계: Throw (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "sambo__throw-side-control-mount-turtle-control",
+   "name": "Throw → Side Control / Mount / Turtle Control",
+   "reason": "실제 기술로 확인되지 않는 단계: Throw (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "sambo__single-leg-top-control-body-lock-throw-control",
+   "name": "Single Leg → Top Control, Body Lock → Throw → Control",
+   "reason": "실제 기술로 확인되지 않는 단계: Throw, Control (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "sambo__grip-fight-takedown-leg-lock-entry",
+   "name": "Grip Fight → Takedown → Leg Lock Entry",
+   "reason": "실제 기술로 확인되지 않는 단계: Grip Fight, Takedown, Leg Lock Entry (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__spider-to-x-guard",
+   "name": "Spider to X Guard",
+   "reason": "실제 기술로 확인되지 않는 단계: Spider (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__spider-to-single-leg",
+   "name": "Spider to Single Leg",
+   "reason": "실제 기술로 확인되지 않는 단계: Spider (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__lasso-to-spider",
+   "name": "Lasso to Spider",
+   "reason": "실제 기술로 확인되지 않는 단계: Lasso, Spider (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__lasso-to-omoplata",
+   "name": "Lasso to Omoplata",
+   "reason": "실제 기술로 확인되지 않는 단계: Lasso (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__lasso-to-triangle",
+   "name": "Lasso to Triangle",
+   "reason": "실제 기술로 확인되지 않는 단계: Lasso (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__lasso-to-x-guard",
+   "name": "Lasso to X Guard",
+   "reason": "실제 기술로 확인되지 않는 단계: Lasso (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__lasso-to-back-take",
+   "name": "Lasso to Back Take",
+   "reason": "실제 기술로 확인되지 않는 단계: Lasso (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__dlr-to-x-guard-sweep",
+   "name": "DLR to X Guard Sweep",
+   "reason": "실제 기술로 확인되지 않는 단계: DLR (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__truck-back",
+   "name": "Truck → Back",
+   "reason": "실제 기술로 확인되지 않는 단계: Truck (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__transition-to-back",
+   "name": "Transition to Back",
+   "reason": "실제 기술로 확인되지 않는 단계: Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__transition-to-slx",
+   "name": "Transition to SLX",
+   "reason": "실제 기술로 확인되지 않는 단계: Transition, SLX (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__transition-to-x-guard",
+   "name": "Transition to X Guard",
+   "reason": "실제 기술로 확인되지 않는 단계: Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__arm-drag-back-take",
+   "name": "Arm Drag → Back Take",
+   "reason": "같은 순서의 콤보가 이미 있음"
+  },
+  {
+   "recordId": "bjj__arm-drag-turtle-attack",
+   "name": "Arm Drag → Turtle Attack",
+   "reason": "실제 기술로 확인되지 않는 단계: Turtle Attack (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__sprawl-to-strikes",
+   "name": "Sprawl to Strikes",
+   "reason": "실제 기술로 확인되지 않는 단계: Strikes (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__ground-and-pound-to-submission-transition",
+   "name": "Ground and Pound to Submission Transition",
+   "reason": "실제 기술로 확인되지 않는 단계: Ground and Pound, Submission Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__scramble-to-back",
+   "name": "Scramble to Back Take",
+   "reason": "실제 기술로 확인되지 않는 단계: Scramble (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__strike-to-takedown-transition",
+   "name": "Strike to Takedown Transition",
+   "reason": "실제 기술로 확인되지 않는 단계: Strike, Takedown Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__takedown-to-ground-and-pound-transition",
+   "name": "Takedown to Ground and Pound Transition",
+   "reason": "실제 기술로 확인되지 않는 단계: Takedown, Ground and Pound Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__submission-to-strikes-transition",
+   "name": "Submission to Strikes Transition",
+   "reason": "실제 기술로 확인되지 않는 단계: Submission, Strikes Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__clinch-to-cage-transition",
+   "name": "Clinch to Cage Transition",
+   "reason": "실제 기술로 확인되지 않는 단계: Cage Transition (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__ankle-lock-counter-to-closed-guard",
+   "name": "Ankle-lock Counter to Closed Guard",
+   "reason": "실제 기술로 확인되지 않는 단계: Ankle-lock Counter (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__ankle-lock-to-break-closed-guard",
+   "name": "Ankle Lock to Break Closed Guard",
+   "reason": "실제 기술로 확인되지 않는 단계: Ankle Lock, Break Closed Guard (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "bjj__back-mount-armbar",
+   "name": "Back Mount -> Armbar",
+   "reason": "실제 기술로 확인되지 않는 단계: Back Mount (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__lead-kick-back-step-double-leg",
+   "name": "Lead Kick - Back Step - Double Leg",
+   "reason": "실제 기술로 확인되지 않는 단계: Lead Kick (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__overhand-right-to-level-change",
+   "name": "Overhand Right to Level Change",
+   "reason": "실제 기술로 확인되지 않는 단계: Overhand Right (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "boxing__sway-jab",
+   "name": "Sway -> Jab",
+   "reason": "실제 기술로 확인되지 않는 단계: Sway (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__single-leg-to-ankle-lock",
+   "name": "Single Leg to Ankle Lock",
+   "reason": "실제 기술로 확인되지 않는 단계: Ankle Lock (대상·일반 개념이거나 DB에 없는 이름)"
+  },
+  {
+   "recordId": "mixed-martial-arts__body-lock-to-arm-triangle-choke",
+   "name": "Body Lock to Arm Triangle Choke",
+   "reason": "실제 기술로 확인되지 않는 단계: Arm Triangle Choke (대상·일반 개념이거나 DB에 없는 이름)"
+  }
+ ],
+ "sharedByAdmin": 103,
+ "nicknames": [
+  "MARTIALDEX"
+ ],
+ "sources": 103,
+ "sample": [
+  {
+   "id": "sc_581e9814-bd8c-49e9-862c-0447f6674064",
+   "name": "Kizami-zuki → Gyaku-zuki",
+   "art": "karate",
+   "sourceRef": "martialdex-db:karate__kizami-zuki-gyaku-zuki"
+  },
+  {
+   "id": "sc_7cb61822-d094-4445-8b14-939e2a0e4915",
+   "name": "Oi-zuki → Gyaku-zuki",
+   "art": "karate",
+   "sourceRef": "martialdex-db:karate__oi-zuki-gyaku-zuki"
+  },
+  {
+   "id": "sc_3bce3931-d52f-4f44-add7-a5ecf015f769",
+   "name": "Gyaku-zuki → Mawashi Geri",
+   "art": "karate",
+   "sourceRef": "martialdex-db:karate__gyaku-zuki-mawashi-geri"
+  },
+  {
+   "id": "sc_cd93a665-e913-4234-9092-176f6058c862",
+   "name": "Kizami-zuki → Mawashi Geri",
+   "art": "karate",
+   "sourceRef": "martialdex-db:karate__kizami-zuki-mawashi-geri"
+  },
+  {
+   "id": "sc_9f38ab58-cf3b-4345-8ed1-c7042e9285aa",
+   "name": "Mae Geri → Gyaku-zuki",
+   "art": "karate",
+   "sourceRef": "martialdex-db:karate__mae-geri-gyaku-zuki"
+  }
+ ],
+ "ranAt": "2026-10-18T07:31:28.074Z"
+}

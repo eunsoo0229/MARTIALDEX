@@ -15,6 +15,9 @@ const PLAN_EVENTS = [
   'martialdex:training-history-updated',
   'martialdex:skill-overrides-updated',
   'martialdex:sparring-sessions-updated',
+  'martialdex:review-log-updated',
+  'martialdex:coach-lesson-log-updated',
+  'martialdex:review-focus-updated',
   'storage',
 ];
 
@@ -49,8 +52,7 @@ export function useReviewSession() {
 
   function finish() {
     if (!session) return;
-    const actualMinutes = Math.max(1, Math.round((Date.now() - new Date(session.startedAt).getTime()) / 60000));
-    finalizeReviewSession(session, actualMinutes);
+    finalizeReviewSession(session);
   }
 
   return {

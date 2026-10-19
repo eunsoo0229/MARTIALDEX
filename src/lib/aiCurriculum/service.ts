@@ -16,7 +16,9 @@ import { getMartialArt, martialArtSummaries } from '../loadData';
 import { identifyFighterCandidates } from '../fighterStyle/fighterIdentification';
 import { getOrGenerateStyleAnalysis } from '../fighterStyle/styleAnalysis';
 import { matchStyleToTechniques } from '../fighterStyle/techniqueMatcher';
-import { MMA_MARTIAL_ART_ID, MMA_SOURCE_MARTIAL_ARTS } from '../mmaCurriculum/types';
+import { MMA_MARTIAL_ART_ID, MMA_SOURCE_MARTIAL_ARTS, type MmaArea } from '../mmaCurriculum/types';
+import { classifyMmaArea } from '../mmaCurriculum/areaClassifier';
+import { isSubmissionGoal } from '../aiCoachDay/practicePlan';
 import type { MasteryStatus } from '../skillProgress/types';
 import { computeAllSkillProgress } from '../skillProgress/weaknessEngine';
 
@@ -92,6 +94,20 @@ function checkIntentAlignment(days: CurriculumDay[], goalIntents: GoalIntent[]):
   // stricter re-match retry below can't clear this, the caller now surfaces
   // an honest contentWarning instead of silently keeping the flagged result.
   return { ok: conflictingRatio <= 0.15, conflictingRatio };
+}
+
+// MMA + a submission goal: within each Day the takedowns come first and the
+// submissions last (striking → clinch → takedown → ground → submission), so
+// the Day is taught — and practised by the AI coach — as takedown → submission.
+// Only the ORDER changes; no technique is added or removed.
+const MMA_FLOW: (MmaArea | null)[] = ['striking', 'clinch', 'takedown', 'takedown_defense', 'transition', null, 'ground', 'ground_and_pound', 'submission'];
+function takedownBeforeSubmission(day: CurriculumDay): CurriculumDay {
+  const rank = (id: string) => {
+    const t = resolveTechnique(id);
+    return MMA_FLOW.indexOf(t ? classifyMmaArea(t) : null);
+  };
+  const order = (ids: string[]) => ids.map((id, i) => ({ id, i, r: rank(id) })).sort((a, b) => a.r - b.r || a.i - b.i).map((x) => x.id);
+  return { ...day, techniqueIds: order(day.techniqueIds) };
 }
 
 function deriveTitle(martialArt: string, analysis: GoalAnalysis): string {
@@ -710,7 +726,7 @@ export async function generateGoalCurriculumPreview(input: GenerateGoalCurriculu
       martialArt,
       analysis,
       matchedTechniques: pool,
-      days: attempt.days,
+      days: martialArt === MMA_MARTIAL_ART_ID && isSubmissionGoal(input.freeText) ? attempt.days.map(takedownBeforeSubmission) : attempt.days,
       phases: attempt.phases,
       totalDays,
       intensity,

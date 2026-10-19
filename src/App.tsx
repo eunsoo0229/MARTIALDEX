@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { lazy, Suspense, useEffect } from 'react';
 import Header from './components/Header';
 import AppErrorBoundary from './components/AppErrorBoundary';
@@ -33,6 +33,7 @@ const CurriculumDayList = lazy(() => import('./pages/CurriculumDayList'));
 const CurriculumDayDetail = lazy(() => import('./pages/CurriculumDayDetail'));
 const CurriculumEditor = lazy(() => import('./pages/CurriculumEditor'));
 const CurriculumTrainingStart = lazy(() => import('./pages/CurriculumTrainingStart'));
+const Shorts = lazy(() => import('./pages/Shorts'));
 const Community = lazy(() => import('./pages/Community'));
 const PostDetail = lazy(() => import('./pages/PostDetail'));
 const MySkills = lazy(() => import('./pages/MySkills'));
@@ -58,6 +59,9 @@ const FreeTraining = lazy(() => import('./pages/FreeTraining'));
 const SparringSession = lazy(() => import('./pages/SparringSession'));
 const CurriculumCoachSession = lazy(() => import('./pages/CurriculumCoachSession'));
 const AiComboGenerator = lazy(() => import('./pages/AiComboGenerator'));
+const UserCombos = lazy(() => import('./pages/UserCombos'));
+const SharedComboDetail = lazy(() => import('./pages/SharedComboDetail'));
+const Favorites = lazy(() => import('./pages/Favorites'));
 const ComboList = lazy(() => import('./pages/ComboList'));
 const AiHistory = lazy(() => import('./pages/AiHistory'));
 const ComboBuilder = lazy(() => import('./pages/ComboBuilder'));
@@ -69,7 +73,6 @@ const TrainingAnalytics = lazy(() => import('./pages/TrainingAnalytics'));
 const TrainingHistoryList = lazy(() => import('./pages/TrainingHistoryList'));
 const TrainingHistoryDetail = lazy(() => import('./pages/TrainingHistoryDetail'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
-const PersonalCoach = lazy(() => import('./pages/PersonalCoach'));
 const Marketplace = lazy(() => import('./pages/Marketplace'));
 const MarketplaceCurriculumDetail = lazy(() => import('./pages/MarketplaceCurriculumDetail'));
 const MarketplacePublish = lazy(() => import('./pages/MarketplacePublish'));
@@ -87,6 +90,13 @@ const TechniqueGraph = lazy(() => import('./pages/TechniqueGraph'));
 const SituationRecommend = lazy(() => import('./pages/SituationRecommend'));
 const MyStats = lazy(() => import('./pages/MyStats'));
 const TodayReview = lazy(() => import('./pages/TodayReview'));
+const ReviewHub = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewHub })));
+const ReviewTraining = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewTraining })));
+const ReviewLessons = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewLessons })));
+const ReviewLessonDetail = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewLessonDetail })));
+const ReviewGym = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewGym })));
+const ReviewWeak = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewWeak })));
+const ReviewSession = lazy(() => import('./pages/ReviewModes').then((m) => ({ default: m.ReviewSession })));
 const MyStyle = lazy(() => import('./pages/MyStyle'));
 const Profile = lazy(() => import('./pages/Profile'));
 const Login = lazy(() => import('./pages/Login'));
@@ -142,6 +152,9 @@ export default function App() {
             <Route path="/free-training" element={<FreeTraining />} />
             <Route path="/free-training/sparring" element={<SparringSession />} />
             <Route path="/ai-combo" element={<AiComboGenerator />} />
+            <Route path="/user-combos" element={<UserCombos />} />
+            <Route path="/user-combos/:comboId" element={<SharedComboDetail />} />
+            <Route path="/favorites" element={<Favorites />} />
             <Route path="/ai-history" element={<AiHistory />} />
             <Route path="/combos" element={<ComboList />} />
             <Route path="/combos/new" element={<ComboBuilder />} />
@@ -155,7 +168,8 @@ export default function App() {
             <Route path="/training-analytics/history" element={<TrainingHistoryList />} />
             <Route path="/training-analytics/:entryId" element={<TrainingHistoryDetail />} />
             <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/personal-coach" element={<PersonalCoach />} />
+            {/* AI Personal Coach is now part of the AI 코치 (내 기록으로 분석·추천 받기) — old links land there. */}
+            <Route path="/personal-coach" element={<Navigate to="/coach/lesson?from=personal-coach" replace />} />
             <Route path="/marketplace" element={<Marketplace />} />
             <Route path="/marketplace/publish/:curriculumId" element={<MarketplacePublish />} />
             <Route path="/marketplace/payment/result" element={<MarketplacePaymentResult />} />
@@ -169,6 +183,7 @@ export default function App() {
             <Route path="/learning/:martialArtId/:curriculumId/day/:day" element={<CurriculumDayDetail />} />
             <Route path="/learning/:martialArtId/:curriculumId" element={<CurriculumDayList />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/shorts" element={<Shorts />} />
             <Route path="/community/post/:postId" element={<PostDetail />} />
             <Route path="/my-skills" element={<MySkills />} />
             <Route path="/learned-techniques" element={<LearnedTechniques />} />
@@ -203,7 +218,14 @@ export default function App() {
             <Route path="/graph" element={<TechniqueGraph />} />
             <Route path="/situation" element={<SituationRecommend />} />
             <Route path="/stats" element={<MyStats />} />
-            <Route path="/review" element={<TodayReview />} />
+            <Route path="/review" element={<ReviewHub />} />
+            <Route path="/review/ai" element={<TodayReview />} />
+            <Route path="/review/training" element={<ReviewTraining />} />
+            <Route path="/review/lessons" element={<ReviewLessons />} />
+            <Route path="/review/lessons/:id" element={<ReviewLessonDetail />} />
+            <Route path="/review/gym" element={<ReviewGym />} />
+            <Route path="/review/weak" element={<ReviewWeak />} />
+            <Route path="/review/session" element={<ReviewSession />} />
             <Route path="/my-style" element={<MyStyle />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/login" element={<Login />} />

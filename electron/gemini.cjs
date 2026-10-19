@@ -37,7 +37,31 @@ const FALLBACK_MODEL = process.env.GEMINI_FALLBACK_MODEL || 'gemini-3.1-flash-li
 const REQUEST_TIMEOUT_MS = 55000;
 const MAX_RETRIES_ON_OVERLOAD = 1;
 
-function buildRequestBody({ systemInstruction, contextText, history, question, useSearchGrounding, imageParts }) {
+// mediaParts (기준 영상 비교 자세 평가 — src/lib/formCompare/): ordered
+// text / image / YouTube-clip parts for the final turn. Only public YouTube
+// watch/shorts/youtu.be URLs are passed as Gemini fileData (the API's own
+// video-URL input — nothing is downloaded here); anything else is dropped.
+const YOUTUBE_URL = /^https:\/\/(?:www\.|m\.)?(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)[A-Za-z0-9_-]{11}(?:[?&#][^\s]*)?$/;
+const MAX_MEDIA_PARTS = 48;
+function toGeminiMediaParts(mediaParts) {
+  const out = [];
+  if (!Array.isArray(mediaParts)) return out;
+  for (const part of mediaParts.slice(0, MAX_MEDIA_PARTS)) {
+    if (!part || typeof part !== 'object') continue;
+    if (part.kind === 'text' && typeof part.text === 'string') out.push({ text: part.text.slice(0, 4000) });
+    else if (part.kind === 'image' && typeof part.data === 'string' && /^image\/(jpeg|png|webp)$/.test(part.mimeType)) out.push({ inlineData: { mimeType: part.mimeType, data: part.data } });
+    else if (part.kind === 'youtube' && typeof part.url === 'string' && YOUTUBE_URL.test(part.url)) {
+      const meta = {};
+      if (Number.isFinite(part.startSeconds) && part.startSeconds >= 0) meta.startOffset = `${Math.floor(part.startSeconds)}s`;
+      if (Number.isFinite(part.endSeconds) && part.endSeconds > 0) meta.endOffset = `${Math.ceil(part.endSeconds)}s`;
+      if (Number.isFinite(part.fps) && part.fps > 0) meta.fps = Math.min(10, part.fps);
+      out.push({ fileData: { fileUri: part.url, mimeType: 'video/*' }, ...(Object.keys(meta).length ? { videoMetadata: meta } : {}) });
+    }
+  }
+  return out;
+}
+
+function buildRequestBody({ systemInstruction, contextText, history, question, useSearchGrounding, imageParts, mediaParts, temperature, maxOutputTokens, thinkingLevel }) {
   const fullSystemInstruction = `${systemInstruction}\n\n---\n앱 데이터 (참고용 — 이 안의 내용을 우선 근거로 사용할 것):\n${contextText}`;
 
   // imageParts (음식 사진 분석 등) are attached to the final question turn
@@ -49,6 +73,7 @@ function buildRequestBody({ systemInstruction, contextText, history, question, u
       questionParts.push({ inlineData: { mimeType: part.mimeType, data: part.data } });
     }
   }
+  questionParts.push(...toGeminiMediaParts(mediaParts));
 
   const contents = [
     ...history.map((turn) => ({
@@ -62,9 +87,10 @@ function buildRequestBody({ systemInstruction, contextText, history, question, u
     systemInstruction: { parts: [{ text: fullSystemInstruction }] },
     contents,
     generationConfig: {
-      temperature: 0.4,
-      maxOutputTokens: 2048,
-      thinkingConfig: { thinkingLevel: 'minimal' },
+      temperature: Number.isFinite(temperature) ? Math.min(1, Math.max(0, temperature)) : 0.4,
+      maxOutputTokens: Number.isFinite(maxOutputTokens) ? Math.min(8192, Math.max(256, Math.round(maxOutputTokens))) : 2048,
+      // 'minimal' unless a caller asks for a little reasoning (기준 영상 비교 판정 uses 'low').
+      thinkingConfig: { thinkingLevel: thinkingLevel === 'low' || thinkingLevel === 'medium' ? thinkingLevel : 'minimal' },
     },
   };
   // Real web lookups instead of model-only knowledge — used by 기술 추가

@@ -132,11 +132,11 @@ async function main() {
   });
 
   // ============ 1. NAV MENU ============
-  // "선수 스타일 학습" now lives in the header's collapsed "메뉴" dropdown.
-  check('메뉴 dropdown opens ->', (await clickText('메뉴', 'button')) === 'OK');
-  await new Promise((r) => setTimeout(r, 200));
-  check('Nav has "선수 스타일 학습" link', (await clickText('선수 스타일 학습', 'a')) === 'OK');
-  await new Promise((r) => setTimeout(r, 400));
+  // AI 화면은 이제 상단 "AI 코치" 탭의 AI 기능 목록에서 엽니다.
+  check('AI 코치 탭 열기 ->', (await clickText('AI 코치', 'a')) === 'OK');
+  await new Promise((r) => setTimeout(r, 500));
+  check('AI 코치 탭에 "선수 스타일 학습" 카드', await page.evaluate(() => { const a = document.querySelector('[data-feature="fighter-style"] a'); if (!a) return false; a.click(); return true; }));
+  await new Promise((r) => setTimeout(r, 1500));
   check('Landed on fighter-style hub', (await textOf('.section-title h2')) === '선수 스타일 학습');
   await shot('01-hub');
 

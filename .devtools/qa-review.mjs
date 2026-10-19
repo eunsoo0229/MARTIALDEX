@@ -130,7 +130,7 @@ async function main() {
   await page.reload();
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 800));
-  await goto('#/review');
+  await goto('#/review/ai');
   check('Empty state shown when no learning records exist', (await textOf('.empty-state')) !== null || (await page.evaluate(() => document.body.textContent?.includes('복습을 추천할 만한 학습 기록이 없습니다'))));
   const homeBodyNoReview = await page.evaluate(() => document.body.textContent || '');
   check('[Home] "오늘의 복습" card hidden when there is nothing to review', true); // sanity placeholder, verified explicitly below after seeding
@@ -210,7 +210,7 @@ async function main() {
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 800));
   await page.evaluate(MOCK_SUCCESS_SCRIPT);
-  await goto('#/review');
+  await goto('#/review/ai');
   await new Promise((r) => setTimeout(r, 400));
   check('커리큘럼에 추가 button click ->', (await clickText('커리큘럼에 추가', 'button')) === 'OK');
   await new Promise((r) => setTimeout(r, 300));
@@ -240,7 +240,7 @@ async function main() {
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 800));
   await page.evaluate(MOCK_FAILURE_SCRIPT);
-  await goto('#/review');
+  await goto('#/review/ai');
   await new Promise((r) => setTimeout(r, 400));
   check('"AI 주간 복습 계획 받기" click (AI failing) ->', (await clickText('AI 주간 복습 계획 받기', 'button')) === 'OK');
   let fallbackShown = false;
@@ -260,7 +260,7 @@ async function main() {
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 800));
   await page.evaluate(MOCK_SUCCESS_SCRIPT);
-  await goto('#/review');
+  await goto('#/review/ai');
   await new Promise((r) => setTimeout(r, 400));
   check('복습 시작 button click ->', (await clickText('복습 시작', 'button')) === 'OK');
   await new Promise((r) => setTimeout(r, 400));
@@ -291,9 +291,12 @@ async function main() {
   await shot('04-review-complete');
 
   const trainingHistoryAfter = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:training-history') || '[]'));
-  const reviewEntry = trainingHistoryAfter.find((e) => e.source === 'review');
-  check('Completion wrote a trainingHistory entry with source "review"', !!reviewEntry, JSON.stringify(reviewEntry));
-  check('trainingHistory review entry references real technique ids', !!reviewEntry && reviewEntry.techniqueIds.every((id) => ['boxing__jab', 'bjj__armbar', 'wrestling__wrestling-stance'].includes(id)), JSON.stringify(reviewEntry?.techniqueIds));
+  // 복습 5종 spec: reviewing is NOT training — completion goes to the review log only.
+  check('Completion did NOT write a trainingHistory entry (review != training)', !trainingHistoryAfter.some((e) => e.source === 'review'), JSON.stringify(trainingHistoryAfter.map((e) => e.source)));
+  const reviewLogAfter = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:review-log') || '[]'));
+  const reviewEntry = reviewLogAfter.find((e) => e.mode === 'ai' && e.finishedAt);
+  check('Completion wrote a finished review-log entry (mode "ai")', !!reviewEntry, JSON.stringify(reviewEntry));
+  check('review-log entry references real technique ids', !!reviewEntry && reviewEntry.completedTechniqueIds.length > 0 && reviewEntry.completedTechniqueIds.every((id) => ['boxing__jab', 'kickboxing__jab' /* canonical of boxing__jab */, 'bjj__armbar', 'wrestling__wrestling-stance'].includes(id)), JSON.stringify(reviewEntry?.completedTechniqueIds));
 
   const sessionAfterFinish = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:review-session') || 'null'));
   check('Review session marked finishedAt after completion', !!sessionAfterFinish?.finishedAt);
@@ -311,7 +314,7 @@ async function main() {
   await page.waitForLoadState('load');
   await new Promise((r) => setTimeout(r, 800));
   await page.evaluate(MOCK_SUCCESS_SCRIPT);
-  await goto('#/review');
+  await goto('#/review/ai');
   await new Promise((r) => setTimeout(r, 400));
   const bodyAfterScoreImprove = await page.evaluate(() => document.body.textContent || '');
   check('After a fresh high score, Jab moves out of the urgent list (score-change reflected in tiering)', !bodyAfterScoreImprove.includes('유지 중') || !(await page.evaluate(() => [...document.querySelectorAll('.technique-row__name')].some((e) => e.textContent?.includes('Jab')))));
@@ -322,8 +325,8 @@ async function main() {
   // ============ 10. PERSISTENCE ACROSS RESTART ============
   await app.close();
   ({ app, page, consoleErrors } = await launch());
-  const persistedHistory = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:training-history') || '[]'));
-  check('trainingHistory review entry persists after app restart', persistedHistory.some((e) => e.source === 'review'));
+  const persistedLog = await page.evaluate(() => JSON.parse(localStorage.getItem('martialdex:review-log') || '[]'));
+  check('review-log entry persists after app restart', persistedLog.some((e) => e.mode === 'ai' && e.finishedAt));
 
   // ============ REGRESSION (prior features still work) ============
   await goto('#/');

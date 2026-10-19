@@ -37,6 +37,28 @@ async function askViaElectron(request: AskAiRequest): Promise<AskAiResult> {
   }
 }
 
+/**
+ * Edge Function versions deployed before `mediaParts` existed ignore it. So
+ * the ordered images are ALSO sent as `imageParts` (supported by every
+ * version) with their labels listed in the question text ("→ [이미지 3]");
+ * a function that understands `mediaParts` uses those and skips this copy
+ * (`mediaParts` present → it does not read `imageParts` twice — see
+ * supabase/functions/gemini-ask). YouTube parts need the updated function.
+ */
+function withLegacyMediaFallback(request: AskAiRequest): AskAiRequest {
+  if (!request.mediaParts?.length) return request;
+  const lines: string[] = [];
+  const images: { mimeType: string; data: string }[] = [...(request.imageParts ?? [])];
+  for (const part of request.mediaParts) {
+    if (part.kind === 'text') lines.push(part.text);
+    else if (part.kind === 'image') {
+      images.push({ mimeType: part.mimeType, data: part.data });
+      lines.push(`→ [이미지 ${images.length}]`);
+    } else lines.push(`[YouTube 영상: ${part.url}]`);
+  }
+  return { ...request, imageParts: images, question: `${request.question}\n\n[첨부 이미지 순서와 설명]\n${lines.join('\n')}` };
+}
+
 async function askViaSupabaseEdgeFunction(request: AskAiRequest): Promise<AskAiResult> {
   if (!supabase || !SUPABASE_URL) {
     return {
@@ -69,7 +91,7 @@ async function askViaSupabaseEdgeFunction(request: AskAiRequest): Promise<AskAiR
         apikey: SUPABASE_ANON_KEY ?? '',
         Authorization: `Bearer ${accessToken}`,
       },
-      body: JSON.stringify(request),
+      body: JSON.stringify(withLegacyMediaFallback(request)),
     });
     const json = (await res.json()) as AskAiResult;
     return json;

@@ -253,7 +253,8 @@ export function finalizeCoachDay(run: CoachDayRun, curriculum: Curriculum, day: 
       estimatedMinutes: day.estimatedMinutes,
       actualMinutes: Math.max(1, Math.round(practicedSeconds / 60)),
       notes: `AI 코치와 학습 (${run.mode === 'voice' ? '음성' : '입력'}${run.location ? ` · ${LOCATION_SHORT[run.location]}` : ''}) · ${outcomes.filter((o) => o.completed).length}/${outcomes.length}개 기술 연습 완료${
-        run.mittSessions?.length ? ` · Visualizing Mitt ${run.mittSessions.map((m) => `${m.name} ${m.completedReps}/${m.targetReps}회`).join(', ')} (사용자 수행 기록, 동작 측정 아님)` : ''
+        (run.mittSessions?.length ? ` · Visualizing Mitt ${run.mittSessions.map((m) => `${m.name} ${m.completedReps}/${m.targetReps}회`).join(', ')} (사용자 수행 기록, 동작 측정 아님)` : '') +
+        (run.drillSessions?.length ? ` · 솔로 드릴 ${run.drillSessions.map((d) => `구령 ${d.calls}번 ${Math.round(d.seconds / 60) || 1}분`).join(', ')} (사용자 수행 기록, 동작 측정 아님)` : '')
       }${lessonNote}`,
       source: 'curriculum',
       aiCoach: { location: run.location ?? null, mode: run.mode },

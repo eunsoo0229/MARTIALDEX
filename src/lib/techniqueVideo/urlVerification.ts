@@ -51,8 +51,8 @@ export function parseYoutubeVideoId(input: string): string | null {
   return id && /^[A-Za-z0-9_-]{11}$/.test(id) ? id : null;
 }
 
-const ALLOWED_CONTENT_TYPES = new Set(['tutorial', 'demonstration', 'instructional_breakdown']);
-const MIN_NON_TITLE_EVIDENCE_CHARS = 40;
+export const ALLOWED_CONTENT_TYPES = new Set(['tutorial', 'demonstration', 'instructional_breakdown']);
+export const MIN_NON_TITLE_EVIDENCE_CHARS = 40;
 const RETRYABLE = new Set(['EMPTY_RESPONSE', 'PARSE_ERROR', 'UNKNOWN']);
 
 interface RawVerdict {
@@ -84,7 +84,7 @@ function techniqueNames(technique: Technique): string[] {
 }
 
 /** Case/punctuation/Unicode-form-insensitive word sequence — a quote still has to be a real run of words from the metadata, but a model re-typing "armbar, its" as "armbar its" or dropping an emoji doesn't count as fabrication. */
-function normalize(s: string): string {
+export function normalize(s: string): string {
   return s.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ' ').replace(/\s+/g, ' ').trim();
 }
 

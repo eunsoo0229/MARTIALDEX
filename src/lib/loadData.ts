@@ -11,7 +11,9 @@ import { GYM_TRAINING_FILE, GYM_MARTIAL_ART_ID } from './gymTraining/library';
 // scripts/parse-techniques.mjs. Dropping a new file into data/processed
 // (after adding a new .md to data/raw and re-running the parser) makes it
 // show up here automatically — no code change needed.
-const modules = import.meta.glob('../../data/processed/*.json', {
+// _all.json (every art again, 1.7 MB) and _meta.json are parser outputs the app never reads —
+// excluded HERE (negative glob) so they're not bundled; filtering at runtime still shipped them.
+const modules = import.meta.glob(['../../data/processed/*.json', '!../../data/processed/_*.json'], {
   eager: true,
   import: 'default',
 }) as Record<string, unknown>;

@@ -264,7 +264,7 @@ export default function RequestMissingTechnique({ martialArtId, martialArtNameKo
         </>
       )}
 
-      {step === 'registering' && <p className="video-status-message row gap-1"><span className="spinner" /> 기술을 등록하는 중...</p>}
+      {step === 'registering' && <p className="video-status-message row gap-1"><span className="spinner" /> 기술을 등록하는 중... (그래플링 기술은 Gi·No-Gi 수행 방식도 함께 조사합니다)</p>}
 
       {step === 'done' && (
         <>

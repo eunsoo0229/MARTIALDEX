@@ -1,0 +1,1387 @@
+{
+ "note": "사용자가 직접 판단한 Gi/No-Gi 분류 (판단 보류 검토 페이지에서 가져옴). scripts/build-gi-nogi.mjs가 AI·규칙 판단보다 우선 적용합니다.",
+ "importedAt": "2026-10-15T14:04:25.949Z",
+ "source": "https://claude.ai/artifact/BiETy6qjH79KxtvFpyZMZi",
+ "techniques": {
+  "bjj__arm-drag-closed-guard": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매·라펠을 잡아 당기고, No-Gi는 손목·삼두를 직접 잡아 당김(미끄러워 타이밍 중요)",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__arm-drag-single-leg": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매·라펠을 잡아 당기고, No-Gi는 손목·삼두를 직접 잡아 당김(미끄러워 타이밍 중요)",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__arm-drag-sweep": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매·라펠을 잡아 당기고, No-Gi는 손목·삼두를 직접 잡아 당김(미끄러워 타이밍 중요)",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__arm-drag-turtle-attack": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매·라펠을 잡아 당기고, No-Gi는 손목·삼두를 직접 잡아 당김(미끄러워 타이밍 중요)",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__backstep": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__backstep-entry": {
+   "classification": "both_differs",
+   "difference": "Gi는 벨트·바지 그립으로 회전, No-Gi는 발목·허벅지 컨트롤로 회전",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__dlr-technical-sweep": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__dogfight-sweep": {
+   "classification": "both_differs",
+   "difference": "Gi는 벨트·도복 그립이 보조, No-Gi는 깊은 언더훅과 바디 컨트롤만으로 들어 올림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__electric-chair-sweep": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__gift-wrap-back": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매 그립으로 랩을 고정, No-Gi는 손목을 잡아 고정(빠지기 쉬움)",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__granby-counter": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__guillotine": {
+   "classification": "both_differs",
+   "difference": "Gi는 도복 마찰로 목 감기가 안정적, No-Gi는 땀으로 미끄러워 그립·각도가 더 중요",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__half-guard": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__half-guard-recovery": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__head-and-arm-choke": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__high-mount": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__hip-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__hip-escape": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__hip-pressure-guard-break": {
+   "classification": "both_differs",
+   "difference": "Gi는 벨트·라펠을 잡고 자세 유지, No-Gi는 손으로 엉덩이·이두를 눌러 고정",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__homer-simpson": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__inverted-triangle": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__kimura-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__kimura-sweep": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__kimura-trap": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__knee-elbow-escape": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__lasso-to-omoplata": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__outside-ankle-lock": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__outside-sankaku": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__outside-sweep": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__over-under-pass": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·벨트 그립으로 고정, No-Gi는 허벅지를 오버훅·언더훅으로 직접 감쌈",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__paper-cutter-choke": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__peruvian-necktie": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__plan-b-sweep": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__side-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__side-control-armbar": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__side-control-crucifix": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__side-control-transition": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__side-triangle": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__single-leg-entry": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__standing-guard-break": {
+   "classification": "both_differs",
+   "difference": "Gi는 라펠·벨트를 잡고 일어서고, No-Gi는 이두·허리를 컨트롤하며 일어섬",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__torreando-pass": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지 무릎 그립, No-Gi는 발목·무릎을 직접 잡아 미끄러움에 대응",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__turtle-back": {
+   "classification": "both_differs",
+   "difference": "Gi는 깃·벨트 그립(클락 초크 등) 활용, No-Gi는 시트벨트·훅 위주",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "bjj__엉덩이-프레임": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "boxing__shoulder-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "judo__russian-style-grip": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "judo__sukui-nage": {
+   "classification": "both_differs",
+   "difference": "Gi는 소매·깃 그립으로 셋업, No-Gi는 언더훅·바디 컨트롤로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "mixed-martial-arts__scramble-to-back": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__back-escape": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__flying-entry": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__бросок-через-спину-counter": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·벨트를 잡고 역공, No-Gi는 허리·몸통을 감싸 역공",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__вертушка": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__двойной-зацеп": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__забегание-за-спину": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 벨트·재킷을 잡고 등 뒤로 돌고, No-Gi는 바디락·암드래그로 돌아감",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__заваливание": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매·벨트를 당겨 무너뜨리고, No-Gi는 머리·손목·언더훅으로 무너뜨림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__задняя-подсечка": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__захватом-руки-на-плечо": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__захватом-руки-под-плечо": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__зацеп": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__мельница": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__обратный": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__отхват": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__отхват-подсечка-counter": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·벨트를 잡고 역공, No-Gi는 허리·몸통을 감싸 역공",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__перевод-в-партер-파르테르로-전환시키기": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매·벨트를 당겨 무너뜨리고, No-Gi는 머리·손목·언더훅으로 무너뜨림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__передняя-подсечка": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__подсад": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__подсечка-изнутри": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__подсечка-с-заведением": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__подхват": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매 그립으로 당겨 넣고, No-Gi는 팔·몸통을 직접 감싸 넣음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__рычаг-бедра": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__рычаг-кисти": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__рычаг-локтя": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__рычаг-плеча": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__рычаг-стопы": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__с-захватом-шеи": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__скрестным-захватом-рук": {
+   "classification": "gi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-верхом": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-поперек": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-сбоку": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 소매를 잡아 팔을 고정, No-Gi는 팔을 겨드랑이에 끼워 고정",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-со-стороны-головы": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-со-стороны-ног": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удержание-спиной-поперек": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__удушающий-прием-удушающий-захват": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃을 이용한 조르기가 가능, No-Gi는 팔로만 조름",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__узел-плеча": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__узел-плеча-ногой": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__узел-плеча-обратный": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__узел-плеча-поперек": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__узел-стопы": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__ущемление-двуглавой-мышцы-плеча": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__ущемление-икроножной-мышцы": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__ущемление-трехглавой-мышцы-плеча": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__거리-구분": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__다리걸기-counter": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·벨트를 잡고 역공, No-Gi는 허리·몸통을 감싸 역공",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__당겨서-무너뜨리기": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매·벨트를 당겨 무너뜨리고, No-Gi는 머리·손목·언더훅으로 무너뜨림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__밀어서-무너뜨리기": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매·벨트를 당겨 무너뜨리고, No-Gi는 머리·손목·언더훅으로 무너뜨림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__비틀어서-무너뜨리기": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·소매·벨트를 당겨 무너뜨리고, No-Gi는 머리·손목·언더훅으로 무너뜨림",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__손목-팔꿈치-제어": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대의 재킷 그립을 끊는 목적, No-Gi는 손목·팔꿈치 자체가 주 그립",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__스탠스": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__추가-탑-컨트롤": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__허리기술-counter": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·벨트를 잡고 역공, No-Gi는 허리·몸통을 감싸 역공",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "sambo__희생기술-counter": {
+   "classification": "both_differs",
+   "difference": "Gi(재킷)는 깃·벨트를 잡고 역공, No-Gi는 허리·몸통을 감싸 역공",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "taekwondo__팔굽치기": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__ankle-pick": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__ankle-ride": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__ankle-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__arm-spin": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__arm-throw": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__back-step": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__back-trip": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__bar-arm": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__base": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__base-building": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__basic-double-leg": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__bear-hug": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__bear-hug-style-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__biceps-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__blast-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__body-lock": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__body-lock-entry": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__body-lock-lift": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__body-lock-takedown": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__body-lock-throw": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__bridge": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__chest-to-chest-defense": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__chicken-wing": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__chop": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__claw-ride": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__collar-tie": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__corner-finish": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__crackdown-counter": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__crackdown-position": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__cross-face-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__cross-wrist": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__crossface": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__cutback": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__cutback-finish": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-ankle-pick": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-half-nelson": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-leg-down-defense": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-leg-finish": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-leg-from-tie": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-leg-from-underhook": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-leg-position": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__double-underhooks": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__down-block": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__drop-step": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__duck-under-reversal": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__duckunder-to-throw": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__elbow-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__fake-shot": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__far-ankle": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__far-side-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__far-wrist-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__feint": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-body-lock": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock": {
+   "classification": "both_differs",
+   "difference": "Gi는 깃 그립·깃 초크로 연계, No-Gi는 친스트랩·길로틴·다스로 연계",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock-defense": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock-exposure": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock-to-ankle": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock-to-back": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__front-headlock-to-single": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__go-behind": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__granby-roll": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__granby-roll-to-reversal": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__guillotine-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__guillotine-pin-combination": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__guillotine-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__gut-wrench": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__half-nelson": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__half-nelson-to-bar-arm": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__half-nelson-to-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hand-control": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hand-fighting": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__head-and-arm-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__head-and-arm-spin": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__head-and-arm-throw": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__head-hands": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__head-position": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__headlock": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__headlock-throw": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__high-crotch-dump": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__high-crotch-lift": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__high-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__high-single": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hip-heist": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hip-heist-counter": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hip-pressure": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__hip-toss": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__inside-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__inside-tie": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__inside-trip": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__knee-slide": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__knee-tap-from-single": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__lateral-drop": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__leg-ride": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__level-change": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__lift": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__lift-and-return": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__lift-finish": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__locking-hands-position": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__low-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__low-stance": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__mat-return": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__motion-circle": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__navy-ride-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__near-ankle": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__near-side-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__near-side-crank-position": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__near-wrist-roll": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__near-wrist-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__neutral": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__outside-trip": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__over-under": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__peek-out": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__penetration-step": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__peterson-roll": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__peterson-roll-to-reversal": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__pivot": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__power-half-nelson": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__quadpod": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__quadpod-escape": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__re-double": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__re-single": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__rear-body-lock": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__rear-lift-return": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__reshot-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__reverse-cradle": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__roll-through": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__russian-tie": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__russian-tie-entry": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__shot-feint-to-set-up": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__shuck-by": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__shuffle-step": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__single-ankle-pick": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__single-leg-down-defense": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__single-leg-position": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__single-to-back-take": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__single-to-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sit-out": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sit-out-to-reversal": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sit-out-to-single": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__slide-by": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__snap-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__snap-down": {
+   "classification": "both_differs",
+   "difference": "Gi는 깃을 잡아 당겨 스냅, No-Gi는 칼라타이로 목을 당겨 스냅",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__snatch-double": {
+   "classification": "both_differs",
+   "difference": "Gi는 상대가 깃·소매를 잡고 거리를 막아 그립을 먼저 끊어야 하고, No-Gi는 칼라타이·헤드 포지션으로 셋업",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__snatch-single": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__spin-behind": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__spiral-ride": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sprawl": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sprawl-to-back": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sprawl-to-front-headlock": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__square-hips": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__square-stance": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__staggered-stance": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__stand-up": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__stand-up-to-escape": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__suplex": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__sweep-single": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__switch": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__switch-off": {
+   "classification": "both_differs",
+   "difference": "Gi는 바지·소매 그립으로 다리를 고정, No-Gi는 발목·무릎을 직접 감싸 잡음",
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__switch-to-attack": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__throw-by": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__tight-waist": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__tight-waist-and-half-nelson": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__tight-waist-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__tripod": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__turk-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__turk-to-half-nelson": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__two-on-one-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__underhook-entry": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__waist-lock-reversal": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__whizzer": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__wrestling-stance": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__wrist-control": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__wrist-peel": {
+   "classification": "same",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__wrist-ride": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  },
+  "wrestling__wrist-tilt": {
+   "classification": "nogi_centric",
+   "difference": null,
+   "at": "2026-10-15T13:47:28.181191Z"
+  }
+ }
+}

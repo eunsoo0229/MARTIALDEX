@@ -255,6 +255,9 @@ function VideoCard({ video }: { video: SparringVideo }) {
                 {showPlayer ? '닫기' : '미리보기'}
               </button>
             )}
+            <Link className="btn btn-secondary btn-sm" to={`/sparring?video=${encodeURIComponent(video.id)}`} data-testid="sparring-video-analyze">
+              🧠 AI 분석
+            </Link>
             <button className="btn btn-ghost btn-sm" onClick={() => setShowTrim((v) => !v)}>
               {showTrim ? '자르기 닫기' : '자르기'}
             </button>

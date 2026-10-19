@@ -10,6 +10,8 @@ import { classifyPosition, POSITION_LABEL } from './positionClassifier';
 import { getAllRecords, buildSkillSummaryIndex, getTechniqueSkillSummaryFromIndex } from '../poseAnalysis/recordsService';
 import { listTrainingHistory, buildPracticeStatsIndex, getPracticeStatsFromIndex } from '../trainingHistory/service';
 import { getAllOverrides } from './overrideStore';
+import { buildCoachEvidenceIndex } from './coachEvidence';
+import { canonicalTechniqueId } from '../techniqueCanonical';
 
 
 export interface TechniqueSkillEntry {
@@ -41,13 +43,14 @@ export function computeAllSkillProgress(): TechniqueSkillEntry[] {
   const recordIndex = buildSkillSummaryIndex(getAllRecords());
   const practiceIndex = buildPracticeStatsIndex(listTrainingHistory());
   const overrides = getAllOverrides();
+  const coachIndex = buildCoachEvidenceIndex();
   return getUnifiedAllTechniques()
     .filter((technique) => !isSyntheticTrainingDomain(technique.martialArt))
     .map((technique) => {
       const summary = getTechniqueSkillSummaryFromIndex(technique.id, recordIndex);
       const practice = getPracticeStatsFromIndex(technique.id, practiceIndex);
       const override = overrides[technique.id] ?? null;
-      return { technique, progress: buildSkillProgress(technique.id, summary, practice, override) };
+      return { technique, progress: buildSkillProgress(technique.id, summary, practice, override, coachIndex.get(canonicalTechniqueId(technique.id)) ?? null) };
     });
 }
 

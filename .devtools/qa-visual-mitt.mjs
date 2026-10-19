@@ -61,7 +61,7 @@ async function main() {
   await page.locator('[data-testid="visual-mitt-entry"] a').click();
   await sleep(1200);
   const setup = await page.evaluate(() => ({ url: location.hash, tabs: [...document.querySelectorAll('[data-testid^="mitt-tab-"]')].map((t) => t.textContent) }));
-  check('[M1] AI 코치 화면 → AI Visualizing Mitt 진입 (AI 요청/추천/내 콤보/단일/만들기)', setup.url.includes('/coach/mitt') && setup.tabs.length === 5, setup);
+  check('[M1] AI 코치 화면 → AI Visualizing Mitt 진입 (AI 요청/공격 지시/반응 훈련/추천/내 콤보/단일/만들기)', setup.url.includes('/coach/mitt') && setup.tabs.length === 7 && setup.tabs.some((t) => t.startsWith('반응 훈련')) && setup.tabs.some((t) => t.includes('공격 지시')), setup);
   const data = await page.evaluate(async () => {
     const c = await import('/src/lib/visualMitt/combos.ts');
     const db = c.listDbCombos();
@@ -78,13 +78,29 @@ async function main() {
   await goto(`#/coach/mitt?combo=${encodeURIComponent(`single:${jabId}`)}&mode=text`);
   let c0 = await current();
   check('[M3a] 단일 타격(잽) 화면: 정면 미트 목표 + 직선 궤적 + 발 위치', c0.archetype === 'jab' && c0.path === 'straight' && c0.targets === 1 && c0.p === 0, c0);
+  // 주먹 속도는 일정: 빠른/느린 설정 모두 시작 후 비슷한 시간(≈0.2초)에 미트 도달
+  const timeToHit = async () => {
+    const t0 = Date.now();
+    await page.locator('[data-testid="mitt-play"]').click();
+    const ms = await page.evaluate(() => new Promise((res) => {
+      const s = performance.now();
+      const tick = () => (document.querySelector('[data-testid="mitt-front"]')?.dataset.hit === 'true' ? res(performance.now() - s) : performance.now() - s > 3000 ? res(-1) : requestAnimationFrame(tick));
+      tick();
+    }));
+    void t0;
+    return ms;
+  };
   await page.locator('[data-testid="mitt-speed-fast"]').click();
-  await page.locator('[data-testid="mitt-play"]').click();
-  await sleep(500);
-  const mid = await current();
-  await sleep(700);
+  const hitFast = await timeToHit();
+  await sleep(1300);
   const endJab = await current();
-  check('[M3b] 재생 → 궤적이 그려지고 끝에서 미트 도달 표시, 앞발 반 걸음 이동', mid.p > 0 && mid.p < 1 && endJab.p === 1 && endJab.hit === 'true' && endJab.leadY < 150, { mid: mid.p, end: endJab });
+  await page.locator('[data-testid="mitt-pause"]').click().catch(() => {});
+  await page.locator('[data-testid="mitt-speed-slow"]').click();
+  await page.locator('[data-testid="mitt-replay"]').click();
+  const hitSlow = await timeToHit();
+  await page.locator('[data-testid="mitt-pause"]').click().catch(() => {});
+  await page.locator('[data-testid="mitt-speed-fast"]').click();
+  check('[M3b] 재생 → 미트 도달 표시, 주먹 속도는 속도 설정과 무관하게 빠름(≤0.4초), 앞발 반 걸음 이동', hitFast > 0 && hitSlow > 0 && hitFast <= 400 && hitSlow <= 400 && Math.abs(hitFast - hitSlow) < 150 && endJab.leadY < 150, { hitFast, hitSlow, end: endJab });
   // southpaw mirror
   await page.locator('[data-testid="mitt-pause"]').click().catch(() => {});
   const xOrth = await page.evaluate(() => Number(document.querySelector('[data-testid="mitt-foot-lead"]').dataset.x));
@@ -112,6 +128,12 @@ async function main() {
   const target = Number(reason.match(/(\d+)회/)?.[1]);
   await page.locator('[data-testid="mitt-runner-speed-fast"]').click();
   await page.locator('[data-testid="mitt-runner-play"]').click();
+  // 5초 준비 카운트다운: 숫자 표시 중에는 동작이 진행되지 않음
+  await sleep(1500);
+  const ready = await page.evaluate(() => ({ num: document.querySelector('[data-testid="mitt-ready-countdown"] strong')?.textContent, step: document.querySelector('[data-testid="mitt-runner"]').dataset.step, rep: document.querySelector('[data-testid="mitt-runner"]').dataset.rep }));
+  check('[M16a] 시작 누르면 5초 준비 카운트다운 (그동안 진행 안 함)', ['3', '4'].includes(ready.num) && ready.step === '1' && ready.rep === '1', ready);
+  await sleep(4200);
+  check('[M16b] 카운트다운 끝나면 오버레이 사라지고 콤보 시작', !(await page.$('[data-testid="mitt-ready-countdown"]')));
   await page.waitForFunction(() => document.querySelector('[data-testid="mitt-runner"]')?.dataset.done === 'true', null, { timeout: 60000 });
   const contRep = await page.locator('[data-testid="mitt-runner-rep"]').textContent();
   check('[M16] 콤보 연속 실행: AI 튜터가 정한 횟수만큼 자동 반복 후 종료', target >= 3 && contRep.replace(/\s/g, '').includes(`${target}/${target}`), { reason, contRep });
@@ -250,11 +272,19 @@ async function main() {
     return c.days.find((d) => { const t = svc.coachTechniquesForDay(d)[0]; return t && a.motionForTechnique(t); })?.day;
   });
   await goto(`#/learning/boxing/official__boxing/coach/${mittDay}?mode=text&place=limited`);
+  // The coach session opens with the 1:1 lesson (explain → question); "준비됐어" moves on to the video step.
+  await page.waitForFunction(() => ['lesson', 'videos'].includes(document.querySelector('[data-testid="coach-step"]')?.dataset.step), null, { timeout: 60000 });
+  if ((await page.evaluate(() => document.querySelector('[data-testid="coach-step"]')?.dataset.step)) === 'lesson') {
+    await page.fill('[data-testid="coach-text-input"]', '준비됐어');
+    await page.keyboard.press('Enter');
+  }
   await page.waitForFunction(() => document.querySelector('[data-testid="coach-step"]')?.dataset.step === 'videos', null, { timeout: 60000 });
-  const lesson = await page.evaluate(() => ({ button: !!document.querySelector('[data-testid="coach-mitt-start"]'), suggest: [...document.querySelectorAll('[data-testid="coach-chat"] .ai-msg__bubble')].some((b) => /Visualizing Mitt/.test(b.textContent)), place: document.querySelector('[data-testid="coach-location"]')?.dataset.location }));
-  check('[M14] AI 코치 수업(기타 장소): 코치가 Visualizing Mitt 제안 + 현재 기술로 바로 열기', lesson.place === 'limited' && lesson.suggest && lesson.button, lesson);
-  // in-lesson: the Mitt opens inside the lesson (no page change) with the current technique
-  await page.locator('[data-testid="coach-mitt-start"]').click();
+  const lesson = await page.evaluate(() => ({ button: !!document.querySelector('[data-testid="coach-mitt-start"]'), suggest: [...document.querySelectorAll('[data-testid="coach-chat"] .ai-msg__bubble')].some((b) => /실습 때는 AI Visualizing Mitt를 불러/.test(b.textContent)), place: document.querySelector('[data-testid="coach-location"]')?.dataset.location }));
+  check('[M14] AI 코치 수업: 실습 때 Visualizing Mitt를 불러온다고 미리 안내 (선택 버튼 없이 무조건)', lesson.place === 'limited' && lesson.suggest && !lesson.button, lesson);
+  // in-lesson: ready → posture briefing → the Mitt opens inside the lesson (no page change) with the current technique
+  await page.evaluate(async () => (await import('/src/lib/aiCoachDay/sessionStore.ts')).updateCoachDayRun((r) => ({ ...r, step: 'ready' })));
+  await page.locator('[data-testid="coach-ready"] button').click();
+  await page.locator('[data-testid="coach-posture-start"]').click();
   await page.locator('[data-testid="coach-mitt"]').waitFor({ timeout: 10000 });
   check('[M14b] 수업 안에서 Visualizing Mitt 실행 (현재 기술, 수업 화면 유지)', (await page.locator('[data-testid="mitt-runner"]').count()) === 1 && /\/coach\//.test(page.url()));
   await page.locator('[data-testid="mitt-runner-stop"]').click();

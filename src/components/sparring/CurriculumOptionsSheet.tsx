@@ -62,8 +62,8 @@ export default function CurriculumOptionsSheet({ session, userId, onClose, onCre
     <BottomSheet onClose={onClose}>
       <h3>🎯 맞춤 커리큘럼 생성</h3>
       <p className="video-status-message">
-        스파링 분석에서 발견된 약점을 바탕으로 Martialdex 기술 데이터로 커리큘럼을 만듭니다. 기본값 그대로 바로
-        생성해도 됩니다.
+        스파링 분석에서 발견된 약점 장면을 바탕으로, 실시간 웹 검색으로 훈련 자료를 찾고 Martialdex 기술 데이터로
+        커리큘럼을 만듭니다(이미 배운 기술은 복습으로 배치). 기본값 그대로 바로 생성해도 됩니다.
       </p>
 
       <div className="chip-row" style={{ marginTop: 10 }}>

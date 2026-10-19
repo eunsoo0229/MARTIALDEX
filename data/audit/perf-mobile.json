@@ -1,0 +1,72 @@
+{
+ "throttle": 6,
+ "steps": [
+  {
+   "step": "앱 시작 → 홈 표시 (중앙값)",
+   "ms": 1834,
+   "all": [
+    1749,
+    1834,
+    1841
+   ]
+  },
+  {
+   "step": "기술 목록",
+   "ms": 1492
+  },
+  {
+   "step": "기술 상세(그래플링)",
+   "ms": 1467
+  },
+  {
+   "step": "AI 코치",
+   "ms": 435
+  },
+  {
+   "step": "Visualizing Mitt",
+   "ms": 834
+  },
+  {
+   "step": "나의 기술",
+   "ms": 683
+  },
+  {
+   "step": "복습",
+   "ms": 550
+  }
+ ],
+ "topSelf": [
+  "3304ms  (program) :-1",
+  "591ms  (idle) :-1",
+  "187ms  (anon) practicePlan-PwXOxkNF.js:0",
+  "179ms  (anon) index-ubwxZHex.js:62",
+  "145ms  appendChild :-1",
+  "138ms  nw index-ubwxZHex.js:62",
+  "94ms  (garbage collector) :-1",
+  "60ms  getItem :-1",
+  "46ms  (anon) AutoGrowTextarea-Dy3jwzwZ.js:0",
+  "44ms  Vl index-ubwxZHex.js:30",
+  "36ms  evaluate :304",
+  "35ms  xu index-ubwxZHex.js:30",
+  "35ms  query :5606",
+  "34ms  fs index-ubwxZHex.js:30",
+  "32ms  setAttribute :-1",
+  "30ms  (anon) :0",
+  "30ms  D practicePlan-PwXOxkNF.js:0",
+  "28ms  oA index-ubwxZHex.js:62",
+  "26ms  o practicePlan-PwXOxkNF.js:0",
+  "23ms  (anon) index-ubwxZHex.js:41",
+  "23ms  Ac index-ubwxZHex.js:30",
+  "21ms  addEventListener :-1",
+  "20ms  (anon) :-1",
+  "19ms  createElement :-1",
+  "17ms  computeBox :2986"
+ ],
+ "storage": [
+  [
+   "martialdex:recent",
+   15
+  ]
+ ],
+ "longTasksSupported": 0
+}

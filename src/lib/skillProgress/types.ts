@@ -33,6 +33,9 @@ export interface SkillProgress {
   scoreDelta: number | null;
   analysisCount: number;
   practiceCount: number;
+  /** AI 코치 lessons on this technique, and the distinct days it was understood + practiced in one. */
+  coachLessonCount: number;
+  coachMasteredDays: number;
   lastPracticedAt: string | null;
   lastAnalyzedAt: string | null;
   nextReviewAt: string | null;

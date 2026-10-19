@@ -20,16 +20,29 @@ export function centroidOf(frame: PoseFrame): { x: number; y: number } | null {
 // quarter of the frame width/height of allowed drift between samples.
 const MAX_MATCH_DISTANCE = 0.25;
 
-function nearestPose(poses: PoseFrame[], ref: { x: number; y: number }): { pose: PoseFrame; distance: number } | null {
-  let best: { pose: PoseFrame; distance: number } | null = null;
+/**
+ * Nearest candidate by position, optionally with an appearance penalty
+ * (0 = looks like the tracked person, 1 = clearly doesn't — attire.ts). The
+ * penalty only re-ranks candidates (e.g. when two fighters cross and are
+ * both close); the distance limit still applies to the picked one.
+ */
+function nearestPose(poses: PoseFrame[], ref: { x: number; y: number }, penalty?: (pose: PoseFrame) => number): { pose: PoseFrame; distance: number } | null {
+  let best: { pose: PoseFrame; distance: number; cost: number } | null = null;
   for (const pose of poses) {
     const c = centroidOf(pose);
     if (!c) continue;
     const d = Math.hypot(c.x - ref.x, c.y - ref.y);
-    if (!best || d < best.distance) best = { pose, distance: d };
+    const cost = d + (penalty ? APPEARANCE_WEIGHT * penalty(pose) : 0);
+    if (!best || cost < best.cost) best = { pose, distance: d, cost };
   }
-  return best;
+  return best ? { pose: best.pose, distance: best.distance } : null;
 }
+
+/** How much a full appearance mismatch counts, in normalized-distance units. */
+const APPEARANCE_WEIGHT = 0.15;
+
+/** Appearance penalty for pose `poseIndex` of sample `frameIndex`, or undefined when no attire/colours are available. */
+export type AppearancePenalty = (frameIndex: number, poseIndex: number) => number;
 
 // A simple nearest-centroid tracker across INDEPENDENTLY sampled frames —
 // this is position-based tracking, not identity re-recognition. If the
@@ -42,8 +55,10 @@ function nearestPose(poses: PoseFrame[], ref: { x: number; y: number }): { pose:
 export function trackSelectedPerson(
   samples: SampledFrame[],
   referenceTimestampSec: number,
-  referenceCentroid: { x: number; y: number }
+  referenceCentroid: { x: number; y: number },
+  appearance?: AppearancePenalty
 ): TrackedFrame[] {
+  const penaltyFor = (i: number) => (appearance ? (pose: PoseFrame) => appearance(i, samples[i].poses.indexOf(pose)) : undefined);
   if (samples.length === 0) return [];
   const refIndex = samples.reduce(
     (bestIdx, s, i) => (Math.abs(s.timestampSec - referenceTimestampSec) < Math.abs(samples[bestIdx].timestampSec - referenceTimestampSec) ? i : bestIdx),
@@ -54,7 +69,7 @@ export function trackSelectedPerson(
 
   let currentRef = referenceCentroid;
   for (let i = refIndex; i < samples.length; i++) {
-    const match = nearestPose(samples[i].poses, currentRef);
+    const match = nearestPose(samples[i].poses, currentRef, penaltyFor(i));
     if (match && match.distance <= MAX_MATCH_DISTANCE) {
       tracked[i] = { timestampSec: samples[i].timestampSec, landmarks: match.pose, matched: true };
       const c = centroidOf(match.pose);
@@ -64,7 +79,7 @@ export function trackSelectedPerson(
 
   currentRef = referenceCentroid;
   for (let i = refIndex - 1; i >= 0; i--) {
-    const match = nearestPose(samples[i].poses, currentRef);
+    const match = nearestPose(samples[i].poses, currentRef, penaltyFor(i));
     if (match && match.distance <= MAX_MATCH_DISTANCE) {
       tracked[i] = { timestampSec: samples[i].timestampSec, landmarks: match.pose, matched: true };
       const c = centroidOf(match.pose);

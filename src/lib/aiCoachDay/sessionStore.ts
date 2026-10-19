@@ -59,7 +59,8 @@ export function startCoachDayRun(
   mode: CoachMode,
   techniqueIds: string[],
   location: CoachDayRun['location'] = null,
-  equipment: string[] = []
+  equipment: string[] = [],
+  coachKind?: CoachDayRun['coachKind']
 ): CoachDayRun {
   const run: CoachDayRun = {
     id: newId(),
@@ -78,6 +79,7 @@ export function startCoachDayRun(
     historyEntryId: null,
     location,
     equipment,
+    ...(coachKind ? { coachKind } : {}),
   };
   write(run);
   return run;
@@ -129,7 +131,7 @@ export function stopPracticeEarly(): CoachDayRun | null {
     return {
       ...r,
       step: 'practiced',
-      outcomes: { ...r.outcomes, [r.practice.techniqueId]: { ...r.outcomes[r.practice.techniqueId], practicedSeconds: practiced, completed: false } },
+      outcomes: { ...r.outcomes, [r.practice.techniqueId]: { ...r.outcomes[r.practice.techniqueId], practicedSeconds: (r.outcomes[r.practice.techniqueId]?.practicedSeconds ?? 0) + practiced, completed: false } },
       practice: null,
     };
   });
@@ -155,7 +157,7 @@ export function tickPractice(fill: { name: string; point: string | null }): Coac
       ...next,
       step: 'practiced',
       practice: null,
-      outcomes: { ...next.outcomes, [practice.techniqueId]: { ...next.outcomes[practice.techniqueId], practicedSeconds: practice.totalSeconds, completed: true } },
+      outcomes: { ...next.outcomes, [practice.techniqueId]: { ...next.outcomes[practice.techniqueId], practicedSeconds: (next.outcomes[practice.techniqueId]?.practicedSeconds ?? 0) + practice.totalSeconds, completed: true } },
     };
   }
   write(next);
